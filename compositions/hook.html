@@ -1,0 +1,73 @@
+<template>
+  <style>
+    @font-face {
+      font-family: "Anton";
+      src: url("assets/fonts/anton-latin-400-normal.woff2") format("woff2");
+      font-weight: 400;
+    }
+    #root {
+      position: absolute;
+      inset: 0;
+      background: transparent;
+      font-family: "Montserrat", sans-serif;
+      color: #fff;
+    }
+    #hook-block {
+      position: absolute;
+      left: 72px;
+      top: 196px;
+      width: 936px;
+    }
+    #hook-kicker {
+      font-weight: 700;
+      font-size: 28px;
+      letter-spacing: 0.16em;
+      color: #d6ac52;
+      text-transform: uppercase;
+    }
+    #hook-rule {
+      margin-top: 14px;
+      width: 240px;
+      height: 5px;
+      background: #d6ac52;
+      transform-origin: 0 50%;
+    }
+    #hook-title {
+      margin-top: 16px;
+      font-family: "Anton", sans-serif;
+      font-size: 96px;
+      line-height: 1.02;
+      text-transform: uppercase;
+      letter-spacing: 0.01em;
+      text-shadow: 0 6px 24px rgba(0, 0, 0, 0.55);
+    }
+    #hook-title .hl {
+      color: #ffd447;
+    }
+    .hook-line {
+      display: block;
+    }
+  </style>
+  <div id="root" data-composition-id="hook" data-width="1080" data-height="1920">
+    <div id="hook-block" class="clip" data-start="0" data-duration="6.4" data-track-index="0">
+      <div id="hook-kicker">Dewan Rakyat &nbsp;|&nbsp; Parlimen Malaysia</div>
+      <div id="hook-rule"></div>
+      <h1 id="hook-title">
+        <span id="hook-l1" class="hook-line">Projek rakyat Parit</span>
+        <span id="hook-l2" class="hook-line hl">perlu disegerakan</span>
+      </h1>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    // Frame 0 is the thumbnail: the headline is already on screen. Only the gold rule draws.
+    tl.fromTo("#hook-rule", { scaleX: 0.15 }, { scaleX: 1, duration: 0.7, ease: "expo.out" }, 0);
+    // Exit: blur out word-line by line before the dip cut.
+    tl.to(
+      ["#hook-kicker", "#hook-rule", "#hook-l1", "#hook-l2"],
+      { opacity: 0, filter: "blur(8px)", duration: 0.2, stagger: 0.05, ease: "power2.in" },
+      5.85,
+    );
+    window.__timelines["hook"] = tl;
+  </script>
+</template>

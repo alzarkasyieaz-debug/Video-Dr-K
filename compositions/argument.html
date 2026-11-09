@@ -1,0 +1,143 @@
+<template>
+  <style>
+    @font-face {
+      font-family: "Anton";
+      src: url("assets/fonts/anton-latin-400-normal.woff2") format("woff2");
+      font-weight: 400;
+    }
+    #root {
+      position: absolute;
+      inset: 0;
+      background: transparent;
+      font-family: "Montserrat", sans-serif;
+      color: #fff;
+    }
+    .blk {
+      position: absolute;
+      left: 72px;
+      top: 196px;
+      width: 936px;
+      height: 290px;
+    }
+    .kicker {
+      font-weight: 700;
+      font-size: 28px;
+      letter-spacing: 0.16em;
+      color: #d6ac52;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .kicker i {
+      display: block;
+      width: 64px;
+      height: 4px;
+      background: #d6ac52;
+      transform-origin: 0 50%;
+    }
+    .big {
+      margin-top: 12px;
+      font-family: "Anton", sans-serif;
+      font-size: 112px;
+      line-height: 1;
+      text-transform: uppercase;
+      text-shadow: 0 6px 28px rgba(0, 0, 0, 0.6);
+    }
+    .line {
+      display: block;
+      overflow: hidden;
+      padding-top: 4px;
+    }
+    .w {
+      display: inline-block;
+    }
+    .gold {
+      color: #d6ac52;
+    }
+    .yel {
+      color: #ffd447;
+    }
+    #c-l1 {
+      font-size: 100px;
+    }
+    #c-l2 {
+      margin-top: 18px;
+      font-weight: 800;
+      font-size: 44px;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+    }
+    #c-l2 .w {
+      opacity: 0.25;
+    }
+  </style>
+  <div id="root" data-composition-id="argument" data-width="1080" data-height="1920">
+    <!-- Argument 1: "namun senyap seribu bahasa, hanya ada lawatan tapak sahaja" (source 15.14–21.36 s) -->
+    <div id="a-blk" class="blk clip" data-start="0.7" data-duration="5.85" data-track-index="0">
+      <div class="kicker"><i id="a-rule"></i><span id="a-kick">Hujah 1 &nbsp;·&nbsp; Hanya lawatan tapak</span></div>
+      <div class="big">
+        <span class="line" data-layout-allow-overflow><span id="a-w1" class="w yel">Senyap</span> <span id="a-w2" class="w">seribu</span></span>
+        <span class="line" data-layout-allow-overflow><span id="a-w3" class="w">bahasa</span></span>
+      </div>
+    </div>
+
+    <!-- "Jadi semua projek-projek ini penting." (source 21.54–24.62 s) -->
+    <div id="b-blk" class="blk clip" data-start="6.6" data-duration="3.95" data-track-index="1">
+      <div class="kicker"><i id="b-rule"></i><span>Penegasan</span></div>
+      <div class="big">
+        <span class="line" data-layout-allow-overflow><span id="b-w1" class="w">Semua projek</span></span>
+        <span class="line" data-layout-allow-overflow><span id="b-w2" class="w">ini</span> <span id="b-w3" class="w yel">penting</span></span>
+      </div>
+    </div>
+
+    <!-- Argument 2: "pembangunan yang inklusif memerlukan pendekatan yang mendengar denyut nadi rakyat" (source 26.22–32.04 s) -->
+    <div id="c-blk" class="blk clip" data-start="10.6" data-duration="8.15" data-track-index="2">
+      <div class="kicker"><i id="c-rule"></i><span>Hujah 2</span></div>
+      <div id="c-l1" class="big">
+        <span class="line" data-layout-allow-overflow><span id="c-w1" class="w">Pembangunan</span> <span id="c-w2" class="w gold">inklusif</span></span>
+      </div>
+      <div id="c-l2">
+        <span id="c-w3" class="w">Mendengar</span> <span id="c-w4" class="w">denyut</span> <span id="c-w5" class="w">nadi</span>
+        <span id="c-w6" class="w yel">rakyat</span>
+      </div>
+    </div>
+  </div>
+  <script>
+    // Local time = source time − 15.0 s.
+    const tl = gsap.timeline({ paused: true });
+    const reveal = (sel, t) =>
+      tl.fromTo(sel, { yPercent: 105 }, { yPercent: 0, duration: 0.45, ease: "power4.out" }, t);
+    const kick = (rule, t) => tl.fromTo(rule, { scaleX: 0 }, { scaleX: 1, duration: 0.6, ease: "expo.out" }, t);
+
+    // A — each word rises out of its mask on the word.
+    kick("#a-rule", 0.7);
+    tl.fromTo("#a-kick", { opacity: 0, filter: "blur(6px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.18, ease: "power4.out" }, 0.75);
+    reveal("#a-w1", 0.92); // senyap 15.94
+    reveal("#a-w2", 1.38); // seribu 16.40
+    reveal("#a-w3", 2.16); // bahasa 17.18
+    tl.to("#a-blk", { opacity: 0, filter: "blur(8px)", duration: 0.2, ease: "power2.in" }, 6.3);
+
+    // B
+    kick("#b-rule", 6.6);
+    reveal("#b-w1", 6.73); // semua 21.75
+    reveal("#b-w2", 8.38); // ini 23.40
+    reveal("#b-w3", 8.63); // penting 23.65
+    tl.fromTo("#b-w3", { scale: 1 }, { scale: 1.08, duration: 0.12, ease: "power2.out", transformOrigin: "0% 100%" }, 9.0);
+    tl.to("#b-w3", { scale: 1, duration: 0.3, ease: "power2.out" }, 9.12);
+    tl.to("#b-blk", { opacity: 0, filter: "blur(8px)", duration: 0.2, ease: "power2.in" }, 10.3);
+
+    // C — line 1 rises, line 2 lights word by word from grey to white.
+    kick("#c-rule", 10.6);
+    reveal("#c-w1", 11.2); // pembangunan 26.22
+    reveal("#c-w2", 12.54); // inklusif 27.56
+    const light = (sel, t) => tl.to(sel, { opacity: 1, duration: 0.1, ease: "none" }, t);
+    light("#c-w3", 15.06); // mendengar 30.06
+    light("#c-w4", 15.77); // denyut 30.77
+    light("#c-w5", 16.25); // nadi 31.25
+    light("#c-w6", 16.55); // rakyat 31.55
+    tl.to("#c-blk", { opacity: 0, filter: "blur(8px)", duration: 0.2, ease: "power2.in" }, 18.5);
+
+    window.__timelines["argument"] = tl;
+  </script>
+</template>

@@ -1,0 +1,153 @@
+<template>
+  <style>
+    @font-face {
+      font-family: "Anton";
+      src: url("assets/fonts/anton-latin-400-normal.woff2") format("woff2");
+      font-weight: 400;
+    }
+    #root {
+      position: absolute;
+      inset: 0;
+      background: transparent;
+      font-family: "Montserrat", sans-serif;
+      color: #fff;
+    }
+    .blk {
+      position: absolute;
+      left: 72px;
+      top: 196px;
+      width: 936px;
+      height: 300px;
+    }
+    .kicker {
+      font-weight: 700;
+      font-size: 28px;
+      letter-spacing: 0.16em;
+      color: #d6ac52;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .kicker i {
+      display: block;
+      width: 64px;
+      height: 4px;
+      background: #d6ac52;
+      transform-origin: 0 50%;
+    }
+    .small {
+      margin-top: 14px;
+      font-weight: 800;
+      font-size: 42px;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+    }
+    .small .w {
+      opacity: 0.25;
+    }
+    .big {
+      font-family: "Anton", sans-serif;
+      font-size: 112px;
+      line-height: 1;
+      text-transform: uppercase;
+      text-shadow: 0 6px 28px rgba(0, 0, 0, 0.6);
+    }
+    .line {
+      display: block;
+      overflow: hidden;
+      padding-top: 4px;
+    }
+    .w {
+      display: inline-block;
+    }
+    .gold {
+      color: #d6ac52;
+    }
+    .yel {
+      color: #ffd447;
+    }
+    #d-rmk {
+      display: inline-block;
+      margin-top: 4px;
+      font-family: "Anton", sans-serif;
+      font-size: 168px;
+      line-height: 1;
+      color: #d6ac52;
+      text-shadow: 0 0 36px rgba(214, 172, 82, 0.45), 0 6px 28px rgba(0, 0, 0, 0.6);
+    }
+    #e-big,
+    #f-big {
+      margin-top: 12px;
+    }
+  </style>
+  <div id="root" data-composition-id="climax" data-width="1080" data-height="1920">
+    <!-- "…jika projek ini diberikan perhatian dan diluluskan dalam RMK13 ini…" (source 35.20–38.97 s) -->
+    <div id="d-blk" class="blk clip" data-start="0.3" data-duration="5.75" data-track-index="0">
+      <div class="kicker"><i id="d-rule"></i><span>Tuntutan</span></div>
+      <div class="small">
+        <span id="d-w1" class="w">Beri perhatian</span> <span id="d-w2" class="w">&amp; luluskan</span>
+        <span id="d-w3" class="w">dalam</span>
+      </div>
+      <div id="d-rmk">RMK13</div>
+    </div>
+
+    <!-- "…ia akan memberi manfaat besar kepada rakyat di parlimen saya…" (source 39.03–42.33 s) -->
+    <div id="e-blk" class="blk clip" data-start="6.0" data-duration="2.9" data-track-index="1">
+      <div class="kicker"><i id="e-rule"></i><span>Impak</span></div>
+      <div id="e-big" class="big">
+        <span class="line" data-layout-allow-overflow><span id="e-w1" class="w yel">Manfaat</span> <span id="e-w2" class="w yel">besar</span></span>
+      </div>
+      <div class="small"><span id="e-w3" class="w">Kepada rakyat</span> <span id="e-w4" class="w">Parlimen Parit</span></div>
+    </div>
+
+    <!-- "…dan menyumbang kepada kemajuan yang menyeluruh di negeri Perak." (source 42.52–46.44 s) -->
+    <div id="f-blk" class="blk clip" data-start="8.95" data-duration="3.85" data-track-index="2">
+      <div class="kicker"><i id="f-rule"></i><span>Matlamat</span></div>
+      <div id="f-big" class="big">
+        <span class="line" data-layout-allow-overflow><span id="f-w1" class="w">Kemajuan</span></span>
+        <span class="line" data-layout-allow-overflow><span id="f-w2" class="w gold">menyeluruh</span></span>
+      </div>
+      <div class="small"><span id="f-w3" class="w">Di negeri</span> <span id="f-w4" class="w yel">Perak</span></div>
+    </div>
+  </div>
+  <script>
+    // Local time = source time − 33.8 s.
+    const tl = gsap.timeline({ paused: true });
+    const reveal = (sel, t) =>
+      tl.fromTo(sel, { yPercent: 105 }, { yPercent: 0, duration: 0.45, ease: "power4.out" }, t);
+    const kick = (rule, t) => tl.fromTo(rule, { scaleX: 0 }, { scaleX: 1, duration: 0.6, ease: "expo.out" }, t);
+    const light = (sel, t) => tl.to(sel, { opacity: 1, duration: 0.1, ease: "none" }, t);
+
+    // D — the ask, landing on "RMK13" with the one big hit of the film.
+    kick("#d-rule", 0.3);
+    light("#d-w1", 2.21); // diberikan perhatian 36.01
+    light("#d-w2", 3.5); // diluluskan 37.30
+    light("#d-w3", 4.14); // dalam 37.94
+    tl.fromTo(
+      "#d-rmk",
+      { opacity: 0, scale: 1.35, filter: "blur(10px)" },
+      { opacity: 1, scale: 1, filter: "blur(0px)", duration: 0.4, ease: "expo.out", transformOrigin: "0% 60%" },
+      4.45,
+    ); // RMK13 38.27
+    tl.to("#d-blk", { opacity: 0, filter: "blur(8px)", duration: 0.2, ease: "power2.in" }, 5.82);
+
+    // E
+    kick("#e-rule", 6.0);
+    reveal("#e-w1", 6.06); // manfaat 39.88
+    reveal("#e-w2", 6.54); // besar 40.36
+    light("#e-w3", 7.23); // rakyat 41.05
+    light("#e-w4", 7.74); // parlimen 41.56
+    tl.to("#e-blk", { opacity: 0, filter: "blur(8px)", duration: 0.2, ease: "power2.in" }, 8.7);
+
+    // F
+    kick("#f-rule", 8.95);
+    reveal("#f-w1", 9.73); // kemajuan 43.55
+    reveal("#f-w2", 10.5); // menyeluruh 44.32
+    light("#f-w3", 11.28); // negeri 45.10
+    light("#f-w4", 11.68); // Perak 45.50
+    tl.to("#f-blk", { opacity: 0, filter: "blur(8px)", duration: 0.2, ease: "power2.in" }, 12.55);
+
+    window.__timelines["climax"] = tl;
+  </script>
+</template>

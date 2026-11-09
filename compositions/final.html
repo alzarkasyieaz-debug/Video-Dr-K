@@ -1,0 +1,119 @@
+<template>
+  <style>
+    @font-face {
+      font-family: "Anton";
+      src: url("assets/fonts/anton-latin-400-normal.woff2") format("woff2");
+      font-weight: 400;
+    }
+    #root {
+      position: absolute;
+      inset: 0;
+      background: transparent;
+      font-family: "Montserrat", sans-serif;
+      color: #fff;
+    }
+    #fin-scrim {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(8, 26, 50, 0.9) 0%, rgba(8, 11, 19, 0.86) 100%);
+    }
+    #fin-card {
+      position: absolute;
+      left: 72px;
+      top: 470px;
+      width: 936px;
+      height: 840px;
+    }
+    #fin-loc {
+      font-weight: 700;
+      font-size: 28px;
+      letter-spacing: 0.16em;
+      color: #d6ac52;
+      text-transform: uppercase;
+    }
+    #fin-rule {
+      margin-top: 18px;
+      width: 160px;
+      height: 5px;
+      background: #d6ac52;
+      transform-origin: 0 50%;
+    }
+    #fin-name {
+      margin-top: 26px;
+      font-family: "Anton", sans-serif;
+      font-size: 92px;
+      line-height: 1.04;
+      text-transform: uppercase;
+    }
+    .line {
+      display: block;
+      overflow: hidden;
+      padding-top: 4px;
+    }
+    .w {
+      display: inline-block;
+    }
+    #fin-seat {
+      margin-top: 12px;
+      font-weight: 600;
+      font-size: 40px;
+      color: #ffd447;
+    }
+    #fin-quote {
+      margin-top: 44px;
+      padding-left: 28px;
+      border-left: 5px solid #d6ac52;
+      font-weight: 600;
+      font-style: italic;
+      font-size: 36px;
+      line-height: 1.38;
+      color: #f2f2f2;
+    }
+    #fin-quote b {
+      font-style: normal;
+      font-weight: 800;
+      color: #ffd447;
+    }
+    #fin-credit {
+      margin-top: 40px;
+      font-weight: 600;
+      font-size: 28px;
+      color: #b9c0cc;
+    }
+  </style>
+  <div
+    id="root"
+    data-composition-id="final"
+    data-width="1080"
+    data-height="1920"
+    data-composition-variables='[{"id":"fin-mp-name-1","type":"string","label":"Nama (baris 1)","default":"Hj. Muhammad Ismi"},{"id":"fin-mp-name-2","type":"string","label":"Nama (baris 2)","default":"bin Mat Taib"},{"id":"fin-mp-seat","type":"string","label":"Jawatan / kawasan","default":"Ahli Parlimen Parit, Perak"}]'
+  >
+    <div id="fin-scrim" class="clip" data-start="0" data-duration="7.1" data-track-index="0"></div>
+    <div id="fin-card" class="clip" data-start="0.5" data-duration="6.6" data-track-index="1">
+      <div id="fin-loc">Dewan Rakyat &nbsp;|&nbsp; Parlimen Malaysia</div>
+      <div id="fin-rule"></div>
+      <div id="fin-name">
+        <span class="line" data-layout-allow-overflow><span id="fin-n1" class="w" data-var-text="fin-mp-name-1">Hj. Muhammad Ismi</span></span>
+        <span class="line" data-layout-allow-overflow><span id="fin-n2" class="w" data-var-text="fin-mp-name-2">bin Mat Taib</span></span>
+      </div>
+      <div id="fin-seat" data-var-text="fin-mp-seat">Ahli Parlimen Parit, Perak</div>
+      <div id="fin-quote">
+        “…ia akan memberi <b>manfaat besar</b> kepada rakyat di parlimen saya dan menyumbang kepada
+        <b>kemajuan yang menyeluruh</b> di negeri Perak.”
+      </div>
+      <div id="fin-credit">Petikan ucapan asal &nbsp;·&nbsp; Rakaman: RTM</div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#fin-scrim", { opacity: 0 }, { opacity: 1, duration: 1.0, ease: "power2.inOut" }, 0);
+    tl.fromTo("#fin-loc", { opacity: 0, filter: "blur(6px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.2, ease: "power4.out" }, 0.55);
+    tl.fromTo("#fin-rule", { scaleX: 0 }, { scaleX: 1, duration: 0.7, ease: "expo.out" }, 0.6);
+    tl.fromTo(["#fin-n1", "#fin-n2"], { yPercent: 105 }, { yPercent: 0, duration: 0.55, stagger: 0.12, ease: "power4.out" }, 1.0);
+    tl.fromTo("#fin-seat", { opacity: 0, filter: "blur(6px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.2, ease: "power4.out" }, 1.45);
+    tl.fromTo("#fin-quote", { opacity: 0, filter: "blur(8px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.2, ease: "power4.out" }, 2.0);
+    tl.fromTo("#fin-credit", { opacity: 0 }, { opacity: 1, duration: 0.3, ease: "power2.out" }, 2.4);
+    tl.to(["#fin-card", "#fin-scrim"], { opacity: 0, duration: 0.9, ease: "power2.in" }, 6.1);
+    window.__timelines["final"] = tl;
+  </script>
+</template>

@@ -1,0 +1,536 @@
+[
+  {
+    "text": "Beberapa",
+    "start": 0.16,
+    "end": 0.8,
+    "id": "w0"
+  },
+  {
+    "text": "projek",
+    "start": 0.8,
+    "end": 1.4,
+    "id": "w1"
+  },
+  {
+    "text": "di",
+    "start": 1.4,
+    "end": 1.6,
+    "id": "w2"
+  },
+  {
+    "text": "kawasan",
+    "start": 1.6,
+    "end": 2.3,
+    "id": "w3"
+  },
+  {
+    "text": "saya",
+    "start": 2.3,
+    "end": 2.73,
+    "id": "w4"
+  },
+  {
+    "text": "yang",
+    "start": 2.73,
+    "end": 2.85,
+    "id": "w5"
+  },
+  {
+    "text": "perlu",
+    "start": 3.09,
+    "end": 3.41,
+    "id": "w6"
+  },
+  {
+    "text": "disegerakan",
+    "start": 3.41,
+    "end": 4.21,
+    "id": "w7"
+  },
+  {
+    "text": "antaranya",
+    "start": 4.21,
+    "end": 4.96,
+    "id": "w8"
+  },
+  {
+    "text": "projek",
+    "start": 4.96,
+    "end": 5.42,
+    "id": "w9"
+  },
+  {
+    "text": "klinik",
+    "start": 5.42,
+    "end": 5.92,
+    "id": "w10"
+  },
+  {
+    "text": "kesihatan",
+    "start": 5.92,
+    "end": 6.66,
+    "id": "w11"
+  },
+  {
+    "text": "parit,",
+    "start": 6.66,
+    "end": 7.22,
+    "id": "w12"
+  },
+  {
+    "text": "projek",
+    "start": 7.3,
+    "end": 7.7,
+    "id": "w13"
+  },
+  {
+    "text": "sekolah",
+    "start": 7.7,
+    "end": 8.16,
+    "id": "w14"
+  },
+  {
+    "text": "menengah",
+    "start": 8.16,
+    "end": 8.69,
+    "id": "w15"
+  },
+  {
+    "text": "bandar",
+    "start": 8.69,
+    "end": 9.09,
+    "id": "w16"
+  },
+  {
+    "text": "universiti,",
+    "start": 9.09,
+    "end": 10.02,
+    "id": "w17"
+  },
+  {
+    "text": "projek",
+    "start": 10.02,
+    "end": 10.63,
+    "id": "w18"
+  },
+  {
+    "text": "kompleks",
+    "start": 10.77,
+    "end": 11.53,
+    "id": "w19"
+  },
+  {
+    "text": "sukan",
+    "start": 11.63,
+    "end": 12.11,
+    "id": "w20"
+  },
+  {
+    "text": "yang",
+    "start": 12.11,
+    "end": 12.3,
+    "id": "w21"
+  },
+  {
+    "text": "telahpun",
+    "start": 12.3,
+    "end": 13.44,
+    "id": "w22"
+  },
+  {
+    "text": "ada",
+    "start": 13.45,
+    "end": 13.77,
+    "id": "w23"
+  },
+  {
+    "text": "lawatan",
+    "start": 13.77,
+    "end": 14.49,
+    "id": "w24"
+  },
+  {
+    "text": "tapak",
+    "start": 14.57,
+    "end": 15.14,
+    "id": "w25"
+  },
+  {
+    "text": "namun",
+    "start": 15.14,
+    "end": 15.8,
+    "id": "w26"
+  },
+  {
+    "text": "senyap",
+    "start": 15.94,
+    "end": 16.4,
+    "id": "w27"
+  },
+  {
+    "text": "seribu",
+    "start": 16.4,
+    "end": 17.18,
+    "id": "w28"
+  },
+  {
+    "text": "bahasa",
+    "start": 17.18,
+    "end": 17.88,
+    "id": "w29"
+  },
+  {
+    "text": "hanya",
+    "start": 17.88,
+    "end": 18.47,
+    "id": "w30"
+  },
+  {
+    "text": "ada",
+    "start": 18.47,
+    "end": 18.67,
+    "id": "w31"
+  },
+  {
+    "text": "lawatan",
+    "start": 19.11,
+    "end": 19.64,
+    "id": "w32"
+  },
+  {
+    "text": "tapak",
+    "start": 19.64,
+    "end": 20.22,
+    "id": "w33"
+  },
+  {
+    "text": "sahaja.",
+    "start": 20.23,
+    "end": 21.36,
+    "id": "w34"
+  },
+  {
+    "text": "Jadi",
+    "start": 21.54,
+    "end": 21.75,
+    "id": "w35"
+  },
+  {
+    "text": "semua",
+    "start": 21.75,
+    "end": 22.21,
+    "id": "w36"
+  },
+  {
+    "text": "projek-projek",
+    "start": 22.21,
+    "end": 23.34,
+    "id": "w37"
+  },
+  {
+    "text": "ini",
+    "start": 23.4,
+    "end": 23.63,
+    "id": "w38"
+  },
+  {
+    "text": "penting.",
+    "start": 23.65,
+    "end": 24.62,
+    "id": "w39"
+  },
+  {
+    "text": "Puan",
+    "start": 24.62,
+    "end": 24.94,
+    "id": "w40"
+  },
+  {
+    "text": "Timbalani",
+    "start": 24.94,
+    "end": 25.59,
+    "id": "w41"
+  },
+  {
+    "text": "Betul,",
+    "start": 25.9,
+    "end": 26.22,
+    "id": "w42"
+  },
+  {
+    "text": "pembangunan",
+    "start": 26.22,
+    "end": 27.11,
+    "id": "w43"
+  },
+  {
+    "text": "yang",
+    "start": 27.11,
+    "end": 27.31,
+    "id": "w44"
+  },
+  {
+    "text": "inklusif",
+    "start": 27.56,
+    "end": 28.08,
+    "id": "w45"
+  },
+  {
+    "text": "memerlukan",
+    "start": 28.08,
+    "end": 28.62,
+    "id": "w46"
+  },
+  {
+    "text": "pendekatan",
+    "start": 28.62,
+    "end": 29.71,
+    "id": "w47"
+  },
+  {
+    "text": "yang",
+    "start": 29.71,
+    "end": 29.98,
+    "id": "w48"
+  },
+  {
+    "text": "mendengar",
+    "start": 30.06,
+    "end": 30.77,
+    "id": "w49"
+  },
+  {
+    "text": "denyut",
+    "start": 30.77,
+    "end": 31.17,
+    "id": "w50"
+  },
+  {
+    "text": "nadi",
+    "start": 31.25,
+    "end": 31.48,
+    "id": "w51"
+  },
+  {
+    "text": "rakyat",
+    "start": 31.55,
+    "end": 32.04,
+    "id": "w52"
+  },
+  {
+    "text": "di",
+    "start": 32.15,
+    "end": 32.21,
+    "id": "w53"
+  },
+  {
+    "text": "peringkat",
+    "start": 32.21,
+    "end": 32.91,
+    "id": "w54"
+  },
+  {
+    "text": "akar",
+    "start": 33.01,
+    "end": 33.18,
+    "id": "w55"
+  },
+  {
+    "text": "umbi.",
+    "start": 33.27,
+    "end": 33.84,
+    "id": "w56"
+  },
+  {
+    "text": "Saya",
+    "start": 33.84,
+    "end": 34.72,
+    "id": "w57"
+  },
+  {
+    "text": "percaya",
+    "start": 34.72,
+    "end": 34.76,
+    "id": "w58"
+  },
+  {
+    "text": "bahawa",
+    "start": 34.88,
+    "end": 35.13,
+    "id": "w59"
+  },
+  {
+    "text": "jika",
+    "start": 35.2,
+    "end": 35.39,
+    "id": "w60"
+  },
+  {
+    "text": "projek",
+    "start": 35.39,
+    "end": 35.68,
+    "id": "w61"
+  },
+  {
+    "text": "ini",
+    "start": 35.68,
+    "end": 36.01,
+    "id": "w62"
+  },
+  {
+    "text": "diberikan",
+    "start": 36.01,
+    "end": 36.37,
+    "id": "w63"
+  },
+  {
+    "text": "perhatian",
+    "start": 36.63,
+    "end": 37.11,
+    "id": "w64"
+  },
+  {
+    "text": "dan",
+    "start": 37.11,
+    "end": 37.3,
+    "id": "w65"
+  },
+  {
+    "text": "diluluskan",
+    "start": 37.3,
+    "end": 37.94,
+    "id": "w66"
+  },
+  {
+    "text": "dalam",
+    "start": 37.94,
+    "end": 38.27,
+    "id": "w67"
+  },
+  {
+    "text": "RMK13",
+    "start": 38.27,
+    "end": 38.77,
+    "id": "w68"
+  },
+  {
+    "text": "ini",
+    "start": 38.84,
+    "end": 38.97,
+    "id": "w69"
+  },
+  {
+    "text": "ia",
+    "start": 39.03,
+    "end": 39.17,
+    "id": "w70"
+  },
+  {
+    "text": "akan",
+    "start": 39.29,
+    "end": 39.4,
+    "id": "w71"
+  },
+  {
+    "text": "memberi",
+    "start": 39.47,
+    "end": 39.88,
+    "id": "w72"
+  },
+  {
+    "text": "manfaat",
+    "start": 39.88,
+    "end": 40.33,
+    "id": "w73"
+  },
+  {
+    "text": "besar",
+    "start": 40.36,
+    "end": 40.65,
+    "id": "w74"
+  },
+  {
+    "text": "kepada",
+    "start": 40.9,
+    "end": 41.05,
+    "id": "w75"
+  },
+  {
+    "text": "rakyat",
+    "start": 41.05,
+    "end": 41.42,
+    "id": "w76"
+  },
+  {
+    "text": "di",
+    "start": 41.5,
+    "end": 41.56,
+    "id": "w77"
+  },
+  {
+    "text": "parlimen",
+    "start": 41.56,
+    "end": 41.95,
+    "id": "w78"
+  },
+  {
+    "text": "saya",
+    "start": 41.95,
+    "end": 42.33,
+    "id": "w79"
+  },
+  {
+    "text": "dan",
+    "start": 42.33,
+    "end": 42.52,
+    "id": "w80"
+  },
+  {
+    "text": "menyumbang",
+    "start": 42.78,
+    "end": 43.14,
+    "id": "w81"
+  },
+  {
+    "text": "kepada",
+    "start": 43.26,
+    "end": 43.55,
+    "id": "w82"
+  },
+  {
+    "text": "kemajuan",
+    "start": 43.55,
+    "end": 44.06,
+    "id": "w83"
+  },
+  {
+    "text": "yang",
+    "start": 44.06,
+    "end": 44.32,
+    "id": "w84"
+  },
+  {
+    "text": "menyeluruh",
+    "start": 44.32,
+    "end": 44.85,
+    "id": "w85"
+  },
+  {
+    "text": "di",
+    "start": 44.85,
+    "end": 45.1,
+    "id": "w86"
+  },
+  {
+    "text": "negeri",
+    "start": 45.1,
+    "end": 45.48,
+    "id": "w87"
+  },
+  {
+    "text": "Perak.",
+    "start": 45.5,
+    "end": 46.44,
+    "id": "w88"
+  }
+]

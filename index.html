@@ -1,15 +1,16 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ms">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=1920, height=1080" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1080, height=1920">
     <script src="assets/vendor/gsap.min.js"></script>
     <style>
-      /* Placeholders: replace all three with the film's own palette and display face. */
       :root {
-        --ground: #000;
+        --navy: #081a32;
+        --gold: #d6ac52;
+        --yellow: #ffd447;
+        --ground: #080b13;
         --ink: #ffffff;
-        --font-display: sans-serif;
       }
       * {
         margin: 0;
@@ -18,44 +19,159 @@
       }
       html,
       body {
-        margin: 0;
-        width: 1920px;
-        height: 1080px;
+        width: 1080px;
+        height: 1920px;
         overflow: hidden;
         background: var(--ground);
       }
       #root {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: var(--font-display);
+        position: relative;
+        width: 1080px;
+        height: 1920px;
+        overflow: hidden;
       }
-      #title {
-        color: var(--ink);
-        font-size: 72px;
-        font-weight: 600;
-        letter-spacing: -0.03em;
+      #bg {
+        position: absolute;
+        inset: 0;
+        background: var(--ground);
+        z-index: 0;
+      }
+      /* Camera: one wrapper moves for every punch-in and push. Media inside are 1080x1440 (3:4 crop of the 4K plate). */
+      #cam {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 1080px;
+        height: 1440px;
+        transform-origin: 0 0;
+        z-index: 1;
+      }
+      #cam video,
+      #cam img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 1080px;
+        height: 1440px;
+        object-fit: cover;
+      }
+      /* Navy information band over the top of the frame, and a calm floor under the platform UI. */
+      #band {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 1080px;
+        height: 620px;
+        background: linear-gradient(
+          180deg,
+          #081a32 0%,
+          rgba(8, 26, 50, 0.96) 34%,
+          rgba(8, 26, 50, 0.62) 62%,
+          rgba(8, 26, 50, 0) 100%
+        );
+        z-index: 2;
+      }
+      #floor {
+        position: absolute;
+        left: 0;
+        top: 1180px;
+        width: 1080px;
+        height: 740px;
+        background: linear-gradient(
+          180deg,
+          rgba(8, 11, 19, 0) 0%,
+          rgba(8, 11, 19, 0.55) 35%,
+          rgba(8, 11, 19, 0.85) 100%
+        );
+        z-index: 2;
+      }
+      #dip {
+        position: absolute;
+        inset: 0;
+        background: #000;
+        opacity: 0;
+        z-index: 3;
+      }
+      .scene {
+        position: absolute;
+        inset: 0;
       }
     </style>
   </head>
   <body>
-    <div
-      id="root"
-      data-composition-id="main"
-      data-start="0"
-      data-duration="10"
-      data-width="1920"
-      data-height="1080"
-    >
-      <h1 id="title" class="clip" data-start="0" data-duration="10" data-track-index="0">Title</h1>
+    <div data-hf-id="hf-v63y" id="root" data-composition-id="main" data-start="0" data-duration="60" data-width="1080" data-height="1920">
+      <div data-hf-id="hf-2xc0" id="bg"></div>
+
+      <div data-hf-id="hf-ftaq" id="cam">
+        <!-- Cold open: the speaker's own line, source 15.08–21.48 s -->
+        <video data-color-grading="{&quot;preset&quot;:&quot;skin-soft&quot;,&quot;intensity&quot;:0.55,&quot;adjust&quot;:{&quot;exposure&quot;:0.04,&quot;contrast&quot;:0.04,&quot;highlights&quot;:-0.08,&quot;shadows&quot;:0.06,&quot;whites&quot;:0,&quot;blacks&quot;:0,&quot;temperature&quot;:0.08,&quot;tint&quot;:0.02,&quot;vibrance&quot;:0.02,&quot;saturation&quot;:0.04},&quot;details&quot;:{&quot;vignette&quot;:0.05,&quot;vignetteMidpoint&quot;:0.5,&quot;vignetteRoundness&quot;:0,&quot;vignetteFeather&quot;:0.65,&quot;grain&quot;:0,&quot;grainSize&quot;:0.25,&quot;grainRoughness&quot;:0.5},&quot;effects&quot;:{&quot;blur&quot;:0,&quot;pixelate&quot;:0,&quot;chromaBleed&quot;:0,&quot;tapeDamage&quot;:0,&quot;tapeTracking&quot;:0,&quot;tapeNoise&quot;:1,&quot;tapeSpeed&quot;:0.5,&quot;filmArtifacts&quot;:0,&quot;halftone&quot;:0,&quot;halftoneSize&quot;:0,&quot;twoInkPrint&quot;:0,&quot;twoInkPrintSize&quot;:0,&quot;ascii&quot;:0,&quot;asciiSize&quot;:0.06578947368421052,&quot;asciiInvert&quot;:0,&quot;asciiStyle&quot;:0,&quot;asciiColor&quot;:1,&quot;asciiRotation&quot;:0,&quot;dither&quot;:0,&quot;ditherSize&quot;:0,&quot;bloom&quot;:0,&quot;bloomRadius&quot;:8,&quot;monoScreen&quot;:0,&quot;monoScreenSize&quot;:0,&quot;monoScreenAngle&quot;:0,&quot;monoScreenSpread&quot;:0,&quot;monoScreenShape&quot;:0,&quot;monoScreenInvert&quot;:0,&quot;scanlines&quot;:0,&quot;scanlineCount&quot;:0,&quot;scanlineSoftness&quot;:0,&quot;chromaticAberration&quot;:0,&quot;chromaticAngle&quot;:0,&quot;crtCurvature&quot;:0,&quot;digitalGlitch&quot;:0,&quot;digitalGlitchColorSplit&quot;:0,&quot;digitalGlitchLineTear&quot;:0,&quot;digitalGlitchPixelate&quot;:0,&quot;digitalGlitchBlockAmount&quot;:0,&quot;digitalGlitchBlockDisplacement&quot;:0,&quot;digitalGlitchBlockOpacity&quot;:0,&quot;digitalGlitchSpeed&quot;:0,&quot;engraving&quot;:0,&quot;engravingSpacing&quot;:0.4117647058823529,&quot;engravingMinThickness&quot;:0.2,&quot;engravingMaxThickness&quot;:0.4571428571428572,&quot;engravingAngle&quot;:0.25,&quot;engravingContrast&quot;:0.4666666666666667,&quot;engravingSharpness&quot;:0.59,&quot;engravingWave&quot;:0.2,&quot;engravingWaveFrequency&quot;:0.2222222222222222,&quot;crosshatch&quot;:0,&quot;crosshatchSpacing&quot;:0.28,&quot;crosshatchThickness&quot;:0.25,&quot;crosshatchAngle&quot;:0.25,&quot;crosshatchContrast&quot;:0.3333333333333333,&quot;crosshatchEdges&quot;:0.5,&quot;crosshatchLineWeight&quot;:0,&quot;crosshatchWave&quot;:0.33,&quot;crosshatchWaveFrequency&quot;:0.2222222222222222,&quot;kuwahara&quot;:0,&quot;kuwaharaRadius&quot;:0.14285714285714285,&quot;kuwaharaSharpness&quot;:0.3125,&quot;kuwaharaSaturation&quot;:0.5},&quot;lut&quot;:null,&quot;colorSpace&quot;:&quot;rec709&quot;}" data-hf-id="hf-5ktd" id="v-open" class="clip" src="assets/speech.mp4" data-start="0" data-duration="6.4" data-media-start="15.08" data-track-index="0" data-has-audio="true" data-volume="1" playsinline></video>
+        <!-- Full speech, uncut, source 0–47.04 s -->
+        <video data-color-grading="{&quot;preset&quot;:&quot;skin-soft&quot;,&quot;intensity&quot;:0.55,&quot;adjust&quot;:{&quot;exposure&quot;:0.04,&quot;contrast&quot;:0.04,&quot;highlights&quot;:-0.08,&quot;shadows&quot;:0.06,&quot;whites&quot;:0,&quot;blacks&quot;:0,&quot;temperature&quot;:0.08,&quot;tint&quot;:0.02,&quot;vibrance&quot;:0.02,&quot;saturation&quot;:0.04},&quot;details&quot;:{&quot;vignette&quot;:0.05,&quot;vignetteMidpoint&quot;:0.5,&quot;vignetteRoundness&quot;:0,&quot;vignetteFeather&quot;:0.65,&quot;grain&quot;:0,&quot;grainSize&quot;:0.25,&quot;grainRoughness&quot;:0.5},&quot;effects&quot;:{&quot;blur&quot;:0,&quot;pixelate&quot;:0,&quot;chromaBleed&quot;:0,&quot;tapeDamage&quot;:0,&quot;tapeTracking&quot;:0,&quot;tapeNoise&quot;:1,&quot;tapeSpeed&quot;:0.5,&quot;filmArtifacts&quot;:0,&quot;halftone&quot;:0,&quot;halftoneSize&quot;:0,&quot;twoInkPrint&quot;:0,&quot;twoInkPrintSize&quot;:0,&quot;ascii&quot;:0,&quot;asciiSize&quot;:0.06578947368421052,&quot;asciiInvert&quot;:0,&quot;asciiStyle&quot;:0,&quot;asciiColor&quot;:1,&quot;asciiRotation&quot;:0,&quot;dither&quot;:0,&quot;ditherSize&quot;:0,&quot;bloom&quot;:0,&quot;bloomRadius&quot;:8,&quot;monoScreen&quot;:0,&quot;monoScreenSize&quot;:0,&quot;monoScreenAngle&quot;:0,&quot;monoScreenSpread&quot;:0,&quot;monoScreenShape&quot;:0,&quot;monoScreenInvert&quot;:0,&quot;scanlines&quot;:0,&quot;scanlineCount&quot;:0,&quot;scanlineSoftness&quot;:0,&quot;chromaticAberration&quot;:0,&quot;chromaticAngle&quot;:0,&quot;crtCurvature&quot;:0,&quot;digitalGlitch&quot;:0,&quot;digitalGlitchColorSplit&quot;:0,&quot;digitalGlitchLineTear&quot;:0,&quot;digitalGlitchPixelate&quot;:0,&quot;digitalGlitchBlockAmount&quot;:0,&quot;digitalGlitchBlockDisplacement&quot;:0,&quot;digitalGlitchBlockOpacity&quot;:0,&quot;digitalGlitchSpeed&quot;:0,&quot;engraving&quot;:0,&quot;engravingSpacing&quot;:0.4117647058823529,&quot;engravingMinThickness&quot;:0.2,&quot;engravingMaxThickness&quot;:0.4571428571428572,&quot;engravingAngle&quot;:0.25,&quot;engravingContrast&quot;:0.4666666666666667,&quot;engravingSharpness&quot;:0.59,&quot;engravingWave&quot;:0.2,&quot;engravingWaveFrequency&quot;:0.2222222222222222,&quot;crosshatch&quot;:0,&quot;crosshatchSpacing&quot;:0.28,&quot;crosshatchThickness&quot;:0.25,&quot;crosshatchAngle&quot;:0.25,&quot;crosshatchContrast&quot;:0.3333333333333333,&quot;crosshatchEdges&quot;:0.5,&quot;crosshatchLineWeight&quot;:0,&quot;crosshatchWave&quot;:0.33,&quot;crosshatchWaveFrequency&quot;:0.2222222222222222,&quot;kuwahara&quot;:0,&quot;kuwaharaRadius&quot;:0.14285714285714285,&quot;kuwaharaSharpness&quot;:0.3125,&quot;kuwaharaSaturation&quot;:0.5},&quot;lut&quot;:null,&quot;colorSpace&quot;:&quot;rec709&quot;}" data-hf-id="hf-qh2r" id="v-main" class="clip" src="assets/speech.mp4" data-start="6.4" data-duration="47.04" data-media-start="0" data-track-index="0" data-has-audio="true" data-volume="1" playsinline></video>
+        <!-- Last frame of the speech, held under the end card -->
+        <img data-color-grading="{&quot;preset&quot;:&quot;skin-soft&quot;,&quot;intensity&quot;:0.55,&quot;adjust&quot;:{&quot;exposure&quot;:0.04,&quot;contrast&quot;:0.04,&quot;highlights&quot;:-0.08,&quot;shadows&quot;:0.06,&quot;whites&quot;:0,&quot;blacks&quot;:0,&quot;temperature&quot;:0.08,&quot;tint&quot;:0.02,&quot;vibrance&quot;:0.02,&quot;saturation&quot;:0.04},&quot;details&quot;:{&quot;vignette&quot;:0.05,&quot;vignetteMidpoint&quot;:0.5,&quot;vignetteRoundness&quot;:0,&quot;vignetteFeather&quot;:0.65,&quot;grain&quot;:0,&quot;grainSize&quot;:0.25,&quot;grainRoughness&quot;:0.5},&quot;effects&quot;:{&quot;blur&quot;:0,&quot;pixelate&quot;:0,&quot;chromaBleed&quot;:0,&quot;tapeDamage&quot;:0,&quot;tapeTracking&quot;:0,&quot;tapeNoise&quot;:1,&quot;tapeSpeed&quot;:0.5,&quot;filmArtifacts&quot;:0,&quot;halftone&quot;:0,&quot;halftoneSize&quot;:0,&quot;twoInkPrint&quot;:0,&quot;twoInkPrintSize&quot;:0,&quot;ascii&quot;:0,&quot;asciiSize&quot;:0.06578947368421052,&quot;asciiInvert&quot;:0,&quot;asciiStyle&quot;:0,&quot;asciiColor&quot;:1,&quot;asciiRotation&quot;:0,&quot;dither&quot;:0,&quot;ditherSize&quot;:0,&quot;bloom&quot;:0,&quot;bloomRadius&quot;:8,&quot;monoScreen&quot;:0,&quot;monoScreenSize&quot;:0,&quot;monoScreenAngle&quot;:0,&quot;monoScreenSpread&quot;:0,&quot;monoScreenShape&quot;:0,&quot;monoScreenInvert&quot;:0,&quot;scanlines&quot;:0,&quot;scanlineCount&quot;:0,&quot;scanlineSoftness&quot;:0,&quot;chromaticAberration&quot;:0,&quot;chromaticAngle&quot;:0,&quot;crtCurvature&quot;:0,&quot;digitalGlitch&quot;:0,&quot;digitalGlitchColorSplit&quot;:0,&quot;digitalGlitchLineTear&quot;:0,&quot;digitalGlitchPixelate&quot;:0,&quot;digitalGlitchBlockAmount&quot;:0,&quot;digitalGlitchBlockDisplacement&quot;:0,&quot;digitalGlitchBlockOpacity&quot;:0,&quot;digitalGlitchSpeed&quot;:0,&quot;engraving&quot;:0,&quot;engravingSpacing&quot;:0.4117647058823529,&quot;engravingMinThickness&quot;:0.2,&quot;engravingMaxThickness&quot;:0.4571428571428572,&quot;engravingAngle&quot;:0.25,&quot;engravingContrast&quot;:0.4666666666666667,&quot;engravingSharpness&quot;:0.59,&quot;engravingWave&quot;:0.2,&quot;engravingWaveFrequency&quot;:0.2222222222222222,&quot;crosshatch&quot;:0,&quot;crosshatchSpacing&quot;:0.28,&quot;crosshatchThickness&quot;:0.25,&quot;crosshatchAngle&quot;:0.25,&quot;crosshatchContrast&quot;:0.3333333333333333,&quot;crosshatchEdges&quot;:0.5,&quot;crosshatchLineWeight&quot;:0,&quot;crosshatchWave&quot;:0.33,&quot;crosshatchWaveFrequency&quot;:0.2222222222222222,&quot;kuwahara&quot;:0,&quot;kuwaharaRadius&quot;:0.14285714285714285,&quot;kuwaharaSharpness&quot;:0.3125,&quot;kuwaharaSaturation&quot;:0.5},&quot;lut&quot;:null,&quot;colorSpace&quot;:&quot;rec709&quot;}" data-hf-id="hf-hbvv" id="v-still" class="clip" src="assets/speech-last.jpg" alt="" data-start="53.44" data-duration="6.56" data-track-index="0">
+      </div>
+
+      <div data-hf-id="hf-36fc" id="band"></div>
+      <div data-hf-id="hf-snk9" id="floor"></div>
+      <div data-hf-id="hf-c6yo" id="dip"></div>
+
+      <div data-hf-id="hf-1l58" id="hook" class="scene" data-composition-id="hook" data-composition-src="compositions/hook.html" data-start="0" data-duration="6.4" data-track-index="2" data-track-kind="graphics" data-width="1080" data-height="1920" style="z-index: 5"></div>
+      <div data-hf-id="hf-i274" id="issue" class="scene" data-composition-id="issue" data-composition-src="compositions/issue.html" data-start="6.4" data-duration="15" data-track-index="2" data-track-kind="graphics" data-width="1080" data-height="1920" style="z-index: 5"></div>
+      <div data-hf-id="hf-d5zl" id="argument" class="scene" data-composition-id="argument" data-composition-src="compositions/argument.html" data-start="21.4" data-duration="18.8" data-track-index="3" data-track-kind="graphics" data-width="1080" data-height="1920" style="z-index: 5"></div>
+      <div data-hf-id="hf-cvi4" id="climax" class="scene" data-composition-id="climax" data-composition-src="compositions/climax.html" data-start="40.2" data-duration="12.8" data-track-index="2" data-track-kind="graphics" data-width="1080" data-height="1920" style="z-index: 5"></div>
+      <div data-hf-id="hf-shxp" id="final" class="scene" data-composition-id="final" data-composition-src="compositions/final.html" data-start="52.9" data-duration="7.1" data-track-index="3" data-track-kind="graphics" data-width="1080" data-height="1920" style="z-index: 6"></div>
+      <div data-hf-id="hf-v13a" id="captions" class="scene" data-composition-id="captions" data-composition-src="compositions/captions.html" data-start="0" data-duration="53" data-track-index="4" data-track-kind="captions" data-width="1080" data-height="1920" style="z-index: 7"></div>
+
+      <!-- Sound design. Music bed slot: add <audio id="music"> here once a licensed track is in assets/music/. -->
+      <audio data-hf-id="hf-hw54" id="sfx-open-impact" class="clip" src="assets/sfx/impact-bass-1.mp3" data-start="0.8" data-duration="2.1" data-track-index="6" data-volume="0.22"></audio>
+      <audio data-hf-id="hf-a5on" id="sfx-cut-whoosh" class="clip" src="assets/sfx/whoosh-short.mp3" data-start="6.24" data-duration="0.57" data-track-index="6" data-volume="0.3"></audio>
+      <audio data-hf-id="hf-1eyv" id="sfx-climax-whoosh" class="clip" src="assets/sfx/whoosh-short.mp3" data-start="40.04" data-duration="0.57" data-track-index="7" data-volume="0.22"></audio>
+      <audio data-hf-id="hf-c7g2" id="sfx-rmk-impact" class="clip" src="assets/sfx/impact-bass-2.mp3" data-start="42.72" data-duration="2.58" data-track-index="6" data-volume="0.2"></audio>
+      <audio data-hf-id="hf-8rs3" id="sfx-end-impact" class="clip" src="assets/sfx/impact-bass-1.mp3" data-start="53.95" data-duration="2.1" data-track-index="7" data-volume="0.16"></audio>
     </div>
+
     <script>
+      window.__timelines = window.__timelines || {};
       const tl = gsap.timeline({ paused: true });
-      // Example: tl.fromTo("#title", { opacity: 0, filter: "blur(8px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.18, ease: "power4.out" }, 0);
+
+      // Camera framings. Face centre in the 1080x1440 plate sits at (540, 403).
+      const FACE_Y = 403;
+      const frame = (s, fy = 790) => ({ scale: s, x: (1080 - 1080 * s) / 2, y: fy - FACE_Y * s });
+      const WIDE = 1.3333;
+
+      // S1 hook: open wide, hard punch-in on "senyap", slow push.
+      tl.set("#cam", frame(WIDE), 0);
+      tl.set("#cam", frame(1.6, 760), 0.86);
+      tl.to("#cam", { ...frame(1.7, 760), duration: 5.3, ease: "none" }, 0.86);
+      // Dip cut into the full speech.
+      tl.to("#dip", { opacity: 0.4, duration: 0.1, ease: "power1.in" }, 6.3);
+      tl.set("#dip", { opacity: 0 }, 6.4);
+
+      // S2 issue: wide, slow cinematic push across the project list.
+      tl.set("#cam", frame(WIDE), 6.4);
+      tl.to("#cam", { ...frame(1.45), duration: 15.0, ease: "none" }, 6.4);
+
+      // S3 argument 1: punch-in on "senyap seribu bahasa" (source 15.94 s).
+      tl.set("#cam", frame(1.62, 770), 22.3);
+      tl.to("#cam", { ...frame(1.68, 770), duration: 5.6, ease: "none" }, 22.3);
+      // Back out on "Jadi semua projek-projek ini penting".
+      tl.set("#cam", frame(1.4), 27.9);
+      tl.to("#cam", { ...frame(1.46), duration: 4.0, ease: "none" }, 27.9);
+      // Argument 2: inclusive development, push.
+      tl.set("#cam", frame(WIDE), 32.0);
+      tl.to("#cam", { ...frame(1.5), duration: 8.2, ease: "none" }, 32.0);
+
+      // S5 climax: cinematic close-up, then ease back for the closing line.
+      tl.set("#cam", frame(1.72, 760), 40.2);
+      tl.to("#cam", { ...frame(1.78, 760), duration: 7.6, ease: "none" }, 40.2);
+      tl.to("#cam", { ...frame(1.5), duration: 1.2, ease: "power2.inOut" }, 47.9);
+      tl.to("#cam", { ...frame(1.56), duration: 3.8, ease: "none" }, 49.1);
+
+      // S6 final: slow push on the held frame under the end card, fade out.
+      tl.to("#cam", { ...frame(1.66), duration: 7.1, ease: "none" }, 52.9);
+      tl.to("#dip", { opacity: 1, duration: 0.9, ease: "power2.in" }, 59.0);
+
       window.__timelines["main"] = tl;
-      tl.seek(0);
     </script>
   </body>
 </html>
