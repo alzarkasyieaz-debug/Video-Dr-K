@@ -7,5 +7,12 @@
     "check": "npx --yes hyperframes@0.9.26 check",
     "render": "npx --yes hyperframes@0.9.26 render",
     "publish": "npx --yes hyperframes@0.9.26 publish"
+  },
+  "dependencies": {
+    "@elevenlabs/elevenlabs-js": "^2.77.0",
+    "@remotion/cli": "^4.0.541",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "remotion": "^4.0.541"
   }
 }

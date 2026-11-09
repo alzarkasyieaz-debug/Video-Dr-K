@@ -2,3 +2,4 @@ node_modules/
 renders/
 *.mp4
 .hyperframes/
+.venv/
