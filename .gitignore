@@ -3,3 +3,4 @@ renders/
 *.mp4
 .hyperframes/
 .venv/
+exports/.render_*.log
