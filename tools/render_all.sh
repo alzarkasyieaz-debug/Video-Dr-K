@@ -4,6 +4,7 @@ cd "$(dirname "$0")/.."
 for id in "$@"; do
   slug=$(python3 -c "import json;print(json.load(open('clips/KULIAH_$id.json'))['slug'])")
   out="$PWD/exports/KULIAH_${id}_${slug}.mp4"
+  [ -f "$out" ] && [ "$FORCE" != 1 ] && { echo "skip $id (exists)"; continue; }
   start=$(date +%s)
   npx --yes hyperframes@0.9.26 render "videos/KULIAH_$id" -o "$out" --fps 30 --crf 21 > "exports/.render_$id.log" 2>&1 \
     && echo "rendered $id $(( $(date +%s) - start ))s" || echo "FAILED $id (see exports/.render_$id.log)"
