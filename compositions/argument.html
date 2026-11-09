@@ -11,65 +11,81 @@
         background: linear-gradient(180deg, rgba(5,11,26,.88) 0%, rgba(5,11,26,.74) 55%, rgba(5,11,26,0) 100%); opacity: 0; }
       .kicker { font-family: "Bebas Neue", sans-serif; font-size: 44px; letter-spacing: .14em; color: var(--gold-bright); }
       .gline { height: 4px; background: linear-gradient(90deg, var(--gold-bright), var(--gold) 70%, rgba(217,169,58,0)); transform-origin: 0 50%; }
+      .gline.c { transform-origin: 50% 50%; background: linear-gradient(90deg, rgba(217,169,58,0), var(--gold-bright), rgba(217,169,58,0)); }
       .hl { font-family: "Anton", sans-serif; color: var(--ink); line-height: 1.02; text-transform: uppercase;
         text-shadow: 0 6px 30px rgba(0,0,0,.55); }
+      .bebas { font-family: "Bebas Neue", sans-serif; letter-spacing: .04em; }
       .gold { color: var(--gold-bright); }
       .w { display: inline-block; }
       .mask { display: block; overflow: hidden; padding: 0 6px 6px 0; }
       .sub { font-family: "Montserrat", sans-serif; font-weight: 600; font-size: 34px; line-height: 1.3; color: rgba(255,255,255,.9); }
       .src { font-family: "Montserrat", sans-serif; font-weight: 500; font-size: 28px; color: rgba(255,255,255,.72); }
-
+      .party { position: absolute; top: 40px; width: 360px; height: 180px; display: flex; align-items: center; justify-content: center;
+        font-family: "Anton", sans-serif; font-size: 118px; color: #fff; letter-spacing: .02em;
+        background: linear-gradient(180deg, rgba(10,22,48,.92), rgba(5,11,26,.92)); border: 3px solid var(--gold); border-radius: 10px;
+        box-shadow: 0 18px 50px rgba(0,0,0,.5), inset 0 0 0 1px rgba(244,201,93,.25); }
+      .row { display: flex; align-items: baseline; justify-content: space-between; height: 104px; }
+      .lab { font-family: "Bebas Neue", sans-serif; font-size: 70px; letter-spacing: .06em; color: #fff; }
+      .num { font-family: "Anton", sans-serif; font-size: 92px; color: #fff; }
+      .num small { font-family: "Bebas Neue", sans-serif; font-size: 50px; letter-spacing: .08em; }
+      .tot { height: 150px; }
+      .tot .num { font-size: 116px; }
+      .sweepbox { position: absolute; left: -14px; right: -14px; top: 18px; bottom: 6px; background: rgba(244,201,93,.18);
+        border-left: 6px solid var(--gold-bright); transform-origin: 0 50%; }
       .card { position: absolute; left: 108px; top: 312px; width: 864px; display: flex; gap: 30px; align-items: center; }
-      .card .num { font-family: "Anton", sans-serif; font-size: 150px; line-height: 1; color: var(--gold-bright); min-width: 150px; }
+      .card .cnum { font-family: "Anton", sans-serif; font-size: 150px; line-height: 1; color: var(--gold-bright); min-width: 150px; }
       .card .t { font-size: 96px; }
-      #ar-sw { position: absolute; left: -8px; right: -8px; top: 6px; bottom: 2px; background: var(--gold); transform-origin: 0 50%; opacity: .55; }
+      .hlword { position: relative; display: inline-block; }
+      .hlword .bar { position: absolute; left: -8px; right: -8px; top: 6px; bottom: 2px; background: var(--gold); transform-origin: 0 50%; opacity: .55; }
+      .dust { position: absolute; border-radius: 50%; background: rgba(255,226,140,.9); box-shadow: 0 0 10px 3px rgba(244,201,93,.45); }
+      .spk-name:empty { display: none; }
+
   </style>
   <div id="root" data-composition-id="argument" data-width="1080" data-height="1920">
-    <div id="ar-dim" class="dim clip" data-start="2.84" data-duration="23.75" data-track-index="0"></div>
-    <div id="ar-head" class="clip" data-start="2.94" data-duration="23.65" data-track-index="1"
+    <div id="argument0-dim" class="dim clip" data-start="0.0" data-duration="23.75" data-track-index="0"></div>
+    <div id="argument0" class="clip" data-start="0.1" data-duration="23.65" data-track-index="1"
          style="position:absolute;left:108px;top:214px;width:864px;">
-      <div class="kicker" id="ar-k">POINT 03 · TELADAN HIJRAH NABI SAW</div>
-      <div id="ar-gl" class="gline" style="width:760px;margin:12px 0 0;"></div>
+      <div class="kicker" id="argument0-k">POINT 03 · TELADAN HIJRAH NABI SAW</div>
+      <div id="argument0-gl" class="gline" style="width:760px;margin:12px 0 0;"></div>
     </div>
-    <div id="ar-c1" class="clip card" data-start="4.22" data-duration="3.04" data-track-index="2">
-      <div class="num">01</div><div><div class="hl t">MEMBINA MASJID</div><div class="sub">Perkara awal yang dibuat Nabi SAW</div></div>
+    <div id="argument0-c0" class="clip card" data-start="1.38" data-duration="3.04" data-track-index="2">
+      <div class="cnum">01</div><div><div class="hl t">MEMBINA MASJID</div><div class="sub">Perkara awal yang dibuat Nabi SAW</div></div>
     </div>
-    <div id="ar-c2" class="clip card" data-start="7.26" data-duration="4.6" data-track-index="3">
-      <div class="num">02</div><div><div class="hl t">MENYATUKAN UMAT</div><div class="sub">Umat Islam di Madinah Al-Munawarah</div></div>
+    <div id="argument0-c1" class="clip card" data-start="4.42" data-duration="4.6" data-track-index="3">
+      <div class="cnum">02</div><div><div class="hl t">MENYATUKAN UMAT</div><div class="sub">Umat Islam di Madinah Al-Munawarah</div></div>
     </div>
-    <div id="ar-c3" class="clip card" data-start="14.46" data-duration="4.32" data-track-index="4">
-      <div class="num">01</div><div><div class="hl t">MASJID</div><div class="sub" id="ar-c3s">Lambang menegakkan agama</div></div>
+    <div id="argument0-c2" class="clip card" data-start="11.62" data-duration="4.32" data-track-index="4">
+      <div class="cnum">01</div><div><div class="hl t">MASJID</div><div class="sub">Lambang menegakkan agama</div></div>
     </div>
-    <div id="ar-c4" class="clip card" data-start="20.36" data-duration="5.83" data-track-index="5">
-      <div class="num">02</div><div><div class="hl t">PERSAUDARAAN</div>
-      <div class="sub" style="font-size:38px;font-weight:700;">Asas <span id="ar-kek" style="position:relative;display:inline-block;"><span id="ar-sw"></span><span style="position:relative;">kekuatan</span></span> mana-mana negara</div></div>
+    <div id="argument0-c3" class="clip card" data-start="17.52" data-duration="5.83" data-track-index="5">
+      <div class="cnum">02</div><div><div class="hl t">PERSAUDARAAN</div><div class="sub" style="font-size:38px;font-weight:700;">Asas <span class="hlword" id="argument0-c3-hw"><span class="bar" id="argument0-c3-hb"></span><span style="position:relative;">kekuatan</span></span> mana-mana negara</div></div>
     </div>
   </div>
   <script>
     const tl = gsap.timeline({ paused: true });
-    tl.fromTo("#ar-dim", { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "power2.out" }, 2.84);
-    tl.fromTo("#ar-k", { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: 0.45, ease: "expo.out" }, 2.94);
-    tl.fromTo("#ar-gl", { scaleX: 0 }, { scaleX: 1, duration: 0.7, ease: "power3.inOut" }, 2.99);
-    tl.fromTo("#ar-c1 .num", { opacity: 0, scale: 1.4, filter: "blur(10px)" }, { opacity: 1, scale: 1, filter: "blur(0px)", duration: 0.45, ease: "expo.out" }, 4.22);
-    tl.fromTo("#ar-c1 .t", { opacity: 0, clipPath: "inset(0 100% 0 0)" }, { opacity: 1, clipPath: "inset(0 0% 0 0)", duration: 0.55, ease: "power3.out" }, 4.3);
-    tl.fromTo("#ar-c1 .sub", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.45, ease: "expo.out" }, 4.52);
-    tl.to("#ar-c1", { opacity: 0, filter: "blur(10px)", duration: 0.24, ease: "power3.in" }, 7.0);
-    tl.fromTo("#ar-c2 .num", { opacity: 0, scale: 1.4, filter: "blur(10px)" }, { opacity: 1, scale: 1, filter: "blur(0px)", duration: 0.45, ease: "expo.out" }, 7.26);
-    tl.fromTo("#ar-c2 .t", { opacity: 0, clipPath: "inset(0 100% 0 0)" }, { opacity: 1, clipPath: "inset(0 0% 0 0)", duration: 0.55, ease: "power3.out" }, 7.34);
-    tl.fromTo("#ar-c2 .sub", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.45, ease: "expo.out" }, 7.56);
-    tl.to("#ar-c2", { opacity: 0, filter: "blur(10px)", duration: 0.24, ease: "power3.in" }, 11.6);
-    tl.fromTo("#ar-c3 .num", { opacity: 0, scale: 1.4, filter: "blur(10px)" }, { opacity: 1, scale: 1, filter: "blur(0px)", duration: 0.45, ease: "expo.out" }, 14.46);
-    tl.fromTo("#ar-c3 .t", { opacity: 0, clipPath: "inset(0 100% 0 0)" }, { opacity: 1, clipPath: "inset(0 0% 0 0)", duration: 0.55, ease: "power3.out" }, 14.54);
-    tl.fromTo("#ar-c3 .sub", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.45, ease: "expo.out" }, 14.76);
-    tl.to("#ar-c3", { opacity: 0, filter: "blur(10px)", duration: 0.24, ease: "power3.in" }, 18.52);
-    tl.fromTo("#ar-c4 .num", { opacity: 0, scale: 1.4, filter: "blur(10px)" }, { opacity: 1, scale: 1, filter: "blur(0px)", duration: 0.45, ease: "expo.out" }, 20.36);
-    tl.fromTo("#ar-c4 .t", { opacity: 0, clipPath: "inset(0 100% 0 0)" }, { opacity: 1, clipPath: "inset(0 0% 0 0)", duration: 0.55, ease: "power3.out" }, 20.44);
-    tl.fromTo("#ar-c4 .sub", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.45, ease: "expo.out" }, 20.66);
-    tl.to("#ar-c4", { opacity: 0, filter: "blur(10px)", duration: 0.24, ease: "power3.in" }, 25.93);
-    tl.fromTo("#ar-sw", { scaleX: 0 }, { scaleX: 1, duration: 0.4, ease: "power3.out" }, 24.36);
-    tl.fromTo("#ar-kek", { scale: 1 }, { keyframes: [{ scale: 1.12, duration: 0.12 }, { scale: 1, duration: 0.13 }], ease: "power2.out" }, 24.36);
-    tl.to("#ar-head", { opacity: 0, filter: "blur(10px)", duration: 0.28, ease: "power3.in" }, 26.14);
-    tl.to("#ar-dim", { opacity: 0, duration: 0.35, ease: "power2.in" }, 26.19);
+    tl.fromTo("#argument0-dim", { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "power2.out" }, 0.0);
+    tl.fromTo("#argument0-k", { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: 0.45, ease: "expo.out" }, 0.1);
+    tl.fromTo("#argument0-gl", { scaleX: 0 }, { scaleX: 1, duration: 0.7, ease: "power3.inOut" }, 0.15);
+    tl.fromTo("#argument0-c0 .cnum", { opacity: 0, scale: 1.4, filter: "blur(10px)" }, { opacity: 1, scale: 1, filter: "blur(0px)", duration: 0.45, ease: "expo.out" }, 1.38);
+    tl.fromTo("#argument0-c0 .t", { opacity: 0, clipPath: "inset(0 100% 0 0)" }, { opacity: 1, clipPath: "inset(0 0% 0 0)", duration: 0.55, ease: "power3.out" }, 1.46);
+    tl.fromTo("#argument0-c0 .sub", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.45, ease: "expo.out" }, 1.68);
+    tl.to("#argument0-c0", { opacity: 0, filter: "blur(10px)", duration: 0.24, ease: "power3.in" }, 4.16);
+    tl.fromTo("#argument0-c1 .cnum", { opacity: 0, scale: 1.4, filter: "blur(10px)" }, { opacity: 1, scale: 1, filter: "blur(0px)", duration: 0.45, ease: "expo.out" }, 4.42);
+    tl.fromTo("#argument0-c1 .t", { opacity: 0, clipPath: "inset(0 100% 0 0)" }, { opacity: 1, clipPath: "inset(0 0% 0 0)", duration: 0.55, ease: "power3.out" }, 4.5);
+    tl.fromTo("#argument0-c1 .sub", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.45, ease: "expo.out" }, 4.72);
+    tl.to("#argument0-c1", { opacity: 0, filter: "blur(10px)", duration: 0.24, ease: "power3.in" }, 8.76);
+    tl.fromTo("#argument0-c2 .cnum", { opacity: 0, scale: 1.4, filter: "blur(10px)" }, { opacity: 1, scale: 1, filter: "blur(0px)", duration: 0.45, ease: "expo.out" }, 11.62);
+    tl.fromTo("#argument0-c2 .t", { opacity: 0, clipPath: "inset(0 100% 0 0)" }, { opacity: 1, clipPath: "inset(0 0% 0 0)", duration: 0.55, ease: "power3.out" }, 11.7);
+    tl.fromTo("#argument0-c2 .sub", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.45, ease: "expo.out" }, 11.92);
+    tl.to("#argument0-c2", { opacity: 0, filter: "blur(10px)", duration: 0.24, ease: "power3.in" }, 15.68);
+    tl.fromTo("#argument0-c3 .cnum", { opacity: 0, scale: 1.4, filter: "blur(10px)" }, { opacity: 1, scale: 1, filter: "blur(0px)", duration: 0.45, ease: "expo.out" }, 17.52);
+    tl.fromTo("#argument0-c3 .t", { opacity: 0, clipPath: "inset(0 100% 0 0)" }, { opacity: 1, clipPath: "inset(0 0% 0 0)", duration: 0.55, ease: "power3.out" }, 17.6);
+    tl.fromTo("#argument0-c3 .sub", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.45, ease: "expo.out" }, 17.82);
+    tl.fromTo("#argument0-c3-hb", { scaleX: 0 }, { scaleX: 1, duration: 0.4, ease: "power3.out" }, 21.52);
+    tl.fromTo("#argument0-c3-hw", { scale: 1 }, { keyframes: [{ scale: 1.12, duration: 0.12 }, { scale: 1, duration: 0.13 }], ease: "power2.out" }, 21.52);
+    tl.to("#argument0-c3", { opacity: 0, filter: "blur(10px)", duration: 0.24, ease: "power3.in" }, 23.09);
+    tl.to("#argument0", { opacity: 0, filter: "blur(10px)", duration: 0.28, ease: "power3.in" }, 23.3);
+    tl.to("#argument0-dim", { opacity: 0, duration: 0.35, ease: "power2.in" }, 23.35);
 
     window.__timelines["argument"] = tl;
   </script>

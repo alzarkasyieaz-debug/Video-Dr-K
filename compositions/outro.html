@@ -11,30 +11,48 @@
         background: linear-gradient(180deg, rgba(5,11,26,.88) 0%, rgba(5,11,26,.74) 55%, rgba(5,11,26,0) 100%); opacity: 0; }
       .kicker { font-family: "Bebas Neue", sans-serif; font-size: 44px; letter-spacing: .14em; color: var(--gold-bright); }
       .gline { height: 4px; background: linear-gradient(90deg, var(--gold-bright), var(--gold) 70%, rgba(217,169,58,0)); transform-origin: 0 50%; }
+      .gline.c { transform-origin: 50% 50%; background: linear-gradient(90deg, rgba(217,169,58,0), var(--gold-bright), rgba(217,169,58,0)); }
       .hl { font-family: "Anton", sans-serif; color: var(--ink); line-height: 1.02; text-transform: uppercase;
         text-shadow: 0 6px 30px rgba(0,0,0,.55); }
+      .bebas { font-family: "Bebas Neue", sans-serif; letter-spacing: .04em; }
       .gold { color: var(--gold-bright); }
       .w { display: inline-block; }
       .mask { display: block; overflow: hidden; padding: 0 6px 6px 0; }
       .sub { font-family: "Montserrat", sans-serif; font-weight: 600; font-size: 34px; line-height: 1.3; color: rgba(255,255,255,.9); }
       .src { font-family: "Montserrat", sans-serif; font-weight: 500; font-size: 28px; color: rgba(255,255,255,.72); }
-
-      #ou-name:empty { display: none; }
+      .party { position: absolute; top: 40px; width: 360px; height: 180px; display: flex; align-items: center; justify-content: center;
+        font-family: "Anton", sans-serif; font-size: 118px; color: #fff; letter-spacing: .02em;
+        background: linear-gradient(180deg, rgba(10,22,48,.92), rgba(5,11,26,.92)); border: 3px solid var(--gold); border-radius: 10px;
+        box-shadow: 0 18px 50px rgba(0,0,0,.5), inset 0 0 0 1px rgba(244,201,93,.25); }
+      .row { display: flex; align-items: baseline; justify-content: space-between; height: 104px; }
+      .lab { font-family: "Bebas Neue", sans-serif; font-size: 70px; letter-spacing: .06em; color: #fff; }
+      .num { font-family: "Anton", sans-serif; font-size: 92px; color: #fff; }
+      .num small { font-family: "Bebas Neue", sans-serif; font-size: 50px; letter-spacing: .08em; }
+      .tot { height: 150px; }
+      .tot .num { font-size: 116px; }
+      .sweepbox { position: absolute; left: -14px; right: -14px; top: 18px; bottom: 6px; background: rgba(244,201,93,.18);
+        border-left: 6px solid var(--gold-bright); transform-origin: 0 50%; }
+      .card { position: absolute; left: 108px; top: 312px; width: 864px; display: flex; gap: 30px; align-items: center; }
+      .card .cnum { font-family: "Anton", sans-serif; font-size: 150px; line-height: 1; color: var(--gold-bright); min-width: 150px; }
+      .card .t { font-size: 96px; }
+      .hlword { position: relative; display: inline-block; }
+      .hlword .bar { position: absolute; left: -8px; right: -8px; top: 6px; bottom: 2px; background: var(--gold); transform-origin: 0 50%; opacity: .55; }
       .dust { position: absolute; border-radius: 50%; background: rgba(255,226,140,.9); box-shadow: 0 0 10px 3px rgba(244,201,93,.45); }
+      .spk-name:empty { display: none; }
+
   </style>
   <div id="root" data-composition-id="outro" data-width="1080" data-height="1920">
-    <div id="ou-dim" class="dim clip" data-start="2.646" data-duration="7.764" data-track-index="0"></div>
-    <div id="ou-a" class="clip" data-start="2.796" data-duration="6.564" data-track-index="1"
+    <div id="outro0-dim" class="dim clip" data-start="0.05" data-duration="7.014" data-track-index="0"></div>
+    <div id="outro0" class="clip" data-start="0.2" data-duration="6.814" data-track-index="1"
          style="position:absolute;left:108px;top:236px;width:864px;">
-      <div class="kicker">POINT 05 · MESEJ PENUTUP</div>
-      <div id="ou-gl" class="gline" style="width:640px;margin:12px 0 20px;"></div>
-      <div class="hl gold" style="font-size:124px;"><span class="w ou-w1">PERPADUAN</span></div>
-      <div class="hl" style="font-size:96px;"><span class="w ou-w2">DEMI</span> <span class="w ou-w3">AGAMA</span> <span class="w ou-w4">ALLAH</span></div>
+      <div class="kicker" id="outro0-k">POINT 05 · MESEJ PENUTUP</div>
+      <div id="outro0-gl" class="gline" style="width:640px;margin:12px 0 20px;"></div>
+      <div class="hl gold" style="font-size:124px;"><span class="w" id="outro0-w0">PERPADUAN</span></div>
+      <div class="hl" style="font-size:96px;"><span class="w" id="outro0-w1">DEMI</span> <span class="w" id="outro0-w2">AGAMA</span> <span class="w" id="outro0-w3">ALLAH</span></div>
     </div>
-    <div id="ou-black" class="clip" data-start="9.91" data-duration="4.14" data-track-index="2"
+    <div id="outro1-black" class="clip" data-start="7.314" data-duration="4.14" data-track-index="2"
          style="position:absolute;inset:0;background:radial-gradient(ellipse at 50% 45%, #0d1d3f 0%, #050b1a 60%, #000 100%);opacity:0;"></div>
-    <div id="ou-dustwrap" class="clip" data-start="10.31" data-duration="3.74" data-track-index="3" data-layout-ignore
-         style="position:absolute;inset:0;">
+    <div id="outro1-dust" class="clip" data-start="7.714" data-duration="3.74" data-track-index="3" data-layout-ignore style="position:absolute;inset:0;">
       <i class="dust" style="left:996px;top:1133px;width:6px;height:6px;"></i>
       <i class="dust" style="left:171px;top:740px;width:4px;height:4px;"></i>
       <i class="dust" style="left:822px;top:887px;width:4px;height:4px;"></i>
@@ -48,37 +66,36 @@
       <i class="dust" style="left:886px;top:919px;width:4px;height:4px;"></i>
       <i class="dust" style="left:693px;top:638px;width:7px;height:7px;"></i>
     </div>
-    <div id="ou-final" class="clip" data-start="10.31" data-duration="3.74" data-track-index="4"
+    <div id="outro1" class="clip" data-start="7.714" data-duration="3.74" data-track-index="4"
          style="position:absolute;left:108px;top:560px;width:864px;text-align:center;">
-      <div class="kicker" style="font-size:46px;">MESEJ PENUTUP</div>
-      <div id="ou-gl2" class="gline" style="width:420px;margin:14px auto 34px;transform-origin:50% 50%;background:linear-gradient(90deg,rgba(217,169,58,0),var(--gold-bright),rgba(217,169,58,0));"></div>
-      <div class="hl" style="font-size:112px;"><span class="w ou-f">&ldquo;INI</span> <span class="w ou-f">BUKAN</span> <span class="w ou-f gold">PERPADUAN</span></div>
-      <div class="hl" style="font-size:112px;"><span class="w ou-f">UNTUK</span> <span class="w ou-f">POLITIK</span></div>
-      <div class="hl gold" style="font-size:112px;"><span class="w ou-f">SEMATA-MATA.&rdquo;</span></div>
-      <div id="ou-name" class="sub" style="margin-top:40px;font-size:40px;font-weight:800;color:#fff;" data-var-text="speakerName"></div>
-      <div id="ou-role" class="src" style="margin-top:10px;font-size:32px;" data-var-text="speakerRole">Ceramah Perpaduan UMNO&ndash;PAS &middot; PRN Melaka</div>
+      <div class="kicker" id="outro1-k" style="font-size:46px;">MESEJ PENUTUP</div>
+      <div id="outro1-gl" class="gline c" style="width:420px;margin:14px auto 34px;"></div>
+      <div class="hl" style="font-size:112px;"><span class="w outro1-f">“INI</span> <span class="w outro1-f">BUKAN</span> <span class="w outro1-f gold">PERPADUAN</span></div>
+      <div class="hl" style="font-size:112px;"><span class="w outro1-f">UNTUK</span> <span class="w outro1-f">POLITIK</span></div>
+      <div class="hl" style="font-size:112px;"><span class="w outro1-f gold">SEMATA-MATA.”</span></div>
+      <div id="outro1-name" class="sub spk-name" style="margin-top:40px;font-size:40px;font-weight:800;color:#fff;" data-var-text="speakerName"></div>
+      <div id="outro1-role" class="src" style="margin-top:10px;font-size:32px;" data-var-text="speakerRole">Ceramah Perpaduan UMNO–PAS · PRN Melaka</div>
     </div>
-    <div id="ou-fade" class="clip" data-start="13.15" data-duration="0.9" data-track-index="5"
-         style="position:absolute;inset:0;background:#000;opacity:0;"></div>
+    <div id="outro1-fade" class="clip" data-start="10.554" data-duration="0.9" data-track-index="5" style="position:absolute;inset:0;background:#000;opacity:0;"></div>
   </div>
   <script>
     const tl = gsap.timeline({ paused: true });
-    tl.fromTo("#ou-dim", { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "power2.out" }, 2.646);
-    tl.fromTo("#ou-a .kicker", { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: 0.45, ease: "expo.out" }, 2.796);
-    tl.fromTo("#ou-gl", { scaleX: 0 }, { scaleX: 1, duration: 0.6, ease: "power3.inOut" }, 2.846);
-    tl.fromTo(".ou-w1", { opacity: 0, filter: "blur(8px)", y: 30 }, { opacity: 1, filter: "blur(0px)", y: 0, duration: 0.4, ease: "expo.out" }, 2.916);
-    tl.fromTo(".ou-w2", { opacity: 0, filter: "blur(8px)", y: 30 }, { opacity: 1, filter: "blur(0px)", y: 0, duration: 0.4, ease: "expo.out" }, 4.459);
-    tl.fromTo(".ou-w3", { opacity: 0, filter: "blur(8px)", y: 30 }, { opacity: 1, filter: "blur(0px)", y: 0, duration: 0.4, ease: "expo.out" }, 4.86);
-    tl.fromTo(".ou-w4", { opacity: 0, filter: "blur(8px)", y: 30 }, { opacity: 1, filter: "blur(0px)", y: 0, duration: 0.4, ease: "expo.out" }, 5.24);
-    tl.to("#ou-a", { opacity: 0, filter: "blur(10px)", duration: 0.28, ease: "power3.in" }, 9.31);
-    tl.to("#ou-dim", { opacity: 0, duration: 0.3, ease: "power2.in" }, 9.46);
-    tl.fromTo("#ou-black", { opacity: 0 }, { opacity: 1, duration: 0.7, ease: "power2.inOut" }, 9.91);
-    tl.fromTo("#ou-gl2", { scaleX: 0 }, { scaleX: 1, duration: 0.8, ease: "power3.inOut" }, 10.41);
-    tl.fromTo("#ou-final .kicker", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.7, ease: "expo.out" }, 10.31);
-    tl.fromTo(".ou-f", { opacity: 0, y: 36, filter: "blur(10px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.42, ease: "expo.out", stagger: 0.1 }, 10.66);
-    tl.fromTo("#ou-name, #ou-role", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.6, ease: "expo.out", stagger: 0.15 }, 11.71);
-    tl.fromTo(".dust", { opacity: 0, y: 0 }, { opacity: 0.8, y: -160, duration: 3.74, ease: "none", stagger: 0.06 }, 10.31);
-    tl.fromTo("#ou-fade", { opacity: 0 }, { opacity: 1, duration: 0.85, ease: "power2.in" }, 13.15);
+    tl.fromTo("#outro0-dim", { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "power2.out" }, 0.05);
+    tl.fromTo("#outro0-k", { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: 0.45, ease: "expo.out" }, 0.2);
+    tl.fromTo("#outro0-gl", { scaleX: 0 }, { scaleX: 1, duration: 0.6, ease: "power3.inOut" }, 0.25);
+    tl.fromTo("#outro0-w0", { opacity: 0, filter: "blur(8px)", y: 30 }, { opacity: 1, filter: "blur(0px)", y: 0, duration: 0.4, ease: "expo.out" }, 0.32);
+    tl.fromTo("#outro0-w1", { opacity: 0, filter: "blur(8px)", y: 30 }, { opacity: 1, filter: "blur(0px)", y: 0, duration: 0.4, ease: "expo.out" }, 1.863);
+    tl.fromTo("#outro0-w2", { opacity: 0, filter: "blur(8px)", y: 30 }, { opacity: 1, filter: "blur(0px)", y: 0, duration: 0.4, ease: "expo.out" }, 2.264);
+    tl.fromTo("#outro0-w3", { opacity: 0, filter: "blur(8px)", y: 30 }, { opacity: 1, filter: "blur(0px)", y: 0, duration: 0.4, ease: "expo.out" }, 2.644);
+    tl.to("#outro0", { opacity: 0, filter: "blur(10px)", duration: 0.28, ease: "power3.in" }, 6.714);
+    tl.to("#outro0-dim", { opacity: 0, duration: 0.3, ease: "power2.in" }, 6.864);
+    tl.fromTo("#outro1-black", { opacity: 0 }, { opacity: 1, duration: 0.7, ease: "power2.inOut" }, 7.314);
+    tl.fromTo("#outro1-gl", { scaleX: 0 }, { scaleX: 1, duration: 0.8, ease: "power3.inOut" }, 7.814);
+    tl.fromTo("#outro1-k", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.7, ease: "expo.out" }, 7.714);
+    tl.fromTo(".outro1-f", { opacity: 0, y: 36, filter: "blur(10px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.42, ease: "expo.out", stagger: 0.1 }, 8.064);
+    tl.fromTo("#outro1-name, #outro1-role", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.6, ease: "expo.out", stagger: 0.15 }, 9.114);
+    tl.fromTo("#outro1-dust .dust", { opacity: 0, y: 0 }, { opacity: 0.8, y: -160, duration: 3.74, ease: "none", stagger: 0.06 }, 7.714);
+    tl.fromTo("#outro1-fade", { opacity: 0 }, { opacity: 1, duration: 0.85, ease: "power2.in" }, 10.554);
 
     window.__timelines["outro"] = tl;
   </script>

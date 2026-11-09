@@ -11,47 +11,66 @@
         background: linear-gradient(180deg, rgba(5,11,26,.88) 0%, rgba(5,11,26,.74) 55%, rgba(5,11,26,0) 100%); opacity: 0; }
       .kicker { font-family: "Bebas Neue", sans-serif; font-size: 44px; letter-spacing: .14em; color: var(--gold-bright); }
       .gline { height: 4px; background: linear-gradient(90deg, var(--gold-bright), var(--gold) 70%, rgba(217,169,58,0)); transform-origin: 0 50%; }
+      .gline.c { transform-origin: 50% 50%; background: linear-gradient(90deg, rgba(217,169,58,0), var(--gold-bright), rgba(217,169,58,0)); }
       .hl { font-family: "Anton", sans-serif; color: var(--ink); line-height: 1.02; text-transform: uppercase;
         text-shadow: 0 6px 30px rgba(0,0,0,.55); }
+      .bebas { font-family: "Bebas Neue", sans-serif; letter-spacing: .04em; }
       .gold { color: var(--gold-bright); }
       .w { display: inline-block; }
       .mask { display: block; overflow: hidden; padding: 0 6px 6px 0; }
       .sub { font-family: "Montserrat", sans-serif; font-weight: 600; font-size: 34px; line-height: 1.3; color: rgba(255,255,255,.9); }
       .src { font-family: "Montserrat", sans-serif; font-weight: 500; font-size: 28px; color: rgba(255,255,255,.72); }
+      .party { position: absolute; top: 40px; width: 360px; height: 180px; display: flex; align-items: center; justify-content: center;
+        font-family: "Anton", sans-serif; font-size: 118px; color: #fff; letter-spacing: .02em;
+        background: linear-gradient(180deg, rgba(10,22,48,.92), rgba(5,11,26,.92)); border: 3px solid var(--gold); border-radius: 10px;
+        box-shadow: 0 18px 50px rgba(0,0,0,.5), inset 0 0 0 1px rgba(244,201,93,.25); }
+      .row { display: flex; align-items: baseline; justify-content: space-between; height: 104px; }
+      .lab { font-family: "Bebas Neue", sans-serif; font-size: 70px; letter-spacing: .06em; color: #fff; }
+      .num { font-family: "Anton", sans-serif; font-size: 92px; color: #fff; }
+      .num small { font-family: "Bebas Neue", sans-serif; font-size: 50px; letter-spacing: .08em; }
+      .tot { height: 150px; }
+      .tot .num { font-size: 116px; }
+      .sweepbox { position: absolute; left: -14px; right: -14px; top: 18px; bottom: 6px; background: rgba(244,201,93,.18);
+        border-left: 6px solid var(--gold-bright); transform-origin: 0 50%; }
+      .card { position: absolute; left: 108px; top: 312px; width: 864px; display: flex; gap: 30px; align-items: center; }
+      .card .cnum { font-family: "Anton", sans-serif; font-size: 150px; line-height: 1; color: var(--gold-bright); min-width: 150px; }
+      .card .t { font-size: 96px; }
+      .hlword { position: relative; display: inline-block; }
+      .hlword .bar { position: absolute; left: -8px; right: -8px; top: 6px; bottom: 2px; background: var(--gold); transform-origin: 0 50%; opacity: .55; }
+      .dust { position: absolute; border-radius: 50%; background: rgba(255,226,140,.9); box-shadow: 0 0 10px 3px rgba(244,201,93,.45); }
+      .spk-name:empty { display: none; }
 
   </style>
   <div id="root" data-composition-id="hook" data-width="1080" data-height="1920" data-motion-blur="on">
-    <div id="hk-dim" class="dim clip" data-start="0" data-duration="7.3" data-track-index="0"></div>
-    <div id="hk-block" class="clip" data-start="0" data-duration="7.3" data-track-index="1"
+    <div id="hook0-dim" class="dim clip" data-start="0" data-duration="7.3" data-track-index="0"></div>
+    <div id="hook0" class="clip" data-start="0" data-duration="7.3" data-track-index="1"
          style="position:absolute;left:100px;top:236px;width:880px;">
-      <div class="mask"><div id="hk-l1" class="hl" style="font-size:150px;">POLITIK</div></div>
-      <div class="mask"><div id="hk-l2" class="hl gold" style="font-size:150px;">PERSEPSI</div></div>
-      <div id="hk-line" class="gline" style="width:520px;margin:18px 0 22px;"></div>
-      <div id="hk-qa" style="position:relative;height:126px;">
-        <div id="hk-q" data-layout-allow-overlap class="hl" style="position:absolute;left:0;top:10px;font-size:96px;font-family:'Bebas Neue',sans-serif;letter-spacing:.04em;">
-          <span class="w hk-qw">YANG</span> <span class="w hk-qw">RUGI</span> <span class="w hk-qw" id="hk-siapa">SIAPA?</span>
-        </div>
-        <div id="hk-ans" data-layout-allow-overlap class="hl" style="position:absolute;left:0;top:0;font-size:110px;white-space:nowrap;">
-          <span style="font-family:'Bebas Neue',sans-serif;letter-spacing:.04em;font-size:96px;">YANG RUGI:</span>
-          <span style="position:relative;display:inline-block;margin-left:8px;"><span id="hk-sweep" style="position:absolute;left:-10px;right:-10px;top:14px;bottom:4px;background:linear-gradient(90deg,var(--gold),var(--gold-bright));transform-origin:0 50%;"></span><span id="hk-rakyat" class="w" style="position:relative;color:var(--navy-deep);padding:0 8px;">RAKYAT.</span></span>
+      <div class="mask"><div id="hook0-l0" class="hl" style="font-size:150px;">POLITIK</div></div>
+      <div class="mask"><div id="hook0-l1" class="hl gold" style="font-size:150px;">PERSEPSI</div></div>
+      <div id="hook0-line" class="gline" style="width:520px;margin:18px 0 22px;"></div>
+      <div style="position:relative;height:126px;">
+        <div id="hook0-q" data-layout-allow-overlap class="hl bebas" style="position:absolute;left:0;top:10px;font-size:96px;"><span class="w hook0-qw">YANG</span> <span class="w hook0-qw">RUGI</span> <span class="w hook0-qw">SIAPA?</span></div>
+        <div id="hook0-a" data-layout-allow-overlap class="hl" style="position:absolute;left:0;top:0;font-size:110px;white-space:nowrap;">
+          <span class="bebas" style="font-size:96px;">YANG RUGI:</span>
+          <span style="position:relative;display:inline-block;margin-left:8px;"><span id="hook0-sw" style="position:absolute;left:-10px;right:-10px;top:14px;bottom:4px;background:linear-gradient(90deg,var(--gold),var(--gold-bright));transform-origin:0 50%;"></span><span id="hook0-aw" class="w" style="position:relative;color:var(--navy-deep);padding:0 8px;">RAKYAT.</span></span>
         </div>
       </div>
     </div>
   </div>
   <script>
     const tl = gsap.timeline({ paused: true });
-    tl.fromTo("#hk-dim", { opacity: 0.55 }, { opacity: 0.8, duration: 1.2, ease: "power2.out" }, 0);
-    tl.fromTo("#hk-l1", { scale: 1.1, opacity: 1, filter: "blur(3px)", transformOrigin: "0% 60%" }, { scale: 1, opacity: 1, filter: "blur(0px)", duration: 0.55, ease: "expo.out" }, 0);
-    tl.fromTo("#hk-l2", { yPercent: 105 }, { yPercent: 0, duration: 0.6, ease: "expo.out" }, 0.32);
-    tl.fromTo("#hk-line", { scaleX: 0 }, { scaleX: 1, duration: 0.7, ease: "power3.inOut" }, 0.55);
-    tl.fromTo(".hk-qw", { opacity: 0, y: 26, filter: "blur(6px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.42, ease: "expo.out", stagger: 0.24 }, 4.19);
-    tl.set("#hk-ans", { opacity: 0 }, 0);
-    tl.set("#hk-ans", { opacity: 1 }, 5.8);
-    tl.to("#hk-q", { opacity: 0, filter: "blur(8px)", duration: 0.12, ease: "power2.in" }, 5.68);
-    tl.fromTo("#hk-sweep", { scaleX: 0 }, { scaleX: 1, duration: 0.22, ease: "power3.out" }, 5.8);
-    tl.fromTo("#hk-rakyat", { scale: 1.35, filter: "blur(8px)", opacity: 0 }, { scale: 1, filter: "blur(0px)", opacity: 1, duration: 0.3, ease: "expo.out", transformOrigin: "0% 50%" }, 5.82);
-    tl.to("#hk-block", { opacity: 0, filter: "blur(10px)", duration: 0.24, ease: "power3.in" }, 6.98);
-    tl.to("#hk-dim", { opacity: 0, duration: 0.3, ease: "power2.in" }, 6.95);
+    tl.fromTo("#hook0-dim", { opacity: 0.55 }, { opacity: 0.8, duration: 1.2, ease: "power2.out" }, 0.0);
+    tl.fromTo("#hook0-l0", { scale: 1.1, opacity: 1, filter: "blur(3px)", transformOrigin: "0% 60%" }, { scale: 1, opacity: 1, filter: "blur(0px)", duration: 0.55, ease: "expo.out" }, 0);
+    tl.fromTo("#hook0-l1", { yPercent: 105 }, { yPercent: 0, duration: 0.6, ease: "expo.out" }, 0.32);
+    tl.fromTo("#hook0-line", { scaleX: 0 }, { scaleX: 1, duration: 0.7, ease: "power3.inOut" }, 0.55);
+    tl.fromTo(".hook0-qw", { opacity: 0, y: 26, filter: "blur(6px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.42, ease: "expo.out", stagger: 0.24 }, 4.19);
+    tl.set("#hook0-a", { opacity: 0 }, 0);
+    tl.set("#hook0-a", { opacity: 1 }, 5.8);
+    tl.to("#hook0-q", { opacity: 0, filter: "blur(8px)", duration: 0.12, ease: "power2.in" }, 5.68);
+    tl.fromTo("#hook0-sw", { scaleX: 0 }, { scaleX: 1, duration: 0.22, ease: "power3.out" }, 5.8);
+    tl.fromTo("#hook0-aw", { scale: 1.35, filter: "blur(8px)", opacity: 0 }, { scale: 1, filter: "blur(0px)", opacity: 1, duration: 0.3, ease: "expo.out", transformOrigin: "0% 50%" }, 5.82);
+    tl.to("#hook0", { opacity: 0, filter: "blur(10px)", duration: 0.24, ease: "power3.in" }, 6.98);
+    tl.to("#hook0-dim", { opacity: 0, duration: 0.3, ease: "power2.in" }, 6.95);
 
     window.__timelines["hook"] = tl;
   </script>

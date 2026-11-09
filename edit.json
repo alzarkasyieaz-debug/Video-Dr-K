@@ -1,0 +1,127 @@
+{
+  "style": "ceramah-politik",
+  "title": "Perpaduan UMNO-PAS — Ceramah PRN Melaka",
+  "source": "/home/user/src/1101.mp4",
+  "lang": "ms",
+  "end_card": 3.79,
+
+  "bug": "PRN MELAKA · CERAMAH PERPADUAN",
+  "speaker": { "name": "", "role": "Ceramah Perpaduan UMNO–PAS · PRN Melaka" },
+
+  "spoken": {
+    "3.6": "tiga perpuluhan enam",
+    "4.6": "empat perpuluhan enam",
+    "1": "satu",
+    "SAW": "sallallahu alaihi wasallam",
+    "SWT": "subhanahu wataala"
+  },
+  "keywords": ["rakyat", "persepsi", "perpaduan", "umno", "pas", "3.6", "1", "4.6", "juta", "masjid",
+               "persaudaraan", "kekuatan", "tuntutan", "allah", "agama", "islam", "terbesar", "menyatukan"],
+
+  "clips": [
+    { "id": "a", "in": 960.66, "out": 967.00, "head_y": 900,
+      "zoom": { "type": "push", "from": 1.58, "to": 1.78, "pow": 1.2 },
+      "text": "Tuan-tuan, kalau kita masih bermain politik persepsi, yang rugi siapa? Yang rugi rakyat." },
+    { "id": "b", "in": 130.88, "out": 158.30,
+      "zoom": { "type": "push", "from": 1.22, "to": 1.40 },
+      "text": "Cuma menariknya kita pada kali ini adalah perpaduan antara dua parti terbesar umat Islam. Antara UMNO dan juga PAS. UMNO yang padanya keahlian Melayu-Islam 3.6 juta, berpadu dengan PAS yang orang Islam, Melayu-Islamnya 1 juta. Angkanya 4.6 juta." },
+    { "id": "c", "in": 199.40, "out": 212.40,
+      "zoom": { "type": "ease", "from": 1.32, "to": 1.52 },
+      "text": "Perkara yang awal dibuat oleh Nabi SAW ialah membina masjid. Diikuti dengan menyatukan umat Islam di negeri Madinah Al-Munawarah." },
+    { "id": "d", "in": 232.30, "out": 245.60,
+      "zoom": { "type": "ease", "from": 1.56, "to": 1.30 },
+      "text": "Kerana pertamanya, membina masjid lambang menegakkan agama. Membina persaudaraan pula, ini adalah asas untuk kekuatan mana-mana negara." },
+    { "id": "e", "in": 481.96, "out": 492.35,
+      "zoom": { "type": "push", "from": 1.34, "to": 1.70, "pow": 1.3, "punch": { "at": { "word": "tuntutan" }, "add": 0.08 } },
+      "text": "Bukan hanya untuk menang pilihan raya. Tetapi kita padu kerana itu tuntutan Allah SWT, menyatukan dua kelompok yang bertelingkah panjang." },
+    { "id": "f", "in": 1134.82, "out": 1145.08,
+      "zoom": { "type": "ease", "from": 1.62, "to": 1.08 },
+      "text": "Ini bukan perpaduan untuk politik semata-mata. Inilah perpaduan orang Islam demi agama Allah SWT untuk kita perkasakan Islam dengan negara kita secara bersama, insyaAllah." }
+  ],
+
+  "scenes": [
+    { "id": "hook", "overlays": [
+      { "type": "headline", "lines": [ { "text": "POLITIK" }, { "text": "PERSEPSI", "gold": true } ],
+        "question": { "text": "YANG RUGI SIAPA?", "at": { "word": "yang" }, "stagger": 0.24 },
+        "answer": { "lead": "YANG RUGI:", "word": "RAKYAT.", "at": { "word": "rakyat" } },
+        "end": 6.98 }
+    ]},
+    { "id": "issue", "overlays": [
+      { "type": "keypoint", "kicker": "POINT 01 · ISU UTAMA", "at": { "word": "perpaduan", "after": 6.3 }, "hold": 4.35,
+        "lines": [ { "text": "PERPADUAN", "size": 120, "gold": true }, { "text": "DUA PARTI TERBESAR" }, { "text": "UMAT ISLAM" } ] },
+      { "type": "versus", "left": "UMNO", "right": "PAS",
+        "left_at": { "word": "UMNO" }, "right_at": { "word": "PAS", "after": 15 }, "hold": 1.8 }
+    ]},
+    { "id": "evidence", "overlays": [
+      { "type": "stat", "kicker": "POINT 02 · KEAHLIAN MELAYU-ISLAM", "start": 21.3, "end": 36.55,
+        "rows": [ { "label": "UMNO", "value": "3.6", "unit": "JUTA", "at": { "word": "3.6" } },
+                  { "label": "PAS", "value": "1", "unit": "JUTA", "at": { "word": "1" } } ],
+        "divider_at": { "word": "Angkanya" },
+        "total": { "label": "GABUNGAN", "value": "4.6", "unit": "JUTA", "at": { "word": "4.6" } },
+        "source": "Angka seperti disebut penceramah (minit 02:23–02:38). Belum disahkan secara bebas." }
+    ]},
+    { "id": "argument", "overlays": [
+      { "type": "numbered", "kicker": "POINT 03 · TELADAN HIJRAH NABI SAW", "start": 36.7, "end": 59.95,
+        "cards": [
+          { "num": "01", "title": "MEMBINA MASJID", "sub": "Perkara awal yang dibuat Nabi SAW",
+            "at": { "word": "masjid", "after": 33, "offset": -0.3 }, "until": { "word": "menyatukan", "after": 33, "offset": -0.2 } },
+          { "num": "02", "title": "MENYATUKAN UMAT", "sub": "Umat Islam di Madinah Al-Munawarah",
+            "at": { "word": "menyatukan", "after": 33, "offset": -0.2 }, "until": { "word": "menyatukan", "after": 33, "offset": 4.4 } },
+          { "num": "01", "title": "MASJID", "sub": "Lambang menegakkan agama",
+            "at": { "word": "membina", "after": 46.8, "offset": -0.1 }, "until": { "word": "agama", "after": 46, "offset": 1.5 } },
+          { "num": "02", "title": "PERSAUDARAAN", "sub": "Asas {kekuatan} mana-mana negara", "sub_big": true,
+            "highlight_at": { "word": "kekuatan" },
+            "at": { "word": "persaudaraan", "offset": -0.3 } }
+        ] }
+    ]},
+    { "id": "climax", "overlays": [
+      { "type": "slam", "kicker": "POINT 04 · KEMUNCAK", "lead_clip": "e", "lead_words": 6,
+        "big": "TUNTUTAN", "big_at": { "word": "tuntutan" },
+        "second": "ALLAH SWT", "second_at": { "word": "Allah", "after": 60 },
+        "lines": [ { "text": "MENYATUKAN DUA KELOMPOK", "at": { "word": "menyatukan", "after": 66 }, "stagger": 0.3 },
+                   { "text": "YANG BERTELINGKAH PANJANG", "at": { "word": "yang", "after": 68 }, "stagger": 0.25 } ],
+        "end": 70.3 }
+    ]},
+    { "id": "outro", "overlays": [
+      { "type": "words", "kicker": "POINT 05 · MESEJ PENUTUP",
+        "lines": [ { "size": 124, "gold": true, "words": [ { "text": "PERPADUAN", "at": { "word": "perpaduan", "after": 73 } } ] },
+                   { "size": 96, "words": [ { "text": "DEMI", "at": { "word": "demi" } },
+                                            { "text": "AGAMA", "at": { "word": "agama", "after": 74 } },
+                                            { "text": "ALLAH", "at": { "word": "Allah", "after": 75 } } ] } ],
+        "end": { "speech_end": true, "offset": -0.95 } },
+      { "type": "final", "kicker": "MESEJ PENUTUP",
+        "lines": [ "“INI BUKAN *PERPADUAN*", "UNTUK POLITIK", "*SEMATA-MATA.”*" ] }
+    ]}
+  ],
+
+  "sfx": [
+    { "file": "whoosh-cinematic", "at": { "cut": 1 }, "volume": 0.30 },
+    { "file": "whoosh-short", "at": { "cut": 2 }, "volume": 0.22 },
+    { "file": "whoosh", "at": { "cut": 3 }, "volume": 0.20 },
+    { "file": "whoosh-cinematic", "at": { "cut": 4 }, "volume": 0.26 },
+    { "file": "whoosh-short", "at": { "cut": 5 }, "volume": 0.20 },
+    { "file": "impact-bass-1", "at": 0.08, "volume": 0.55 },
+    { "file": "impact-bass-1", "at": { "word": "rakyat", "offset": 0.03 }, "volume": 0.32 },
+    { "file": "impact-bass-1", "at": { "word": "perpaduan", "after": 6.3, "offset": 0.03 }, "volume": 0.30 },
+    { "file": "whoosh", "at": { "word": "UMNO", "offset": 0.1 }, "volume": 0.22 },
+    { "file": "impact-bass-1", "at": { "word": "4.6", "offset": 0.06 }, "volume": 0.36 },
+    { "file": "impact-bass-1", "at": { "word": "persaudaraan", "offset": 0.03 }, "volume": 0.28 },
+    { "file": "riser", "at": { "word": "tuntutan", "offset": -0.02 }, "volume": 0.18 },
+    { "file": "impact-bass-1", "at": { "word": "tuntutan", "offset": 0.03 }, "volume": 0.38 },
+    { "file": "impact-bass-1", "at": { "speech_end": true, "offset": 0.09 }, "volume": 0.45 }
+  ],
+
+  "music": {
+    "cues": [
+      { "file": "assets/audio/cues/cue1.wav", "at": 0.0, "length": 24.0,
+        "prompt": "dark cinematic documentary underscore, low sustained orchestral strings, deep sub bass swells, soft timpani pulse, serious authoritative atmosphere, minor key, 80 bpm, instrumental, no vocals", "seed": 11 },
+      { "file": "assets/audio/cues/cue2.wav", "at": 21.0, "length": 30.0,
+        "prompt": "inspirational cinematic documentary score, driving string ostinato, emotional piano, controlled rhythmic percussion, warm brass pads, building, minor key, 90 bpm, instrumental, no vocals", "seed": 22 },
+      { "file": "assets/audio/cues/cue3.wav", "at": 48.5, "length": 30.0,
+        "prompt": "epic orchestral climax, powerful cinematic drums, soaring strings and heroic brass, triumphant then emotional resolution, 90 bpm, instrumental, no vocals", "seed": 33 },
+      { "file": "assets/audio/cues/cue4.wav", "at": 76.0, "length": 9.0, "seconds": 14,
+        "prompt": "emotional cinematic resolution, gentle piano and warm sustained strings, soft final chord, slow, hopeful, instrumental, no vocals", "seed": 44 }
+    ],
+    "climax_scene": "climax"
+  }
+}

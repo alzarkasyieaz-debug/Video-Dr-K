@@ -13,7 +13,7 @@
       .dip { position: absolute; inset: 0; background: #000; opacity: 0; }
   </style>
   <div id="root" data-composition-id="fx" data-width="1080" data-height="1920">
-    <div id="fx-bug" class="clip" data-start="0.4" data-duration="79.9" data-track-index="2"
+    <div id="fx-bug" class="clip" data-start="0.4" data-duration="79.91" data-track-index="2"
          style="position:absolute;left:108px;top:178px;">
       <span id="fx-bug-bar" style="display:inline-block;width:8px;height:30px;background:var(--gold-bright);vertical-align:-4px;margin-right:12px;"></span><span id="fx-bug-t" style="font-family:'Bebas Neue',sans-serif;font-size:34px;letter-spacing:.2em;color:rgba(255,255,255,.92);">PRN MELAKA <span style="color:var(--gold-bright);">&middot;</span> CERAMAH PERPADUAN</span>
     </div>
@@ -22,17 +22,17 @@
     <div id="fx-sw-2" class="clip sweep" data-start="46.41" data-duration="0.9" data-track-index="5" data-layout-ignore></div>
     <div id="fx-sw-3" class="clip sweep" data-start="59.71" data-duration="0.9" data-track-index="6" data-layout-ignore></div>
     <div id="fx-sw-4" class="clip sweep" data-start="70.1" data-duration="0.9" data-track-index="7" data-layout-ignore></div>
-    <div id="fx-dip-0" class="clip dip" data-start="6.22" data-duration="0.42" data-track-index="10" data-layout-ignore></div>
-    <div id="fx-dip-1" class="clip dip" data-start="33.64" data-duration="0.42" data-track-index="11" data-layout-ignore></div>
-    <div id="fx-dip-2" class="clip dip" data-start="46.64" data-duration="0.42" data-track-index="12" data-layout-ignore></div>
-    <div id="fx-dip-3" class="clip dip" data-start="59.94" data-duration="0.42" data-track-index="13" data-layout-ignore></div>
-    <div id="fx-dip-4" class="clip dip" data-start="70.33" data-duration="0.42" data-track-index="14" data-layout-ignore></div>
+    <div id="fx-dip-0" class="clip dip" data-start="6.22" data-duration="0.42" data-track-index="8" data-layout-ignore></div>
+    <div id="fx-dip-1" class="clip dip" data-start="33.64" data-duration="0.42" data-track-index="9" data-layout-ignore></div>
+    <div id="fx-dip-2" class="clip dip" data-start="46.64" data-duration="0.42" data-track-index="10" data-layout-ignore></div>
+    <div id="fx-dip-3" class="clip dip" data-start="59.94" data-duration="0.42" data-track-index="11" data-layout-ignore></div>
+    <div id="fx-dip-4" class="clip dip" data-start="70.33" data-duration="0.42" data-track-index="12" data-layout-ignore></div>
   </div>
   <script>
     const tl = gsap.timeline({ paused: true });
     tl.fromTo("#fx-bug-bar", { scaleY: 0 }, { scaleY: 1, duration: 0.4, ease: "expo.out" }, 0.4);
     tl.fromTo("#fx-bug-t", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.5, ease: "expo.out" }, 0.5);
-    tl.to("#fx-bug", { opacity: 0, duration: 0.3, ease: "power2.in" }, 80.0);
+    tl.to("#fx-bug", { opacity: 0, duration: 0.3, ease: "power2.in" }, 80.01);
     tl.fromTo("#fx-sw-0", { x: 0, rotation: 18, opacity: 0.0 }, { x: 2500, rotation: 18, opacity: 1, duration: 0.85, ease: "power2.inOut" }, 5.99);
     tl.fromTo("#fx-dip-0", { opacity: 0 }, { keyframes: [{ opacity: 0.45, duration: 0.1 }, { opacity: 0, duration: 0.3 }], ease: "power2.out" }, 6.22);
     tl.fromTo("#fx-sw-1", { x: 0, rotation: 18, opacity: 0.0 }, { x: 2500, rotation: 18, opacity: 1, duration: 0.85, ease: "power2.inOut" }, 33.41);

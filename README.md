@@ -12,7 +12,8 @@ Suntingan sinematik 84.5 s daripada rakaman ceramah PRN Melaka (`1101.mp4`, Goog
 | `assets/footage/clip-*.mp4` | Enam klip sumber (sudah dipotong, suara dibersihkan) |
 | `assets/audio/score.m4a` | Muzik asli (MusicGen), `assets/sfx/` kesan bunyi |
 | `data/` | `words.json` (masa perkataan), `camera.json` (jejak kamera), `music.json` (ducking) |
-| `tools/` | `build.py` (jana HTML), `music.py` (gabung muzik + ducking), `srt.py` |
+| `edit.json` | Fail suntingan style **Ceramah Politik**: klip, teks, kad, SFX, muzik |
+| `.claude/skills/ceramah-politik/` | Style **Ceramah Politik** (`/ceramah-politik`): panduan gaya + skrip pipeline |
 
 ## Sunting & render
 
@@ -22,7 +23,17 @@ npm run check
 npm run render
 ```
 
-Nama penceramah: isi `data-var-text="speakerName"` dalam `compositions/outro.html` (kosong = tidak dipaparkan).
+Nama penceramah: isi `speaker.name` dalam `edit.json`, kemudian bina semula (kosong = tidak dipaparkan).
 
-`python3 tools/build.py` menulis semula `index.html` dan `compositions/` — selepas itu jalankan semula
-`npx hyperframes media-treatment --selector video --grading '<lihat REVIEW.md>' --apply`.
+## Style "Ceramah Politik"
+
+Video ini kini satu style yang boleh diguna semula: taip `/ceramah-politik` dalam Claude Code bersama video ceramah baharu.
+Untuk membina semula projek ini daripada `edit.json`:
+
+```bash
+S=.claude/skills/ceramah-politik/scripts
+python3 $S/build.py .        # index.html + compositions/
+python3 $S/srt.py .          # deliverables/subtitles.srt
+```
+
+Langkah penuh (potong klip, forced alignment, jejak kamera, muzik) ada dalam `.claude/skills/ceramah-politik/SKILL.md`.

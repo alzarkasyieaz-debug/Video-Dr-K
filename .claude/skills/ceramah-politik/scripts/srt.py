@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-"""Write deliverables/subtitles.srt from data/words.json (forced-aligned, output timeline)."""
-import json, os
+"""deliverables/subtitles.srt from data/words.json (sentence cues, <= 8 words, max 2 lines of ~42 chars).
+Usage: python3 srt.py [project_dir]"""
+import json, os, sys
 
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-words = json.load(open(os.path.join(ROOT, "data/words.json")))
+P = os.path.abspath(sys.argv[1] if len(sys.argv) > 1 else ".")
+words = json.load(open(os.path.join(P, "data/words.json")))
 
 
 def ts(t):
@@ -24,20 +25,17 @@ for w in words:
     cur.append(w)
 if cur:
     cues.append(cur)
-
 out = []
 for i, c in enumerate(cues, 1):
-    start = c[0]["start"]
     end = c[-1]["end"] + 0.25
     if i < len(cues):
         end = min(end, cues[i][0]["start"] - 0.02)
     text = " ".join(w["text"] for w in c)
-    if len(text) > 42:  # two lines max, split near the middle on a space
+    if len(text) > 42:
         mid = len(text) // 2
         cut = min((k for k, ch in enumerate(text) if ch == " "), key=lambda k: abs(k - mid))
         text = text[:cut] + "\n" + text[cut + 1:]
-    out.append(f"{i}\n{ts(start)} --> {ts(end)}\n{text}\n")
-
-os.makedirs(os.path.join(ROOT, "deliverables"), exist_ok=True)
-open(os.path.join(ROOT, "deliverables/subtitles.srt"), "w").write("\n".join(out))
-print(len(cues), "cues")
+    out.append(f"{i}\n{ts(c[0]['start'])} --> {ts(end)}\n{text}\n")
+os.makedirs(os.path.join(P, "deliverables"), exist_ok=True)
+open(os.path.join(P, "deliverables/subtitles.srt"), "w").write("\n".join(out))
+print(len(cues), "cues -> deliverables/subtitles.srt")
