@@ -1,0 +1,77 @@
+{
+ "id": "11",
+ "slug": "MENGUAP_DALAM_SOLAT_HARAM_ATAU_MAKRUH",
+ "category": "FIQH SOLAT",
+ "title_lines": [
+  [
+   {
+    "t": "MENGUAP"
+   },
+   {
+    "t": "DALAM SOLAT:"
+   }
+  ],
+  [
+   {
+    "t": "HARAM",
+    "gold": true
+   },
+   {
+    "t": "ATAU"
+   }
+  ],
+  [
+   {
+    "t": "MAKRUH?",
+    "gold": true
+   }
+  ]
+ ],
+ "header_html": "MENGUAP DALAM SOLAT: <span class=\"g\">HARAM ATAU MAKRUH?</span>",
+ "whisper": "clips/whisper/w11.json",
+ "window": 165,
+ "start": 169.9,
+ "end": 281.2,
+ "arabic": [
+  {
+   "ar": "التَّثَاؤُبُ فِي الصَّلَاةِ مِنَ الشَّيْطَانِ",
+   "ms": "Menguap dalam solat itu daripada syaitan.",
+   "ref": "HR AT-TIRMIZI",
+   "at": 69.6,
+   "dur": 13.6
+  }
+ ],
+ "points": [
+  {
+   "label": "KARAHIYAH",
+   "text": "Bermaksud tegahan yang makruh — bukan haram",
+   "at": 6.0,
+   "dur": 12.4
+  },
+  {
+   "label": "DALILNYA",
+   "text": "Hadis riwayat Imam at-Tirmizi daripada Abu Hurairah",
+   "at": 48.6,
+   "dur": 10.6
+  },
+  {
+   "label": "KAEDAH",
+   "text": "Disandarkan kepada syaitan = larangan; haram atau makruh bergantung dalil lain",
+   "at": 94.0,
+   "dur": 16.4
+  }
+ ],
+ "keywords": [
+  "makruh",
+  "haram",
+  "menguap",
+  "syaitan",
+  "larangan",
+  "tegahan",
+  "Tirmizi"
+ ],
+ "text": "Dalam tajuk bab, awal-awal disebut karahiyah, maknanya tegahan yang makruh. Jadi hukumnya ialah hukum makruh menguap dalam solat. Ketahuilah kiranya, wahai saudaraku, bermula menguap dalam solat itu telah ditegahkan dia oleh syarak dengan dalil hadis yang dikeluarkan oleh Imam Tirmizi. Jadi pengarang kita, Syeikh Muhammad Idris al-Marbawi, awal-awal ambil kaedah hukum, iaitu ada satu larangan. Kata beliau, menguap dalam solat itu ditegah atau dilarang. Dilarang apa? Larangnya, kita akan jawab nanti, larangan yang makruh. Kenapa kita kena dilarang? Kerana hadis riwayat Tirmizi. Apa hadisnya? Yang dikeluarkan oleh Imam Tirmizi, demikian bunyinya. 'An Abi Hurairah, annan Nabiyya sallallahu 'alaihi wa sallam qal, diriwayatkan daripada Abu Hurairah bahawasanya Nabi sallallahu 'alaihi wa sallam bersabda ia, at-tatha'ubu fis solati minasy syaitan, bermula menguap dalam solat itu setengah daripada perbuatan syaitan. Dari lafaz hadis menyebut, awal-awal Nabi kata, menguap itu sebahagian ataupun datang daripada syaitan. Bila apa saja perkara dibangsakan pada syaitan, bererti itu satu larangan ataupun tegahan. Tinggal lagi tegahan itu haram ke makruh bergantung pada dalil yang lain pula.",
+ "speaker": "Kuliah Kitab Bahrul Mazi",
+ "speaker_role": "Syarah Mukhtasar Sahih at-Tirmizi • Siri 30",
+ "series": "KULIAH FIQH SOLAT"
+}

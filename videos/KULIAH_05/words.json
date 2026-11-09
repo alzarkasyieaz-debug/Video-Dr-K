@@ -1,0 +1,952 @@
+[
+{
+"text": "Hadis",
+"start": 0.0,
+"end": 0.37
+},
+{
+"text": "yang",
+"start": 0.37,
+"end": 0.71
+},
+{
+"text": "lain",
+"start": 0.71,
+"end": 1.05
+},
+{
+"text": "pula",
+"start": 1.05,
+"end": 1.42
+},
+{
+"text": "tunjuk",
+"start": 1.42,
+"end": 2.02
+},
+{
+"text": "cara",
+"start": 2.02,
+"end": 2.36
+},
+{
+"text": "nak",
+"start": 2.36,
+"end": 2.61
+},
+{
+"text": "tahan,",
+"start": 2.61,
+"end": 3.07
+},
+{
+"text": "ialah",
+"start": 3.07,
+"end": 3.78
+},
+{
+"text": "dengan",
+"start": 3.78,
+"end": 4.06
+},
+{
+"text": "cara",
+"start": 4.06,
+"end": 4.42
+},
+{
+"text": "tutup",
+"start": 4.42,
+"end": 5.3
+},
+{
+"text": "mulut.",
+"start": 5.3,
+"end": 6.5
+},
+{
+"text": "Iza",
+"start": 6.82,
+"end": 7.39
+},
+{
+"text": "tatha'aba",
+"start": 7.39,
+"end": 8.59
+},
+{
+"text": "ahadukum",
+"start": 8.84,
+"end": 10.04
+},
+{
+"text": "fal",
+"start": 10.38,
+"end": 10.71
+},
+{
+"text": "yumsik",
+"start": 10.71,
+"end": 11.4
+},
+{
+"text": "biyadihi",
+"start": 11.4,
+"end": 12.6
+},
+{
+"text": "'ala",
+"start": 12.68,
+"end": 13.009
+},
+{
+"text": "fihi,",
+"start": 13.009,
+"end": 13.42
+},
+{
+"text": "bila",
+"start": 13.42,
+"end": 13.93
+},
+{
+"text": "mana",
+"start": 13.93,
+"end": 14.28
+},
+{
+"text": "seseorang",
+"start": 14.28,
+"end": 15.48
+},
+{
+"text": "kamu",
+"start": 15.89,
+"end": 16.15
+},
+{
+"text": "menguap,",
+"start": 16.15,
+"end": 17.35
+},
+{
+"text": "maka",
+"start": 17.74,
+"end": 18.26
+},
+{
+"text": "tahan",
+"start": 18.26,
+"end": 19.46
+},
+{
+"text": "dengan",
+"start": 19.7,
+"end": 20.9
+},
+{
+"text": "tangan",
+"start": 21.05,
+"end": 21.5
+},
+{
+"text": "dia,",
+"start": 21.5,
+"end": 22.07
+},
+{
+"text": "atas",
+"start": 22.07,
+"end": 22.58
+},
+{
+"text": "mulut",
+"start": 22.58,
+"end": 22.94
+},
+{
+"text": "dia.",
+"start": 22.94,
+"end": 23.62
+},
+{
+"text": "Fal",
+"start": 23.62,
+"end": 23.82
+},
+{
+"text": "yumsik,",
+"start": 23.82,
+"end": 24.64
+},
+{
+"text": "pegang,",
+"start": 24.64,
+"end": 25.41
+},
+{
+"text": "biyadihi,",
+"start": 25.41,
+"end": 26.23
+},
+{
+"text": "dengan",
+"start": 26.23,
+"end": 26.96
+},
+{
+"text": "tangan",
+"start": 26.96,
+"end": 27.61
+},
+{
+"text": "dia.",
+"start": 27.61,
+"end": 28.28
+},
+{
+"text": "'Ala",
+"start": 28.28,
+"end": 28.569
+},
+{
+"text": "fihi,",
+"start": 28.569,
+"end": 28.931
+},
+{
+"text": "atas",
+"start": 28.931,
+"end": 29.22
+},
+{
+"text": "mulut.",
+"start": 29.22,
+"end": 29.94
+},
+{
+"text": "Gitu,",
+"start": 29.94,
+"end": 30.76
+},
+{
+"text": "bila",
+"start": 30.76,
+"end": 31.5
+},
+{
+"text": "tutup",
+"start": 31.5,
+"end": 32.045
+},
+{
+"text": "gitu,",
+"start": 32.045,
+"end": 32.59
+},
+{
+"text": "hak",
+"start": 32.59,
+"end": 32.96
+},
+{
+"text": "menguap",
+"start": 32.96,
+"end": 33.76
+},
+{
+"text": "itu",
+"start": 33.76,
+"end": 33.99
+},
+{
+"text": "ada,",
+"start": 33.99,
+"end": 34.55
+},
+{
+"text": "tapi",
+"start": 34.55,
+"end": 35.04
+},
+{
+"text": "tak",
+"start": 35.04,
+"end": 35.46
+},
+{
+"text": "bunyi.",
+"start": 35.46,
+"end": 36.66
+},
+{
+"text": "Kita,",
+"start": 37.9,
+"end": 39.1
+},
+{
+"text": "waaa,",
+"start": 39.41,
+"end": 40.02
+},
+{
+"text": "kuat",
+"start": 40.02,
+"end": 41.22
+},
+{
+"text": "bunyi.",
+"start": 41.26,
+"end": 42.46
+},
+{
+"text": "Nabi",
+"start": 42.6,
+"end": 43.2
+},
+{
+"text": "suruh",
+"start": 43.2,
+"end": 43.94
+},
+{
+"text": "tutup",
+"start": 43.94,
+"end": 45.07
+},
+{
+"text": "mulut",
+"start": 45.07,
+"end": 45.45
+},
+{
+"text": "menguap.",
+"start": 45.45,
+"end": 46.43
+},
+{
+"text": "Tutup",
+"start": 46.43,
+"end": 46.71
+},
+{
+"text": "mulut",
+"start": 46.71,
+"end": 47.07
+},
+{
+"text": "menguap",
+"start": 47.07,
+"end": 47.38
+},
+{
+"text": "sebenarnya",
+"start": 47.38,
+"end": 47.97
+},
+{
+"text": "sebahagian",
+"start": 47.97,
+"end": 48.77
+},
+{
+"text": "daripada",
+"start": 48.77,
+"end": 49.54
+},
+{
+"text": "tafsiran",
+"start": 49.54,
+"end": 50.34
+},
+{
+"text": "pada",
+"start": 50.34,
+"end": 50.67
+},
+{
+"text": "hadis",
+"start": 50.67,
+"end": 51.35
+},
+{
+"text": "yang",
+"start": 51.35,
+"end": 52.01
+},
+{
+"text": "kita",
+"start": 52.01,
+"end": 52.17
+},
+{
+"text": "baca,",
+"start": 52.17,
+"end": 52.77
+},
+{
+"text": "mastata'a,",
+"start": 52.77,
+"end": 53.9
+},
+{
+"text": "apa",
+"start": 53.9,
+"end": 54.07
+},
+{
+"text": "hak",
+"start": 54.07,
+"end": 54.24
+},
+{
+"text": "dia",
+"start": 54.24,
+"end": 54.42
+},
+{
+"text": "boleh.",
+"start": 54.42,
+"end": 55.62
+},
+{
+"text": "Kalau",
+"start": 55.64,
+"end": 56.3
+},
+{
+"text": "boleh",
+"start": 56.3,
+"end": 56.9
+},
+{
+"text": "dengan",
+"start": 56.9,
+"end": 57.3
+},
+{
+"text": "tak",
+"start": 57.3,
+"end": 57.51
+},
+{
+"text": "tutup",
+"start": 57.51,
+"end": 57.86
+},
+{
+"text": "mulut,",
+"start": 57.86,
+"end": 58.3
+},
+{
+"text": "tak",
+"start": 58.3,
+"end": 58.51
+},
+{
+"text": "tutup",
+"start": 58.51,
+"end": 58.91
+},
+{
+"text": "mulut,",
+"start": 58.91,
+"end": 59.4
+},
+{
+"text": "dia",
+"start": 59.4,
+"end": 59.77
+},
+{
+"text": "boleh",
+"start": 59.77,
+"end": 59.96
+},
+{
+"text": "tahan.",
+"start": 59.96,
+"end": 60.58
+},
+{
+"text": "Kalau",
+"start": 60.58,
+"end": 61.14
+},
+{
+"text": "dengan",
+"start": 61.14,
+"end": 61.82
+},
+{
+"text": "tutup",
+"start": 61.82,
+"end": 62.15
+},
+{
+"text": "mulut,",
+"start": 62.15,
+"end": 62.57
+},
+{
+"text": "tutup",
+"start": 62.57,
+"end": 62.78
+},
+{
+"text": "mulut",
+"start": 62.78,
+"end": 63.26
+},
+{
+"text": "dengan",
+"start": 63.26,
+"end": 63.64
+},
+{
+"text": "tangan.",
+"start": 63.64,
+"end": 64.71
+},
+{
+"text": "Dan",
+"start": 64.71,
+"end": 65.0
+},
+{
+"text": "kata",
+"start": 65.0,
+"end": 65.38
+},
+{
+"text": "ulama,",
+"start": 65.38,
+"end": 66.05
+},
+{
+"text": "maksud",
+"start": 66.05,
+"end": 66.63
+},
+{
+"text": "dengan",
+"start": 66.63,
+"end": 67.3
+},
+{
+"text": "tangan",
+"start": 67.3,
+"end": 67.77
+},
+{
+"text": "atau",
+"start": 67.77,
+"end": 68.08
+},
+{
+"text": "dengan",
+"start": 68.08,
+"end": 68.56
+},
+{
+"text": "apa",
+"start": 68.56,
+"end": 68.78
+},
+{
+"text": "sahaja",
+"start": 68.78,
+"end": 69.22
+},
+{
+"text": "hal",
+"start": 69.22,
+"end": 69.43
+},
+{
+"text": "lain?",
+"start": 69.43,
+"end": 70.34
+},
+{
+"text": "Dengan",
+"start": 70.34,
+"end": 71.03
+},
+{
+"text": "sapu",
+"start": 71.03,
+"end": 71.27
+},
+{
+"text": "tangan.",
+"start": 71.27,
+"end": 72.14
+},
+{
+"text": "Yang",
+"start": 72.14,
+"end": 72.58
+},
+{
+"text": "penting",
+"start": 72.58,
+"end": 73.21
+},
+{
+"text": "nak",
+"start": 73.21,
+"end": 73.58
+},
+{
+"text": "tutup.",
+"start": 73.58,
+"end": 74.49
+},
+{
+"text": "Bila",
+"start": 74.49,
+"end": 74.97
+},
+{
+"text": "menguap",
+"start": 74.97,
+"end": 75.42
+},
+{
+"text": "sahaja",
+"start": 75.42,
+"end": 75.82
+},
+{
+"text": "nak",
+"start": 75.82,
+"end": 76.08
+},
+{
+"text": "tutup,",
+"start": 76.08,
+"end": 76.67
+},
+{
+"text": "kenapa?",
+"start": 76.67,
+"end": 77.46
+},
+{
+"text": "Nak",
+"start": 77.46,
+"end": 77.72
+},
+{
+"text": "tutup",
+"start": 77.72,
+"end": 78.29
+},
+{
+"text": "lubang-lubang",
+"start": 78.29,
+"end": 79.26
+},
+{
+"text": "masuk",
+"start": 79.26,
+"end": 79.68
+},
+{
+"text": "syaitan",
+"start": 79.68,
+"end": 80.38
+},
+{
+"text": "dalam",
+"start": 80.38,
+"end": 80.7
+},
+{
+"text": "mulut.",
+"start": 80.7,
+"end": 81.1
+},
+{
+"text": "Ini",
+"start": 81.1,
+"end": 81.62
+},
+{
+"text": "ada",
+"start": 81.62,
+"end": 81.761
+},
+{
+"text": "riwayat",
+"start": 81.761,
+"end": 82.089
+},
+{
+"text": "lain",
+"start": 82.089,
+"end": 82.358
+},
+{
+"text": "sebut,",
+"start": 82.358,
+"end": 82.76
+},
+{
+"text": "fa",
+"start": 82.76,
+"end": 83.88
+},
+{
+"text": "innahu",
+"start": 83.88,
+"end": 84.72
+},
+{
+"text": "yadkhul.",
+"start": 84.72,
+"end": 85.92
+},
+{
+"text": "Kerana",
+"start": 86.112,
+"end": 87.155
+},
+{
+"text": "sesungguhnya",
+"start": 87.155,
+"end": 88.355
+},
+{
+"text": "syaitan",
+"start": 89.242,
+"end": 90.442
+},
+{
+"text": "itu",
+"start": 90.46,
+"end": 90.94
+},
+{
+"text": "boleh",
+"start": 90.94,
+"end": 91.74
+},
+{
+"text": "masuk.",
+"start": 91.74,
+"end": 92.62
+},
+{
+"text": "Bila",
+"start": 92.62,
+"end": 92.99
+},
+{
+"text": "buka",
+"start": 92.99,
+"end": 93.35
+},
+{
+"text": "mulut",
+"start": 93.35,
+"end": 93.81
+},
+{
+"text": "syaitan",
+"start": 93.81,
+"end": 94.5
+},
+{
+"text": "masuk.",
+"start": 94.5,
+"end": 95.1
+},
+{
+"text": "Ini",
+"start": 95.1,
+"end": 95.94
+},
+{
+"text": "ulama",
+"start": 95.94,
+"end": 96.26
+},
+{
+"text": "bahas",
+"start": 96.26,
+"end": 96.42
+},
+{
+"text": "panjang.",
+"start": 96.42,
+"end": 97.55
+},
+{
+"text": "Kenapa",
+"start": 97.55,
+"end": 98.34
+},
+{
+"text": "kata",
+"start": 98.34,
+"end": 98.89
+},
+{
+"text": "syaitan",
+"start": 98.89,
+"end": 99.66
+},
+{
+"text": "masuk?",
+"start": 99.66,
+"end": 100.62
+},
+{
+"text": "Syaitan",
+"start": 100.62,
+"end": 101.45
+},
+{
+"text": "kan",
+"start": 101.45,
+"end": 102.29
+},
+{
+"text": "boleh",
+"start": 102.29,
+"end": 102.46
+},
+{
+"text": "mengalir",
+"start": 102.46,
+"end": 103.22
+},
+{
+"text": "ikut",
+"start": 103.22,
+"end": 103.66
+},
+{
+"text": "aliran",
+"start": 103.66,
+"end": 103.98
+},
+{
+"text": "darah.",
+"start": 103.98,
+"end": 105.18
+},
+{
+"text": "Itu",
+"start": 105.51,
+"end": 106.45
+},
+{
+"text": "satu.",
+"start": 106.45,
+"end": 107.4
+},
+{
+"text": "Syaitan",
+"start": 107.4,
+"end": 108.6
+},
+{
+"text": "itu",
+"start": 108.73,
+"end": 109.31
+},
+{
+"text": "mengalir",
+"start": 109.31,
+"end": 110.51
+},
+{
+"text": "ikut",
+"start": 110.86,
+"end": 111.34
+},
+{
+"text": "aliran",
+"start": 111.34,
+"end": 111.7
+},
+{
+"text": "darah.",
+"start": 111.7,
+"end": 112.86
+},
+{
+"text": "Dia",
+"start": 112.86,
+"end": 113.67
+},
+{
+"text": "masuk",
+"start": 113.67,
+"end": 113.82
+},
+{
+"text": "dalam",
+"start": 113.82,
+"end": 113.98
+},
+{
+"text": "badan",
+"start": 113.98,
+"end": 114.3
+},
+{
+"text": "manusia,",
+"start": 114.3,
+"end": 114.75
+},
+{
+"text": "dia",
+"start": 114.75,
+"end": 114.9
+},
+{
+"text": "mengalir",
+"start": 114.9,
+"end": 115.27
+},
+{
+"text": "ikut",
+"start": 115.27,
+"end": 115.5
+},
+{
+"text": "aliran",
+"start": 115.5,
+"end": 115.8
+},
+{
+"text": "darah.",
+"start": 115.8,
+"end": 116.2
+},
+{
+"text": "Kemudian",
+"start": 116.2,
+"end": 116.77
+},
+{
+"text": "dia",
+"start": 116.77,
+"end": 116.963
+},
+{
+"text": "mula",
+"start": 116.963,
+"end": 117.22
+},
+{
+"text": "membisik-bisikkan.",
+"start": 117.22,
+"end": 118.42
+}
+]

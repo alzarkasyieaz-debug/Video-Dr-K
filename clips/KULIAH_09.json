@@ -1,0 +1,78 @@
+{
+ "id": "09",
+ "slug": "MENGUAP_BERSUARA_SYAITAN_KETAWA",
+ "category": "ADAB MENGUAP",
+ "title_lines": [
+  [
+   {
+    "t": "MENGUAP"
+   },
+   {
+    "t": "SAMPAI"
+   }
+  ],
+  [
+   {
+    "t": "BERSUARA?",
+    "gold": true
+   }
+  ],
+  [
+   {
+    "t": "SYAITAN"
+   },
+   {
+    "t": "KETAWA!",
+    "gold": true
+   }
+  ]
+ ],
+ "header_html": "MENGUAP SAMPAI BERSUARA? <span class=\"g\">SYAITAN KETAWA!</span>",
+ "whisper": "clips/whisper/w09.json",
+ "window": 1236,
+ "start": 1236.2,
+ "end": 1349.3,
+ "arabic": [
+  {
+   "ar": "فَإِذَا تَثَاءَبَ أَحَدُكُمْ فَلْيَرُدَّهُ مَا اسْتَطَاعَ، فَإِنَّ أَحَدَكُمْ إِذَا قَالَ: هَا، ضَحِكَ الشَّيْطَانُ",
+   "ms": "Apabila salah seorang daripada kamu menguap, hendaklah dia menahannya sedaya mampu; kerana apabila dia berbunyi 'haa', syaitan ketawa.",
+   "ref": "HR AL-BUKHARI",
+   "at": 6.0,
+   "dur": 15.6
+  },
+  {
+   "ar": "إِذَا تَثَاءَبَ أَحَدُكُمْ فَلْيَضَعْ يَدَهُ عَلَى فِيهِ، وَلَا يَعْوِي",
+   "ms": "Apabila salah seorang daripada kamu menguap, letakkanlah tangannya pada mulutnya, dan janganlah dia melolong.",
+   "ref": "HR IBNU MAJAH",
+   "at": 59.0,
+   "dur": 15.0
+  }
+ ],
+ "points": [
+  {
+   "label": "KENAPA DITAHAN?",
+   "text": "Menguap sambil bersuara 'haa' — syaitan ketawa",
+   "at": 33.8,
+   "dur": 14.4
+  },
+  {
+   "label": "ADABNYA",
+   "text": "Tutup mulut dengan tangan dan jangan bersuara seperti lolongan",
+   "at": 78.6,
+   "dur": 15
+  }
+ ],
+ "keywords": [
+  "menguap",
+  "syaitan",
+  "ketawa",
+  "bunyi",
+  "tangan",
+  "mulut",
+  "serigala"
+ ],
+ "text": "Ada satu lagi hadis, riwayat Bukhari. At-tatha'ubu minasy syaitan, menguap daripada syaitan. Fa iza tatha'aba ahadukum, bila mana menguap seseorang kamu, fal yaruddahu mastata'a, maka hendaklah dia menolak apa hak dia boleh, ada hak dia boleh. Fa inna ahadakum iza qala ha, dhahikasy syaitan. Sesungguhnya seseorang kamu bila menguap, haa, syaitan pun ketawa. Mana kata lagu mana? Jadi bila menguap atau tak tahan hingga buka mulut, bukan cakap buka mulut, bunyi pula mulut, syaitan ketawa. Satu lagi hadis, riwayat Ibnu Majah, kata Nabi, fal yadha' yadahu 'ala fihi wala ya'wi. Bila menguap, letak tangan atas mulut. Wala ya'wi, jangan bunyi. Ya'wi ini asalnya bunyi salakan serigala. Kita menguap, wi. Menguap itu jadi macam anjing serigala. Tapi jangan, wala ya'wi, jangan bunyi melolong, seperti mana lolongan binatang, iaitu serigala.",
+ "speaker": "Kuliah Kitab Bahrul Mazi",
+ "speaker_role": "Syarah Mukhtasar Sahih at-Tirmizi • Siri 30",
+ "series": "KULIAH FIQH SOLAT"
+}

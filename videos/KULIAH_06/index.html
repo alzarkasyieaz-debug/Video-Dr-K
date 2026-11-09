@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ms">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="assets/vendor/gsap.min.js"></script>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1080px; height: 1920px; overflow: hidden; background: #081726; }
+      #bg { position: absolute; inset: 0; background: #081726; }
+      #cam { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; transform-origin: 0 0; }
+      #v { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; object-fit: cover; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="119.1" data-width="1080" data-height="1920">
+      <div id="bg"></div>
+      <div id="cam">
+        <video id="v" class="clip" src="assets/clip.mp4" data-start="0" data-duration="117.1" data-track-index="0" muted playsinline style="z-index:1"></video>
+      </div>
+      <audio id="voice" class="clip" src="assets/voice.m4a" data-start="0" data-duration="117.1" data-track-index="1" data-volume="1"></audio>
+      <audio id="music" class="clip" src="assets/music.m4a" data-start="0" data-duration="119.1" data-track-index="2" data-volume="0.1" data-fade-in="2" data-fade-out="2.5"></audio>
+      <div id="overlay" class="clip" data-composition-id="overlay" data-composition-src="compositions/overlay.html" data-start="0" data-duration="119.1" data-track-index="3" data-track-kind="graphics" data-width="1080" data-height="1920" style="z-index:5"></div>
+      <div id="captions" class="clip" data-composition-id="captions" data-composition-src="compositions/captions.html" data-start="0" data-duration="117.1" data-track-index="4" data-track-kind="captions" data-width="1080" data-height="1920" style="z-index:6"></div>
+    </div>
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      tl.set("#cam", {x:-352.5, y:-872.0, scale:1.5}, 0.00);
+      tl.to("#cam", {x:-372.8, y:-919.2, scale:1.534, duration:5.70, ease:"none"}, 0.00);
+      tl.set("#cam", {x:-150.2, y:-302.1, scale:1.16}, 5.70);
+      tl.to("#cam", {x:-185.9, y:-377.4, scale:1.220, duration:16.10, ease:"none"}, 5.70);
+      tl.set("#cam", {x:-233.5, y:-554.4, scale:1.3}, 21.80);
+      tl.to("#cam", {x:-269.2, y:-629.7, scale:1.360, duration:14.35, ease:"none"}, 21.80);
+      tl.set("#cam", {x:-340.6, y:-840.2, scale:1.48}, 36.15);
+      tl.to("#cam", {x:-376.3, y:-915.5, scale:1.540, duration:14.05, ease:"none"}, 36.15);
+      tl.set("#cam", {x:-221.6, y:-532.6, scale:1.28}, 50.20);
+      tl.to("#cam", {x:-257.3, y:-607.9, scale:1.340, duration:13.10, ease:"none"}, 50.20);
+      tl.set("#cam", {x:-233.5, y:-554.4, scale:1.3}, 63.30);
+      tl.to("#cam", {x:-257.6, y:-608.5, scale:1.341, duration:6.75, ease:"none"}, 63.30);
+      tl.set("#cam", {x:-340.6, y:-840.2, scale:1.48}, 70.05);
+      tl.to("#cam", {x:-363.6, y:-892.3, scale:1.519, duration:6.45, ease:"none"}, 70.05);
+      tl.set("#cam", {x:-221.6, y:-532.6, scale:1.28}, 76.50);
+      tl.to("#cam", {x:-257.3, y:-607.9, scale:1.340, duration:13.00, ease:"none"}, 76.50);
+      tl.set("#cam", {x:-233.5, y:-554.4, scale:1.3}, 89.50);
+      tl.to("#cam", {x:-261.9, y:-616.3, scale:1.348, duration:7.95, ease:"none"}, 89.50);
+      tl.set("#cam", {x:-340.6, y:-840.2, scale:1.48}, 97.45);
+      tl.to("#cam", {x:-367.9, y:-900.2, scale:1.526, duration:7.65, ease:"none"}, 97.45);
+      tl.set("#cam", {x:-221.6, y:-532.6, scale:1.28}, 105.10);
+      tl.to("#cam", {x:-257.3, y:-607.9, scale:1.340, duration:14.00, ease:"none"}, 105.10);
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>

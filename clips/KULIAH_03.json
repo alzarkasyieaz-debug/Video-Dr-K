@@ -1,0 +1,80 @@
+{
+ "id": "03",
+ "slug": "SAKIT_MUSAFIR_PAHALA_TETAP_DITULIS",
+ "category": "HADIS & AMALAN",
+ "title_lines": [
+  [
+   {
+    "t": "SAKIT"
+   },
+   {
+    "t": "&"
+   },
+   {
+    "t": "MUSAFIR:",
+    "gold": true
+   }
+  ],
+  [
+   {
+    "t": "PAHALA AMALAN"
+   }
+  ],
+  [
+   {
+    "t": "TETAP"
+   },
+   {
+    "t": "DITULIS",
+    "gold": true
+   }
+  ]
+ ],
+ "header_html": "SAKIT &amp; MUSAFIR: PAHALA AMALAN <span class=\"g\">TETAP DITULIS</span>",
+ "whisper": "clips/whisper/w03.json",
+ "window": 2855,
+ "start": 2858.3,
+ "end": 2956.6,
+ "arabic": [
+  {
+   "ar": "إِذَا مَرِضَ الْعَبْدُ أَوْ سَافَرَ، كُتِبَ لَهُ مِثْلُ مَا كَانَ يَعْمَلُ مُقِيمًا صَحِيحًا",
+   "ms": "Apabila seorang hamba sakit atau bermusafir, ditulis baginya (pahala) seperti amalan yang biasa dilakukannya ketika bermukim dan sihat.",
+   "ref": "HR AL-BUKHARI",
+   "at": 5.6,
+   "dur": 10.2
+  }
+ ],
+ "points": [
+  {
+   "label": "POIN 1",
+   "text": "Sakit atau musafir: amalan biasa tetap ditulis pahalanya",
+   "at": 16.2,
+   "dur": 12.4
+  },
+  {
+   "label": "CONTOH",
+   "text": "Biasa solat dhuha lapan rakaat, terhalang kerana sakit atau musafir",
+   "at": 29.2,
+   "dur": 11.5
+  },
+  {
+   "label": "SOLAT FARDU",
+   "text": "Duduk kerana sakit, tak mampu berdiri: pahala sama",
+   "at": 85.0,
+   "dur": 11.2
+  }
+ ],
+ "keywords": [
+  "sakit",
+  "musafir",
+  "pahala",
+  "dhuha",
+  "sunat",
+  "fardu",
+  "sihat"
+ ],
+ "text": "Faedah kedua. Lagi kata, man marida aw safara. Siapa sakit, atau dia musafir, kutiba lahu ma kana ya'maluhu sahihan muqiman. Dicatat bagi dia apa yang dia biasa buat ketika mana dia sihat dan ketika mana dia bermukim. Masa dia sihat, dia sembahyang sunat dhuha tak tinggal. Masa dia tak musafir, dia amalkan solat sunat dhuha dia. Bila dia sakit, tak boleh buat macam biasa dia buat. Selama ni buat lapan, tak larat lapan, dah buat dua lagi. Dia dah tinggal pula rupanya sebab sakit. Atau kerana musafir, urusan pelbagai, dah tinggal hal sunat. Nabi kata siapa yang sakit dan orang yang musafir, dia tak boleh buat hal biasa dia buat, Allah catat untuk dia apa hal dia biasa buat tu. Maksudnya biasa amalannya dia pagi pukul lapan terus solat sunat dhuha. Dia tak boleh buat hari ni, atau dia terlupa hari ni, atau dia sakit hari ni, dia dapat pahala yang sama macam dia buat. Berdasarkan hadis itu kita ambil, kita kaitkan hadis sini, maknanya hal Nabi kata separuh-separuh ni merujuk kepada hal sunat. Kalau hal fardu, dia nak berdiri tapi tak boleh berdiri, sakit, dia pun duduk. Kalau dia sihat, dia berdiri. Maksudnya pahala, pahala yang sama. Itu satu sudut perbahasan.",
+ "speaker": "Kuliah Kitab Bahrul Mazi",
+ "speaker_role": "Syarah Mukhtasar Sahih at-Tirmizi • Siri 30",
+ "series": "KULIAH FIQH SOLAT"
+}

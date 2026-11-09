@@ -1,0 +1,159 @@
+<template>
+  <style>
+    
+    @font-face { font-family: "Montserrat"; font-weight: 800; src: url("assets/fonts/montserrat-800.woff2") format("woff2"); }
+    @font-face { font-family: "Montserrat"; font-weight: 900; src: url("assets/fonts/montserrat-900.woff2") format("woff2"); }
+    @font-face { font-family: "Montserrat"; font-weight: 600; src: url("assets/fonts/montserrat-600.woff2") format("woff2"); }
+    @font-face { font-family: "Amiri"; font-weight: 700; src: url("assets/fonts/amiri-700.woff2") format("woff2"); }
+
+    #root { position: absolute; inset: 0; font-family: "Montserrat", "Amiri", sans-serif; color: #fff; }
+    #ov-topscrim { position: absolute; left: 0; top: 0; width: 1080px; height: 760px;
+      background: linear-gradient(180deg, rgba(8,23,38,.92) 0%, rgba(8,23,38,.78) 38%, rgba(7,59,53,.25) 75%, rgba(8,23,38,0) 100%); }
+    #ov-botscrim { position: absolute; left: 0; top: 1080px; width: 1080px; height: 840px;
+      background: linear-gradient(180deg, rgba(8,23,38,0) 0%, rgba(8,23,38,.55) 25%, rgba(8,23,38,.9) 60%, #081726 100%); }
+    #ov-pattern { position: absolute; left: 0; top: 1500px; width: 1080px; height: 420px; opacity: .14;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cg fill='none' stroke='%23D5B36A' stroke-width='1.4'%3E%3Crect x='30' y='30' width='60' height='60'/%3E%3Crect x='30' y='30' width='60' height='60' transform='rotate(45 60 60)'/%3E%3Ccircle cx='60' cy='60' r='14'/%3E%3C/g%3E%3C/svg%3E");
+      -webkit-mask-image: linear-gradient(180deg, transparent, #000 60%); mask-image: linear-gradient(180deg, transparent, #000 60%); }
+    .star { position: absolute; opacity: .55; }
+    #ov-star1 { right: 52px; top: 188px; }
+    #ov-star2 { left: 470px; top: 1640px; opacity: .5; }
+    #ov-light { position: absolute; left: -200px; top: 120px; width: 900px; height: 900px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(213,179,106,.20), rgba(213,179,106,0) 65%); }
+    /* hook */
+    #hook { position: absolute; left: 60px; top: 196px; width: 960px; }
+    .chip { display: inline-block; padding: 10px 22px; border: 2px solid #D5B36A; border-radius: 40px; color: #D5B36A;
+      font-weight: 800; font-size: 28px; letter-spacing: .14em; background: rgba(7,59,53,.55); }
+    #hook-title { margin-top: 26px; font-weight: 900; font-size: 74px; line-height: 1.08; letter-spacing: -.01em;
+      text-shadow: 0 6px 24px rgba(0,0,0,.55); }
+    #hook-title .g { color: #FFE16B; }
+    #hook-rule { margin-top: 24px; width: 260px; height: 6px; background: #D5B36A; border-radius: 3px; transform-origin: 0 50%; }
+    /* compact header */
+    #header { position: absolute; left: 60px; top: 192px; width: 820px; }
+    #header .chip { font-size: 22px; padding: 7px 16px; }
+    #header-title { margin-top: 14px; font-weight: 900; font-size: 44px; line-height: 1.12; text-shadow: 0 4px 16px rgba(0,0,0,.6); }
+    #header-title .g { color: #FFE16B; }
+    /* cards */
+    .card { position: absolute; left: 60px; top: 372px; width: 960px; }
+    .card-in { background: rgba(8,23,38,.84); border: 1.5px solid rgba(213,179,106,.55); border-left: 8px solid #D5B36A;
+      border-radius: 22px; padding: 26px 34px 30px; box-shadow: 0 18px 50px rgba(0,0,0,.45); }
+    .card-label { color: #D5B36A; font-weight: 800; font-size: 28px; letter-spacing: .16em; }
+    .card-text { margin-top: 10px; font-weight: 800; font-size: 44px; line-height: 1.18; }
+    .ar-card { text-align: center; }
+    .ar-text { font-family: "Amiri", serif; font-weight: 700; font-size: 62px; line-height: 1.5; color: #FFE16B; }
+    .ar-ms { margin-top: 8px; font-weight: 600; font-size: 34px; line-height: 1.3; }
+    .ar-ref { margin-top: 10px; font-weight: 800; font-size: 26px; color: #D5B36A; letter-spacing: .08em; }
+    /* lower third */
+    #lt { position: absolute; left: 60px; top: 1004px; width: 900px; }
+    #lt-in { display: flex; align-items: stretch; }
+    #lt-bar { width: 8px; background: #D5B36A; border-radius: 4px; transform-origin: 50% 0; }
+    #lt-box { margin-left: 16px; padding: 10px 22px 12px; background: rgba(8,23,38,.86); border-radius: 10px; }
+    #lt-name { font-weight: 900; font-size: 36px; }
+    #lt-role { font-weight: 600; font-size: 24px; color: #D5B36A; letter-spacing: .06em; margin-top: 2px; }
+    /* outro */
+    #outro { position: absolute; inset: 0; background: #081726; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+    #outro-series { margin-top: 34px; color: #D5B36A; font-weight: 800; font-size: 34px; letter-spacing: .2em; }
+    #outro-title { margin-top: 18px; width: 900px; text-align: center; font-weight: 900; font-size: 52px; line-height: 1.12; }
+    #outro-title .g { color: #FFE16B; }
+  </style>
+  <div id="root" data-composition-id="overlay" data-width="1080" data-height="1920">
+    <div id="ov-light"></div>
+    <div id="ov-topscrim"></div>
+    <div id="ov-botscrim"></div>
+    <div id="ov-pattern"></div>
+    <div id="ov-star1" class="star"><svg viewBox="-50 -50 100 100" width="110" height="110"><g fill="none" stroke="#D5B36A" stroke-width="2"><rect x="-30" y="-30" width="60" height="60"/><rect x="-30" y="-30" width="60" height="60" transform="rotate(45)"/><circle r="15"/><circle r="44" stroke-opacity=".5"/></g></svg></div>
+    <div id="ov-star2" class="star"><svg viewBox="-50 -50 100 100" width="140" height="140"><g fill="none" stroke="#D5B36A" stroke-width="1.6"><rect x="-30" y="-30" width="60" height="60"/><rect x="-30" y="-30" width="60" height="60" transform="rotate(45)"/><circle r="15"/><circle r="44" stroke-opacity=".5"/></g></svg></div>
+
+    <div id="hook" class="clip" data-start="0" data-duration="5.2" data-track-index="0">
+      <div id="hook-in">
+        <div class="chip" id="hook-chip">ZIKIR &amp; ADAB</div>
+        <div id="hook-title"><span class="g">BISMILLAH:</span><br/><span class="w">PENGHADANG</span><br/><span class="w">DARIPADA</span> <span class="g">SYAITAN</span></div>
+        <div id="hook-rule"></div>
+      </div>
+    </div>
+
+    <div id="header" class="clip" data-start="5" data-duration="87.0" data-track-index="1">
+      <div id="header-in">
+        <div class="chip">ZIKIR &amp; ADAB</div>
+        <div id="header-title"><span class="g">BISMILLAH:</span> PENGHADANG DARIPADA SYAITAN</div>
+      </div>
+    </div>
+    
+      <div id="pt1" class="clip card" data-start="9.4" data-duration="14.6" data-track-index="2">
+        <div class="card-in">
+          <div class="card-label">PENGHALANGNYA</div>
+          <div class="card-text">Zikrullah — contohnya baca bismillah sebelum makan</div>
+        </div>
+      </div>
+      <div id="pt2" class="clip card" data-start="75.6" data-duration="12.6" data-track-index="3">
+        <div class="card-in">
+          <div class="card-label">PENGAJARAN</div>
+          <div class="card-text">Kita tak nampak mereka, mereka nampak kita — basmalah penutupnya</div>
+        </div>
+      </div>
+      <div id="ar1" class="clip card" data-start="26.8" data-duration="14.4" data-track-index="6">
+        <div class="card-in ar-card">
+          <div class="ar-text" dir="rtl" lang="ar" style="font-size:42px">سِتْرُ مَا بَيْنَ أَعْيُنِ الْجِنِّ وَعَوْرَاتِ بَنِي آدَمَ إِذَا دَخَلَ أَحَدُهُمُ الْخَلَاءَ أَنْ يَقُولَ: بِسْمِ اللَّهِ</div>
+          <div class="ar-ms" style="font-size:28px">Penutup antara pandangan jin dan aurat anak Adam ketika masuk tandas ialah dia menyebut: Bismillah.</div>
+          <div class="ar-ref">HR AT-TIRMIZI</div>
+        </div>
+      </div>
+      <div id="ar2" class="clip card" data-start="43.4" data-duration="16.4" data-track-index="7">
+        <div class="card-in ar-card">
+          <div class="ar-text" dir="rtl" lang="ar" style="font-size:50px">إِنَّهُ يَرَاكُمْ هُوَ وَقَبِيلُهُ مِنْ حَيْثُ لَا تَرَوْنَهُمْ</div>
+          <div class="ar-ms" style="font-size:28px">Sesungguhnya syaitan dan puaknya melihat kamu dari arah yang kamu tidak dapat melihat mereka.</div>
+          <div class="ar-ref">SURAH AL-A&#x27;RAF: 27</div>
+        </div>
+      </div>
+
+    <div id="lt" class="clip" data-start="5.6" data-duration="5.5" data-track-index="9">
+      <div id="lt-in">
+        <div id="lt-bar"></div>
+        <div id="lt-box">
+          <div id="lt-name">Kuliah Kitab Bahrul Mazi</div>
+          <div id="lt-role">Syarah Mukhtasar Sahih at-Tirmizi • Siri 30</div>
+        </div>
+      </div>
+    </div>
+
+    <div id="outro" class="clip" data-start="91.8" data-duration="2.2" data-track-index="10">
+      <div id="outro-in" style="display:flex;flex-direction:column;align-items:center">
+        <div id="outro-star"><svg viewBox="-50 -50 100 100" width="150" height="150"><g fill="none" stroke="#D5B36A" stroke-width="2.4"><rect x="-30" y="-30" width="60" height="60"/><rect x="-30" y="-30" width="60" height="60" transform="rotate(45)"/><circle r="15"/><circle r="44" stroke-opacity=".5"/></g></svg></div>
+        <div id="outro-series">KULIAH FIQH SOLAT</div>
+        <div id="outro-title"><span class="g">BISMILLAH:</span><br/><span class="w">PENGHADANG</span><br/><span class="w">DARIPADA</span> <span class="g">SYAITAN</span></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    // ambient accents
+    tl.fromTo("#ov-star1 svg", {rotation: 0}, {rotation: 90, duration: 94.0, ease: "none"}, 0);
+    tl.fromTo("#ov-star2 svg", {rotation: 0}, {rotation: -60, duration: 94.0, ease: "none"}, 0);
+    tl.fromTo("#ov-light", {x: 0, opacity: .6}, {x: 260, opacity: 1, duration: 94.0, ease: "sine.inOut"}, 0);
+    // hook
+    tl.fromTo("#hook-chip", {opacity: 0, y: -14}, {opacity: 1, y: 0, duration: .4, ease: "power2.out"}, 0.0);
+    tl.fromTo("#hook-title span", {opacity: 0, y: 34, filter: "blur(6px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: .45, ease: "power3.out", stagger: .07}, 0.05);
+    tl.fromTo("#hook-rule", {scaleX: 0}, {scaleX: 1, duration: .6, ease: "power3.out"}, 0.5);
+    tl.to("#hook-in", {opacity: 0, y: -30, duration: .35, ease: "power2.in"}, 4.8);
+    tl.fromTo("#header-in", {opacity: 0, y: 20}, {opacity: 1, y: 0, duration: .45, ease: "power2.out"}, 5.05);
+    tl.fromTo("#pt1 .card-in", {opacity:0, y:40, scale:.96}, {opacity:1, y:0, scale:1, duration:.5, ease:"power3.out"}, 9.42);
+    tl.fromTo("#pt1 .card-label", {opacity:0, x:-20}, {opacity:1, x:0, duration:.4, ease:"power2.out"}, 9.65);
+    tl.to("#pt1 .card-in", {opacity:0, y:-16, duration:.35, ease:"power2.in"}, 23.60);
+    tl.fromTo("#pt2 .card-in", {opacity:0, y:40, scale:.96}, {opacity:1, y:0, scale:1, duration:.5, ease:"power3.out"}, 75.62);
+    tl.fromTo("#pt2 .card-label", {opacity:0, x:-20}, {opacity:1, x:0, duration:.4, ease:"power2.out"}, 75.85);
+    tl.to("#pt2 .card-in", {opacity:0, y:-16, duration:.35, ease:"power2.in"}, 87.80);
+    tl.fromTo("#ar1 .card-in", {opacity:0, y:40, scale:.96}, {opacity:1, y:0, scale:1, duration:.55, ease:"power3.out"}, 26.82);
+    tl.to("#ar1 .card-in", {opacity:0, y:-16, duration:.35, ease:"power2.in"}, 40.80);
+    tl.fromTo("#ar2 .card-in", {opacity:0, y:40, scale:.96}, {opacity:1, y:0, scale:1, duration:.55, ease:"power3.out"}, 43.42);
+    tl.to("#ar2 .card-in", {opacity:0, y:-16, duration:.35, ease:"power2.in"}, 59.40);
+    // lower third
+    tl.fromTo("#lt-bar", {scaleY: 0}, {scaleY: 1, duration: .35, ease: "power2.out"}, 5.619999999999999);
+    tl.fromTo("#lt-box", {opacity: 0, x: -30}, {opacity: 1, x: 0, duration: .45, ease: "power3.out"}, 5.75);
+    tl.to("#lt-in", {opacity: 0, x: -20, duration: .35, ease: "power2.in"}, 10.7);
+    // outro
+    tl.fromTo("#outro", {opacity: 0}, {opacity: 1, duration: .6, ease: "power2.inOut"}, 91.8);
+    tl.fromTo("#outro-star svg", {scale: .6, rotation: -45}, {scale: 1, rotation: 0, duration: 1.2, ease: "power3.out"}, 92.0);
+    tl.fromTo("#outro-series", {opacity: 0, y: 16}, {opacity: 1, y: 0, duration: .5, ease: "power2.out"}, 92.25);
+    tl.fromTo("#outro-title", {opacity: 0, y: 16}, {opacity: 1, y: 0, duration: .5, ease: "power2.out"}, 92.4);
+    window.__timelines["overlay"] = tl;
+  </script>
+</template>
