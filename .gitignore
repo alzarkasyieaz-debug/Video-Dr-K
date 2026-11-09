@@ -3,3 +3,7 @@ renders/
 *.mp4
 .hyperframes/
 .venv/
+snapshots/
+# keep the edit's source clips and the delivered video in the repo
+!assets/footage/*.mp4
+!deliverables/*.mp4

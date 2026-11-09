@@ -1,61 +1,278 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ms">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=1920, height=1080" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1080, height=1920">
     <script src="assets/vendor/gsap.min.js"></script>
     <style>
-      /* Placeholders: replace all three with the film's own palette and display face. */
-      :root {
-        --ground: #000;
-        --ink: #ffffff;
-        --font-display: sans-serif;
-      }
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      html,
-      body {
-        margin: 0;
-        width: 1920px;
-        height: 1080px;
-        overflow: hidden;
-        background: var(--ground);
-      }
-      #root {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: var(--font-display);
-      }
-      #title {
-        color: var(--ink);
-        font-size: 72px;
-        font-weight: 600;
-        letter-spacing: -0.03em;
-      }
+      :root { --navy: #0a1630; --gold: #d9a93a; --gold-bright: #f4c95d; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; width: 1080px; height: 1920px; overflow: hidden; background: #000; }
+      #root { position: relative; width: 1080px; height: 1920px; overflow: hidden; background: #000; }
+      .cam { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; transform-origin: 0 0; z-index: 1; }
+      .cam video { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; object-fit: cover; }
+      .host { position: absolute; inset: 0; }
     </style>
   </head>
   <body>
-    <div
-      id="root"
-      data-composition-id="main"
-      data-start="0"
-      data-duration="10"
-      data-width="1920"
-      data-height="1080"
-    >
-      <h1 id="title" class="clip" data-start="0" data-duration="10" data-track-index="0">Title</h1>
+    <div data-hf-id="hf-m87f" id="root" data-composition-id="main" data-start="0" data-duration="84.5" data-width="1080" data-height="1920">
+      <div data-hf-id="hf-e0xm" class="cam" id="cam-a">
+        <video data-hf-id="hf-21yn" id="clip-a" class="clip" src="assets/footage/clip-a.mp4" data-start="0.0" data-duration="6.34" data-track-index="1" data-has-audio="true" data-volume="1" playsinline data-color-grading="{&quot;preset&quot;:&quot;deep-contrast&quot;,&quot;intensity&quot;:0.45,&quot;adjust&quot;:{&quot;exposure&quot;:0.06,&quot;contrast&quot;:0.2,&quot;highlights&quot;:-0.3,&quot;shadows&quot;:0.14,&quot;whites&quot;:0,&quot;blacks&quot;:-0.03,&quot;temperature&quot;:-0.08,&quot;tint&quot;:0,&quot;vibrance&quot;:0,&quot;saturation&quot;:-0.05},&quot;details&quot;:{&quot;vignette&quot;:0.36,&quot;vignetteMidpoint&quot;:0.5,&quot;vignetteRoundness&quot;:0,&quot;vignetteFeather&quot;:0.7,&quot;grain&quot;:0.12,&quot;grainSize&quot;:0.3,&quot;grainRoughness&quot;:0.5},&quot;effects&quot;:{&quot;blur&quot;:0,&quot;pixelate&quot;:0,&quot;chromaBleed&quot;:0,&quot;tapeDamage&quot;:0,&quot;tapeTracking&quot;:0,&quot;tapeNoise&quot;:1,&quot;tapeSpeed&quot;:0.5,&quot;filmArtifacts&quot;:0,&quot;halftone&quot;:0,&quot;halftoneSize&quot;:0,&quot;twoInkPrint&quot;:0,&quot;twoInkPrintSize&quot;:0,&quot;ascii&quot;:0,&quot;asciiSize&quot;:0.06578947368421052,&quot;asciiInvert&quot;:0,&quot;asciiStyle&quot;:0,&quot;asciiColor&quot;:1,&quot;asciiRotation&quot;:0,&quot;dither&quot;:0,&quot;ditherSize&quot;:0,&quot;bloom&quot;:0,&quot;bloomRadius&quot;:8,&quot;monoScreen&quot;:0,&quot;monoScreenSize&quot;:0,&quot;monoScreenAngle&quot;:0,&quot;monoScreenSpread&quot;:0,&quot;monoScreenShape&quot;:0,&quot;monoScreenInvert&quot;:0,&quot;scanlines&quot;:0,&quot;scanlineCount&quot;:0,&quot;scanlineSoftness&quot;:0,&quot;chromaticAberration&quot;:0,&quot;chromaticAngle&quot;:0,&quot;crtCurvature&quot;:0,&quot;digitalGlitch&quot;:0,&quot;digitalGlitchColorSplit&quot;:0,&quot;digitalGlitchLineTear&quot;:0,&quot;digitalGlitchPixelate&quot;:0,&quot;digitalGlitchBlockAmount&quot;:0,&quot;digitalGlitchBlockDisplacement&quot;:0,&quot;digitalGlitchBlockOpacity&quot;:0,&quot;digitalGlitchSpeed&quot;:0,&quot;engraving&quot;:0,&quot;engravingSpacing&quot;:0.4117647058823529,&quot;engravingMinThickness&quot;:0.2,&quot;engravingMaxThickness&quot;:0.4571428571428572,&quot;engravingAngle&quot;:0.25,&quot;engravingContrast&quot;:0.4666666666666667,&quot;engravingSharpness&quot;:0.59,&quot;engravingWave&quot;:0.2,&quot;engravingWaveFrequency&quot;:0.2222222222222222,&quot;crosshatch&quot;:0,&quot;crosshatchSpacing&quot;:0.28,&quot;crosshatchThickness&quot;:0.25,&quot;crosshatchAngle&quot;:0.25,&quot;crosshatchContrast&quot;:0.3333333333333333,&quot;crosshatchEdges&quot;:0.5,&quot;crosshatchLineWeight&quot;:0,&quot;crosshatchWave&quot;:0.33,&quot;crosshatchWaveFrequency&quot;:0.2222222222222222,&quot;kuwahara&quot;:0,&quot;kuwaharaRadius&quot;:0.14285714285714285,&quot;kuwaharaSharpness&quot;:0.3125,&quot;kuwaharaSaturation&quot;:0.5},&quot;lut&quot;:null,&quot;colorSpace&quot;:&quot;rec709&quot;}"></video>
+      </div>
+      <div data-hf-id="hf-a2tl" class="cam" id="cam-b">
+        <video data-hf-id="hf-koh9" id="clip-b" class="clip" src="assets/footage/clip-b.mp4" data-start="6.34" data-duration="27.42" data-track-index="2" data-has-audio="true" data-volume="1" playsinline data-color-grading="{&quot;preset&quot;:&quot;deep-contrast&quot;,&quot;intensity&quot;:0.45,&quot;adjust&quot;:{&quot;exposure&quot;:0.06,&quot;contrast&quot;:0.2,&quot;highlights&quot;:-0.3,&quot;shadows&quot;:0.14,&quot;whites&quot;:0,&quot;blacks&quot;:-0.03,&quot;temperature&quot;:-0.08,&quot;tint&quot;:0,&quot;vibrance&quot;:0,&quot;saturation&quot;:-0.05},&quot;details&quot;:{&quot;vignette&quot;:0.36,&quot;vignetteMidpoint&quot;:0.5,&quot;vignetteRoundness&quot;:0,&quot;vignetteFeather&quot;:0.7,&quot;grain&quot;:0.12,&quot;grainSize&quot;:0.3,&quot;grainRoughness&quot;:0.5},&quot;effects&quot;:{&quot;blur&quot;:0,&quot;pixelate&quot;:0,&quot;chromaBleed&quot;:0,&quot;tapeDamage&quot;:0,&quot;tapeTracking&quot;:0,&quot;tapeNoise&quot;:1,&quot;tapeSpeed&quot;:0.5,&quot;filmArtifacts&quot;:0,&quot;halftone&quot;:0,&quot;halftoneSize&quot;:0,&quot;twoInkPrint&quot;:0,&quot;twoInkPrintSize&quot;:0,&quot;ascii&quot;:0,&quot;asciiSize&quot;:0.06578947368421052,&quot;asciiInvert&quot;:0,&quot;asciiStyle&quot;:0,&quot;asciiColor&quot;:1,&quot;asciiRotation&quot;:0,&quot;dither&quot;:0,&quot;ditherSize&quot;:0,&quot;bloom&quot;:0,&quot;bloomRadius&quot;:8,&quot;monoScreen&quot;:0,&quot;monoScreenSize&quot;:0,&quot;monoScreenAngle&quot;:0,&quot;monoScreenSpread&quot;:0,&quot;monoScreenShape&quot;:0,&quot;monoScreenInvert&quot;:0,&quot;scanlines&quot;:0,&quot;scanlineCount&quot;:0,&quot;scanlineSoftness&quot;:0,&quot;chromaticAberration&quot;:0,&quot;chromaticAngle&quot;:0,&quot;crtCurvature&quot;:0,&quot;digitalGlitch&quot;:0,&quot;digitalGlitchColorSplit&quot;:0,&quot;digitalGlitchLineTear&quot;:0,&quot;digitalGlitchPixelate&quot;:0,&quot;digitalGlitchBlockAmount&quot;:0,&quot;digitalGlitchBlockDisplacement&quot;:0,&quot;digitalGlitchBlockOpacity&quot;:0,&quot;digitalGlitchSpeed&quot;:0,&quot;engraving&quot;:0,&quot;engravingSpacing&quot;:0.4117647058823529,&quot;engravingMinThickness&quot;:0.2,&quot;engravingMaxThickness&quot;:0.4571428571428572,&quot;engravingAngle&quot;:0.25,&quot;engravingContrast&quot;:0.4666666666666667,&quot;engravingSharpness&quot;:0.59,&quot;engravingWave&quot;:0.2,&quot;engravingWaveFrequency&quot;:0.2222222222222222,&quot;crosshatch&quot;:0,&quot;crosshatchSpacing&quot;:0.28,&quot;crosshatchThickness&quot;:0.25,&quot;crosshatchAngle&quot;:0.25,&quot;crosshatchContrast&quot;:0.3333333333333333,&quot;crosshatchEdges&quot;:0.5,&quot;crosshatchLineWeight&quot;:0,&quot;crosshatchWave&quot;:0.33,&quot;crosshatchWaveFrequency&quot;:0.2222222222222222,&quot;kuwahara&quot;:0,&quot;kuwaharaRadius&quot;:0.14285714285714285,&quot;kuwaharaSharpness&quot;:0.3125,&quot;kuwaharaSaturation&quot;:0.5},&quot;lut&quot;:null,&quot;colorSpace&quot;:&quot;rec709&quot;}"></video>
+      </div>
+      <div data-hf-id="hf-9b5s" class="cam" id="cam-c">
+        <video data-hf-id="hf-i77z" id="clip-c" class="clip" src="assets/footage/clip-c.mp4" data-start="33.76" data-duration="13.0" data-track-index="1" data-has-audio="true" data-volume="1" playsinline data-color-grading="{&quot;preset&quot;:&quot;deep-contrast&quot;,&quot;intensity&quot;:0.45,&quot;adjust&quot;:{&quot;exposure&quot;:0.06,&quot;contrast&quot;:0.2,&quot;highlights&quot;:-0.3,&quot;shadows&quot;:0.14,&quot;whites&quot;:0,&quot;blacks&quot;:-0.03,&quot;temperature&quot;:-0.08,&quot;tint&quot;:0,&quot;vibrance&quot;:0,&quot;saturation&quot;:-0.05},&quot;details&quot;:{&quot;vignette&quot;:0.36,&quot;vignetteMidpoint&quot;:0.5,&quot;vignetteRoundness&quot;:0,&quot;vignetteFeather&quot;:0.7,&quot;grain&quot;:0.12,&quot;grainSize&quot;:0.3,&quot;grainRoughness&quot;:0.5},&quot;effects&quot;:{&quot;blur&quot;:0,&quot;pixelate&quot;:0,&quot;chromaBleed&quot;:0,&quot;tapeDamage&quot;:0,&quot;tapeTracking&quot;:0,&quot;tapeNoise&quot;:1,&quot;tapeSpeed&quot;:0.5,&quot;filmArtifacts&quot;:0,&quot;halftone&quot;:0,&quot;halftoneSize&quot;:0,&quot;twoInkPrint&quot;:0,&quot;twoInkPrintSize&quot;:0,&quot;ascii&quot;:0,&quot;asciiSize&quot;:0.06578947368421052,&quot;asciiInvert&quot;:0,&quot;asciiStyle&quot;:0,&quot;asciiColor&quot;:1,&quot;asciiRotation&quot;:0,&quot;dither&quot;:0,&quot;ditherSize&quot;:0,&quot;bloom&quot;:0,&quot;bloomRadius&quot;:8,&quot;monoScreen&quot;:0,&quot;monoScreenSize&quot;:0,&quot;monoScreenAngle&quot;:0,&quot;monoScreenSpread&quot;:0,&quot;monoScreenShape&quot;:0,&quot;monoScreenInvert&quot;:0,&quot;scanlines&quot;:0,&quot;scanlineCount&quot;:0,&quot;scanlineSoftness&quot;:0,&quot;chromaticAberration&quot;:0,&quot;chromaticAngle&quot;:0,&quot;crtCurvature&quot;:0,&quot;digitalGlitch&quot;:0,&quot;digitalGlitchColorSplit&quot;:0,&quot;digitalGlitchLineTear&quot;:0,&quot;digitalGlitchPixelate&quot;:0,&quot;digitalGlitchBlockAmount&quot;:0,&quot;digitalGlitchBlockDisplacement&quot;:0,&quot;digitalGlitchBlockOpacity&quot;:0,&quot;digitalGlitchSpeed&quot;:0,&quot;engraving&quot;:0,&quot;engravingSpacing&quot;:0.4117647058823529,&quot;engravingMinThickness&quot;:0.2,&quot;engravingMaxThickness&quot;:0.4571428571428572,&quot;engravingAngle&quot;:0.25,&quot;engravingContrast&quot;:0.4666666666666667,&quot;engravingSharpness&quot;:0.59,&quot;engravingWave&quot;:0.2,&quot;engravingWaveFrequency&quot;:0.2222222222222222,&quot;crosshatch&quot;:0,&quot;crosshatchSpacing&quot;:0.28,&quot;crosshatchThickness&quot;:0.25,&quot;crosshatchAngle&quot;:0.25,&quot;crosshatchContrast&quot;:0.3333333333333333,&quot;crosshatchEdges&quot;:0.5,&quot;crosshatchLineWeight&quot;:0,&quot;crosshatchWave&quot;:0.33,&quot;crosshatchWaveFrequency&quot;:0.2222222222222222,&quot;kuwahara&quot;:0,&quot;kuwaharaRadius&quot;:0.14285714285714285,&quot;kuwaharaSharpness&quot;:0.3125,&quot;kuwaharaSaturation&quot;:0.5},&quot;lut&quot;:null,&quot;colorSpace&quot;:&quot;rec709&quot;}"></video>
+      </div>
+      <div data-hf-id="hf-5d1r" class="cam" id="cam-d">
+        <video data-hf-id="hf-66d1" id="clip-d" class="clip" src="assets/footage/clip-d.mp4" data-start="46.76" data-duration="13.3" data-track-index="2" data-has-audio="true" data-volume="1" playsinline data-color-grading="{&quot;preset&quot;:&quot;deep-contrast&quot;,&quot;intensity&quot;:0.45,&quot;adjust&quot;:{&quot;exposure&quot;:0.06,&quot;contrast&quot;:0.2,&quot;highlights&quot;:-0.3,&quot;shadows&quot;:0.14,&quot;whites&quot;:0,&quot;blacks&quot;:-0.03,&quot;temperature&quot;:-0.08,&quot;tint&quot;:0,&quot;vibrance&quot;:0,&quot;saturation&quot;:-0.05},&quot;details&quot;:{&quot;vignette&quot;:0.36,&quot;vignetteMidpoint&quot;:0.5,&quot;vignetteRoundness&quot;:0,&quot;vignetteFeather&quot;:0.7,&quot;grain&quot;:0.12,&quot;grainSize&quot;:0.3,&quot;grainRoughness&quot;:0.5},&quot;effects&quot;:{&quot;blur&quot;:0,&quot;pixelate&quot;:0,&quot;chromaBleed&quot;:0,&quot;tapeDamage&quot;:0,&quot;tapeTracking&quot;:0,&quot;tapeNoise&quot;:1,&quot;tapeSpeed&quot;:0.5,&quot;filmArtifacts&quot;:0,&quot;halftone&quot;:0,&quot;halftoneSize&quot;:0,&quot;twoInkPrint&quot;:0,&quot;twoInkPrintSize&quot;:0,&quot;ascii&quot;:0,&quot;asciiSize&quot;:0.06578947368421052,&quot;asciiInvert&quot;:0,&quot;asciiStyle&quot;:0,&quot;asciiColor&quot;:1,&quot;asciiRotation&quot;:0,&quot;dither&quot;:0,&quot;ditherSize&quot;:0,&quot;bloom&quot;:0,&quot;bloomRadius&quot;:8,&quot;monoScreen&quot;:0,&quot;monoScreenSize&quot;:0,&quot;monoScreenAngle&quot;:0,&quot;monoScreenSpread&quot;:0,&quot;monoScreenShape&quot;:0,&quot;monoScreenInvert&quot;:0,&quot;scanlines&quot;:0,&quot;scanlineCount&quot;:0,&quot;scanlineSoftness&quot;:0,&quot;chromaticAberration&quot;:0,&quot;chromaticAngle&quot;:0,&quot;crtCurvature&quot;:0,&quot;digitalGlitch&quot;:0,&quot;digitalGlitchColorSplit&quot;:0,&quot;digitalGlitchLineTear&quot;:0,&quot;digitalGlitchPixelate&quot;:0,&quot;digitalGlitchBlockAmount&quot;:0,&quot;digitalGlitchBlockDisplacement&quot;:0,&quot;digitalGlitchBlockOpacity&quot;:0,&quot;digitalGlitchSpeed&quot;:0,&quot;engraving&quot;:0,&quot;engravingSpacing&quot;:0.4117647058823529,&quot;engravingMinThickness&quot;:0.2,&quot;engravingMaxThickness&quot;:0.4571428571428572,&quot;engravingAngle&quot;:0.25,&quot;engravingContrast&quot;:0.4666666666666667,&quot;engravingSharpness&quot;:0.59,&quot;engravingWave&quot;:0.2,&quot;engravingWaveFrequency&quot;:0.2222222222222222,&quot;crosshatch&quot;:0,&quot;crosshatchSpacing&quot;:0.28,&quot;crosshatchThickness&quot;:0.25,&quot;crosshatchAngle&quot;:0.25,&quot;crosshatchContrast&quot;:0.3333333333333333,&quot;crosshatchEdges&quot;:0.5,&quot;crosshatchLineWeight&quot;:0,&quot;crosshatchWave&quot;:0.33,&quot;crosshatchWaveFrequency&quot;:0.2222222222222222,&quot;kuwahara&quot;:0,&quot;kuwaharaRadius&quot;:0.14285714285714285,&quot;kuwaharaSharpness&quot;:0.3125,&quot;kuwaharaSaturation&quot;:0.5},&quot;lut&quot;:null,&quot;colorSpace&quot;:&quot;rec709&quot;}"></video>
+      </div>
+      <div data-hf-id="hf-1exq" class="cam" id="cam-e">
+        <video data-hf-id="hf-31q9" id="clip-e" class="clip" src="assets/footage/clip-e.mp4" data-start="60.06" data-duration="10.39" data-track-index="1" data-has-audio="true" data-volume="1" playsinline data-color-grading="{&quot;preset&quot;:&quot;deep-contrast&quot;,&quot;intensity&quot;:0.45,&quot;adjust&quot;:{&quot;exposure&quot;:0.06,&quot;contrast&quot;:0.2,&quot;highlights&quot;:-0.3,&quot;shadows&quot;:0.14,&quot;whites&quot;:0,&quot;blacks&quot;:-0.03,&quot;temperature&quot;:-0.08,&quot;tint&quot;:0,&quot;vibrance&quot;:0,&quot;saturation&quot;:-0.05},&quot;details&quot;:{&quot;vignette&quot;:0.36,&quot;vignetteMidpoint&quot;:0.5,&quot;vignetteRoundness&quot;:0,&quot;vignetteFeather&quot;:0.7,&quot;grain&quot;:0.12,&quot;grainSize&quot;:0.3,&quot;grainRoughness&quot;:0.5},&quot;effects&quot;:{&quot;blur&quot;:0,&quot;pixelate&quot;:0,&quot;chromaBleed&quot;:0,&quot;tapeDamage&quot;:0,&quot;tapeTracking&quot;:0,&quot;tapeNoise&quot;:1,&quot;tapeSpeed&quot;:0.5,&quot;filmArtifacts&quot;:0,&quot;halftone&quot;:0,&quot;halftoneSize&quot;:0,&quot;twoInkPrint&quot;:0,&quot;twoInkPrintSize&quot;:0,&quot;ascii&quot;:0,&quot;asciiSize&quot;:0.06578947368421052,&quot;asciiInvert&quot;:0,&quot;asciiStyle&quot;:0,&quot;asciiColor&quot;:1,&quot;asciiRotation&quot;:0,&quot;dither&quot;:0,&quot;ditherSize&quot;:0,&quot;bloom&quot;:0,&quot;bloomRadius&quot;:8,&quot;monoScreen&quot;:0,&quot;monoScreenSize&quot;:0,&quot;monoScreenAngle&quot;:0,&quot;monoScreenSpread&quot;:0,&quot;monoScreenShape&quot;:0,&quot;monoScreenInvert&quot;:0,&quot;scanlines&quot;:0,&quot;scanlineCount&quot;:0,&quot;scanlineSoftness&quot;:0,&quot;chromaticAberration&quot;:0,&quot;chromaticAngle&quot;:0,&quot;crtCurvature&quot;:0,&quot;digitalGlitch&quot;:0,&quot;digitalGlitchColorSplit&quot;:0,&quot;digitalGlitchLineTear&quot;:0,&quot;digitalGlitchPixelate&quot;:0,&quot;digitalGlitchBlockAmount&quot;:0,&quot;digitalGlitchBlockDisplacement&quot;:0,&quot;digitalGlitchBlockOpacity&quot;:0,&quot;digitalGlitchSpeed&quot;:0,&quot;engraving&quot;:0,&quot;engravingSpacing&quot;:0.4117647058823529,&quot;engravingMinThickness&quot;:0.2,&quot;engravingMaxThickness&quot;:0.4571428571428572,&quot;engravingAngle&quot;:0.25,&quot;engravingContrast&quot;:0.4666666666666667,&quot;engravingSharpness&quot;:0.59,&quot;engravingWave&quot;:0.2,&quot;engravingWaveFrequency&quot;:0.2222222222222222,&quot;crosshatch&quot;:0,&quot;crosshatchSpacing&quot;:0.28,&quot;crosshatchThickness&quot;:0.25,&quot;crosshatchAngle&quot;:0.25,&quot;crosshatchContrast&quot;:0.3333333333333333,&quot;crosshatchEdges&quot;:0.5,&quot;crosshatchLineWeight&quot;:0,&quot;crosshatchWave&quot;:0.33,&quot;crosshatchWaveFrequency&quot;:0.2222222222222222,&quot;kuwahara&quot;:0,&quot;kuwaharaRadius&quot;:0.14285714285714285,&quot;kuwaharaSharpness&quot;:0.3125,&quot;kuwaharaSaturation&quot;:0.5},&quot;lut&quot;:null,&quot;colorSpace&quot;:&quot;rec709&quot;}"></video>
+      </div>
+      <div data-hf-id="hf-xgtp" class="cam" id="cam-f">
+        <video data-hf-id="hf-vqb0" id="clip-f" class="clip" src="assets/footage/clip-f.mp4" data-start="70.45" data-duration="10.26" data-track-index="2" data-has-audio="true" data-volume="1" playsinline data-color-grading="{&quot;preset&quot;:&quot;deep-contrast&quot;,&quot;intensity&quot;:0.45,&quot;adjust&quot;:{&quot;exposure&quot;:0.06,&quot;contrast&quot;:0.2,&quot;highlights&quot;:-0.3,&quot;shadows&quot;:0.14,&quot;whites&quot;:0,&quot;blacks&quot;:-0.03,&quot;temperature&quot;:-0.08,&quot;tint&quot;:0,&quot;vibrance&quot;:0,&quot;saturation&quot;:-0.05},&quot;details&quot;:{&quot;vignette&quot;:0.36,&quot;vignetteMidpoint&quot;:0.5,&quot;vignetteRoundness&quot;:0,&quot;vignetteFeather&quot;:0.7,&quot;grain&quot;:0.12,&quot;grainSize&quot;:0.3,&quot;grainRoughness&quot;:0.5},&quot;effects&quot;:{&quot;blur&quot;:0,&quot;pixelate&quot;:0,&quot;chromaBleed&quot;:0,&quot;tapeDamage&quot;:0,&quot;tapeTracking&quot;:0,&quot;tapeNoise&quot;:1,&quot;tapeSpeed&quot;:0.5,&quot;filmArtifacts&quot;:0,&quot;halftone&quot;:0,&quot;halftoneSize&quot;:0,&quot;twoInkPrint&quot;:0,&quot;twoInkPrintSize&quot;:0,&quot;ascii&quot;:0,&quot;asciiSize&quot;:0.06578947368421052,&quot;asciiInvert&quot;:0,&quot;asciiStyle&quot;:0,&quot;asciiColor&quot;:1,&quot;asciiRotation&quot;:0,&quot;dither&quot;:0,&quot;ditherSize&quot;:0,&quot;bloom&quot;:0,&quot;bloomRadius&quot;:8,&quot;monoScreen&quot;:0,&quot;monoScreenSize&quot;:0,&quot;monoScreenAngle&quot;:0,&quot;monoScreenSpread&quot;:0,&quot;monoScreenShape&quot;:0,&quot;monoScreenInvert&quot;:0,&quot;scanlines&quot;:0,&quot;scanlineCount&quot;:0,&quot;scanlineSoftness&quot;:0,&quot;chromaticAberration&quot;:0,&quot;chromaticAngle&quot;:0,&quot;crtCurvature&quot;:0,&quot;digitalGlitch&quot;:0,&quot;digitalGlitchColorSplit&quot;:0,&quot;digitalGlitchLineTear&quot;:0,&quot;digitalGlitchPixelate&quot;:0,&quot;digitalGlitchBlockAmount&quot;:0,&quot;digitalGlitchBlockDisplacement&quot;:0,&quot;digitalGlitchBlockOpacity&quot;:0,&quot;digitalGlitchSpeed&quot;:0,&quot;engraving&quot;:0,&quot;engravingSpacing&quot;:0.4117647058823529,&quot;engravingMinThickness&quot;:0.2,&quot;engravingMaxThickness&quot;:0.4571428571428572,&quot;engravingAngle&quot;:0.25,&quot;engravingContrast&quot;:0.4666666666666667,&quot;engravingSharpness&quot;:0.59,&quot;engravingWave&quot;:0.2,&quot;engravingWaveFrequency&quot;:0.2222222222222222,&quot;crosshatch&quot;:0,&quot;crosshatchSpacing&quot;:0.28,&quot;crosshatchThickness&quot;:0.25,&quot;crosshatchAngle&quot;:0.25,&quot;crosshatchContrast&quot;:0.3333333333333333,&quot;crosshatchEdges&quot;:0.5,&quot;crosshatchLineWeight&quot;:0,&quot;crosshatchWave&quot;:0.33,&quot;crosshatchWaveFrequency&quot;:0.2222222222222222,&quot;kuwahara&quot;:0,&quot;kuwaharaRadius&quot;:0.14285714285714285,&quot;kuwaharaSharpness&quot;:0.3125,&quot;kuwaharaSaturation&quot;:0.5},&quot;lut&quot;:null,&quot;colorSpace&quot;:&quot;rec709&quot;}"></video>
+      </div>
+      <div data-hf-id="hf-5stf" id="shade" class="clip host" data-composition-id="shade" data-composition-src="compositions/shade.html" data-start="0" data-duration="84.5" data-track-index="20" data-track-kind="graphics" data-width="1080" data-height="1920" style="z-index:20;"></div>
+      <div data-hf-id="hf-5uk6" id="fx" class="clip host" data-composition-id="fx" data-composition-src="compositions/fx.html" data-start="0" data-duration="84.5" data-track-index="21" data-track-kind="graphics" data-width="1080" data-height="1920" style="z-index:38;"></div>
+      <div data-hf-id="hf-e02x" id="hook" class="clip host" data-composition-id="hook" data-composition-src="compositions/hook.html" data-start="0" data-duration="7.3" data-track-index="22" data-track-kind="graphics" data-width="1080" data-height="1920" style="z-index:30;"></div>
+      <div data-hf-id="hf-t8hf" id="issue" class="clip host" data-composition-id="issue" data-composition-src="compositions/issue.html" data-start="6.34" data-duration="12.2" data-track-index="23" data-track-kind="graphics" data-width="1080" data-height="1920" style="z-index:31;"></div>
+      <div data-hf-id="hf-8yek" id="evidence" class="clip host" data-composition-id="evidence" data-composition-src="compositions/evidence.html" data-start="21.3" data-duration="15.5" data-track-index="24" data-track-kind="graphics" data-width="1080" data-height="1920" style="z-index:32;"></div>
+      <div data-hf-id="hf-mt75" id="argument" class="clip host" data-composition-id="argument" data-composition-src="compositions/argument.html" data-start="33.76" data-duration="26.3" data-track-index="25" data-track-kind="graphics" data-width="1080" data-height="1920" style="z-index:33;"></div>
+      <div data-hf-id="hf-zhgr" id="climax" class="clip host" data-composition-id="climax" data-composition-src="compositions/climax.html" data-start="60.06" data-duration="10.39" data-track-index="26" data-track-kind="graphics" data-width="1080" data-height="1920" style="z-index:34;"></div>
+      <div data-hf-id="hf-dy15" id="outro" class="clip host" data-composition-id="outro" data-composition-src="compositions/outro.html" data-start="70.45" data-duration="14.05" data-track-index="27" data-track-kind="graphics" data-width="1080" data-height="1920" style="z-index:35;"></div>
+      <div data-hf-id="hf-ts5h" id="captions" class="clip host" data-composition-id="captions" data-composition-src="compositions/captions.html" data-start="0" data-duration="84.5" data-track-index="28" data-track-kind="captions" data-width="1080" data-height="1920" style="z-index:40;"></div>
+      <audio data-hf-id="hf-u8zn" id="score" src="assets/audio/score.m4a" data-start="0" data-duration="84.5" data-track-index="9" data-volume="1" data-fade-in="0.05" data-fade-out="2.2" data-automation="{&quot;version&quot;: 1, &quot;lanes&quot;: [{&quot;target&quot;: &quot;volume&quot;, &quot;points&quot;: [{&quot;t&quot;: 0, &quot;v&quot;: 0.8}, {&quot;t&quot;: 0.06, &quot;v&quot;: 0.25}, {&quot;t&quot;: 11.28, &quot;v&quot;: 0.25}, {&quot;t&quot;: 11.58, &quot;v&quot;: 0.8}, {&quot;t&quot;: 12.01, &quot;v&quot;: 0.8}, {&quot;t&quot;: 12.16, &quot;v&quot;: 0.25}, {&quot;t&quot;: 13.22, &quot;v&quot;: 0.25}, {&quot;t&quot;: 13.52, &quot;v&quot;: 0.8}, {&quot;t&quot;: 14.71, &quot;v&quot;: 0.8}, {&quot;t&quot;: 14.86, &quot;v&quot;: 0.25}, {&quot;t&quot;: 16.6, &quot;v&quot;: 0.25}, {&quot;t&quot;: 16.9, &quot;v&quot;: 0.8}, {&quot;t&quot;: 17.83, &quot;v&quot;: 0.8}, {&quot;t&quot;: 17.98, &quot;v&quot;: 0.25}, {&quot;t&quot;: 23.02, &quot;v&quot;: 0.25}, {&quot;t&quot;: 23.32, &quot;v&quot;: 0.8}, {&quot;t&quot;: 24.37, &quot;v&quot;: 0.8}, {&quot;t&quot;: 24.52, &quot;v&quot;: 0.25}, {&quot;t&quot;: 29.68, &quot;v&quot;: 0.25}, {&quot;t&quot;: 29.98, &quot;v&quot;: 0.8}, {&quot;t&quot;: 31.11, &quot;v&quot;: 0.8}, {&quot;t&quot;: 31.26, &quot;v&quot;: 0.25}, {&quot;t&quot;: 38.66, &quot;v&quot;: 0.25}, {&quot;t&quot;: 38.96, &quot;v&quot;: 0.8}, {&quot;t&quot;: 39.97, &quot;v&quot;: 0.8}, {&quot;t&quot;: 40.12, &quot;v&quot;: 0.25}, {&quot;t&quot;: 42.26, &quot;v&quot;: 0.25}, {&quot;t&quot;: 42.56, &quot;v&quot;: 0.8}, {&quot;t&quot;: 42.99, &quot;v&quot;: 0.8}, {&quot;t&quot;: 43.14, &quot;v&quot;: 0.25}, {&quot;t&quot;: 51.34, &quot;v&quot;: 0.25}, {&quot;t&quot;: 51.64, &quot;v&quot;: 0.8}, {&quot;t&quot;: 53.51, &quot;v&quot;: 0.8}, {&quot;t&quot;: 53.66, &quot;v&quot;: 0.25}, {&quot;t&quot;: 61.599, &quot;v&quot;: 0.34}, {&quot;t&quot;: 61.899, &quot;v&quot;: 0.8}, {&quot;t&quot;: 62.408, &quot;v&quot;: 0.8}, {&quot;t&quot;: 62.558, &quot;v&quot;: 0.34}, {&quot;t&quot;: 80.65, &quot;v&quot;: 0.25}, {&quot;t&quot;: 80.95, &quot;v&quot;: 0.9}]}]}"></audio>
+      <audio data-hf-id="hf-5fue" id="sfx-open" src="assets/sfx/impact-bass-1.mp3" data-start="0.007" data-duration="2.0" data-track-index="11" data-volume="0.55" data-fade-out="0.25"></audio>
+      <audio data-hf-id="hf-34da" id="sfx-rakyat" src="assets/sfx/impact-bass-1.mp3" data-start="5.777" data-duration="1.8" data-track-index="12" data-volume="0.32" data-fade-out="0.25"></audio>
+      <audio data-hf-id="hf-gske" id="sfx-cut1" src="assets/sfx/whoosh-cinematic.mp3" data-start="3.867" data-duration="3.2" data-track-index="13" data-volume="0.3" data-fade-out="0.25"></audio>
+      <audio data-hf-id="hf-4ju3" id="sfx-kp1" src="assets/sfx/impact-bass-1.mp3" data-start="9.317" data-duration="1.8" data-track-index="11" data-volume="0.3" data-fade-out="0.25"></audio>
+      <audio data-hf-id="hf-ty15" id="sfx-vs" src="assets/sfx/whoosh.mp3" data-start="15.298" data-duration="0.5" data-track-index="12" data-volume="0.22" data-fade-out="0.25"></audio>
+      <audio data-hf-id="hf-6f4q" id="sfx-46" src="assets/sfx/impact-bass-1.mp3" data-start="32.187" data-duration="1.8" data-track-index="13" data-volume="0.36" data-fade-out="0.25"></audio>
+      <audio data-hf-id="hf-brwd" id="sfx-cut2" src="assets/sfx/whoosh-short.mp3" data-start="33.628" data-duration="0.5" data-track-index="11" data-volume="0.22" data-fade-out="0.25"></audio>
+      <audio data-hf-id="hf-1hbq" id="sfx-cut3" src="assets/sfx/whoosh.mp3" data-start="46.628" data-duration="0.5" data-track-index="12" data-volume="0.2" data-fade-out="0.25"></audio>
+      <audio data-hf-id="hf-fmrq" id="sfx-kp3" src="assets/sfx/impact-bass-1.mp3" data-start="54.377" data-duration="1.8" data-track-index="13" data-volume="0.28" data-fade-out="0.25"></audio>
+      <audio data-hf-id="hf-uxmc" id="sfx-cut4" src="assets/sfx/whoosh-cinematic.mp3" data-start="57.587" data-duration="3.0" data-track-index="11" data-volume="0.26" data-fade-out="0.25"></audio>
+      <audio data-hf-id="hf-eo25" id="sfx-rise" src="assets/sfx/riser.mp3" data-start="60.784" data-duration="3.8" data-track-index="12" data-volume="0.18" data-fade-out="0.25"></audio>
+      <audio data-hf-id="hf-156t" id="sfx-tunt" src="assets/sfx/impact-bass-1.mp3" data-start="64.233" data-duration="2.0" data-track-index="13" data-volume="0.38" data-fade-out="0.25"></audio>
+      <audio data-hf-id="hf-o18l" id="sfx-cut5" src="assets/sfx/whoosh-short.mp3" data-start="70.318" data-duration="0.5" data-track-index="11" data-volume="0.2" data-fade-out="0.25"></audio>
+      <audio data-hf-id="hf-auj8" id="sfx-end" src="assets/sfx/impact-bass-1.mp3" data-start="80.727" data-duration="2.0" data-track-index="12" data-volume="0.45" data-fade-out="0.25"></audio>
     </div>
     <script>
       const tl = gsap.timeline({ paused: true });
-      // Example: tl.fromTo("#title", { opacity: 0, filter: "blur(8px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.18, ease: "power4.out" }, 0);
+      // Digital camera: smoothed speaker tracking + per-scene push-in / pull-back (data/camera.json)
+      tl.set("#cam-a", { x: -325.9, y: -330.6, scale: 1.58 }, 0);
+      tl.to("#cam-a", { x: -349.5, y: -336.2, scale: 1.5873, duration: 0.4, ease: "none" }, 0.0);
+      tl.to("#cam-a", { x: -378.1, y: -345.0, scale: 1.5967, duration: 0.4, ease: "none" }, 0.4);
+      tl.to("#cam-a", { x: -407.7, y: -355.5, scale: 1.6071, duration: 0.4, ease: "none" }, 0.8);
+      tl.to("#cam-a", { x: -434.0, y: -367.6, scale: 1.6183, duration: 0.4, ease: "none" }, 1.2);
+      tl.to("#cam-a", { x: -452.6, y: -379.0, scale: 1.6301, duration: 0.4, ease: "none" }, 1.6);
+      tl.to("#cam-a", { x: -462.4, y: -389.2, scale: 1.6423, duration: 0.4, ease: "none" }, 2.0);
+      tl.to("#cam-a", { x: -464.3, y: -396.8, scale: 1.655, duration: 0.4, ease: "none" }, 2.4);
+      tl.to("#cam-a", { x: -459.5, y: -403.1, scale: 1.668, duration: 0.4, ease: "none" }, 2.8);
+      tl.to("#cam-a", { x: -452.2, y: -411.0, scale: 1.6814, duration: 0.4, ease: "none" }, 3.2);
+      tl.to("#cam-a", { x: -445.8, y: -417.4, scale: 1.6951, duration: 0.4, ease: "none" }, 3.6);
+      tl.to("#cam-a", { x: -441.1, y: -426.0, scale: 1.709, duration: 0.4, ease: "none" }, 4.0);
+      tl.to("#cam-a", { x: -438.0, y: -435.5, scale: 1.7232, duration: 0.4, ease: "none" }, 4.4);
+      tl.to("#cam-a", { x: -435.0, y: -442.7, scale: 1.7377, duration: 0.4, ease: "none" }, 4.8);
+      tl.to("#cam-a", { x: -430.9, y: -446.1, scale: 1.7523, duration: 0.4, ease: "none" }, 5.2);
+      tl.to("#cam-a", { x: -426.3, y: -445.4, scale: 1.7672, duration: 0.4, ease: "none" }, 5.6);
+      tl.to("#cam-a", { x: -426.9, y: -448.2, scale: 1.78, duration: 0.34, ease: "none" }, 6.0);
+      tl.set("#cam-b", { x: -165.7, y: 0.0, scale: 1.22 }, 0);
+      tl.to("#cam-b", { x: -166.2, y: 0.0, scale: 1.2226, duration: 0.4, ease: "none" }, 6.34);
+      tl.to("#cam-b", { x: -166.1, y: 0.0, scale: 1.2253, duration: 0.4, ease: "none" }, 6.74);
+      tl.to("#cam-b", { x: -165.5, y: 0.0, scale: 1.2279, duration: 0.4, ease: "none" }, 7.14);
+      tl.to("#cam-b", { x: -164.5, y: 0.0, scale: 1.2305, duration: 0.4, ease: "none" }, 7.54);
+      tl.to("#cam-b", { x: -163.3, y: -0.7, scale: 1.2331, duration: 0.4, ease: "none" }, 7.94);
+      tl.to("#cam-b", { x: -162.2, y: -3.3, scale: 1.2358, duration: 0.4, ease: "none" }, 8.34);
+      tl.to("#cam-b", { x: -161.5, y: -5.4, scale: 1.2384, duration: 0.4, ease: "none" }, 8.74);
+      tl.to("#cam-b", { x: -161.1, y: -7.5, scale: 1.241, duration: 0.4, ease: "none" }, 9.14);
+      tl.to("#cam-b", { x: -161.2, y: -8.8, scale: 1.2436, duration: 0.4, ease: "none" }, 9.54);
+      tl.to("#cam-b", { x: -162.0, y: -9.9, scale: 1.2463, duration: 0.4, ease: "none" }, 9.94);
+      tl.to("#cam-b", { x: -163.5, y: -10.7, scale: 1.2489, duration: 0.4, ease: "none" }, 10.34);
+      tl.to("#cam-b", { x: -166.1, y: -11.1, scale: 1.2515, duration: 0.4, ease: "none" }, 10.74);
+      tl.to("#cam-b", { x: -170.5, y: -10.6, scale: 1.2541, duration: 0.4, ease: "none" }, 11.14);
+      tl.to("#cam-b", { x: -177.2, y: -10.2, scale: 1.2568, duration: 0.4, ease: "none" }, 11.54);
+      tl.to("#cam-b", { x: -186.0, y: -10.4, scale: 1.2594, duration: 0.4, ease: "none" }, 11.94);
+      tl.to("#cam-b", { x: -196.2, y: -11.4, scale: 1.262, duration: 0.4, ease: "none" }, 12.34);
+      tl.to("#cam-b", { x: -206.6, y: -13.4, scale: 1.2646, duration: 0.4, ease: "none" }, 12.74);
+      tl.to("#cam-b", { x: -215.9, y: -16.1, scale: 1.2673, duration: 0.4, ease: "none" }, 13.14);
+      tl.to("#cam-b", { x: -222.8, y: -19.4, scale: 1.2699, duration: 0.4, ease: "none" }, 13.54);
+      tl.to("#cam-b", { x: -226.2, y: -22.3, scale: 1.2725, duration: 0.4, ease: "none" }, 13.94);
+      tl.to("#cam-b", { x: -226.2, y: -23.6, scale: 1.2751, duration: 0.4, ease: "none" }, 14.34);
+      tl.to("#cam-b", { x: -223.4, y: -22.7, scale: 1.2778, duration: 0.4, ease: "none" }, 14.74);
+      tl.to("#cam-b", { x: -218.6, y: -20.1, scale: 1.2804, duration: 0.4, ease: "none" }, 15.14);
+      tl.to("#cam-b", { x: -212.6, y: -16.5, scale: 1.283, duration: 0.4, ease: "none" }, 15.54);
+      tl.to("#cam-b", { x: -206.6, y: -12.3, scale: 1.2856, duration: 0.4, ease: "none" }, 15.94);
+      tl.to("#cam-b", { x: -201.5, y: -8.6, scale: 1.2883, duration: 0.4, ease: "none" }, 16.34);
+      tl.to("#cam-b", { x: -197.6, y: -6.6, scale: 1.2909, duration: 0.4, ease: "none" }, 16.74);
+      tl.to("#cam-b", { x: -195.4, y: -6.2, scale: 1.2935, duration: 0.4, ease: "none" }, 17.14);
+      tl.to("#cam-b", { x: -194.8, y: -7.2, scale: 1.2961, duration: 0.4, ease: "none" }, 17.54);
+      tl.to("#cam-b", { x: -195.4, y: -8.6, scale: 1.2988, duration: 0.4, ease: "none" }, 17.94);
+      tl.to("#cam-b", { x: -196.8, y: -10.9, scale: 1.3014, duration: 0.4, ease: "none" }, 18.34);
+      tl.to("#cam-b", { x: -198.8, y: -13.3, scale: 1.304, duration: 0.4, ease: "none" }, 18.74);
+      tl.to("#cam-b", { x: -200.8, y: -15.9, scale: 1.3067, duration: 0.4, ease: "none" }, 19.14);
+      tl.to("#cam-b", { x: -203.0, y: -18.8, scale: 1.3093, duration: 0.4, ease: "none" }, 19.54);
+      tl.to("#cam-b", { x: -205.7, y: -23.2, scale: 1.3119, duration: 0.4, ease: "none" }, 19.94);
+      tl.to("#cam-b", { x: -209.4, y: -28.9, scale: 1.3145, duration: 0.4, ease: "none" }, 20.34);
+      tl.to("#cam-b", { x: -214.7, y: -35.4, scale: 1.3172, duration: 0.4, ease: "none" }, 20.74);
+      tl.to("#cam-b", { x: -222.1, y: -42.3, scale: 1.3198, duration: 0.4, ease: "none" }, 21.14);
+      tl.to("#cam-b", { x: -231.4, y: -49.3, scale: 1.3224, duration: 0.4, ease: "none" }, 21.54);
+      tl.to("#cam-b", { x: -242.1, y: -55.6, scale: 1.325, duration: 0.4, ease: "none" }, 21.94);
+      tl.to("#cam-b", { x: -253.4, y: -60.6, scale: 1.3277, duration: 0.4, ease: "none" }, 22.34);
+      tl.to("#cam-b", { x: -263.9, y: -65.1, scale: 1.3303, duration: 0.4, ease: "none" }, 22.74);
+      tl.to("#cam-b", { x: -272.1, y: -68.9, scale: 1.3329, duration: 0.4, ease: "none" }, 23.14);
+      tl.to("#cam-b", { x: -277.3, y: -72.8, scale: 1.3355, duration: 0.4, ease: "none" }, 23.54);
+      tl.to("#cam-b", { x: -279.3, y: -77.5, scale: 1.3382, duration: 0.4, ease: "none" }, 23.94);
+      tl.to("#cam-b", { x: -278.6, y: -82.1, scale: 1.3408, duration: 0.4, ease: "none" }, 24.34);
+      tl.to("#cam-b", { x: -275.5, y: -87.2, scale: 1.3434, duration: 0.4, ease: "none" }, 24.74);
+      tl.to("#cam-b", { x: -270.6, y: -92.0, scale: 1.346, duration: 0.4, ease: "none" }, 25.14);
+      tl.to("#cam-b", { x: -265.1, y: -95.2, scale: 1.3487, duration: 0.4, ease: "none" }, 25.54);
+      tl.to("#cam-b", { x: -259.2, y: -96.2, scale: 1.3513, duration: 0.4, ease: "none" }, 25.94);
+      tl.to("#cam-b", { x: -253.4, y: -95.1, scale: 1.3539, duration: 0.4, ease: "none" }, 26.34);
+      tl.to("#cam-b", { x: -248.0, y: -91.9, scale: 1.3565, duration: 0.4, ease: "none" }, 26.74);
+      tl.to("#cam-b", { x: -243.8, y: -87.1, scale: 1.3592, duration: 0.4, ease: "none" }, 27.14);
+      tl.to("#cam-b", { x: -241.6, y: -82.6, scale: 1.3618, duration: 0.4, ease: "none" }, 27.54);
+      tl.to("#cam-b", { x: -241.8, y: -78.5, scale: 1.3644, duration: 0.4, ease: "none" }, 27.94);
+      tl.to("#cam-b", { x: -244.7, y: -76.2, scale: 1.367, duration: 0.4, ease: "none" }, 28.34);
+      tl.to("#cam-b", { x: -250.2, y: -76.8, scale: 1.3697, duration: 0.4, ease: "none" }, 28.74);
+      tl.to("#cam-b", { x: -257.7, y: -79.4, scale: 1.3723, duration: 0.4, ease: "none" }, 29.14);
+      tl.to("#cam-b", { x: -266.1, y: -85.5, scale: 1.3749, duration: 0.4, ease: "none" }, 29.54);
+      tl.to("#cam-b", { x: -274.6, y: -94.2, scale: 1.3775, duration: 0.4, ease: "none" }, 29.94);
+      tl.to("#cam-b", { x: -282.1, y: -104.7, scale: 1.3802, duration: 0.4, ease: "none" }, 30.34);
+      tl.to("#cam-b", { x: -287.6, y: -116.4, scale: 1.3828, duration: 0.4, ease: "none" }, 30.74);
+      tl.to("#cam-b", { x: -290.6, y: -127.7, scale: 1.3854, duration: 0.4, ease: "none" }, 31.14);
+      tl.to("#cam-b", { x: -290.9, y: -137.8, scale: 1.3881, duration: 0.4, ease: "none" }, 31.54);
+      tl.to("#cam-b", { x: -288.2, y: -146.5, scale: 1.3907, duration: 0.4, ease: "none" }, 31.94);
+      tl.to("#cam-b", { x: -283.3, y: -153.4, scale: 1.3933, duration: 0.4, ease: "none" }, 32.34);
+      tl.to("#cam-b", { x: -277.0, y: -158.9, scale: 1.3959, duration: 0.4, ease: "none" }, 32.74);
+      tl.to("#cam-b", { x: -270.5, y: -163.9, scale: 1.3986, duration: 0.4, ease: "none" }, 33.14);
+      tl.to("#cam-b", { x: -267.6, y: -166.2, scale: 1.4, duration: 0.22, ease: "none" }, 33.54);
+      tl.set("#cam-c", { x: -268.1, y: -49.9, scale: 1.32 }, 0);
+      tl.to("#cam-c", { x: -260.1, y: -52.4, scale: 1.3205, duration: 0.4, ease: "none" }, 33.76);
+      tl.to("#cam-c", { x: -251.1, y: -56.4, scale: 1.3219, duration: 0.4, ease: "none" }, 34.16);
+      tl.to("#cam-c", { x: -241.9, y: -62.3, scale: 1.3242, duration: 0.4, ease: "none" }, 34.56);
+      tl.to("#cam-c", { x: -233.6, y: -69.3, scale: 1.3274, duration: 0.4, ease: "none" }, 34.96);
+      tl.to("#cam-c", { x: -226.9, y: -75.3, scale: 1.3315, duration: 0.4, ease: "none" }, 35.36);
+      tl.to("#cam-c", { x: -222.6, y: -79.6, scale: 1.3364, duration: 0.4, ease: "none" }, 35.76);
+      tl.to("#cam-c", { x: -221.0, y: -82.6, scale: 1.342, duration: 0.4, ease: "none" }, 36.16);
+      tl.to("#cam-c", { x: -221.9, y: -83.5, scale: 1.3484, duration: 0.4, ease: "none" }, 36.56);
+      tl.to("#cam-c", { x: -225.1, y: -84.0, scale: 1.3555, duration: 0.4, ease: "none" }, 36.96);
+      tl.to("#cam-c", { x: -230.1, y: -84.8, scale: 1.3632, duration: 0.4, ease: "none" }, 37.36);
+      tl.to("#cam-c", { x: -236.9, y: -87.0, scale: 1.3714, duration: 0.4, ease: "none" }, 37.76);
+      tl.to("#cam-c", { x: -246.0, y: -91.3, scale: 1.3801, duration: 0.4, ease: "none" }, 38.16);
+      tl.to("#cam-c", { x: -257.4, y: -97.1, scale: 1.3891, duration: 0.4, ease: "none" }, 38.56);
+      tl.to("#cam-c", { x: -271.8, y: -104.2, scale: 1.3984, duration: 0.4, ease: "none" }, 38.96);
+      tl.to("#cam-c", { x: -288.9, y: -112.5, scale: 1.4079, duration: 0.4, ease: "none" }, 39.36);
+      tl.to("#cam-c", { x: -307.6, y: -122.8, scale: 1.4176, duration: 0.4, ease: "none" }, 39.76);
+      tl.to("#cam-c", { x: -326.7, y: -134.4, scale: 1.4272, duration: 0.4, ease: "none" }, 40.16);
+      tl.to("#cam-c", { x: -344.0, y: -146.6, scale: 1.4368, duration: 0.4, ease: "none" }, 40.56);
+      tl.to("#cam-c", { x: -357.9, y: -158.5, scale: 1.4463, duration: 0.4, ease: "none" }, 40.96);
+      tl.to("#cam-c", { x: -367.6, y: -170.2, scale: 1.4555, duration: 0.4, ease: "none" }, 41.36);
+      tl.to("#cam-c", { x: -373.1, y: -180.3, scale: 1.4643, duration: 0.4, ease: "none" }, 41.76);
+      tl.to("#cam-c", { x: -375.4, y: -188.5, scale: 1.4728, duration: 0.4, ease: "none" }, 42.16);
+      tl.to("#cam-c", { x: -375.8, y: -194.8, scale: 1.4807, duration: 0.4, ease: "none" }, 42.56);
+      tl.to("#cam-c", { x: -375.4, y: -200.3, scale: 1.4881, duration: 0.4, ease: "none" }, 42.96);
+      tl.to("#cam-c", { x: -375.6, y: -204.7, scale: 1.4949, duration: 0.4, ease: "none" }, 43.36);
+      tl.to("#cam-c", { x: -377.0, y: -207.2, scale: 1.5009, duration: 0.4, ease: "none" }, 43.76);
+      tl.to("#cam-c", { x: -379.8, y: -208.8, scale: 1.5062, duration: 0.4, ease: "none" }, 44.16);
+      tl.to("#cam-c", { x: -383.7, y: -209.8, scale: 1.5107, duration: 0.4, ease: "none" }, 44.56);
+      tl.to("#cam-c", { x: -388.5, y: -210.6, scale: 1.5143, duration: 0.4, ease: "none" }, 44.96);
+      tl.to("#cam-c", { x: -393.7, y: -211.0, scale: 1.5171, duration: 0.4, ease: "none" }, 45.36);
+      tl.to("#cam-c", { x: -398.3, y: -212.5, scale: 1.519, duration: 0.4, ease: "none" }, 45.76);
+      tl.to("#cam-c", { x: -401.9, y: -213.7, scale: 1.5199, duration: 0.4, ease: "none" }, 46.16);
+      tl.to("#cam-c", { x: -402.0, y: -213.8, scale: 1.52, duration: 0.2, ease: "none" }, 46.56);
+      tl.set("#cam-d", { x: -357.0, y: -242.5, scale: 1.56 }, 0);
+      tl.to("#cam-d", { x: -350.6, y: -244.8, scale: 1.5594, duration: 0.4, ease: "none" }, 46.76);
+      tl.to("#cam-d", { x: -343.6, y: -244.2, scale: 1.5577, duration: 0.4, ease: "none" }, 47.16);
+      tl.to("#cam-d", { x: -337.1, y: -239.5, scale: 1.5548, duration: 0.4, ease: "none" }, 47.56);
+      tl.to("#cam-d", { x: -331.9, y: -231.6, scale: 1.5508, duration: 0.4, ease: "none" }, 47.96);
+      tl.to("#cam-d", { x: -329.2, y: -222.0, scale: 1.5458, duration: 0.4, ease: "none" }, 48.36);
+      tl.to("#cam-d", { x: -329.8, y: -212.2, scale: 1.5397, duration: 0.4, ease: "none" }, 48.76);
+      tl.to("#cam-d", { x: -334.4, y: -203.2, scale: 1.5326, duration: 0.4, ease: "none" }, 49.16);
+      tl.to("#cam-d", { x: -342.3, y: -196.1, scale: 1.5246, duration: 0.4, ease: "none" }, 49.56);
+      tl.to("#cam-d", { x: -352.8, y: -191.5, scale: 1.5158, duration: 0.4, ease: "none" }, 49.96);
+      tl.to("#cam-d", { x: -364.2, y: -187.5, scale: 1.5062, duration: 0.4, ease: "none" }, 50.36);
+      tl.to("#cam-d", { x: -374.7, y: -181.5, scale: 1.4959, duration: 0.4, ease: "none" }, 50.76);
+      tl.to("#cam-d", { x: -381.6, y: -174.7, scale: 1.485, duration: 0.4, ease: "none" }, 51.16);
+      tl.to("#cam-d", { x: -382.5, y: -166.8, scale: 1.4737, duration: 0.4, ease: "none" }, 51.56);
+      tl.to("#cam-d", { x: -376.5, y: -159.2, scale: 1.4619, duration: 0.4, ease: "none" }, 51.96);
+      tl.to("#cam-d", { x: -363.1, y: -151.2, scale: 1.4499, duration: 0.4, ease: "none" }, 52.36);
+      tl.to("#cam-d", { x: -343.7, y: -143.9, scale: 1.4377, duration: 0.4, ease: "none" }, 52.76);
+      tl.to("#cam-d", { x: -319.8, y: -138.2, scale: 1.4254, duration: 0.4, ease: "none" }, 53.16);
+      tl.to("#cam-d", { x: -294.3, y: -132.4, scale: 1.4132, duration: 0.4, ease: "none" }, 53.56);
+      tl.to("#cam-d", { x: -269.9, y: -125.6, scale: 1.4011, duration: 0.4, ease: "none" }, 53.96);
+      tl.to("#cam-d", { x: -248.3, y: -117.5, scale: 1.3892, duration: 0.4, ease: "none" }, 54.36);
+      tl.to("#cam-d", { x: -230.9, y: -108.7, scale: 1.3778, duration: 0.4, ease: "none" }, 54.76);
+      tl.to("#cam-d", { x: -217.9, y: -98.9, scale: 1.3668, duration: 0.4, ease: "none" }, 55.16);
+      tl.to("#cam-d", { x: -209.7, y: -88.8, scale: 1.3563, duration: 0.4, ease: "none" }, 55.56);
+      tl.to("#cam-d", { x: -205.9, y: -79.1, scale: 1.3466, duration: 0.4, ease: "none" }, 55.96);
+      tl.to("#cam-d", { x: -206.0, y: -71.0, scale: 1.3375, duration: 0.4, ease: "none" }, 56.36);
+      tl.to("#cam-d", { x: -209.7, y: -64.8, scale: 1.3293, duration: 0.4, ease: "none" }, 56.76);
+      tl.to("#cam-d", { x: -216.1, y: -60.1, scale: 1.322, duration: 0.4, ease: "none" }, 57.16);
+      tl.to("#cam-d", { x: -224.7, y: -56.6, scale: 1.3157, duration: 0.4, ease: "none" }, 57.56);
+      tl.to("#cam-d", { x: -234.0, y: -54.7, scale: 1.3103, duration: 0.4, ease: "none" }, 57.96);
+      tl.to("#cam-d", { x: -243.1, y: -53.1, scale: 1.3061, duration: 0.4, ease: "none" }, 58.36);
+      tl.to("#cam-d", { x: -251.0, y: -52.3, scale: 1.3029, duration: 0.4, ease: "none" }, 58.76);
+      tl.to("#cam-d", { x: -257.6, y: -52.2, scale: 1.3009, duration: 0.4, ease: "none" }, 59.16);
+      tl.to("#cam-d", { x: -262.6, y: -53.0, scale: 1.3, duration: 0.4, ease: "none" }, 59.56);
+      tl.to("#cam-d", { x: -262.6, y: -52.9, scale: 1.3, duration: 0.1, ease: "none" }, 59.96);
+      tl.set("#cam-e", { x: -367.2, y: -105.5, scale: 1.34 }, 0);
+      tl.to("#cam-e", { x: -372.8, y: -121.7, scale: 1.3452, duration: 0.4, ease: "none" }, 60.06);
+      tl.to("#cam-e", { x: -381.1, y: -136.3, scale: 1.3528, duration: 0.4, ease: "none" }, 60.46);
+      tl.to("#cam-e", { x: -390.7, y: -147.8, scale: 1.3618, duration: 0.4, ease: "none" }, 60.86);
+      tl.to("#cam-e", { x: -401.4, y: -156.2, scale: 1.3716, duration: 0.4, ease: "none" }, 61.26);
+      tl.to("#cam-e", { x: -412.9, y: -163.8, scale: 1.3823, duration: 0.4, ease: "none" }, 61.66);
+      tl.to("#cam-e", { x: -425.1, y: -174.3, scale: 1.3936, duration: 0.4, ease: "none" }, 62.06);
+      tl.to("#cam-e", { x: -437.9, y: -185.7, scale: 1.4055, duration: 0.4, ease: "none" }, 62.46);
+      tl.to("#cam-e", { x: -451.3, y: -197.5, scale: 1.4179, duration: 0.4, ease: "none" }, 62.86);
+      tl.to("#cam-e", { x: -465.2, y: -205.3, scale: 1.4308, duration: 0.4, ease: "none" }, 63.26);
+      tl.to("#cam-e", { x: -479.6, y: -206.5, scale: 1.4441, duration: 0.4, ease: "none" }, 63.66);
+      tl.to("#cam-e", { x: -580.8, y: -263.3, scale: 1.5378, duration: 0.4, ease: "none" }, 64.06);
+      tl.to("#cam-e", { x: -596.1, y: -251.4, scale: 1.5519, duration: 0.4, ease: "none" }, 64.46);
+      tl.to("#cam-e", { x: -611.7, y: -239.8, scale: 1.5664, duration: 0.4, ease: "none" }, 64.86);
+      tl.to("#cam-e", { x: -627.7, y: -233.3, scale: 1.5812, duration: 0.4, ease: "none" }, 65.26);
+      tl.to("#cam-e", { x: -644.0, y: -237.3, scale: 1.5963, duration: 0.4, ease: "none" }, 65.66);
+      tl.to("#cam-e", { x: -660.7, y: -251.2, scale: 1.6118, duration: 0.4, ease: "none" }, 66.06);
+      tl.to("#cam-e", { x: -677.7, y: -273.0, scale: 1.6275, duration: 0.4, ease: "none" }, 66.46);
+      tl.to("#cam-e", { x: -695.0, y: -298.5, scale: 1.6435, duration: 0.4, ease: "none" }, 66.86);
+      tl.to("#cam-e", { x: -697.2, y: -323.4, scale: 1.6598, duration: 0.4, ease: "none" }, 67.26);
+      tl.to("#cam-e", { x: -675.1, y: -344.3, scale: 1.6763, duration: 0.4, ease: "none" }, 67.66);
+      tl.to("#cam-e", { x: -643.6, y: -361.1, scale: 1.6931, duration: 0.4, ease: "none" }, 68.06);
+      tl.to("#cam-e", { x: -611.8, y: -375.3, scale: 1.7101, duration: 0.4, ease: "none" }, 68.46);
+      tl.to("#cam-e", { x: -589.7, y: -387.2, scale: 1.7273, duration: 0.4, ease: "none" }, 68.86);
+      tl.to("#cam-e", { x: -584.7, y: -402.3, scale: 1.7448, duration: 0.4, ease: "none" }, 69.26);
+      tl.to("#cam-e", { x: -596.2, y: -420.5, scale: 1.7625, duration: 0.4, ease: "none" }, 69.66);
+      tl.to("#cam-e", { x: -611.9, y: -437.6, scale: 1.78, duration: 0.39, ease: "none" }, 70.06);
+      tl.set("#cam-f", { x: -163.6, y: -303.8, scale: 1.62 }, 0);
+      tl.to("#cam-f", { x: -165.9, y: -295.1, scale: 1.6178, duration: 0.4, ease: "none" }, 70.45);
+      tl.to("#cam-f", { x: -167.9, y: -285.1, scale: 1.6111, duration: 0.4, ease: "none" }, 70.85);
+      tl.to("#cam-f", { x: -168.8, y: -272.7, scale: 1.6002, duration: 0.4, ease: "none" }, 71.25);
+      tl.to("#cam-f", { x: -167.1, y: -260.1, scale: 1.5851, duration: 0.4, ease: "none" }, 71.65);
+      tl.to("#cam-f", { x: -160.8, y: -249.8, scale: 1.5661, duration: 0.4, ease: "none" }, 72.05);
+      tl.to("#cam-f", { x: -148.6, y: -241.2, scale: 1.5435, duration: 0.4, ease: "none" }, 72.45);
+      tl.to("#cam-f", { x: -131.1, y: -231.6, scale: 1.5178, duration: 0.4, ease: "none" }, 72.85);
+      tl.to("#cam-f", { x: -110.6, y: -221.3, scale: 1.4893, duration: 0.4, ease: "none" }, 73.25);
+      tl.to("#cam-f", { x: -88.6, y: -206.7, scale: 1.4585, duration: 0.4, ease: "none" }, 73.65);
+      tl.to("#cam-f", { x: -67.0, y: -187.5, scale: 1.4259, duration: 0.4, ease: "none" }, 74.05);
+      tl.to("#cam-f", { x: -47.6, y: -168.0, scale: 1.392, duration: 0.4, ease: "none" }, 74.45);
+      tl.to("#cam-f", { x: -31.8, y: -143.7, scale: 1.3574, duration: 0.4, ease: "none" }, 74.85);
+      tl.to("#cam-f", { x: -20.3, y: -117.5, scale: 1.3228, duration: 0.4, ease: "none" }, 75.25);
+      tl.to("#cam-f", { x: -13.1, y: -89.8, scale: 1.2885, duration: 0.4, ease: "none" }, 75.65);
+      tl.to("#cam-f", { x: -9.9, y: -58.9, scale: 1.2553, duration: 0.4, ease: "none" }, 76.05);
+      tl.to("#cam-f", { x: -9.9, y: -26.1, scale: 1.2237, duration: 0.4, ease: "none" }, 76.45);
+      tl.to("#cam-f", { x: -11.2, y: 0.0, scale: 1.1941, duration: 0.4, ease: "none" }, 76.85);
+      tl.to("#cam-f", { x: -11.2, y: 0.0, scale: 1.1671, duration: 0.4, ease: "none" }, 77.25);
+      tl.to("#cam-f", { x: -8.9, y: 0.0, scale: 1.1432, duration: 0.4, ease: "none" }, 77.65);
+      tl.to("#cam-f", { x: -4.6, y: 0.0, scale: 1.1226, duration: 0.4, ease: "none" }, 78.05);
+      tl.to("#cam-f", { x: 0.0, y: 0.0, scale: 1.1058, duration: 0.4, ease: "none" }, 78.45);
+      tl.to("#cam-f", { x: 0.0, y: 0.0, scale: 1.0931, duration: 0.4, ease: "none" }, 78.85);
+      tl.to("#cam-f", { x: 0.0, y: 0.0, scale: 1.0845, duration: 0.4, ease: "none" }, 79.25);
+      tl.to("#cam-f", { x: -2.8, y: 0.0, scale: 1.0804, duration: 0.4, ease: "none" }, 79.65);
+      tl.to("#cam-f", { x: -12.6, y: 0.0, scale: 1.08, duration: 0.4, ease: "none" }, 80.05);
+      tl.to("#cam-f", { x: -18.0, y: 0, scale: 1.08, duration: 0.26, ease: "none" }, 80.45);
       window.__timelines["main"] = tl;
-      tl.seek(0);
     </script>
   </body>
 </html>

@@ -1,0 +1,85 @@
+<template>
+  <style>
+      @font-face { font-family: "Anton"; src: url("assets/fonts/anton-latin-400-normal.woff2") format("woff2"); font-weight: 400; }
+      @font-face { font-family: "Bebas Neue"; src: url("assets/fonts/bebas-neue-latin-400-normal.woff2") format("woff2"); font-weight: 400; }
+      #root {
+        --navy: #0a1630; --navy-deep: #050b1a; --gold: #d9a93a; --gold-bright: #f4c95d;
+        --ink: #ffffff; --hl: #ffd84a;
+        position: absolute; inset: 0; overflow: visible;
+      }
+      .dim { position: absolute; left: 0; top: 0; width: 1080px; height: 860px;
+        background: linear-gradient(180deg, rgba(5,11,26,.88) 0%, rgba(5,11,26,.74) 55%, rgba(5,11,26,0) 100%); opacity: 0; }
+      .kicker { font-family: "Bebas Neue", sans-serif; font-size: 44px; letter-spacing: .14em; color: var(--gold-bright); }
+      .gline { height: 4px; background: linear-gradient(90deg, var(--gold-bright), var(--gold) 70%, rgba(217,169,58,0)); transform-origin: 0 50%; }
+      .hl { font-family: "Anton", sans-serif; color: var(--ink); line-height: 1.02; text-transform: uppercase;
+        text-shadow: 0 6px 30px rgba(0,0,0,.55); }
+      .gold { color: var(--gold-bright); }
+      .w { display: inline-block; }
+      .mask { display: block; overflow: hidden; padding: 0 6px 6px 0; }
+      .sub { font-family: "Montserrat", sans-serif; font-weight: 600; font-size: 34px; line-height: 1.3; color: rgba(255,255,255,.9); }
+      .src { font-family: "Montserrat", sans-serif; font-weight: 500; font-size: 28px; color: rgba(255,255,255,.72); }
+
+      #ou-name:empty { display: none; }
+      .dust { position: absolute; border-radius: 50%; background: rgba(255,226,140,.9); box-shadow: 0 0 10px 3px rgba(244,201,93,.45); }
+  </style>
+  <div id="root" data-composition-id="outro" data-width="1080" data-height="1920">
+    <div id="ou-dim" class="dim clip" data-start="2.646" data-duration="7.764" data-track-index="0"></div>
+    <div id="ou-a" class="clip" data-start="2.796" data-duration="6.564" data-track-index="1"
+         style="position:absolute;left:108px;top:236px;width:864px;">
+      <div class="kicker">POINT 05 · MESEJ PENUTUP</div>
+      <div id="ou-gl" class="gline" style="width:640px;margin:12px 0 20px;"></div>
+      <div class="hl gold" style="font-size:124px;"><span class="w ou-w1">PERPADUAN</span></div>
+      <div class="hl" style="font-size:96px;"><span class="w ou-w2">DEMI</span> <span class="w ou-w3">AGAMA</span> <span class="w ou-w4">ALLAH</span></div>
+    </div>
+    <div id="ou-black" class="clip" data-start="9.91" data-duration="4.14" data-track-index="2"
+         style="position:absolute;inset:0;background:radial-gradient(ellipse at 50% 45%, #0d1d3f 0%, #050b1a 60%, #000 100%);opacity:0;"></div>
+    <div id="ou-dustwrap" class="clip" data-start="10.31" data-duration="3.74" data-track-index="3" data-layout-ignore
+         style="position:absolute;inset:0;">
+      <i class="dust" style="left:996px;top:1133px;width:6px;height:6px;"></i>
+      <i class="dust" style="left:171px;top:740px;width:4px;height:4px;"></i>
+      <i class="dust" style="left:822px;top:887px;width:4px;height:4px;"></i>
+      <i class="dust" style="left:837px;top:650px;width:5px;height:5px;"></i>
+      <i class="dust" style="left:560px;top:565px;width:4px;height:4px;"></i>
+      <i class="dust" style="left:887px;top:500px;width:3px;height:3px;"></i>
+      <i class="dust" style="left:866px;top:1027px;width:5px;height:5px;"></i>
+      <i class="dust" style="left:721px;top:1054px;width:5px;height:5px;"></i>
+      <i class="dust" style="left:900px;top:553px;width:4px;height:4px;"></i>
+      <i class="dust" style="left:547px;top:1320px;width:7px;height:7px;"></i>
+      <i class="dust" style="left:886px;top:919px;width:4px;height:4px;"></i>
+      <i class="dust" style="left:693px;top:638px;width:7px;height:7px;"></i>
+    </div>
+    <div id="ou-final" class="clip" data-start="10.31" data-duration="3.74" data-track-index="4"
+         style="position:absolute;left:108px;top:560px;width:864px;text-align:center;">
+      <div class="kicker" style="font-size:46px;">MESEJ PENUTUP</div>
+      <div id="ou-gl2" class="gline" style="width:420px;margin:14px auto 34px;transform-origin:50% 50%;background:linear-gradient(90deg,rgba(217,169,58,0),var(--gold-bright),rgba(217,169,58,0));"></div>
+      <div class="hl" style="font-size:112px;"><span class="w ou-f">&ldquo;INI</span> <span class="w ou-f">BUKAN</span> <span class="w ou-f gold">PERPADUAN</span></div>
+      <div class="hl" style="font-size:112px;"><span class="w ou-f">UNTUK</span> <span class="w ou-f">POLITIK</span></div>
+      <div class="hl gold" style="font-size:112px;"><span class="w ou-f">SEMATA-MATA.&rdquo;</span></div>
+      <div id="ou-name" class="sub" style="margin-top:40px;font-size:40px;font-weight:800;color:#fff;" data-var-text="speakerName"></div>
+      <div id="ou-role" class="src" style="margin-top:10px;font-size:32px;" data-var-text="speakerRole">Ceramah Perpaduan UMNO&ndash;PAS &middot; PRN Melaka</div>
+    </div>
+    <div id="ou-fade" class="clip" data-start="13.15" data-duration="0.9" data-track-index="5"
+         style="position:absolute;inset:0;background:#000;opacity:0;"></div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#ou-dim", { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "power2.out" }, 2.646);
+    tl.fromTo("#ou-a .kicker", { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: 0.45, ease: "expo.out" }, 2.796);
+    tl.fromTo("#ou-gl", { scaleX: 0 }, { scaleX: 1, duration: 0.6, ease: "power3.inOut" }, 2.846);
+    tl.fromTo(".ou-w1", { opacity: 0, filter: "blur(8px)", y: 30 }, { opacity: 1, filter: "blur(0px)", y: 0, duration: 0.4, ease: "expo.out" }, 2.916);
+    tl.fromTo(".ou-w2", { opacity: 0, filter: "blur(8px)", y: 30 }, { opacity: 1, filter: "blur(0px)", y: 0, duration: 0.4, ease: "expo.out" }, 4.459);
+    tl.fromTo(".ou-w3", { opacity: 0, filter: "blur(8px)", y: 30 }, { opacity: 1, filter: "blur(0px)", y: 0, duration: 0.4, ease: "expo.out" }, 4.86);
+    tl.fromTo(".ou-w4", { opacity: 0, filter: "blur(8px)", y: 30 }, { opacity: 1, filter: "blur(0px)", y: 0, duration: 0.4, ease: "expo.out" }, 5.24);
+    tl.to("#ou-a", { opacity: 0, filter: "blur(10px)", duration: 0.28, ease: "power3.in" }, 9.31);
+    tl.to("#ou-dim", { opacity: 0, duration: 0.3, ease: "power2.in" }, 9.46);
+    tl.fromTo("#ou-black", { opacity: 0 }, { opacity: 1, duration: 0.7, ease: "power2.inOut" }, 9.91);
+    tl.fromTo("#ou-gl2", { scaleX: 0 }, { scaleX: 1, duration: 0.8, ease: "power3.inOut" }, 10.41);
+    tl.fromTo("#ou-final .kicker", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.7, ease: "expo.out" }, 10.31);
+    tl.fromTo(".ou-f", { opacity: 0, y: 36, filter: "blur(10px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.42, ease: "expo.out", stagger: 0.1 }, 10.66);
+    tl.fromTo("#ou-name, #ou-role", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.6, ease: "expo.out", stagger: 0.15 }, 11.71);
+    tl.fromTo(".dust", { opacity: 0, y: 0 }, { opacity: 0.8, y: -160, duration: 3.74, ease: "none", stagger: 0.06 }, 10.31);
+    tl.fromTo("#ou-fade", { opacity: 0 }, { opacity: 1, duration: 0.85, ease: "power2.in" }, 13.15);
+
+    window.__timelines["outro"] = tl;
+  </script>
+</template>

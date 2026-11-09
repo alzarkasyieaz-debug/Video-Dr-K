@@ -1,0 +1,49 @@
+<template>
+  <style>
+      @font-face { font-family: "Anton"; src: url("assets/fonts/anton-latin-400-normal.woff2") format("woff2"); font-weight: 400; }
+      @font-face { font-family: "Bebas Neue"; src: url("assets/fonts/bebas-neue-latin-400-normal.woff2") format("woff2"); font-weight: 400; }
+      #root {
+        --navy: #0a1630; --navy-deep: #050b1a; --gold: #d9a93a; --gold-bright: #f4c95d;
+        --ink: #ffffff; --hl: #ffd84a;
+        position: absolute; inset: 0; overflow: visible;
+      }
+      .sweep { position: absolute; left: -700px; top: -200px; width: 600px; height: 2400px; transform-origin: 50% 50%;
+        background: linear-gradient(90deg, rgba(255,232,170,0), rgba(255,232,170,.38) 45%, rgba(255,255,255,.55) 50%, rgba(255,232,170,.38) 55%, rgba(255,232,170,0));
+        mix-blend-mode: screen; opacity: 0; }
+      .dip { position: absolute; inset: 0; background: #000; opacity: 0; }
+  </style>
+  <div id="root" data-composition-id="fx" data-width="1080" data-height="1920">
+    <div id="fx-bug" class="clip" data-start="0.4" data-duration="79.9" data-track-index="2"
+         style="position:absolute;left:108px;top:178px;">
+      <span id="fx-bug-bar" style="display:inline-block;width:8px;height:30px;background:var(--gold-bright);vertical-align:-4px;margin-right:12px;"></span><span id="fx-bug-t" style="font-family:'Bebas Neue',sans-serif;font-size:34px;letter-spacing:.2em;color:rgba(255,255,255,.92);">PRN MELAKA <span style="color:var(--gold-bright);">&middot;</span> CERAMAH PERPADUAN</span>
+    </div>
+    <div id="fx-sw-0" class="clip sweep" data-start="5.99" data-duration="0.9" data-track-index="3" data-layout-ignore></div>
+    <div id="fx-sw-1" class="clip sweep" data-start="33.41" data-duration="0.9" data-track-index="4" data-layout-ignore></div>
+    <div id="fx-sw-2" class="clip sweep" data-start="46.41" data-duration="0.9" data-track-index="5" data-layout-ignore></div>
+    <div id="fx-sw-3" class="clip sweep" data-start="59.71" data-duration="0.9" data-track-index="6" data-layout-ignore></div>
+    <div id="fx-sw-4" class="clip sweep" data-start="70.1" data-duration="0.9" data-track-index="7" data-layout-ignore></div>
+    <div id="fx-dip-0" class="clip dip" data-start="6.22" data-duration="0.42" data-track-index="10" data-layout-ignore></div>
+    <div id="fx-dip-1" class="clip dip" data-start="33.64" data-duration="0.42" data-track-index="11" data-layout-ignore></div>
+    <div id="fx-dip-2" class="clip dip" data-start="46.64" data-duration="0.42" data-track-index="12" data-layout-ignore></div>
+    <div id="fx-dip-3" class="clip dip" data-start="59.94" data-duration="0.42" data-track-index="13" data-layout-ignore></div>
+    <div id="fx-dip-4" class="clip dip" data-start="70.33" data-duration="0.42" data-track-index="14" data-layout-ignore></div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#fx-bug-bar", { scaleY: 0 }, { scaleY: 1, duration: 0.4, ease: "expo.out" }, 0.4);
+    tl.fromTo("#fx-bug-t", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.5, ease: "expo.out" }, 0.5);
+    tl.to("#fx-bug", { opacity: 0, duration: 0.3, ease: "power2.in" }, 80.0);
+    tl.fromTo("#fx-sw-0", { x: 0, rotation: 18, opacity: 0.0 }, { x: 2500, rotation: 18, opacity: 1, duration: 0.85, ease: "power2.inOut" }, 5.99);
+    tl.fromTo("#fx-dip-0", { opacity: 0 }, { keyframes: [{ opacity: 0.45, duration: 0.1 }, { opacity: 0, duration: 0.3 }], ease: "power2.out" }, 6.22);
+    tl.fromTo("#fx-sw-1", { x: 0, rotation: 18, opacity: 0.0 }, { x: 2500, rotation: 18, opacity: 1, duration: 0.85, ease: "power2.inOut" }, 33.41);
+    tl.fromTo("#fx-dip-1", { opacity: 0 }, { keyframes: [{ opacity: 0.45, duration: 0.1 }, { opacity: 0, duration: 0.3 }], ease: "power2.out" }, 33.64);
+    tl.fromTo("#fx-sw-2", { x: 0, rotation: 18, opacity: 0.0 }, { x: 2500, rotation: 18, opacity: 1, duration: 0.85, ease: "power2.inOut" }, 46.41);
+    tl.fromTo("#fx-dip-2", { opacity: 0 }, { keyframes: [{ opacity: 0.45, duration: 0.1 }, { opacity: 0, duration: 0.3 }], ease: "power2.out" }, 46.64);
+    tl.fromTo("#fx-sw-3", { x: 0, rotation: 18, opacity: 0.0 }, { x: 2500, rotation: 18, opacity: 1, duration: 0.85, ease: "power2.inOut" }, 59.71);
+    tl.fromTo("#fx-dip-3", { opacity: 0 }, { keyframes: [{ opacity: 0.45, duration: 0.1 }, { opacity: 0, duration: 0.3 }], ease: "power2.out" }, 59.94);
+    tl.fromTo("#fx-sw-4", { x: 0, rotation: 18, opacity: 0.0 }, { x: 2500, rotation: 18, opacity: 1, duration: 0.85, ease: "power2.inOut" }, 70.1);
+    tl.fromTo("#fx-dip-4", { opacity: 0 }, { keyframes: [{ opacity: 0.45, duration: 0.1 }, { opacity: 0, duration: 0.3 }], ease: "power2.out" }, 70.33);
+
+    window.__timelines["fx"] = tl;
+  </script>
+</template>

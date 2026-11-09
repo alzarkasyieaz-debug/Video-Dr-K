@@ -1,0 +1,919 @@
+[
+{
+"id": "w0",
+"clip": "a",
+"text": "Tuan-tuan,",
+"start": 0.06,
+"end": 0.6
+},
+{
+"id": "w1",
+"clip": "a",
+"text": "kalau",
+"start": 0.72,
+"end": 1.14
+},
+{
+"id": "w2",
+"clip": "a",
+"text": "kita",
+"start": 1.26,
+"end": 1.58
+},
+{
+"id": "w3",
+"clip": "a",
+"text": "masih",
+"start": 1.74,
+"end": 2.12
+},
+{
+"id": "w4",
+"clip": "a",
+"text": "bermain",
+"start": 2.16,
+"end": 2.64
+},
+{
+"id": "w5",
+"clip": "a",
+"text": "politik",
+"start": 2.8,
+"end": 3.24
+},
+{
+"id": "w6",
+"clip": "a",
+"text": "persepsi,",
+"start": 3.3,
+"end": 3.8
+},
+{
+"id": "w7",
+"clip": "a",
+"text": "yang",
+"start": 4.24,
+"end": 4.42
+},
+{
+"id": "w8",
+"clip": "a",
+"text": "rugi",
+"start": 4.46,
+"end": 4.7
+},
+{
+"id": "w9",
+"clip": "a",
+"text": "siapa?",
+"start": 4.8,
+"end": 5.12
+},
+{
+"id": "w10",
+"clip": "a",
+"text": "Yang",
+"start": 5.44,
+"end": 5.58
+},
+{
+"id": "w11",
+"clip": "a",
+"text": "rugi",
+"start": 5.6,
+"end": 5.78
+},
+{
+"id": "w12",
+"clip": "a",
+"text": "rakyat.",
+"start": 5.82,
+"end": 6.12
+},
+{
+"id": "w13",
+"clip": "b",
+"text": "Cuma",
+"start": 6.5,
+"end": 6.66
+},
+{
+"id": "w14",
+"clip": "b",
+"text": "menariknya",
+"start": 6.72,
+"end": 7.24
+},
+{
+"id": "w15",
+"clip": "b",
+"text": "kita",
+"start": 7.3,
+"end": 7.56
+},
+{
+"id": "w16",
+"clip": "b",
+"text": "pada",
+"start": 7.6,
+"end": 7.78
+},
+{
+"id": "w17",
+"clip": "b",
+"text": "kali",
+"start": 7.84,
+"end": 8.08
+},
+{
+"id": "w18",
+"clip": "b",
+"text": "ini",
+"start": 8.12,
+"end": 8.3
+},
+{
+"id": "w19",
+"clip": "b",
+"text": "adalah",
+"start": 8.76,
+"end": 9.08
+},
+{
+"id": "w20",
+"clip": "b",
+"text": "perpaduan",
+"start": 9.36,
+"end": 10.06
+},
+{
+"id": "w21",
+"clip": "b",
+"text": "antara",
+"start": 10.22,
+"end": 10.52
+},
+{
+"id": "w22",
+"clip": "b",
+"text": "dua",
+"start": 10.54,
+"end": 10.74
+},
+{
+"id": "w23",
+"clip": "b",
+"text": "parti",
+"start": 10.92,
+"end": 11.28
+},
+{
+"id": "w24",
+"clip": "b",
+"text": "terbesar",
+"start": 12.16,
+"end": 12.7
+},
+{
+"id": "w25",
+"clip": "b",
+"text": "umat",
+"start": 12.7,
+"end": 12.86
+},
+{
+"id": "w26",
+"clip": "b",
+"text": "Islam.",
+"start": 12.9,
+"end": 13.22
+},
+{
+"id": "w27",
+"clip": "b",
+"text": "Antara",
+"start": 14.86,
+"end": 15.2
+},
+{
+"id": "w28",
+"clip": "b",
+"text": "UMNO",
+"start": 15.36,
+"end": 15.68
+},
+{
+"id": "w29",
+"clip": "b",
+"text": "dan",
+"start": 15.84,
+"end": 15.96
+},
+{
+"id": "w30",
+"clip": "b",
+"text": "juga",
+"start": 15.98,
+"end": 16.18
+},
+{
+"id": "w31",
+"clip": "b",
+"text": "PAS.",
+"start": 16.3,
+"end": 16.6
+},
+{
+"id": "w32",
+"clip": "b",
+"text": "UMNO",
+"start": 17.98,
+"end": 18.32
+},
+{
+"id": "w33",
+"clip": "b",
+"text": "yang",
+"start": 18.6,
+"end": 18.86
+},
+{
+"id": "w34",
+"clip": "b",
+"text": "padanya",
+"start": 19.08,
+"end": 19.62
+},
+{
+"id": "w35",
+"clip": "b",
+"text": "keahlian",
+"start": 19.9,
+"end": 20.54
+},
+{
+"id": "w36",
+"clip": "b",
+"text": "Melayu-Islam",
+"start": 20.62,
+"end": 21.64
+},
+{
+"id": "w37",
+"clip": "b",
+"text": "3.6",
+"start": 21.8,
+"end": 22.72
+},
+{
+"id": "w38",
+"clip": "b",
+"text": "juta,",
+"start": 22.76,
+"end": 23.02
+},
+{
+"id": "w39",
+"clip": "b",
+"text": "berpadu",
+"start": 24.52,
+"end": 25.1
+},
+{
+"id": "w40",
+"clip": "b",
+"text": "dengan",
+"start": 25.32,
+"end": 25.58
+},
+{
+"id": "w41",
+"clip": "b",
+"text": "PAS",
+"start": 25.74,
+"end": 26.1
+},
+{
+"id": "w42",
+"clip": "b",
+"text": "yang",
+"start": 26.36,
+"end": 26.6
+},
+{
+"id": "w43",
+"clip": "b",
+"text": "orang",
+"start": 26.84,
+"end": 27.1
+},
+{
+"id": "w44",
+"clip": "b",
+"text": "Islam,",
+"start": 27.22,
+"end": 27.68
+},
+{
+"id": "w45",
+"clip": "b",
+"text": "Melayu-Islamnya",
+"start": 27.8,
+"end": 28.86
+},
+{
+"id": "w46",
+"clip": "b",
+"text": "1",
+"start": 29.1,
+"end": 29.36
+},
+{
+"id": "w47",
+"clip": "b",
+"text": "juta.",
+"start": 29.42,
+"end": 29.68
+},
+{
+"id": "w48",
+"clip": "b",
+"text": "Angkanya",
+"start": 31.26,
+"end": 31.84
+},
+{
+"id": "w49",
+"clip": "b",
+"text": "4.6",
+"start": 32.2,
+"end": 33.06
+},
+{
+"id": "w50",
+"clip": "b",
+"text": "juta.",
+"start": 33.1,
+"end": 33.34
+},
+{
+"id": "w51",
+"clip": "c",
+"text": "Perkara",
+"start": 33.94,
+"end": 34.26
+},
+{
+"id": "w52",
+"clip": "c",
+"text": "yang",
+"start": 34.3,
+"end": 34.46
+},
+{
+"id": "w53",
+"clip": "c",
+"text": "awal",
+"start": 34.56,
+"end": 35.0
+},
+{
+"id": "w54",
+"clip": "c",
+"text": "dibuat",
+"start": 35.12,
+"end": 35.46
+},
+{
+"id": "w55",
+"clip": "c",
+"text": "oleh",
+"start": 35.46,
+"end": 35.6
+},
+{
+"id": "w56",
+"clip": "c",
+"text": "Nabi",
+"start": 35.66,
+"end": 35.92
+},
+{
+"id": "w57",
+"clip": "c",
+"text": "SAW",
+"start": 36.04,
+"end": 37.4
+},
+{
+"id": "w58",
+"clip": "c",
+"text": "ialah",
+"start": 37.48,
+"end": 37.74
+},
+{
+"id": "w59",
+"clip": "c",
+"text": "membina",
+"start": 37.82,
+"end": 38.22
+},
+{
+"id": "w60",
+"clip": "c",
+"text": "masjid.",
+"start": 38.28,
+"end": 38.66
+},
+{
+"id": "w61",
+"clip": "c",
+"text": "Diikuti",
+"start": 40.12,
+"end": 40.66
+},
+{
+"id": "w62",
+"clip": "c",
+"text": "dengan",
+"start": 40.8,
+"end": 41.12
+},
+{
+"id": "w63",
+"clip": "c",
+"text": "menyatukan",
+"start": 41.22,
+"end": 42.26
+},
+{
+"id": "w64",
+"clip": "c",
+"text": "umat",
+"start": 43.14,
+"end": 43.4
+},
+{
+"id": "w65",
+"clip": "c",
+"text": "Islam",
+"start": 43.52,
+"end": 44.0
+},
+{
+"id": "w66",
+"clip": "c",
+"text": "di",
+"start": 44.24,
+"end": 44.34
+},
+{
+"id": "w67",
+"clip": "c",
+"text": "negeri",
+"start": 44.46,
+"end": 44.84
+},
+{
+"id": "w68",
+"clip": "c",
+"text": "Madinah",
+"start": 45.02,
+"end": 45.44
+},
+{
+"id": "w69",
+"clip": "c",
+"text": "Al-Munawarah.",
+"start": 45.54,
+"end": 46.36
+},
+{
+"id": "w70",
+"clip": "d",
+"text": "Kerana",
+"start": 46.92,
+"end": 47.22
+},
+{
+"id": "w71",
+"clip": "d",
+"text": "pertamanya,",
+"start": 47.32,
+"end": 48.12
+},
+{
+"id": "w72",
+"clip": "d",
+"text": "membina",
+"start": 48.32,
+"end": 48.84
+},
+{
+"id": "w73",
+"clip": "d",
+"text": "masjid",
+"start": 48.98,
+"end": 49.5
+},
+{
+"id": "w74",
+"clip": "d",
+"text": "lambang",
+"start": 49.68,
+"end": 50.28
+},
+{
+"id": "w75",
+"clip": "d",
+"text": "menegakkan",
+"start": 50.38,
+"end": 50.96
+},
+{
+"id": "w76",
+"clip": "d",
+"text": "agama.",
+"start": 51.04,
+"end": 51.34
+},
+{
+"id": "w77",
+"clip": "d",
+"text": "Membina",
+"start": 53.66,
+"end": 54.24
+},
+{
+"id": "w78",
+"clip": "d",
+"text": "persaudaraan",
+"start": 54.42,
+"end": 55.02
+},
+{
+"id": "w79",
+"clip": "d",
+"text": "pula,",
+"start": 55.1,
+"end": 55.38
+},
+{
+"id": "w80",
+"clip": "d",
+"text": "ini",
+"start": 55.98,
+"end": 56.14
+},
+{
+"id": "w81",
+"clip": "d",
+"text": "adalah",
+"start": 56.32,
+"end": 56.68
+},
+{
+"id": "w82",
+"clip": "d",
+"text": "asas",
+"start": 56.92,
+"end": 57.52
+},
+{
+"id": "w83",
+"clip": "d",
+"text": "untuk",
+"start": 57.66,
+"end": 58.0
+},
+{
+"id": "w84",
+"clip": "d",
+"text": "kekuatan",
+"start": 58.12,
+"end": 58.8
+},
+{
+"id": "w85",
+"clip": "d",
+"text": "mana-mana",
+"start": 58.88,
+"end": 59.52
+},
+{
+"id": "w86",
+"clip": "d",
+"text": "negara.",
+"start": 59.54,
+"end": 59.88
+},
+{
+"id": "w87",
+"clip": "e",
+"text": "Bukan",
+"start": 60.22,
+"end": 60.42
+},
+{
+"id": "w88",
+"clip": "e",
+"text": "hanya",
+"start": 60.42,
+"end": 60.56
+},
+{
+"id": "w89",
+"clip": "e",
+"text": "untuk",
+"start": 60.619,
+"end": 60.819
+},
+{
+"id": "w90",
+"clip": "e",
+"text": "menang",
+"start": 60.859,
+"end": 61.119
+},
+{
+"id": "w91",
+"clip": "e",
+"text": "pilihan",
+"start": 61.119,
+"end": 61.359
+},
+{
+"id": "w92",
+"clip": "e",
+"text": "raya.",
+"start": 61.359,
+"end": 61.599
+},
+{
+"id": "w93",
+"clip": "e",
+"text": "Tetapi",
+"start": 62.558,
+"end": 62.897
+},
+{
+"id": "w94",
+"clip": "e",
+"text": "kita",
+"start": 62.977,
+"end": 63.177
+},
+{
+"id": "w95",
+"clip": "e",
+"text": "padu",
+"start": 63.317,
+"end": 63.557
+},
+{
+"id": "w96",
+"clip": "e",
+"text": "kerana",
+"start": 63.597,
+"end": 63.736
+},
+{
+"id": "w97",
+"clip": "e",
+"text": "itu",
+"start": 63.856,
+"end": 64.096
+},
+{
+"id": "w98",
+"clip": "e",
+"text": "tuntutan",
+"start": 64.276,
+"end": 64.895
+},
+{
+"id": "w99",
+"clip": "e",
+"text": "Allah",
+"start": 64.995,
+"end": 65.315
+},
+{
+"id": "w100",
+"clip": "e",
+"text": "SWT,",
+"start": 65.375,
+"end": 66.454
+},
+{
+"id": "w101",
+"clip": "e",
+"text": "menyatukan",
+"start": 66.873,
+"end": 67.733
+},
+{
+"id": "w102",
+"clip": "e",
+"text": "dua",
+"start": 67.892,
+"end": 68.252
+},
+{
+"id": "w103",
+"clip": "e",
+"text": "kelompok",
+"start": 68.492,
+"end": 68.951
+},
+{
+"id": "w104",
+"clip": "e",
+"text": "yang",
+"start": 69.031,
+"end": 69.231
+},
+{
+"id": "w105",
+"clip": "e",
+"text": "bertelingkah",
+"start": 69.271,
+"end": 69.771
+},
+{
+"id": "w106",
+"clip": "e",
+"text": "panjang.",
+"start": 69.811,
+"end": 70.27
+},
+{
+"id": "w107",
+"clip": "f",
+"text": "Ini",
+"start": 70.61,
+"end": 70.731
+},
+{
+"id": "w108",
+"clip": "f",
+"text": "bukan",
+"start": 70.791,
+"end": 71.051
+},
+{
+"id": "w109",
+"clip": "f",
+"text": "perpaduan",
+"start": 71.091,
+"end": 71.532
+},
+{
+"id": "w110",
+"clip": "f",
+"text": "untuk",
+"start": 71.592,
+"end": 71.833
+},
+{
+"id": "w111",
+"clip": "f",
+"text": "politik",
+"start": 71.953,
+"end": 72.274
+},
+{
+"id": "w112",
+"clip": "f",
+"text": "semata-mata.",
+"start": 72.294,
+"end": 72.734
+},
+{
+"id": "w113",
+"clip": "f",
+"text": "Inilah",
+"start": 73.115,
+"end": 73.336
+},
+{
+"id": "w114",
+"clip": "f",
+"text": "perpaduan",
+"start": 73.396,
+"end": 73.917
+},
+{
+"id": "w115",
+"clip": "f",
+"text": "orang",
+"start": 74.057,
+"end": 74.297
+},
+{
+"id": "w116",
+"clip": "f",
+"text": "Islam",
+"start": 74.418,
+"end": 74.819
+},
+{
+"id": "w117",
+"clip": "f",
+"text": "demi",
+"start": 74.939,
+"end": 75.179
+},
+{
+"id": "w118",
+"clip": "f",
+"text": "agama",
+"start": 75.34,
+"end": 75.62
+},
+{
+"id": "w119",
+"clip": "f",
+"text": "Allah",
+"start": 75.72,
+"end": 75.961
+},
+{
+"id": "w120",
+"clip": "f",
+"text": "SWT",
+"start": 76.021,
+"end": 76.963
+},
+{
+"id": "w121",
+"clip": "f",
+"text": "untuk",
+"start": 77.283,
+"end": 77.464
+},
+{
+"id": "w122",
+"clip": "f",
+"text": "kita",
+"start": 77.484,
+"end": 77.624
+},
+{
+"id": "w123",
+"clip": "f",
+"text": "perkasakan",
+"start": 77.744,
+"end": 78.265
+},
+{
+"id": "w124",
+"clip": "f",
+"text": "Islam",
+"start": 78.305,
+"end": 78.466
+},
+{
+"id": "w125",
+"clip": "f",
+"text": "dengan",
+"start": 78.466,
+"end": 78.666
+},
+{
+"id": "w126",
+"clip": "f",
+"text": "negara",
+"start": 78.686,
+"end": 78.866
+},
+{
+"id": "w127",
+"clip": "f",
+"text": "kita",
+"start": 78.927,
+"end": 79.147
+},
+{
+"id": "w128",
+"clip": "f",
+"text": "secara",
+"start": 79.267,
+"end": 79.708
+},
+{
+"id": "w129",
+"clip": "f",
+"text": "bersama,",
+"start": 79.788,
+"end": 80.169
+},
+{
+"id": "w130",
+"clip": "f",
+"text": "insyaAllah.",
+"start": 80.249,
+"end": 80.65
+}
+]

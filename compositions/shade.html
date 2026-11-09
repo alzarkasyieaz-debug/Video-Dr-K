@@ -1,0 +1,23 @@
+<template>
+  <style>
+      @font-face { font-family: "Anton"; src: url("assets/fonts/anton-latin-400-normal.woff2") format("woff2"); font-weight: 400; }
+      @font-face { font-family: "Bebas Neue"; src: url("assets/fonts/bebas-neue-latin-400-normal.woff2") format("woff2"); font-weight: 400; }
+      #root {
+        --navy: #0a1630; --navy-deep: #050b1a; --gold: #d9a93a; --gold-bright: #f4c95d;
+        --ink: #ffffff; --hl: #ffd84a;
+        position: absolute; inset: 0; overflow: visible;
+      }
+  </style>
+  <div id="root" data-composition-id="shade" data-width="1080" data-height="1920">
+    <div id="sh-top" class="clip" data-start="0" data-duration="84.5" data-track-index="0" data-layout-ignore
+         style="position:absolute;left:0;top:0;width:1080px;height:520px;background:linear-gradient(180deg,rgba(5,11,26,.78),rgba(5,11,26,.35) 55%,rgba(5,11,26,0));"></div>
+    <div id="sh-bot" class="clip" data-start="0" data-duration="84.5" data-track-index="1" data-layout-ignore
+         style="position:absolute;left:0;bottom:0;width:1080px;height:900px;background:linear-gradient(0deg,rgba(0,0,0,.82),rgba(5,11,26,.45) 45%,rgba(5,11,26,0));"></div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.set({}, {}, 0);
+
+    window.__timelines["shade"] = tl;
+  </script>
+</template>
