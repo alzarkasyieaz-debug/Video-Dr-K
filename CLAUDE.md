@@ -10,6 +10,7 @@ MP4.
 
 **Doing anything with HyperFrames?** Start at `/hyperframes`. Make any video by asking for it; the `/hyperframes` skill carries the contract and the references (each kind of film, story, motion, look, sound, review, captions, overlays). Read it first, especially when there's no project context to orient you.
 
+- `/video-mp` — **Video MP**, this repo's house style for Malaysian Parliament speech shorts (9:16, navy band, word-timed cards, Malay captions). Use it for any new Dewan Rakyat / Kamar Khas recording; `engine/vmp.py` builds the project from one `episode.json`.
 - `/hyperframes` — read first for any request to make, edit, animate or render a video, motion graphic, captions or overlays. Holds the render contract and the work loop.
 - `/hyperframes-cli` — the CLI by job: scaffold, check, look at frames, edit the timeline, preview, render, publish, project history.
 - `/hyperframes-registry` — ready-made blocks and components installed as editable source. Search it before hand-building any named visual.

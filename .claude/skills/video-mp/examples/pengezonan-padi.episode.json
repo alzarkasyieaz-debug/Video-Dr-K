@@ -1,0 +1,201 @@
+{
+  "id": "pengezonan-padi",
+  "title": "Kamar Khas: Pengezonan Jelapang Padi Perak Tengah",
+  "source": "assets/source/padi.mp4",
+  "crop": [1530, 2040, 1255, 0],
+  "face": [525, 680],
+  "gain_db": 1.1,
+  "speech_volume": 0.84,
+  "grade": {
+    "preset": "skin-soft",
+    "intensity": 0.6,
+    "adjust": { "exposure": 0.1, "highlights": -0.06, "shadows": 0.14, "contrast": 0.05, "vibrance": 0.03 },
+    "details": { "vignette": 0.05 }
+  },
+  "location": "Kamar Khas | Dewan Rakyat",
+  "location_lt": "Kamar Khas | Parlimen Malaysia",
+  "mp": {
+    "name": "Hj. Muhammad Ismi bin Mat Taib",
+    "name_lines": ["Hj. Muhammad Ismi", "bin Mat Taib"],
+    "seat": "Ahli Parlimen Parit, Perak"
+  },
+  "transcripts": [
+    { "file": "assets/source/mp1.json", "offset": 0 },
+    { "file": "assets/source/mp2.json", "offset": 837 }
+  ],
+  "keywords": [
+    "pengezonan", "jelapang", "strategik", "segera", "15,392.8", "hektar", "9,650", "lot", "IADA", "Bota", "Kiri",
+    "Krian", "Manik", "benih", "penyakit", "50%", "mengecewakan", "saliran", "insentif", "subsidi", "harga", "lantai",
+    "stabil", "dilaksanakan", "berdaya", "maju", "70%", "SSR", "beras"
+  ],
+  "segments": [
+    {
+      "id": "a",
+      "role": "hook",
+      "src": [196.40, 204.68],
+      "energy": "high",
+      "text": "Pengezonan jelapang padi di Perak Tengah adalah langkah strategik untuk menjamin sekuriti makanan negara dan perlu direalisasikan segera.",
+      "camera": [
+        { "at": 196.40, "scale": 1.36 },
+        { "at": 199.26, "scale": 1.62, "fy": 780, "to": 1.7 }
+      ],
+      "sfx": [{ "file": "impact-bass-1", "at": 199.26, "volume": 0.2 }],
+      "cards": [
+        {
+          "start": 196.40, "end": 200.70, "kicker": "Kamar Khas  |  Dewan Rakyat",
+          "rows": [
+            { "kind": "big", "size": 96, "lines": [
+              [{ "t": "Pengezonan jelapang" }],
+              [{ "t": "padi" }, { "t": "Perak Tengah", "c": "yel" }]
+            ] }
+          ]
+        },
+        { "type": "lowerthird", "start": 200.75, "end": 204.60 }
+      ]
+    },
+    {
+      "id": "b",
+      "role": "facts",
+      "src": [32.25, 56.42],
+      "text": "Saya dimaklumkan sebanyak 15,392.8 hektar tanah sawah melibatkan 9,650 lot kini menjadi kawasan strategik pertanian di bawah seliaan IADA Seberang Perak. Sudah tiba masanya, zon padi Bota Kiri juga dimasukkan dalam kategori kawasan jelapang padi seperti kawasan Krian, Sungai Manik dan Seberang Perak.",
+      "camera": [
+        { "at": 32.25, "scale": 1.36, "to": 1.46, "fy_to": 880 },
+        { "at": 45.28, "scale": 1.58, "fy": 820, "to": 1.64 }
+      ],
+      "cards": [
+        {
+          "start": 33.65, "end": 45.30, "kicker": "Fakta daripada ucapan", "pill": "Petikan ucapan",
+          "rows": [
+            { "kind": "stats", "items": [
+              { "num": "15,392.8", "at": 33.77, "unit": "hektar tanah sawah", "unit_at": 35.97 },
+              { "num": "9,650", "at": 38.85, "unit": "lot", "unit_at": 40.44 }
+            ] },
+            { "kind": "foot", "at": 41.50, "html": "Kawasan strategik &nbsp;·&nbsp; seliaan <b>IADA Seberang Perak</b>" }
+          ]
+        },
+        {
+          "start": 45.25, "end": 56.42, "kicker": "Sudah tiba masanya",
+          "rows": [
+            { "kind": "big", "size": 104, "lines": [[{ "t": "Zon padi", "at": 46.80 }, { "t": "Bota Kiri", "at": 47.39, "c": "gold" }]] },
+            { "kind": "small", "size": 34, "words": [
+              { "t": "Dimasukkan", "at": 48.51 }, { "t": "kategori", "at": 49.77 }, { "t": "jelapang padi", "at": 50.98, "c": "yel" }
+            ] },
+            { "kind": "small", "size": 34, "words": [
+              { "t": "Seperti", "at": 52.18, "c": "gold" }, { "t": "Krian ·", "at": 53.43 }, { "t": "Sungai Manik ·", "at": 54.00 },
+              { "t": "Seberang Perak", "at": 55.21 }
+            ] }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c",
+      "role": "problem",
+      "src": [868.98, 892.62],
+      "text": "Benih padi yang menjadi punca kepada penyakit di kawasan saya, di Titi Gantung, di Parit, di seluruh Perak Tengah. Lebih 50% ini hasil padi yang amat mengecewakan. Antara puncanya ialah saliran dan yang keduanya ialah benih padi.",
+      "camera": [
+        { "at": 868.98, "scale": 1.62, "fy": 790, "to": 1.68 },
+        { "at": 881.38, "scale": 1.82, "fy": 770, "to": 1.86 },
+        { "at": 887.93, "scale": 1.5, "fy": 860, "move": 1.0 }
+      ],
+      "cards": [
+        {
+          "start": 869.08, "end": 880.23, "kicker": "Masalah pesawah  ·  soalan susulan",
+          "rows": [
+            { "kind": "big", "size": 92, "lines": [
+              [{ "t": "Benih padi", "at": 869.08 }],
+              [{ "t": "punca", "at": 871.04, "c": "yel" }, { "t": "penyakit", "at": 872.38, "c": "yel" }]
+            ] },
+            { "kind": "small", "size": 32, "words": [
+              { "t": "Titi Gantung ·", "at": 875.55 }, { "t": "Parit ·", "at": 876.88 }, { "t": "seluruh Perak Tengah", "at": 878.13 }
+            ] }
+          ]
+        },
+        {
+          "start": 880.33, "end": 887.88, "kicker": "Hasil padi", "pill": "Petikan ucapan",
+          "rows": [
+            { "kind": "num", "num": "50%", "at": 881.36, "c": "yel", "size": 170, "lead": { "t": "Lebih", "at": 880.40 } },
+            { "kind": "small", "italic": true, "quote": true, "size": 36, "words": [
+              { "t": "hasil padi", "at": 883.28 }, { "t": "yang amat", "at": 884.84 }, { "t": "mengecewakan", "at": 886.14 }
+            ] }
+          ]
+        },
+        {
+          "start": 887.98, "end": 892.58, "kicker": "Antara puncanya",
+          "rows": [
+            { "kind": "big", "size": 104, "lines": [
+              [{ "t": "Saliran", "at": 889.86, "c": "gold" }],
+              [{ "t": "& benih padi", "at": 891.16 }]
+            ] }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "d",
+      "role": "proposal",
+      "src": [114.82, 129.44],
+      "text": "Saya mencadangkan: pertama, insentif khas untuk petani. Subsidi khas untuk benih, baja dan racun. Menetapkan harga lantai stabil bagi memastikan pulangan adil dan lumayan. Telah|pun dilaksanakan baru-baru ini.",
+      "camera": [{ "at": 114.82, "scale": 1.36, "to": 1.48, "fy_to": 870 }],
+      "cards": [
+        {
+          "start": 114.92, "end": 121.87, "kicker": "Cadangan Ahli Parlimen", "pill": "Petikan ucapan",
+          "rows": [
+            { "kind": "list", "at": 115.07, "highlight": 0, "highlight_at": 115.92, "items": [
+              "Insentif khas untuk petani", "Pusat pembenihan padi Titi Gantung", "Infrastruktur pengairan",
+              "Teknologi pertanian pintar", "Minat golongan muda"
+            ] }
+          ]
+        },
+        {
+          "start": 121.87, "end": 129.37, "kicker": "Cadangan 01  ·  insentif khas",
+          "rows": [
+            { "kind": "big", "size": 100, "lines": [[{ "t": "Harga lantai", "at": 123.12 }, { "t": "stabil", "at": 124.02, "c": "yel" }]] },
+            { "kind": "small", "words": [{ "t": "Pulangan adil", "at": 125.60 }, { "t": "& lumayan", "at": 126.59 }] },
+            { "kind": "chip", "t": "✓ Telah pun dilaksanakan baru-baru ini", "at": 127.10 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "e",
+      "role": "climax",
+      "src": [204.68, 216.48],
+      "energy": "high",
+      "text": "Saya berharap cadangan ini diberikan perhatian kementerian agar sektor pertanian negara lebih berdaya maju dan mampu mencapai sasaran 70% tahap sara diri (SSR) bagi beras negara.",
+      "camera": [{ "at": 204.68, "scale": 1.7, "fy": 780, "to": 1.8, "fy_to": 770 }],
+      "sfx": [{ "file": "impact-bass-2", "at": 212.18, "volume": 0.2 }],
+      "cards": [
+        {
+          "start": 204.78, "end": 211.33, "kicker": "Harapan",
+          "rows": [
+            { "kind": "small", "size": 31, "words": [
+              { "t": "Cadangan ini", "at": 205.31 }, { "t": "diberi perhatian", "at": 205.95 }, { "t": "kementerian", "at": 206.84 }
+            ] },
+            { "kind": "big", "size": 96, "lines": [
+              [{ "t": "Pertanian negara", "at": 208.12 }],
+              [{ "t": "lebih berdaya maju", "at": 209.12, "c": "gold" }]
+            ] }
+          ]
+        },
+        {
+          "start": 211.43, "end": 216.48, "kicker": "Sasaran",
+          "rows": [
+            { "kind": "num", "num": "70%", "at": 212.18, "size": 190, "side": [
+              { "t": "Tahap sara diri", "at": 212.77 }, { "t": "(SSR)", "at": 213.94 }, { "t": "beras negara", "at": 215.48 }
+            ] }
+          ]
+        }
+      ]
+    }
+  ],
+  "end": {
+    "duration": 6.5,
+    "box_title": "Jawapan kementerian di Kamar Khas",
+    "bullets": [
+      "<b>3 projek pengairan</b> luar jelapang di Perak Tengah dipohon dalam <b>RMK13</b>",
+      "Harga lantai padi diselaraskan <b>RM1,300 → RM1,500</b> setiap tan metrik (mulai 16 Feb 2025)"
+    ],
+    "credit": "Petikan ucapan asal  ·  Rakaman Kamar Khas, Dewan Rakyat"
+  }
+}
