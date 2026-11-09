@@ -10,7 +10,7 @@
 ## Measured vs. looked at
 - `check`: 0 errors. Kept warning `line_unread` on the floor-price card. It builds word by word over 7 s, and the final chip holds 2 s before the cut.
 - Captions: hand-corrected text matched to whisper words by position; the script stops on any count mismatch. The full-speech SRT is automatic and only lightly corrected.
-- Audio: segments gained +1.1 dB from −17.1 LUFS source. The mix was measured, not heard.
+- Audio: delivered file measured −14.5 LUFS integrated, −2.5 dBTP, no clipping (first render was −13 LUFS; speech clips now at data-volume 0.84 = −1.5 dB, and the delivered MP4 had the same −1.5 dB applied to its audio stream only). The mix was measured, not heard.
 
 ## Weakest shot
 The Kamar Khas footage is soft and dim (a 4K file with SD-like detail). Close-ups at 1.8× look smeary. The grade lifts exposure and shadows slightly. With more time: B-roll of the actual paddy fields (Bota Kiri, Titik Gantung) from the person, and a music bed.
