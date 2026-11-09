@@ -1,0 +1,71 @@
+<template>
+  <style>
+    @font-face {
+      font-family: "Anton";
+      src: url("assets/fonts/anton-latin-400-normal.woff2") format("woff2");
+      font-weight: 400;
+    }
+    #root { position: absolute; inset: 0; background: transparent; font-family: "Montserrat", sans-serif; color: #fff; }
+    .blk { position: absolute; left: 72px; top: 196px; width: 936px; height: 300px; }
+    .kicker { font-weight: 700; font-size: 28px; letter-spacing: 0.14em; color: #d6ac52; text-transform: uppercase;
+      display: flex; align-items: center; gap: 16px; white-space: nowrap; }
+    .kicker i { display: block; width: 64px; height: 4px; background: #d6ac52; transform-origin: 0 50%; }
+    .pill { margin-left: auto; font-weight: 600; font-size: 28px; letter-spacing: 0.04em; color: #fff;
+      border: 2px solid rgba(214, 172, 82, 0.8); border-radius: 6px; padding: 2px 10px; }
+    .big { margin-top: 12px; font-family: "Anton", sans-serif; font-size: 100px; line-height: 1;
+      text-transform: uppercase; text-shadow: 0 6px 28px rgba(0, 0, 0, 0.6); }
+    .line { display: block; overflow: hidden; padding-top: 4px; }
+    .w { display: inline-block; }
+    .small { margin-top: 14px; font-weight: 800; font-size: 38px; text-transform: uppercase; letter-spacing: 0.01em; }
+    .small .w { opacity: 0.25; }
+    .gold { color: #d6ac52; }
+    .yel { color: #ffd447; }
+
+    #fin-scrim { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(8, 26, 50, 0.92) 0%, rgba(8, 11, 19, 0.88) 100%); }
+    #fin-card { position: absolute; left: 72px; top: 330px; width: 936px; height: 990px; }
+    #fin-name { margin-top: 24px; font-family: "Anton", sans-serif; font-size: 88px; line-height: 1.04; text-transform: uppercase; }
+    #fin-seat { margin-top: 10px; font-weight: 600; font-size: 38px; color: #ffd447; }
+    #fin-ans { margin-top: 46px; padding: 26px 28px; background: rgba(8, 26, 50, 0.85); border-left: 5px solid #d6ac52; }
+    #fin-ans ul { margin-top: 14px; padding-left: 0; list-style: none; }
+    #fin-ans li { position: relative; padding-left: 30px; margin-top: 12px; font-weight: 600; font-size: 32px; line-height: 1.32; color: #f2f2f2; }
+    #fin-ans li::before { content: ""; position: absolute; left: 0; top: 16px; width: 12px; height: 12px; background: #d6ac52; }
+    #fin-ans b { color: #ffd447; font-weight: 800; }
+    #fin-credit { margin-top: 30px; font-weight: 600; font-size: 28px; color: #b9c0cc; }
+  </style>
+  <div id="root" data-composition-id="final" data-width="1080" data-height="1920">
+    <div id="fin-scrim" class="clip" data-start="0" data-duration="6.6" data-track-index="0"></div>
+    <div id="fin-card" class="clip" data-start="0.4" data-duration="6.2" data-track-index="1">
+      <div class="kicker"><i id="fin-rule"></i><span>Kamar Khas &nbsp;|&nbsp; Dewan Rakyat</span></div>
+      <div id="fin-name">
+        <span class="line" data-layout-allow-overflow><span id="fin-n1" class="w">Hj. Muhammad Ismi</span></span>
+        <span class="line" data-layout-allow-overflow><span id="fin-n2" class="w">bin Mat Taib</span></span>
+      </div>
+      <div id="fin-seat">Ahli Parlimen Parit, Perak</div>
+      <div id="fin-ans">
+        <div class="kicker">Jawapan kementerian di Kamar Khas</div>
+        <ul>
+          <li><b>3 projek pengairan</b> luar jelapang di Perak Tengah dipohon dalam <b>RMK13</b></li>
+          <li>Harga lantai padi diselaraskan <b>RM1,300 → RM1,500</b> setiap tan metrik (mulai 16 Feb 2025)</li>
+        </ul>
+      </div>
+      <div id="fin-credit">Petikan ucapan asal &nbsp;·&nbsp; Rakaman Kamar Khas, Dewan Rakyat</div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    const reveal = (sel, t) => tl.fromTo(sel, { yPercent: 105 }, { yPercent: 0, duration: 0.45, ease: "power4.out" }, t);
+    const kick = (rule, t) => tl.fromTo(rule, { scaleX: 0 }, { scaleX: 1, duration: 0.6, ease: "expo.out" }, t);
+    const light = (sel, t) => tl.to(sel, { opacity: 1, duration: 0.1, ease: "none" }, t);
+    const blurIn = (sel, t) => tl.fromTo(sel, { opacity: 0, filter: "blur(6px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.18, ease: "power4.out" }, t);
+    const out = (sel, t) => tl.to(sel, { opacity: 0, filter: "blur(8px)", duration: 0.2, ease: "power2.in" }, t);
+
+    tl.fromTo("#fin-scrim", { opacity: 0 }, { opacity: 1, duration: 0.9, ease: "power2.inOut" }, 0);
+    kick("#fin-rule", 0.45);
+    tl.fromTo(["#fin-n1", "#fin-n2"], { yPercent: 105 }, { yPercent: 0, duration: 0.55, stagger: 0.12, ease: "power4.out" }, 0.8);
+    blurIn("#fin-seat", 1.25);
+    blurIn("#fin-ans", 1.7);
+    tl.fromTo("#fin-credit", { opacity: 0 }, { opacity: 1, duration: 0.3, ease: "power2.out" }, 2.1);
+    tl.to(["#fin-card", "#fin-scrim"], { opacity: 0, duration: 0.9, ease: "power2.in" }, 5.7);
+    window.__timelines["final"] = tl;
+  </script>
+</template>

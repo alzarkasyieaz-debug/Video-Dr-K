@@ -5,3 +5,5 @@ renders/
 .venv/
 snapshots/
 .media/
+*.wav
+.hyperframes/

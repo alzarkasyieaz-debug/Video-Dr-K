@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ms">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1080, height=1920">
+    <script src="assets/vendor/gsap.min.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        width: 1080px;
+        height: 1920px;
+        overflow: hidden;
+        background: #080b13;
+      }
+      #root {
+        position: relative;
+        width: 1080px;
+        height: 1920px;
+        overflow: hidden;
+      }
+      #bg {
+        position: absolute;
+        inset: 0;
+        background: #080b13;
+        z-index: 0;
+      }
+      /* Camera wrapper: every punch-in and push moves this, never the media. Plates are 1080x1440 (3:4). */
+      #cam {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 1080px;
+        height: 1440px;
+        transform-origin: 0 0;
+        z-index: 1;
+      }
+      #cam video,
+      #cam img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 1080px;
+        height: 1440px;
+        object-fit: cover;
+      }
+      #band {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 1080px;
+        height: 640px;
+        background: linear-gradient(
+          180deg,
+          #081a32 0%,
+          rgba(8, 26, 50, 0.95) 34%,
+          rgba(8, 26, 50, 0.6) 64%,
+          rgba(8, 26, 50, 0) 100%
+        );
+        z-index: 2;
+      }
+      #floor {
+        position: absolute;
+        left: 0;
+        top: 1180px;
+        width: 1080px;
+        height: 740px;
+        background: linear-gradient(
+          180deg,
+          rgba(8, 11, 19, 0) 0%,
+          rgba(8, 11, 19, 0.55) 35%,
+          rgba(8, 11, 19, 0.85) 100%
+        );
+        z-index: 2;
+      }
+      #dip {
+        position: absolute;
+        inset: 0;
+        background: #000;
+        opacity: 0;
+        z-index: 3;
+      }
+      .scene {
+        position: absolute;
+        inset: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div data-hf-id="hf-mr31" id="root" data-composition-id="main" data-start="0" data-duration="89" data-width="1080" data-height="1920">
+      <div data-hf-id="hf-2xc0" id="bg"></div>
+
+      <div data-hf-id="hf-ftaq" id="cam">
+        <!-- A · source 3:16.40–3:24.68 "Pengezonan jelapang padi di Perak Tengah … perlu direalisasikan segera" -->
+        <video data-color-grading="{&quot;preset&quot;:&quot;skin-soft&quot;,&quot;intensity&quot;:0.6,&quot;adjust&quot;:{&quot;exposure&quot;:0.1,&quot;contrast&quot;:0.05,&quot;highlights&quot;:-0.06,&quot;shadows&quot;:0.14,&quot;whites&quot;:0,&quot;blacks&quot;:0,&quot;temperature&quot;:0.08,&quot;tint&quot;:0.02,&quot;vibrance&quot;:0.03,&quot;saturation&quot;:0.04},&quot;details&quot;:{&quot;vignette&quot;:0.05,&quot;vignetteMidpoint&quot;:0.5,&quot;vignetteRoundness&quot;:0,&quot;vignetteFeather&quot;:0.65,&quot;grain&quot;:0,&quot;grainSize&quot;:0.25,&quot;grainRoughness&quot;:0.5},&quot;effects&quot;:{&quot;blur&quot;:0,&quot;pixelate&quot;:0,&quot;chromaBleed&quot;:0,&quot;tapeDamage&quot;:0,&quot;tapeTracking&quot;:0,&quot;tapeNoise&quot;:1,&quot;tapeSpeed&quot;:0.5,&quot;filmArtifacts&quot;:0,&quot;halftone&quot;:0,&quot;halftoneSize&quot;:0,&quot;twoInkPrint&quot;:0,&quot;twoInkPrintSize&quot;:0,&quot;ascii&quot;:0,&quot;asciiSize&quot;:0.06578947368421052,&quot;asciiInvert&quot;:0,&quot;asciiStyle&quot;:0,&quot;asciiColor&quot;:1,&quot;asciiRotation&quot;:0,&quot;dither&quot;:0,&quot;ditherSize&quot;:0,&quot;bloom&quot;:0,&quot;bloomRadius&quot;:8,&quot;monoScreen&quot;:0,&quot;monoScreenSize&quot;:0,&quot;monoScreenAngle&quot;:0,&quot;monoScreenSpread&quot;:0,&quot;monoScreenShape&quot;:0,&quot;monoScreenInvert&quot;:0,&quot;scanlines&quot;:0,&quot;scanlineCount&quot;:0,&quot;scanlineSoftness&quot;:0,&quot;chromaticAberration&quot;:0,&quot;chromaticAngle&quot;:0,&quot;crtCurvature&quot;:0,&quot;digitalGlitch&quot;:0,&quot;digitalGlitchColorSplit&quot;:0,&quot;digitalGlitchLineTear&quot;:0,&quot;digitalGlitchPixelate&quot;:0,&quot;digitalGlitchBlockAmount&quot;:0,&quot;digitalGlitchBlockDisplacement&quot;:0,&quot;digitalGlitchBlockOpacity&quot;:0,&quot;digitalGlitchSpeed&quot;:0,&quot;engraving&quot;:0,&quot;engravingSpacing&quot;:0.4117647058823529,&quot;engravingMinThickness&quot;:0.2,&quot;engravingMaxThickness&quot;:0.4571428571428572,&quot;engravingAngle&quot;:0.25,&quot;engravingContrast&quot;:0.4666666666666667,&quot;engravingSharpness&quot;:0.59,&quot;engravingWave&quot;:0.2,&quot;engravingWaveFrequency&quot;:0.2222222222222222,&quot;crosshatch&quot;:0,&quot;crosshatchSpacing&quot;:0.28,&quot;crosshatchThickness&quot;:0.25,&quot;crosshatchAngle&quot;:0.25,&quot;crosshatchContrast&quot;:0.3333333333333333,&quot;crosshatchEdges&quot;:0.5,&quot;crosshatchLineWeight&quot;:0,&quot;crosshatchWave&quot;:0.33,&quot;crosshatchWaveFrequency&quot;:0.2222222222222222,&quot;kuwahara&quot;:0,&quot;kuwaharaRadius&quot;:0.14285714285714285,&quot;kuwaharaSharpness&quot;:0.3125,&quot;kuwaharaSaturation&quot;:0.5},&quot;lut&quot;:null,&quot;colorSpace&quot;:&quot;rec709&quot;}" data-hf-id="hf-y9ub" id="seg-a" class="clip" src="assets/seg-a.mp4" data-start="0" data-duration="8.28" data-track-index="0" data-has-audio="true" data-volume="1" playsinline></video>
+        <!-- B · source 0:32.25–0:56.42 "saya dimaklumkan sebanyak 15,392.8 hektar … Krian, Sungai Manik dan Seberang Perak" -->
+        <video data-color-grading="{&quot;preset&quot;:&quot;skin-soft&quot;,&quot;intensity&quot;:0.6,&quot;adjust&quot;:{&quot;exposure&quot;:0.1,&quot;contrast&quot;:0.05,&quot;highlights&quot;:-0.06,&quot;shadows&quot;:0.14,&quot;whites&quot;:0,&quot;blacks&quot;:0,&quot;temperature&quot;:0.08,&quot;tint&quot;:0.02,&quot;vibrance&quot;:0.03,&quot;saturation&quot;:0.04},&quot;details&quot;:{&quot;vignette&quot;:0.05,&quot;vignetteMidpoint&quot;:0.5,&quot;vignetteRoundness&quot;:0,&quot;vignetteFeather&quot;:0.65,&quot;grain&quot;:0,&quot;grainSize&quot;:0.25,&quot;grainRoughness&quot;:0.5},&quot;effects&quot;:{&quot;blur&quot;:0,&quot;pixelate&quot;:0,&quot;chromaBleed&quot;:0,&quot;tapeDamage&quot;:0,&quot;tapeTracking&quot;:0,&quot;tapeNoise&quot;:1,&quot;tapeSpeed&quot;:0.5,&quot;filmArtifacts&quot;:0,&quot;halftone&quot;:0,&quot;halftoneSize&quot;:0,&quot;twoInkPrint&quot;:0,&quot;twoInkPrintSize&quot;:0,&quot;ascii&quot;:0,&quot;asciiSize&quot;:0.06578947368421052,&quot;asciiInvert&quot;:0,&quot;asciiStyle&quot;:0,&quot;asciiColor&quot;:1,&quot;asciiRotation&quot;:0,&quot;dither&quot;:0,&quot;ditherSize&quot;:0,&quot;bloom&quot;:0,&quot;bloomRadius&quot;:8,&quot;monoScreen&quot;:0,&quot;monoScreenSize&quot;:0,&quot;monoScreenAngle&quot;:0,&quot;monoScreenSpread&quot;:0,&quot;monoScreenShape&quot;:0,&quot;monoScreenInvert&quot;:0,&quot;scanlines&quot;:0,&quot;scanlineCount&quot;:0,&quot;scanlineSoftness&quot;:0,&quot;chromaticAberration&quot;:0,&quot;chromaticAngle&quot;:0,&quot;crtCurvature&quot;:0,&quot;digitalGlitch&quot;:0,&quot;digitalGlitchColorSplit&quot;:0,&quot;digitalGlitchLineTear&quot;:0,&quot;digitalGlitchPixelate&quot;:0,&quot;digitalGlitchBlockAmount&quot;:0,&quot;digitalGlitchBlockDisplacement&quot;:0,&quot;digitalGlitchBlockOpacity&quot;:0,&quot;digitalGlitchSpeed&quot;:0,&quot;engraving&quot;:0,&quot;engravingSpacing&quot;:0.4117647058823529,&quot;engravingMinThickness&quot;:0.2,&quot;engravingMaxThickness&quot;:0.4571428571428572,&quot;engravingAngle&quot;:0.25,&quot;engravingContrast&quot;:0.4666666666666667,&quot;engravingSharpness&quot;:0.59,&quot;engravingWave&quot;:0.2,&quot;engravingWaveFrequency&quot;:0.2222222222222222,&quot;crosshatch&quot;:0,&quot;crosshatchSpacing&quot;:0.28,&quot;crosshatchThickness&quot;:0.25,&quot;crosshatchAngle&quot;:0.25,&quot;crosshatchContrast&quot;:0.3333333333333333,&quot;crosshatchEdges&quot;:0.5,&quot;crosshatchLineWeight&quot;:0,&quot;crosshatchWave&quot;:0.33,&quot;crosshatchWaveFrequency&quot;:0.2222222222222222,&quot;kuwahara&quot;:0,&quot;kuwaharaRadius&quot;:0.14285714285714285,&quot;kuwaharaSharpness&quot;:0.3125,&quot;kuwaharaSaturation&quot;:0.5},&quot;lut&quot;:null,&quot;colorSpace&quot;:&quot;rec709&quot;}" data-hf-id="hf-361p" id="seg-b" class="clip" src="assets/seg-b.mp4" data-start="8.28" data-duration="24.17" data-track-index="0" data-has-audio="true" data-volume="1" playsinline></video>
+        <!-- C · source 14:28.98–14:52.62 (follow-up) "benih padi yang menjadi punca kepada penyakit … saliran … benih padi" -->
+        <video data-color-grading="{&quot;preset&quot;:&quot;skin-soft&quot;,&quot;intensity&quot;:0.6,&quot;adjust&quot;:{&quot;exposure&quot;:0.1,&quot;contrast&quot;:0.05,&quot;highlights&quot;:-0.06,&quot;shadows&quot;:0.14,&quot;whites&quot;:0,&quot;blacks&quot;:0,&quot;temperature&quot;:0.08,&quot;tint&quot;:0.02,&quot;vibrance&quot;:0.03,&quot;saturation&quot;:0.04},&quot;details&quot;:{&quot;vignette&quot;:0.05,&quot;vignetteMidpoint&quot;:0.5,&quot;vignetteRoundness&quot;:0,&quot;vignetteFeather&quot;:0.65,&quot;grain&quot;:0,&quot;grainSize&quot;:0.25,&quot;grainRoughness&quot;:0.5},&quot;effects&quot;:{&quot;blur&quot;:0,&quot;pixelate&quot;:0,&quot;chromaBleed&quot;:0,&quot;tapeDamage&quot;:0,&quot;tapeTracking&quot;:0,&quot;tapeNoise&quot;:1,&quot;tapeSpeed&quot;:0.5,&quot;filmArtifacts&quot;:0,&quot;halftone&quot;:0,&quot;halftoneSize&quot;:0,&quot;twoInkPrint&quot;:0,&quot;twoInkPrintSize&quot;:0,&quot;ascii&quot;:0,&quot;asciiSize&quot;:0.06578947368421052,&quot;asciiInvert&quot;:0,&quot;asciiStyle&quot;:0,&quot;asciiColor&quot;:1,&quot;asciiRotation&quot;:0,&quot;dither&quot;:0,&quot;ditherSize&quot;:0,&quot;bloom&quot;:0,&quot;bloomRadius&quot;:8,&quot;monoScreen&quot;:0,&quot;monoScreenSize&quot;:0,&quot;monoScreenAngle&quot;:0,&quot;monoScreenSpread&quot;:0,&quot;monoScreenShape&quot;:0,&quot;monoScreenInvert&quot;:0,&quot;scanlines&quot;:0,&quot;scanlineCount&quot;:0,&quot;scanlineSoftness&quot;:0,&quot;chromaticAberration&quot;:0,&quot;chromaticAngle&quot;:0,&quot;crtCurvature&quot;:0,&quot;digitalGlitch&quot;:0,&quot;digitalGlitchColorSplit&quot;:0,&quot;digitalGlitchLineTear&quot;:0,&quot;digitalGlitchPixelate&quot;:0,&quot;digitalGlitchBlockAmount&quot;:0,&quot;digitalGlitchBlockDisplacement&quot;:0,&quot;digitalGlitchBlockOpacity&quot;:0,&quot;digitalGlitchSpeed&quot;:0,&quot;engraving&quot;:0,&quot;engravingSpacing&quot;:0.4117647058823529,&quot;engravingMinThickness&quot;:0.2,&quot;engravingMaxThickness&quot;:0.4571428571428572,&quot;engravingAngle&quot;:0.25,&quot;engravingContrast&quot;:0.4666666666666667,&quot;engravingSharpness&quot;:0.59,&quot;engravingWave&quot;:0.2,&quot;engravingWaveFrequency&quot;:0.2222222222222222,&quot;crosshatch&quot;:0,&quot;crosshatchSpacing&quot;:0.28,&quot;crosshatchThickness&quot;:0.25,&quot;crosshatchAngle&quot;:0.25,&quot;crosshatchContrast&quot;:0.3333333333333333,&quot;crosshatchEdges&quot;:0.5,&quot;crosshatchLineWeight&quot;:0,&quot;crosshatchWave&quot;:0.33,&quot;crosshatchWaveFrequency&quot;:0.2222222222222222,&quot;kuwahara&quot;:0,&quot;kuwaharaRadius&quot;:0.14285714285714285,&quot;kuwaharaSharpness&quot;:0.3125,&quot;kuwaharaSaturation&quot;:0.5},&quot;lut&quot;:null,&quot;colorSpace&quot;:&quot;rec709&quot;}" data-hf-id="hf-rie8" id="seg-c" class="clip" src="assets/seg-c.mp4" data-start="32.45" data-duration="23.64" data-track-index="0" data-has-audio="true" data-volume="1" playsinline></video>
+        <!-- D · source 1:54.82–2:09.44 "saya mencadangkan: pertama, insentif khas … telah pun dilaksanakan baru-baru ini" -->
+        <video data-color-grading="{&quot;preset&quot;:&quot;skin-soft&quot;,&quot;intensity&quot;:0.6,&quot;adjust&quot;:{&quot;exposure&quot;:0.1,&quot;contrast&quot;:0.05,&quot;highlights&quot;:-0.06,&quot;shadows&quot;:0.14,&quot;whites&quot;:0,&quot;blacks&quot;:0,&quot;temperature&quot;:0.08,&quot;tint&quot;:0.02,&quot;vibrance&quot;:0.03,&quot;saturation&quot;:0.04},&quot;details&quot;:{&quot;vignette&quot;:0.05,&quot;vignetteMidpoint&quot;:0.5,&quot;vignetteRoundness&quot;:0,&quot;vignetteFeather&quot;:0.65,&quot;grain&quot;:0,&quot;grainSize&quot;:0.25,&quot;grainRoughness&quot;:0.5},&quot;effects&quot;:{&quot;blur&quot;:0,&quot;pixelate&quot;:0,&quot;chromaBleed&quot;:0,&quot;tapeDamage&quot;:0,&quot;tapeTracking&quot;:0,&quot;tapeNoise&quot;:1,&quot;tapeSpeed&quot;:0.5,&quot;filmArtifacts&quot;:0,&quot;halftone&quot;:0,&quot;halftoneSize&quot;:0,&quot;twoInkPrint&quot;:0,&quot;twoInkPrintSize&quot;:0,&quot;ascii&quot;:0,&quot;asciiSize&quot;:0.06578947368421052,&quot;asciiInvert&quot;:0,&quot;asciiStyle&quot;:0,&quot;asciiColor&quot;:1,&quot;asciiRotation&quot;:0,&quot;dither&quot;:0,&quot;ditherSize&quot;:0,&quot;bloom&quot;:0,&quot;bloomRadius&quot;:8,&quot;monoScreen&quot;:0,&quot;monoScreenSize&quot;:0,&quot;monoScreenAngle&quot;:0,&quot;monoScreenSpread&quot;:0,&quot;monoScreenShape&quot;:0,&quot;monoScreenInvert&quot;:0,&quot;scanlines&quot;:0,&quot;scanlineCount&quot;:0,&quot;scanlineSoftness&quot;:0,&quot;chromaticAberration&quot;:0,&quot;chromaticAngle&quot;:0,&quot;crtCurvature&quot;:0,&quot;digitalGlitch&quot;:0,&quot;digitalGlitchColorSplit&quot;:0,&quot;digitalGlitchLineTear&quot;:0,&quot;digitalGlitchPixelate&quot;:0,&quot;digitalGlitchBlockAmount&quot;:0,&quot;digitalGlitchBlockDisplacement&quot;:0,&quot;digitalGlitchBlockOpacity&quot;:0,&quot;digitalGlitchSpeed&quot;:0,&quot;engraving&quot;:0,&quot;engravingSpacing&quot;:0.4117647058823529,&quot;engravingMinThickness&quot;:0.2,&quot;engravingMaxThickness&quot;:0.4571428571428572,&quot;engravingAngle&quot;:0.25,&quot;engravingContrast&quot;:0.4666666666666667,&quot;engravingSharpness&quot;:0.59,&quot;engravingWave&quot;:0.2,&quot;engravingWaveFrequency&quot;:0.2222222222222222,&quot;crosshatch&quot;:0,&quot;crosshatchSpacing&quot;:0.28,&quot;crosshatchThickness&quot;:0.25,&quot;crosshatchAngle&quot;:0.25,&quot;crosshatchContrast&quot;:0.3333333333333333,&quot;crosshatchEdges&quot;:0.5,&quot;crosshatchLineWeight&quot;:0,&quot;crosshatchWave&quot;:0.33,&quot;crosshatchWaveFrequency&quot;:0.2222222222222222,&quot;kuwahara&quot;:0,&quot;kuwaharaRadius&quot;:0.14285714285714285,&quot;kuwaharaSharpness&quot;:0.3125,&quot;kuwaharaSaturation&quot;:0.5},&quot;lut&quot;:null,&quot;colorSpace&quot;:&quot;rec709&quot;}" data-hf-id="hf-8c0y" id="seg-d" class="clip" src="assets/seg-d.mp4" data-start="56.09" data-duration="14.62" data-track-index="0" data-has-audio="true" data-volume="1" playsinline></video>
+        <!-- E · source 3:24.68–3:36.48 "Saya berharap cadangan ini … sasaran 70% tahap sara diri SSR bagi beras negara" -->
+        <video data-color-grading="{&quot;preset&quot;:&quot;skin-soft&quot;,&quot;intensity&quot;:0.6,&quot;adjust&quot;:{&quot;exposure&quot;:0.1,&quot;contrast&quot;:0.05,&quot;highlights&quot;:-0.06,&quot;shadows&quot;:0.14,&quot;whites&quot;:0,&quot;blacks&quot;:0,&quot;temperature&quot;:0.08,&quot;tint&quot;:0.02,&quot;vibrance&quot;:0.03,&quot;saturation&quot;:0.04},&quot;details&quot;:{&quot;vignette&quot;:0.05,&quot;vignetteMidpoint&quot;:0.5,&quot;vignetteRoundness&quot;:0,&quot;vignetteFeather&quot;:0.65,&quot;grain&quot;:0,&quot;grainSize&quot;:0.25,&quot;grainRoughness&quot;:0.5},&quot;effects&quot;:{&quot;blur&quot;:0,&quot;pixelate&quot;:0,&quot;chromaBleed&quot;:0,&quot;tapeDamage&quot;:0,&quot;tapeTracking&quot;:0,&quot;tapeNoise&quot;:1,&quot;tapeSpeed&quot;:0.5,&quot;filmArtifacts&quot;:0,&quot;halftone&quot;:0,&quot;halftoneSize&quot;:0,&quot;twoInkPrint&quot;:0,&quot;twoInkPrintSize&quot;:0,&quot;ascii&quot;:0,&quot;asciiSize&quot;:0.06578947368421052,&quot;asciiInvert&quot;:0,&quot;asciiStyle&quot;:0,&quot;asciiColor&quot;:1,&quot;asciiRotation&quot;:0,&quot;dither&quot;:0,&quot;ditherSize&quot;:0,&quot;bloom&quot;:0,&quot;bloomRadius&quot;:8,&quot;monoScreen&quot;:0,&quot;monoScreenSize&quot;:0,&quot;monoScreenAngle&quot;:0,&quot;monoScreenSpread&quot;:0,&quot;monoScreenShape&quot;:0,&quot;monoScreenInvert&quot;:0,&quot;scanlines&quot;:0,&quot;scanlineCount&quot;:0,&quot;scanlineSoftness&quot;:0,&quot;chromaticAberration&quot;:0,&quot;chromaticAngle&quot;:0,&quot;crtCurvature&quot;:0,&quot;digitalGlitch&quot;:0,&quot;digitalGlitchColorSplit&quot;:0,&quot;digitalGlitchLineTear&quot;:0,&quot;digitalGlitchPixelate&quot;:0,&quot;digitalGlitchBlockAmount&quot;:0,&quot;digitalGlitchBlockDisplacement&quot;:0,&quot;digitalGlitchBlockOpacity&quot;:0,&quot;digitalGlitchSpeed&quot;:0,&quot;engraving&quot;:0,&quot;engravingSpacing&quot;:0.4117647058823529,&quot;engravingMinThickness&quot;:0.2,&quot;engravingMaxThickness&quot;:0.4571428571428572,&quot;engravingAngle&quot;:0.25,&quot;engravingContrast&quot;:0.4666666666666667,&quot;engravingSharpness&quot;:0.59,&quot;engravingWave&quot;:0.2,&quot;engravingWaveFrequency&quot;:0.2222222222222222,&quot;crosshatch&quot;:0,&quot;crosshatchSpacing&quot;:0.28,&quot;crosshatchThickness&quot;:0.25,&quot;crosshatchAngle&quot;:0.25,&quot;crosshatchContrast&quot;:0.3333333333333333,&quot;crosshatchEdges&quot;:0.5,&quot;crosshatchLineWeight&quot;:0,&quot;crosshatchWave&quot;:0.33,&quot;crosshatchWaveFrequency&quot;:0.2222222222222222,&quot;kuwahara&quot;:0,&quot;kuwaharaRadius&quot;:0.14285714285714285,&quot;kuwaharaSharpness&quot;:0.3125,&quot;kuwaharaSaturation&quot;:0.5},&quot;lut&quot;:null,&quot;colorSpace&quot;:&quot;rec709&quot;}" data-hf-id="hf-u3dq" id="seg-e" class="clip" src="assets/seg-e.mp4" data-start="70.71" data-duration="11.8" data-track-index="0" data-has-audio="true" data-volume="1" playsinline></video>
+        <img data-color-grading="{&quot;preset&quot;:&quot;skin-soft&quot;,&quot;intensity&quot;:0.6,&quot;adjust&quot;:{&quot;exposure&quot;:0.1,&quot;contrast&quot;:0.05,&quot;highlights&quot;:-0.06,&quot;shadows&quot;:0.14,&quot;whites&quot;:0,&quot;blacks&quot;:0,&quot;temperature&quot;:0.08,&quot;tint&quot;:0.02,&quot;vibrance&quot;:0.03,&quot;saturation&quot;:0.04},&quot;details&quot;:{&quot;vignette&quot;:0.05,&quot;vignetteMidpoint&quot;:0.5,&quot;vignetteRoundness&quot;:0,&quot;vignetteFeather&quot;:0.65,&quot;grain&quot;:0,&quot;grainSize&quot;:0.25,&quot;grainRoughness&quot;:0.5},&quot;effects&quot;:{&quot;blur&quot;:0,&quot;pixelate&quot;:0,&quot;chromaBleed&quot;:0,&quot;tapeDamage&quot;:0,&quot;tapeTracking&quot;:0,&quot;tapeNoise&quot;:1,&quot;tapeSpeed&quot;:0.5,&quot;filmArtifacts&quot;:0,&quot;halftone&quot;:0,&quot;halftoneSize&quot;:0,&quot;twoInkPrint&quot;:0,&quot;twoInkPrintSize&quot;:0,&quot;ascii&quot;:0,&quot;asciiSize&quot;:0.06578947368421052,&quot;asciiInvert&quot;:0,&quot;asciiStyle&quot;:0,&quot;asciiColor&quot;:1,&quot;asciiRotation&quot;:0,&quot;dither&quot;:0,&quot;ditherSize&quot;:0,&quot;bloom&quot;:0,&quot;bloomRadius&quot;:8,&quot;monoScreen&quot;:0,&quot;monoScreenSize&quot;:0,&quot;monoScreenAngle&quot;:0,&quot;monoScreenSpread&quot;:0,&quot;monoScreenShape&quot;:0,&quot;monoScreenInvert&quot;:0,&quot;scanlines&quot;:0,&quot;scanlineCount&quot;:0,&quot;scanlineSoftness&quot;:0,&quot;chromaticAberration&quot;:0,&quot;chromaticAngle&quot;:0,&quot;crtCurvature&quot;:0,&quot;digitalGlitch&quot;:0,&quot;digitalGlitchColorSplit&quot;:0,&quot;digitalGlitchLineTear&quot;:0,&quot;digitalGlitchPixelate&quot;:0,&quot;digitalGlitchBlockAmount&quot;:0,&quot;digitalGlitchBlockDisplacement&quot;:0,&quot;digitalGlitchBlockOpacity&quot;:0,&quot;digitalGlitchSpeed&quot;:0,&quot;engraving&quot;:0,&quot;engravingSpacing&quot;:0.4117647058823529,&quot;engravingMinThickness&quot;:0.2,&quot;engravingMaxThickness&quot;:0.4571428571428572,&quot;engravingAngle&quot;:0.25,&quot;engravingContrast&quot;:0.4666666666666667,&quot;engravingSharpness&quot;:0.59,&quot;engravingWave&quot;:0.2,&quot;engravingWaveFrequency&quot;:0.2222222222222222,&quot;crosshatch&quot;:0,&quot;crosshatchSpacing&quot;:0.28,&quot;crosshatchThickness&quot;:0.25,&quot;crosshatchAngle&quot;:0.25,&quot;crosshatchContrast&quot;:0.3333333333333333,&quot;crosshatchEdges&quot;:0.5,&quot;crosshatchLineWeight&quot;:0,&quot;crosshatchWave&quot;:0.33,&quot;crosshatchWaveFrequency&quot;:0.2222222222222222,&quot;kuwahara&quot;:0,&quot;kuwaharaRadius&quot;:0.14285714285714285,&quot;kuwaharaSharpness&quot;:0.3125,&quot;kuwaharaSaturation&quot;:0.5},&quot;lut&quot;:null,&quot;colorSpace&quot;:&quot;rec709&quot;}" data-hf-id="hf-swsb" id="v-still" class="clip" src="assets/speech-last.jpg" alt="" data-start="82.51" data-duration="6.49" data-track-index="0">
+      </div>
+
+      <div data-hf-id="hf-36fc" id="band"></div>
+      <div data-hf-id="hf-snk9" id="floor"></div>
+      <div data-hf-id="hf-c6yo" id="dip"></div>
+
+      <div data-hf-id="hf-z2os" id="hook" class="scene" data-composition-id="hook" data-composition-src="compositions/hook.html" data-start="0" data-duration="8.28" data-track-index="2" data-track-kind="graphics" data-width="1080" data-height="1920" style="z-index: 5"></div>
+      <div data-hf-id="hf-skxz" id="facts" class="scene" data-composition-id="facts" data-composition-src="compositions/facts.html" data-start="8.28" data-duration="24.17" data-track-index="3" data-track-kind="graphics" data-width="1080" data-height="1920" style="z-index: 5"></div>
+      <div data-hf-id="hf-l4h6" id="problems" class="scene" data-composition-id="problems" data-composition-src="compositions/problems.html" data-start="32.45" data-duration="23.64" data-track-index="2" data-track-kind="graphics" data-width="1080" data-height="1920" style="z-index: 5"></div>
+      <div data-hf-id="hf-hboy" id="proposals" class="scene" data-composition-id="proposals" data-composition-src="compositions/proposals.html" data-start="56.09" data-duration="14.62" data-track-index="3" data-track-kind="graphics" data-width="1080" data-height="1920" style="z-index: 5"></div>
+      <div data-hf-id="hf-z0nq" id="climax" class="scene" data-composition-id="climax" data-composition-src="compositions/climax.html" data-start="70.71" data-duration="11.8" data-track-index="2" data-track-kind="graphics" data-width="1080" data-height="1920" style="z-index: 5"></div>
+      <div data-hf-id="hf-7fm9" id="final" class="scene" data-composition-id="final" data-composition-src="compositions/final.html" data-start="82.4" data-duration="6.6" data-track-index="3" data-track-kind="graphics" data-width="1080" data-height="1920" style="z-index: 6"></div>
+      <div data-hf-id="hf-n4f4" id="captions" class="scene" data-composition-id="captions" data-composition-src="compositions/captions.html" data-start="0" data-duration="82.6" data-track-index="4" data-track-kind="captions" data-width="1080" data-height="1920" style="z-index: 7"></div>
+
+      <!-- Sound design. Music bed slot: add <audio id="music"> here once a licensed track is in assets/music/. -->
+      <audio data-hf-id="hf-kxhg" id="sfx-open-impact" class="clip" src="assets/sfx/impact-bass-1.mp3" data-start="2.79" data-duration="2.1" data-track-index="6" data-volume="0.2"></audio>
+      <audio data-hf-id="hf-wox4" id="sfx-cut-b" class="clip" src="assets/sfx/whoosh-short.mp3" data-start="8.12" data-duration="0.57" data-track-index="7" data-volume="0.26"></audio>
+      <audio data-hf-id="hf-znff" id="sfx-cut-c" class="clip" src="assets/sfx/whoosh-short.mp3" data-start="32.29" data-duration="0.57" data-track-index="6" data-volume="0.22"></audio>
+      <audio data-hf-id="hf-7s9h" id="sfx-cut-d" class="clip" src="assets/sfx/whoosh-short.mp3" data-start="55.93" data-duration="0.57" data-track-index="7" data-volume="0.22"></audio>
+      <audio data-hf-id="hf-g332" id="sfx-cut-e" class="clip" src="assets/sfx/whoosh-short.mp3" data-start="70.55" data-duration="0.57" data-track-index="6" data-volume="0.2"></audio>
+      <audio data-hf-id="hf-mvd9" id="sfx-ssr-impact" class="clip" src="assets/sfx/impact-bass-2.mp3" data-start="76.28" data-duration="2.58" data-track-index="7" data-volume="0.2"></audio>
+      <audio data-hf-id="hf-69oa" id="sfx-end-impact" class="clip" src="assets/sfx/impact-bass-1.mp3" data-start="83.75" data-duration="2.1" data-track-index="6" data-volume="0.15"></audio>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+
+      // Face centre in the 1080x1440 plate: (525, 680). Keep the plate covering the frame.
+      const FX = 525, FY = 680;
+      const frame = (s, fy = 900) => {
+        const y = Math.min(0, Math.max(1920 - 1440 * s, fy - FY * s));
+        const x = Math.min(0, Math.max(1080 - 1080 * s, 540 - FX * s));
+        return { scale: s, x, y };
+      };
+      const WIDE = 1.36;
+      const dipCut = (t) => {
+        tl.to("#dip", { opacity: 0.4, duration: 0.1, ease: "power1.in" }, t - 0.1);
+        tl.set("#dip", { opacity: 0 }, t);
+      };
+
+      // A · hook: wide, hard punch-in on "strategik", slow push.
+      tl.set("#cam", frame(WIDE), 0);
+      tl.set("#cam", frame(1.62, 780), 2.86);
+      tl.to("#cam", { ...frame(1.7, 780), duration: 5.4, ease: "none" }, 2.86);
+      dipCut(8.28);
+
+      // B · facts: wide push; tighten on "Sudah tiba masanya".
+      tl.set("#cam", frame(WIDE), 8.28);
+      tl.to("#cam", { ...frame(1.46, 880), duration: 13.0, ease: "none" }, 8.28);
+      tl.set("#cam", frame(1.58, 820), 21.31);
+      tl.to("#cam", { ...frame(1.64, 820), duration: 11.1, ease: "none" }, 21.31);
+      dipCut(32.45);
+
+      // C · problems: close-up, punch harder on "lebih 50%".
+      tl.set("#cam", frame(1.62, 790), 32.45);
+      tl.to("#cam", { ...frame(1.68, 790), duration: 12.3, ease: "none" }, 32.45);
+      tl.set("#cam", frame(1.82, 770), 44.85);
+      tl.to("#cam", { ...frame(1.86, 770), duration: 6.5, ease: "none" }, 44.85);
+      tl.to("#cam", { ...frame(1.5, 860), duration: 1.0, ease: "power2.inOut" }, 51.4);
+      dipCut(56.09);
+
+      // D · proposals: wide, slow push.
+      tl.set("#cam", frame(WIDE), 56.09);
+      tl.to("#cam", { ...frame(1.48, 870), duration: 14.6, ease: "none" }, 56.09);
+      dipCut(70.71);
+
+      // E · climax: cinematic close-up.
+      tl.set("#cam", frame(1.7, 780), 70.71);
+      tl.to("#cam", { ...frame(1.8, 770), duration: 11.8, ease: "none" }, 70.71);
+
+      // F · end card on the held last frame; fade out.
+      tl.to("#cam", { ...frame(1.9, 770), duration: 6.5, ease: "none" }, 82.51);
+      tl.to("#dip", { opacity: 1, duration: 0.9, ease: "power2.in" }, 88.1);
+
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>

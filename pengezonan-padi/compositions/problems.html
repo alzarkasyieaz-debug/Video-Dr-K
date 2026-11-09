@@ -1,0 +1,87 @@
+<template>
+  <style>
+    @font-face {
+      font-family: "Anton";
+      src: url("assets/fonts/anton-latin-400-normal.woff2") format("woff2");
+      font-weight: 400;
+    }
+    #root { position: absolute; inset: 0; background: transparent; font-family: "Montserrat", sans-serif; color: #fff; }
+    .blk { position: absolute; left: 72px; top: 196px; width: 936px; height: 300px; }
+    .kicker { font-weight: 700; font-size: 28px; letter-spacing: 0.14em; color: #d6ac52; text-transform: uppercase;
+      display: flex; align-items: center; gap: 16px; white-space: nowrap; }
+    .kicker i { display: block; width: 64px; height: 4px; background: #d6ac52; transform-origin: 0 50%; }
+    .pill { margin-left: auto; font-weight: 600; font-size: 28px; letter-spacing: 0.04em; color: #fff;
+      border: 2px solid rgba(214, 172, 82, 0.8); border-radius: 6px; padding: 2px 10px; }
+    .big { margin-top: 12px; font-family: "Anton", sans-serif; font-size: 100px; line-height: 1;
+      text-transform: uppercase; text-shadow: 0 6px 28px rgba(0, 0, 0, 0.6); }
+    .line { display: block; overflow: hidden; padding-top: 4px; }
+    .w { display: inline-block; }
+    .small { margin-top: 14px; font-weight: 800; font-size: 38px; text-transform: uppercase; letter-spacing: 0.01em; }
+    .small .w { opacity: 0.25; }
+    .gold { color: #d6ac52; }
+    .yel { color: #ffd447; }
+
+    #p-title { font-size: 92px; }
+    #p-loc { margin-top: 14px; font-size: 32px; white-space: nowrap; }
+    #q-big { margin-top: 6px; display: flex; align-items: flex-end; gap: 22px; }
+    #q-lebih { font-family: "Anton", sans-serif; font-size: 64px; line-height: 1.2; text-transform: uppercase; }
+    #q-num { font-family: "Anton", sans-serif; font-size: 170px; line-height: 0.95; color: #ffd447;
+      text-shadow: 0 0 34px rgba(255, 212, 71, 0.35), 0 6px 24px rgba(0, 0, 0, 0.6); }
+    #q-quote { margin-top: 10px; font-weight: 700; font-style: italic; font-size: 36px; color: #f2f2f2; }
+    #q-quote .w { opacity: 0.25; }
+    #r-title { font-size: 104px; }
+  </style>
+  <div id="root" data-composition-id="problems" data-width="1080" data-height="1920">
+    <div id="p-blk" class="blk clip" data-start="0.1" data-duration="11.15" data-track-index="0">
+      <div class="kicker"><i id="p-rule"></i><span>Masalah pesawah &nbsp;·&nbsp; soalan susulan</span></div>
+      <div id="p-title" class="big">
+        <span class="line" data-layout-allow-overflow><span id="p-w1" class="w">Benih padi</span></span>
+        <span class="line" data-layout-allow-overflow><span id="p-w2" class="w yel">punca</span> <span id="p-w3" class="w yel">penyakit</span></span>
+      </div>
+      <div id="p-loc" class="small"><span id="p-l1" class="w">Titik Gantung</span> · <span id="p-l2" class="w">Parit</span> · <span id="p-l3" class="w">seluruh Perak Tengah</span></div>
+    </div>
+    <div id="q-blk" class="blk clip" data-start="11.35" data-duration="7.55" data-track-index="1">
+      <div class="kicker"><i id="q-rule"></i><span>Hasil padi</span><span class="pill">Petikan ucapan</span></div>
+      <div id="q-big"><span id="q-lebih">Lebih</span><span id="q-num">50%</span></div>
+      <div id="q-quote">“…<span id="q-w1" class="w">hasil padi</span> <span id="q-w2" class="w">yang amat</span> <span id="q-w3" class="w">mengecewakan</span>”</div>
+    </div>
+    <div id="r-blk" class="blk clip" data-start="19.0" data-duration="4.6" data-track-index="2">
+      <div class="kicker"><i id="r-rule"></i><span>Antara puncanya</span></div>
+      <div id="r-title" class="big">
+        <span class="line" data-layout-allow-overflow><span id="r-w1" class="w gold">Saliran</span></span>
+        <span class="line" data-layout-allow-overflow><span id="r-w2" class="w">&amp; benih padi</span></span>
+      </div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    const reveal = (sel, t) => tl.fromTo(sel, { yPercent: 105 }, { yPercent: 0, duration: 0.45, ease: "power4.out" }, t);
+    const kick = (rule, t) => tl.fromTo(rule, { scaleX: 0 }, { scaleX: 1, duration: 0.6, ease: "expo.out" }, t);
+    const light = (sel, t) => tl.to(sel, { opacity: 1, duration: 0.1, ease: "none" }, t);
+    const blurIn = (sel, t) => tl.fromTo(sel, { opacity: 0, filter: "blur(6px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.18, ease: "power4.out" }, t);
+    const out = (sel, t) => tl.to(sel, { opacity: 0, filter: "blur(8px)", duration: 0.2, ease: "power2.in" }, t);
+
+    kick("#p-rule", 0.1);
+    reveal("#p-w1", 0.1); // benih padi
+    reveal("#p-w2", 2.06); // punca
+    reveal("#p-w3", 3.4); // penyakit
+    light("#p-l1", 6.57); // Titik Gantung
+    light("#p-l2", 7.9); // Parit
+    light("#p-l3", 9.15); // seluruh Perak Tengah
+    out("#p-blk", 11.05);
+
+    kick("#q-rule", 11.35);
+    blurIn("#q-lebih", 11.42); // lebih
+    tl.fromTo("#q-num", { opacity: 0, scale: 1.3, filter: "blur(10px)" }, { opacity: 1, scale: 1, filter: "blur(0px)", duration: 0.4, ease: "expo.out", transformOrigin: "0% 100%" }, 12.38); // 50%
+    light("#q-w1", 14.3); // hasil padi
+    light("#q-w2", 15.86); // yang amat
+    light("#q-w3", 17.16); // mengecewakan
+    out("#q-blk", 18.7);
+
+    kick("#r-rule", 19.0); // antara puncanya
+    reveal("#r-w1", 20.88); // saliran
+    reveal("#r-w2", 22.18); // keduanya … benih padi
+    out("#r-blk", 23.38);
+    window.__timelines["problems"] = tl;
+  </script>
+</template>

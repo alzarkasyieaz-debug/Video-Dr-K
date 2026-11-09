@@ -1,0 +1,90 @@
+<template>
+  <style>
+    @font-face {
+      font-family: "Anton";
+      src: url("assets/fonts/anton-latin-400-normal.woff2") format("woff2");
+      font-weight: 400;
+    }
+    #root { position: absolute; inset: 0; background: transparent; font-family: "Montserrat", sans-serif; color: #fff; }
+    .blk { position: absolute; left: 72px; top: 196px; width: 936px; height: 300px; }
+    .kicker { font-weight: 700; font-size: 28px; letter-spacing: 0.14em; color: #d6ac52; text-transform: uppercase;
+      display: flex; align-items: center; gap: 16px; white-space: nowrap; }
+    .kicker i { display: block; width: 64px; height: 4px; background: #d6ac52; transform-origin: 0 50%; }
+    .pill { margin-left: auto; font-weight: 600; font-size: 28px; letter-spacing: 0.04em; color: #fff;
+      border: 2px solid rgba(214, 172, 82, 0.8); border-radius: 6px; padding: 2px 10px; }
+    .big { margin-top: 12px; font-family: "Anton", sans-serif; font-size: 100px; line-height: 1;
+      text-transform: uppercase; text-shadow: 0 6px 28px rgba(0, 0, 0, 0.6); }
+    .line { display: block; overflow: hidden; padding-top: 4px; }
+    .w { display: inline-block; }
+    .small { margin-top: 14px; font-weight: 800; font-size: 38px; text-transform: uppercase; letter-spacing: 0.01em; }
+    .small .w { opacity: 0.25; }
+    .gold { color: #d6ac52; }
+    .yel { color: #ffd447; }
+
+    .stats { margin-top: 14px; display: flex; gap: 56px; align-items: flex-end; }
+    .num { font-family: "Anton", sans-serif; font-size: 118px; line-height: 1; color: #d6ac52;
+      text-shadow: 0 0 30px rgba(214, 172, 82, 0.35), 0 6px 24px rgba(0, 0, 0, 0.6); }
+    .unit { margin-top: 4px; font-weight: 800; font-size: 30px; letter-spacing: 0.06em; text-transform: uppercase; }
+    #f-foot { white-space: nowrap; margin-top: 16px; font-weight: 700; font-size: 30px; color: #e8e8e8; }
+    #f-foot b { color: #ffd447; font-weight: 800; }
+    #z-l1 { font-size: 104px; }
+    .swap { position: relative; height: 56px; margin-top: 16px; }
+    .swap > div { position: absolute; left: 0; top: 0; width: 936px; white-space: nowrap;
+      font-weight: 800; font-size: 36px; text-transform: uppercase; }
+    .swap .w { opacity: 0.25; }
+  </style>
+  <div id="root" data-composition-id="facts" data-width="1080" data-height="1920">
+    <div id="f-blk" class="blk clip" data-start="1.4" data-duration="11.65" data-track-index="0">
+      <div class="kicker"><i id="f-rule"></i><span>Fakta daripada ucapan</span><span class="pill">Petikan ucapan</span></div>
+      <div class="stats">
+        <div><div id="f-n1" class="num">15,392.8</div><div id="f-u1" class="unit">hektar tanah sawah</div></div>
+        <div><div id="f-n2" class="num">9,650</div><div id="f-u2" class="unit">lot</div></div>
+      </div>
+      <div id="f-foot">Kawasan strategik &nbsp;·&nbsp; seliaan <b>IADA Seberang Perak</b></div>
+    </div>
+    <div id="z-blk" class="blk clip" data-start="13.0" data-duration="11.17" data-track-index="1">
+      <div class="kicker"><i id="z-rule"></i><span id="z-kick">Sudah tiba masanya</span></div>
+      <div id="z-l1" class="big">
+        <span class="line" data-layout-allow-overflow><span id="z-w1" class="w">Zon padi</span> <span id="z-w2" class="w gold">Bota Kiri</span></span>
+      </div>
+      <div class="swap">
+        <div id="z-s1"><span id="z-a1" class="w">Dimasukkan</span> <span id="z-a2" class="w">kategori</span> <span id="z-a3" class="w yel">jelapang padi</span></div>
+        <div id="z-s2"><span class="w" id="z-b0" style="opacity:1;color:#d6ac52">Seperti</span> <span id="z-b1" class="w">Krian</span> · <span id="z-b2" class="w">Sungai Manik</span> · <span id="z-b3" class="w">Seberang Perak</span></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    const reveal = (sel, t) => tl.fromTo(sel, { yPercent: 105 }, { yPercent: 0, duration: 0.45, ease: "power4.out" }, t);
+    const kick = (rule, t) => tl.fromTo(rule, { scaleX: 0 }, { scaleX: 1, duration: 0.6, ease: "expo.out" }, t);
+    const light = (sel, t) => tl.to(sel, { opacity: 1, duration: 0.1, ease: "none" }, t);
+    const blurIn = (sel, t) => tl.fromTo(sel, { opacity: 0, filter: "blur(6px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.18, ease: "power4.out" }, t);
+    const out = (sel, t) => tl.to(sel, { opacity: 0, filter: "blur(8px)", duration: 0.2, ease: "power2.in" }, t);
+
+    // Stats: numbers land on the spoken figures.
+    kick("#f-rule", 1.4);
+    tl.fromTo("#f-n1", { opacity: 0, scale: 1.25, filter: "blur(10px)" }, { opacity: 1, scale: 1, filter: "blur(0px)", duration: 0.4, ease: "expo.out", transformOrigin: "0% 100%" }, 1.52); // 15,392.8
+    blurIn("#f-u1", 3.72); // hektar
+    tl.fromTo("#f-n2", { opacity: 0, scale: 1.25, filter: "blur(10px)" }, { opacity: 1, scale: 1, filter: "blur(0px)", duration: 0.4, ease: "expo.out", transformOrigin: "0% 100%" }, 6.6); // 9,650
+    blurIn("#f-u2", 8.19); // lot
+    blurIn("#f-foot", 9.25); // kawasan strategik
+    out("#f-blk", 12.8);
+
+    // Bota Kiri demand.
+    kick("#z-rule", 13.03); // sudah tiba masanya
+    blurIn("#z-kick", 13.05);
+    reveal("#z-w1", 14.55); // zon padi
+    reveal("#z-w2", 15.14); // Bota Kiri
+    tl.set("#z-s2", { opacity: 0 }, 0);
+    light("#z-a1", 16.26); // dimasukkan
+    light("#z-a2", 17.52); // kategori
+    light("#z-a3", 18.73); // jelapang padi
+    tl.to("#z-s1", { opacity: 0, duration: 0.15, ease: "power2.in" }, 19.8);
+    tl.fromTo("#z-s2", { opacity: 0 }, { opacity: 1, duration: 0.15, ease: "power2.out" }, 19.93); // seperti
+    light("#z-b1", 21.18); // Krian
+    light("#z-b2", 21.75); // Sungai Manik
+    light("#z-b3", 22.96); // Seberang Perak
+    out("#z-blk", 23.95);
+    window.__timelines["facts"] = tl;
+  </script>
+</template>

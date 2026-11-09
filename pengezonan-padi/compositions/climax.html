@@ -1,0 +1,71 @@
+<template>
+  <style>
+    @font-face {
+      font-family: "Anton";
+      src: url("assets/fonts/anton-latin-400-normal.woff2") format("woff2");
+      font-weight: 400;
+    }
+    #root { position: absolute; inset: 0; background: transparent; font-family: "Montserrat", sans-serif; color: #fff; }
+    .blk { position: absolute; left: 72px; top: 196px; width: 936px; height: 300px; }
+    .kicker { font-weight: 700; font-size: 28px; letter-spacing: 0.14em; color: #d6ac52; text-transform: uppercase;
+      display: flex; align-items: center; gap: 16px; white-space: nowrap; }
+    .kicker i { display: block; width: 64px; height: 4px; background: #d6ac52; transform-origin: 0 50%; }
+    .pill { margin-left: auto; font-weight: 600; font-size: 28px; letter-spacing: 0.04em; color: #fff;
+      border: 2px solid rgba(214, 172, 82, 0.8); border-radius: 6px; padding: 2px 10px; }
+    .big { margin-top: 12px; font-family: "Anton", sans-serif; font-size: 100px; line-height: 1;
+      text-transform: uppercase; text-shadow: 0 6px 28px rgba(0, 0, 0, 0.6); }
+    .line { display: block; overflow: hidden; padding-top: 4px; }
+    .w { display: inline-block; }
+    .small { margin-top: 14px; font-weight: 800; font-size: 38px; text-transform: uppercase; letter-spacing: 0.01em; }
+    .small .w { opacity: 0.25; }
+    .gold { color: #d6ac52; }
+    .yel { color: #ffd447; }
+
+    #k-big { font-size: 96px; }
+    #s-row { margin-top: 2px; display: flex; align-items: flex-end; gap: 26px; }
+    #s-num { font-family: "Anton", sans-serif; font-size: 190px; line-height: 0.95; color: #d6ac52;
+      text-shadow: 0 0 40px rgba(214, 172, 82, 0.45), 0 6px 28px rgba(0, 0, 0, 0.6); }
+    #s-lbl { padding-bottom: 18px; font-weight: 800; font-size: 34px; line-height: 1.2; text-transform: uppercase; }
+    #s-lbl .w { opacity: 0.25; }
+  </style>
+  <div id="root" data-composition-id="climax" data-width="1080" data-height="1920">
+    <div id="k-blk" class="blk clip" data-start="0.1" data-duration="6.55" data-track-index="0">
+      <div class="kicker"><i id="k-rule"></i><span>Harapan</span></div>
+      <div class="small" style="margin-top:10px;font-size:31px;white-space:nowrap"><span id="k-s1" class="w">Cadangan ini</span> <span id="k-s2" class="w">diberi perhatian</span> <span id="k-s3" class="w">kementerian</span></div>
+      <div id="k-big" class="big">
+        <span class="line" data-layout-allow-overflow><span id="k-w1" class="w">Pertanian negara</span></span>
+        <span class="line" data-layout-allow-overflow><span id="k-w2" class="w gold">lebih berdaya maju</span></span>
+      </div>
+    </div>
+    <div id="s-blk" class="blk clip" data-start="6.75" data-duration="5.05" data-track-index="1">
+      <div class="kicker"><i id="s-rule"></i><span>Sasaran</span></div>
+      <div id="s-row">
+        <div id="s-num">70%</div>
+        <div id="s-lbl"><span id="s-l1" class="w">Tahap sara diri</span><br /><span id="s-l2" class="w">(SSR)</span> <span id="s-l3" class="w">beras negara</span></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    const reveal = (sel, t) => tl.fromTo(sel, { yPercent: 105 }, { yPercent: 0, duration: 0.45, ease: "power4.out" }, t);
+    const kick = (rule, t) => tl.fromTo(rule, { scaleX: 0 }, { scaleX: 1, duration: 0.6, ease: "expo.out" }, t);
+    const light = (sel, t) => tl.to(sel, { opacity: 1, duration: 0.1, ease: "none" }, t);
+    const blurIn = (sel, t) => tl.fromTo(sel, { opacity: 0, filter: "blur(6px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.18, ease: "power4.out" }, t);
+    const out = (sel, t) => tl.to(sel, { opacity: 0, filter: "blur(8px)", duration: 0.2, ease: "power2.in" }, t);
+
+    kick("#k-rule", 0.1);
+    light("#k-s1", 0.63); // cadangan ini
+    light("#k-s2", 1.27); // diberikan perhatian
+    light("#k-s3", 2.16); // kementerian
+    reveal("#k-w1", 3.44); // pertanian negara
+    reveal("#k-w2", 4.44); // lebih berdaya maju
+    out("#k-blk", 6.45);
+
+    kick("#s-rule", 6.9); // sasaran
+    tl.fromTo("#s-num", { opacity: 0, scale: 1.35, filter: "blur(12px)" }, { opacity: 1, scale: 1, filter: "blur(0px)", duration: 0.45, ease: "expo.out", transformOrigin: "0% 100%" }, 7.5); // 70%
+    light("#s-l1", 8.09); // tahap sara diri
+    light("#s-l2", 9.26); // SSR
+    light("#s-l3", 10.8); // beras negara
+    window.__timelines["climax"] = tl;
+  </script>
+</template>

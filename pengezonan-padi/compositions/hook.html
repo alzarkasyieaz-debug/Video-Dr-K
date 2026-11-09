@@ -1,0 +1,63 @@
+<template>
+  <style>
+    @font-face {
+      font-family: "Anton";
+      src: url("assets/fonts/anton-latin-400-normal.woff2") format("woff2");
+      font-weight: 400;
+    }
+    #root { position: absolute; inset: 0; background: transparent; font-family: "Montserrat", sans-serif; color: #fff; }
+    .blk { position: absolute; left: 72px; top: 196px; width: 936px; height: 300px; }
+    .kicker { font-weight: 700; font-size: 28px; letter-spacing: 0.14em; color: #d6ac52; text-transform: uppercase;
+      display: flex; align-items: center; gap: 16px; white-space: nowrap; }
+    .kicker i { display: block; width: 64px; height: 4px; background: #d6ac52; transform-origin: 0 50%; }
+    .pill { margin-left: auto; font-weight: 600; font-size: 28px; letter-spacing: 0.04em; color: #fff;
+      border: 2px solid rgba(214, 172, 82, 0.8); border-radius: 6px; padding: 2px 10px; }
+    .big { margin-top: 12px; font-family: "Anton", sans-serif; font-size: 100px; line-height: 1;
+      text-transform: uppercase; text-shadow: 0 6px 28px rgba(0, 0, 0, 0.6); }
+    .line { display: block; overflow: hidden; padding-top: 4px; }
+    .w { display: inline-block; }
+    .small { margin-top: 14px; font-weight: 800; font-size: 38px; text-transform: uppercase; letter-spacing: 0.01em; }
+    .small .w { opacity: 0.25; }
+    .gold { color: #d6ac52; }
+    .yel { color: #ffd447; }
+
+    #h-title { margin-top: 16px; font-size: 96px; line-height: 1.02; }
+    #lt-name { font-family: "Anton", sans-serif; font-size: 66px; line-height: 1.12; text-transform: uppercase; }
+    #lt-seat { font-weight: 600; font-size: 36px; color: #e8e8e8; }
+    #lt-bar { position: absolute; left: 0; top: 0; width: 8px; height: 196px; background: #d6ac52; transform-origin: 50% 0; }
+    #lt-text { position: absolute; left: 34px; top: 0; width: 900px; }
+  </style>
+  <div id="root" data-composition-id="hook" data-width="1080" data-height="1920" data-composition-variables='[{"id":"mp-name","type":"string","label":"Nama Ahli Parlimen","default":"Hj. Muhammad Ismi bin Mat Taib"},{"id":"mp-seat","type":"string","label":"Jawatan / kawasan","default":"Ahli Parlimen Parit, Perak"}]'>
+    <div id="h-blk" class="blk clip" data-start="0" data-duration="4.3" data-track-index="0">
+      <div class="kicker"><i id="h-rule"></i><span>Kamar Khas &nbsp;|&nbsp; Dewan Rakyat</span></div>
+      <h1 id="h-title" class="big">
+        <span class="line" data-layout-allow-overflow><span class="w">Pengezonan jelapang</span></span>
+        <span class="line" data-layout-allow-overflow><span class="w">padi</span> <span class="w yel">Perak Tengah</span></span>
+      </h1>
+    </div>
+    <div id="lt" class="blk clip" data-start="4.35" data-duration="3.85" data-track-index="1">
+      <div id="lt-bar"></div>
+      <div id="lt-text">
+        <div class="line" data-layout-allow-overflow><span id="lt-loc" class="w kicker">Kamar Khas &nbsp;|&nbsp; Parlimen Malaysia</span></div>
+        <div class="line" data-layout-allow-overflow><span id="lt-name" class="w" data-var-text="mp-name">Hj. Muhammad Ismi bin Mat Taib</span></div>
+        <div class="line" data-layout-allow-overflow><span id="lt-seat" class="w" data-var-text="mp-seat">Ahli Parlimen Parit, Perak</span></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    const reveal = (sel, t) => tl.fromTo(sel, { yPercent: 105 }, { yPercent: 0, duration: 0.45, ease: "power4.out" }, t);
+    const kick = (rule, t) => tl.fromTo(rule, { scaleX: 0 }, { scaleX: 1, duration: 0.6, ease: "expo.out" }, t);
+    const light = (sel, t) => tl.to(sel, { opacity: 1, duration: 0.1, ease: "none" }, t);
+    const blurIn = (sel, t) => tl.fromTo(sel, { opacity: 0, filter: "blur(6px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.18, ease: "power4.out" }, t);
+    const out = (sel, t) => tl.to(sel, { opacity: 0, filter: "blur(8px)", duration: 0.2, ease: "power2.in" }, t);
+
+    // Frame 0 is the thumbnail: headline already on screen; only the rule draws.
+    tl.fromTo("#h-rule", { scaleX: 0.2 }, { scaleX: 1, duration: 0.7, ease: "expo.out" }, 0);
+    out("#h-blk", 4.05);
+    tl.fromTo("#lt-bar", { scaleY: 0 }, { scaleY: 1, duration: 0.5, ease: "expo.out" }, 4.35);
+    tl.fromTo(["#lt-loc", "#lt-name", "#lt-seat"], { yPercent: 110 }, { yPercent: 0, duration: 0.6, stagger: 0.12, ease: "power4.out" }, 4.45);
+    out("#lt", 7.95);
+    window.__timelines["hook"] = tl;
+  </script>
+</template>
