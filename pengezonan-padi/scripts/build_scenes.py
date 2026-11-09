@@ -161,7 +161,7 @@ write("problems.html", scene("problems", """
         <span class="line" data-layout-allow-overflow><span id="p-w1" class="w">Benih padi</span></span>
         <span class="line" data-layout-allow-overflow><span id="p-w2" class="w yel">punca</span> <span id="p-w3" class="w yel">penyakit</span></span>
       </div>
-      <div id="p-loc" class="small"><span id="p-l1" class="w">Titik Gantung</span> · <span id="p-l2" class="w">Parit</span> · <span id="p-l3" class="w">seluruh Perak Tengah</span></div>
+      <div id="p-loc" class="small"><span id="p-l1" class="w">Titi Gantung</span> · <span id="p-l2" class="w">Parit</span> · <span id="p-l3" class="w">seluruh Perak Tengah</span></div>
     </div>
     <div id="q-blk" class="blk clip" data-start="11.35" data-duration="7.55" data-track-index="1">
       <div class="kicker"><i id="q-rule"></i><span>Hasil padi</span><span class="pill">Petikan ucapan</span></div>
@@ -179,7 +179,7 @@ write("problems.html", scene("problems", """
     reveal("#p-w1", 0.1); // benih padi
     reveal("#p-w2", 2.06); // punca
     reveal("#p-w3", 3.4); // penyakit
-    light("#p-l1", 6.57); // Titik Gantung
+    light("#p-l1", 6.57); // Titi Gantung
     light("#p-l2", 7.9); // Parit
     light("#p-l3", 9.15); // seluruh Perak Tengah
     out("#p-blk", 11.05);
@@ -210,7 +210,7 @@ write("proposals.html", scene("proposals", """
 """, """    <div id="l-blk" class="blk clip" data-start="0.1" data-duration="6.95" data-track-index="0">
       <div class="kicker"><i id="l-rule"></i><span>Cadangan Ahli Parlimen</span><span class="pill">Petikan ucapan</span></div>
       <div id="l-r1" class="row"><div class="n">01</div><div class="t">Insentif khas untuk petani</div></div>
-      <div id="l-r2" class="row"><div class="n">02</div><div class="t">Pusat pembenihan padi Titik Gantung</div></div>
+      <div id="l-r2" class="row"><div class="n">02</div><div class="t">Pusat pembenihan padi Titi Gantung</div></div>
       <div id="l-r3" class="row"><div class="n">03</div><div class="t">Infrastruktur pengairan</div></div>
       <div id="l-r4" class="row"><div class="n">04</div><div class="t">Teknologi pertanian pintar</div></div>
       <div id="l-r5" class="row"><div class="n">05</div><div class="t">Minat golongan muda</div></div>

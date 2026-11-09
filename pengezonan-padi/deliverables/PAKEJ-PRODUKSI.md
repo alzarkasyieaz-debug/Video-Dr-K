@@ -23,7 +23,7 @@
 | Petikan paling bersemangat | "Pengezonan jelapang padi di Perak Tengah adalah langkah strategik untuk menjamin sekuriti makanan negara dan perlu direalisasikan segera." (3:16) |
 | Fakta & angka (Ahli Parlimen) | 15,392.8 hektar tanah sawah, 9,650 lot, di bawah seliaan IADA Seberang Perak (0:33–0:45). Sasaran 70% tahap sara diri (SSR) beras (3:31). "Lebih 50%… hasil padi yang amat mengecewakan" (14:40; angka tidak diperincikan dalam ucapan). |
 | Isu pesawah (4) | 1. Kos pengeluaran tinggi (benih, baja, racun). 2. Infrastruktur pengairan usang. 3. Kurang penggunaan teknologi moden. 4. Kurang minat generasi muda (1:01–1:48). |
-| Cadangan (5) | 1. Insentif khas untuk petani (subsidi, harga lantai stabil). 2. Hidupkan semula pusat pembenihan padi di Titik Gantung. 3. Naik taraf infrastruktur pengairan dan perkasakan JPS negeri. 4. Permodenan pertanian melalui teknologi pintar. 5. Tingkatkan minat golongan muda (1:55–3:15). |
+| Cadangan (5) | 1. Insentif khas untuk petani (subsidi, harga lantai stabil). 2. Hidupkan semula pusat pembenihan padi di Titi Gantung. 3. Naik taraf infrastruktur pengairan dan perkasakan JPS negeri. 4. Permodenan pertanian melalui teknologi pintar. 5. Tingkatkan minat golongan muda (1:55–3:15). |
 | Soalan susulan | Kelewatan bekalan racun. Benih padi punca penyakit. Saliran. Rumah pam tidak berfungsi apabila sungai kering. Pelan memperkasakan JPS (14:00–15:56). |
 | Pembukaan | Petikan "langkah strategik… perlu direalisasikan segera" |
 | Penutup | "Saya berharap cadangan ini diberikan perhatian kementerian… sasaran 70% SSR bagi beras negara" |
@@ -64,7 +64,7 @@ Timestamp asal = kedudukan dalam rakaman Kamar Khas.
 
 ### POINT 3 — BENIH PADI & SALIRAN JEJAS HASIL
 - **Isu:** Benih padi menjadi punca penyakit; hasil padi mengecewakan.
-- **Petikan asal:** "…benih padi yang menjadi punca kepada penyakit di kawasan saya, di Titik Gantung, di Parit, di seluruh Perak Tengah. Lebih 50% ini hasil padi yang amat mengecewakan. Antara puncanya ialah saliran dan yang keduanya ialah benih padi."
+- **Petikan asal:** "…benih padi yang menjadi punca kepada penyakit di kawasan saya, di Titi Gantung, di Parit, di seluruh Perak Tengah. Lebih 50% ini hasil padi yang amat mengecewakan. Antara puncanya ialah saliran dan yang keduanya ialah benih padi."
 - **Ringkasan:** Penyakit akibat benih dan saliran lemah menjejaskan hasil padi Perak Tengah.
 - **Timestamp:** asal 14:29–14:53 (soalan susulan) · video 0:32–0:56
 - **On-screen text:** "BENIH PADI PUNCA PENYAKIT" → "LEBIH 50%" → "SALIRAN & BENIH PADI"
@@ -140,7 +140,7 @@ Untuk edit: ubah teks dalam `SEGMENTS` di `scripts/build_captions.py` (bilangan 
 | 0:08.3 | Dip cut | — | — | — | — | Whoosh |
 | 0:08.3 | **2 · Isu & fakta** | 0:32.3 | "Saya dimaklumkan sebanyak 15,392.8 hektar… IADA Seberang Perak." | Wide, push perlahan | "FAKTA DARIPADA UCAPAN": **15,392.8** (9.8 s) · hektar tanah sawah · **9,650** (14.9 s) lot · IADA Seberang Perak | — |
 | 0:21.3 | **3 · Hujah 1** | 0:45.3 | "Sudah tiba masanya, zon padi Bota Kiri juga dimasukkan… seperti Krian, Sungai Manik dan Seberang Perak." | Cut ke 1.58× | "SUDAH TIBA MASANYA" · "ZON PADI **BOTA KIRI**" · kategori jelapang padi → Krian · Sungai Manik · Seberang Perak | — |
-| 0:32.5 | **4 · Masalah** | 14:29.0 | "Benih padi yang menjadi punca kepada penyakit… lebih 50%… amat mengecewakan. Antara puncanya ialah saliran… benih padi." | Close-up 1.62× → **punch** 1.82× pada "lebih 50%" (44.85 s) | "BENIH PADI **PUNCA PENYAKIT**" · Titik Gantung · Parit · Perak Tengah → "LEBIH **50%**" + petikan → "**SALIRAN** & BENIH PADI" | Whoosh pada cut |
+| 0:32.5 | **4 · Masalah** | 14:29.0 | "Benih padi yang menjadi punca kepada penyakit… lebih 50%… amat mengecewakan. Antara puncanya ialah saliran… benih padi." | Close-up 1.62× → **punch** 1.82× pada "lebih 50%" (44.85 s) | "BENIH PADI **PUNCA PENYAKIT**" · Titi Gantung · Parit · Perak Tengah → "LEBIH **50%**" + petikan → "**SALIRAN** & BENIH PADI" | Whoosh pada cut |
 | 0:56.1 | **5 · Cadangan** | 1:54.8 | "Saya mencadangkan: pertama, insentif khas untuk petani… harga lantai stabil… telah pun dilaksanakan baru-baru ini." | Wide, push | Senarai 5 cadangan (01 diserlahkan) → "HARGA LANTAI **STABIL**" · pulangan adil & lumayan · ✓ telah pun dilaksanakan | Whoosh pada cut |
 | 1:10.7 | **6 · Klimaks** | 3:24.7 | "Saya berharap cadangan ini diberikan perhatian kementerian… sasaran 70% tahap sara diri (SSR) bagi beras negara." | Close-up 1.7→1.8× | "HARAPAN" · pertanian negara **lebih berdaya maju** → "SASARAN **70%** tahap sara diri (SSR) beras negara" | Bass impact memuncak pada "70%" (78.2 s) |
 | 1:22.4 | **7 · Penutup** | — | (senyap) | Frame terakhir ditahan, push | Nama, jawatan, kotak "Jawapan kementerian di Kamar Khas" (3 projek RMK13; harga lantai RM1,500), kredit | Bass impact lembut 83.8 s |
@@ -156,8 +156,8 @@ Subtitle berjalan 0:00–1:22: putih, outline hitam, latar lut sinar; perkataan 
 >
 > Di Kamar Khas Dewan Rakyat, Ahli Parlimen Parit, Hj. Muhammad Ismi Mat Taib, membangkitkan nasib pesawah Perak Tengah:
 > 🌾 15,392.8 hektar sawah (9,650 lot) kini di bawah seliaan IADA Seberang Perak. Zon padi Bota Kiri juga wajar dimasukkan dalam kategori jelapang, seperti Krian, Sungai Manik dan Seberang Perak.
-> 🦠 Benih padi menjadi punca penyakit, dan saliran yang lemah menjejaskan hasil di Titik Gantung, Parit dan seluruh Perak Tengah.
-> 💡 Lima cadangan: insentif khas & harga lantai stabil, pusat pembenihan padi Titik Gantung, infrastruktur pengairan, teknologi pertanian pintar, dan menarik minat golongan muda.
+> 🦠 Benih padi menjadi punca penyakit, dan saliran yang lemah menjejaskan hasil di Titi Gantung, Parit dan seluruh Perak Tengah.
+> 💡 Lima cadangan: insentif khas & harga lantai stabil, pusat pembenihan padi Titi Gantung, infrastruktur pengairan, teknologi pertanian pintar, dan menarik minat golongan muda.
 > 🎯 Matlamat: sasaran 70% tahap sara diri (SSR) beras negara.
 >
 > Dalam jawapan di Kamar Khas, kementerian memaklumkan tiga projek pengairan luar jelapang di Perak Tengah telah dipohon dalam RMK13.

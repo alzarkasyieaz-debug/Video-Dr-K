@@ -25,7 +25,7 @@ SEGMENTS = [
      "di bawah seliaan IADA Seberang Perak. Sudah tiba masanya, zon padi Bota Kiri juga dimasukkan dalam kategori kawasan "
      "jelapang padi seperti kawasan Krian, Sungai Manik dan Seberang Perak."),
     ("c", 868.98, 892.62, 32.45,
-     "Benih padi yang menjadi punca kepada penyakit di kawasan saya, di Titik Gantung, di Parit, di seluruh Perak Tengah. "
+     "Benih padi yang menjadi punca kepada penyakit di kawasan saya, di Titi Gantung, di Parit, di seluruh Perak Tengah. "
      "Lebih 50% ini hasil padi yang amat mengecewakan. Antara puncanya ialah saliran dan yang keduanya ialah benih padi."),
     ("d", 114.82, 129.44, 56.09,
      "Saya mencadangkan: pertama, insentif khas untuk petani. Subsidi khas untuk benih, baja dan racun. Menetapkan harga "
@@ -189,7 +189,7 @@ FIX = {
     "Jalapang": "jelapang", "jelapan": "jelapang", "Pengesunan": "Pengezonan", "pengazonan": "pengezonan",
     "Perkaitan": "berkaitan", "Aida,": "IADA,", "hektare": "hektar", "pesawat": "pesawah", "pesawat-pesawat": "pesawah-pesawah",
     "pump": "pam", "petanian": "pertanian", "babau": "baru-baru", "Telahpun": "Telah pun", "telahpun": "telah pun",
-    "pembinaan": "pembenihan", "Ali": "Ahli", "menghormat": "Berhormat", "Endi": "Yang", "Indi": "Yang", "Petua": "di-Pertua",
+    "pembinaan": "pembenihan", "titik": "Titi", "Titik": "Titi", "gantung": "Gantung", "Ali": "Ahli", "menghormat": "Berhormat", "Endi": "Yang", "Indi": "Yang", "Petua": "di-Pertua",
 }
 full = [w for w in mp1 if w["start"] < 218.5] + [w for w in mp2 if w["start"] < 966.5]
 for w in full:
