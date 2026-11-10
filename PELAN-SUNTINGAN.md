@@ -53,7 +53,7 @@ Semua masa ialah masa output. Audio asal sentiasa menjadi audio utama (dibersihk
 
 **Subtitle (F/G):** 57 kumpulan (3–5 perkataan), Inter 800 62 px, putih; kata kunci emas dengan punch-in (padi, 7,600, 72%, RM3,192, pengairan, pengezonan, jelapang, disegerakan, Parit, Bota Kiri…). Diletakkan pada y 1160–1330 px, di atas zon UI TikTok/Reels. Subtitle disembunyikan ketika luahan pesawah dipaparkan sebagai tipografi besar (hook dan 103.3–108.3 s) supaya teks tidak berganda. Teks penuh mengikut masa: `tools/edit-transcript.txt`.
 
-**Pembezaan rakaman vs grafik:** Pepijat “● RAKAMAN DEWAN RAKYAT” sentiasa kelihatan. Panel split bertanda “RAKAMAN ASAL”. Setiap grafik bertanda “GRAFIK” atau “ILUSTRASI”. Wajah, pakaian, mulut dan gerakan wakil rakyat tidak diubah. Hanya zoom/crop digunakan.
+**Pembezaan rakaman vs grafik:** Label “● UCAPAN DI DEWAN RAKYAT” sentiasa kelihatan. Panel split bertanda “RAKAMAN ASAL”. Setiap grafik bertanda “GRAFIK” atau “ILUSTRASI”. Wajah, pakaian, mulut dan gerakan wakil rakyat tidak diubah. Hanya zoom/crop digunakan.
 
 ## E. Prompt animasi bagi setiap isi (untuk direka semula / diperhalusi)
 
