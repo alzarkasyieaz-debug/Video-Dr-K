@@ -1,0 +1,40 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; font-family: Inter, sans-serif; background: #07111f; }
+    #o-still { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; object-fit: cover; opacity: .32; }
+    #o-shade { position: absolute; inset: 0;
+      background: radial-gradient(800px 900px at 50% 48%, rgba(7,17,31,.35), rgba(7,17,31,.95) 80%); }
+    #o-box { position: absolute; left: 70px; top: 610px; width: 940px; height: 700px; text-align: center; }
+    #o-rule { position: absolute; left: 370px; top: 0; width: 200px; height: 4px; background: #f2c55c; transform-origin: 50% 50%; }
+    #o-k { position: absolute; left: 0; top: 34px; width: 940px; font-size: 28px; font-weight: 800; letter-spacing: .26em; color: #c9d2e0; }
+    #o-t { position: absolute; left: 0; top: 86px; width: 940px; font-size: 100px; font-weight: 900; line-height: 1.02; color: #f8d77e;
+      letter-spacing: -0.02em;
+      text-shadow: 0 1px 0 #e0b04f, 0 2px 0 #d3a344, 0 3px 0 #c4953a, 0 4px 0 #b28430, 0 5px 0 #9c7226,
+        0 6px 0 #845f1d, 0 7px 0 #6c4c16, 0 20px 34px rgba(0,0,0,.8); }
+    #o-n { position: absolute; left: 0; top: 330px; width: 940px; font-size: 44px; font-weight: 900; color: #f4f6fa; }
+    #o-r { position: absolute; left: 0; top: 392px; width: 940px; font-size: 32px; font-weight: 800; letter-spacing: .14em; color: #f2c55c; }
+    #o-src { position: absolute; left: 60px; top: 500px; width: 820px; font-size: 28px; font-weight: 500; line-height: 1.35; color: rgba(231,235,242,.78); }
+  </style>
+  <div id="root" data-composition-id="e8-outro" data-width="1080" data-height="1920">
+    <img id="o-still" src="assets/img/end-still.jpg" alt="" />
+    <div id="o-shade"></div>
+    <div id="o-box">
+      <div id="o-rule"></div>
+      <div id="o-k">DEWAN RAKYAT MALAYSIA</div>
+      <div id="o-t" style="font-size: 84px">KRISIS KUALITI<br />PEKERJAAN BELIA</div>
+      <div id="o-n">YB Haji Muhammad Ismi bin Mat Taib</div>
+      <div id="o-r">AHLI PARLIMEN PARIT, PERAK</div>
+      <div id="o-src">Rakaman ucapan sebenar. Grafik ialah ilustrasi.</div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#o-still", { scale: 1.12 }, { scale: 1.04, duration: 3.5, ease: "power1.out" }, 0);
+    tl.fromTo("#o-rule", { scaleX: 0 }, { scaleX: 1, duration: 0.5, ease: "power3.inOut" }, 0.15);
+    tl.fromTo("#o-k", { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.4, ease: "expo.out" }, 0.3);
+    tl.fromTo("#o-t", { opacity: 0, scale: 1.4, rotationX: -40, transformPerspective: 900 }, { opacity: 1, scale: 1, rotationX: 0, duration: 0.4, ease: "expo.out" }, 0.4);
+    tl.fromTo(["#o-n", "#o-r"], { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.4, ease: "expo.out", stagger: 0.1 }, 0.8);
+    tl.fromTo("#o-src", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 0.6);
+    window.__timelines["e8-outro"] = tl;
+  </script>
+</template>

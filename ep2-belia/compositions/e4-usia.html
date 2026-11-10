@@ -1,0 +1,70 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; font-family: Inter, sans-serif; }
+    .ill { position: absolute; padding: 4px 10px; border-radius: 5px; font-weight: 800; font-size: 28px; letter-spacing: .16em;
+      color: #c9d2e0; border: 1px solid rgba(201,210,224,.5); background: rgba(7,17,31,.6); }
+    #g-zone { position: absolute; left: 60px; top: 846px; width: 960px; height: 300px; }
+    #g-k { position: absolute; left: 0; top: 0; font-size: 28px; font-weight: 800; letter-spacing: .18em; color: #c9d2e0; }
+    #g-zone .ill { right: 0; top: -2px; }
+    .g-row { position: absolute; left: 0; width: 960px; height: 66px; }
+    .g-row b { position: absolute; left: 0; top: 16px; width: 230px; font-size: 30px; font-weight: 900; letter-spacing: .04em; color: #f4f6fa; }
+    .g-track { position: absolute; left: 240px; top: 10px; width: 560px; height: 46px; border-radius: 10px; background: rgba(231,235,242,.08); }
+    .g-bar { position: absolute; left: 0; top: 0; height: 46px; border-radius: 10px; transform-origin: 0 50%; }
+    .g-row span { position: absolute; left: 820px; top: 2px; font-size: 56px; font-weight: 900; line-height: 1; }
+    #g-r1 { top: 56px; } #g-r2 { top: 136px; } #g-r3 { top: 216px; }
+    #g-b1 { width: 168px; background: linear-gradient(180deg, #e8ecf3, #9aa3b2); }
+    #g-b2 { width: 560px; background: linear-gradient(180deg, #ffe08f, #d9a641 60%, #a8781f); box-shadow: 0 0 26px rgba(242,197,92,.4); }
+    #g-b3 { width: 358px; background: linear-gradient(180deg, #ffe08f, #d9a641 60%, #a8781f); }
+    #g-r1 span { color: #c9d2e0; }
+    #g-r2 span, #g-r3 span { color: #f8d77e; text-shadow: 0 1px 0 #c4953a, 0 2px 0 #b28430, 0 3px 0 #9c7226, 0 10px 20px rgba(0,0,0,.6); }
+
+    #p-col { position: absolute; left: 44px; top: 850px; width: 580px; height: 290px; }
+    .p-card { position: absolute; left: 0; width: 580px; height: 80px; border-radius: 14px; background: rgba(7,17,31,.88);
+      border: 1px solid rgba(231,235,242,.3); display: flex; align-items: center; gap: 16px; padding: 0 20px;
+      font-size: 32px; font-weight: 900; letter-spacing: .04em; color: #f4f6fa; }
+    .p-card i { width: 38px; height: 38px; border-radius: 50%; background: #f2c55c; flex: none; }
+    #p-c1 { top: 0; } #p-c2 { top: 92px; }
+    #p-c3 { top: 196px; height: 94px; border: 2px solid rgba(224,68,58,.8); flex-direction: column; align-items: flex-start; justify-content: center; gap: 2px; }
+    #p-c3 small { font-size: 28px; font-weight: 800; letter-spacing: .12em; color: #ff8e83; }
+    #p-c3 span { font-size: 28px; white-space: nowrap; }
+  </style>
+  <div id="root" data-composition-id="e4-usia" data-width="1080" data-height="1920">
+    <div id="g-zone">
+      <div id="g-k">KADAR PENGANGGURAN MENGIKUT UMUR</div>
+      <div class="ill">GRAFIK</div>
+      <div class="g-row" id="g-r1"><b>KESELURUHAN</b><div class="g-track"><div class="g-bar" id="g-b1"></div></div><span>3%</span></div>
+      <div class="g-row" id="g-r2"><b>BELIA 15–24</b><div class="g-track"><div class="g-bar" id="g-b2"></div></div><span>10%</span></div>
+      <div class="g-row" id="g-r3"><b>BELIA 15–30</b><div class="g-track"><div class="g-bar" id="g-b3"></div></div><span>6.4%</span></div>
+    </div>
+    <div id="p-col">
+      <div class="p-card" id="p-c1"><i></i>LEPASAN SEKOLAH</div>
+      <div class="p-card" id="p-c2"><i></i>GRADUAN</div>
+      <div class="p-card" id="p-c3"><small>MASIH SUKAR MEMPEROLEH</small><span>PEKERJAAN PERTAMA YANG STABIL</span></div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo(["#g-k", "#g-zone .ill"], { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.4, ease: "expo.out" }, 0.25);
+    // context row: the overall rate he gave a moment ago
+    tl.fromTo("#g-r1", { opacity: 0 }, { opacity: 0.8, duration: 0.3 }, 0.5);
+    tl.fromTo("#g-b1", { scaleX: 0 }, { scaleX: 1, duration: 0.6, ease: "power3.out" }, 0.5);
+    // "15 hingga 24 tahun" local 1.85, "10%" local 4.26
+    tl.fromTo("#g-r2", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.3, ease: "expo.out" }, 1.85);
+    tl.set("#g-r2 span", { opacity: 0 }, 0);
+    tl.fromTo("#g-b2", { scaleX: 0 }, { scaleX: 1, duration: 0.8, ease: "power3.out" }, 3.5);
+    tl.fromTo("#g-r2 span", { opacity: 0, scale: 1.6 }, { opacity: 1, scale: 1, duration: 0.25, ease: "expo.out", immediateRender: false }, 4.22);
+    // "15 hingga 30 tahun" local 6.64, "6.4%" local 9.83
+    tl.fromTo("#g-r3", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.3, ease: "expo.out" }, 6.64);
+    tl.set("#g-r3 span", { opacity: 0 }, 0);
+    tl.fromTo("#g-b3", { scaleX: 0 }, { scaleX: 1, duration: 0.8, ease: "power3.out" }, 9.1);
+    tl.fromTo("#g-r3 span", { opacity: 0, scale: 1.6 }, { opacity: 1, scale: 1, duration: 0.25, ease: "expo.out", immediateRender: false }, 9.8);
+    tl.to("#g-zone", { opacity: 0, filter: "blur(8px)", duration: 0.25, ease: "power2.in" }, 13.2);
+
+    // full frame: "lepasan sekolah dan graduan" local 13.95; "pekerjaan pertama yang stabil" local 17.2
+    tl.fromTo("#p-c1", { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: 0.35, ease: "expo.out" }, 13.95);
+    tl.fromTo("#p-c2", { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: 0.35, ease: "expo.out" }, 15.3);
+    tl.fromTo("#p-c3", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.4, ease: "expo.out" }, 16.2);
+    tl.to("#p-col", { opacity: 0, x: -30, duration: 0.3, ease: "power2.in" }, 19.7);
+    window.__timelines["e4-usia"] = tl;
+  </script>
+</template>
