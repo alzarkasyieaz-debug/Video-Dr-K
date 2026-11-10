@@ -1,0 +1,80 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; font-family: Inter, sans-serif; }
+    .ill { position: absolute; padding: 4px 10px; border-radius: 5px; font-weight: 800; font-size: 28px; letter-spacing: .16em;
+      color: #c9d2e0; border: 1px solid rgba(201,210,224,.5); background: rgba(7,17,31,.6); }
+    /* money compare (split mode) */
+    #w-money { position: absolute; left: 60px; top: 846px; width: 960px; height: 300px; }
+    #w-k { position: absolute; left: 0; top: 0; font-size: 28px; font-weight: 800; letter-spacing: .18em; color: #c9d2e0; }
+    #w-money .ill { right: 0; top: -2px; }
+    #w-should { position: absolute; left: 0; top: 44px; }
+    #w-should-l, #w-got-l { font-size: 28px; font-weight: 800; letter-spacing: .18em; }
+    #w-should-l { color: #c9d2e0; }
+    #w-should-v { font-size: 66px; font-weight: 900; line-height: 1; color: #eef1f6;
+      text-shadow: 0 1px 0 #c3cad6, 0 2px 0 #a9b2c0, 0 3px 0 #8e97a6, 0 4px 0 #747d8c, 0 14px 24px rgba(0,0,0,.6); }
+    #w-strike { position: absolute; left: -8px; top: 66px; width: 330px; height: 8px; border-radius: 4px; background: #e0443a;
+      transform-origin: 0 50%; box-shadow: 0 0 16px rgba(224,68,58,.7); }
+    #w-got { position: absolute; left: 400px; top: 44px; text-align: left; }
+    #w-got-l { color: #f2c55c; }
+    #w-got-v { font-size: 120px; font-weight: 900; line-height: 1; color: #f8d77e; letter-spacing: -0.02em;
+      text-shadow: 0 1px 0 #e0b04f, 0 2px 0 #d3a344, 0 3px 0 #c4953a, 0 4px 0 #b28430, 0 5px 0 #9c7226,
+        0 6px 0 #845f1d, 0 7px 0 #6c4c16, 0 18px 30px rgba(0,0,0,.7), 0 0 50px rgba(242,197,92,.3); }
+    #w-arrow { position: absolute; left: 0; top: 214px; width: 960px; font-size: 30px; font-weight: 800; color: #c9d2e0; letter-spacing: .06em; }
+
+    /* bills compare (full-frame, left column beside the speaker) */
+    #w-bills { position: absolute; left: 44px; top: 820px; width: 440px; height: 330px; }
+    #w-bills-k { position: absolute; left: 0; top: 0; padding: 6px 12px; border-radius: 6px; background: rgba(7,17,31,.85);
+      font-size: 28px; font-weight: 800; letter-spacing: .16em; color: #f2c55c; border: 1px solid rgba(242,197,92,.5); }
+    .w-bill { position: absolute; left: 0; width: 440px; height: 128px; border-radius: 16px; background: rgba(7,17,31,.88);
+      border: 1px solid rgba(231,235,242,.25); box-shadow: 0 16px 40px rgba(0,0,0,.55); overflow: hidden; }
+    .w-bill b { position: absolute; left: 22px; top: 14px; font-size: 28px; font-weight: 800; letter-spacing: .14em; color: #c9d2e0; }
+    .w-bill span { position: absolute; left: 20px; top: 46px; font-size: 72px; font-weight: 900; line-height: 1; }
+    #w-b1 { top: 54px; }
+    #w-b1 span { color: #eef1f6; }
+    #w-b2 { top: 196px; border-color: rgba(224,68,58,.8); }
+    #w-b2 span { color: #ff6a5c; text-shadow: 0 1px 0 #d44c40, 0 2px 0 #b73d33, 0 3px 0 #982f27, 0 10px 20px rgba(0,0,0,.6); }
+    #w-b2 em { position: absolute; right: 18px; top: 70px; font-style: normal; font-size: 28px; font-weight: 900; color: #ff8e83; letter-spacing: .08em; }
+  </style>
+  <div id="root" data-composition-id="s4-wang" data-width="1080" data-height="1920">
+    <div id="w-money">
+      <div id="w-k">NILAI JUALAN PADI PESAWAH</div>
+      <div class="ill">GRAFIK</div>
+      <div id="w-should">
+        <div id="w-should-l">SEPATUTNYA</div>
+        <div id="w-should-v">RM11,400</div>
+        <div id="w-strike"></div>
+      </div>
+      <div id="w-got">
+        <div id="w-got-l">HANYA DITERIMA</div>
+        <div id="w-got-v">RM3,192</div>
+      </div>
+    </div>
+
+    <div id="w-bills">
+      <div id="w-bills-k">POTONGAN DALAM BIL</div>
+      <div class="w-bill" id="w-b1"><b>BIL TERDAHULU</b><span>65%</span></div>
+      <div class="w-bill" id="w-b2"><b>BIL TERKINI</b><span>72%</span><em>▲ LEBIH TERUK</em></div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    // split still open from s3 (root 23.9 → 51.2 = local 8.8)
+    tl.fromTo(["#w-k", "#w-money .ill"], { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.4, ease: "expo.out" }, 0.3);
+    // "dapat RM11,400" local 2.54
+    tl.fromTo("#w-should", { opacity: 0, x: -40, filter: "blur(10px)" }, { opacity: 1, x: 0, filter: "blur(0px)", duration: 0.4, ease: "expo.out" }, 2.4);
+    // "RM3,192" local 5.99
+    tl.fromTo("#w-got", { opacity: 0, scale: 1.7, rotationX: -50, transformPerspective: 900 },
+      { opacity: 1, scale: 1, rotationX: 0, duration: 0.26, ease: "expo.out" }, 5.93);
+    tl.fromTo("#w-strike", { scaleX: 0 }, { scaleX: 1, duration: 0.3, ease: "power3.out" }, 6.2);
+    tl.to("#w-should", { opacity: 0.55, duration: 0.3 }, 6.2);
+    tl.to("#w-money", { opacity: 0, filter: "blur(8px)", duration: 0.25, ease: "power2.in" }, 8.45);
+
+    // full frame again; "65%" local 11.67, "72%" local 17.39
+    tl.fromTo("#w-bills-k", { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.35, ease: "expo.out" }, 11.2);
+    tl.fromTo("#w-b1", { opacity: 0, x: -40 }, { opacity: 1, x: 0, duration: 0.4, ease: "expo.out" }, 11.62);
+    tl.fromTo("#w-b2", { opacity: 0, x: -40, scale: 1.15 }, { opacity: 1, x: 0, scale: 1, duration: 0.35, ease: "back.out(1.6)" }, 17.36);
+    tl.to("#w-b1", { opacity: 0.55, duration: 0.3 }, 17.5);
+    tl.to("#w-bills", { opacity: 0, x: -30, duration: 0.3, ease: "power2.in" }, 20.9);
+    window.__timelines["s4-wang"] = tl;
+  </script>
+</template>

@@ -1,0 +1,77 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; font-family: Inter, sans-serif; }
+    .ill { position: absolute; padding: 4px 10px; border-radius: 5px; font-weight: 800; font-size: 28px; letter-spacing: .16em;
+      color: #c9d2e0; border: 1px solid rgba(201,210,224,.5); background: rgba(7,17,31,.6); }
+    #a-chip { position: absolute; left: 44px; top: 262px; padding: 8px 16px; border-radius: 8px; background: rgba(7,17,31,.85);
+      border: 1px solid rgba(242,197,92,.55); color: #f4f6fa; font-size: 28px; font-weight: 800; letter-spacing: .1em; }
+    #a-zone { position: absolute; left: 40px; top: 846px; width: 1000px; height: 300px; }
+    #a-k { position: absolute; left: 20px; top: 0; font-size: 28px; font-weight: 800; letter-spacing: .18em; color: #c9d2e0; }
+    #a-zone .ill { right: 20px; top: -2px; }
+    #a-field { position: absolute; left: 0; top: 40px; width: 1000px; height: 260px; }
+    #a-title { position: absolute; left: 0; top: 70px; width: 1000px; text-align: center; }
+    #a-title small { display: block; font-size: 34px; font-weight: 800; letter-spacing: .2em; color: #f4f6fa;
+      text-shadow: 0 4px 16px rgba(0,0,0,.9); }
+    #a-title span { display: block; font-size: 118px; font-weight: 900; line-height: 1.02; color: #f8d77e; letter-spacing: -0.01em;
+      text-shadow: 0 1px 0 #e0b04f, 0 2px 0 #d3a344, 0 3px 0 #c4953a, 0 4px 0 #b28430, 0 5px 0 #9c7226,
+        0 6px 0 #845f1d, 0 7px 0 #6c4c16, 0 18px 30px rgba(0,0,0,.85), 0 0 50px rgba(242,197,92,.3); }
+  </style>
+  <div id="root" data-composition-id="s5-air" data-width="1080" data-height="1920">
+    <div id="a-chip">SESI LIBAT URUS · PIHAK BERKENAAN</div>
+    <div id="a-zone">
+      <div id="a-k">SAWAH PADI &amp; SALIRAN AIR</div>
+      <div class="ill">ILUSTRASI</div>
+      <svg id="a-field" viewBox="0 0 1000 260" fill="none">
+        <defs>
+          <linearGradient id="a-g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2f6b3f" /><stop offset="1" stop-color="#1c4128" /></linearGradient>
+        </defs>
+        <!-- perspective plots: two rows, the far ones narrower -->
+        <g id="a-plots" stroke="rgba(242,197,92,.35)" stroke-width="1.5">
+          <path class="a-plot" d="M210 40 L330 40 L300 120 L150 120 Z" fill="url(#a-g)" />
+          <path class="a-plot" d="M340 40 L460 40 L450 120 L310 120 Z" fill="url(#a-g)" />
+          <path class="a-plot" d="M540 40 L660 40 L690 120 L550 120 Z" fill="url(#a-g)" />
+          <path class="a-plot" d="M670 40 L790 40 L850 120 L700 120 Z" fill="url(#a-g)" />
+          <path class="a-plot" d="M140 132 L295 132 L255 250 L60 250 Z" fill="url(#a-g)" />
+          <path class="a-plot" d="M305 132 L450 132 L440 250 L265 250 Z" fill="url(#a-g)" />
+          <path class="a-plot" d="M550 132 L695 132 L735 250 L560 250 Z" fill="url(#a-g)" />
+          <path class="a-plot" d="M705 132 L860 132 L940 250 L745 250 Z" fill="url(#a-g)" />
+        </g>
+        <!-- main canal down the middle -->
+        <path d="M480 0 L520 0 L545 260 L455 260 Z" fill="rgba(13,29,51,.95)" stroke="rgba(231,235,242,.25)" />
+        <path id="a-water" d="M500 0 L500 260" stroke="#5aa9f0" stroke-width="22" stroke-linecap="round" stroke-dasharray="260" stroke-dashoffset="260" />
+        <path id="a-flow" d="M500 0 L500 260" stroke="rgba(220,240,255,.85)" stroke-width="4" stroke-dasharray="10 26" stroke-dashoffset="0" />
+        <!-- branch channels into plots -->
+        <g id="a-branches" stroke="#5aa9f0" stroke-width="6" stroke-linecap="round" opacity="0">
+          <path d="M490 80 L320 80" /><path d="M510 80 L680 80" /><path d="M490 190 L300 190" /><path d="M510 190 L720 190" />
+        </g>
+        <g id="a-x" stroke="#ff6a5c" stroke-width="7" stroke-linecap="round" opacity="0">
+          <path d="M470 120 L530 160" /><path d="M530 120 L470 160" />
+        </g>
+      </svg>
+      <div id="a-title"><small>PUNCA UTAMA</small><span>PENGAIRAN</span></div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    // "sesi libat urus kepada beberapa pihak" local 2.4
+    tl.fromTo("#a-chip", { opacity: 0, x: -24 }, { opacity: 1, x: 0, duration: 0.4, ease: "expo.out" }, 2.35);
+    tl.to("#a-chip", { opacity: 0, duration: 0.25 }, 10.3);
+    // split opens local 3.28
+    tl.fromTo(["#a-k", "#a-zone .ill"], { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.4, ease: "expo.out" }, 3.85);
+    tl.fromTo("#a-field", { opacity: 0, rotationX: 40, transformPerspective: 1200, y: 30 },
+      { opacity: 1, rotationX: 0, y: 0, duration: 0.8, ease: "expo.out" }, 3.9);
+    // water reaches only halfway, branches dry
+    tl.fromTo("#a-water", { strokeDashoffset: 260 }, { strokeDashoffset: 140, duration: 1.6, ease: "power2.out" }, 4.5);
+    tl.fromTo("#a-flow", { strokeDashoffset: 0 }, { strokeDashoffset: -180, duration: 6, ease: "none" }, 4.5);
+    tl.fromTo("#a-branches", { opacity: 0 }, { opacity: 0.85, duration: 0.3 }, 5.0);
+    tl.to("#a-branches", { opacity: 0.12, duration: 0.8, ease: "power2.inOut" }, 6.3);
+    tl.to(".a-plot", { fill: "#5b4a2c", duration: 1.0, ease: "power2.inOut", stagger: 0.06 }, 6.4);
+    tl.fromTo("#a-x", { opacity: 0, scale: 1.6, transformOrigin: "500px 140px" }, { opacity: 1, scale: 1, duration: 0.25, ease: "back.out(2)" }, 7.3);
+    // "puncanya ialah pengairan" local 8.6
+    tl.to("#a-field", { opacity: 0.35, filter: "blur(2px)", duration: 0.3 }, 8.5);
+    tl.fromTo("#a-title", { opacity: 0, scale: 1.7, rotationX: -50, transformPerspective: 900 },
+      { opacity: 1, scale: 1, rotationX: 0, duration: 0.24, ease: "expo.out" }, 8.55);
+    tl.to("#a-zone", { opacity: 0, filter: "blur(8px)", duration: 0.2, ease: "power2.in" }, 10.38);
+    window.__timelines["s5-air"] = tl;
+  </script>
+</template>

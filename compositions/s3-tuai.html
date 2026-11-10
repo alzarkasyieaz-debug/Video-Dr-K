@@ -1,0 +1,132 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; font-family: Inter, sans-serif; }
+    .chip { position: absolute; padding: 8px 16px; border-radius: 8px; font-weight: 800; font-size: 28px; letter-spacing: .14em; }
+    .ill { position: absolute; padding: 4px 10px; border-radius: 5px; font-weight: 800; font-size: 28px; letter-spacing: .16em;
+      color: #c9d2e0; border: 1px solid rgba(201,210,224,.5); background: rgba(7,17,31,.6); }
+
+    /* receipt evidence chip */
+    #t-bil { left: 44px; top: 262px; display: flex; align-items: center; gap: 14px; background: rgba(7,17,31,.82);
+      border: 1px solid rgba(242,197,92,.55); color: #f4f6fa; }
+    #t-bil-ico { width: 26px; height: 32px; border-radius: 3px; background:
+      repeating-linear-gradient(180deg, transparent 0 6px, rgba(23,17,10,.55) 6px 8px) 5px 6px / 16px 22px no-repeat, #f2c55c; }
+
+    /* location card */
+    #t-loc { position: absolute; left: 44px; top: 880px; width: 760px; height: 250px; }
+    #t-loc-card { position: absolute; inset: 0; border-radius: 18px; background: rgba(7,17,31,.86);
+      border: 1px solid rgba(242,197,92,.4); overflow: hidden; box-shadow: 0 20px 60px rgba(0,0,0,.6); }
+    #t-contour { position: absolute; right: -40px; top: -40px; width: 330px; height: 330px; opacity: .55; }
+    #t-pin { position: absolute; left: 640px; top: 92px; width: 34px; height: 34px; border-radius: 50% 50% 50% 0;
+      background: #f2c55c; box-shadow: 0 0 24px rgba(242,197,92,.8); }
+    .t-ring { position: absolute; left: 627px; top: 103px; width: 60px; height: 60px; border-radius: 50%;
+      border: 2px solid rgba(242,197,92,.8); }
+    #t-loc-k { position: absolute; left: 34px; top: 34px; font-size: 28px; font-weight: 800; letter-spacing: .18em; color: #c9d2e0; }
+    #t-loc-t { position: absolute; left: 34px; top: 76px; white-space: nowrap; font-size: 58px; font-weight: 900; color: #f8d77e; line-height: 1;
+      text-shadow: 0 1px 0 #c4953a, 0 2px 0 #b28430, 0 3px 0 #9c7226, 0 4px 0 #845f1d, 0 12px 24px rgba(0,0,0,.6); }
+    #t-loc-s { position: absolute; left: 34px; top: 160px; font-size: 32px; font-weight: 700; letter-spacing: .12em; color: #f4f6fa; }
+    #t-loc .ill { right: 24px; left: auto; top: 196px; }
+
+    /* harvest chart (split mode: lives under the framed footage) */
+    #t-chart { position: absolute; left: 60px; top: 846px; width: 960px; height: 300px; }
+    #t-k { position: absolute; left: 0; top: 0; font-size: 28px; font-weight: 800; letter-spacing: .18em; color: #c9d2e0; }
+    #t-num { position: absolute; left: 0; top: 40px; font-size: 92px; font-weight: 900; line-height: 1; color: #f8d77e;
+      text-shadow: 0 1px 0 #e0b04f, 0 2px 0 #c4953a, 0 3px 0 #b28430, 0 4px 0 #9c7226, 0 5px 0 #845f1d, 0 6px 0 #6c4c16, 0 16px 28px rgba(0,0,0,.6); }
+    #t-num small { font-size: 48px; letter-spacing: .04em; }
+    #t-cut { position: absolute; right: 0; top: 40px; text-align: right; font-size: 92px; font-weight: 900; line-height: 1; color: #ff6a5c;
+      text-shadow: 0 1px 0 #d44c40, 0 2px 0 #b73d33, 0 3px 0 #982f27, 0 4px 0 #7a241d, 0 16px 28px rgba(0,0,0,.6); }
+    #t-cut small { display: block; font-size: 28px; letter-spacing: .16em; color: #ffb3aa; text-shadow: none; margin-top: 6px; }
+    #t-track { position: absolute; left: 0; top: 168px; width: 960px; height: 64px; border-radius: 12px;
+      background: rgba(231,235,242,.08); border: 1px solid rgba(231,235,242,.18); overflow: visible; }
+    #t-keep { position: absolute; left: 0; top: 0; width: 960px; height: 64px; border-radius: 12px; transform-origin: 0 50%;
+      background: linear-gradient(180deg, #ffe08f, #d9a641 60%, #a8781f); box-shadow: 0 0 30px rgba(242,197,92,.35); }
+    #t-lose { position: absolute; left: 269px; top: 0; width: 691px; height: 64px; border-radius: 0 12px 12px 0; opacity: 0;
+      background: repeating-linear-gradient(135deg, #c8463c 0 14px, #9d3128 14px 28px); box-shadow: 0 0 30px rgba(200,70,60,.4); }
+    .t-lab { position: absolute; top: 246px; font-size: 30px; font-weight: 800; letter-spacing: .06em; }
+    #t-lab-keep { left: 0; color: #f2c55c; }
+    #t-lab-lose { right: 0; color: #ff8e83; text-align: right; }
+    .t-bit { position: absolute; width: 14px; height: 14px; background: #c8463c; border-radius: 2px; opacity: 0; }
+    #t-chart .ill { right: 0; top: -2px; }
+  </style>
+  <div id="root" data-composition-id="s3-tuai" data-width="1080" data-height="1920">
+    <div id="t-bil" class="chip"><i id="t-bil-ico"></i>BUKTI: BIL BELIAN PADI</div>
+
+    <div id="t-loc">
+      <div id="t-loc-card">
+        <svg id="t-contour" viewBox="0 0 330 330" fill="none" stroke="rgba(242,197,92,.55)" stroke-width="1.5">
+          <ellipse cx="165" cy="165" rx="150" ry="120" /><ellipse cx="170" cy="160" rx="118" ry="92" />
+          <ellipse cx="175" cy="156" rx="86" ry="66" /><ellipse cx="178" cy="152" rx="54" ry="40" />
+          <path d="M0 260 C80 230 140 290 330 240" stroke="rgba(120,170,230,.6)" stroke-width="3" />
+        </svg>
+        <div class="t-ring" id="t-ring1"></div><div class="t-ring" id="t-ring2"></div>
+        <div id="t-pin"></div>
+        <div id="t-loc-k">LOKASI PESAWAH</div>
+        <div id="t-loc-t">BATU 13, BOTA KIRI</div>
+        <div id="t-loc-s">PARIT · PERAK</div>
+        <div class="ill">ILUSTRASI</div>
+      </div>
+    </div>
+
+    <div id="t-chart">
+      <div id="t-k">HASIL TUAIAN SEORANG PESAWAH</div>
+      <div class="ill">GRAFIK</div>
+      <div id="t-num"><span id="t-num-v">7,600</span> <small>KG</small></div>
+      <div id="t-cut">−72%<small>POTONGAN DIKENAKAN</small></div>
+      <div id="t-track">
+        <div id="t-keep"></div>
+        <div id="t-lose"></div>
+        <div class="t-bit" style="left: 330px; top: 8px"></div><div class="t-bit" style="left: 420px; top: 38px"></div>
+        <div class="t-bit" style="left: 515px; top: 14px"></div><div class="t-bit" style="left: 610px; top: 44px"></div>
+        <div class="t-bit" style="left: 700px; top: 6px"></div><div class="t-bit" style="left: 790px; top: 30px"></div>
+        <div class="t-bit" style="left: 880px; top: 12px"></div><div class="t-bit" style="left: 935px; top: 40px"></div>
+      </div>
+      <div class="t-lab" id="t-lab-keep">2,128 KG DIKIRA</div>
+      <div class="t-lab" id="t-lab-lose">5,472 KG DIPOTONG</div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    // 0.2–3.4  "…bil belian padi, oleh Saudara …"
+    tl.fromTo("#t-bil", { opacity: 0, x: -24 }, { opacity: 1, x: 0, duration: 0.4, ease: "expo.out" }, 0.2);
+    tl.to("#t-bil", { opacity: 0, duration: 0.25, ease: "power2.in" }, 9.9);
+
+    // 3.6–10.2 location (spoken: "Batu 13 Bota Kiri" ~ local 5.6–7.2)
+    tl.fromTo("#t-loc", { opacity: 0, y: 30, rotationX: -25, transformPerspective: 1000 },
+      { opacity: 1, y: 0, rotationX: 0, duration: 0.55, ease: "expo.out" }, 3.75);
+    tl.fromTo("#t-pin", { y: -60, opacity: 0, rotation: -45 }, { y: 0, opacity: 1, rotation: -45, duration: 0.45, ease: "back.out(2)" }, 4.0);
+    [["#t-ring1", 4.3], ["#t-ring2", 5.3], ["#t-ring1", 6.3], ["#t-ring2", 7.3], ["#t-ring1", 8.3]].forEach(([r, t]) => {
+      tl.fromTo(r, { scale: 0.3, opacity: 0.9 }, { scale: 2.6, opacity: 0, duration: 1.4, ease: "power2.out" }, t);
+    });
+    tl.fromTo("#t-contour", { rotation: -6, scale: 1.1 }, { rotation: 4, scale: 1, duration: 6.2, ease: "none" }, 3.75);
+    tl.to("#t-loc", { opacity: 0, y: 24, filter: "blur(6px)", duration: 0.3, ease: "power2.in" }, 10.05);
+
+    // split opens at local 10.35 (root 23.9)
+    tl.fromTo("#t-chart", { opacity: 0 }, { opacity: 1, duration: 0.01 }, 10.9);
+    tl.fromTo(["#t-k", "#t-chart .ill"], { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.4, ease: "expo.out" }, 10.9);
+    tl.fromTo("#t-track", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 11.1);
+    tl.fromTo("#t-keep", { scaleX: 0 }, { scaleX: 1, duration: 1.4, ease: "power3.out" }, 12.6);
+    const n = { v: 0 };
+    tl.fromTo("#t-num", { opacity: 0, filter: "blur(8px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.2 }, 12.6);
+    tl.fromTo(n, { v: 0 }, { v: 7600, duration: 1.4, ease: "power3.out",
+      onUpdate: () => { document.querySelector("#t-num-v").textContent = Math.round(n.v).toLocaleString("en-US"); } }, 12.6);
+
+    // "72 peratus" — local 18.55
+    tl.fromTo("#t-lose", { opacity: 0 }, { opacity: 1, duration: 0.18, ease: "power2.out" }, 18.5);
+    tl.fromTo("#t-cut", { opacity: 0, scale: 1.8, rotationX: -50, transformPerspective: 900 },
+      { opacity: 1, scale: 1, rotationX: 0, duration: 0.24, ease: "expo.out" }, 18.5);
+    // "5,472 … dipotong" — local 21.3 → the cut portion breaks away
+    tl.fromTo("#t-lab-lose", { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.3, ease: "expo.out" }, 21.3);
+    tl.to("#t-lose", { x: 140, opacity: 0, duration: 0.9, ease: "power3.in" }, 23.4);
+    tl.to("#t-keep", { scaleX: 0.28, duration: 0.01 }, 23.4);
+    gsap.utils.toArray("#t-chart .t-bit").forEach((b, i) => {
+      tl.fromTo(b, { opacity: 0, x: 0, y: 0, rotation: 0 },
+        { opacity: 0.9, x: 60 + i * 14, y: (i % 2 ? 1 : -1) * (30 + i * 6), rotation: 90 + i * 20, duration: 0.9, ease: "power2.out" }, 23.45 + i * 0.03);
+      tl.to(b, { opacity: 0, duration: 0.3 }, 24.4 + i * 0.03);
+    });
+    // "2,128 kilo" — local 26.6
+    tl.fromTo("#t-lab-keep", { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.3, ease: "expo.out" }, 26.55);
+    tl.fromTo("#t-keep", { boxShadow: "0 0 30px rgba(242,197,92,.35)" }, { boxShadow: "0 0 60px rgba(242,197,92,.9)", duration: 0.4, ease: "power2.out" }, 26.55);
+    tl.to("#t-num", { opacity: 0.35, duration: 0.4 }, 26.55);
+    tl.to("#t-chart", { opacity: 0, filter: "blur(8px)", duration: 0.25, ease: "power2.in" }, 28.5);
+    window.__timelines["s3-tuai"] = tl;
+  </script>
+</template>
