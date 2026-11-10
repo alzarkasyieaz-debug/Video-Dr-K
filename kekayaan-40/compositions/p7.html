@@ -1,0 +1,56 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
+    #root .bg { position: absolute; inset: 0;
+      background: radial-gradient(110% 70% at 50% 42%, #1a3663 0%, #0b1a30 58%, #050c18 100%); }
+    #root .chip { position: absolute; left: 0; right: 0; top: 232px; text-align: center; }
+    #root .chip span { display: inline-block; padding: 12px 30px; border: 1.5px solid rgba(226,189,114,.75);
+      border-radius: 40px; background: rgba(8,18,34,.55); font-family: "Montserrat", sans-serif;
+      font-weight: 600; font-size: 28px; letter-spacing: .24em; color: #f6eedf; }
+    #root .chip b { color: #e2bd72; font-weight: 700; }
+    #root .head { position: absolute; left: 0; right: 0; top: 352px; padding: 0 90px; text-align: center; }
+    #root .lead { font-family: "Montserrat", sans-serif; font-weight: 600; font-size: 56px; line-height: 1.2;
+      color: #f6eedf; text-shadow: 0 3px 24px rgba(4,10,22,.8); }
+    #root .key { font-family: "Playfair Display", serif; font-style: italic; font-size: 100px; line-height: 1.12;
+      color: #f0cd84; text-shadow: 0 0 50px rgba(233,163,91,.45), 0 3px 24px rgba(4,10,22,.8); }
+    #root .art { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; }
+  </style>
+  <div id="root" data-composition-id="p7" data-width="1080" data-height="1920">
+    <div class="bg" id="p7-bg"></div>
+    <div id="p7-art">
+    <svg class="art" viewBox="0 0 1080 1920">
+          <defs><radialGradient id="p7-o"><stop offset="0" stop-color="#fff6e6"/><stop offset=".3" stop-color="#f0cd84" stop-opacity=".85"/>
+          <stop offset="1" stop-color="#e9a35b" stop-opacity="0"/></radialGradient></defs>
+          <line id="p7-thread" x1="540" y1="1050" x2="540" y2="1190" stroke="#cfc4ae" stroke-width="3"/>
+          <g id="p7-stone"><path d="M 470 1190 L 610 1190 L 640 1300 L 440 1300 Z" fill="#2a3446" stroke="#465269" stroke-width="3"/>
+            <text x="540" y="1258" text-anchor="middle" font-family="Montserrat" font-weight="700" font-size="30" letter-spacing="4" fill="#8e9ab0">HUTANG</text></g>
+          <g id="p7-orb"><circle cx="540" cy="1010" r="100" fill="url(#p7-o)"/></g>
+        </svg>
+    </div>
+    <div class="chip" id="p7-chip"><span><b>07</b> / 08</span></div>
+    <div class="head" id="p7-head">
+      <div class="lead" id="p7-h0">Hidup</div>
+      <div class="key" id="p7-h1">tanpa beban hutang</div>
+    </div>
+  </div>
+  <script>
+    (function () {
+      const tl = gsap.timeline({ paused: true });
+      tl.fromTo("#p7-bg", { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "sine.out" }, 0);
+      tl.fromTo("#p7-chip", { opacity: 0, y: -10 }, { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, 0.15);
+      tl.fromTo("#p7-h0", { opacity: 0, y: 18, filter: "blur(8px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.7, ease: "power2.out" }, 0.30);
+      tl.fromTo("#p7-h1", { opacity: 0, y: 18, filter: "blur(8px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.7, ease: "power2.out" }, 0.65);
+      
+      tl.fromTo(["#p7-orb", "#p7-thread", "#p7-stone"], { opacity: 0 }, { opacity: 1, duration: 0.6 }, 0.3);
+        // Weighed down, then the thread lets go.
+        tl.fromTo("#p7-orb", { y: 0 }, { y: 18, duration: 0.6, ease: "sine.inOut", yoyo: true, repeat: 1 }, 0.6);
+        tl.to("#p7-thread", { opacity: 0, duration: 0.15 }, 2.0);
+        tl.fromTo("#p7-stone", { y: 0, rotation: 0, svgOrigin: "540 1245" }, { y: 560, rotation: 8, opacity: 0, duration: 1.1, ease: "power2.in", immediateRender: false }, 2.0);
+        tl.fromTo("#p7-orb", { y: 0, scale: 1, svgOrigin: "540 1010" }, { y: -90, scale: 1.25, duration: 1.8, ease: "power2.out", immediateRender: false }, 2.05);
+      // Dissolve to midnight before the next point.
+      tl.to(["#p7-art", "#p7-chip", "#p7-head"], { opacity: 0, duration: 0.4, ease: "sine.in" }, 4.55);
+      tl.set({}, {}, 5.0);
+      window.__timelines["p7"] = tl;
+    })();
+  </script>
+</template>

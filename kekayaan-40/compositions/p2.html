@@ -1,0 +1,61 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
+    #root .bg { position: absolute; inset: 0;
+      background: radial-gradient(110% 70% at 50% 42%, #1a3663 0%, #0b1a30 58%, #050c18 100%); }
+    #root .chip { position: absolute; left: 0; right: 0; top: 232px; text-align: center; }
+    #root .chip span { display: inline-block; padding: 12px 30px; border: 1.5px solid rgba(226,189,114,.75);
+      border-radius: 40px; background: rgba(8,18,34,.55); font-family: "Montserrat", sans-serif;
+      font-weight: 600; font-size: 28px; letter-spacing: .24em; color: #f6eedf; }
+    #root .chip b { color: #e2bd72; font-weight: 700; }
+    #root .head { position: absolute; left: 0; right: 0; top: 352px; padding: 0 90px; text-align: center; }
+    #root .lead { font-family: "Montserrat", sans-serif; font-weight: 600; font-size: 56px; line-height: 1.2;
+      color: #f6eedf; text-shadow: 0 3px 24px rgba(4,10,22,.8); }
+    #root .key { font-family: "Playfair Display", serif; font-style: italic; font-size: 100px; line-height: 1.12;
+      color: #f0cd84; text-shadow: 0 0 50px rgba(233,163,91,.45), 0 3px 24px rgba(4,10,22,.8); }
+    #root .art { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; }
+  </style>
+  <div id="root" data-composition-id="p2" data-width="1080" data-height="1920">
+    <div class="bg" id="p2-bg"></div>
+    <div id="p2-art">
+    <svg class="art" viewBox="0 0 1080 1920">
+          <defs><radialGradient id="p2-moon"><stop offset="0" stop-color="#f6eedf" stop-opacity=".9"/>
+          <stop offset="1" stop-color="#f6eedf" stop-opacity="0"/></radialGradient></defs>
+          <rect x="0" y="1010" width="1080" height="330" fill="#0a1830" opacity=".55"/>
+          <ellipse id="p2-refl" cx="540" cy="1050" rx="140" ry="26" fill="url(#p2-moon)" opacity=".5"/>
+          <g id="p2-rings" fill="none" stroke="#e2bd72" stroke-width="3">
+            <ellipse cx="540" cy="1050" rx="400" ry="70"/><ellipse cx="540" cy="1050" rx="400" ry="70"/>
+            <ellipse cx="540" cy="1050" rx="400" ry="70"/><ellipse cx="540" cy="1050" rx="400" ry="70"/>
+          </g>
+          <circle id="p2-drop" cx="540" cy="820" r="10" fill="#fff4dc"/>
+        </svg>
+    </div>
+    <div class="chip" id="p2-chip"><span><b>02</b> / 08</span></div>
+    <div class="head" id="p2-head">
+      <div class="lead" id="p2-h0">Hati yang</div>
+      <div class="key" id="p2-h1">tenang</div>
+    </div>
+  </div>
+  <script>
+    (function () {
+      const tl = gsap.timeline({ paused: true });
+      tl.fromTo("#p2-bg", { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "sine.out" }, 0);
+      tl.fromTo("#p2-chip", { opacity: 0, y: -10 }, { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, 0.15);
+      tl.fromTo("#p2-h0", { opacity: 0, y: 18, filter: "blur(8px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.7, ease: "power2.out" }, 0.30);
+      tl.fromTo("#p2-h1", { opacity: 0, y: 18, filter: "blur(8px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.7, ease: "power2.out" }, 0.65);
+      
+      tl.fromTo("#p2-drop", { attr: { cy: 760 }, opacity: 0 }, { attr: { cy: 1046 }, opacity: 1, duration: 0.8, ease: "power2.in" }, 0.5);
+        tl.to("#p2-drop", { opacity: 0, duration: 0.15 }, 1.3);
+        document.querySelectorAll("#p2-rings ellipse").forEach((e, k) => {
+          // Each ring travels a little less: the water settles.
+          tl.fromTo(e, { scale: 0.05, opacity: 0.95, svgOrigin: "540 1050" },
+            { scale: 1 - k * 0.12, opacity: 0, duration: 2.6 + k * 0.3, ease: "sine.out" }, 1.3 + k * 0.45);
+        });
+        tl.fromTo("#p2-refl", { opacity: 0.2, scaleX: 0.6, svgOrigin: "540 1050" }, { opacity: 0.9, scaleX: 1, duration: 3, ease: "sine.inOut" }, 1.6);
+      // Dissolve to midnight before the next point.
+      tl.to(["#p2-art", "#p2-chip", "#p2-head"], { opacity: 0, duration: 0.4, ease: "sine.in" }, 4.55);
+      tl.set({}, {}, 5.0);
+      window.__timelines["p2"] = tl;
+    })();
+  </script>
+</template>

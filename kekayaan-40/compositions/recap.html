@@ -1,0 +1,57 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
+    #root .bg { position: absolute; inset: 0;
+      background: radial-gradient(110% 70% at 50% 42%, #1a3663 0%, #0b1a30 58%, #050c18 100%); }
+    #root .chip { position: absolute; left: 0; right: 0; top: 232px; text-align: center; }
+    #root .chip span { display: inline-block; padding: 12px 30px; border: 1.5px solid rgba(226,189,114,.75);
+      border-radius: 40px; background: rgba(8,18,34,.55); font-family: "Montserrat", sans-serif;
+      font-weight: 600; font-size: 28px; letter-spacing: .24em; color: #f6eedf; }
+    #root .chip b { color: #e2bd72; font-weight: 700; }
+    #root .head { position: absolute; left: 0; right: 0; top: 352px; padding: 0 90px; text-align: center; }
+    #root .lead { font-family: "Montserrat", sans-serif; font-weight: 600; font-size: 56px; line-height: 1.2;
+      color: #f6eedf; text-shadow: 0 3px 24px rgba(4,10,22,.8); }
+    #root .key { font-family: "Playfair Display", serif; font-style: italic; font-size: 100px; line-height: 1.12;
+      color: #f0cd84; text-shadow: 0 0 50px rgba(233,163,91,.45), 0 3px 24px rgba(4,10,22,.8); }
+    #root .art { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; }
+
+    #rc-h1 { position: absolute; left: 0; right: 0; top: 236px; text-align: center; font-family: "Montserrat", sans-serif;
+      font-weight: 700; font-size: 44px; letter-spacing: .16em; color: #f6eedf; }
+    #rc-h2 { position: absolute; left: 0; right: 0; top: 300px; text-align: center; font-family: "Playfair Display", serif;
+      font-style: italic; font-size: 92px; color: #f0cd84; text-shadow: 0 0 50px rgba(233,163,91,.4); }
+    .rc-row { position: absolute; left: 130px; right: 110px; height: 80px; display: flex; align-items: center; }
+    .rc-n { flex: 0 0 66px; height: 66px; border-radius: 50%; border: 2px solid rgba(240,205,132,.9); background: rgba(8,18,34,.6);
+      font-family: "Montserrat", sans-serif; font-weight: 700; font-size: 28px; color: #f0cd84;
+      display: flex; align-items: center; justify-content: center; }
+    .rc-t { margin-left: 28px; font-family: "Montserrat", sans-serif; font-weight: 600; font-size: 38px; color: #f6eedf; }
+    #rc-tag { position: absolute; left: 0; right: 0; top: 1272px; text-align: center; font-family: "Montserrat", sans-serif;
+      font-weight: 600; font-size: 32px; letter-spacing: .08em; color: rgba(246,238,223,.8); }
+  </style>
+  <div id="root" data-composition-id="recap" data-width="1080" data-height="1920">
+    <div class="bg" id="rc-bg"></div>
+    <div id="rc-h1">SELEPAS UMUR 40 TAHUN,</div>
+    <div id="rc-h2">kekayaan sebenar…</div>
+      <div class="rc-row" id="rc-r0" style="top:470px"><span class="rc-n">01</span><span class="rc-t">Kesihatan yang masih baik</span></div>
+      <div class="rc-row" id="rc-r1" style="top:568px"><span class="rc-n">02</span><span class="rc-t">Hati yang tenang</span></div>
+      <div class="rc-row" id="rc-r2" style="top:666px"><span class="rc-n">03</span><span class="rc-t">Rezeki yang cukup dan berkat</span></div>
+      <div class="rc-row" id="rc-r3" style="top:764px"><span class="rc-n">04</span><span class="rc-t">Keluarga yang bahagia</span></div>
+      <div class="rc-row" id="rc-r4" style="top:862px"><span class="rc-n">05</span><span class="rc-t">Anak-anak yang sihat</span></div>
+      <div class="rc-row" id="rc-r5" style="top:960px"><span class="rc-n">06</span><span class="rc-t">Sahabat yang ikhlas</span></div>
+      <div class="rc-row" id="rc-r6" style="top:1058px"><span class="rc-n">07</span><span class="rc-t">Hidup tanpa beban hutang</span></div>
+      <div class="rc-row" id="rc-r7" style="top:1156px"><span class="rc-n">08</span><span class="rc-t">Masa untuk mendekatkan diri kepada Allah</span></div>
+    <div id="rc-tag">#nasihatharini</div>
+  </div>
+  <script>
+    (function () {
+      const tl = gsap.timeline({ paused: true });
+      tl.fromTo("#rc-bg", { opacity: 0 }, { opacity: 1, duration: 0.4 }, 0);
+      tl.fromTo(["#rc-h1", "#rc-h2"], { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.7, ease: "power2.out", stagger: 0.2 }, 0.2);
+      for (let k = 0; k < 8; k++) {
+        tl.fromTo("#rc-r" + k, { opacity: 0, x: -24 }, { opacity: 1, x: 0, duration: 0.5, ease: "power2.out" }, 0.8 + k * 0.18);
+      }
+      tl.fromTo("#rc-tag", { opacity: 0 }, { opacity: 1, duration: 0.6 }, 2.5);
+      tl.set({}, {}, 6.5);
+      window.__timelines["recap"] = tl;
+    })();
+  </script>
+</template>

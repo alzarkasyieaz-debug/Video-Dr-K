@@ -1,0 +1,60 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
+    #root .bg { position: absolute; inset: 0;
+      background: radial-gradient(110% 70% at 50% 42%, #1a3663 0%, #0b1a30 58%, #050c18 100%); }
+    #root .chip { position: absolute; left: 0; right: 0; top: 232px; text-align: center; }
+    #root .chip span { display: inline-block; padding: 12px 30px; border: 1.5px solid rgba(226,189,114,.75);
+      border-radius: 40px; background: rgba(8,18,34,.55); font-family: "Montserrat", sans-serif;
+      font-weight: 600; font-size: 28px; letter-spacing: .24em; color: #f6eedf; }
+    #root .chip b { color: #e2bd72; font-weight: 700; }
+    #root .head { position: absolute; left: 0; right: 0; top: 352px; padding: 0 90px; text-align: center; }
+    #root .lead { font-family: "Montserrat", sans-serif; font-weight: 600; font-size: 56px; line-height: 1.2;
+      color: #f6eedf; text-shadow: 0 3px 24px rgba(4,10,22,.8); }
+    #root .key { font-family: "Playfair Display", serif; font-style: italic; font-size: 100px; line-height: 1.12;
+      color: #f0cd84; text-shadow: 0 0 50px rgba(233,163,91,.45), 0 3px 24px rgba(4,10,22,.8); }
+    #root .art { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; }
+  </style>
+  <div id="root" data-composition-id="p5" data-width="1080" data-height="1920">
+    <div class="bg" id="p5-bg"></div>
+    <div id="p5-art">
+    <svg class="art" viewBox="0 0 1080 1920">
+          <defs><radialGradient id="p5-sun"><stop offset="0" stop-color="#ffe2b0" stop-opacity=".85"/>
+          <stop offset="1" stop-color="#e9a35b" stop-opacity="0"/></radialGradient></defs>
+          <circle id="p5-sunc" cx="540" cy="960" r="300" fill="url(#p5-sun)" opacity="0"/>
+          <path d="M 120 1240 Q 540 1205 960 1240 L 960 1290 L 120 1290 Z" fill="#0a1424"/>
+          <line x1="140" y1="1238" x2="940" y2="1238" stroke="#e2bd72" stroke-width="3" opacity=".7"/>
+          <g id="p5-s1"><path d="M 430 1236 C 425 1150 445 1080 440 1010" stroke="#9fc58a" stroke-width="9" fill="none" stroke-linecap="round"/>
+            <path id="p5-l1a" d="M 440 1040 C 380 1020 360 975 380 950 C 420 965 440 1000 440 1040 Z" fill="#b8d99a"/>
+            <path id="p5-l1b" d="M 441 1070 C 500 1055 525 1010 505 985 C 465 1000 443 1035 441 1070 Z" fill="#9fc58a"/></g>
+          <g id="p5-s2"><path d="M 650 1236 C 655 1170 640 1120 648 1070" stroke="#9fc58a" stroke-width="8" fill="none" stroke-linecap="round"/>
+            <path id="p5-l2a" d="M 648 1095 C 595 1080 578 1040 595 1018 C 632 1030 648 1060 648 1095 Z" fill="#b8d99a"/>
+            <path id="p5-l2b" d="M 649 1120 C 700 1108 720 1070 703 1048 C 668 1062 650 1092 649 1120 Z" fill="#9fc58a"/></g>
+        </svg>
+    </div>
+    <div class="chip" id="p5-chip"><span><b>05</b> / 08</span></div>
+    <div class="head" id="p5-head">
+      <div class="lead" id="p5-h0">Anak-anak yang</div>
+      <div class="key" id="p5-h1">sihat</div>
+    </div>
+  </div>
+  <script>
+    (function () {
+      const tl = gsap.timeline({ paused: true });
+      tl.fromTo("#p5-bg", { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "sine.out" }, 0);
+      tl.fromTo("#p5-chip", { opacity: 0, y: -10 }, { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, 0.15);
+      tl.fromTo("#p5-h0", { opacity: 0, y: 18, filter: "blur(8px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.7, ease: "power2.out" }, 0.30);
+      tl.fromTo("#p5-h1", { opacity: 0, y: 18, filter: "blur(8px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.7, ease: "power2.out" }, 0.65);
+      
+      tl.fromTo("#p5-sunc", { opacity: 0, scale: 0.8, svgOrigin: "540 960" }, { opacity: 1, scale: 1.05, duration: 3.5, ease: "sine.out" }, 0.4);
+        tl.fromTo("#p5-s1", { scaleY: 0, svgOrigin: "440 1238" }, { scaleY: 1, duration: 1.8, ease: "power2.out" }, 0.7);
+        tl.fromTo("#p5-s2", { scaleY: 0, svgOrigin: "650 1238" }, { scaleY: 1, duration: 1.8, ease: "power2.out" }, 1.0);
+        [["#p5-l1a", "440px 1040px", 2.2], ["#p5-l1b", "441px 1070px", 2.4], ["#p5-l2a", "648px 1095px", 2.5], ["#p5-l2b", "649px 1120px", 2.7]]
+          .forEach(([id, o, t]) => tl.fromTo(id, { scale: 0, svgOrigin: o.replace(/px/g, "") }, { scale: 1, duration: 0.8, ease: "back.out(1.7)" }, t));
+      // Dissolve to midnight before the next point.
+      tl.to(["#p5-art", "#p5-chip", "#p5-head"], { opacity: 0, duration: 0.4, ease: "sine.in" }, 4.55);
+      tl.set({}, {}, 5.0);
+      window.__timelines["p5"] = tl;
+    })();
+  </script>
+</template>

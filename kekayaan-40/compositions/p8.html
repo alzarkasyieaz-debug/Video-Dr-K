@@ -1,0 +1,64 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
+    #root .bg { position: absolute; inset: 0;
+      background: radial-gradient(110% 70% at 50% 42%, #1a3663 0%, #0b1a30 58%, #050c18 100%); }
+    #root .chip { position: absolute; left: 0; right: 0; top: 232px; text-align: center; }
+    #root .chip span { display: inline-block; padding: 12px 30px; border: 1.5px solid rgba(226,189,114,.75);
+      border-radius: 40px; background: rgba(8,18,34,.55); font-family: "Montserrat", sans-serif;
+      font-weight: 600; font-size: 28px; letter-spacing: .24em; color: #f6eedf; }
+    #root .chip b { color: #e2bd72; font-weight: 700; }
+    #root .head { position: absolute; left: 0; right: 0; top: 352px; padding: 0 90px; text-align: center; }
+    #root .lead { font-family: "Montserrat", sans-serif; font-weight: 600; font-size: 56px; line-height: 1.2;
+      color: #f6eedf; text-shadow: 0 3px 24px rgba(4,10,22,.8); }
+    #root .key { font-family: "Playfair Display", serif; font-style: italic; font-size: 100px; line-height: 1.12;
+      color: #f0cd84; text-shadow: 0 0 50px rgba(233,163,91,.45), 0 3px 24px rgba(4,10,22,.8); }
+    #root .art { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; }
+  </style>
+  <div id="root" data-composition-id="p8" data-width="1080" data-height="1920">
+    <div class="bg" id="p8-bg"></div>
+    <div id="p8-art">
+    <svg class="art" viewBox="0 0 1080 1920">
+          <defs><radialGradient id="p8-col"><stop offset="0" stop-color="#ffe9c2" stop-opacity=".7"/>
+          <stop offset="1" stop-color="#e9a35b" stop-opacity="0"/></radialGradient></defs>
+          <g id="p8-stars" fill="#f6eedf"></g>
+          <g id="p8-moon"><circle cx="760" cy="860" r="70" fill="#f0cd84"/><circle cx="790" cy="840" r="62" fill="#122a4c"/></g>
+          <ellipse id="p8-light" cx="540" cy="1150" rx="260" ry="320" fill="url(#p8-col)" opacity="0"/>
+          <path d="M 300 1300 L 300 1200 Q 300 1100 400 1080 Q 470 1040 470 990 L 470 980 L 476 970 L 482 980 L 482 990
+            Q 482 1040 552 1080 Q 652 1100 652 1200 L 652 1300 Z M 700 1300 L 700 1050 L 715 1020 L 730 1050 L 730 1300 Z"
+            fill="#060e1c" transform="translate(64 0)"/>
+          <rect x="0" y="1296" width="1080" height="140" fill="#060e1c"/>
+        </svg>
+    </div>
+    <div class="chip" id="p8-chip"><span><b>08</b> / 08</span></div>
+    <div class="head" id="p8-head">
+      <div class="lead" id="p8-h0">Masa untuk mendekatkan diri</div>
+      <div class="key" id="p8-h1">kepada Allah</div>
+    </div>
+  </div>
+  <script>
+    (function () {
+      const tl = gsap.timeline({ paused: true });
+      tl.fromTo("#p8-bg", { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "sine.out" }, 0);
+      tl.fromTo("#p8-chip", { opacity: 0, y: -10 }, { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, 0.15);
+      tl.fromTo("#p8-h0", { opacity: 0, y: 18, filter: "blur(8px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.7, ease: "power2.out" }, 0.30);
+      tl.fromTo("#p8-h1", { opacity: 0, y: 18, filter: "blur(8px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.7, ease: "power2.out" }, 0.65);
+      
+      const st = document.getElementById("p8-stars");
+        let s = 4040; const r = () => ((s = (s * 1664525 + 1013904223) % 4294967296) / 4294967296);
+        for (let i = 0; i < 26; i++) {
+          const c = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+          c.setAttribute("cx", (60 + r() * 960).toFixed(0)); c.setAttribute("cy", (780 + r() * 360).toFixed(0));
+          c.setAttribute("r", (1.5 + r() * 2.5).toFixed(1)); st.appendChild(c);
+          tl.fromTo(c, { opacity: 0.15 }, { opacity: 0.95, duration: 0.7 + r() * 0.6, ease: "sine.inOut", yoyo: true, repeat: 3 }, 0.3 + r() * 0.8);
+        }
+        tl.fromTo("#p8-moon", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 1.4, ease: "sine.out" }, 0.4);
+        // Light rising from the place of prayer.
+        tl.fromTo("#p8-light", { opacity: 0, scaleY: 0.6, svgOrigin: "540 1300" }, { opacity: 1, scaleY: 1.1, duration: 2.6, ease: "sine.inOut" }, 1.4);
+      // Dissolve to midnight before the next point.
+      tl.to(["#p8-art", "#p8-chip", "#p8-head"], { opacity: 0, duration: 0.4, ease: "sine.in" }, 4.55);
+      tl.set({}, {}, 5.0);
+      window.__timelines["p8"] = tl;
+    })();
+  </script>
+</template>

@@ -1,0 +1,53 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
+    #root .bg { position: absolute; inset: 0;
+      background: radial-gradient(110% 70% at 50% 42%, #1a3663 0%, #0b1a30 58%, #050c18 100%); }
+    #root .chip { position: absolute; left: 0; right: 0; top: 232px; text-align: center; }
+    #root .chip span { display: inline-block; padding: 12px 30px; border: 1.5px solid rgba(226,189,114,.75);
+      border-radius: 40px; background: rgba(8,18,34,.55); font-family: "Montserrat", sans-serif;
+      font-weight: 600; font-size: 28px; letter-spacing: .24em; color: #f6eedf; }
+    #root .chip b { color: #e2bd72; font-weight: 700; }
+    #root .head { position: absolute; left: 0; right: 0; top: 352px; padding: 0 90px; text-align: center; }
+    #root .lead { font-family: "Montserrat", sans-serif; font-weight: 600; font-size: 56px; line-height: 1.2;
+      color: #f6eedf; text-shadow: 0 3px 24px rgba(4,10,22,.8); }
+    #root .key { font-family: "Playfair Display", serif; font-style: italic; font-size: 100px; line-height: 1.12;
+      color: #f0cd84; text-shadow: 0 0 50px rgba(233,163,91,.45), 0 3px 24px rgba(4,10,22,.8); }
+    #root .art { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; }
+  </style>
+  <div id="root" data-composition-id="p4" data-width="1080" data-height="1920">
+    <div class="bg" id="p4-bg"></div>
+    <div id="p4-art">
+    <div class="art">
+          <div id="p4-frame" style="position:absolute;left:230px;top:760px;width:620px;height:560px;border-radius:22px;overflow:hidden;
+            border:3px solid rgba(240,205,132,.85);box-shadow:0 30px 70px rgba(0,0,0,.55)">
+            <img id="p4-img" src="assets/img/keluarga.jpg" alt="" style="position:absolute;left:0;top:-90px;width:620px;height:796px"/>
+            <div id="p4-sweep" style="position:absolute;top:-60px;left:0;width:160px;height:700px;
+              background:linear-gradient(90deg,rgba(255,245,225,0),rgba(255,245,225,.45),rgba(255,245,225,0))"></div>
+          </div>
+        </div>
+    </div>
+    <div class="chip" id="p4-chip"><span><b>04</b> / 08</span></div>
+    <div class="head" id="p4-head">
+      <div class="lead" id="p4-h0">Keluarga yang</div>
+      <div class="key" id="p4-h1">bahagia</div>
+    </div>
+  </div>
+  <script>
+    (function () {
+      const tl = gsap.timeline({ paused: true });
+      tl.fromTo("#p4-bg", { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "sine.out" }, 0);
+      tl.fromTo("#p4-chip", { opacity: 0, y: -10 }, { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, 0.15);
+      tl.fromTo("#p4-h0", { opacity: 0, y: 18, filter: "blur(8px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.7, ease: "power2.out" }, 0.30);
+      tl.fromTo("#p4-h1", { opacity: 0, y: 18, filter: "blur(8px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.7, ease: "power2.out" }, 0.65);
+      
+      tl.fromTo("#p4-frame", { opacity: 0, y: 40, rotation: -2 }, { opacity: 1, y: 0, rotation: 0, duration: 1.0, ease: "power3.out" }, 0.4);
+        tl.fromTo("#p4-img", { scale: 1.0 }, { scale: 1.08, duration: 4.6, ease: "sine.inOut" }, 0.4);
+        tl.fromTo("#p4-sweep", { x: -220, rotation: 16 }, { x: 760, rotation: 16, duration: 1.4, ease: "power1.inOut" }, 1.6);
+      // Dissolve to midnight before the next point.
+      tl.to(["#p4-art", "#p4-chip", "#p4-head"], { opacity: 0, duration: 0.4, ease: "sine.in" }, 4.55);
+      tl.set({}, {}, 5.0);
+      window.__timelines["p4"] = tl;
+    })();
+  </script>
+</template>

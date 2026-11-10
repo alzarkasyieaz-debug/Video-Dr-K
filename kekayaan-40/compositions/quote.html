@@ -1,0 +1,50 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
+    #root .bg { position: absolute; inset: 0;
+      background: radial-gradient(110% 70% at 50% 42%, #1a3663 0%, #0b1a30 58%, #050c18 100%); }
+    #root .chip { position: absolute; left: 0; right: 0; top: 232px; text-align: center; }
+    #root .chip span { display: inline-block; padding: 12px 30px; border: 1.5px solid rgba(226,189,114,.75);
+      border-radius: 40px; background: rgba(8,18,34,.55); font-family: "Montserrat", sans-serif;
+      font-weight: 600; font-size: 28px; letter-spacing: .24em; color: #f6eedf; }
+    #root .chip b { color: #e2bd72; font-weight: 700; }
+    #root .head { position: absolute; left: 0; right: 0; top: 352px; padding: 0 90px; text-align: center; }
+    #root .lead { font-family: "Montserrat", sans-serif; font-weight: 600; font-size: 56px; line-height: 1.2;
+      color: #f6eedf; text-shadow: 0 3px 24px rgba(4,10,22,.8); }
+    #root .key { font-family: "Playfair Display", serif; font-style: italic; font-size: 100px; line-height: 1.12;
+      color: #f0cd84; text-shadow: 0 0 50px rgba(233,163,91,.45), 0 3px 24px rgba(4,10,22,.8); }
+    #root .art { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; }
+
+    #qt-img { position: absolute; left: 0; top: 0; width: 1080px; height: 1387px; opacity: .55; }
+    #qt-shade { position: absolute; inset: 0;
+      background: linear-gradient(180deg, rgba(11,26,48,.55) 0%, rgba(11,26,48,.78) 45%, #0b1a30 72%, #070f1d 100%); }
+    #qt-text { position: absolute; left: 0; right: 0; top: 560px; padding: 0 100px; text-align: center; }
+    .qt-a { font-family: "Montserrat", sans-serif; font-weight: 600; font-size: 52px; line-height: 1.25; color: #f6eedf;
+      text-shadow: 0 3px 24px rgba(4,10,22,.8); }
+    .qt-b { margin: 26px 0; font-family: "Playfair Display", serif; font-style: italic; font-size: 86px; line-height: 1.15;
+      color: #f0cd84; text-shadow: 0 0 50px rgba(233,163,91,.4), 0 3px 24px rgba(4,10,22,.8); }
+  </style>
+  <div id="root" data-composition-id="quote" data-width="1080" data-height="1920">
+    <div class="bg" id="qt-bg"></div>
+    <img id="qt-img" src="assets/img/keluarga.jpg" alt="" />
+    <div id="qt-shade"></div>
+    <div id="qt-text">
+      <div class="qt-a" id="qt-1">Bila usia semakin meningkat,</div>
+      <div class="qt-b" id="qt-2">hidup yang sederhana tetapi tenang</div>
+      <div class="qt-a" id="qt-3">terasa jauh lebih berharga.</div>
+    </div>
+  </div>
+  <script>
+    (function () {
+      const tl = gsap.timeline({ paused: true });
+      tl.fromTo("#qt-bg", { opacity: 0 }, { opacity: 1, duration: 0.4 }, 0);
+      tl.fromTo("#qt-img", { opacity: 0, scale: 1.0 }, { opacity: 0.55, scale: 1.06, duration: 5.0, ease: "sine.out" }, 0);
+      tl.fromTo("#qt-1", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.7, ease: "power2.out" }, 0.4);
+      tl.fromTo("#qt-2", { opacity: 0, y: 18, filter: "blur(8px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 1.0, ease: "power2.out" }, 1.4);
+      tl.fromTo("#qt-3", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.7, ease: "power2.out" }, 2.8);
+      tl.to(["#qt-img", "#qt-text"], { opacity: 0, duration: 0.4, ease: "sine.in" }, 5.05);
+      tl.set({}, {}, 5.5);
+      window.__timelines["quote"] = tl;
+    })();
+  </script>
+</template>

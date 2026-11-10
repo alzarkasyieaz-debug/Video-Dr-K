@@ -1,0 +1,66 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
+    #root .bg { position: absolute; inset: 0;
+      background: radial-gradient(110% 70% at 50% 42%, #1a3663 0%, #0b1a30 58%, #050c18 100%); }
+    #root .chip { position: absolute; left: 0; right: 0; top: 232px; text-align: center; }
+    #root .chip span { display: inline-block; padding: 12px 30px; border: 1.5px solid rgba(226,189,114,.75);
+      border-radius: 40px; background: rgba(8,18,34,.55); font-family: "Montserrat", sans-serif;
+      font-weight: 600; font-size: 28px; letter-spacing: .24em; color: #f6eedf; }
+    #root .chip b { color: #e2bd72; font-weight: 700; }
+    #root .head { position: absolute; left: 0; right: 0; top: 352px; padding: 0 90px; text-align: center; }
+    #root .lead { font-family: "Montserrat", sans-serif; font-weight: 600; font-size: 56px; line-height: 1.2;
+      color: #f6eedf; text-shadow: 0 3px 24px rgba(4,10,22,.8); }
+    #root .key { font-family: "Playfair Display", serif; font-style: italic; font-size: 100px; line-height: 1.12;
+      color: #f0cd84; text-shadow: 0 0 50px rgba(233,163,91,.45), 0 3px 24px rgba(4,10,22,.8); }
+    #root .art { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; }
+  </style>
+  <div id="root" data-composition-id="p3" data-width="1080" data-height="1920">
+    <div class="bg" id="p3-bg"></div>
+    <div id="p3-art">
+    <div class="art">
+          <div id="p3-bowl" style="position:absolute;left:330px;top:820px;width:420px;height:420px;border-radius:50%;
+            border:4px solid rgba(240,205,132,.9);overflow:hidden;box-shadow:0 0 60px rgba(233,163,91,.3), inset 0 0 40px rgba(11,26,48,.7)">
+            <div id="p3-fill" style="position:absolute;left:-10%;width:120%;bottom:0;height:100%;
+              background:linear-gradient(180deg,#f6d28c,#e9a35b);transform-origin:50% 100%"></div>
+          </div>
+          <div id="p3-mark" style="position:absolute;left:300px;width:480px;top:944px;border-top:3px dashed rgba(246,238,223,.85)"></div>
+          <div id="p3-label" style="position:absolute;left:790px;top:922px;font-family:Montserrat,sans-serif;font-weight:700;
+            font-size:30px;letter-spacing:.2em;color:#f6eedf">CUKUP</div>
+          <div id="p3-spark"></div>
+        </div>
+    </div>
+    <div class="chip" id="p3-chip"><span><b>03</b> / 08</span></div>
+    <div class="head" id="p3-head">
+      <div class="lead" id="p3-h0">Rezeki yang</div>
+      <div class="key" id="p3-h1">cukup dan berkat</div>
+    </div>
+  </div>
+  <script>
+    (function () {
+      const tl = gsap.timeline({ paused: true });
+      tl.fromTo("#p3-bg", { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "sine.out" }, 0);
+      tl.fromTo("#p3-chip", { opacity: 0, y: -10 }, { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, 0.15);
+      tl.fromTo("#p3-h0", { opacity: 0, y: 18, filter: "blur(8px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.7, ease: "power2.out" }, 0.30);
+      tl.fromTo("#p3-h1", { opacity: 0, y: 18, filter: "blur(8px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.7, ease: "power2.out" }, 0.65);
+      
+      tl.fromTo("#p3-bowl", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.7, ease: "power2.out" }, 0.4);
+        tl.fromTo(["#p3-mark", "#p3-label"], { opacity: 0 }, { opacity: 1, duration: 0.5 }, 0.9);
+        // Fills exactly to the "enough" line, no further.
+        tl.fromTo("#p3-fill", { scaleY: 0.02 }, { scaleY: 0.705, duration: 2.0, ease: "power2.inOut" }, 1.1);
+        const host = document.getElementById("p3-spark");
+        [[360, 860], [700, 830], [300, 1120], [770, 1110], [540, 770], [450, 1260], [640, 1250]].forEach(([x, y], k) => {
+          const s = document.createElement("div");
+          s.style.cssText = `position:absolute;left:${x}px;top:${y}px;width:26px;height:26px;background:#fff1cf;
+            clip-path:polygon(50% 0,60% 40%,100% 50%,60% 60%,50% 100%,40% 60%,0 50%,40% 40%);`;
+          host.appendChild(s);
+          tl.fromTo(s, { opacity: 0, scale: 0.2, rotation: 0 }, { opacity: 1, scale: 1.2, rotation: 45, duration: 0.5, ease: "back.out(2)" }, 3.1 + k * 0.12);
+          tl.to(s, { opacity: 0.35, scale: 0.8, duration: 0.6, ease: "sine.inOut" }, 3.7 + k * 0.12);
+        });
+      // Dissolve to midnight before the next point.
+      tl.to(["#p3-art", "#p3-chip", "#p3-head"], { opacity: 0, duration: 0.4, ease: "sine.in" }, 4.55);
+      tl.set({}, {}, 5.0);
+      window.__timelines["p3"] = tl;
+    })();
+  </script>
+</template>

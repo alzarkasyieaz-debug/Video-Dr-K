@@ -1,0 +1,55 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
+    #root .bg { position: absolute; inset: 0;
+      background: radial-gradient(110% 70% at 50% 42%, #1a3663 0%, #0b1a30 58%, #050c18 100%); }
+    #root .chip { position: absolute; left: 0; right: 0; top: 232px; text-align: center; }
+    #root .chip span { display: inline-block; padding: 12px 30px; border: 1.5px solid rgba(226,189,114,.75);
+      border-radius: 40px; background: rgba(8,18,34,.55); font-family: "Montserrat", sans-serif;
+      font-weight: 600; font-size: 28px; letter-spacing: .24em; color: #f6eedf; }
+    #root .chip b { color: #e2bd72; font-weight: 700; }
+    #root .head { position: absolute; left: 0; right: 0; top: 352px; padding: 0 90px; text-align: center; }
+    #root .lead { font-family: "Montserrat", sans-serif; font-weight: 600; font-size: 56px; line-height: 1.2;
+      color: #f6eedf; text-shadow: 0 3px 24px rgba(4,10,22,.8); }
+    #root .key { font-family: "Playfair Display", serif; font-style: italic; font-size: 100px; line-height: 1.12;
+      color: #f0cd84; text-shadow: 0 0 50px rgba(233,163,91,.45), 0 3px 24px rgba(4,10,22,.8); }
+    #root .art { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; }
+  </style>
+  <div id="root" data-composition-id="p6" data-width="1080" data-height="1920">
+    <div class="bg" id="p6-bg"></div>
+    <div id="p6-art">
+    <svg class="art" viewBox="0 0 1080 1920">
+          <defs><radialGradient id="p6-o"><stop offset="0" stop-color="#fff6e6"/><stop offset=".3" stop-color="#f0cd84" stop-opacity=".8"/>
+          <stop offset="1" stop-color="#e9a35b" stop-opacity="0"/></radialGradient>
+          <linearGradient id="p6-road" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1d3a63" stop-opacity=".2"/>
+          <stop offset="1" stop-color="#1d3a63" stop-opacity=".9"/></linearGradient></defs>
+          <path d="M 500 800 L 580 800 L 900 1320 L 180 1320 Z" fill="url(#p6-road)"/>
+          <path d="M 500 800 L 180 1320 M 580 800 L 900 1320" stroke="#e2bd72" stroke-width="3" opacity=".6"/>
+          <g id="p6-a"><circle cx="0" cy="0" r="70" fill="url(#p6-o)"/></g>
+          <g id="p6-b"><circle cx="0" cy="0" r="70" fill="url(#p6-o)"/></g>
+        </svg>
+    </div>
+    <div class="chip" id="p6-chip"><span><b>06</b> / 08</span></div>
+    <div class="head" id="p6-head">
+      <div class="lead" id="p6-h0">Sahabat yang</div>
+      <div class="key" id="p6-h1">ikhlas</div>
+    </div>
+  </div>
+  <script>
+    (function () {
+      const tl = gsap.timeline({ paused: true });
+      tl.fromTo("#p6-bg", { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "sine.out" }, 0);
+      tl.fromTo("#p6-chip", { opacity: 0, y: -10 }, { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, 0.15);
+      tl.fromTo("#p6-h0", { opacity: 0, y: 18, filter: "blur(8px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.7, ease: "power2.out" }, 0.30);
+      tl.fromTo("#p6-h1", { opacity: 0, y: 18, filter: "blur(8px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.7, ease: "power2.out" }, 0.65);
+      
+      // Two lights walk the same road together, side by side, into the distance.
+        tl.fromTo("#p6-a", { x: 440, y: 1280, scale: 1.2, opacity: 0 }, { x: 524, y: 860, scale: 0.35, opacity: 1, duration: 4.0, ease: "sine.inOut" }, 0.5);
+        tl.fromTo("#p6-b", { x: 640, y: 1280, scale: 1.2, opacity: 0 }, { x: 556, y: 860, scale: 0.35, opacity: 1, duration: 4.0, ease: "sine.inOut" }, 0.5);
+      // Dissolve to midnight before the next point.
+      tl.to(["#p6-art", "#p6-chip", "#p6-head"], { opacity: 0, duration: 0.4, ease: "sine.in" }, 4.55);
+      tl.set({}, {}, 5.0);
+      window.__timelines["p6"] = tl;
+    })();
+  </script>
+</template>

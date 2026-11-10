@@ -1,0 +1,52 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
+    #root .bg { position: absolute; inset: 0;
+      background: radial-gradient(110% 70% at 50% 42%, #1a3663 0%, #0b1a30 58%, #050c18 100%); }
+    #root .chip { position: absolute; left: 0; right: 0; top: 232px; text-align: center; }
+    #root .chip span { display: inline-block; padding: 12px 30px; border: 1.5px solid rgba(226,189,114,.75);
+      border-radius: 40px; background: rgba(8,18,34,.55); font-family: "Montserrat", sans-serif;
+      font-weight: 600; font-size: 28px; letter-spacing: .24em; color: #f6eedf; }
+    #root .chip b { color: #e2bd72; font-weight: 700; }
+    #root .head { position: absolute; left: 0; right: 0; top: 352px; padding: 0 90px; text-align: center; }
+    #root .lead { font-family: "Montserrat", sans-serif; font-weight: 600; font-size: 56px; line-height: 1.2;
+      color: #f6eedf; text-shadow: 0 3px 24px rgba(4,10,22,.8); }
+    #root .key { font-family: "Playfair Display", serif; font-style: italic; font-size: 100px; line-height: 1.12;
+      color: #f0cd84; text-shadow: 0 0 50px rgba(233,163,91,.45), 0 3px 24px rgba(4,10,22,.8); }
+    #root .art { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; }
+
+    #hk-ring { position: absolute; left: 250px; top: 450px; width: 580px; height: 580px; border-radius: 50%;
+      border: 2px solid rgba(226,189,114,.35);
+      background: repeating-conic-gradient(from 0deg, rgba(226,189,114,.5) 0deg .8deg, rgba(0,0,0,0) .8deg 30deg);
+      -webkit-mask-image: radial-gradient(circle, transparent 64%, #000 65%, #000 70%, transparent 71%);
+      mask-image: radial-gradient(circle, transparent 64%, #000 65%, #000 70%, transparent 71%); }
+    #hk-top { position: absolute; left: 0; right: 0; top: 330px; text-align: center; font-family: "Montserrat", sans-serif;
+      font-weight: 700; font-size: 58px; letter-spacing: .14em; color: #f6eedf; }
+    #hk-40 { position: absolute; left: 0; right: 0; top: 520px; text-align: center; font-family: "Playfair Display", serif;
+      font-size: 360px; line-height: 1; color: #f0cd84; text-shadow: 0 0 90px rgba(233,163,91,.45); }
+    #hk-tahun { position: absolute; left: 0; right: 0; top: 1070px; text-align: center; font-family: "Montserrat", sans-serif;
+      font-weight: 700; font-size: 58px; letter-spacing: .3em; color: #f6eedf; }
+    #hk-q { position: absolute; left: 0; right: 0; top: 1170px; text-align: center; font-family: "Playfair Display", serif;
+      font-style: italic; font-size: 78px; color: #fbf6ec; text-shadow: 0 3px 24px rgba(4,10,22,.8); }
+  </style>
+  <div id="root" data-composition-id="hook" data-width="1080" data-height="1920">
+    <div class="bg" id="hk-bg"></div>
+    <div id="hk-ring"></div>
+    <div id="hk-top">SELEPAS UMUR</div>
+    <div id="hk-40">40</div>
+    <div id="hk-tahun">TAHUN,</div>
+    <div id="hk-q">kekayaan sebenar adalah…</div>
+  </div>
+  <script>
+    (function () {
+      const tl = gsap.timeline({ paused: true });
+      // Frame 0 is the thumbnail: the age is already on screen.
+      tl.fromTo("#hk-ring", { rotation: 0, opacity: 0.6 }, { rotation: 40, opacity: 1, duration: 5.0, ease: "none" }, 0);
+      tl.fromTo("#hk-40", { scale: 1.06 }, { scale: 1, duration: 5.0, ease: "sine.out" }, 0);
+      tl.fromTo("#hk-q", { opacity: 0, y: 20, filter: "blur(10px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 1.0, ease: "power2.out" }, 1.4);
+      tl.to(["#hk-ring", "#hk-top", "#hk-40", "#hk-tahun", "#hk-q"], { opacity: 0, duration: 0.45, ease: "sine.in" }, 5.0);
+      tl.set({}, {}, 5.5);
+      window.__timelines["hook"] = tl;
+    })();
+  </script>
+</template>
