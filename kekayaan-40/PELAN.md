@@ -1,6 +1,6 @@
 # "Selepas Umur 40 Tahun, Kekayaan Sebenar Adalah…"
 
-Video 9:16 (1080×1920, 30 fps, H.264), **57.5 saat**. Gaya sama seperti video *Hati-hati Memilih
+Video 9:16 (1080×1920, 30 fps, H.264), **64.5 saat** dengan voice over. Gaya sama seperti video *Hati-hati Memilih
 Bahagia*: biru malam, emas lembut, amber dan krim; Montserrat untuk teks bacaan dan Playfair
 Display italik untuk perkataan bermakna; gerakan perlahan, dissolve ke biru malam dan animasi
 simbolik bagi setiap poin.
@@ -8,7 +8,7 @@ simbolik bagi setiap poin.
 Semua teks diambil **verbatim** daripada infografik yang dibekalkan. Gambar keluarga daripada
 infografik yang sama (dipotong tanpa panel teks: `assets/img/keluarga.jpg`).
 
-Output: `renders/kekayaan-sebenar-selepas-40_1080x1920.mp4`
+Output: `renders/kekayaan-sebenar-selepas-40_vo_1080x1920.mp4` (dengan voice over). Kredit **@NakSeeHeart** pada setiap babak.
 
 ## Timeline
 
@@ -24,13 +24,40 @@ Output: `renders/kekayaan-sebenar-selepas-40_1080x1920.mp4`
 | 0:35.5–0:40.5 | 07 | Hidup ***tanpa beban hutang*** | Batu "HUTANG" tergantung pada cahaya; tali terlepas, batu jatuh, cahaya naik bebas |
 | 0:40.5–0:45.5 | 08 | Masa untuk mendekatkan diri ***kepada Allah*** | Langit malam, bulan sabit, bintang berkelip, cahaya naik di sebalik siluet masjid |
 | 0:45.5–0:51.0 | Penutup | Bila usia semakin meningkat, *hidup yang sederhana tetapi tenang* terasa jauh lebih berharga. | Gambar keluarga sebagai latar lembut (dimalapkan) |
-| 0:51.0–0:57.5 | Rumusan | Senarai 01–08 + @NakSeeHeart | Senarai muncul satu demi satu dan ditahan, sesuai untuk di-screenshot atau disimpan |
+| akhir | Rumusan | Senarai 01–08 (kredit @NakSeeHeart di bawah) | Senarai muncul satu demi satu dan ditahan, sesuai untuk di-screenshot atau disimpan |
 
-## Audio
+## Voice over (suara dalam)
 
-Video ini **tanpa bunyi** (tiada suara penyampai dan tiada sumber muzik berlesen dalam
-persekitaran ini). Semasa memuat naik, pilih muzik daripada pustaka platform (cari "soft
-emotional piano" / "calm reflective piano"). Tempo perlahan sesuai dengan babak 5 saat.
+Narasi Bahasa Melayu baharu dalam **suara sintetik lelaki yang dalam**, dijana secara tempatan
+dengan model terbuka Meta **MMS-TTS** (`facebook/mms-tts-zlm`). Ia **bukan** suara @NakSeeHeart
+dan tidak meniru sesiapa. Setiap frasa dijana berasingan dengan jeda yang disengajakan, kemudian
+pitch diturunkan ~4.7 semiton (dari 172 Hz ke **132 Hz**), tempo diperlahankan sedikit, bass
+dipanaskan dan ruang kecil ditambah, dengan loudness −16 LUFS.
+
+| Babak | Narasi |
+| --- | --- |
+| Hook | "Selepas umur empat puluh tahun… kekayaan sebenar… adalah" |
+| 01–08 | "Yang pertama, kesihatan yang masih baik." … "Dan yang kelapan, masa untuk mendekatkan diri kepada Allah." |
+| Penutup | "Bila usia semakin meningkat… hidup yang sederhana, tetapi tenang… terasa jauh lebih berharga." |
+| Rumusan | (tiada narasi, senarai dipaparkan) |
+
+Panjang setiap babak mengikut suara (`assets/voice/meta.json`). Teks muncul tepat bila disebut.
+Video kini **64.5 saat**.
+
+Kejelasan disemak dengan transkripsi semula (Whisper): semua baris difahami dengan betul,
+kecuali "keenam" yang kedengaran sedikit kabur ("kanam"). Angka 06 tetap terpapar pada skrin.
+
+**Muzik:** belum ada (tiada sumber berlesen di sini). Tambah piano lembut daripada pustaka
+TikTok/Reels pada volum rendah (10–15%) supaya narasi kekal dominan.
+
+**Nota platform:** TikTok/Meta mungkin meminta label kandungan AI bagi suara sintetik.
+
+Jana semula suara (perlu Python + torch CPU + transformers; model boleh dimuat turun ke folder
+tempatan dan ditunjuk dengan `MMS_MODEL_DIR`):
+
+```bash
+cd kekayaan-40 && python tools/voiceover.py && python3 tools/build.py
+```
 
 ## Kapsyen media sosial
 

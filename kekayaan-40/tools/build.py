@@ -362,7 +362,6 @@ def recap_scene():
     <div id="rc-h1">SELEPAS UMUR 40 TAHUN,</div>
     <div id="rc-h2">kekayaan sebenar…</div>
 """ + "\n".join(rows) + """
-    <div id="rc-tag">@NakSeeHeart</div>
   </div>
   <script>
     (function () {
@@ -372,7 +371,6 @@ def recap_scene():
       for (let k = 0; k < 8; k++) {
         tl.fromTo("#rc-r" + k, { opacity: 0, x: -24 }, { opacity: 1, x: 0, duration: 0.5, ease: "power2.out" }, 0.8 + k * 0.18);
       }
-      tl.fromTo("#rc-tag", { opacity: 0 }, { opacity: 1, duration: 0.6 }, 2.5);
       tl.set({}, {}, """ + str(RECAP) + """);
       window.__timelines["recap"] = tl;
     })();

@@ -4,7 +4,7 @@ The narration is new editorial voiceover in a synthetic voice: it is NOT the voi
 @NakSeeHeart and does not imitate anyone. The text follows the infographic.
 
 Each line is built from short phrases joined by deliberate pauses, then deepened:
-pitch down ~3 semitones, slower delivery, warm low end, a little room, loudness to
+pitch down ~4.7 semitones, slower delivery, warm low end, a little room, loudness to
 -16 LUFS. Output: assets/voice/<id>.wav and assets/voice/meta.json (durations).
 
 Run (needs torch, transformers, soundfile):  python tools/voiceover.py
@@ -20,25 +20,26 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 OUT = ROOT / "assets" / "voice"
 TMP = ROOT / ".voice-tmp"
 
-MODEL = "facebook/mms-tts-zlm"  # Malay
+MODEL = __import__("os").environ.get("MMS_MODEL_DIR", "facebook/mms-tts-zlm")  # Malay (local dir if set)
 SEED = 40
 
 # id: [(phrase, pause after in seconds)]
 LINES = {
     "hook": [("selepas umur empat puluh tahun", 0.55), ("kekayaan sebenar", 0.35), ("adalah", 0.0)],
-    "p1": [("pertama", 0.45), ("kesihatan yang masih baik", 0.0)],
-    "p2": [("kedua", 0.45), ("hati yang tenang", 0.0)],
-    "p3": [("ketiga", 0.45), ("rezeki yang cukup", 0.3), ("dan berkat", 0.0)],
-    "p4": [("keempat", 0.45), ("keluarga yang bahagia", 0.0)],
-    "p5": [("kelima", 0.45), ("anak anak yang sihat", 0.0)],
-    "p6": [("keenam", 0.45), ("sahabat yang ikhlas", 0.0)],
-    "p7": [("ketujuh", 0.45), ("hidup tanpa beban hutang", 0.0)],
-    "p8": [("dan kelapan", 0.45), ("masa untuk mendekatkan diri", 0.25), ("kepada allah", 0.0)],
+    # Ordinals are spoken inside the phrase: on their own the model slurs them.
+    "p1": [("yang pertama kesihatan yang masih baik", 0.0)],
+    "p2": [("yang kedua hati yang tenang", 0.0)],
+    "p3": [("yang ketiga rezeki yang cukup", 0.3), ("dan berkat", 0.0)],
+    "p4": [("yang keempat keluarga yang bahagia", 0.0)],
+    "p5": [("yang kelima anak anak yang sihat", 0.0)],
+    "p6": [("yang keenam sahabat yang ikhlass", 0.0)],  # spelt for a clear final "s"
+    "p7": [("yang ketujuh hidup tanpa beban hutang", 0.0)],
+    "p8": [("dan yang kelapan masa untuk mendekatkan diri kepada allah", 0.0)],
     "quote": [("bila usia semakin meningkat", 0.5), ("hidup yang sederhana", 0.3), ("tetapi tenang", 0.5),
               ("terasa jauh lebih berharga", 0.0)],
 }
 
-PITCH = 0.84    # resample factor: ~3 semitones down
+PITCH = 0.76    # resample factor: ~4.7 semitones down (deep)
 TEMPO = 0.94    # overall a touch slower than the model's natural pace
 
 

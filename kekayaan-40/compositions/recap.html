@@ -39,7 +39,6 @@
       <div class="rc-row" id="rc-r5" style="top:960px"><span class="rc-n">06</span><span class="rc-t">Sahabat yang ikhlas</span></div>
       <div class="rc-row" id="rc-r6" style="top:1058px"><span class="rc-n">07</span><span class="rc-t">Hidup tanpa beban hutang</span></div>
       <div class="rc-row" id="rc-r7" style="top:1156px"><span class="rc-n">08</span><span class="rc-t">Masa untuk mendekatkan diri kepada Allah</span></div>
-    <div id="rc-tag">@NakSeeHeart</div>
   </div>
   <script>
     (function () {
@@ -49,7 +48,6 @@
       for (let k = 0; k < 8; k++) {
         tl.fromTo("#rc-r" + k, { opacity: 0, x: -24 }, { opacity: 1, x: 0, duration: 0.5, ease: "power2.out" }, 0.8 + k * 0.18);
       }
-      tl.fromTo("#rc-tag", { opacity: 0 }, { opacity: 1, duration: 0.6 }, 2.5);
       tl.set({}, {}, 6.5);
       window.__timelines["recap"] = tl;
     })();

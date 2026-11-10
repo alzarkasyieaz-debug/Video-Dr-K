@@ -1,0 +1,88 @@
+{
+  "hook": {
+    "file": "assets/voice/hook.wav",
+    "duration": 6.142,
+    "starts": [
+      0.0,
+      3.35,
+      5.133
+    ],
+    "text": "selepas umur empat puluh tahun · kekayaan sebenar · adalah"
+  },
+  "p1": {
+    "file": "assets/voice/p1.wav",
+    "duration": 3.719,
+    "starts": [
+      0.0
+    ],
+    "text": "yang pertama kesihatan yang masih baik"
+  },
+  "p2": {
+    "file": "assets/voice/p2.wav",
+    "duration": 2.201,
+    "starts": [
+      0.0
+    ],
+    "text": "yang kedua hati yang tenang"
+  },
+  "p3": {
+    "file": "assets/voice/p3.wav",
+    "duration": 3.231,
+    "starts": [
+      0.0,
+      2.116
+    ],
+    "text": "yang ketiga rezeki yang cukup · dan berkat"
+  },
+  "p4": {
+    "file": "assets/voice/p4.wav",
+    "duration": 2.327,
+    "starts": [
+      0.0
+    ],
+    "text": "yang keempat keluarga yang bahagia"
+  },
+  "p5": {
+    "file": "assets/voice/p5.wav",
+    "duration": 2.924,
+    "starts": [
+      0.0
+    ],
+    "text": "yang kelima anak anak yang sihat"
+  },
+  "p6": {
+    "file": "assets/voice/p6.wav",
+    "duration": 2.396,
+    "starts": [
+      0.0
+    ],
+    "text": "yang keenam sahabat yang ikhlass"
+  },
+  "p7": {
+    "file": "assets/voice/p7.wav",
+    "duration": 2.837,
+    "starts": [
+      0.0
+    ],
+    "text": "yang ketujuh hidup tanpa beban hutang"
+  },
+  "p8": {
+    "file": "assets/voice/p8.wav",
+    "duration": 4.166,
+    "starts": [
+      0.0
+    ],
+    "text": "dan yang kelapan masa untuk mendekatkan diri kepada allah"
+  },
+  "quote": {
+    "file": "assets/voice/quote.wav",
+    "duration": 8.116,
+    "starts": [
+      0.0,
+      2.495,
+      4.26,
+      5.966
+    ],
+    "text": "bila usia semakin meningkat · hidup yang sederhana · tetapi tenang · terasa jauh lebih berharga"
+  }
+}

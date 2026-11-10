@@ -41,11 +41,11 @@
     (function () {
       const tl = gsap.timeline({ paused: true });
       // Frame 0 is the thumbnail: the age is already on screen.
-      tl.fromTo("#hk-ring", { rotation: 0, opacity: 0.6 }, { rotation: 40, opacity: 1, duration: 5.0, ease: "none" }, 0);
-      tl.fromTo("#hk-40", { scale: 1.06 }, { scale: 1, duration: 5.0, ease: "sine.out" }, 0);
-      tl.fromTo("#hk-q", { opacity: 0, y: 20, filter: "blur(10px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 1.0, ease: "power2.out" }, 1.2999999999999998);
-      tl.to(["#hk-ring", "#hk-top", "#hk-40", "#hk-tahun", "#hk-q"], { opacity: 0, duration: 0.45, ease: "sine.in" }, 5.0);
-      tl.set({}, {}, 5.5);
+      tl.fromTo("#hk-ring", { rotation: 0, opacity: 0.6 }, { rotation: 40, opacity: 1, duration: 7.09, ease: "none" }, 0);
+      tl.fromTo("#hk-40", { scale: 1.06 }, { scale: 1, duration: 7.09, ease: "sine.out" }, 0);
+      tl.fromTo("#hk-q", { opacity: 0, y: 20, filter: "blur(10px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 1.0, ease: "power2.out" }, 3.6999999999999997);
+      tl.to(["#hk-ring", "#hk-top", "#hk-40", "#hk-tahun", "#hk-q"], { opacity: 0, duration: 0.45, ease: "sine.in" }, 7.09);
+      tl.set({}, {}, 7.59);
       window.__timelines["hook"] = tl;
     })();
   </script>
