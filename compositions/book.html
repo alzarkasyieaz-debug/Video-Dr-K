@@ -1,0 +1,311 @@
+<template>
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      overflow: hidden;
+    }
+    #bk-bg {
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(80% 50% at 50% 40%, #213f6c 0%, #0f2342 45%, #081428 75%, #050c18 100%);
+    }
+    #bk-glow {
+      position: absolute;
+      left: 140px;
+      top: 380px;
+      width: 800px;
+      height: 800px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(255, 214, 150, 0.42) 0%, rgba(233, 163, 91, 0.12) 40%, rgba(233, 163, 91, 0) 70%);
+    }
+    .bk-mote {
+      position: absolute;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: rgba(255, 228, 180, 0.85);
+    }
+    /* Opening line (editorial text, not the presenter's words). */
+    #bk-intro {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 640px;
+      padding: 0 110px;
+      text-align: center;
+    }
+    .bk-i1 {
+      font-family: "Playfair Display", serif;
+      font-style: italic;
+      font-size: 66px;
+      line-height: 1.2;
+      color: #f6eedf;
+    }
+    .bk-i2 {
+      margin-top: 34px;
+      font-family: "Playfair Display", serif;
+      font-style: italic;
+      font-size: 66px;
+      line-height: 1.2;
+      color: #f0cd84;
+    }
+    #bk-title {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 200px;
+      text-align: center;
+    }
+    #bk-t1 {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 700;
+      font-size: 82px;
+      letter-spacing: 0.06em;
+      color: #f6eedf;
+      line-height: 1.05;
+    }
+    #bk-t1 em {
+      font-style: normal;
+      color: #f0cd84;
+    }
+    #bk-auth {
+      margin-top: 16px;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 600;
+      font-size: 30px;
+      letter-spacing: 0.16em;
+      color: rgba(246, 238, 223, 0.78);
+    }
+    #bk-stage {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 420px;
+      height: 660px;
+      perspective: 1500px;
+    }
+    #bk-spreads {
+      position: absolute;
+      left: 110px;
+      top: 150px;
+      width: 470px;
+      border-radius: 10px;
+      box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+      opacity: 0;
+    }
+    .bk-page {
+      position: absolute;
+      left: 340px;
+      top: 54px;
+      width: 380px;
+      height: 548px;
+      background: linear-gradient(90deg, #efe5d1 0%, #fbf6ec 70%, #e8dcc4 100%);
+      border-radius: 2px 6px 6px 2px;
+      transform-origin: 0% 50%;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+      opacity: 0;
+    }
+    #bk-book {
+      position: absolute;
+      left: 340px;
+      top: 30px;
+      width: 420px;
+      height: 602px;
+      transform-style: preserve-3d;
+    }
+    #bk-img {
+      position: absolute;
+      inset: 0;
+      width: 420px;
+      height: 602px;
+      filter: drop-shadow(0 40px 50px rgba(0, 0, 0, 0.55));
+    }
+    #bk-sweep {
+      position: absolute;
+      inset: 0;
+      -webkit-mask-image: url("assets/book/book-3d.png");
+      mask-image: url("assets/book/book-3d.png");
+      -webkit-mask-size: 100% 100%;
+      mask-size: 100% 100%;
+      overflow: hidden;
+      mix-blend-mode: screen;
+    }
+    #bk-band {
+      position: absolute;
+      top: -100px;
+      left: 0;
+      width: 180px;
+      height: 820px;
+      background: linear-gradient(90deg, rgba(255, 245, 225, 0), rgba(255, 245, 225, 0.75), rgba(255, 245, 225, 0));
+    }
+    #bk-price {
+      position: absolute;
+      left: 770px;
+      top: 20px;
+      width: 168px;
+      height: 168px;
+      border-radius: 50%;
+      background: radial-gradient(circle at 35% 30%, #f6d79a 0%, #e2bd72 55%, #b98a40 100%);
+      box-shadow: 0 14px 34px rgba(0, 0, 0, 0.45);
+      text-align: center;
+      opacity: 0;
+    }
+    #bk-price small {
+      display: block;
+      padding-top: 30px;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 600;
+      font-size: 28px;
+      letter-spacing: 0.14em;
+      color: #3b2a14;
+    }
+    #bk-price b {
+      display: block;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 700;
+      font-size: 46px;
+      color: #1b1e25;
+      line-height: 1.05;
+    }
+    #bk-tag {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 1086px;
+      padding: 0 120px;
+      text-align: center;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+      font-size: 34px;
+      line-height: 1.35;
+      color: rgba(246, 238, 223, 0.92);
+    }
+    #bk-cta {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 1192px;
+      text-align: center;
+    }
+    #bk-pill {
+      display: inline-block;
+      padding: 20px 40px;
+      border-radius: 50px;
+      border: 2px solid rgba(240, 205, 132, 0.9);
+      background: rgba(10, 22, 42, 0.7);
+      font-family: "Montserrat", sans-serif;
+      font-weight: 700;
+      font-size: 34px;
+      color: #f6eedf;
+      letter-spacing: 0.02em;
+    }
+    #bk-cta2 {
+      margin-top: 18px;
+      font-family: "Playfair Display", serif;
+      font-style: italic;
+      font-size: 40px;
+      color: #f0cd84;
+    }
+  </style>
+  <div
+    id="root"
+    data-composition-id="book"
+    data-width="1080"
+    data-height="1920"
+    data-composition-variables='[
+      {"id":"bookTitleA","type":"string","label":"Tajuk (baris utama)","default":"NAK KAHWIN,"},
+      {"id":"bookTitleB","type":"string","label":"Tajuk (penutup)","default":"TAPI…"},
+      {"id":"bookAuthors","type":"string","label":"Penulis","default":"Waleed Amir & Wardah Kasih"},
+      {"id":"bookPrice","type":"string","label":"Harga","default":"RM25"},
+      {"id":"bookTagline","type":"string","label":"Sinopsis ringkas","default":"Buku praktikal untuk yang mahu bersedia sebelum melangkah ke alam perkahwinan."},
+      {"id":"ctaShop","type":"string","label":"Butang CTA","default":"Dapatkan di TikTok Shop Nukhtah Books"},
+      {"id":"ctaLine","type":"string","label":"Baris CTA","default":"Klik pautan di bawah."}
+    ]'
+  >
+    <div id="bk-bg"></div>
+    <div id="bk-glow"></div>
+    <div id="bk-motes"></div>
+
+    <div id="bk-intro">
+      <div class="bk-i1" id="bk-i1">Ada nasihat yang tak cukup didengar sekali…</div>
+      <div class="bk-i2" id="bk-i2">…perlu dibaca dan dihayati.</div>
+    </div>
+
+    <div id="bk-title">
+      <div id="bk-t1"><span data-var-text="bookTitleA">NAK KAHWIN,</span> <em data-var-text="bookTitleB">TAPI…</em></div>
+      <div id="bk-auth" data-var-text="bookAuthors">Waleed Amir &amp; Wardah Kasih</div>
+    </div>
+
+    <div id="bk-stage">
+      <img id="bk-spreads" src="assets/book/spreads.jpg" alt="" />
+      <div class="bk-page" id="bk-pg1"></div>
+      <div class="bk-page" id="bk-pg2"></div>
+      <div id="bk-book">
+        <img id="bk-img" src="assets/book/book-3d.png" alt="Kulit buku Nak Kahwin, Tapi…" />
+        <div id="bk-sweep"><div id="bk-band"></div></div>
+      </div>
+      <div id="bk-price"><small>HARGA</small><b data-var-text="bookPrice">RM25</b></div>
+    </div>
+
+    <div id="bk-tag" data-var-text="bookTagline">Buku praktikal untuk yang mahu bersedia sebelum melangkah ke alam perkahwinan.</div>
+
+    <div id="bk-cta">
+      <div id="bk-pill" data-var-text="ctaShop">Dapatkan di TikTok Shop Nukhtah Books</div>
+      <div id="bk-cta2" data-var-text="ctaLine">Klik pautan di bawah.</div>
+    </div>
+  </div>
+  <script>
+    (function () {
+      let s = 31337;
+      const rnd = () => ((s = (s * 1664525 + 1013904223) % 4294967296) / 4294967296);
+      const host = document.getElementById("bk-motes");
+      const motes = [];
+      for (let i = 0; i < 34; i++) {
+        const m = document.createElement("div");
+        m.className = "bk-mote";
+        m.style.left = rnd() * 1080 + "px";
+        m.style.top = 180 + rnd() * 1150 + "px";
+        m.style.opacity = (0.15 + rnd() * 0.55).toFixed(2);
+        m.dataset.dy = (-50 - rnd() * 90).toFixed(1);
+        host.appendChild(m);
+        motes.push(m);
+      }
+
+      const tl = gsap.timeline({ paused: true });
+      tl.fromTo("#bk-bg", { opacity: 0 }, { opacity: 1, duration: 0.6, ease: "sine.out" }, 0);
+      tl.fromTo("#bk-glow", { opacity: 0, scale: 0.8 }, { opacity: 1, scale: 1, duration: 3, ease: "sine.out" }, 0.2);
+      motes.forEach((m) => tl.fromTo(m, { y: 0 }, { y: +m.dataset.dy, duration: 12.9, ease: "none" }, 0));
+
+      // A bridge from the advice to the book (0.3 - 3.3).
+      tl.fromTo("#bk-i1", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.8, ease: "power2.out" }, 0.35);
+      tl.fromTo("#bk-i2", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.8, ease: "power2.out" }, 1.7);
+      tl.to("#bk-intro", { opacity: 0, y: -20, duration: 0.5, ease: "sine.in" }, 3.0);
+
+      // Elegant 3D reveal (3.5), slow rotation and a light sweep across the real cover.
+      tl.fromTo("#bk-book", { opacity: 0, rotationY: -38, rotationX: 8, scale: 0.82, y: 60 },
+        { opacity: 1, rotationY: -9, rotationX: 2, scale: 1, y: 0, duration: 2.0, ease: "power3.out" }, 3.5);
+      tl.to("#bk-book", { rotationY: 5, rotationX: 0, duration: 7.4, ease: "sine.inOut" }, 5.5);
+      tl.fromTo("#bk-band", { x: -260, rotation: 18 }, { x: 560, rotation: 18, duration: 1.3, ease: "power1.inOut" }, 5.1);
+      tl.fromTo("#bk-band", { x: -260, rotation: 18 }, { x: 560, rotation: 18, duration: 1.3, ease: "power1.inOut", immediateRender: false }, 9.6);
+      tl.fromTo("#bk-title", { opacity: 0, y: -14 }, { opacity: 1, y: 0, duration: 0.8, ease: "power2.out" }, 4.1);
+
+      // Leaves of the book: pages turn out and an inside spread settles behind it.
+      tl.fromTo("#bk-pg1", { opacity: 0, rotationY: 0 }, { opacity: 1, rotationY: -150, duration: 1.4, ease: "power2.inOut" }, 5.6);
+      tl.to("#bk-pg1", { opacity: 0, duration: 0.3, ease: "sine.in" }, 7.0);
+      tl.fromTo("#bk-pg2", { opacity: 0, rotationY: 0 }, { opacity: 1, rotationY: -150, duration: 1.4, ease: "power2.inOut" }, 5.95);
+      tl.to("#bk-pg2", { opacity: 0, duration: 0.3, ease: "sine.in" }, 7.35);
+      tl.fromTo("#bk-spreads", { opacity: 0, x: 120, rotation: 0 }, { opacity: 0.92, x: -40, rotation: -9, duration: 1.4, ease: "power2.out" }, 6.6);
+
+      tl.fromTo("#bk-tag", { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.8, ease: "power2.out" }, 6.9);
+      tl.fromTo("#bk-price", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.6, ease: "back.out(1.6)" }, 7.6);
+
+      // Calm CTA (8.4 onward), held to the end.
+      tl.fromTo("#bk-pill", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.7, ease: "power2.out" }, 8.4);
+      tl.fromTo("#bk-cta2", { opacity: 0 }, { opacity: 1, duration: 0.7, ease: "sine.out" }, 8.9);
+      tl.set({}, {}, 12.87);
+      window.__timelines["book"] = tl;
+    })();
+  </script>
+</template>

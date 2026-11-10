@@ -1,0 +1,97 @@
+<template>
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+    }
+    /* Seats the subtitles and covers the creator's burned-in subtitles and bottom watermark. */
+    #fr-bottom {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 960px;
+      bottom: 0;
+      background: linear-gradient(
+        180deg,
+        rgba(11, 26, 48, 0) 0px,
+        rgba(11, 26, 48, 0.55) 200px,
+        rgba(11, 26, 48, 0.86) 330px,
+        rgba(9, 21, 40, 1) 420px,
+        rgba(7, 16, 31, 1) 100%
+      );
+    }
+    #fr-top {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      height: 360px;
+      background: linear-gradient(180deg, rgba(8, 18, 34, 0.72) 0%, rgba(8, 18, 34, 0) 100%);
+    }
+    #fr-vignette {
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(90% 62% at 50% 38%, rgba(0, 0, 0, 0) 55%, rgba(4, 9, 20, 0.55) 100%);
+    }
+    #fr-gold-rule {
+      position: absolute;
+      left: 440px;
+      width: 200px;
+      top: 1428px;
+      height: 2px;
+      background: linear-gradient(90deg, rgba(226, 189, 114, 0), rgba(226, 189, 114, 0.7), rgba(226, 189, 114, 0));
+    }
+    #fr-credit {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 1446px;
+      text-align: center;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 600;
+      font-size: 28px;
+      letter-spacing: 0.12em;
+      color: rgba(246, 238, 223, 0.62);
+    }
+    /* Dip-through-midnight between locations, and a warm light fade at the hook's end. */
+    #fr-dip {
+      position: absolute;
+      inset: 0;
+      background: #08111f;
+      opacity: 0;
+    }
+    #fr-light {
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(70% 50% at 50% 40%, rgba(255, 232, 196, 0.95), rgba(233, 163, 91, 0.35) 60%, rgba(233, 163, 91, 0) 100%);
+      opacity: 0;
+      mix-blend-mode: screen;
+    }
+  </style>
+  <div id="root" data-composition-id="frame" data-width="1080" data-height="1920">
+    <div id="fr-vignette"></div>
+    <div id="fr-top"></div>
+    <div id="fr-bottom"></div>
+    <div id="fr-gold-rule"></div>
+    <div id="fr-credit">@NakSeeHeart</div>
+    <div id="fr-dip"></div>
+    <div id="fr-light"></div>
+  </div>
+  <script>
+    (function () {
+      const tl = gsap.timeline({ paused: true });
+      tl.fromTo("#fr-credit", { opacity: 0 }, { opacity: 1, duration: 1.2, ease: "sine.out" }, 0.4);
+      // Warm light fade out of the hook.
+      tl.fromTo("#fr-light", { opacity: 0 }, { opacity: 0.55, duration: 0.3, ease: "sine.in" }, 7.62);
+      tl.to("#fr-light", { opacity: 0, duration: 0.55, ease: "sine.out" }, 7.92);
+      // Dips where the location changes.
+      [25.55, 77.27].forEach((t) => {
+        tl.fromTo("#fr-dip", { opacity: 0 }, { opacity: 0.85, duration: 0.18, ease: "sine.in" }, t - 0.18);
+        tl.to("#fr-dip", { opacity: 0, duration: 0.45, ease: "sine.out" }, t);
+      });
+      tl.set({}, {}, 102.13);
+      window.__timelines["frame"] = tl;
+    })();
+  </script>
+</template>

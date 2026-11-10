@@ -1,0 +1,186 @@
+<template>
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+    }
+    .a1-chip {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 196px;
+      text-align: center;
+    }
+    .a1-chip span {
+      display: inline-block;
+      padding: 14px 30px;
+      border: 1.5px solid rgba(226, 189, 114, 0.75);
+      border-radius: 40px;
+      background: rgba(8, 18, 34, 0.55);
+      font-family: "Montserrat", sans-serif;
+      font-weight: 600;
+      font-size: 28px;
+      letter-spacing: 0.2em;
+      color: #f6eedf;
+    }
+    .a1-chip b {
+      color: #e2bd72;
+      font-weight: 700;
+    }
+    .a1-card {
+      position: absolute;
+      inset: 0;
+      opacity: 0;
+      overflow: hidden;
+      background: radial-gradient(110% 70% at 50% 38%, #18325c 0%, #0b1a30 58%, #050c18 100%);
+    }
+    .a1-orb {
+      position: absolute;
+      top: 520px;
+      width: 260px;
+      height: 260px;
+      margin-left: -130px;
+      border-radius: 50%;
+    }
+    #a1-orbA {
+      left: 540px;
+      background: radial-gradient(circle, rgba(255, 236, 200, 1) 0%, rgba(240, 205, 132, 0.75) 22%, rgba(233, 163, 91, 0.18) 52%, rgba(233, 163, 91, 0) 70%);
+    }
+    #a1-orbB {
+      left: 540px;
+      background: radial-gradient(circle, rgba(255, 250, 240, 1) 0%, rgba(214, 226, 245, 0.7) 22%, rgba(150, 180, 230, 0.16) 52%, rgba(150, 180, 230, 0) 70%);
+    }
+    #a1-thread {
+      position: absolute;
+      left: 340px;
+      top: 649px;
+      width: 400px;
+      height: 3px;
+      background: linear-gradient(90deg, rgba(240, 205, 132, 0), rgba(240, 205, 132, 0.95), rgba(240, 205, 132, 0));
+      transform-origin: 50% 50%;
+    }
+    .a1-mote {
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: rgba(255, 228, 180, 0.8);
+    }
+    .a1-big {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 560px;
+      text-align: center;
+      font-family: "Playfair Display", serif;
+      font-style: italic;
+      font-size: 200px;
+      color: #f0cd84;
+      text-shadow: 0 0 70px rgba(233, 163, 91, 0.5);
+    }
+    .a1-sub {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 470px;
+      text-align: center;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 600;
+      font-size: 30px;
+      letter-spacing: 0.34em;
+      color: rgba(246, 238, 223, 0.78);
+    }
+    #a1-rays {
+      position: absolute;
+      left: 40px;
+      top: 160px;
+      width: 1000px;
+      height: 1000px;
+      border-radius: 50%;
+      background: repeating-conic-gradient(from 0deg, rgba(255, 220, 160, 0.16) 0deg 4deg, rgba(255, 220, 160, 0) 4deg 15deg);
+      -webkit-mask-image: radial-gradient(circle, #000 0%, rgba(0, 0, 0, 0.6) 35%, transparent 68%);
+      mask-image: radial-gradient(circle, #000 0%, rgba(0, 0, 0, 0.6) 35%, transparent 68%);
+    }
+    #a1-line {
+      position: absolute;
+      left: 240px;
+      width: 600px;
+      top: 850px;
+      height: 3px;
+      background: linear-gradient(90deg, rgba(240, 205, 132, 0.1), rgba(240, 205, 132, 0.95), rgba(240, 205, 132, 0.1));
+      transform-origin: 0% 50%;
+    }
+  </style>
+  <div id="root" data-composition-id="advice1" data-width="1080" data-height="1920">
+    <!-- "Berkongsi kehidupan dengan insan yang Allah Taala takdirkan kepada kita" -->
+    <div class="a1-card" id="a1-orbs">
+      <div id="a1-motes"></div>
+      <div id="a1-thread"></div>
+      <div class="a1-orb" id="a1-orbA"></div>
+      <div class="a1-orb" id="a1-orbB"></div>
+    </div>
+
+    <!-- "erti syukur yang sebenar" -->
+    <div class="a1-card" id="a1-syukur">
+      <div id="a1-rays"></div>
+      <div class="a1-sub">ERTI SEBENAR</div>
+      <div class="a1-big" id="a1-syukur-w">Syukur</div>
+    </div>
+
+    <!-- "makna sabar yang sebenar" -->
+    <div class="a1-card" id="a1-sabar">
+      <div class="a1-sub">MAKNA SEBENAR</div>
+      <div class="a1-big" id="a1-sabar-w">Sabar</div>
+      <div id="a1-line"></div>
+    </div>
+
+    <div class="a1-chip" id="a1-chip"><span><b>NASIHAT 1</b> · SYUKUR &amp; SABAR</span></div>
+  </div>
+  <script>
+    (function () {
+      let s = 7741;
+      const rnd = () => ((s = (s * 1664525 + 1013904223) % 4294967296) / 4294967296);
+      const host = document.getElementById("a1-motes");
+      const motes = [];
+      for (let i = 0; i < 40; i++) {
+        const m = document.createElement("div");
+        m.className = "a1-mote";
+        m.style.left = rnd() * 1080 + "px";
+        m.style.top = 180 + rnd() * 1100 + "px";
+        m.style.opacity = (0.2 + rnd() * 0.6).toFixed(2);
+        m.dataset.dy = (-40 - rnd() * 90).toFixed(1);
+        host.appendChild(m);
+        motes.push(m);
+      }
+
+      const tl = gsap.timeline({ paused: true });
+      tl.fromTo("#a1-chip", { opacity: 0, y: -8 }, { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" }, 0.35);
+      tl.to("#a1-chip", { opacity: 0, duration: 0.5, ease: "sine.in" }, 15.6);
+
+      // Two souls drawn together (0 - 5.16).
+      tl.fromTo("#a1-orbs", { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "sine.out" }, 0);
+      motes.forEach((m) => tl.fromTo(m, { y: 0 }, { y: +m.dataset.dy, duration: 5.2, ease: "none" }, 0));
+      tl.fromTo("#a1-orbA", { x: -330, y: 40 }, { x: -110, y: 0, duration: 4.2, ease: "sine.inOut" }, 0);
+      tl.fromTo("#a1-orbB", { x: 330, y: -40 }, { x: 110, y: 0, duration: 4.2, ease: "sine.inOut" }, 0);
+      // "takdirkan" (local 3.64): a thread of light binds them.
+      tl.fromTo("#a1-thread", { scaleX: 0, opacity: 0 }, { scaleX: 1, opacity: 1, duration: 0.9, ease: "power2.out" }, 3.6);
+      tl.fromTo(["#a1-orbA", "#a1-orbB"], { scale: 1 }, { scale: 1.12, duration: 0.9, ease: "sine.inOut" }, 3.6);
+      tl.to("#a1-orbs", { opacity: 0, duration: 0.4, ease: "sine.in" }, 4.8);
+
+      // Syukur (8.47 - 10.66): light blooms outward.
+      tl.fromTo("#a1-syukur", { opacity: 0 }, { opacity: 1, duration: 0.3, ease: "sine.out" }, 8.42);
+      tl.fromTo("#a1-rays", { opacity: 0, scale: 0.6, rotation: 0 }, { opacity: 1, scale: 1.15, rotation: 14, duration: 2.2, ease: "power1.out" }, 8.42);
+      tl.fromTo("#a1-syukur-w", { opacity: 0, scale: 0.9, filter: "blur(10px)" }, { opacity: 1, scale: 1, filter: "blur(0px)", duration: 0.8, ease: "power2.out" }, 8.6);
+      tl.to("#a1-syukur", { opacity: 0, duration: 0.3, ease: "sine.in" }, 10.36);
+
+      // Sabar (14.20 - 16.27): the word settles slowly; a line draws at the pace of patience.
+      tl.fromTo("#a1-sabar", { opacity: 0 }, { opacity: 1, duration: 0.3, ease: "sine.out" }, 14.15);
+      tl.fromTo("#a1-sabar-w", { opacity: 0, y: -26, scale: 1.08 }, { opacity: 1, y: 0, scale: 1, duration: 1.6, ease: "sine.out" }, 14.25);
+      tl.fromTo("#a1-line", { scaleX: 0 }, { scaleX: 1, duration: 1.8, ease: "none" }, 14.3);
+      tl.to("#a1-sabar", { opacity: 0, duration: 0.25, ease: "sine.in" }, 16.0);
+      tl.set({}, {}, 16.27);
+      window.__timelines["advice1"] = tl;
+    })();
+  </script>
+</template>

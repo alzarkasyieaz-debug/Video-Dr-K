@@ -1,0 +1,178 @@
+<template>
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+    }
+    .a2-chip {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 196px;
+      text-align: center;
+    }
+    .a2-chip span {
+      display: inline-block;
+      padding: 14px 30px;
+      border: 1.5px solid rgba(226, 189, 114, 0.75);
+      border-radius: 40px;
+      background: rgba(8, 18, 34, 0.55);
+      font-family: "Montserrat", sans-serif;
+      font-weight: 600;
+      font-size: 28px;
+      letter-spacing: 0.2em;
+      color: #f6eedf;
+    }
+    .a2-chip b {
+      color: #e2bd72;
+      font-weight: 700;
+    }
+    #a2-sea {
+      position: absolute;
+      inset: 0;
+      opacity: 0;
+      overflow: hidden;
+    }
+    #a2-sea svg {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 1080px;
+      height: 1920px;
+    }
+    #a2-label {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 330px;
+      text-align: center;
+      font-family: "Playfair Display", serif;
+      font-style: italic;
+      font-size: 64px;
+      color: #f6eedf;
+      text-shadow: 0 4px 30px rgba(4, 10, 22, 0.8);
+    }
+    #a2-label2 {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 420px;
+      text-align: center;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 600;
+      font-size: 28px;
+      letter-spacing: 0.34em;
+      color: rgba(240, 205, 132, 0.95);
+    }
+  </style>
+  <div id="root" data-composition-id="advice2" data-width="1080" data-height="1920">
+    <div id="a2-sea">
+      <svg viewBox="0 0 1080 1920" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="a2-night" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#050c18" />
+            <stop offset="0.45" stop-color="#12284a" />
+            <stop offset="0.6" stop-color="#1d3a63" />
+          </linearGradient>
+          <linearGradient id="a2-dawn" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#2a3d63" />
+            <stop offset="0.32" stop-color="#b46f52" />
+            <stop offset="0.5" stop-color="#f0b86e" />
+            <stop offset="0.6" stop-color="#ffe2b0" />
+          </linearGradient>
+          <radialGradient id="a2-sunglow">
+            <stop offset="0" stop-color="#fff4dc" stop-opacity="1" />
+            <stop offset="0.25" stop-color="#ffd78f" stop-opacity="0.9" />
+            <stop offset="1" stop-color="#f0a35b" stop-opacity="0" />
+          </radialGradient>
+          <radialGradient id="a2-moonglow">
+            <stop offset="0" stop-color="#f6eedf" stop-opacity="0.95" />
+            <stop offset="0.2" stop-color="#e8e2d2" stop-opacity="0.5" />
+            <stop offset="1" stop-color="#e8e2d2" stop-opacity="0" />
+          </radialGradient>
+        </defs>
+        <rect width="1080" height="1920" fill="url(#a2-night)" />
+        <rect id="a2-dawnsky" width="1080" height="1920" fill="url(#a2-dawn)" opacity="0" />
+        <circle id="a2-moon" cx="790" cy="560" r="160" fill="url(#a2-moonglow)" />
+        <circle id="a2-sun" cx="540" cy="1000" r="300" fill="url(#a2-sunglow)" opacity="0" />
+        <g id="a2-w3"><path id="a2-p3" fill="#173459" /></g>
+        <g id="a2-boat">
+          <path d="M-70 0 L70 0 L48 26 L-48 26 Z" fill="#0a1424" />
+          <path d="M-4 -4 L-4 -128 L58 -10 Z" fill="#f6eedf" opacity="0.92" />
+          <path d="M-12 -6 L-12 -98 L-58 -10 Z" fill="#e2bd72" opacity="0.9" />
+        </g>
+        <g id="a2-w2"><path id="a2-p2" fill="#112a4b" /></g>
+        <g id="a2-w1"><path id="a2-p1" fill="#0b1d36" /></g>
+        <g id="a2-rain" opacity="0"></g>
+      </svg>
+      <div id="a2-label2">PELAYARAN SEBUAH RUMAH TANGGA</div>
+    </div>
+    <div class="a2-chip" id="a2-chip"><span><b>NASIHAT 2</b> · UJIAN RUMAH TANGGA</span></div>
+  </div>
+  <script>
+    (function () {
+      const NS = "http://www.w3.org/2000/svg";
+      // Two periods wide so a shift of one period loops without a seam.
+      function wave(baseY, amp, period) {
+        let d = `M 0 ${baseY}`;
+        for (let x = 0; x <= 2160 + 20; x += 20) {
+          d += ` L ${x} ${(baseY + Math.sin((x / period) * Math.PI * 2) * amp).toFixed(1)}`;
+        }
+        return d + " L 2180 1920 L 0 1920 Z";
+      }
+      document.getElementById("a2-p3").setAttribute("d", wave(930, 16, 540));
+      document.getElementById("a2-p2").setAttribute("d", wave(1000, 24, 720));
+      document.getElementById("a2-p1").setAttribute("d", wave(1080, 32, 1080));
+
+      let s = 99173;
+      const rnd = () => ((s = (s * 1664525 + 1013904223) % 4294967296) / 4294967296);
+      const rain = document.getElementById("a2-rain");
+      for (let i = 0; i < 90; i++) {
+        const l = document.createElementNS(NS, "line");
+        const x = rnd() * 1180 - 50;
+        const y = -1600 + rnd() * 2900;
+        const len = 40 + rnd() * 50;
+        l.setAttribute("x1", x);
+        l.setAttribute("y1", y);
+        l.setAttribute("x2", x - len * 0.18);
+        l.setAttribute("y2", y + len);
+        l.setAttribute("stroke", "rgba(214,226,245,0.55)");
+        l.setAttribute("stroke-width", "2");
+        rain.appendChild(l);
+      }
+
+      const tl = gsap.timeline({ paused: true });
+      tl.fromTo("#a2-chip", { opacity: 0, y: -8 }, { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" }, 0.35);
+      tl.to("#a2-chip", { opacity: 0, duration: 0.4, ease: "sine.in" }, 10.7);
+
+      // Sea cutaway (11.10 - 19.15): "Mana mungkin pelayaran sebuah rumah tangga..."
+      const T0 = 11.1, LEN = 8.05;
+      tl.fromTo("#a2-sea", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "sine.out" }, T0);
+      tl.fromTo("#a2-label2", { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.8, ease: "power2.out" }, T0 + 0.4);
+      tl.to("#a2-label2", { opacity: 0, duration: 0.5, ease: "sine.in" }, T0 + 3.6);
+      // Parallax: nearer waves travel faster.
+      tl.fromTo("#a2-w3", { x: 0 }, { x: -540, duration: LEN, ease: "none" }, T0);
+      tl.fromTo("#a2-w2", { x: 0 }, { x: -720, duration: LEN * 0.8, ease: "none" }, T0);
+      tl.fromTo("#a2-w1", { x: 0 }, { x: -1080, duration: LEN * 0.75, ease: "none" }, T0);
+      // The boat rides the swell.
+      tl.fromTo("#a2-boat", { x: 470 }, { x: 610, duration: LEN, ease: "none" }, T0);
+      tl.fromTo("#a2-boat", { rotation: -4 }, { rotation: 4, duration: 1.0, ease: "sine.inOut", yoyo: true, repeat: 7 }, T0);
+      tl.fromTo("#a2-boat", { y: 948 }, { y: 932, duration: 0.95, ease: "sine.inOut", yoyo: true, repeat: 3 }, T0);
+      // "pasang surutnya" (15.10): the sea heaves and the boat with it.
+      tl.fromTo(["#a2-w1", "#a2-w2"], { scaleY: 1, transformOrigin: "50% 100%" }, { scaleY: 1.05, duration: 1.0, ease: "sine.inOut", yoyo: true, repeat: 1 }, 15.0);
+      tl.fromTo("#a2-boat", { y: 948 }, { y: 872, duration: 0.75, ease: "sine.inOut", yoyo: true, repeat: 1, immediateRender: false }, 15.0);
+      tl.fromTo("#a2-boat", { y: 948 }, { y: 936, duration: 0.8, ease: "sine.inOut", yoyo: true, repeat: 2, immediateRender: false }, 16.5);
+      // "hujan" (17.30): rain sweeps through.
+      tl.fromTo("#a2-rain", { opacity: 0 }, { opacity: 1, duration: 0.25, ease: "sine.out" }, 17.2);
+      tl.fromTo("#a2-rain", { y: 0 }, { y: 1500, duration: 1.4, ease: "none" }, 17.2);
+      tl.to("#a2-rain", { opacity: 0, duration: 0.35, ease: "sine.in" }, 18.15);
+      // "panasnya" (18.15): dawn breaks over the same sea.
+      tl.fromTo("#a2-dawnsky", { opacity: 0 }, { opacity: 1, duration: 0.9, ease: "sine.inOut" }, 18.1);
+      tl.fromTo("#a2-sun", { opacity: 0, attr: { cy: 1060 } }, { opacity: 1, attr: { cy: 900 }, duration: 1.0, ease: "power2.out" }, 18.1);
+      tl.to("#a2-moon", { opacity: 0, duration: 0.6, ease: "sine.in" }, 18.1);
+      tl.set({}, {}, 19.15);
+      window.__timelines["advice2"] = tl;
+    })();
+  </script>
+</template>

@@ -1,0 +1,93 @@
+<template>
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+    }
+    #cx-dark {
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(85% 60% at 50% 40%, rgba(5, 10, 22, 0) 35%, rgba(5, 10, 22, 0.75) 100%);
+      opacity: 0;
+    }
+    #cx-hold {
+      position: absolute;
+      inset: 0;
+      background: #070f1d;
+      opacity: 0;
+    }
+    #cx-text {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 190px;
+      text-align: center;
+    }
+    #cx-l1 {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 700;
+      font-size: 60px;
+      letter-spacing: 0.2em;
+      color: #f6eedf;
+      text-shadow: 0 4px 30px rgba(4, 10, 22, 0.9);
+    }
+    #cx-l1 span {
+      display: inline-block;
+    }
+    #cx-l2 {
+      margin-top: -6px;
+      font-family: "Playfair Display", serif;
+      font-style: italic;
+      font-size: 190px;
+      line-height: 1.05;
+      color: #f0cd84;
+      text-shadow: 0 0 60px rgba(233, 163, 91, 0.45), 0 4px 30px rgba(4, 10, 22, 0.9);
+    }
+    #cx-rule {
+      margin: 10px auto 0;
+      width: 260px;
+      height: 2px;
+      background: linear-gradient(90deg, rgba(226, 189, 114, 0), rgba(226, 189, 114, 0.9), rgba(226, 189, 114, 0));
+    }
+    #cx-sub {
+      margin-top: 22px;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 600;
+      font-size: 30px;
+      letter-spacing: 0.3em;
+      color: rgba(246, 238, 223, 0.8);
+    }
+  </style>
+  <div id="root" data-composition-id="climax" data-width="1080" data-height="1920">
+    <div id="cx-dark"></div>
+    <div id="cx-hold"></div>
+    <div id="cx-text">
+      <div id="cx-l1"><span id="cx-w1">JANGAN</span> <span id="cx-w2">PERNAH</span></div>
+      <div id="cx-l2">letih.</div>
+      <div id="cx-rule"></div>
+      <div id="cx-sub">MEMPERTAHANKAN IKATAN</div>
+    </div>
+  </div>
+  <script>
+    (function () {
+      const tl = gsap.timeline({ paused: true });
+      // The room closes in around the most important line.
+      tl.fromTo("#cx-dark", { opacity: 0 }, { opacity: 1, duration: 3.0, ease: "sine.inOut" }, 0);
+      tl.fromTo("#cx-w1", { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, 0.37);
+      tl.fromTo("#cx-w2", { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, 0.86);
+      // "letih" (2.16): the single big line.
+      tl.fromTo("#cx-l2", { opacity: 0, scale: 1.12, filter: "blur(12px)" }, { opacity: 1, scale: 1, filter: "blur(0px)", duration: 1.1, ease: "power3.out" }, 2.12);
+      tl.fromTo("#cx-rule", { scaleX: 0 }, { scaleX: 1, duration: 1.2, ease: "power2.out" }, 2.6);
+      // "ikatan perkahwinan" (4.38).
+      tl.fromTo("#cx-sub", { opacity: 0, y: 8 }, { opacity: 1, y: 0, duration: 0.8, ease: "power2.out" }, 4.38);
+      // Repeated "Jangan pernah letih" (6.09): the word breathes once.
+      tl.fromTo("#cx-l2", { scale: 1 }, { scale: 1.06, duration: 0.6, ease: "sine.inOut", yoyo: true, repeat: 1, immediateRender: false }, 7.2);
+      // Natural silence after "bekal di akhirat" (15.5 - 16.3).
+      tl.fromTo("#cx-hold", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "sine.inOut" }, 15.25);
+      tl.to("#cx-text", { opacity: 0, duration: 0.4, ease: "sine.in" }, 15.85);
+      tl.set({}, {}, 16.3);
+      window.__timelines["climax"] = tl;
+    })();
+  </script>
+</template>

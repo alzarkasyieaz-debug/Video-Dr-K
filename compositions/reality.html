@@ -1,0 +1,177 @@
+<template>
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+    }
+    .rl-card {
+      position: absolute;
+      inset: 0;
+      opacity: 0;
+      overflow: hidden;
+      background: radial-gradient(110% 70% at 50% 36%, #1a3663 0%, #0b1a30 58%, #050c18 100%);
+    }
+    .rl-dot {
+      position: absolute;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(255, 226, 170, 0.9) 0%, rgba(233, 163, 91, 0.25) 45%, rgba(233, 163, 91, 0) 70%);
+    }
+    #rl-word {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 560px;
+      text-align: center;
+      font-family: "Playfair Display", serif;
+      font-style: italic;
+      font-size: 168px;
+      color: #f0cd84;
+      text-shadow: 0 0 60px rgba(233, 163, 91, 0.55);
+    }
+    #rl-halo {
+      position: absolute;
+      left: 190px;
+      top: 340px;
+      width: 700px;
+      height: 700px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(255, 220, 160, 0.35) 0%, rgba(255, 220, 160, 0) 65%);
+    }
+    #rl-q {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 470px;
+      text-align: center;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 600;
+      font-size: 30px;
+      letter-spacing: 0.34em;
+      color: rgba(246, 238, 223, 0.75);
+    }
+    /* Three vessels filled to different levels: one word, many measures. */
+    #rl-vessels {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 470px;
+      height: 420px;
+    }
+    .rl-v {
+      position: absolute;
+      top: 60px;
+      width: 230px;
+      height: 230px;
+      border-radius: 50%;
+      border: 3px solid rgba(240, 205, 132, 0.85);
+      overflow: hidden;
+      box-shadow: 0 0 40px rgba(233, 163, 91, 0.25), inset 0 0 30px rgba(11, 26, 48, 0.6);
+    }
+    .rl-fill {
+      position: absolute;
+      left: -10%;
+      width: 120%;
+      bottom: 0;
+      height: 100%;
+      background: linear-gradient(180deg, rgba(246, 210, 140, 0.95), rgba(233, 163, 91, 0.85));
+      transform-origin: 50% 100%;
+    }
+    .rl-tag {
+      position: absolute;
+      top: 316px;
+      width: 230px;
+      text-align: center;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 600;
+      font-size: 28px;
+      letter-spacing: 0.12em;
+      color: rgba(246, 238, 223, 0.8);
+    }
+    #rl-ray {
+      position: absolute;
+      left: -200px;
+      top: -300px;
+      width: 1480px;
+      height: 1500px;
+      opacity: 0;
+      mix-blend-mode: screen;
+      background: conic-gradient(from 168deg at 50% 0%, rgba(255, 230, 180, 0) 0deg, rgba(255, 230, 180, 0.55) 10deg, rgba(255, 230, 180, 0) 22deg, rgba(255, 215, 150, 0.4) 30deg, rgba(255, 215, 150, 0) 40deg);
+      filter: blur(18px);
+    }
+  </style>
+  <div id="root" data-composition-id="reality" data-width="1080" data-height="1920">
+    <div class="rl-card" id="rl-card1">
+      <div id="rl-dots1"></div>
+      <div id="rl-halo"></div>
+      <div id="rl-q">SEMUA ORANG MAHU</div>
+      <div id="rl-word">bahagia</div>
+    </div>
+
+    <div class="rl-card" id="rl-card2">
+      <div id="rl-dots2"></div>
+      <div id="rl-vessels">
+        <div class="rl-v" id="rl-v1" style="left: 85px"><div class="rl-fill" id="rl-f1"></div></div>
+        <div class="rl-v" id="rl-v2" style="left: 425px"><div class="rl-fill" id="rl-f2"></div></div>
+        <div class="rl-v" id="rl-v3" style="left: 765px"><div class="rl-fill" id="rl-f3"></div></div>
+        <div class="rl-tag" id="rl-t1" style="left: 85px">KELUARGA</div>
+        <div class="rl-tag" id="rl-t2" style="left: 425px">CITA-CITA</div>
+        <div class="rl-tag" id="rl-t3" style="left: 765px">KEHENDAK</div>
+      </div>
+    </div>
+
+    <div id="rl-ray"></div>
+  </div>
+  <script>
+    (function () {
+      // Seeded bokeh (deterministic).
+      let s = 20261110;
+      const rnd = () => ((s = (s * 1664525 + 1013904223) % 4294967296) / 4294967296);
+      const dots = { 1: [], 2: [] };
+      [1, 2].forEach((k) => {
+        const host = document.getElementById("rl-dots" + k);
+        for (let i = 0; i < 26; i++) {
+          const d = document.createElement("div");
+          d.className = "rl-dot";
+          const size = 18 + rnd() * 70;
+          d.style.width = d.style.height = size + "px";
+          d.style.left = rnd() * 1060 + "px";
+          d.style.top = 160 + rnd() * 1150 + "px";
+          d.style.opacity = (0.25 + rnd() * 0.6).toFixed(2);
+          d.dataset.dx = (rnd() * 60 - 30).toFixed(1);
+          d.dataset.dy = (-30 - rnd() * 70).toFixed(1);
+          host.appendChild(d);
+          dots[k].push(d);
+        }
+      });
+
+      const tl = gsap.timeline({ paused: true });
+      // Card 1 (0-3.15): "Siapa dalam dunia ni tak nak bahagia?"
+      tl.fromTo("#rl-card1", { opacity: 0 }, { opacity: 1, duration: 0.35, ease: "sine.out" }, 0);
+      dots[1].forEach((d) => tl.fromTo(d, { x: 0, y: 0 }, { x: +d.dataset.dx, y: +d.dataset.dy, duration: 3.2, ease: "none" }, 0));
+      tl.fromTo("#rl-q", { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" }, 0.25);
+      tl.fromTo("#rl-word", { opacity: 0, scale: 0.92, filter: "blur(10px)" }, { opacity: 1, scale: 1, filter: "blur(0px)", duration: 1.1, ease: "power2.out" }, 1.9);
+      tl.fromTo("#rl-halo", { opacity: 0, scale: 0.7 }, { opacity: 1, scale: 1.1, duration: 1.4, ease: "sine.out" }, 1.9);
+      tl.to("#rl-card1", { opacity: 0, duration: 0.3, ease: "sine.in" }, 2.88);
+
+      // Card 2 (3.15-7.93): "ukuran bahagia bagi setiap orang ini berbeza-beza."
+      tl.fromTo("#rl-card2", { opacity: 0 }, { opacity: 1, duration: 0.35, ease: "sine.out" }, 3.1);
+      dots[2].forEach((d) => tl.fromTo(d, { x: 0, y: 0 }, { x: +d.dataset.dx, y: +d.dataset.dy, duration: 4.9, ease: "none" }, 3.1));
+      [1, 2, 3].forEach((i, k) => {
+        tl.fromTo("#rl-v" + i, { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" }, 3.35 + k * 0.22);
+        tl.fromTo("#rl-t" + i, { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "sine.out" }, 3.7 + k * 0.22);
+      });
+      // Each vessel fills to its own level as "berbeza-beza" lands.
+      [[1, 0.32], [2, 0.66], [3, 0.92]].forEach(([i, lvl], k) => {
+        tl.fromTo("#rl-f" + i, { scaleY: 0.02 }, { scaleY: lvl, duration: 2.2, ease: "power2.inOut" }, 4.6 + k * 0.35);
+      });
+      tl.to("#rl-card2", { opacity: 0, duration: 0.35, ease: "sine.in" }, 7.58);
+
+      // Light from above on "untuk Allah suka pada kita" (out 23.69).
+      tl.fromTo("#rl-ray", { opacity: 0, rotation: -4 }, { opacity: 0.7, rotation: 2, duration: 1.5, ease: "sine.inOut" }, 15.75);
+      tl.to("#rl-ray", { opacity: 0, duration: 0.3, ease: "sine.in" }, 17.3);
+      tl.set({}, {}, 17.65);
+      window.__timelines["reality"] = tl;
+    })();
+  </script>
+</template>

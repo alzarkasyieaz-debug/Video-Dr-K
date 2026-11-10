@@ -1,0 +1,187 @@
+<template>
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+    }
+    #hp-warm {
+      position: absolute;
+      inset: 0;
+      mix-blend-mode: soft-light;
+      background: radial-gradient(90% 60% at 80% 12%, rgba(255, 200, 130, 0.9) 0%, rgba(233, 163, 91, 0.35) 45%, rgba(233, 163, 91, 0) 75%);
+      opacity: 0;
+    }
+    .hp-chip {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 196px;
+      text-align: center;
+    }
+    .hp-chip span {
+      display: inline-block;
+      padding: 14px 30px;
+      border: 1.5px solid rgba(226, 189, 114, 0.75);
+      border-radius: 40px;
+      background: rgba(8, 18, 34, 0.55);
+      font-family: "Montserrat", sans-serif;
+      font-weight: 600;
+      font-size: 28px;
+      letter-spacing: 0.2em;
+      color: #f6eedf;
+    }
+    .hp-chip b {
+      color: #e2bd72;
+      font-weight: 700;
+    }
+    #hp-halves {
+      position: absolute;
+      inset: 0;
+      opacity: 0;
+      background: radial-gradient(110% 70% at 50% 38%, #1d3760 0%, #0d1d36 58%, #060e1c 100%);
+    }
+    .hp-half {
+      position: absolute;
+      top: 470px;
+      width: 180px;
+      height: 360px;
+      overflow: hidden;
+    }
+    .hp-half div {
+      position: absolute;
+      top: 0;
+      width: 360px;
+      height: 360px;
+      border-radius: 50%;
+    }
+    #hp-hl {
+      left: 360px;
+    }
+    #hp-hl div {
+      left: 0;
+      background: radial-gradient(circle at 70% 50%, #ffe3ad 0%, #e2bd72 45%, #b8843e 100%);
+    }
+    #hp-hr {
+      left: 540px;
+    }
+    #hp-hr div {
+      left: -180px;
+      background: radial-gradient(circle at 30% 50%, #ffffff 0%, #f6eedf 45%, #cfc4ae 100%);
+    }
+    #hp-ring {
+      position: absolute;
+      left: 330px;
+      top: 440px;
+      width: 420px;
+      height: 420px;
+      border-radius: 50%;
+      border: 2px solid rgba(255, 226, 170, 0.8);
+      box-shadow: 0 0 80px rgba(255, 210, 140, 0.55);
+    }
+    #hp-card {
+      position: absolute;
+      inset: 0;
+      opacity: 0;
+      background: linear-gradient(180deg, #2b3e63 0%, #9c6a55 30%, #e9b277 52%, #f6dcae 70%, #f6eedf 100%);
+    }
+    #hp-sun {
+      position: absolute;
+      left: 240px;
+      top: 1010px;
+      width: 600px;
+      height: 600px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(255, 248, 230, 1) 0%, rgba(255, 220, 160, 0.6) 30%, rgba(255, 220, 160, 0) 68%);
+    }
+    .hp-pair {
+      position: absolute;
+      left: 0;
+      right: 0;
+      text-align: center;
+    }
+    .hp-a {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 600;
+      font-size: 50px;
+      letter-spacing: 0.02em;
+      color: #fbf6ec;
+      text-shadow: 0 2px 24px rgba(30, 20, 30, 0.45);
+    }
+    .hp-b {
+      font-family: "Playfair Display", serif;
+      font-style: italic;
+      font-size: 108px;
+      line-height: 1.1;
+      color: #fff3da;
+      text-shadow: 0 0 40px rgba(255, 210, 140, 0.6), 0 3px 24px rgba(60, 30, 20, 0.45);
+    }
+    #hp-flare {
+      position: absolute;
+      left: 560px;
+      top: -120px;
+      width: 760px;
+      height: 760px;
+      border-radius: 50%;
+      mix-blend-mode: screen;
+      background: radial-gradient(circle, rgba(255, 240, 210, 0.9) 0%, rgba(255, 200, 130, 0.35) 30%, rgba(255, 200, 130, 0) 65%);
+      opacity: 0;
+    }
+  </style>
+  <div id="root" data-composition-id="hope" data-width="1080" data-height="1920">
+    <div id="hp-warm"></div>
+
+    <!-- "untuk melengkapkan kelemahan dan kekhilafan kita" -->
+    <div id="hp-halves">
+      <div id="hp-ring"></div>
+      <div class="hp-half" id="hp-hl"><div></div></div>
+      <div class="hp-half" id="hp-hr"><div></div></div>
+    </div>
+
+    <!-- "Andai ada kekurangan, baiki bersama. Andai ada kelebihan, rasai bersama." -->
+    <div id="hp-card">
+      <div id="hp-sun"></div>
+      <div class="hp-pair" style="top: 360px">
+        <div class="hp-a" id="hp-a1">Andai ada kekurangan,</div>
+        <div class="hp-b" id="hp-b1">baiki bersama.</div>
+      </div>
+      <div class="hp-pair" style="top: 720px">
+        <div class="hp-a" id="hp-a2">Andai ada kelebihan,</div>
+        <div class="hp-b" id="hp-b2">rasai bersama.</div>
+      </div>
+    </div>
+
+    <div id="hp-flare"></div>
+    <div class="hp-chip" id="hp-chip"><span><b>NASIHAT 3</b> · SALING MELENGKAPI</span></div>
+  </div>
+  <script>
+    (function () {
+      const tl = gsap.timeline({ paused: true });
+      // From midnight to warmth: daylight slowly enters the frame.
+      tl.fromTo("#hp-warm", { opacity: 0 }, { opacity: 0.55, duration: 6, ease: "sine.inOut" }, 0.3);
+      tl.fromTo("#hp-chip", { opacity: 0, y: -8 }, { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" }, 0.45);
+      tl.to("#hp-chip", { opacity: 0, duration: 0.4, ease: "sine.in" }, 4.2);
+
+      // Two halves complete each other (4.63 - 8.65); they meet on "melengkapkan" (5.05).
+      tl.fromTo("#hp-halves", { opacity: 0 }, { opacity: 1, duration: 0.35, ease: "sine.out" }, 4.6);
+      tl.fromTo("#hp-hl", { x: -260, opacity: 0.4 }, { x: 0, opacity: 1, duration: 1.4, ease: "power2.inOut" }, 4.6);
+      tl.fromTo("#hp-hr", { x: 260, opacity: 0.4 }, { x: 0, opacity: 1, duration: 1.4, ease: "power2.inOut" }, 4.6);
+      tl.fromTo("#hp-ring", { opacity: 0, scale: 0.8 }, { opacity: 1, scale: 1.08, duration: 1.2, ease: "power2.out" }, 5.95);
+      tl.to("#hp-halves", { opacity: 0, duration: 0.35, ease: "sine.in" }, 8.3);
+
+      // Typographic card on a sunrise (8.65 - 14.43); each line lands with the voice.
+      tl.fromTo("#hp-card", { opacity: 0 }, { opacity: 1, duration: 0.35, ease: "sine.out" }, 8.62);
+      tl.fromTo("#hp-sun", { y: 140, scale: 0.85 }, { y: -40, scale: 1.05, duration: 5.8, ease: "sine.out" }, 8.62);
+      tl.fromTo("#hp-a1", { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, 8.7);
+      tl.fromTo("#hp-b1", { opacity: 0, y: 16, filter: "blur(8px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.7, ease: "power2.out" }, 10.12);
+      tl.fromTo("#hp-a2", { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, 11.38);
+      tl.fromTo("#hp-b2", { opacity: 0, y: 16, filter: "blur(8px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.7, ease: "power2.out" }, 13.12);
+      tl.to("#hp-card", { opacity: 0, duration: 0.35, ease: "sine.in" }, 14.1);
+
+      // "Percayalah." (24.16): a soft sun flare.
+      tl.fromTo("#hp-flare", { opacity: 0, scale: 0.8 }, { opacity: 0.9, scale: 1.1, duration: 0.8, ease: "sine.out" }, 23.95);
+      tl.set({}, {}, 24.86);
+      window.__timelines["hope"] = tl;
+    })();
+  </script>
+</template>
