@@ -24,7 +24,7 @@ Output: `renders/kekayaan-sebenar-selepas-40_1080x1920.mp4`
 | 0:35.5–0:40.5 | 07 | Hidup ***tanpa beban hutang*** | Batu "HUTANG" tergantung pada cahaya; tali terlepas, batu jatuh, cahaya naik bebas |
 | 0:40.5–0:45.5 | 08 | Masa untuk mendekatkan diri ***kepada Allah*** | Langit malam, bulan sabit, bintang berkelip, cahaya naik di sebalik siluet masjid |
 | 0:45.5–0:51.0 | Penutup | Bila usia semakin meningkat, *hidup yang sederhana tetapi tenang* terasa jauh lebih berharga. | Gambar keluarga sebagai latar lembut (dimalapkan) |
-| 0:51.0–0:57.5 | Rumusan | Senarai 01–08 + #nasihatharini | Senarai muncul satu demi satu dan ditahan, sesuai untuk di-screenshot atau disimpan |
+| 0:51.0–0:57.5 | Rumusan | Senarai 01–08 + @NakSeeHeart | Senarai muncul satu demi satu dan ditahan, sesuai untuk di-screenshot atau disimpan |
 
 ## Audio
 
@@ -47,7 +47,8 @@ emotional piano" / "calm reflective piano"). Tempo perlahan sesuai dengan babak 
 >
 > Bila usia semakin meningkat, hidup yang sederhana tetapi tenang terasa jauh lebih berharga.
 >
-> #nasihatharini #nasihat #muhasabah #keluarga #bahagia #fyp
+> 🎙️ @NakSeeHeart
+> #nasihat #muhasabah #keluarga #bahagia #fyp
 
 **Tajuk alternatif:** "Kekayaan Sebenar Selepas 40" · "Apa Yang Lebih Berharga Dari Wang?"
 

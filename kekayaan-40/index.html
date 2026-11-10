@@ -8,6 +8,11 @@
       * { margin: 0; padding: 0; box-sizing: border-box; }
       html, body { width: 1080px; height: 1920px; overflow: hidden; background: #0b1a30; }
       #root { position: relative; width: 1080px; height: 1920px; overflow: hidden; }
+      #credit-rule { position: absolute; left: 440px; width: 200px; top: 1428px; height: 2px; z-index: 6;
+        background: linear-gradient(90deg, rgba(226,189,114,0), rgba(226,189,114,.7), rgba(226,189,114,0)); }
+      #credit { position: absolute; left: 0; right: 0; top: 1446px; z-index: 6; text-align: center;
+        font-family: "Montserrat", sans-serif; font-weight: 600; font-size: 28px; letter-spacing: .12em;
+        color: rgba(246,238,223,.62); }
       #bg { position: absolute; inset: 0;
         background: radial-gradient(110% 70% at 50% 42%, #16305a 0%, #0b1a30 58%, #050c18 100%); }
     </style>
@@ -26,6 +31,9 @@
       <div id="p8" data-composition-id="p8" data-composition-src="compositions/p8.html" data-start="40.5" data-duration="5" data-track-index="1" data-track-kind="graphics" style="z-index: 2"></div>
       <div id="quote" data-composition-id="quote" data-composition-src="compositions/quote.html" data-start="45.5" data-duration="5.5" data-track-index="1" data-track-kind="graphics" style="z-index: 2"></div>
       <div id="recap" data-composition-id="recap" data-composition-src="compositions/recap.html" data-start="51" data-duration="6.5" data-track-index="1" data-track-kind="graphics" style="z-index: 2"></div>
+      <div id="credit-rule"></div>
+      <div id="credit">@NakSeeHeart</div>
+
     </div>
     <script>
       window.__timelines = window.__timelines || {};

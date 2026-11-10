@@ -41,8 +41,8 @@
       const tl = gsap.timeline({ paused: true });
       tl.fromTo("#p2-bg", { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "sine.out" }, 0);
       tl.fromTo("#p2-chip", { opacity: 0, y: -10 }, { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, 0.15);
-      tl.fromTo("#p2-h0", { opacity: 0, y: 18, filter: "blur(8px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.7, ease: "power2.out" }, 0.30);
-      tl.fromTo("#p2-h1", { opacity: 0, y: 18, filter: "blur(8px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.7, ease: "power2.out" }, 0.65);
+      tl.fromTo("#p2-h0", { opacity: 0, y: 18, filter: "blur(8px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.7, ease: "power2.out" }, 0.15);
+      tl.fromTo("#p2-h1", { opacity: 0, y: 18, filter: "blur(8px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.7, ease: "power2.out" }, 0.45);
       
       tl.fromTo("#p2-drop", { attr: { cy: 760 }, opacity: 0 }, { attr: { cy: 1046 }, opacity: 1, duration: 0.8, ease: "power2.in" }, 0.5);
         tl.to("#p2-drop", { opacity: 0, duration: 0.15 }, 1.3);

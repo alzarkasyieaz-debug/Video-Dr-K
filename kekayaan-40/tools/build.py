@@ -13,6 +13,26 @@ SCENE = 5.0  # seconds per point
 HOOK = 5.5
 QUOTE = 5.5
 RECAP = 6.5
+LEAD = 0.45  # voiceover starts this long after its scene
+TAIL = 1.0   # breathing room after the last word
+
+import json
+_meta = ROOT / "assets" / "voice" / "meta.json"
+VO = json.loads(_meta.read_text()) if _meta.exists() else {}
+
+
+def slot(lid, base):
+    """Scene length: the design length, stretched to fit its voiceover line."""
+    if lid in VO:
+        return round(max(base, LEAD + VO[lid]["duration"] + TAIL), 2)
+    return base
+
+
+def cue(lid, k, fallback):
+    """Local time at which phrase k of a voiceover line is spoken."""
+    if lid in VO and k < len(VO[lid]["starts"]):
+        return round(LEAD + VO[lid]["starts"][k], 2)
+    return fallback
 
 # (number, [(text, "lead" | "key")], illustration id)
 POINTS = [
@@ -199,7 +219,7 @@ ART = {
 }
 
 
-def point_scene(i, num, parts, art):
+def point_scene(i, num, parts, art, D):
     sid = f"p{i + 1}"
     P = sid
     markup, js = ART[art]
@@ -225,12 +245,12 @@ def point_scene(i, num, parts, art):
       const tl = gsap.timeline({{ paused: true }});
       tl.fromTo("#{P}-bg", {{ opacity: 0 }}, {{ opacity: 1, duration: 0.4, ease: "sine.out" }}, 0);
       tl.fromTo("#{P}-chip", {{ opacity: 0, y: -10 }}, {{ opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }}, 0.15);
-      {"".join(f'''tl.fromTo("#{P}-h{k}", {{ opacity: 0, y: 18, filter: "blur(8px)" }}, {{ opacity: 1, y: 0, filter: "blur(0px)", duration: 0.7, ease: "power2.out" }}, {0.3 + k * 0.35:.2f});
+      {"".join(f'''tl.fromTo("#{P}-h{k}", {{ opacity: 0, y: 18, filter: "blur(8px)" }}, {{ opacity: 1, y: 0, filter: "blur(0px)", duration: 0.7, ease: "power2.out" }}, {cue(f"p{i + 1}", 1, 0.3) - 0.15 + k * 0.3:.2f});
       ''' for k in range(len(parts)))}
       {js}
       // Dissolve to midnight before the next point.
-      tl.to(["#{P}-art", "#{P}-chip", "#{P}-head"], {{ opacity: 0, duration: 0.4, ease: "sine.in" }}, {SCENE - 0.45:.2f});
-      tl.set({{}}, {{}}, {SCENE});
+      tl.to(["#{P}-art", "#{P}-chip", "#{P}-head"], {{ opacity: 0, duration: 0.4, ease: "sine.in" }}, {D - 0.45:.2f});
+      tl.set({{}}, {{}}, {D});
       window.__timelines["{sid}"] = tl;
     }})();
   </script>
@@ -342,7 +362,7 @@ def recap_scene():
     <div id="rc-h1">SELEPAS UMUR 40 TAHUN,</div>
     <div id="rc-h2">kekayaan sebenar…</div>
 """ + "\n".join(rows) + """
-    <div id="rc-tag">#nasihatharini</div>
+    <div id="rc-tag">@NakSeeHeart</div>
   </div>
   <script>
     (function () {
@@ -364,16 +384,32 @@ def recap_scene():
 def main():
     comp = ROOT / "compositions"
     comp.mkdir(exist_ok=True)
-    (comp / "hook.html").write_text(HOOK_SCENE)
-    hosts = [("hook", 0.0, HOOK)]
-    t = HOOK
+    hd = slot("hook", HOOK)
+    hook = (HOOK_SCENE
+        .replace('duration: 5.0, ease: "none" }, 0);', f'duration: {hd - 0.5}, ease: "none" }}, 0);')
+        .replace('duration: 5.0, ease: "sine.out" }, 0);', f'duration: {hd - 0.5}, ease: "sine.out" }}, 0);')
+        .replace('ease: "power2.out" }, 1.4);', f'ease: "power2.out" }}, {cue("hook", 1, 1.4) - 0.1});')
+        .replace('{ opacity: 0, duration: 0.45, ease: "sine.in" }, 5.0);', f'{{ opacity: 0, duration: 0.45, ease: "sine.in" }}, {hd - 0.5});')
+        .replace('tl.set({}, {}, 5.5);', f'tl.set({{}}, {{}}, {hd});'))
+    (comp / "hook.html").write_text(hook)
+    hosts = [("hook", 0.0, hd)]
+    t = hd
     for i, (num, parts, art) in enumerate(POINTS):
-        (comp / f"p{i + 1}.html").write_text(point_scene(i, num, parts, art))
-        hosts.append((f"p{i + 1}", t, SCENE))
-        t += SCENE
-    (comp / "quote.html").write_text(QUOTE_SCENE)
-    hosts.append(("quote", t, QUOTE))
-    t += QUOTE
+        d = slot(f"p{i + 1}", SCENE)
+        (comp / f"p{i + 1}.html").write_text(point_scene(i, num, parts, art, d))
+        hosts.append((f"p{i + 1}", t, d))
+        t += d
+    qd = slot("quote", QUOTE)
+    quote = (QUOTE_SCENE
+        .replace('duration: 5.0, ease: "sine.out" }, 0);', f'duration: {qd - 0.5}, ease: "sine.out" }}, 0);')
+        .replace('ease: "power2.out" }, 0.4);', f'ease: "power2.out" }}, {cue("quote", 0, 0.4) - 0.1});')
+        .replace('ease: "power2.out" }, 1.4);', f'ease: "power2.out" }}, {cue("quote", 1, 1.4) - 0.1});')
+        .replace('ease: "power2.out" }, 2.8);', f'ease: "power2.out" }}, {cue("quote", 3, 2.8) - 0.1});')
+        .replace('{ opacity: 0, duration: 0.4, ease: "sine.in" }, 5.05);', f'{{ opacity: 0, duration: 0.4, ease: "sine.in" }}, {qd - 0.45});')
+        .replace('tl.set({}, {}, 5.5);', f'tl.set({{}}, {{}}, {qd});'))
+    (comp / "quote.html").write_text(quote)
+    hosts.append(("quote", t, qd))
+    t += qd
     (comp / "recap.html").write_text(recap_scene())
     hosts.append(("recap", t, RECAP))
     t += RECAP
@@ -383,6 +419,12 @@ def main():
         f'      <div id="{h}" data-composition-id="{h}" data-composition-src="compositions/{h}.html" '
         f'data-start="{s:g}" data-duration="{d:g}" data-track-index="1" data-track-kind="graphics" style="z-index: 2"></div>'
         for h, s, d in hosts
+    )
+    starts = {h: st for h, st, _ in hosts}
+    audio_html = "\n".join(
+        f'      <audio id="vo-{lid}" class="clip" src="{v["file"]}" data-start="{starts[lid] + LEAD:.2f}" '
+        f'data-duration="{v["duration"]:.2f}" data-track-index="3" data-volume="1"></audio>'
+        for lid, v in VO.items() if lid in starts
     )
     index = f"""<!doctype html>
 <html lang="ms">
@@ -394,6 +436,11 @@ def main():
       * {{ margin: 0; padding: 0; box-sizing: border-box; }}
       html, body {{ width: 1080px; height: 1920px; overflow: hidden; background: #0b1a30; }}
       #root {{ position: relative; width: 1080px; height: 1920px; overflow: hidden; }}
+      #credit-rule {{ position: absolute; left: 440px; width: 200px; top: 1428px; height: 2px; z-index: 6;
+        background: linear-gradient(90deg, rgba(226,189,114,0), rgba(226,189,114,.7), rgba(226,189,114,0)); }}
+      #credit {{ position: absolute; left: 0; right: 0; top: 1446px; z-index: 6; text-align: center;
+        font-family: "Montserrat", sans-serif; font-weight: 600; font-size: 28px; letter-spacing: .12em;
+        color: rgba(246,238,223,.62); }}
       #bg {{ position: absolute; inset: 0;
         background: radial-gradient(110% 70% at 50% 42%, #16305a 0%, #0b1a30 58%, #050c18 100%); }}
     </style>
@@ -402,6 +449,9 @@ def main():
     <div id="root" data-composition-id="main" data-start="0" data-duration="{total:g}" data-width="1080" data-height="1920">
       <div id="bg"></div>
 {host_html}
+      <div id="credit-rule"></div>
+      <div id="credit">@NakSeeHeart</div>
+{audio_html}
     </div>
     <script>
       window.__timelines = window.__timelines || {{}};
