@@ -214,25 +214,29 @@ html,body{margin:0;width:1080px;height:1920px;overflow:hidden;background:#000}
 #hook h1 .hl{color:var(--gold2)}
 #hook h1 .b{color:#5cb6ff}
 #hook h1 .ln{display:block;white-space:nowrap;width:max-content;margin:0 auto}
-/* front cover (frame 0 = thumbnail) */
-#hook .box.cv{top:214px;left:60px;right:60px}
-#hook .chip{display:inline-block;padding:12px 26px;border-radius:6px;background:linear-gradient(180deg,var(--gold2),var(--gold));
-  color:#081634;font:800 28px/1 Montserrat;letter-spacing:.16em;text-transform:uppercase;box-shadow:0 6px 20px rgba(0,0,0,.45)}
-#hook .box.cv h1{margin-top:30px;line-height:1.02}
-#hook .box.cv .rule{margin-top:34px;width:440px;height:5px}
-#cvscrim{position:absolute;inset:0;background:linear-gradient(180deg,rgba(4,11,30,.95) 0%,rgba(6,18,46,.86) 26%,rgba(6,18,46,.25) 44%,
-  rgba(6,18,46,0) 56%,rgba(4,11,30,.55) 74%,rgba(4,11,30,.96) 92%)}
-.cvf{position:absolute;border:2px solid rgba(226,184,74,.9);border-radius:4px}
-.cvf.o{left:30px;top:30px;right:30px;bottom:30px}
-.cvf.i{left:44px;top:44px;right:44px;bottom:44px;border-width:1px;border-color:rgba(226,184,74,.55)}
-.cvc{position:absolute;width:26px;height:26px;background:var(--gold2);transform:rotate(45deg);box-shadow:0 0 16px rgba(255,215,106,.7)}
-.cvc::after{content:"";position:absolute;inset:7px;background:#081634}
-.cvtop{position:absolute;left:0;right:0;top:112px;text-align:center}
-.cvtop .kicker{font-size:28px;letter-spacing:.34em}
-.cvblue{position:absolute;left:390px;right:390px;top:160px;height:3px;background:linear-gradient(90deg,transparent,var(--blue),transparent)}
-.cvbot{position:absolute;left:0;right:0;top:1640px;text-align:center}
-.cvbot .nm{font:900 46px/1.1 Montserrat;letter-spacing:.06em;text-transform:uppercase;text-shadow:0 4px 16px rgba(0,0,0,.8)}
-.cvbot .rl{margin-top:14px;font:600 30px/1.2 Poppins;color:#cfe2ff;letter-spacing:.04em}
+/* front cover (frame 0 = thumbnail): political news-documentary poster */
+#hook .box.cv{left:64px;right:40px;top:auto;bottom:356px;text-align:left;transform-origin:0% 100%}
+#hook .box.cv h1{margin:0;font-weight:900;line-height:1.08;letter-spacing:-.015em;text-shadow:0 6px 26px rgba(0,0,0,.85)}
+#hook .box.cv .ln{margin:0;padding:2px 0}
+#hook .box.cv .hl,#hook .box.cv .b{display:inline-block;padding:0 22px 0 18px;margin-left:-8px;color:#081634;text-shadow:none;
+  background:linear-gradient(180deg,var(--gold2),var(--gold));clip-path:polygon(2.5% 0,100% 0,97.5% 100%,0 100%)}
+#hook .box.cv .b{background:linear-gradient(180deg,#4fb0ff,#1f7fe8);color:#fff}
+#hook .box.cv .bar{margin-top:30px;width:300px;height:8px;background:linear-gradient(90deg,var(--blue),rgba(47,155,255,0))}
+#cvshade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(4,11,30,.88) 0%,rgba(4,11,30,0) 17%,rgba(4,11,30,0) 40%,
+  rgba(4,11,30,.78) 58%,rgba(4,11,30,.96) 76%,rgba(4,11,30,.98) 100%)}
+#cvstripe{position:absolute;right:-60px;bottom:250px;width:520px;height:620px;opacity:.16;
+  background:repeating-linear-gradient(135deg,var(--blue) 0 6px,transparent 6px 26px);clip-path:polygon(40% 0,100% 0,100% 100%,0 100%)}
+.cvtag{position:absolute;left:64px;top:192px;display:flex;align-items:stretch;height:58px}
+.cvtag .t1{display:flex;align-items:center;padding:0 26px 0 22px;background:var(--blue);color:#fff;font:900 26px/1 Montserrat;letter-spacing:.14em;
+  clip-path:polygon(0 0,100% 0,92% 100%,0 100%)}
+.cvtag .t2{display:flex;align-items:center;margin-left:-6px;padding:0 24px;background:rgba(8,22,52,.92);border:2px solid var(--gold);border-left:0;
+  color:var(--gold2);font:800 24px/1 Montserrat;letter-spacing:.12em;text-transform:uppercase}
+.cvnum{position:absolute;right:56px;top:62px;font:900 104px/1 Montserrat;color:transparent;-webkit-text-stroke:3px rgba(255,215,106,.9);letter-spacing:-.02em}
+.cvband{position:absolute;left:0;right:0;top:1618px;height:150px;background:linear-gradient(90deg,rgba(8,22,52,.98),rgba(8,22,52,.9) 70%,rgba(8,22,52,.75));
+  border-top:4px solid var(--blue)}
+.cvband .ico{position:absolute;left:0;top:0;width:150px;height:146px;display:flex;align-items:center;justify-content:center;background:var(--gold);color:#081634}
+.cvband .nm{position:absolute;left:184px;top:30px;font:900 44px/1.1 Montserrat;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap}
+.cvband .rl{position:absolute;left:186px;top:88px;font:600 29px/1.2 Poppins;color:#cfe2ff;letter-spacing:.02em}
 #flash{position:absolute;inset:0;opacity:0;background:radial-gradient(circle at 50% 45%,rgba(120,190,255,.95),rgba(30,110,255,.55) 45%,rgba(4,11,30,0) 80%)}
 /* lower third */
 #l3{position:absolute;left:0;top:0;width:1080px;height:1920px}
@@ -542,10 +546,10 @@ def build(spec_path, html_only=False):
         s2 = s * 1.035
         x1, y1 = txy(s); x2, y2 = txy(s2)
         if p["kind"] == "hook" and cover_end:
-            ct = (540, target[1] + spec.get("cover_face_dy", 270))
-            xa, ya = txy(s * 0.94, ct); xb, yb = txy(s * 0.97, ct)
-            cam_js.append(f'tl.set("#cam",{{scale:{s*0.94:.4f},x:{xa:.1f},y:{ya:.1f}}},0);')
-            cam_js.append(f'tl.to("#cam",{{scale:{s*0.97:.4f},x:{xb:.1f},y:{yb:.1f},duration:{cover_end:.3f},ease:"none"}},0);')
+            ct = (540, target[1] + spec.get("cover_face_dy", -110))
+            xa, ya = txy(s * 1.04, ct); xb, yb = txy(s * 1.08, ct)
+            cam_js.append(f'tl.set("#cam",{{scale:{s*1.04:.4f},x:{xa:.1f},y:{ya:.1f}}},0);')
+            cam_js.append(f'tl.to("#cam",{{scale:{s*1.08:.4f},x:{xb:.1f},y:{yb:.1f},duration:{cover_end:.3f},ease:"none"}},0);')
             cam_js.append(f'tl.to("#cam",{{scale:{s:.4f},x:{x1:.1f},y:{y1:.1f},duration:.6,ease:"power2.inOut"}},{cover_end:.3f});')
             cam_js.append(f'tl.to("#cam",{{scale:{s2:.4f},x:{x2:.1f},y:{y2:.1f},duration:{max(0.1, dur - cover_end - 0.6):.3f},ease:"none"}},{cover_end + 0.6:.3f});')
             continue
@@ -563,10 +567,10 @@ def build(spec_path, html_only=False):
         ge2 = min(max(ge + 0.25, gs + 0.6), nxt - 0.02, D - end_dur)
         if gs >= D - end_dur: continue
         srt_gs = gs   # captions appear once the poster clears; the SRT keeps the spoken times
-        if gs < cover_end:
-            if ge2 <= cover_end + 0.3:
+        if gs < cover_end + 0.5:
+            if ge2 <= cover_end + 0.8:
                 srt.append((gs, ge2, " ".join(ow[j]["t"] for j in g))); continue
-            gs = cover_end
+            gs = cover_end + 0.5
         spans = []
         for j in g:
             raw = ow[j]["t"]; low = re.sub(r"[^\w-]", "", raw.lower())
@@ -585,10 +589,12 @@ def build(spec_path, html_only=False):
     # ---- assemble HTML
     def fit(ln):
         n = len(re.sub(r"<[^>]+>", "", ln).replace("&amp;", "&"))
-        return int(max(70, min(134, 930 / (0.70 * max(n, 1)))))
+        return int(max(70, min(150, 960 / (0.66 * max(n, 1)))))
     hook_lines = "".join(f'<span class="ln" style="font-size:{fit(ln)}px">{ln.replace("class=\"g\"","class=\"hl\"")}</span>'
                          for ln in kw_html(spec.get("cover_title", spec["hook_title"])))
     name = spec.get("speaker", "DR. KHAIRUDDIN AMAN RAZALI"); role = spec.get("role", "")
+    t2 = spec.get("hook_kicker", "")
+    if not t2 or t2 == spec.get("cover_kicker", "PETIKAN UCAPAN"): t2 = spec["topic"]
     fact_tags = "\n".join(fact_html(i, f) for i, f in enumerate(facts))
     tag_html = []
     for k, tp in enumerate(topics):
@@ -604,10 +610,10 @@ def build(spec_path, html_only=False):
     endmsg = "".join(f'<span style="display:block">{ln}</span>' for ln in kw_html(spec.get("end_text", spec["topic"])))
 
     js = []
-    js.append(f'tl.fromTo("#hookb",{{scale:1}},{{scale:1.035,duration:{cover_end:.3f},ease:"none"}},0);')
+    js.append(f'tl.fromTo("#hookb",{{scale:1}},{{scale:1.03,duration:{cover_end:.3f},ease:"none"}},0);')
     js.append(f'tl.to("#cvdeco",{{opacity:0,duration:.45,ease:"power2.in"}},{cover_end - 0.2:.3f});')
-    js.append(f'tl.to("#hookb",{{scale:.86,y:-40,duration:.6,ease:"power2.inOut"}},{cover_end:.3f});')
-    js.append(f'tl.to("#hookb",{{opacity:0,y:-30,duration:.35,ease:"power2.in"}},{hook_end - 0.35:.3f});')
+    js.append(f'tl.to("#hookb",{{scale:.62,y:()=>COVER_LIFT,duration:.6,ease:"power2.inOut"}},{cover_end:.3f});')
+    js.append(f'tl.to("#hookb",{{opacity:0,duration:.35,ease:"power2.in"}},{hook_end - 0.35:.3f});')
     js.append(f'tl.fromTo("#flash",{{opacity:0}},{{opacity:.85,duration:.12,ease:"power2.out"}},{hook_end - 0.12:.3f});')
     js.append(f'tl.to("#flash",{{opacity:0,duration:.35,ease:"power2.in"}},{hook_end + 0.02:.3f});')
     # lower third
@@ -646,14 +652,11 @@ def build(spec_path, html_only=False):
   <div id="scrimTop" class="layer"></div>
   <div id="scrimBot" class="layer"></div>
   <div id="hook" class="clip" data-start="0" data-duration="{hook_end + 0.05:.3f}" data-track-index="2">
-    <div id="cvdeco"><div id="cvscrim"></div><div class="cvf o"></div><div class="cvf i"></div>
-      <div class="cvc" style="left:24px;top:24px"></div><div class="cvc" style="right:24px;top:24px"></div>
-      <div class="cvc" style="left:24px;bottom:24px"></div><div class="cvc" style="right:24px;bottom:24px"></div>
-      <div class="cvtop"><div class="kicker">{esc(spec.get("cover_kicker", "PETIKAN UCAPAN"))}</div></div><div class="cvblue"></div>
-      <div class="cvbot"><div class="nm">{esc(name)}</div><div class="rl">{esc(role)}</div></div></div>
-    <div class="box cv" id="hookb" style="transform-origin:50% 0%"><div class="chip" id="hookk">{esc(spec.get("hook_kicker", "PETIKAN UCAPAN"))}</div>
-      <h1>{hook_lines}</h1>
-      <div class="rule" id="hookr"></div></div>
+    <div id="cvdeco"><div id="cvshade"></div><div id="cvstripe"></div>
+      <div class="cvtag"><div class="t1">{esc(spec.get("cover_kicker", "PETIKAN UCAPAN"))}</div><div class="t2">{esc(t2)}</div></div>
+      <div class="cvnum">#{cid[-2:]}</div>
+      <div class="cvband"><div class="ico">{icon("mic", 84)}</div><div class="nm">{esc(name)}</div><div class="rl">{esc(role)}</div></div></div>
+    <div class="box cv" id="hookb"><h1>{hook_lines}</h1><div class="bar" id="hookr"></div></div>
   </div>
   <div id="flash" class="clip" data-start="{max(0, hook_end - 0.15):.3f}" data-duration="0.6" data-track-index="7"></div>
   <div id="l3" class="clip" data-start="{l3s:.3f}" data-duration="{l3d:.3f}" data-track-index="2">
@@ -678,8 +681,10 @@ window.__timelines = window.__timelines || {{}};
 // fit each cover title line to the frame (measured once at load; no time dependence)
 document.querySelectorAll("#hookb .ln").forEach(el => {{
   let fs = parseFloat(el.style.fontSize);
-  while (el.scrollWidth > 900 && fs > 56) {{ fs -= 2; el.style.fontSize = fs + "px"; }}
+  while (el.scrollWidth > 950 && fs > 56) {{ fs -= 2; el.style.fontSize = fs + "px"; }}
 }});
+const _hb = document.getElementById("hookb");
+const COVER_LIFT = _hb ? 210 + 0.62 * _hb.offsetHeight - (_hb.offsetTop + _hb.offsetHeight) : 0;
 const tl = gsap.timeline({{ paused: true }});
 {chr(10).join(cam_js)}
 {chr(10).join(js)}
