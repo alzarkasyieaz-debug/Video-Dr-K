@@ -1,0 +1,222 @@
+{
+ "source": "drk2",
+ "source_name": "Dr K 2.mp4",
+ "speaker": "DR. KHAIRUDDIN AMAN RAZALI",
+ "role": "Bekas Menteri Komoditi",
+ "gap": 0.8,
+ "tail": 1.4,
+ "lowercase": true,
+ "frame": {
+  "x": 870,
+  "y": 570,
+  "s": 1.75
+ },
+ "focus": [
+  [
+   0,
+   905,
+   570
+  ],
+  [
+   500,
+   850,
+   565
+  ],
+  [
+   800,
+   895,
+   570
+  ],
+  [
+   1100,
+   845,
+   565
+  ],
+  [
+   1600,
+   858,
+   565
+  ],
+  [
+   2200,
+   855,
+   565
+  ],
+  [
+   2700,
+   893,
+   570
+  ]
+ ],
+ "face_y": 740,
+ "grade": "eq=contrast=1.07:brightness=0.02:saturation=1.06:gamma=1.05",
+ "keywords_blue": [
+  "barisan",
+  "nasional",
+  "pakatan",
+  "harapan",
+  "perikatan",
+  "bn",
+  "ph",
+  "pn",
+  "gps",
+  "grs",
+  "dap",
+  "pkr",
+  "amanah"
+ ],
+ "fix": {
+  "Amno": "UMNO",
+  "Pas": "PAS",
+  "Kursi": "kerusi",
+  "Kurusi": "kerusi",
+  "Muhafakat": "muafakat",
+  "Keedah": "kaedah",
+  "Besor": "besar",
+  "Belakar": "belaka",
+  "Pembangkan": "pembangkang",
+  "Hanyu": "hanya"
+ },
+ "id": "VIDEO_24",
+ "topic": "Menyambung Legasi BN",
+ "hook_title": "KEWAJIPAN|[MENYAMBUNG LEGASI]",
+ "hook_kicker": "KENAPA BN MASUK KERAJAAN",
+ "hook": [
+  1430.5,
+  1434.1
+ ],
+ "ranges": [
+  [
+   1373.3,
+   1484.4
+  ]
+ ],
+ "mood": "inspire",
+ "seed": 55,
+ "keywords": [
+  "legasi",
+  "kewajipan",
+  "menyambung",
+  "mara",
+  "felda",
+  "felcra",
+  "ketengah",
+  "perda",
+  "kkd",
+  "agama",
+  "ekonomi",
+  "bina",
+  "negara"
+ ],
+ "phrase_fix": [
+  [
+   "Kukup",
+   "kukuh"
+  ],
+  [
+   "tersetuju Kesehat",
+   "tak_setuju sebab"
+  ],
+  [
+   "Tuan Seri",
+   "Datuk Seri"
+  ],
+  [
+   "Setujukan",
+   "setuju_kerana"
+  ],
+  [
+   "Agama Agama Indonesia",
+   "agama, ~ ~"
+  ],
+  [
+   "Israel",
+   "Islam"
+  ],
+  [
+   "Marah",
+   "MARA"
+  ],
+  [
+   "Majuan",
+   "Kemajuan"
+  ],
+  [
+   "Fekra",
+   "FELCRA"
+  ],
+  [
+   "Felda",
+   "FELDA"
+  ],
+  [
+   "Ketengah",
+   "KETENGAH"
+  ],
+  [
+   "Perda",
+   "PERDA"
+  ],
+  [
+   "Adisi",
+   "agensi"
+  ],
+  [
+   "Besar Nasional",
+   "Barisan Nasional"
+  ]
+ ],
+ "facts": [
+  {
+   "type": "quote",
+   "at": "Siapakah Yang Bina",
+   "label": "Persoalan penceramah",
+   "text": "Siapakah yang bina negara ini?|[Barisan Nasional]",
+   "who": "Ekonomi, kemajuan, agama",
+   "dur": 12
+  },
+  {
+   "type": "keyword",
+   "at": "Kewajipan Untuk Menyambung",
+   "after": 50,
+   "icon": "flag",
+   "label": "Tujuan masuk kerajaan",
+   "text": "MENYAMBUNG|[LEGASI BN]",
+   "dur": 9
+  },
+  {
+   "type": "bullets",
+   "at": "Sambung MARA",
+   "icon": "map",
+   "label": "Dijaga melalui KKD (dahulu KPLB)",
+   "items": [
+    {
+     "text": "MARA",
+     "at": "MARA"
+    },
+    {
+     "text": "FELDA & FELCRA",
+     "at": "FELDA"
+    },
+    {
+     "text": "KETENGAH (Terengganu)",
+     "at": "KETENGAH"
+    },
+    {
+     "text": "PERDA (Pulau Pinang)",
+     "at": "PERDA"
+    }
+   ],
+   "src": "Menurut ucapan penceramah",
+   "dur": 14
+  }
+ ],
+ "conclusion": {
+  "at": "Itu Tujuan Asal",
+  "after": 60,
+  "kicker": "Tujuan asal",
+  "text": "MENYAMBUNG LEGASI|[UMNO–BARISAN NASIONAL]"
+ },
+ "end_text": "Legasi Barisan Nasional|[Kewajipan disambung]",
+ "notes": "Transkripsi mendengar 'legasi melibatkan Israel' — ditukar kepada 'Islam' kerana konteks ayat (legasi BN membangunkan agama). Sila semak dengan audio asal sebelum terbit."
+}

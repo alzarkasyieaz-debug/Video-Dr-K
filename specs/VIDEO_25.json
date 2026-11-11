@@ -1,0 +1,207 @@
+{
+ "source": "drk2",
+ "source_name": "Dr K 2.mp4",
+ "speaker": "DR. KHAIRUDDIN AMAN RAZALI",
+ "role": "Bekas Menteri Komoditi",
+ "gap": 0.8,
+ "tail": 1.4,
+ "lowercase": true,
+ "frame": {
+  "x": 870,
+  "y": 570,
+  "s": 1.75
+ },
+ "focus": [
+  [
+   0,
+   905,
+   570
+  ],
+  [
+   500,
+   850,
+   565
+  ],
+  [
+   800,
+   895,
+   570
+  ],
+  [
+   1100,
+   845,
+   565
+  ],
+  [
+   1600,
+   858,
+   565
+  ],
+  [
+   2200,
+   855,
+   565
+  ],
+  [
+   2700,
+   893,
+   570
+  ]
+ ],
+ "face_y": 740,
+ "grade": "eq=contrast=1.07:brightness=0.02:saturation=1.06:gamma=1.05",
+ "keywords_blue": [
+  "barisan",
+  "nasional",
+  "pakatan",
+  "harapan",
+  "perikatan",
+  "bn",
+  "ph",
+  "pn",
+  "gps",
+  "grs",
+  "dap",
+  "pkr",
+  "amanah"
+ ],
+ "fix": {
+  "Amno": "UMNO",
+  "Pas": "PAS",
+  "Kursi": "kerusi",
+  "Kurusi": "kerusi",
+  "Muhafakat": "muafakat",
+  "Keedah": "kaedah",
+  "Besor": "besar",
+  "Belakar": "belaka",
+  "Pembangkan": "pembangkang",
+  "Hanyu": "hanya"
+ },
+ "id": "VIDEO_25",
+ "topic": "Kenapa UMNO–PAS, Bukan Semua?",
+ "hook_title": "AMBIL|[YANG PALING BESAR]",
+ "hook_kicker": "PERPADUAN ISLAM",
+ "hook": [
+  383.95,
+  390.55
+ ],
+ "ranges": [
+  [
+   347.4,
+   461.75
+  ]
+ ],
+ "mood": "inspire",
+ "seed": 56,
+ "keywords": [
+  "amanah",
+  "pkr",
+  "dap",
+  "umno",
+  "PAS",
+  "perpaduan",
+  "semua",
+  "besar",
+  "juta",
+  "politik",
+  "kuasa",
+  "kaedah"
+ ],
+ "phrase_fix": [
+  [
+   "Keedah Usuf Eka",
+   "kaedah usul fiqh:"
+  ],
+  [
+   "kaedah Usuf Eka",
+   "kaedah usul fiqh:"
+  ],
+  [
+   "Dengan Tinggalkan",
+   "jangan tinggalkan"
+  ],
+  [
+   "3.6",
+   "3.6"
+  ],
+  [
+   "4.6",
+   "4.6"
+  ]
+ ],
+ "facts": [
+  {
+   "type": "bullets",
+   "at": "Kenapa Tidak",
+   "icon": "people",
+   "label": "Soalan yang ditanya",
+   "items": [
+    {
+     "text": "Kenapa tidak dengan Amanah?",
+     "at": "Amanah"
+    },
+    {
+     "text": "Kenapa tidak dengan PKR?",
+     "at": "PKR"
+    },
+    {
+     "text": "Melayu dalam DAP?",
+     "at": "DAP"
+    }
+   ],
+   "dur": 12
+  },
+  {
+   "type": "keyword",
+   "at": "Yang paling Baik",
+   "icon": "handshake",
+   "label": "Jawapan penceramah",
+   "text": "PALING BAIK:|[MELIBATKAN SEMUA]",
+   "dur": 6
+  },
+  {
+   "type": "quote",
+   "at": "usul fiqh",
+   "label": "Kaedah usul fiqh",
+   "text": "Apa yang tak dapat semua,|[jangan tinggalkan sebahagian besar]",
+   "who": "Seperti disebut penceramah",
+   "dur": 8
+  },
+  {
+   "type": "bars",
+   "at": "UMNO 3.6",
+   "label": "Himpunan Melayu Islam terbesar",
+   "items": [
+    {
+     "label": "UMNO",
+     "value": 3.6,
+     "show": "3.6 JUTA",
+     "at": "3.6"
+    },
+    {
+     "label": "PAS",
+     "value": 1,
+     "show": "1 JUTA",
+     "at": "1",
+     "color": "linear-gradient(90deg,#d9a520,#ffd76a)"
+    },
+    {
+     "label": "JUMLAH",
+     "value": 4.6,
+     "show": "4.6 JUTA",
+     "at": "4.6",
+     "color": "linear-gradient(90deg,#ffffff,#cfe2ff)"
+    }
+   ],
+   "src": "Menurut ucapan penceramah",
+   "dur": 13
+  }
+ ],
+ "conclusion": {
+  "at": "Bukan Semata",
+  "after": 70,
+  "kicker": "Tujuan perpaduan",
+  "text": "BUKAN SEMATA-MATA|[KERANA POLITIK]"
+ },
+ "end_text": "UMNO + PAS|[Ambil yang paling besar]"
+}

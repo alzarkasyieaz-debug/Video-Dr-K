@@ -49,7 +49,7 @@
 [ 95.61] yang jadi Perdana Menteri
 [ 97.91] apa yang jadi Ketua
 [ 99.45] kerajaan negeri yang
-[100.13] Menteri Besar apa jadi
+[100.13] Menteri besar apa jadi
 [101.97] Ketua Menteri mesti
 [104.01] meletakkan nombor satu
 [106.11] kewajipan

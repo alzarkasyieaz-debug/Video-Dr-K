@@ -1,0 +1,229 @@
+{
+ "source": "drk2",
+ "source_name": "Dr K 2.mp4",
+ "speaker": "DR. KHAIRUDDIN AMAN RAZALI",
+ "role": "Bekas Menteri Komoditi",
+ "gap": 0.8,
+ "tail": 1.4,
+ "lowercase": true,
+ "frame": {
+  "x": 870,
+  "y": 570,
+  "s": 1.75
+ },
+ "focus": [
+  [
+   0,
+   905,
+   570
+  ],
+  [
+   500,
+   850,
+   565
+  ],
+  [
+   800,
+   895,
+   570
+  ],
+  [
+   1100,
+   845,
+   565
+  ],
+  [
+   1600,
+   858,
+   565
+  ],
+  [
+   2200,
+   855,
+   565
+  ],
+  [
+   2700,
+   893,
+   570
+  ]
+ ],
+ "face_y": 740,
+ "grade": "eq=contrast=1.07:brightness=0.02:saturation=1.06:gamma=1.05",
+ "keywords_blue": [
+  "barisan",
+  "nasional",
+  "pakatan",
+  "harapan",
+  "perikatan",
+  "bn",
+  "ph",
+  "pn",
+  "gps",
+  "grs",
+  "dap",
+  "pkr",
+  "amanah"
+ ],
+ "fix": {
+  "Amno": "UMNO",
+  "Pas": "PAS",
+  "Kursi": "kerusi",
+  "Kurusi": "kerusi",
+  "Muhafakat": "muafakat",
+  "Keedah": "kaedah",
+  "Besor": "besar",
+  "Belakar": "belaka",
+  "Pembangkan": "pembangkang",
+  "Hanyu": "hanya",
+  "Perkataan": "Perikatan"
+ },
+ "id": "VIDEO_23",
+ "topic": "Kenapa BN Sertai Kerajaan Perpaduan",
+ "hook_title": "ANWAR JADI PM|[SEBAB SIAPA]?",
+ "hook_kicker": "KERAJAAN PERPADUAN",
+ "hook": [
+  1364.4,
+  1372.95
+ ],
+ "ranges": [
+  [
+   1241.2,
+   1246.1
+  ],
+  [
+   1253.0,
+   1352.7
+  ]
+ ],
+ "mood": "serious",
+ "seed": 54,
+ "keywords": [
+  "30",
+  "82",
+  "74",
+  "73",
+  "112",
+  "titah",
+  "perpaduan",
+  "kerusi",
+  "gps",
+  "grs",
+  "sarawak",
+  "sabah",
+  "cukup",
+  "tuanku"
+ ],
+ "phrase_fix": [
+  [
+   "Ada 80 82 82",
+   "Ada ~ ~ 82"
+  ],
+  [
+   "Minimanya",
+   "minimumnya"
+  ],
+  [
+   "Deput Agama",
+   "Dipertuan Agong"
+  ],
+  [
+   "Ketua Pian",
+   "ketua PH,"
+  ],
+  [
+   "Bojok Imam",
+   "pujuk ~"
+  ],
+  [
+   "Arhan",
+   "arahan"
+  ],
+  [
+   "182",
+   "82"
+  ],
+  [
+   "Habis Raya Lagi",
+   "habis ~ ~"
+  ],
+  [
+   "Kemudian 1 74",
+   "kemudian ~ 74"
+  ]
+ ],
+ "facts": [
+  {
+   "type": "bars",
+   "at": "Pakatan Harapan Tak",
+   "label": "PRU 2022 · kerusi Parlimen",
+   "items": [
+    {
+     "label": "PH",
+     "value": 82,
+     "show": "82",
+     "at": "82",
+     "color": "linear-gradient(90deg,#c0392b,#ff6b5b)"
+    },
+    {
+     "label": "PN",
+     "value": 74,
+     "show": "73 → 74",
+     "at": "73",
+     "color": "linear-gradient(90deg,#1e8f5a,#5fd39a)"
+    },
+    {
+     "label": "BN",
+     "value": 30,
+     "show": "30",
+     "at": "Nak"
+    }
+   ],
+   "src": "Menurut ucapan penceramah",
+   "dur": 8.5
+  },
+  {
+   "type": "number",
+   "at": "112",
+   "icon": "ballot",
+   "label": "Minimum menubuhkan kerajaan",
+   "value": 112,
+   "suffix": " KERUSI",
+   "sub": "Tiada parti cukup — tiada kerajaan dapat ditubuhkan",
+   "dur": 7
+  },
+  {
+   "type": "keyword",
+   "at": "Kerajaan Perpaduan",
+   "icon": "crown",
+   "label": "Arahan Tuanku Yang di-Pertuan Agong",
+   "text": "KERAJAAN|[PERPADUAN]",
+   "sub": "Jika tidak, pilihan raya semula",
+   "dur": 8
+  },
+  {
+   "type": "keyword",
+   "at": "Menolak PAS",
+   "icon": "warning",
+   "label": "Menurut penceramah",
+   "text": "PN & PAS|[MENOLAK]",
+   "sub": "BN terima atas arahan Tuanku",
+   "dur": 9
+  },
+  {
+   "type": "keyword",
+   "at": "Campur 30",
+   "icon": "handshake",
+   "label": "Cukup!",
+   "text": "82 + 30|[= 112]",
+   "dur": 6
+  }
+ ],
+ "conclusion": {
+  "at": "Barulah GPS",
+  "after": 60,
+  "kicker": "Menurut penceramah",
+  "text": "BN CUKUPKAN 112 —|[BARULAH GPS & GRS SOKONG]"
+ },
+ "end_text": "Kerajaan Perpaduan|[82 + 30 = 112]"
+}

@@ -7,3 +7,4 @@ episodes/*/assets/clips/
 logs/
 renders/*.tmp.mp4
 renders/work-*
+!renders/VIDEO_*.mp4

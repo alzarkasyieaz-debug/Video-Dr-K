@@ -419,7 +419,7 @@ def build(spec_path, html_only=False):
     if spec.get("lowercase"):
         PROPER = {"islam","melaka","malaysia","persekutuan","nabi","allah","barisan","nasional","pakatan","harapan","perikatan","tabung",
                   "haji","agung","agong","tuanku","johor","adam","adli","hang","tuah","jaya","alor","gajah","september","saw","dewan",
-                  "bahasa","pustaka","melayu","yb","komoditi","menteri","perdana","besar","ketua","datuk","seri","sahabat","abu","bakar",
+                  "bahasa","pustaka","melayu","yb","komoditi","menteri","perdana","ketua","anwar","ibrahim","zahid","hamidi","terengganu","sarawak","sabah","penang","jerman","perancis","eropah","abdul","hadi","awang","najib","takir","seberang","wtc","kelantan","pengkalan","batu","datuk","seri","sahabat","abu","bakar",
                   "hifzul","hifzun","maqasid","umayyah","asri'u","kifayah","fardu","dipertuan","parlimen","sakau","perlembagaan"}
         prev_end = True
         for w in ow:

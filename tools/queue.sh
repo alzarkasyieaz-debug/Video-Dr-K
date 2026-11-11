@@ -11,5 +11,5 @@ for id in "$@"; do
   (cd episodes/$id && npx hyperframes check --json > ../../logs/$id.check.json 2>/dev/null)
   python3 -c "import json;d=json.load(open('logs/$id.check.json'));print('check ok' if d['ok'] else 'CHECK FAIL')"
   echo "[$(date +%T)] render $id"
-  (cd episodes/$id && npx hyperframes render -o "../../$out.tmp.mp4" --quiet > ../../logs/$id.render.log 2>&1) && mv "$out.tmp.mp4" "$out" && echo "[$(date +%T)] done $out" || echo "RENDER FAIL $id"
+  (cd episodes/$id && npx hyperframes render -o "../../$out.tmp.mp4" --crf 23 --max-bitrate 6M --quiet > ../../logs/$id.render.log 2>&1) && mv "$out.tmp.mp4" "$out" && echo "[$(date +%T)] done $out" || echo "RENDER FAIL $id"
 done

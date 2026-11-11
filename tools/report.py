@@ -10,7 +10,7 @@ def tc(t):
     m, s = divmod(t, 60); return f"{int(m):02d}:{s:05.2f}"
 
 def slug(t):
-    t = unicodedata.normalize("NFKD", t).encode("ascii", "ignore").decode()
+    t = unicodedata.normalize("NFKD", t.replace("–", " ").replace("&", " DAN ")).encode("ascii", "ignore").decode()
     return re.sub(r"[^A-Z0-9]+", "_", t.upper()).strip("_")
 
 def plain(s): return re.sub(r"[\[\]{}]", "", s).replace("|", " ")

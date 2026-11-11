@@ -30,7 +30,8 @@ html,body{margin:0;width:1080px;height:1920px;overflow:hidden;background:#000}
 #l3 .wrap{position:absolute;left:48px;top:948px;width:900px}
 #l3 .bar{position:absolute;left:0;top:0;width:10px;height:196px;background:linear-gradient(180deg,var(--gold2),var(--gold));box-shadow:0 0 22px rgba(255,215,106,.7)}
 #l3 .panel{position:absolute;left:10px;top:0;height:196px;width:860px;background:linear-gradient(90deg,rgba(8,22,52,.96),rgba(8,22,52,.86) 70%,rgba(8,22,52,0));transform-origin:0 50%}
-#l3 .name{position:absolute;left:44px;top:22px;font:800 64px/1 Montserrat;letter-spacing:.02em;text-transform:uppercase}
+#l3 .name{position:absolute;left:44px;top:30px;white-space:nowrap;font:800 43px/1.1 Montserrat;letter-spacing:.01em;text-transform:uppercase}
+#l3 .name.short{font-size:64px;top:22px}
 #l3 .role{position:absolute;left:46px;top:100px;font:600 30px/1.1 Poppins;color:#cfe2ff;letter-spacing:.02em}
 #l3 .line{position:absolute;left:46px;top:146px;height:3px;width:560px;background:linear-gradient(90deg,var(--blue),rgba(47,155,255,0));transform-origin:0 50%}
 #l3 .topic{position:absolute;left:10px;top:-62px;padding:12px 26px;background:var(--gold);color:#081634;font:800 30px/1 Montserrat;letter-spacing:.12em;text-transform:uppercase}
@@ -76,6 +77,12 @@ html,body{margin:0;width:1080px;height:1920px;overflow:hidden;background:#000}
 .card .pair .p.alt{background:rgba(226,184,74,.16);border-color:var(--gold2)}
 .card .pair .plus{font:900 80px/1 Montserrat;color:var(--gold2)}
 .card .center{text-align:center}
+.card .bars{margin-top:22px}
+.card .br{display:flex;align-items:center;gap:18px;margin-top:16px}
+.card .br .bn{width:200px;flex:none;font:800 34px/1 Montserrat;color:#fff;text-align:right}
+.card .br .bt{position:relative;flex:1;height:58px;background:rgba(255,255,255,.08);border-radius:6px;overflow:hidden}
+.card .br .bf{position:absolute;left:0;top:0;bottom:0;border-radius:6px;transform-origin:0 50%}
+.card .br .bv{width:190px;flex:none;font:900 40px/1 Montserrat;color:var(--gold2)}
 .ring{position:relative;width:250px;height:250px;flex:none}
 .ring svg{position:absolute;inset:0}
 .ring .pv{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font:900 64px/1 Montserrat;color:#fff}
@@ -98,7 +105,7 @@ html,body{margin:0;width:1080px;height:1920px;overflow:hidden;background:#000}
 #end{position:absolute;inset:0}
 #end .bg{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 42%,rgba(10,30,72,.9),rgba(4,11,30,.97) 70%)}
 #end .box{position:absolute;left:60px;right:60px;top:640px;text-align:center}
-#end .nm{font:900 96px/1 Montserrat;letter-spacing:.04em;text-transform:uppercase}
+#end .nm{font:900 76px/1.08 Montserrat;letter-spacing:.02em;text-transform:uppercase}
 #end .rl{margin-top:20px;font:600 34px/1.2 Poppins;color:#cfe2ff}
 #end .rule{height:4px;width:520px;margin:34px auto;background:linear-gradient(90deg,transparent,var(--gold2),transparent)}
 #end .ms{font:800 50px/1.15 Montserrat;color:var(--gold2);text-transform:uppercase}
@@ -117,7 +124,7 @@ html,body{margin:0;width:1080px;height:1920px;overflow:hidden;background:#000}
   <div id="flash" class="clip" data-start="3.000" data-duration="0.6" data-track-index="7"></div>
   <div id="l3" class="clip" data-start="3.750" data-duration="9.000" data-track-index="2">
     <div class="wrap" id="l3w"><div class="bar" id="l3bar"></div><div class="panel" id="l3pan"></div>
-      <div class="name" id="l3name">DR. K</div><div class="role" id="l3role">Ahli Panel Forum</div>
+      <div class="name" id="l3name">DR. KHAIRUDDIN AMAN RAZALI</div><div class="role" id="l3role">Bekas Menteri Komoditi · Ahli Panel Forum</div>
       <div class="line" id="l3line"></div><div class="topic" id="l3topic">Haram Jatuhkan Kerajaan Adil?</div></div>
   </div>
   <div id="tag0" class="clip tag" data-start="13.150" data-duration="75.410" data-track-index="3"><div class="pill" id="tag0p"><span class="dot"></span><span class="tx">Haram Jatuhkan Kerajaan Adil?</span></div></div>
@@ -132,8 +139,8 @@ html,body{margin:0;width:1080px;height:1920px;overflow:hidden;background:#000}
   </div>
   <div id="end" class="clip" data-start="89.050" data-duration="3.200" data-track-index="9">
     <div class="bg" id="endbg"></div>
-    <div class="box" id="endb"><div class="kicker">PETIKAN UCAPAN</div><div class="nm">DR. K</div>
-      <div class="rl">Ahli Panel Forum</div><div class="rule"></div><div class="ms"><span style="display:block">Kerajaan dinilai</span><span style="display:block"><span class="g">melalui pilihan raya</span></span></div></div>
+    <div class="box" id="endb"><div class="kicker">PETIKAN UCAPAN</div><div class="nm">DR. KHAIRUDDIN AMAN RAZALI</div>
+      <div class="rl">Bekas Menteri Komoditi · Ahli Panel Forum</div><div class="rule"></div><div class="ms"><span style="display:block">Kerajaan dinilai</span><span style="display:block"><span class="g">melalui pilihan raya</span></span></div></div>
   </div>
 </div>
 <script>

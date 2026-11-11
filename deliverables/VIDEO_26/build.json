@@ -1,0 +1,996 @@
+{
+ "id": "VIDEO_26",
+ "duration": 92.63,
+ "edl": [
+  {
+   "a": 1648.0,
+   "b": 1651.5,
+   "kind": "hook",
+   "o": 0.0
+  },
+  {
+   "a": 1646.5,
+   "b": 1672.65,
+   "kind": "body",
+   "o": 3.5
+  },
+  {
+   "a": 1674.65,
+   "b": 1686.83,
+   "kind": "body",
+   "o": 29.65
+  },
+  {
+   "a": 1687.81,
+   "b": 1706.93,
+   "kind": "body",
+   "o": 41.83
+  },
+  {
+   "a": 1709.23,
+   "b": 1710.85,
+   "kind": "body",
+   "o": 60.95
+  },
+  {
+   "a": 1712.12,
+   "b": 1727.34,
+   "kind": "body",
+   "o": 62.57
+  },
+  {
+   "a": 1728.26,
+   "b": 1743.1,
+   "kind": "body",
+   "tail": 1.8,
+   "o": 77.79
+  }
+ ],
+ "words": [
+  {
+   "t": "Mendapatkan",
+   "s": 0.05,
+   "e": 0.89,
+   "piece": 0
+  },
+  {
+   "t": "pengampunan",
+   "s": 0.89,
+   "e": 1.83,
+   "piece": 0
+  },
+  {
+   "t": "itu",
+   "s": 1.83,
+   "e": 2.13,
+   "piece": 0
+  },
+  {
+   "t": "hak",
+   "s": 2.13,
+   "e": 2.37,
+   "piece": 0
+  },
+  {
+   "t": "semua",
+   "s": 2.37,
+   "e": 2.87,
+   "piece": 0
+  },
+  {
+   "t": "rakyat",
+   "s": 2.87,
+   "e": 3.17,
+   "piece": 0
+  },
+  {
+   "t": "Malaysia",
+   "s": 3.17,
+   "e": 3.5,
+   "piece": 0
+  },
+  {
+   "t": "Seri",
+   "s": 3.55,
+   "e": 4.09,
+   "piece": 1
+  },
+  {
+   "t": "Najib",
+   "s": 4.09,
+   "e": 4.63,
+   "piece": 1
+  },
+  {
+   "t": "untuk",
+   "s": 4.63,
+   "e": 5.05,
+   "piece": 1
+  },
+  {
+   "t": "mendapatkan",
+   "s": 5.05,
+   "e": 5.89,
+   "piece": 1
+  },
+  {
+   "t": "pengampunan",
+   "s": 5.89,
+   "e": 6.83,
+   "piece": 1
+  },
+  {
+   "t": "itu",
+   "s": 6.83,
+   "e": 7.13,
+   "piece": 1
+  },
+  {
+   "t": "hak",
+   "s": 7.13,
+   "e": 7.37,
+   "piece": 1
+  },
+  {
+   "t": "semua",
+   "s": 7.37,
+   "e": 7.87,
+   "piece": 1
+  },
+  {
+   "t": "rakyat",
+   "s": 7.87,
+   "e": 8.17,
+   "piece": 1
+  },
+  {
+   "t": "Malaysia",
+   "s": 8.17,
+   "e": 8.53,
+   "piece": 1
+  },
+  {
+   "t": "Perlembagaan",
+   "s": 8.53,
+   "e": 10.29,
+   "piece": 1
+  },
+  {
+   "t": "sebut",
+   "s": 10.29,
+   "e": 10.71,
+   "piece": 1
+  },
+  {
+   "t": "hak",
+   "s": 10.71,
+   "e": 11.85,
+   "piece": 1
+  },
+  {
+   "t": "semua",
+   "s": 11.85,
+   "e": 12.27,
+   "piece": 1
+  },
+  {
+   "t": "orang",
+   "s": 12.27,
+   "e": 12.55,
+   "piece": 1
+  },
+  {
+   "t": "yang",
+   "s": 12.55,
+   "e": 13.25,
+   "piece": 1
+  },
+  {
+   "t": "telah",
+   "s": 13.25,
+   "e": 13.77,
+   "piece": 1
+  },
+  {
+   "t": "dikenakan",
+   "s": 13.77,
+   "e": 14.85,
+   "piece": 1
+  },
+  {
+   "t": "hukuman",
+   "s": 14.85,
+   "e": 15.55,
+   "piece": 1
+  },
+  {
+   "t": "yang",
+   "s": 15.55,
+   "e": 16.09,
+   "piece": 1
+  },
+  {
+   "t": "telah",
+   "s": 16.09,
+   "e": 16.33,
+   "piece": 1
+  },
+  {
+   "t": "dikenakan",
+   "s": 16.33,
+   "e": 16.99,
+   "piece": 1
+  },
+  {
+   "t": "hukuman",
+   "s": 16.99,
+   "e": 17.45,
+   "piece": 1
+  },
+  {
+   "t": "di",
+   "s": 17.45,
+   "e": 17.61,
+   "piece": 1
+  },
+  {
+   "t": "mahkamah",
+   "s": 17.61,
+   "e": 18.25,
+   "piece": 1
+  },
+  {
+   "t": "dan",
+   "s": 18.25,
+   "e": 18.71,
+   "piece": 1
+  },
+  {
+   "t": "telah",
+   "s": 18.71,
+   "e": 18.95,
+   "piece": 1
+  },
+  {
+   "t": "menjalani",
+   "s": 18.95,
+   "e": 19.51,
+   "piece": 1
+  },
+  {
+   "t": "hukuman",
+   "s": 19.51,
+   "e": 20.03,
+   "piece": 1
+  },
+  {
+   "t": "di",
+   "s": 20.03,
+   "e": 20.23,
+   "piece": 1
+  },
+  {
+   "t": "penjara",
+   "s": 20.23,
+   "e": 20.69,
+   "piece": 1
+  },
+  {
+   "t": "mereka",
+   "s": 20.69,
+   "e": 21.55,
+   "piece": 1
+  },
+  {
+   "t": "berhak",
+   "s": 21.55,
+   "e": 22.15,
+   "piece": 1
+  },
+  {
+   "t": "untuk",
+   "s": 22.15,
+   "e": 22.67,
+   "piece": 1
+  },
+  {
+   "t": "minta",
+   "s": 22.67,
+   "e": 23.25,
+   "piece": 1
+  },
+  {
+   "t": "pengampunan",
+   "s": 23.25,
+   "e": 23.99,
+   "piece": 1
+  },
+  {
+   "t": "semua",
+   "s": 23.99,
+   "e": 24.65,
+   "piece": 1
+  },
+  {
+   "t": "orang",
+   "s": 24.65,
+   "e": 25.17,
+   "piece": 1
+  },
+  {
+   "t": "tak",
+   "s": 29.79,
+   "e": 30.67,
+   "piece": 2
+  },
+  {
+   "t": "kiralah",
+   "s": 30.67,
+   "e": 31.11,
+   "piece": 2
+  },
+  {
+   "t": "apa",
+   "s": 31.11,
+   "e": 31.81,
+   "piece": 2
+  },
+  {
+   "t": "sahaja",
+   "s": 31.81,
+   "e": 32.39,
+   "piece": 2
+  },
+  {
+   "t": "kesalahan",
+   "s": 32.39,
+   "e": 32.95,
+   "piece": 2
+  },
+  {
+   "t": "jenayah",
+   "s": 32.95,
+   "e": 33.39,
+   "piece": 2
+  },
+  {
+   "t": "di",
+   "s": 33.39,
+   "e": 33.59,
+   "piece": 2
+  },
+  {
+   "t": "Malaysia",
+   "s": 33.59,
+   "e": 33.93,
+   "piece": 2
+  },
+  {
+   "t": "yang",
+   "s": 33.93,
+   "e": 34.25,
+   "piece": 2
+  },
+  {
+   "t": "dibuat",
+   "s": 34.25,
+   "e": 34.77,
+   "piece": 2
+  },
+  {
+   "t": "dan",
+   "s": 34.77,
+   "e": 35.27,
+   "piece": 2
+  },
+  {
+   "t": "dia",
+   "s": 35.27,
+   "e": 35.49,
+   "piece": 2
+  },
+  {
+   "t": "bergelar",
+   "s": 35.49,
+   "e": 35.95,
+   "piece": 2
+  },
+  {
+   "t": "penjenayah",
+   "s": 35.95,
+   "e": 36.63,
+   "piece": 2
+  },
+  {
+   "t": "bergelar",
+   "s": 36.63,
+   "e": 37.37,
+   "piece": 2
+  },
+  {
+   "t": "banduan",
+   "s": 37.37,
+   "e": 37.87,
+   "piece": 2
+  },
+  {
+   "t": "masuk",
+   "s": 37.87,
+   "e": 38.53,
+   "piece": 2
+  },
+  {
+   "t": "penjara",
+   "s": 38.53,
+   "e": 39.03,
+   "piece": 2
+  },
+  {
+   "t": "dia",
+   "s": 39.03,
+   "e": 39.47,
+   "piece": 2
+  },
+  {
+   "t": "ada",
+   "s": 39.47,
+   "e": 39.67,
+   "piece": 2
+  },
+  {
+   "t": "hak",
+   "s": 39.67,
+   "e": 40.03,
+   "piece": 2
+  },
+  {
+   "t": "untuk",
+   "s": 40.03,
+   "e": 40.51,
+   "piece": 2
+  },
+  {
+   "t": "minta",
+   "s": 40.51,
+   "e": 40.83,
+   "piece": 2
+  },
+  {
+   "t": "pengampunan",
+   "s": 40.83,
+   "e": 41.61,
+   "piece": 2
+  },
+  {
+   "t": "antara",
+   "s": 41.97,
+   "e": 43.19,
+   "piece": 3
+  },
+  {
+   "t": "yang",
+   "s": 43.19,
+   "e": 43.37,
+   "piece": 3
+  },
+  {
+   "t": "dapat",
+   "s": 43.37,
+   "e": 43.63,
+   "piece": 3
+  },
+  {
+   "t": "pengampunan",
+   "s": 43.63,
+   "e": 44.13,
+   "piece": 3
+  },
+  {
+   "t": "siapa",
+   "s": 44.13,
+   "e": 44.41,
+   "piece": 3
+  },
+  {
+   "t": "siapa",
+   "s": 44.41,
+   "e": 46.37,
+   "piece": 3
+  },
+  {
+   "t": "kuat",
+   "s": 46.37,
+   "e": 47.57,
+   "piece": 3
+  },
+  {
+   "t": "sikit,",
+   "s": 47.57,
+   "e": 47.85,
+   "piece": 3
+  },
+  {
+   "t": "yang",
+   "s": 47.85,
+   "e": 49.71,
+   "piece": 3
+  },
+  {
+   "t": "amat",
+   "s": 49.71,
+   "e": 50.29,
+   "piece": 3
+  },
+  {
+   "t": "berhormat",
+   "s": 50.29,
+   "e": 51.01,
+   "piece": 3
+  },
+  {
+   "t": "Perdana",
+   "s": 51.01,
+   "e": 51.57,
+   "piece": 3
+  },
+  {
+   "t": "Menteri",
+   "s": 51.57,
+   "e": 52.17,
+   "piece": 3
+  },
+  {
+   "t": "kita",
+   "s": 52.17,
+   "e": 52.57,
+   "piece": 3
+  },
+  {
+   "t": "antara",
+   "s": 52.57,
+   "e": 53.25,
+   "piece": 3
+  },
+  {
+   "t": "yang",
+   "s": 53.25,
+   "e": 53.63,
+   "piece": 3
+  },
+  {
+   "t": "dapat",
+   "s": 53.63,
+   "e": 54.05,
+   "piece": 3
+  },
+  {
+   "t": "pengampunan",
+   "s": 54.05,
+   "e": 55.05,
+   "piece": 3
+  },
+  {
+   "t": "kenapa",
+   "s": 55.05,
+   "e": 55.53,
+   "piece": 3
+  },
+  {
+   "t": "kerana",
+   "s": 55.53,
+   "e": 56.15,
+   "piece": 3
+  },
+  {
+   "t": "itu",
+   "s": 56.15,
+   "e": 56.63,
+   "piece": 3
+  },
+  {
+   "t": "peruntukan",
+   "s": 56.63,
+   "e": 57.35,
+   "piece": 3
+  },
+  {
+   "t": "yang",
+   "s": 57.35,
+   "e": 57.67,
+   "piece": 3
+  },
+  {
+   "t": "diberikan",
+   "s": 57.67,
+   "e": 58.27,
+   "piece": 3
+  },
+  {
+   "t": "oleh",
+   "s": 58.27,
+   "e": 58.55,
+   "piece": 3
+  },
+  {
+   "t": "pengampunan",
+   "s": 58.55,
+   "e": 59.05,
+   "piece": 3
+  },
+  {
+   "t": "hak",
+   "s": 59.05,
+   "e": 59.35,
+   "piece": 3
+  },
+  {
+   "t": "semua",
+   "s": 59.35,
+   "e": 59.87,
+   "piece": 3
+  },
+  {
+   "t": "orang",
+   "s": 59.87,
+   "e": 60.17,
+   "piece": 3
+  },
+  {
+   "t": "Datuk",
+   "s": 60.17,
+   "e": 60.73,
+   "piece": 3
+  },
+  {
+   "t": "Seri",
+   "s": 61.09,
+   "e": 61.65,
+   "piece": 4
+  },
+  {
+   "t": "Najib",
+   "s": 61.65,
+   "e": 62.35,
+   "piece": 4
+  },
+  {
+   "t": "kesalahan",
+   "s": 62.71,
+   "e": 64.05,
+   "piece": 5
+  },
+  {
+   "t": "dia",
+   "s": 64.05,
+   "e": 64.35,
+   "piece": 5
+  },
+  {
+   "t": "kita",
+   "s": 64.35,
+   "e": 66.25,
+   "piece": 5
+  },
+  {
+   "t": "mempertikaikannya",
+   "s": 66.25,
+   "e": 67.77,
+   "piece": 5
+  },
+  {
+   "t": "bila",
+   "s": 67.77,
+   "e": 68.97,
+   "piece": 5
+  },
+  {
+   "t": "telah",
+   "s": 68.97,
+   "e": 69.19,
+   "piece": 5
+  },
+  {
+   "t": "jatuhkan",
+   "s": 69.19,
+   "e": 69.69,
+   "piece": 5
+  },
+  {
+   "t": "hukuman",
+   "s": 69.69,
+   "e": 70.29,
+   "piece": 5
+  },
+  {
+   "t": "dia",
+   "s": 70.29,
+   "e": 70.81,
+   "piece": 5
+  },
+  {
+   "t": "masuk",
+   "s": 70.81,
+   "e": 71.21,
+   "piece": 5
+  },
+  {
+   "t": "penjara",
+   "s": 71.21,
+   "e": 71.65,
+   "piece": 5
+  },
+  {
+   "t": "dia",
+   "s": 71.65,
+   "e": 72.15,
+   "piece": 5
+  },
+  {
+   "t": "berhak",
+   "s": 72.15,
+   "e": 72.57,
+   "piece": 5
+  },
+  {
+   "t": "mendapatkan",
+   "s": 72.57,
+   "e": 73.13,
+   "piece": 5
+  },
+  {
+   "t": "pengampunan",
+   "s": 73.13,
+   "e": 73.69,
+   "piece": 5
+  },
+  {
+   "t": "betul",
+   "s": 73.69,
+   "e": 73.93,
+   "piece": 5
+  },
+  {
+   "t": "betul",
+   "s": 73.93,
+   "e": 74.41,
+   "piece": 5
+  },
+  {
+   "t": "itu",
+   "s": 74.41,
+   "e": 76.11,
+   "piece": 5
+  },
+  {
+   "t": "hak",
+   "s": 76.11,
+   "e": 76.41,
+   "piece": 5
+  },
+  {
+   "t": "yang",
+   "s": 76.41,
+   "e": 76.53,
+   "piece": 5
+  },
+  {
+   "t": "dibuat",
+   "s": 76.53,
+   "e": 76.79,
+   "piece": 5
+  },
+  {
+   "t": "pengampunan",
+   "s": 76.79,
+   "e": 77.57,
+   "piece": 5
+  },
+  {
+   "t": "tapi",
+   "s": 77.93,
+   "e": 78.49,
+   "piece": 6
+  },
+  {
+   "t": "bila",
+   "s": 78.49,
+   "e": 78.91,
+   "piece": 6
+  },
+  {
+   "t": "mana",
+   "s": 78.91,
+   "e": 79.29,
+   "piece": 6
+  },
+  {
+   "t": "ada",
+   "s": 79.29,
+   "e": 79.79,
+   "piece": 6
+  },
+  {
+   "t": "usaha",
+   "s": 79.79,
+   "e": 80.39,
+   "piece": 6
+  },
+  {
+   "t": "untuk",
+   "s": 80.39,
+   "e": 80.97,
+   "piece": 6
+  },
+  {
+   "t": "membuat",
+   "s": 80.97,
+   "e": 81.73,
+   "piece": 6
+  },
+  {
+   "t": "pengampunan",
+   "s": 81.73,
+   "e": 82.65,
+   "piece": 6
+  },
+  {
+   "t": "ada",
+   "s": 82.65,
+   "e": 83.41,
+   "piece": 6
+  },
+  {
+   "t": "campur",
+   "s": 83.41,
+   "e": 83.95,
+   "piece": 6
+  },
+  {
+   "t": "tangan",
+   "s": 83.95,
+   "e": 84.39,
+   "piece": 6
+  },
+  {
+   "t": "hingga",
+   "s": 84.39,
+   "e": 85.03,
+   "piece": 6
+  },
+  {
+   "t": "akhirnya",
+   "s": 85.03,
+   "e": 85.57,
+   "piece": 6
+  },
+  {
+   "t": "ada",
+   "s": 86.91,
+   "e": 87.23,
+   "piece": 6
+  },
+  {
+   "t": "ada",
+   "s": 87.23,
+   "e": 88.21,
+   "piece": 6
+  },
+  {
+   "t": "orang",
+   "s": 88.21,
+   "e": 88.29,
+   "piece": 6
+  },
+  {
+   "t": "kacau",
+   "s": 88.29,
+   "e": 88.83,
+   "piece": 6
+  },
+  {
+   "t": "ada",
+   "s": 88.83,
+   "e": 90.45,
+   "piece": 6
+  },
+  {
+   "t": "orang",
+   "s": 90.45,
+   "e": 90.69,
+   "piece": 6
+  },
+  {
+   "t": "kacau",
+   "s": 90.69,
+   "e": 91.25,
+   "piece": 6
+  }
+ ],
+ "facts": [
+  {
+   "type": "keyword",
+   "at": "Perlembagaan Sebut",
+   "icon": "doc",
+   "label": "Menurut penceramah",
+   "text": "PENGAMPUNAN =|[HAK SEMUA BANDUAN]",
+   "sub": "Yang telah dihukum mahkamah & menjalani hukuman",
+   "dur": 14,
+   "start": 8.41
+  },
+  {
+   "type": "keyword",
+   "at": "Perdana Menteri Kita",
+   "icon": "crown",
+   "label": "Contoh disebut penceramah",
+   "text": "PERDANA MENTERI|[PERNAH DAPAT PENGAMPUNAN]",
+   "dur": 9,
+   "start": 50.89
+  },
+  {
+   "type": "keyword",
+   "at": "Kesalahan Dia",
+   "icon": "scale",
+   "label": "Pendirian penceramah",
+   "text": "TIDAK PERTIKAI KESALAHAN —|[HAK MOHON PENGAMPUNAN]",
+   "dur": 12,
+   "start": 62.59
+  }
+ ],
+ "conclusion": {
+  "at": "Tapi Bila Mana",
+  "after": 60,
+  "kicker": "Dakwaan penceramah",
+  "text": "ADA USAHA PENGAMPUNAN —|[ADA CAMPUR TANGAN]",
+  "start": 77.83,
+  "dur": 11.9
+ },
+ "topics": [
+  {
+   "label": "Pengampunan: Hak Semua",
+   "start": 13.5
+  }
+ ],
+ "cues": [
+  [
+   "impact-bass-1.mp3",
+   0.05,
+   0.55
+  ],
+  [
+   "whoosh-cinematic.mp3",
+   2.95,
+   0.5
+  ],
+  [
+   "whoosh-short.mp3",
+   4.1,
+   0.35
+  ],
+  [
+   "whoosh-short.mp3",
+   8.41,
+   0.28
+  ],
+  [
+   "whoosh-short.mp3",
+   50.89,
+   0.28
+  ],
+  [
+   "whoosh-short.mp3",
+   62.59,
+   0.28
+  ],
+  [
+   "impact-bass-2.mp3",
+   77.83,
+   0.5
+  ],
+  [
+   "whoosh-cinematic.mp3",
+   89.13,
+   0.4
+  ]
+ ],
+ "hook_end": 3.5
+}

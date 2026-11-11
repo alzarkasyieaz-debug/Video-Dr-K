@@ -1,14 +1,121 @@
 [
- {"key":"drk6","file":"Dr K 6 .mp4","duration":"4:46 (286 s), 720×1280 30 fps","setting":"Forum panel (siang, dalaman); penceramah duduk di kanan meja, kamera statik.",
-  "issues":["Apa yang istimewa muafakat UMNO–PAS kali ini","Sejarah hubungan UMNO–PAS: dua kali bercerai, Muafakat Nasional 2019","Situasi BN bersama PH dan rundingan semula dengan PN/PAS","Melaka: muafakat lebih jelas; ketakutan Pakatan Harapan","Prinsip rundingan 'pintu jangan tutup rapat, jangan buka luas'","Dakwaan bekas pimpinan BN mempermainkan titah Agong","Faktor 'timing': PH didakwa sedang pecah"],
-  "excluded":["0:00–0:19 salam dan ucapan terima kasih (tiada isi)","2:20–2:53 sindiran kek hari jadi / 'peluru pandu' — transkripsi tidak jelas; isi PH digunakan dalam VIDEO_01","Tahun-tahun sejarah pada 0:59–1:20 tidak dipaparkan sebagai grafik kerana dua model transkripsi memberi tahun berbeza (hanya 2019 dipaparkan)"]},
- {"key":"drk7","file":"Dr K 7.mp4","duration":"13:20 (800 s), 720×1280 30 fps","setting":"Forum panel yang sama (siang); penceramah di tengah meja, kamera dialih sekitar 9:20.",
-  "issues":["Kenyataan 'haram menjatuhkan kerajaan yang adil' dan konteks demokrasi","Label khawarij yang tidak konsisten; menentang dengan senjata vs persaingan politik","Undi tidak percaya sebagai cara syarie; isu kenyataan Peguam Negara dan titah Tuanku (tahanan rumah Datuk Seri Najib)","Dinamika politik: PAS cadang undi BN di Johor, GPS, CSA 11 Ahli Parlimen","Jangan bakar jambatan; UMNO–PAS bercerai dan rujuk","Kewajipan menyatukan umat Islam — kertas kerja Majlis Syura Ulama PAS 2016","Rundingan kerusi Melaka: 21 kerusi BN, Paya Rumput kepada PAS, Sungai Udang kepada UMNO"],
-  "excluded":["0:00–0:15 pembukaan jawapan (nama tokoh tidak jelas dalam audio)","2:51–3:40 huraian hadis — petikan Arab tidak jelas dalam transkripsi","5:12–5:25 contoh undi tidak percaya (PN/GPS/GRS) — transkripsi tidak jelas","6:20–6:35 penutup jawapan pertama (nama tokoh tidak jelas)"]},
- {"key":"drk5","file":"Dr K 5.mp4","duration":"23:18 (1398 s), 720×1280 30 fps","setting":"Ceramah kempen malam (Melaka) di bawah khemah BN; penceramah berdiri di kanan.",
-  "issues":["Ijmak sahabat: memilih pemerintah didahulukan (diliputi lebih jelas dalam Dr K 3)","Perpaduan UMNO–PAS kerana agama; 3.6 juta + 1 juta ahli; sejarah 1971–78, 2019, 2022","Data undi Alor Gajah & Hang Tuah Jaya (diliputi lebih jelas dalam Dr K 3)","Perpaduan Aus–Khazraj dan Ansar–Muhajirin; takrif Melayu dalam Perlembagaan","Perpecahan Melayu dan isu dominasi; titah dan tahanan rumah","Kisah akar umbi PAS Masjid Tanah","Tabung Haji: istitaah sebagai syarat wajib vs kemahuan rakyat","Johor, Negeri Sembilan, Melaka: kesan muafakat"],
-  "excluded":["8:27–10:16 kisah Madinah (Aus/Khazraj) — petikan al-Quran dan nama sejarah tidak dapat ditranskripsi dengan tepat","10:16–14:05 perpecahan Melayu/dominasi — banyak dakwaan dan transkripsi tidak jelas","16:25–17:52 kisah akar umbi — transkripsi tidak jelas","Segmen ijmak sahabat & data undi — diambil daripada Dr K 3 (versi lebih jelas) untuk mengelak pengulangan"]},
- {"key":"drk3","file":"Dr K 3.mp4","duration":"43:49 (2629 s), 720×1280 30 fps","setting":"Ceramah kempen malam di bawah khemah (calon N06 BN); penceramah berdiri di tengah meja. Pengacara menamakan penceramah 'Dr. Muhammad Khairuddin bin Aman Razali' di akhir video.",
-  "issues":["Ijmak sahabat: memilih pemerintah lebih utama daripada mengebumikan jenazah Nabi ﷺ","Dua peringkat pemerintahan (ketua negara/negeri vs ketua kerajaan)","Lima maslahah (maqasid syariah) untuk menilai pemerintah, parti dan calon","Islam agama bagi Persekutuan; sumpah Agong memelihara Islam","UMNO + PAS = 4.6 juta ahli; sasaran 28–0 di Melaka","Dakwaan perlembagaan parti tertentu memperjuangkan negara sekular; Muafakat Nasional 2019; jawatan Menteri Komoditi","Data PRU Alor Gajah & Hang Tuah Jaya","Tabung Haji: politik persepsi, kaedah perakaunan dividen, pemindahan aset & perjanjian dibatalkan","Bai'ah Aqabah — larangan buhtan (berita palsu)"],
-  "excluded":["0:00–3:40 pembukaan & salam","6:00–8:55 dua peringkat pemerintahan & sejarah parti — bersifat latar","12:20–14:05 sejarah Suruhanjaya Reid — transkripsi tidak jelas","17:46–20:35 isu majlis taubat di Selangor & rekod agama UMNO Melaka — melibatkan individu tertentu, tidak dipilih","28:17–32:20 Tabung Haji/istitaah — diliputi dalam VIDEO_11 (Dr K 5)","33:47–37:50 pemindahan aset Tabung Haji — banyak angka & dakwaan yang tidak dapat disahkan daripada transkripsi","37:50–43:49 Bai'ah Aqabah & penutup — petikan Arab tidak jelas"]}
+ {
+  "key": "drk6",
+  "file": "Dr K 6 .mp4",
+  "duration": "4:46 (286 s), 720×1280 30 fps",
+  "setting": "Forum panel (siang, dalaman); penceramah duduk di kanan meja, kamera statik.",
+  "issues": [
+   "Apa yang istimewa muafakat UMNO–PAS kali ini",
+   "Sejarah hubungan UMNO–PAS: dua kali bercerai, Muafakat Nasional 2019",
+   "Situasi BN bersama PH dan rundingan semula dengan PN/PAS",
+   "Melaka: muafakat lebih jelas; ketakutan Pakatan Harapan",
+   "Prinsip rundingan 'pintu jangan tutup rapat, jangan buka luas'",
+   "Dakwaan bekas pimpinan BN mempermainkan titah Agong",
+   "Faktor 'timing': PH didakwa sedang pecah"
+  ],
+  "excluded": [
+   "0:00–0:19 salam dan ucapan terima kasih (tiada isi)",
+   "2:20–2:53 sindiran kek hari jadi / 'peluru pandu' — transkripsi tidak jelas; isi PH digunakan dalam VIDEO_01",
+   "Tahun-tahun sejarah pada 0:59–1:20 tidak dipaparkan sebagai grafik kerana dua model transkripsi memberi tahun berbeza (hanya 2019 dipaparkan)"
+  ]
+ },
+ {
+  "key": "drk7",
+  "file": "Dr K 7.mp4",
+  "duration": "13:20 (800 s), 720×1280 30 fps",
+  "setting": "Forum panel yang sama (siang); penceramah di tengah meja, kamera dialih sekitar 9:20.",
+  "issues": [
+   "Kenyataan 'haram menjatuhkan kerajaan yang adil' dan konteks demokrasi",
+   "Label khawarij yang tidak konsisten; menentang dengan senjata vs persaingan politik",
+   "Undi tidak percaya sebagai cara syarie; isu kenyataan Peguam Negara dan titah Tuanku (tahanan rumah Datuk Seri Najib)",
+   "Dinamika politik: PAS cadang undi BN di Johor, GPS, CSA 11 Ahli Parlimen",
+   "Jangan bakar jambatan; UMNO–PAS bercerai dan rujuk",
+   "Kewajipan menyatukan umat Islam — kertas kerja Majlis Syura Ulama PAS 2016",
+   "Rundingan kerusi Melaka: 21 kerusi BN, Paya Rumput kepada PAS, Sungai Udang kepada UMNO"
+  ],
+  "excluded": [
+   "0:00–0:15 pembukaan jawapan (nama tokoh tidak jelas dalam audio)",
+   "2:51–3:40 huraian hadis — petikan Arab tidak jelas dalam transkripsi",
+   "5:12–5:25 contoh undi tidak percaya (PN/GPS/GRS) — transkripsi tidak jelas",
+   "6:20–6:35 penutup jawapan pertama (nama tokoh tidak jelas)"
+  ]
+ },
+ {
+  "key": "drk5",
+  "file": "Dr K 5.mp4",
+  "duration": "23:18 (1398 s), 720×1280 30 fps",
+  "setting": "Ceramah kempen malam (Melaka) di bawah khemah BN; penceramah berdiri di kanan.",
+  "issues": [
+   "Ijmak sahabat: memilih pemerintah didahulukan (diliputi lebih jelas dalam Dr K 3)",
+   "Perpaduan UMNO–PAS kerana agama; 3.6 juta + 1 juta ahli; sejarah 1971–78, 2019, 2022",
+   "Data undi Alor Gajah & Hang Tuah Jaya (diliputi lebih jelas dalam Dr K 3)",
+   "Perpaduan Aus–Khazraj dan Ansar–Muhajirin; takrif Melayu dalam Perlembagaan",
+   "Perpecahan Melayu dan isu dominasi; titah dan tahanan rumah",
+   "Kisah akar umbi PAS Masjid Tanah",
+   "Tabung Haji: istitaah sebagai syarat wajib vs kemahuan rakyat",
+   "Johor, Negeri Sembilan, Melaka: kesan muafakat"
+  ],
+  "excluded": [
+   "8:27–10:16 kisah Madinah (Aus/Khazraj) — petikan al-Quran dan nama sejarah tidak dapat ditranskripsi dengan tepat",
+   "10:16–14:05 perpecahan Melayu/dominasi — banyak dakwaan dan transkripsi tidak jelas",
+   "16:25–17:52 kisah akar umbi — transkripsi tidak jelas",
+   "Segmen ijmak sahabat & data undi — diambil daripada Dr K 3 (versi lebih jelas) untuk mengelak pengulangan"
+  ]
+ },
+ {
+  "key": "drk3",
+  "file": "Dr K 3.mp4",
+  "duration": "43:49 (2629 s), 720×1280 30 fps",
+  "setting": "Ceramah kempen malam di bawah khemah (calon N06 BN); penceramah berdiri di tengah meja. Pengacara menamakan penceramah 'Dr. Muhammad Khairuddin bin Aman Razali' di akhir video.",
+  "issues": [
+   "Ijmak sahabat: memilih pemerintah lebih utama daripada mengebumikan jenazah Nabi ﷺ",
+   "Dua peringkat pemerintahan (ketua negara/negeri vs ketua kerajaan)",
+   "Lima maslahah (maqasid syariah) untuk menilai pemerintah, parti dan calon",
+   "Islam agama bagi Persekutuan; sumpah Agong memelihara Islam",
+   "UMNO + PAS = 4.6 juta ahli; sasaran 28–0 di Melaka",
+   "Dakwaan perlembagaan parti tertentu memperjuangkan negara sekular; Muafakat Nasional 2019; jawatan Menteri Komoditi",
+   "Data PRU Alor Gajah & Hang Tuah Jaya",
+   "Tabung Haji: politik persepsi, kaedah perakaunan dividen, pemindahan aset & perjanjian dibatalkan",
+   "Bai'ah Aqabah — larangan buhtan (berita palsu)"
+  ],
+  "excluded": [
+   "0:00–3:40 pembukaan & salam",
+   "6:00–8:55 dua peringkat pemerintahan & sejarah parti — bersifat latar",
+   "12:20–14:05 sejarah Suruhanjaya Reid — transkripsi tidak jelas",
+   "17:46–20:35 isu majlis taubat di Selangor & rekod agama UMNO Melaka — melibatkan individu tertentu, tidak dipilih",
+   "28:17–32:20 Tabung Haji/istitaah — diliputi dalam VIDEO_11 (Dr K 5)",
+   "33:47–37:50 pemindahan aset Tabung Haji — banyak angka & dakwaan yang tidak dapat disahkan daripada transkripsi",
+   "37:50–43:49 Bai'ah Aqabah & penutup — petikan Arab tidak jelas"
+  ]
+ },
+ {
+  "key": "drk2",
+  "file": "Dr K 2.mp4",
+  "duration": "49:02 (2942 s), 720×1280 30 fps",
+  "setting": "Ceramah kempen malam di Bilik Gerakan N.15 Pengkalan Batu (P137, PRN Melaka); penceramah berdiri di kanan meja.",
+  "issues": [
+   "Sejarah kemenangan BN di N.15 (majoriti 131) dan potensi 2,600 undi PN",
+   "Kenapa perpaduan UMNO–PAS dan bukan dengan Amanah/PKR/DAP (kaedah usul fiqh; 3.6 + 1 juta)",
+   "Sejarah pertembungan UMNO–PAS (1946, 1951, 1955, 1971–78, 2019, 2022)",
+   "Kisah peribadi: keluarga UMNO, penceramah masuk PAS 1989; pertembungan memudaratkan ukhuwah",
+   "14 September 2019 di WTC — Muafakat Nasional",
+   "Data Parlimen Hang Tuah Jaya (diliputi dalam Dr K 3)",
+   "Kenapa BN menyertai Kerajaan Perpaduan: 30 + 82 = 112 atas arahan Agong",
+   "Legasi BN: MARA, FELDA, FELCRA, KETENGAH, PERDA di bawah KKD",
+   "Isu DAP, isu halal dan teguran UMNO kepada PM",
+   "Pengampunan Datuk Seri Najib sebagai hak perlembagaan",
+   "Persepsi 'sakau' dan Tabung Haji (diliputi dalam VIDEO_11 & VIDEO_19)",
+   "Isu bayaran kontraktor KKD dan dakwaan 'belanja lebih'",
+   "Cadangan PRU selewat-lewatnya bulan 11"
+  ],
+  "excluded": [
+   "0:00–3:50 doa pembukaan & salam",
+   "8:20–9:58 sejarah 1946–1978 — tahun-tahun bercanggah dengan rakaman lain, tidak dipaparkan",
+   "11:16–12:04 kisah zaman kanak-kanak 1986 — transkripsi tidak jelas",
+   "14:00–20:10 Hang Tuah Jaya (angka bercanggah dengan Dr K 3), penamaan calon, jentera",
+   "24:47–26:40 isu DAP & halal — banyak dakwaan dan transkripsi tidak jelas",
+   "29:00–32:00 Tabung Haji — diliputi dalam VIDEO_11 & VIDEO_19",
+   "39:20–45:50 isu bayaran KKD & mesyuarat pasca kabinet — transkripsi tidak jelas, banyak dakwaan tentang individu"
+  ]
+ }
 ]
