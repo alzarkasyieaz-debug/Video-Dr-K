@@ -1042,15 +1042,6 @@
    "src": "Menurut ucapan penceramah",
    "dur": 9,
    "start": 67.12
-  },
-  {
-   "type": "keyword",
-   "at": "Pertambahan",
-   "icon": "chart",
-   "label": "Matlamat",
-   "text": "KEKAL MENANG +|[TAMBAH MAJORITI]",
-   "dur": 5,
-   "start": 85.8
   }
  ],
  "conclusion": {
@@ -1097,11 +1088,6 @@
    "impact-bass-2.mp3",
    67.12,
    0.4
-  ],
-  [
-   "whoosh-short.mp3",
-   85.8,
-   0.28
   ],
   [
    "impact-bass-2.mp3",

@@ -743,7 +743,7 @@
      "value": 3.6,
      "show": "3.6 JUTA",
      "at": "UMNO",
-     "t": 24.59
+     "t": 24.77
     },
     {
      "label": "PAS",
@@ -756,7 +756,7 @@
    ],
    "sub": "Jumlah keahlian",
    "src": "Menurut ucapan penceramah",
-   "dur": 6.5,
+   "dur": 8.5,
    "start": 24.57
   },
   {
@@ -808,8 +808,8 @@
   "after": 55,
   "kicker": "Harapan penceramah",
   "text": "BUKAN UNTUK DUNIA —|[SAMPAI KE AKHIRAT]",
-  "start": 62.49,
-  "dur": 2.74
+  "start": 60.63,
+  "dur": 4.6
  },
  "topics": [
   {
@@ -850,7 +850,7 @@
   ],
   [
    "impact-bass-2.mp3",
-   62.49,
+   60.63,
    0.5
   ],
   [

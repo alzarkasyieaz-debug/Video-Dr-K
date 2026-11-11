@@ -1181,7 +1181,7 @@
     {
      "text": "Perdana Menteri",
      "at": "Perdana Menteri",
-     "t": 96.25
+     "t": 96.43
     },
     {
      "text": "Menteri Besar",
@@ -1191,10 +1191,10 @@
     {
      "text": "Ketua Menteri",
      "at": "Ketua Menteri",
-     "t": 101.87
+     "t": 100.4
     }
    ],
-   "dur": 6,
+   "dur": 5.77,
    "start": 96.23
   }
  ],
@@ -1203,8 +1203,8 @@
   "after": 60,
   "kicker": "Tanggungjawab pemimpin",
   "text": "NOMBOR SATU:|[MENJAGA AGAMA]",
-  "start": 102.87,
-  "dur": 3.78
+  "start": 102.05,
+  "dur": 4.6
  },
  "topics": [
   {
@@ -1255,7 +1255,7 @@
   ],
   [
    "impact-bass-2.mp3",
-   102.87,
+   102.05,
    0.5
   ],
   [

@@ -916,7 +916,7 @@
     {
      "text": "Terengganu",
      "at": "terengganu",
-     "t": 54.89
+     "t": 55.07
     },
     {
      "text": "Kelantan",
@@ -926,15 +926,15 @@
     {
      "text": "Perlis",
      "at": "Perlis",
-     "t": 56.89
+     "t": 56.16
     },
     {
      "text": "Melaka",
      "at": "Melaka lain",
-     "t": 57.73
+     "t": 56.16
     }
    ],
-   "dur": 4.5,
+   "dur": 2.89,
    "start": 54.87
   }
  ],
@@ -943,8 +943,8 @@
   "after": 50,
   "kicker": "Yang penting",
   "text": "SATU BENDA BESAR:|[PERPADUAN]",
-  "start": 60.81,
-  "dur": 1.6
+  "start": 57.81,
+  "dur": 4.6
  },
  "topics": [
   {
@@ -990,7 +990,7 @@
   ],
   [
    "impact-bass-2.mp3",
-   60.81,
+   57.81,
    0.5
   ],
   [

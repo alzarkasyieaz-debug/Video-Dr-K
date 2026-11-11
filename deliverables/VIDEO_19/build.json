@@ -707,7 +707,7 @@
     }
    ],
    "src": "Menurut ucapan penceramah",
-   "dur": 16,
+   "dur": 19.16,
    "start": 26.36
   },
   {
@@ -717,7 +717,7 @@
    "label": "Hujah penceramah",
    "text": "KEDUA-DUA KAEDAH|[BETUL BELAKA]",
    "sub": "Tetapi kaedah kedua mencipta persepsi ‘sakau’",
-   "dur": 3.77,
+   "dur": 2.94,
    "start": 57.63
   }
  ],
@@ -726,8 +726,8 @@
   "after": 45,
   "kicker": "Kesan politik persepsi",
   "text": "TERCIPTALAH|[PERSEPSI “SAKAU”]",
-  "start": 61.45,
-  "dur": 3.77
+  "start": 60.62,
+  "dur": 4.6
  },
  "topics": [
   {
@@ -768,7 +768,7 @@
   ],
   [
    "impact-bass-2.mp3",
-   61.45,
+   60.62,
    0.5
   ],
   [

@@ -152,15 +152,6 @@
   },
   {
    "type": "keyword",
-   "at": "BN menang besar",
-   "after": 10,
-   "icon": "flag",
-   "label": "Kesannya",
-   "text": "BN|[MENANG BESAR DI JOHOR]",
-   "dur": 4
-  },
-  {
-   "type": "keyword",
    "at": "Negeri Sembilan",
    "icon": "handshake",
    "label": "Seterusnya",

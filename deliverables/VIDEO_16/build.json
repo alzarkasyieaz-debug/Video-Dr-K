@@ -939,7 +939,7 @@
      "value": 3.6,
      "show": "3.6 JUTA",
      "at": "3.6",
-     "t": 23.48
+     "t": 23.66
     },
     {
      "label": "PAS",
@@ -959,7 +959,7 @@
     }
    ],
    "src": "Menurut ucapan penceramah",
-   "dur": 9,
+   "dur": 9.46,
    "start": 23.46
   },
   {
@@ -979,18 +979,8 @@
    "value": 21,
    "suffix": " KERUSI",
    "sub": "Nak tambah kerusi PAS & rakan Perikatan Nasional",
-   "dur": 10,
+   "dur": 9.8,
    "start": 76.92
-  },
-  {
-   "type": "keyword",
-   "at": "28-0",
-   "icon": "flag",
-   "label": "Sasaran",
-   "text": "[28–0]",
-   "sub": "Isyarat kepada satu parti",
-   "dur": 5,
-   "start": 88.92
   }
  ],
  "conclusion": {
@@ -998,8 +988,8 @@
   "after": 60,
   "kicker": "Sasaran",
   "text": "KALAU BOLEH|[28–0]",
-  "start": 87.7,
-  "dur": 3.67
+  "start": 86.77,
+  "dur": 4.6
  },
  "topics": [
   {
@@ -1044,13 +1034,8 @@
    0.4
   ],
   [
-   "whoosh-short.mp3",
-   88.92,
-   0.28
-  ],
-  [
    "impact-bass-2.mp3",
-   87.7,
+   86.77,
    0.5
   ],
   [

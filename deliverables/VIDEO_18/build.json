@@ -691,7 +691,7 @@
      "value": 27,
      "show": "27,000",
      "at": "BN",
-     "t": 14.58
+     "t": 14.76
     },
     {
      "label": "PN",
@@ -736,7 +736,7 @@
     }
    ],
    "src": "Angka menurut ucapan penceramah",
-   "dur": 13,
+   "dur": 14.26,
    "start": 37.63
   },
   {
@@ -755,8 +755,8 @@
   "after": 50,
   "kicker": "Pesanan kepada ahli",
   "text": "JANGAN BERGADUH —|[BIAR PIMPINAN URUSKAN]",
-  "start": 77.33,
-  "dur": 0.9
+  "start": 73.63,
+  "dur": 4.6
  },
  "topics": [
   {
@@ -797,7 +797,7 @@
   ],
   [
    "impact-bass-2.mp3",
-   77.33,
+   73.63,
    0.5
   ],
   [

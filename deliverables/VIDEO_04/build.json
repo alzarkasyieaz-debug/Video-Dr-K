@@ -1279,7 +1279,7 @@
     {
      "text": "Kelantan: UMNO dilabel khawarij",
      "at": "Kerana kalau di Kelantan",
-     "t": 17.96
+     "t": 18.14
     },
     {
      "text": "Pusat: PN & PAS dilabel khawarij",
@@ -1292,7 +1292,7 @@
      "t": 34.3
     }
    ],
-   "dur": 18,
+   "dur": 18.56,
    "start": 17.94
   },
   {
@@ -1323,26 +1323,6 @@
    "sub": "Menawarkan mana yang lebih baik kepada rakyat",
    "dur": 7,
    "start": 74.85
-  },
-  {
-   "type": "bullets",
-   "at": "menerusi pilihan raya",
-   "icon": "ballot",
-   "label": "Cara syarie menurunkan pemerintah",
-   "items": [
-    {
-     "text": "Pilihan raya",
-     "at": "pilihan raya",
-     "t": 103.8
-    },
-    {
-     "text": "Undi tidak percaya",
-     "at": "undi tak percaya",
-     "t": 105.38
-    }
-   ],
-   "dur": 6,
-   "start": 103.52
   }
  ],
  "conclusion": {
@@ -1398,11 +1378,6 @@
   [
    "whoosh-short.mp3",
    74.85,
-   0.28
-  ],
-  [
-   "whoosh-short.mp3",
-   103.52,
    0.28
   ],
   [

@@ -155,7 +155,7 @@
  "facts": [
   {
    "type": "bars",
-   "at": "Pakatan Harapan Tak",
+   "at": "82",
    "label": "PRU 2022 · kerusi Parlimen",
    "items": [
     {
@@ -166,21 +166,20 @@
      "color": "linear-gradient(90deg,#c0392b,#ff6b5b)"
     },
     {
+     "label": "BN",
+     "value": 30,
+     "show": "30"
+    },
+    {
      "label": "PN",
      "value": 74,
      "show": "73 → 74",
      "at": "73",
      "color": "linear-gradient(90deg,#1e8f5a,#5fd39a)"
-    },
-    {
-     "label": "BN",
-     "value": 30,
-     "show": "30",
-     "at": "Nak"
     }
    ],
    "src": "Menurut ucapan penceramah",
-   "dur": 8.5
+   "dur": 12
   },
   {
    "type": "number",

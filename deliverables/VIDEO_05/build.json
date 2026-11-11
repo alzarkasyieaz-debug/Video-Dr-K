@@ -690,7 +690,7 @@
    "label": "Titah Tuanku",
    "text": "KUASA|[PREROGATIF]",
    "sub": "Tuanku keluarkan kenyataan: jangan ingkar",
-   "dur": 5,
+   "dur": 4.9,
    "start": 48.95
   }
  ],
@@ -699,8 +699,8 @@
   "after": 40,
   "kicker": "Persoalan penceramah",
   "text": "ADAKAH ADIL|[MELANGGAR TITAH]?",
-  "start": 55.11,
-  "dur": 3.39
+  "start": 53.9,
+  "dur": 4.6
  },
  "topics": [
   {
@@ -741,7 +741,7 @@
   ],
   [
    "impact-bass-2.mp3",
-   55.11,
+   53.9,
    0.5
   ],
   [

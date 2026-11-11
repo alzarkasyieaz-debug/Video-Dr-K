@@ -1043,7 +1043,7 @@
      "value": 3.6,
      "show": "3.6 JUTA",
      "at": "3.6",
-     "t": 7.45
+     "t": 7.63
     },
     {
      "label": "PAS",
@@ -1067,7 +1067,7 @@
     {
      "text": "Pecah keluarga & adik-beradik",
      "at": "Pecah",
-     "t": 18.35
+     "t": 18.53
     },
     {
      "text": "Sanak saudara",
@@ -1080,7 +1080,7 @@
      "t": 28.75
     }
    ],
-   "dur": 12,
+   "dur": 12.62,
    "start": 18.33
   },
   {
@@ -1103,16 +1103,6 @@
    "sub": "Tahun 1989 — ketika keluarga lain semua UMNO",
    "dur": 9,
    "start": 56.35
-  },
-  {
-   "type": "keyword",
-   "at": "Menggerakkan Hubungan",
-   "icon": "handshake",
-   "label": "Kemudian",
-   "text": "MENGGERAKKAN|[HUBUNGAN PAS–UMNO]",
-   "sub": "Disokong Presiden PAS, Tuan Guru Haji Abdul Hadi Awang",
-   "dur": 7,
-   "start": 80.74
   }
  ],
  "conclusion": {
@@ -1120,8 +1110,8 @@
   "after": 55,
   "kicker": "Tekad penceramah",
   "text": "KEADAAN INI|[TIDAK BOLEH DIBIARKAN]",
-  "start": 67.02,
-  "dur": 20.84
+  "start": 77.86,
+  "dur": 10.0
  },
  "topics": [
   {
@@ -1166,13 +1156,8 @@
    0.4
   ],
   [
-   "whoosh-short.mp3",
-   80.74,
-   0.28
-  ],
-  [
    "impact-bass-2.mp3",
-   67.02,
+   77.86,
    0.5
   ],
   [

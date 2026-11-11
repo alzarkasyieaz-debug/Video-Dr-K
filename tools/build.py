@@ -452,6 +452,10 @@ def build(spec_path, html_only=False):
             for it in f["items"]:
                 if "at" in it: it["t"] = round(ow[find_phrase(ow, it["at"], f["start"])]["s"] - 0.1, 3)
         facts.append(f)
+    # staged items must land while the card is up: stretch the card to the last item + 2.2 s
+    for f in facts:
+        ts = [it["t"] for it in f.get("items", []) if isinstance(it, dict) and it.get("t") is not None]
+        if ts: f["dur"] = round(max(f["dur"], max(ts) - f["start"] + 2.2), 3)
     # never overlap two cards: trim earlier card
     facts.sort(key=lambda f: f["start"])
     for a, b in zip(facts, facts[1:]):
@@ -461,9 +465,19 @@ def build(spec_path, html_only=False):
     end_dur = 3.2
     if concl:
         ci = find_phrase(ow, concl["at"], concl.get("after", D * 0.6)); concl["start"] = round(ow[ci]["s"] - 0.1, 3)
+        concl["start"] = round(min(concl["start"], D - end_dur + 0.3 - 4.6), 3)   # closing message needs >= 4.6 s
+        concl["start"] = round(max(concl["start"], D - end_dur + 0.3 - 10.0), 3)  # and never sits static > 10 s
         concl["dur"] = round(D - end_dur + 0.3 - concl["start"], 3)
         for f in facts:
             if f["start"] < concl["start"] < f["start"] + f["dur"]: f["dur"] = round(concl["start"] - 0.05 - f["start"], 3)
+        facts = [f for f in facts if f["start"] < concl["start"] - 2.5]
+    for f in facts:   # clamp staged items into the (possibly trimmed) card window
+        for it in f.get("items", []):
+            if isinstance(it, dict) and it.get("t") is not None:
+                it["t"] = round(min(max(it["t"], f["start"] + 0.2), f["start"] + f["dur"] - 1.6), 3)
+    short = [f for f in facts if f["dur"] < 2.5]
+    for f in short: print("  drop short card:", f.get("label"), f["dur"])
+    facts = [f for f in facts if f["dur"] >= 2.5]
     l3s = round(hook_end + 0.6, 3); l3d = spec.get("l3_dur", 9.0)
     topics = spec.get("topics", [{"label": spec["topic"]}])
     tstarts = []

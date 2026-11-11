@@ -61,7 +61,7 @@ def main():
         words = b["words"]
         hook_txt = " ".join(w["t"] for w in words if w["s"] < b["hook_end"] - 0.05)
         out += [f"### {cid} — {plain(s['hook_title']).title()}", "",
-                f"1. **Nombor klip:** {cid} → `renders/{name}`",
+                f"1. **Nombor klip:** {cid} → `output/{name}`",
                 f"2. **Tajuk klip:** {plain(s['hook_title']).title()} | {s['topic']}",
                 f"3. **Topik utama:** {s['topic']}" + (" → " + " → ".join(t["label"] for t in b["topics"][1:]) if len(b["topics"]) > 1 else ""),
                 f"4. **Timestamp sumber ({src['file']}):** " +
@@ -96,11 +96,11 @@ def main():
         if notes: out += [f"> **Nota semakan:** {notes}", ""]
     out += ["## C. FAIL AKHIR", "",
             "| Fail | Durasi |", "|---|---|"]
-    for p in sorted(glob.glob(os.path.join(ROOT, "renders/VIDEO_*.mp4"))):
+    for p in sorted(glob.glob(os.path.join(ROOT, "output/VIDEO_*.mp4"))):
         if ".tmp" in p: continue
         import subprocess
         d = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", p], capture_output=True, text=True).stdout.strip()
-        out.append(f"| `renders/{os.path.basename(p)}` | {float(d):.1f} s |")
+        out.append(f"| `output/{os.path.basename(p)}` | {float(d):.1f} s |")
     out += ["", "Format: MP4 H.264 1080×1920 (9:16) 30 fps, audio AAC 48 kHz stereo.", ""]
     open(os.path.join(ROOT, "deliverables/LAPORAN_PRODUKSI.md"), "w").write("\n".join(out))
     print("written", len(specs), "clips")
