@@ -19,6 +19,27 @@
     #ov-star2 { left: 470px; top: 1640px; opacity: .5; }
     #ov-light { position: absolute; left: -200px; top: 120px; width: 900px; height: 900px; border-radius: 50%;
       background: radial-gradient(circle, rgba(213,179,106,.20), rgba(213,179,106,0) 65%); }
+    /* cover */
+    #cover { position: absolute; inset: 0; }
+    #cv-scrim { position: absolute; inset: 0;
+      background: linear-gradient(180deg, rgba(8,23,38,.97) 0%, rgba(7,59,53,.93) 34%, rgba(7,59,53,.55) 52%, rgba(8,23,38,.15) 66%, rgba(8,23,38,.55) 82%, rgba(8,23,38,.95) 100%); }
+    #cv-frame { position: absolute; left: 34px; top: 150px; width: 1012px; height: 1640px; border: 3px solid #D5B36A; border-radius: 26px; }
+    #cv-frame2 { position: absolute; left: 48px; top: 164px; width: 984px; height: 1612px; border: 1px solid rgba(213,179,106,.5); border-radius: 20px; }
+    .cv-corner { position: absolute; }
+    #cv-c1 { left: 6px; top: 122px; } #cv-c2 { right: 6px; top: 122px; }
+    #cv-c3 { left: 6px; top: 1702px; } #cv-c4 { right: 6px; top: 1702px; }
+    #cv-top { position: absolute; left: 0; top: 220px; width: 1080px; text-align: center; }
+    #cv-kitab { color: #D5B36A; font-weight: 800; font-size: 30px; letter-spacing: .26em; }
+    #cv-chip { display: inline-block; margin-top: 22px; padding: 12px 30px; border-radius: 40px; background: #D5B36A; color: #081726;
+      font-weight: 900; font-size: 30px; letter-spacing: .14em; }
+    #cv-title { position: absolute; left: 60px; top: 380px; width: 960px; text-align: center; }
+    .cv-line { font-weight: 900; line-height: 1.04; letter-spacing: -.01em; color: #fff;
+      text-shadow: 0 6px 0 rgba(0,0,0,.35), 0 12px 40px rgba(0,0,0,.6); }
+    .cv-line .g { color: #FFE16B; }
+    #cv-rule { margin: 30px auto 0; width: 300px; height: 8px; background: #D5B36A; border-radius: 4px; }
+    #cv-bottom { position: absolute; left: 0; top: 1560px; width: 1080px; text-align: center; }
+    #cv-series { color: #fff; font-weight: 800; font-size: 34px; letter-spacing: .22em; }
+    #cv-sub { margin-top: 12px; color: #D5B36A; font-weight: 600; font-size: 26px; letter-spacing: .08em; }
     /* hook */
     #hook { position: absolute; left: 60px; top: 196px; width: 960px; }
     .chip { display: inline-block; padding: 10px 22px; border: 2px solid #D5B36A; border-radius: 40px; color: #D5B36A;
@@ -63,15 +84,19 @@
     <div id="ov-star1" class="star"><svg viewBox="-50 -50 100 100" width="110" height="110"><g fill="none" stroke="#D5B36A" stroke-width="2"><rect x="-30" y="-30" width="60" height="60"/><rect x="-30" y="-30" width="60" height="60" transform="rotate(45)"/><circle r="15"/><circle r="44" stroke-opacity=".5"/></g></svg></div>
     <div id="ov-star2" class="star"><svg viewBox="-50 -50 100 100" width="140" height="140"><g fill="none" stroke="#D5B36A" stroke-width="1.6"><rect x="-30" y="-30" width="60" height="60"/><rect x="-30" y="-30" width="60" height="60" transform="rotate(45)"/><circle r="15"/><circle r="44" stroke-opacity=".5"/></g></svg></div>
 
-    <div id="hook" class="clip" data-start="0" data-duration="5.2" data-track-index="0">
-      <div id="hook-in">
-        <div class="chip" id="hook-chip">ADAB MENGUAP</div>
-        <div id="hook-title"><span class="w">MENGUAP</span> <span class="w">SAMPAI</span><br/><span class="g">BERSUARA?</span><br/><span class="w">SYAITAN</span> <span class="g">KETAWA!</span></div>
-        <div id="hook-rule"></div>
+    <div id="cover" class="clip" data-start="0" data-duration="3.0" data-track-index="0">
+      <div id="cover-in" style="position:absolute;inset:0">
+        <div id="cv-scrim"></div>
+        <div id="cv-frame"></div><div id="cv-frame2"></div>
+        <div id="cv-c1" class="cv-corner"><svg viewBox="-50 -50 100 100" width="56" height="56"><g fill="none" stroke="#D5B36A" stroke-width="4"><rect x="-30" y="-30" width="60" height="60"/><rect x="-30" y="-30" width="60" height="60" transform="rotate(45)"/><circle r="15"/><circle r="44" stroke-opacity=".5"/></g></svg></div><div id="cv-c2" class="cv-corner"><svg viewBox="-50 -50 100 100" width="56" height="56"><g fill="none" stroke="#D5B36A" stroke-width="4"><rect x="-30" y="-30" width="60" height="60"/><rect x="-30" y="-30" width="60" height="60" transform="rotate(45)"/><circle r="15"/><circle r="44" stroke-opacity=".5"/></g></svg></div>
+        <div id="cv-c3" class="cv-corner"><svg viewBox="-50 -50 100 100" width="56" height="56"><g fill="none" stroke="#D5B36A" stroke-width="4"><rect x="-30" y="-30" width="60" height="60"/><rect x="-30" y="-30" width="60" height="60" transform="rotate(45)"/><circle r="15"/><circle r="44" stroke-opacity=".5"/></g></svg></div><div id="cv-c4" class="cv-corner"><svg viewBox="-50 -50 100 100" width="56" height="56"><g fill="none" stroke="#D5B36A" stroke-width="4"><rect x="-30" y="-30" width="60" height="60"/><rect x="-30" y="-30" width="60" height="60" transform="rotate(45)"/><circle r="15"/><circle r="44" stroke-opacity=".5"/></g></svg></div>
+        <div id="cv-top"><div id="cv-kitab">KULIAH KITAB BAHRUL MAZI</div><div id="cv-chip">ADAB MENGUAP</div></div>
+        <div id="cv-title"><div class="cv-line" style="font-size:87px"><span class="w">MENGUAP</span> <span class="w">SAMPAI</span></div><div class="cv-line" style="font-size:130px"><span class="g">BERSUARA?</span></div><div class="cv-line" style="font-size:86px"><span class="w">SYAITAN</span> <span class="g">KETAWA!</span></div><div id="cv-rule"></div></div>
+        <div id="cv-bottom"><div id="cv-series">KULIAH FIQH SOLAT</div><div id="cv-sub">Syarah Mukhtasar Sahih at-Tirmizi</div></div>
       </div>
     </div>
 
-    <div id="header" class="clip" data-start="5" data-duration="108.1" data-track-index="1">
+    <div id="header" class="clip" data-start="2.5" data-duration="110.6" data-track-index="1">
       <div id="header-in">
         <div class="chip">ADAB MENGUAP</div>
         <div id="header-title">MENGUAP SAMPAI BERSUARA? <span class="g">SYAITAN KETAWA!</span></div>
@@ -130,11 +155,13 @@
     tl.fromTo("#ov-star2 svg", {rotation: 0}, {rotation: -60, duration: 115.1, ease: "none"}, 0);
     tl.fromTo("#ov-light", {x: 0, opacity: .6}, {x: 260, opacity: 1, duration: 115.1, ease: "sine.inOut"}, 0);
     // hook
-    tl.fromTo("#hook-chip", {opacity: 0, y: -14}, {opacity: 1, y: 0, duration: .4, ease: "power2.out"}, 0.0);
-    tl.fromTo("#hook-title span", {opacity: 0, y: 34, filter: "blur(6px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: .45, ease: "power3.out", stagger: .07}, 0.05);
-    tl.fromTo("#hook-rule", {scaleX: 0}, {scaleX: 1, duration: .6, ease: "power3.out"}, 0.5);
-    tl.to("#hook-in", {opacity: 0, y: -30, duration: .35, ease: "power2.in"}, 4.8);
-    tl.fromTo("#header-in", {opacity: 0, y: 20}, {opacity: 1, y: 0, duration: .45, ease: "power2.out"}, 5.05);
+    // cover: complete at frame 0 (thumbnail), slow push, then lifts away
+    tl.fromTo("#cv-title", {scale: 1}, {scale: 1.04, duration: 2.6, ease: "none"}, 0);
+    tl.fromTo("#cv-rule", {scaleX: 1}, {scaleX: 1.5, duration: 2.6, ease: "none"}, 0);
+    tl.fromTo(".cv-corner svg", {rotation: 0}, {rotation: 45, duration: 2.6, ease: "none"}, 0);
+    tl.to("#cv-title", {y: -60, opacity: 0, duration: .4, ease: "power2.in"}, 2.3000000000000003);
+    tl.to("#cover-in", {opacity: 0, duration: .45, ease: "power2.inOut"}, 2.45);
+    tl.fromTo("#header-in", {opacity: 0, y: 20}, {opacity: 1, y: 0, duration: .45, ease: "power2.out"}, 2.9);
     tl.fromTo("#pt1 .card-in", {opacity:0, y:40, scale:.96}, {opacity:1, y:0, scale:1, duration:.5, ease:"power3.out"}, 33.82);
     tl.fromTo("#pt1 .card-label", {opacity:0, x:-20}, {opacity:1, x:0, duration:.4, ease:"power2.out"}, 34.05);
     tl.to("#pt1 .card-in", {opacity:0, y:-16, duration:.35, ease:"power2.in"}, 47.80);

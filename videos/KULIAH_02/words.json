@@ -277,11 +277,11 @@
 {
 "text": "tak",
 "start": 31.33,
-"end": 31.38
+"end": 31.552
 },
 {
 "text": "dikira,",
-"start": 31.38,
+"start": 31.552,
 "end": 32.07
 },
 {
@@ -412,26 +412,26 @@
 {
 "text": "tak",
 "start": 43.27,
-"end": 43.27
+"end": 43.399
 },
 {
 "text": "kaitanlah,",
-"start": 43.27,
+"start": 43.399,
 "end": 43.83
 },
 {
 "text": "tak",
 "start": 43.83,
-"end": 43.91
+"end": 43.998
 },
 {
 "text": "ada",
-"start": 43.91,
-"end": 44.05
+"start": 43.998,
+"end": 44.167
 },
 {
 "text": "kaitan,",
-"start": 44.05,
+"start": 44.167,
 "end": 44.56
 },
 {
@@ -672,11 +672,11 @@
 {
 "text": "lah.",
 "start": 70.2,
-"end": 70.22
+"end": 70.577
 },
 {
 "text": "Ada",
-"start": 70.22,
+"start": 70.577,
 "end": 70.86
 },
 {

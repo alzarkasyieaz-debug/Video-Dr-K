@@ -10,6 +10,7 @@ Spec fields (times in the SOURCE lecture are seconds; everything else is clip-lo
 """
 import json, os, shutil, subprocess, sys, html, re, argparse
 
+COVER_END = 2.6   # cover (poster) shows 0 -> 2.6 s; frame 0 is the thumbnail
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 W, H = 1080, 1920
 # speaker face in the source frame (432x768) scaled to 1080x1920
@@ -114,7 +115,7 @@ def build(spec, source, media=True):
 
     # ---------- camera plan ----------
     # hook close-up, then medium while cards show, close-ups between cards
-    shots = [(0.0, 1.50, 760)]
+    shots = [(0.0, 1.22, 1010), (COVER_END, 1.50, 760)]
     card_windows = [(p["at"], p["at"] + p["dur"], 1.28, 860) for p in spec.get("points", [])] + \
                    [(a["at"], a["at"] + a["dur"], 1.16, 960) for a in spec.get("arabic", [])]
     card_windows.sort()
@@ -177,6 +178,14 @@ def build(spec, source, media=True):
     title_html = "<br/>".join(
         " ".join(f'<span class="{"g" if seg.get("gold") else "w"}">{esc(seg["t"])}</span>' for seg in line)
         for line in spec["title_lines"])
+    def cover_line(line):
+        txt = " ".join(seg["t"] for seg in line)
+        # approx. Montserrat Black cap advance widths (em)
+        em = sum(0.98 if c in "MW" else 0.36 if c in "I!:.,'" else 0.30 if c == " " else 0.72 if c in "?&" else 0.80 for c in txt)
+        fs = int(min(136, 930 / max(em, 1)))
+        segs = " ".join(f'<span class="{"g" if seg.get("gold") else "w"}">{esc(seg["t"])}</span>' for seg in line)
+        return f'<div class="cv-line" style="font-size:{fs}px">{segs}</div>'
+    cover_title = "".join(cover_line(l) for l in spec.get("cover_lines", spec["title_lines"]))
     cards, card_js = [], []
     for i, p in enumerate(spec.get("points", [])):
         cid_ = f"pt{i + 1}"
@@ -222,6 +231,27 @@ def build(spec, source, media=True):
     #ov-star2 {{ left: 470px; top: 1640px; opacity: .5; }}
     #ov-light {{ position: absolute; left: -200px; top: 120px; width: 900px; height: 900px; border-radius: 50%;
       background: radial-gradient(circle, rgba(213,179,106,.20), rgba(213,179,106,0) 65%); }}
+    /* cover */
+    #cover {{ position: absolute; inset: 0; }}
+    #cv-scrim {{ position: absolute; inset: 0;
+      background: linear-gradient(180deg, rgba(8,23,38,.97) 0%, rgba(7,59,53,.93) 34%, rgba(7,59,53,.55) 52%, rgba(8,23,38,.15) 66%, rgba(8,23,38,.55) 82%, rgba(8,23,38,.95) 100%); }}
+    #cv-frame {{ position: absolute; left: 34px; top: 150px; width: 1012px; height: 1640px; border: 3px solid #D5B36A; border-radius: 26px; }}
+    #cv-frame2 {{ position: absolute; left: 48px; top: 164px; width: 984px; height: 1612px; border: 1px solid rgba(213,179,106,.5); border-radius: 20px; }}
+    .cv-corner {{ position: absolute; }}
+    #cv-c1 {{ left: 6px; top: 122px; }} #cv-c2 {{ right: 6px; top: 122px; }}
+    #cv-c3 {{ left: 6px; top: 1702px; }} #cv-c4 {{ right: 6px; top: 1702px; }}
+    #cv-top {{ position: absolute; left: 0; top: 220px; width: 1080px; text-align: center; }}
+    #cv-kitab {{ color: #D5B36A; font-weight: 800; font-size: 30px; letter-spacing: .26em; }}
+    #cv-chip {{ display: inline-block; margin-top: 22px; padding: 12px 30px; border-radius: 40px; background: #D5B36A; color: #081726;
+      font-weight: 900; font-size: 30px; letter-spacing: .14em; }}
+    #cv-title {{ position: absolute; left: 60px; top: 380px; width: 960px; text-align: center; }}
+    .cv-line {{ font-weight: 900; line-height: 1.04; letter-spacing: -.01em; color: #fff;
+      text-shadow: 0 6px 0 rgba(0,0,0,.35), 0 12px 40px rgba(0,0,0,.6); }}
+    .cv-line .g {{ color: #FFE16B; }}
+    #cv-rule {{ margin: 30px auto 0; width: 300px; height: 8px; background: #D5B36A; border-radius: 4px; }}
+    #cv-bottom {{ position: absolute; left: 0; top: 1560px; width: 1080px; text-align: center; }}
+    #cv-series {{ color: #fff; font-weight: 800; font-size: 34px; letter-spacing: .22em; }}
+    #cv-sub {{ margin-top: 12px; color: #D5B36A; font-weight: 600; font-size: 26px; letter-spacing: .08em; }}
     /* hook */
     #hook {{ position: absolute; left: 60px; top: 196px; width: 960px; }}
     .chip {{ display: inline-block; padding: 10px 22px; border: 2px solid #D5B36A; border-radius: 40px; color: #D5B36A;
@@ -266,15 +296,19 @@ def build(spec, source, media=True):
     <div id="ov-star1" class="star">{STAR.format(s=110, sw=2)}</div>
     <div id="ov-star2" class="star">{STAR.format(s=140, sw=1.6)}</div>
 
-    <div id="hook" class="clip" data-start="0" data-duration="5.2" data-track-index="0">
-      <div id="hook-in">
-        <div class="chip" id="hook-chip">{esc(spec['category'])}</div>
-        <div id="hook-title">{title_html}</div>
-        <div id="hook-rule"></div>
+    <div id="cover" class="clip" data-start="0" data-duration="{COVER_END + 0.4}" data-track-index="0">
+      <div id="cover-in" style="position:absolute;inset:0">
+        <div id="cv-scrim"></div>
+        <div id="cv-frame"></div><div id="cv-frame2"></div>
+        <div id="cv-c1" class="cv-corner">{STAR.format(s=56, sw=4)}</div><div id="cv-c2" class="cv-corner">{STAR.format(s=56, sw=4)}</div>
+        <div id="cv-c3" class="cv-corner">{STAR.format(s=56, sw=4)}</div><div id="cv-c4" class="cv-corner">{STAR.format(s=56, sw=4)}</div>
+        <div id="cv-top"><div id="cv-kitab">{esc(spec.get('cover_kicker', 'KULIAH KITAB BAHRUL MAZI'))}</div><div id="cv-chip">{esc(spec['category'])}</div></div>
+        <div id="cv-title">{cover_title}<div id="cv-rule"></div></div>
+        <div id="cv-bottom"><div id="cv-series">{esc(spec['series'])}</div><div id="cv-sub">{esc(spec.get('cover_sub', 'Syarah Mukhtasar Sahih at-Tirmizi'))}</div></div>
       </div>
     </div>
 
-    <div id="header" class="clip" data-start="5" data-duration="{round(speech_dur - 5, 2)}" data-track-index="1">
+    <div id="header" class="clip" data-start="{COVER_END - 0.1}" data-duration="{round(speech_dur - COVER_END + 0.1, 2)}" data-track-index="1">
       <div id="header-in">
         <div class="chip">{esc(spec['category'])}</div>
         <div id="header-title">{spec.get('header_html') or title_html}</div>
@@ -307,11 +341,13 @@ def build(spec, source, media=True):
     tl.fromTo("#ov-star2 svg", {{rotation: 0}}, {{rotation: -60, duration: {D}, ease: "none"}}, 0);
     tl.fromTo("#ov-light", {{x: 0, opacity: .6}}, {{x: 260, opacity: 1, duration: {D}, ease: "sine.inOut"}}, 0);
     // hook
-    tl.fromTo("#hook-chip", {{opacity: 0, y: -14}}, {{opacity: 1, y: 0, duration: .4, ease: "power2.out"}}, 0.0);
-    tl.fromTo("#hook-title span", {{opacity: 0, y: 34, filter: "blur(6px)"}}, {{opacity: 1, y: 0, filter: "blur(0px)", duration: .45, ease: "power3.out", stagger: .07}}, 0.05);
-    tl.fromTo("#hook-rule", {{scaleX: 0}}, {{scaleX: 1, duration: .6, ease: "power3.out"}}, 0.5);
-    tl.to("#hook-in", {{opacity: 0, y: -30, duration: .35, ease: "power2.in"}}, 4.8);
-    tl.fromTo("#header-in", {{opacity: 0, y: 20}}, {{opacity: 1, y: 0, duration: .45, ease: "power2.out"}}, 5.05);
+    // cover: complete at frame 0 (thumbnail), slow push, then lifts away
+    tl.fromTo("#cv-title", {{scale: 1}}, {{scale: 1.04, duration: {COVER_END}, ease: "none"}}, 0);
+    tl.fromTo("#cv-rule", {{scaleX: 1}}, {{scaleX: 1.5, duration: {COVER_END}, ease: "none"}}, 0);
+    tl.fromTo(".cv-corner svg", {{rotation: 0}}, {{rotation: 45, duration: {COVER_END}, ease: "none"}}, 0);
+    tl.to("#cv-title", {{y: -60, opacity: 0, duration: .4, ease: "power2.in"}}, {COVER_END - 0.3});
+    tl.to("#cover-in", {{opacity: 0, duration: .45, ease: "power2.inOut"}}, {COVER_END - 0.15});
+    tl.fromTo("#header-in", {{opacity: 0, y: 20}}, {{opacity: 1, y: 0, duration: .45, ease: "power2.out"}}, {COVER_END + 0.3});
     {chr(10).join('    ' + c for c in card_js).strip()}
     // lower third
     tl.fromTo("#lt-bar", {{scaleY: 0}}, {{scaleY: 1, duration: .35, ease: "power2.out"}}, {lt_at + 0.02});

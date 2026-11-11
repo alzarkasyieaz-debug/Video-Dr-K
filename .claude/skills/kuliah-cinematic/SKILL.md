@@ -15,8 +15,9 @@ melainkan pengguna minta. Contoh siap: `exports/KULIAH_01_*.mp4` … `KULIAH_12_
 | Kanvas | 1080×1920, 30 fps, H.264 + AAC stereo, 60–120 s (jumlah ≤ 120 s) |
 | Palet | Deep Emerald `#073B35`, Islamic Gold `#D5B36A`, Dark Navy `#081726`, White `#FFFFFF`, Subtitle Yellow `#FFE16B` |
 | Fon | Montserrat 600/800/900 (`assets/fonts/`), Amiri 700 untuk Arab & ﷺ |
-| Hook 0–5.2 s | Cip kategori (border emas), tajuk 74 px 900 tiga baris, perkataan kunci kuning, garis emas; close-up ×1.50 |
-| Header | Selepas 5 s tajuk mampat 44 px di kiri atas (top 192, lebar 820) |
+| Cover 0–2.6 s | Poster penuh pada bingkai 0 (= thumbnail): scrim navy→emerald, bingkai emas berganda + bintang di 4 penjuru, "KULIAH KITAB …" emas, cip kategori emas pejal, tajuk Montserrat 900 berpusat (saiz baris dimuatkan automatik, maks 136 px, kata kunci `#FFE16B`), garis emas, nama siri di bawah; penceramah kelihatan di tengah (×1.22). Baris cover boleh diatur dengan `cover_lines`. Keluar: tajuk naik & pudar 2.3–2.7 s, kemudian close-up ×1.50 |
+| Header | Selepas cover (2.9 s) tajuk mampat 44 px di kiri atas (top 192, lebar 820) |
+| Gambar cover | `exports/covers/KULIAH_XX_<SLUG>_COVER.jpg` (bingkai 0, 1080×1920) untuk thumbnail Reels/TikTok |
 | Lower-third | 5.6–11.1 s, bar emas + kotak navy, `speaker` / `speaker_role` |
 | Kad poin | top 372, lebar 960, navy 84%, border kiri emas 8 px, label emas 28 px + teks 44 px; masuk 0.5 s slide-up/scale, keluar 0.35 s |
 | Kad Arab | Amiri kuning (62/50/42 px ikut panjang), terjemahan, rujukan emas; kamera melebar ×1.16 supaya wajah di bawah kad |
