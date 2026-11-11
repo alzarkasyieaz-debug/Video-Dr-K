@@ -2,8 +2,52 @@
  "id": "01",
  "slug": "TAJUK_RINGKAS_HURUF_BESAR",
  "category": "FIQH SOLAT",
- "title_lines": [[{"t": "BARIS"}, {"t": "SATU", "gold": true}], [{"t": "BARIS DUA"}], [{"t": "BARIS"}, {"t": "TIGA?", "gold": true}]],
+ "title_lines": [
+  [
+   {
+    "t": "BARIS"
+   },
+   {
+    "t": "SATU",
+    "gold": true
+   }
+  ],
+  [
+   {
+    "t": "BARIS DUA"
+   }
+  ],
+  [
+   {
+    "t": "BARIS"
+   },
+   {
+    "t": "TIGA?",
+    "gold": true
+   }
+  ]
+ ],
  "header_html": "BARIS SATU BARIS DUA <span class=\"g\">BARIS TIGA?</span>",
+ "cover_lines": [
+  [
+   {
+    "t": "BARIS"
+   }
+  ],
+  [
+   {
+    "t": "KATA KUNCI",
+    "gold": true
+   }
+  ],
+  [
+   {
+    "t": "BARIS TIGA?"
+   }
+  ]
+ ],
+ "cover_kicker": "KULIAH KITAB <NAMA KITAB>",
+ "cover_sub": "<Keterangan kitab / tempat / siri>",
  "speaker": "Nama Penceramah / Nama Kitab",
  "speaker_role": "Keterangan ringkas • Siri",
  "series": "NAMA SIRI KULIAH",
@@ -12,13 +56,32 @@
  "start": 0.0,
  "end": 90.0,
  "arabic": [
-  {"ar": "teks Arab yang disahkan", "ms": "Terjemahan Bahasa Malaysia.", "ref": "HR AL-BUKHARI", "at": 6.0, "dur": 14.0}
+  {
+   "ar": "teks Arab yang disahkan",
+   "ms": "Terjemahan Bahasa Malaysia.",
+   "ref": "HR AL-BUKHARI",
+   "at": 6.0,
+   "dur": 14.0
+  }
  ],
  "points": [
-  {"label": "POIN 1", "text": "Isi pendek, maksimum ~70 aksara", "at": 22.0, "dur": 12.0},
-  {"label": "PENGAJARAN", "text": "Pengajaran sebenar daripada penceramah", "at": 70.0, "dur": 12.0}
+  {
+   "label": "POIN 1",
+   "text": "Isi pendek, maksimum ~70 aksara",
+   "at": 22.0,
+   "dur": 12.0
+  },
+  {
+   "label": "PENGAJARAN",
+   "text": "Pengajaran sebenar daripada penceramah",
+   "at": 70.0,
+   "dur": 12.0
+  }
  ],
- "keywords": ["kata", "kunci"],
+ "keywords": [
+  "kata",
+  "kunci"
+ ],
  "music_volume": 0.1,
  "text": "Teks ucapan yang telah disemak, ayat demi ayat, mengikut audio. Perkataan yang tidak jelas ditinggalkan, bukan direka."
 }

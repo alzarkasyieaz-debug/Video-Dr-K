@@ -30,6 +30,18 @@ melainkan pengguna minta. Contoh siap: `exports/KULIAH_01_*.mp4` … `KULIAH_12_
 Footage sumber menegak dianggap wajah di (595,1088) selepas dibesarkan ke 1080×1920 (`FACE_X/FACE_Y` dalam
 `tools/build_clip.py`). Untuk rakaman lain, ambil satu bingkai dan kemas kini nilai ini dahulu.
 
+## Rujukan visual
+
+Sebelum mereka bentuk, lihat `reference/covers.jpg` (12 cover yang diluluskan) dan `reference/frames.jpg`
+(cover → header + lower-third → kad poin → kad Arab → subtitle → outro). Hasil baharu mesti kelihatan sama.
+
+## Wajib tukar untuk kuliah baharu
+
+Medan ini bertulis untuk siri *Bahrul Mazi* — tukar dalam setiap spec, jangan biarkan nilai lalai:
+`cover_kicker` (lalai "KULIAH KITAB BAHRUL MAZI"), `cover_sub` (lalai "Syarah Mukhtasar Sahih at-Tirmizi"),
+`speaker`, `speaker_role`, `series`, dan `FACE_X/FACE_Y` dalam `tools/build_clip.py` jika sudut kamera berbeza.
+Jika nama penceramah diketahui, letak dalam `speaker`.
+
 ## Aliran kerja
 
 1. **Muat turun** rakaman (Drive: `drive.usercontent.google.com/download?id=<ID>&export=download&confirm=t`).
