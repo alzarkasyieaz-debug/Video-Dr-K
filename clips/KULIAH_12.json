@@ -1,0 +1,64 @@
+{
+ "id": "12",
+ "slug": "NABI_SAW_TIDAK_PERNAH_MENGUAP",
+ "category": "SYAMAIL NABI",
+ "title_lines": [
+  [
+   {
+    "t": "NABI ﷺ"
+   }
+  ],
+  [
+   {
+    "t": "TIDAK PERNAH"
+   }
+  ],
+  [
+   {
+    "t": "MENGUAP?",
+    "gold": true
+   }
+  ]
+ ],
+ "header_html": "NABI ﷺ TIDAK PERNAH <span class=\"g\">MENGUAP?</span>",
+ "whisper": "clips/whisper/w12.json",
+ "window": 740,
+ "start": 744.0,
+ "end": 839.9,
+ "arabic": [
+  {
+   "ar": "تَنَامُ عَيْنَاهُ وَلَا يَنَامُ قَلْبُهُ",
+   "ms": "Kedua matanya tidur, tetapi hatinya tidak tidur.",
+   "ref": "HR AL-BUKHARI",
+   "at": 47.0,
+   "dur": 13.0
+  }
+ ],
+ "points": [
+  {
+   "label": "HADIS MURSAL • TARIKH AL-BUKHARI",
+   "text": "Nabi ﷺ tidak pernah menguap — antara keistimewaan baginda",
+   "at": 18.6,
+   "dur": 14.4
+  },
+  {
+   "label": "PENGAJARAN",
+   "text": "Allah menyempitkan ruang syaitan untuk mendekati Nabi ﷺ",
+   "at": 77.6,
+   "dur": 16.4
+  }
+ ],
+ "keywords": [
+  "Nabi",
+  "menguap",
+  "syaitan",
+  "mursal",
+  "hati",
+  "jaga",
+  "kelebihan"
+ ],
+ "text": "Ada satu lagi hadis menarik berkaitan dengan menguap, iaitu Nabi sendiri. Satu hadis riwayat Imam Bukhari dalam kitab beliau, Tarikh Bukhari. Tapi hadisnya hadis mursal. Nabi tak pernah menguap. Nabi tidak pernah menguap. Ini satu antara kelebihan bagi Nabi kita Muhammad sallallahu 'alaihi wasallam, Nabi tidak menguap. Satu lagi keistimewaan Nabi, pejam mata dia, tapi hati dia jaga. Maksud Nabi ni, pada Nabi ni dia jaga. Mata pejam, hati dia jaga. Itu antara kelebihan untuk pada Nabi. Nabi kita ya, Nabi tidak menguap. Jadi kalau Nabi tidak menguap, bererti kalau kita baca hadis tadi, menguap datang daripada syaitan, bererti Allah Ta'ala menyempitkan ruang-ruang untuk syaitan mendekati Nabi kita Muhammad sallallahu 'alaihi wasallam.",
+ "speaker": "Kuliah Kitab Bahrul Mazi",
+ "speaker_role": "Syarah Mukhtasar Sahih at-Tirmizi • Siri 30",
+ "series": "KULIAH FIQH SOLAT"
+}

@@ -1,0 +1,79 @@
+{
+ "id": "02",
+ "slug": "MASBUK_BILA_DAPAT_RAKAAT",
+ "category": "FIQH SOLAT",
+ "title_lines": [
+  [
+   {
+    "t": "MASBUK:"
+   }
+  ],
+  [
+   {
+    "t": "BILA DAPAT",
+    "gold": false
+   },
+   {
+    "t": "RAKAAT?",
+    "gold": true
+   }
+  ]
+ ],
+ "header_html": "MASBUK: BILA DAPAT <span class=\"g\">RAKAAT?</span>",
+ "whisper": "clips/whisper/w02.json",
+ "window": 3757,
+ "start": 3764.2,
+ "end": 3862.6,
+ "points": [
+  {
+   "label": "SEMPAT RUKUK",
+   "text": "Sempat rukuk bersama imam: dapat satu rakaat, Fatihah ditanggung imam",
+   "at": 17.6,
+   "dur": 10.6
+  },
+  {
+   "label": "TERLEPAS RUKUK",
+   "text": "Imam sudah bangun: rakaat tidak dikira, tambah satu rakaat",
+   "at": 28.8,
+   "dur": 10.5
+  },
+  {
+   "label": "JANGAN TERSILAP",
+   "text": "Takbiratul ihram dahulu — rukun pertama — baru takbir untuk rukuk",
+   "at": 74.5,
+   "dur": 17
+  }
+ ],
+ "keywords": [
+  "takbiratul",
+  "ihram",
+  "rukuk",
+  "masbuk",
+  "rakaat",
+  "Fatihah",
+  "imam",
+  "rukun"
+ ],
+ "text": "Kita tengah solat, kemudian kita rukuk, rukuk, bagi orang lain, dia, bagi orang yang dia kena buat ialah takbiratul ihram, Allahu Akbar, kemudian rukuk, tinggalkanlah Fatihah itu, maka dia dipanggil sebagai masbuk, dia dapat satu rakaat. Kalau ketika dia nak rukuk, baru nak rukuk, itu imam naik dah, maka dia terlepas rukuk, bererti rakaat itu tak dikira, dia akan tambah sekali lagi. Jadi bergantung kepada pada mana dia sempat ketika mana imam rukuk. Kalau kamu datang dari rumah, tak ada kaitan? Tak, tak kaitanlah, tak ada kaitan, dari rumah ke, dari tandas ke, tak berbetul. Yang penting bila nak sembahyang, imam dah rukuk, dia kena takbiratul ihram dulu, kemudian kejar pada rukuk, maka Fatihahnya ditanggung oleh imam. Tak ada kaitan dengan apa yang sebelum, situasi sekarang. Kalau tak sempat, maka terlepas rukuk, tambah sekali lah. Ada banyak orang yang nak bergegas, Allahu Akbar terus rukuk, jadi takbiratul ihram, takbir mana? Allahu Akbar rukuk, mana takbiratul ihram dia? Tak kena lagi. Jadi yang penting lah, Allahu Akbar sekali dulu, rukun pertama, rukun ihram, kemudian barulah pergi kepada rukun seterusnya, Allahu Akbar.",
+ "speaker": "Kuliah Kitab Bahrul Mazi",
+ "speaker_role": "Syarah Mukhtasar Sahih at-Tirmizi • Siri 30",
+ "series": "KULIAH FIQH SOLAT",
+ "cover_lines": [
+  [
+   {
+    "t": "MASBUK:"
+   }
+  ],
+  [
+   {
+    "t": "BILA DAPAT"
+   }
+  ],
+  [
+   {
+    "t": "RAKAAT?",
+    "gold": true
+   }
+  ]
+ ]
+}

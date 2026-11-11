@@ -1,0 +1,902 @@
+[
+{
+"text": "Kita",
+"start": 0.08,
+"end": 0.72
+},
+{
+"text": "tengah",
+"start": 0.72,
+"end": 1.4
+},
+{
+"text": "solat,",
+"start": 1.4,
+"end": 2.46
+},
+{
+"text": "kemudian",
+"start": 2.46,
+"end": 3.66
+},
+{
+"text": "kita",
+"start": 4.04,
+"end": 4.41
+},
+{
+"text": "rukuk,",
+"start": 4.41,
+"end": 5.595
+},
+{
+"text": "rukuk,",
+"start": 5.595,
+"end": 6.78
+},
+{
+"text": "bagi",
+"start": 6.78,
+"end": 7.57
+},
+{
+"text": "orang",
+"start": 7.57,
+"end": 7.96
+},
+{
+"text": "lain,",
+"start": 7.96,
+"end": 8.74
+},
+{
+"text": "dia,",
+"start": 8.74,
+"end": 9.27
+},
+{
+"text": "bagi",
+"start": 9.27,
+"end": 9.88
+},
+{
+"text": "orang",
+"start": 9.88,
+"end": 10.77
+},
+{
+"text": "yang",
+"start": 10.77,
+"end": 11.04
+},
+{
+"text": "dia",
+"start": 11.04,
+"end": 11.27
+},
+{
+"text": "kena",
+"start": 11.27,
+"end": 11.6
+},
+{
+"text": "buat",
+"start": 11.6,
+"end": 11.98
+},
+{
+"text": "ialah",
+"start": 11.98,
+"end": 12.32
+},
+{
+"text": "takbiratul",
+"start": 12.32,
+"end": 13.18
+},
+{
+"text": "ihram,",
+"start": 13.18,
+"end": 13.56
+},
+{
+"text": "Allahu",
+"start": 13.56,
+"end": 14.32
+},
+{
+"text": "Akbar,",
+"start": 14.32,
+"end": 15.14
+},
+{
+"text": "kemudian",
+"start": 15.14,
+"end": 16.34
+},
+{
+"text": "rukuk,",
+"start": 16.39,
+"end": 16.974
+},
+{
+"text": "tinggalkanlah",
+"start": 16.974,
+"end": 18.174
+},
+{
+"text": "Fatihah",
+"start": 18.239,
+"end": 18.92
+},
+{
+"text": "itu,",
+"start": 18.92,
+"end": 19.27
+},
+{
+"text": "maka",
+"start": 19.27,
+"end": 19.55
+},
+{
+"text": "dia",
+"start": 19.55,
+"end": 19.76
+},
+{
+"text": "dipanggil",
+"start": 19.76,
+"end": 20.25
+},
+{
+"text": "sebagai",
+"start": 20.25,
+"end": 20.76
+},
+{
+"text": "masbuk,",
+"start": 20.76,
+"end": 21.34
+},
+{
+"text": "dia",
+"start": 21.34,
+"end": 21.97
+},
+{
+"text": "dapat",
+"start": 21.97,
+"end": 22.42
+},
+{
+"text": "satu",
+"start": 22.42,
+"end": 22.96
+},
+{
+"text": "rakaat.",
+"start": 22.96,
+"end": 23.8
+},
+{
+"text": "Kalau",
+"start": 23.8,
+"end": 24.16
+},
+{
+"text": "ketika",
+"start": 24.16,
+"end": 24.64
+},
+{
+"text": "dia",
+"start": 24.64,
+"end": 24.87
+},
+{
+"text": "nak",
+"start": 24.87,
+"end": 25.1
+},
+{
+"text": "rukuk,",
+"start": 25.1,
+"end": 25.62
+},
+{
+"text": "baru",
+"start": 25.62,
+"end": 25.9
+},
+{
+"text": "nak",
+"start": 25.9,
+"end": 26.16
+},
+{
+"text": "rukuk,",
+"start": 26.16,
+"end": 26.46
+},
+{
+"text": "itu",
+"start": 26.46,
+"end": 26.89
+},
+{
+"text": "imam",
+"start": 26.89,
+"end": 27.22
+},
+{
+"text": "naik",
+"start": 27.22,
+"end": 27.94
+},
+{
+"text": "dah,",
+"start": 27.94,
+"end": 28.1
+},
+{
+"text": "maka",
+"start": 28.1,
+"end": 28.45
+},
+{
+"text": "dia",
+"start": 28.45,
+"end": 28.73
+},
+{
+"text": "terlepas",
+"start": 28.73,
+"end": 29.42
+},
+{
+"text": "rukuk,",
+"start": 29.42,
+"end": 29.897
+},
+{
+"text": "bererti",
+"start": 29.897,
+"end": 30.453
+},
+{
+"text": "rakaat",
+"start": 30.453,
+"end": 30.93
+},
+{
+"text": "itu",
+"start": 30.93,
+"end": 31.33
+},
+{
+"text": "tak",
+"start": 31.33,
+"end": 31.552
+},
+{
+"text": "dikira,",
+"start": 31.552,
+"end": 32.07
+},
+{
+"text": "dia",
+"start": 32.07,
+"end": 32.38
+},
+{
+"text": "akan",
+"start": 32.38,
+"end": 32.92
+},
+{
+"text": "tambah",
+"start": 32.92,
+"end": 33.43
+},
+{
+"text": "sekali",
+"start": 33.43,
+"end": 33.795
+},
+{
+"text": "lagi.",
+"start": 33.795,
+"end": 34.1
+},
+{
+"text": "Jadi",
+"start": 34.1,
+"end": 34.46
+},
+{
+"text": "bergantung",
+"start": 34.46,
+"end": 35.37
+},
+{
+"text": "kepada",
+"start": 35.37,
+"end": 35.97
+},
+{
+"text": "pada",
+"start": 35.97,
+"end": 36.29
+},
+{
+"text": "mana",
+"start": 36.29,
+"end": 36.59
+},
+{
+"text": "dia",
+"start": 36.59,
+"end": 36.92
+},
+{
+"text": "sempat",
+"start": 36.92,
+"end": 37.75
+},
+{
+"text": "ketika",
+"start": 37.75,
+"end": 38.38
+},
+{
+"text": "mana",
+"start": 38.38,
+"end": 38.92
+},
+{
+"text": "imam",
+"start": 38.92,
+"end": 39.26
+},
+{
+"text": "rukuk.",
+"start": 39.26,
+"end": 39.9
+},
+{
+"text": "Kalau",
+"start": 39.9,
+"end": 40.31
+},
+{
+"text": "kamu",
+"start": 40.31,
+"end": 40.64
+},
+{
+"text": "datang",
+"start": 40.64,
+"end": 41.13
+},
+{
+"text": "dari",
+"start": 41.13,
+"end": 41.29
+},
+{
+"text": "rumah,",
+"start": 41.29,
+"end": 41.93
+},
+{
+"text": "tak",
+"start": 41.93,
+"end": 42.11
+},
+{
+"text": "ada",
+"start": 42.11,
+"end": 42.36
+},
+{
+"text": "kaitan?",
+"start": 42.36,
+"end": 42.9
+},
+{
+"text": "Tak,",
+"start": 42.9,
+"end": 43.27
+},
+{
+"text": "tak",
+"start": 43.27,
+"end": 43.399
+},
+{
+"text": "kaitanlah,",
+"start": 43.399,
+"end": 43.83
+},
+{
+"text": "tak",
+"start": 43.83,
+"end": 43.998
+},
+{
+"text": "ada",
+"start": 43.998,
+"end": 44.167
+},
+{
+"text": "kaitan,",
+"start": 44.167,
+"end": 44.56
+},
+{
+"text": "dari",
+"start": 44.56,
+"end": 44.78
+},
+{
+"text": "rumah",
+"start": 44.78,
+"end": 45.14
+},
+{
+"text": "ke,",
+"start": 45.14,
+"end": 45.39
+},
+{
+"text": "dari",
+"start": 45.39,
+"end": 45.63
+},
+{
+"text": "tandas",
+"start": 45.63,
+"end": 46.15
+},
+{
+"text": "ke,",
+"start": 46.15,
+"end": 46.38
+},
+{
+"text": "tak",
+"start": 46.38,
+"end": 46.57
+},
+{
+"text": "berbetul.",
+"start": 46.57,
+"end": 46.9
+},
+{
+"text": "Yang",
+"start": 46.9,
+"end": 47.19
+},
+{
+"text": "penting",
+"start": 47.19,
+"end": 47.7
+},
+{
+"text": "bila",
+"start": 47.7,
+"end": 47.99
+},
+{
+"text": "nak",
+"start": 47.99,
+"end": 48.21
+},
+{
+"text": "sembahyang,",
+"start": 48.21,
+"end": 48.93
+},
+{
+"text": "imam",
+"start": 48.93,
+"end": 49.21
+},
+{
+"text": "dah",
+"start": 49.21,
+"end": 49.42
+},
+{
+"text": "rukuk,",
+"start": 49.42,
+"end": 49.94
+},
+{
+"text": "dia",
+"start": 49.94,
+"end": 50.15
+},
+{
+"text": "kena",
+"start": 50.15,
+"end": 50.44
+},
+{
+"text": "takbiratul",
+"start": 50.44,
+"end": 51.38
+},
+{
+"text": "ihram",
+"start": 51.38,
+"end": 51.72
+},
+{
+"text": "dulu,",
+"start": 51.72,
+"end": 52.32
+},
+{
+"text": "kemudian",
+"start": 52.32,
+"end": 53.04
+},
+{
+"text": "kejar",
+"start": 53.04,
+"end": 53.49
+},
+{
+"text": "pada",
+"start": 53.49,
+"end": 53.85
+},
+{
+"text": "rukuk,",
+"start": 53.85,
+"end": 54.56
+},
+{
+"text": "maka",
+"start": 54.56,
+"end": 55.01
+},
+{
+"text": "Fatihahnya",
+"start": 55.01,
+"end": 55.91
+},
+{
+"text": "ditanggung",
+"start": 55.91,
+"end": 57.11
+},
+{
+"text": "oleh",
+"start": 57.14,
+"end": 57.5
+},
+{
+"text": "imam.",
+"start": 57.5,
+"end": 58.02
+},
+{
+"text": "Tak",
+"start": 58.02,
+"end": 58.34
+},
+{
+"text": "ada",
+"start": 58.34,
+"end": 58.68
+},
+{
+"text": "kaitan",
+"start": 58.68,
+"end": 59.34
+},
+{
+"text": "dengan",
+"start": 59.34,
+"end": 60.05
+},
+{
+"text": "apa",
+"start": 60.05,
+"end": 60.34
+},
+{
+"text": "yang",
+"start": 60.34,
+"end": 61.25
+},
+{
+"text": "sebelum,",
+"start": 61.25,
+"end": 61.77
+},
+{
+"text": "situasi",
+"start": 61.77,
+"end": 62.84
+},
+{
+"text": "sekarang.",
+"start": 62.84,
+"end": 63.52
+},
+{
+"text": "Kalau",
+"start": 63.52,
+"end": 64.15
+},
+{
+"text": "tak",
+"start": 64.15,
+"end": 64.53
+},
+{
+"text": "sempat,",
+"start": 64.53,
+"end": 65.55
+},
+{
+"text": "maka",
+"start": 65.55,
+"end": 65.96
+},
+{
+"text": "terlepas",
+"start": 65.96,
+"end": 66.94
+},
+{
+"text": "rukuk,",
+"start": 66.94,
+"end": 68.14
+},
+{
+"text": "tambah",
+"start": 68.34,
+"end": 69.08
+},
+{
+"text": "sekali",
+"start": 69.08,
+"end": 70.2
+},
+{
+"text": "lah.",
+"start": 70.2,
+"end": 70.577
+},
+{
+"text": "Ada",
+"start": 70.577,
+"end": 70.86
+},
+{
+"text": "banyak",
+"start": 70.86,
+"end": 71.61
+},
+{
+"text": "orang",
+"start": 71.61,
+"end": 72.38
+},
+{
+"text": "yang",
+"start": 72.38,
+"end": 73.18
+},
+{
+"text": "nak",
+"start": 73.18,
+"end": 73.48
+},
+{
+"text": "bergegas,",
+"start": 73.48,
+"end": 74.566
+},
+{
+"text": "Allahu",
+"start": 74.566,
+"end": 75.29
+},
+{
+"text": "Akbar",
+"start": 75.29,
+"end": 75.893
+},
+{
+"text": "terus",
+"start": 75.893,
+"end": 76.496
+},
+{
+"text": "rukuk,",
+"start": 76.496,
+"end": 77.22
+},
+{
+"text": "jadi",
+"start": 77.22,
+"end": 77.63
+},
+{
+"text": "takbiratul",
+"start": 77.63,
+"end": 78.7
+},
+{
+"text": "ihram,",
+"start": 78.7,
+"end": 79.38
+},
+{
+"text": "takbir",
+"start": 79.38,
+"end": 79.989
+},
+{
+"text": "mana?",
+"start": 79.989,
+"end": 80.496
+},
+{
+"text": "Allahu",
+"start": 80.496,
+"end": 81.104
+},
+{
+"text": "Akbar",
+"start": 81.104,
+"end": 81.611
+},
+{
+"text": "rukuk,",
+"start": 81.611,
+"end": 82.22
+},
+{
+"text": "mana",
+"start": 82.22,
+"end": 82.58
+},
+{
+"text": "takbiratul",
+"start": 82.58,
+"end": 83.48
+},
+{
+"text": "ihram",
+"start": 83.48,
+"end": 83.93
+},
+{
+"text": "dia?",
+"start": 83.93,
+"end": 84.64
+},
+{
+"text": "Tak",
+"start": 84.64,
+"end": 85.04
+},
+{
+"text": "kena",
+"start": 85.04,
+"end": 85.62
+},
+{
+"text": "lagi.",
+"start": 85.62,
+"end": 86.22
+},
+{
+"text": "Jadi",
+"start": 86.22,
+"end": 86.49
+},
+{
+"text": "yang",
+"start": 86.49,
+"end": 86.76
+},
+{
+"text": "penting",
+"start": 86.76,
+"end": 87.23
+},
+{
+"text": "lah,",
+"start": 87.23,
+"end": 87.55
+},
+{
+"text": "Allahu",
+"start": 87.55,
+"end": 88.023
+},
+{
+"text": "Akbar",
+"start": 88.023,
+"end": 88.417
+},
+{
+"text": "sekali",
+"start": 88.417,
+"end": 88.89
+},
+{
+"text": "dulu,",
+"start": 88.89,
+"end": 89.22
+},
+{
+"text": "rukun",
+"start": 89.22,
+"end": 89.86
+},
+{
+"text": "pertama,",
+"start": 89.86,
+"end": 90.93
+},
+{
+"text": "rukun",
+"start": 90.93,
+"end": 91.53
+},
+{
+"text": "ihram,",
+"start": 91.53,
+"end": 92.48
+},
+{
+"text": "kemudian",
+"start": 92.48,
+"end": 93.26
+},
+{
+"text": "barulah",
+"start": 93.26,
+"end": 93.62
+},
+{
+"text": "pergi",
+"start": 93.62,
+"end": 94.04
+},
+{
+"text": "kepada",
+"start": 94.04,
+"end": 94.22
+},
+{
+"text": "rukun",
+"start": 94.22,
+"end": 94.55
+},
+{
+"text": "seterusnya,",
+"start": 94.55,
+"end": 95.22
+},
+{
+"text": "Allahu",
+"start": 95.22,
+"end": 96.42
+},
+{
+"text": "Akbar.",
+"start": 96.81,
+"end": 98.01
+}
+]

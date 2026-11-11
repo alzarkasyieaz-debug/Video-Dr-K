@@ -4,6 +4,13 @@ This folder is a [HyperFrames](https://hyperframes.heygen.com) video: HTML, CSS 
 animations (GSAP by default) that the `hyperframes` CLI previews in the browser and renders to
 MP4.
 
+## Gaya tersimpan: Kuliah Cinematic
+
+Untuk sebarang kerja memotong/menyunting rakaman kuliah atau ceramah, baca dahulu skill projek
+`/kuliah-cinematic` (`.claude/skills/kuliah-cinematic/SKILL.md`). Ia menyimpan gaya visual yang telah
+diluluskan dan aliran kerja penuh (`tools/transcribe.sh`, `tools/build_clip.py`, `tools/render_all.sh`,
+`clips/TEMPLATE.json`).
+
 ## Skills — read these first
 
 **Invoke the relevant skill before writing or modifying compositions.** Skills encode framework-specific patterns (e.g., `window.__timelines` registration, `data-*` attribute semantics, shader-compatible CSS rules) that generic web docs don't cover, so compositions written without them break.
