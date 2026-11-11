@@ -993,22 +993,22 @@
  "facts": [
   {
    "type": "keyword",
-   "at": "Nombor Satu Agama",
-   "icon": "mosque",
-   "label": "Maslahah 1",
-   "text": "JAGA|[AGAMA]",
-   "sub": "Adakah agama ditegakkan, dibina, dikembangkan",
-   "dur": 3.79,
-   "start": 0
-  },
-  {
-   "type": "keyword",
    "at": "Ada Lima",
    "icon": "scale",
    "label": "Untuk menilai pemerintah, parti & calon",
    "text": "[LIMA MASLAHAH]|PENTING",
    "dur": 10,
    "start": 3.84
+  },
+  {
+   "type": "keyword",
+   "at": "Nombor Satu Agama",
+   "icon": "mosque",
+   "label": "Maslahah 1",
+   "text": "JAGA|[AGAMA]",
+   "sub": "Adakah agama ditegakkan, dibina, dikembangkan",
+   "dur": 12,
+   "start": 28.8
   },
   {
    "type": "keyword",
@@ -1082,12 +1082,12 @@
   ],
   [
    "whoosh-short.mp3",
-   0,
+   3.84,
    0.28
   ],
   [
    "whoosh-short.mp3",
-   3.84,
+   28.8,
    0.28
   ],
   [

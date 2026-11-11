@@ -477,8 +477,8 @@ Transkripsi: Whisper large-v3-turbo (Bahasa Melayu) dengan semakan angka utama m
 
 | Masa | Label | Grafik |
 |---|---|---|
-| 00:00.00 | Maslahah 1 | Tipografi kinetik: JAGA AGAMA — Adakah agama ditegakkan, dibina, dikembangkan |
 | 00:03.84 | Untuk menilai pemerintah, parti & calon | Tipografi kinetik: LIMA MASLAHAH PENTING |
+| 00:28.80 | Maslahah 1 | Tipografi kinetik: JAGA AGAMA — Adakah agama ditegakkan, dibina, dikembangkan |
 | 00:40.98 | Maslahah 2 | Tipografi kinetik: JAGA NYAWA — Sejauh mana polisi mampu menjaga nyawa manusia |
 | 00:57.45 | Maslahah 3 · Hifzul mal | Tipografi kinetik: JAGA HARTA — Polisi yang dibentang dan dilaksana menjaga harta rakyat |
 | 01:13.17 | Maslahah 4 · Hifzul 'irdh | Tipografi kinetik: JAGA MARUAH — Undang-undang dan peraturan menjaga maruah manusia |
@@ -834,5 +834,10 @@ Transkripsi: Whisper large-v3-turbo (Bahasa Melayu) dengan semakan angka utama m
 | `output/VIDEO_08_KEWAJIPAN_SATUKAN_UMMAH.mp4` | 111.5 s |
 | `output/VIDEO_09_KERUSI_MELAKA_BERI_DAN_AMBIL.mp4` | 104.1 s |
 | `output/VIDEO_10_PERPADUAN_KERANA_AGAMA.mp4` | 68.1 s |
+| `output/VIDEO_11_TABUNG_HAJI_DAN_ISTITAAH.mp4` | 79.8 s |
+| `output/VIDEO_12_JOHOR_N_SEMBILAN_MELAKA.mp4` | 99.3 s |
+| `output/VIDEO_16_4_6_JUTA_AHLI_UMNO_PAS.mp4` | 94.3 s |
+| `output/VIDEO_17_MUAFAKAT_2019_DAN_JAWATAN_MENTERI.mp4` | 101.4 s |
+| `output/VIDEO_18_DATA_PRU_ALOR_GAJAH_DAN_HANG_TUAH_JAYA.mp4` | 81.1 s |
 
 Format: MP4 H.264 1080×1920 (9:16) 30 fps, audio AAC 48 kHz stereo.

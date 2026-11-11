@@ -101,11 +101,13 @@ def cut_media(spec, edl, D, cid):
     src = os.path.join(SRC, spec["source"] + ".mp4")
     os.makedirs(os.path.join(ROOT, f"episodes/{cid}/assets/clips"), exist_ok=True)
     tmp = os.path.join(SRC, "work", cid); os.makedirs(tmp, exist_ok=True)
-    vparts, aparts, fc = [], [], []
+    # one seeked input per piece: a single input with out-of-order trims buffers every decoded frame in between (OOM)
+    vparts, aparts, fc, ins = [], [], [], []
     for i, p in enumerate(edl):
         dur = p["b"] - p["a"]
-        fc.append(f"[0:v]trim={p['a']}:{p['b']},setpts=PTS-STARTPTS[v{i}]")
-        af = f"[0:a]atrim={p['a']}:{p['b']},asetpts=PTS-STARTPTS,afade=t=in:d=0.02,afade=t=out:st={max(0,dur-0.03):.3f}:d=0.03"
+        ins += ["-ss", f"{p['a']:.3f}", "-t", f"{dur:.3f}", "-i", src]
+        fc.append(f"[{i}:v]setpts=PTS-STARTPTS[v{i}]")
+        af = f"[{i}:a]asetpts=PTS-STARTPTS,afade=t=in:d=0.02,afade=t=out:st={max(0,dur-0.03):.3f}:d=0.03"
         if p.get("tail"): af += f",afade=t=out:st={max(0,dur-p['tail']-0.1):.3f}:d={p['tail']:.3f}"
         fc.append(af + f"[a{i}]")
         vparts.append(f"[v{i}][a{i}]")
@@ -118,7 +120,7 @@ def cut_media(spec, edl, D, cid):
               "acompressor=threshold=-21dB:ratio=3:attack=8:release=160:makeup=2,"
               "loudnorm=I=-16:TP=-1.5:LRA=9[ao]")
     vout = os.path.join(ROOT, f"episodes/{cid}/assets/clips/{cid}.mp4"); speech = os.path.join(tmp, "speech.wav")
-    sh(["ffmpeg", "-v", "error", "-y", "-i", src, "-filter_complex", ";".join(fc),
+    sh(["ffmpeg", "-v", "error", "-y", *ins, "-filter_complex", ";".join(fc),
         "-map", "[vo]", "-c:v", "libx264", "-preset", "veryfast", "-crf", "17", "-g", "30", "-an", vout,
         "-map", "[ao]", "-ac", "1", "-ar", "48000", speech])
     return vout, speech, tmp
@@ -436,7 +438,7 @@ def build(spec_path, html_only=False):
     for f in spec.get("facts", []):
         f = dict(f)
         if "at" in f:
-            i = find_phrase(ow, f["at"], f.get("after", 0)); f["start"] = round(max(0, ow[i]["s"] - 0.12), 3)
+            i = find_phrase(ow, f["at"], f.get("after", hook_end)); f["start"] = round(max(0, ow[i]["s"] - 0.12), 3)
         f.setdefault("dur", 6.0)
         if f["type"] == "bullets":
             items = []
