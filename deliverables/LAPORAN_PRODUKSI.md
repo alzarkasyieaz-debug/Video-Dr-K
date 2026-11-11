@@ -827,5 +827,12 @@ Transkripsi: Whisper large-v3-turbo (Bahasa Melayu) dengan semakan angka utama m
 |---|---|
 | `output/VIDEO_01_MUAFAKAT_UMNO_PAS.mp4` | 117.0 s |
 | `output/VIDEO_02_MUAFAKAT_UMNO_PAS.mp4` | 111.1 s |
+| `output/VIDEO_03_HARAM_JATUHKAN_KERAJAAN_ADIL.mp4` | 92.3 s |
+| `output/VIDEO_05_TITAH_TUANKU_DAN_KERAJAAN.mp4` | 61.4 s |
+| `output/VIDEO_06_DINAMIKA_POLITIK.mp4` | 93.7 s |
+| `output/VIDEO_07_JANGAN_BAKAR_JAMBATAN.mp4` | 65.3 s |
+| `output/VIDEO_08_KEWAJIPAN_SATUKAN_UMMAH.mp4` | 111.5 s |
+| `output/VIDEO_09_KERUSI_MELAKA_BERI_DAN_AMBIL.mp4` | 104.1 s |
+| `output/VIDEO_10_PERPADUAN_KERANA_AGAMA.mp4` | 68.1 s |
 
 Format: MP4 H.264 1080×1920 (9:16) 30 fps, audio AAC 48 kHz stereo.
