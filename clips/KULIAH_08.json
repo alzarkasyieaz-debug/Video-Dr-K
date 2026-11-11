@@ -1,0 +1,74 @@
+{
+ "id": "08",
+ "slug": "BISMILLAH_PENGHADANG_DARIPADA_SYAITAN",
+ "category": "ZIKIR & ADAB",
+ "title_lines": [
+  [
+   {
+    "t": "BISMILLAH:",
+    "gold": true
+   }
+  ],
+  [
+   {
+    "t": "PENGHADANG"
+   }
+  ],
+  [
+   {
+    "t": "DARIPADA"
+   },
+   {
+    "t": "SYAITAN",
+    "gold": true
+   }
+  ]
+ ],
+ "header_html": "<span class=\"g\">BISMILLAH:</span> PENGHADANG DARIPADA SYAITAN",
+ "whisper": "clips/whisper/w08.json",
+ "window": 597,
+ "start": 600.4,
+ "end": 692.4,
+ "arabic": [
+  {
+   "ar": "سِتْرُ مَا بَيْنَ أَعْيُنِ الْجِنِّ وَعَوْرَاتِ بَنِي آدَمَ إِذَا دَخَلَ أَحَدُهُمُ الْخَلَاءَ أَنْ يَقُولَ: بِسْمِ اللَّهِ",
+   "ms": "Penutup antara pandangan jin dan aurat anak Adam ketika masuk tandas ialah dia menyebut: Bismillah.",
+   "ref": "HR AT-TIRMIZI",
+   "at": 26.8,
+   "dur": 14.4
+  },
+  {
+   "ar": "إِنَّهُ يَرَاكُمْ هُوَ وَقَبِيلُهُ مِنْ حَيْثُ لَا تَرَوْنَهُمْ",
+   "ms": "Sesungguhnya syaitan dan puaknya melihat kamu dari arah yang kamu tidak dapat melihat mereka.",
+   "ref": "SURAH AL-A'RAF: 27",
+   "at": 43.4,
+   "dur": 16.4
+  }
+ ],
+ "points": [
+  {
+   "label": "PENGHALANGNYA",
+   "text": "Zikrullah — contohnya baca bismillah sebelum makan",
+   "at": 9.4,
+   "dur": 14.6
+  },
+  {
+   "label": "PENGAJARAN",
+   "text": "Kita tak nampak mereka, mereka nampak kita — basmalah penutupnya",
+   "at": 75.6,
+   "dur": 12.6
+  }
+ ],
+ "keywords": [
+  "basmalah",
+  "bismillah",
+  "syaitan",
+  "zikrullah",
+  "makan",
+  "mandi"
+ ],
+ "text": "Syaitan boleh masuk dalam jasad manusia banyak cara, bukan hanya dengan mulut. Dia boleh masuk ikut laluan mana yang nak masuk. Penghalangnya ialah zikrullah. Macam kita makanlah, kenapa suruh baca basmalah, bismillah? Sebab kalau tak baca basmalah, makan dengan syaitan. Kita mandi, masuk bilik air, dia suruh baca basmalah, kenapa? Nabi kata itu menutup antara kamu dengan syaitan. Mandi, telanjang. Tapi baca basmalah ini salah satu cara untuk menghalang daripada penglihatan syaitan. Kita tak nampak syaitan. Innahu yarakum huwa wa qabiluhu min haithu la taraunahum. Dia tengok kamu. Innahu yarakum, dia tengok kamu. Min haithu la taraunahum. Innahu yarakum huwa wa qabiluhu, dia tengok kamu, bukan dia, dia, wa qabiluhu, dan qabilah dia, min haithu la taraunahum, dari sudut mana kamu tak tengok mereka. Kita tak nampak ni, jin-jin keliling kita tak nampak, dia nampak kita. Sudut mana nampak belakang, kita tak nampak dia. Yang menutup ialah basmalah, itu hadis berkaitan dengan masuk bilik air.",
+ "speaker": "Kuliah Kitab Bahrul Mazi",
+ "speaker_role": "Syarah Mukhtasar Sahih at-Tirmizi • Siri 30",
+ "series": "KULIAH FIQH SOLAT"
+}

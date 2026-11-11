@@ -1,0 +1,77 @@
+{
+ "id": "06",
+ "slug": "TERHALANG_UZUR_PAHALA_TETAP_ADA",
+ "category": "HADIS & NIAT",
+ "title_lines": [
+  [
+   {
+    "t": "TERHALANG"
+   },
+   {
+    "t": "UZUR?",
+    "gold": true
+   }
+  ],
+  [
+   {
+    "t": "PAHALA"
+   }
+  ],
+  [
+   {
+    "t": "TETAP"
+   },
+   {
+    "t": "BERSAMA",
+    "gold": true
+   }
+  ]
+ ],
+ "header_html": "TERHALANG UZUR? PAHALA <span class=\"g\">TETAP BERSAMA</span>",
+ "whisper": "clips/whisper/w06.json",
+ "window": 2738,
+ "start": 2740.2,
+ "end": 2857.3,
+ "arabic": [
+  {
+   "ar": "إِنَّ بِالْمَدِينَةِ لَرِجَالًا مَا سِرْتُمْ مَسِيرًا وَلَا قَطَعْتُمْ وَادِيًا إِلَّا كَانُوا مَعَكُمْ، حَبَسَهُمُ الْمَرَضُ",
+   "ms": "Sesungguhnya di Madinah ada beberapa lelaki; tidaklah kamu menempuh suatu perjalanan dan merentasi suatu lembah melainkan mereka bersama kamu. Mereka terhalang oleh sakit.",
+   "ref": "HR MUSLIM",
+   "at": 6.0,
+   "dur": 15.6
+  }
+ ],
+ "points": [
+  {
+   "label": "BERKONGSI PAHALA",
+   "text": "Yang tinggal di Madinah turut berkongsi pahala dengan yang berjihad",
+   "at": 50.5,
+   "dur": 12.6
+  },
+  {
+   "label": "SEBABNYA",
+   "text": "Mereka terhalang oleh sakit — bukan kerana tidak mahu",
+   "at": 76.8,
+   "dur": 12.5
+  },
+  {
+   "label": "FAEDAH",
+   "text": "Niat buat yang wajib, terhalang kerana sakit: tetap berkongsi pahala",
+   "at": 105.4,
+   "dur": 11.4
+  }
+ ],
+ "keywords": [
+  "pahala",
+  "sakit",
+  "Madinah",
+  "perang",
+  "berkongsi",
+  "buta",
+  "wajib"
+ ],
+ "text": "Jadi kalau kita ambil keadaan yang lain, keadaan yang lain, Nabi sebut: Inna bil Madinati lirijalan ma sirtum masiran wa la qata'tum wadiyan illa kanu ma'akum. Riwayat tersebut sebut, illa syarakukum fil ajr. Ketika Nabi bermusafir dengan sahabat nak pergi perang, sampai tengah jalan, Nabi kata, di Madinah sana benar-benar ada orang-orang lelaki. Kamu tidak berjalan satu perjalanan, satu kejauhan, satu jarak, dan kamu tidak merentasi mana-mana lembah, illa kanu ma'akum, mereka bersama kamu. Jadi riwayat, illa syarakukum fil ajr, mereka bersyarikat, berkongsi dengan kamu pada pahala. Mereka dekat Madinah tak pergi perang pun. Kita ni kena berjalan, sampai kita buat perang, naik bukit, turun bukit, masuk lembah, keluar lembah. Tapi dekat Madinah tu, mereka ni berkongsi pahala dengan kamu. Kata Nabi, habasahumul maradh. Mereka terhalang oleh sebab sakit. Dia nak pergi perang tapi sakit menghalang dia. Dia tak pergi perang, dia nak pergi. Kalau dia pergi juga, menyusahkan orang lain, nak jaga dia pula. Dia buta, nak pergi perang juga, tak boleh pergi perang sebab dia buta. Kalau pergi juga, ganggu orang lain nak jaga dia pula. Itu antaranya juga. Abdullah Ibnu Ummi Maktum itu nama dia. Nak pergi perang sangat dengan Nabi, tak boleh lagi, sebab buta. Jadi, kat situ lah ambil faedah. Orang yang nak pergi buat benda hak wajib, tapi tak dapat buat, kerana sebab sakit, pahala berkongsi pahala. Satu faedah.",
+ "speaker": "Kuliah Kitab Bahrul Mazi",
+ "speaker_role": "Syarah Mukhtasar Sahih at-Tirmizi • Siri 30",
+ "series": "KULIAH FIQH SOLAT"
+}

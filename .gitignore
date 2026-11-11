@@ -3,3 +3,6 @@ renders/
 *.mp4
 .hyperframes/
 .venv/
+exports/.render_*.log
+exports/.*hf-transaction*/
+exports/work-*/

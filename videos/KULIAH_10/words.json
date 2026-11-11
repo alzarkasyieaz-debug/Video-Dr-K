@@ -1,0 +1,937 @@
+[
+{
+"text": "Jadi",
+"start": 0.08,
+"end": 0.27
+},
+{
+"text": "rasa",
+"start": 0.27,
+"end": 0.46
+},
+{
+"text": "malas",
+"start": 0.46,
+"end": 1.57
+},
+{
+"text": "tu,",
+"start": 1.57,
+"end": 2.08
+},
+{
+"text": "syaitan",
+"start": 2.08,
+"end": 2.64
+},
+{
+"text": "antara",
+"start": 2.64,
+"end": 3.12
+},
+{
+"text": "pembantulah.",
+"start": 3.12,
+"end": 4.08
+},
+{
+"text": "Lepas",
+"start": 4.08,
+"end": 4.48
+},
+{
+"text": "tu",
+"start": 4.48,
+"end": 4.64
+},
+{
+"text": "dia",
+"start": 4.64,
+"end": 4.89
+},
+{
+"text": "ajar",
+"start": 4.89,
+"end": 5.21
+},
+{
+"text": "kita",
+"start": 5.21,
+"end": 5.54
+},
+{
+"text": "berdoa:",
+"start": 5.54,
+"end": 6.08
+},
+{
+"text": "Allahumma",
+"start": 6.08,
+"end": 7.28
+},
+{
+"text": "inni",
+"start": 7.44,
+"end": 8.08
+},
+{
+"text": "a'uzu",
+"start": 8.08,
+"end": 8.636
+},
+{
+"text": "bika",
+"start": 8.636,
+"end": 9.08
+},
+{
+"text": "minal",
+"start": 9.08,
+"end": 9.68
+},
+{
+"text": "hammi",
+"start": 9.68,
+"end": 9.98
+},
+{
+"text": "wal",
+"start": 9.98,
+"end": 10.41
+},
+{
+"text": "hazan,",
+"start": 10.41,
+"end": 11.12
+},
+{
+"text": "wa",
+"start": 11.12,
+"end": 11.42
+},
+{
+"text": "a'uzu",
+"start": 11.42,
+"end": 11.998
+},
+{
+"text": "bika",
+"start": 11.998,
+"end": 12.46
+},
+{
+"text": "minal",
+"start": 12.46,
+"end": 12.88
+},
+{
+"text": "'ajzi",
+"start": 12.88,
+"end": 13.52
+},
+{
+"text": "wal",
+"start": 13.52,
+"end": 13.99
+},
+{
+"text": "kasal.",
+"start": 13.99,
+"end": 14.8
+},
+{
+"text": "Ya",
+"start": 16.32,
+"end": 16.5
+},
+{
+"text": "Allah,",
+"start": 16.5,
+"end": 17.04
+},
+{
+"text": "aku",
+"start": 17.04,
+"end": 17.3
+},
+{
+"text": "mohon",
+"start": 17.3,
+"end": 17.68
+},
+{
+"text": "lindung",
+"start": 17.68,
+"end": 18.31
+},
+{
+"text": "pada-Mu",
+"start": 18.31,
+"end": 18.8
+},
+{
+"text": "daripada",
+"start": 18.8,
+"end": 19.48
+},
+{
+"text": "hammi,",
+"start": 19.48,
+"end": 20.2
+},
+{
+"text": "daripada",
+"start": 20.2,
+"end": 20.88
+},
+{
+"text": "rasa",
+"start": 20.88,
+"end": 21.5
+},
+{
+"text": "susah",
+"start": 21.5,
+"end": 21.955
+},
+{
+"text": "hati,",
+"start": 21.955,
+"end": 22.41
+},
+{
+"text": "wal",
+"start": 22.41,
+"end": 22.56
+},
+{
+"text": "hazan,",
+"start": 22.56,
+"end": 23.2
+},
+{
+"text": "rasa",
+"start": 23.2,
+"end": 23.87
+},
+{
+"text": "duka",
+"start": 23.87,
+"end": 24.54
+},
+{
+"text": "cita.",
+"start": 24.54,
+"end": 25.2
+},
+{
+"text": "Kacau",
+"start": 25.2,
+"end": 25.95
+},
+{
+"text": "otak",
+"start": 25.95,
+"end": 26.55
+},
+{
+"text": "kita,",
+"start": 26.55,
+"end": 27.2
+},
+{
+"text": "susah",
+"start": 27.2,
+"end": 27.509
+},
+{
+"text": "hati.",
+"start": 27.509,
+"end": 27.819
+},
+{
+"text": "Hazan,",
+"start": 27.819,
+"end": 28.19
+},
+{
+"text": "sedih",
+"start": 28.19,
+"end": 29.19
+},
+{
+"text": "kerana",
+"start": 29.19,
+"end": 29.481
+},
+{
+"text": "kematian",
+"start": 29.481,
+"end": 29.87
+},
+{
+"text": "itu,",
+"start": 29.87,
+"end": 30.25
+},
+{
+"text": "kematian",
+"start": 30.25,
+"end": 30.89
+},
+{
+"text": "ini,",
+"start": 30.89,
+"end": 31.24
+},
+{
+"text": "hilang",
+"start": 31.24,
+"end": 31.36
+},
+{
+"text": "itu,",
+"start": 31.36,
+"end": 31.472
+},
+{
+"text": "hilang",
+"start": 31.472,
+"end": 31.64
+},
+{
+"text": "ini,",
+"start": 31.64,
+"end": 31.752
+},
+{
+"text": "sedih.",
+"start": 31.752,
+"end": 31.92
+},
+{
+"text": "Hammi,",
+"start": 31.92,
+"end": 32.62
+},
+{
+"text": "susah",
+"start": 32.62,
+"end": 33.045
+},
+{
+"text": "hati.",
+"start": 33.045,
+"end": 33.47
+},
+{
+"text": "Lagu",
+"start": 33.47,
+"end": 33.81
+},
+{
+"text": "itu",
+"start": 33.81,
+"end": 33.956
+},
+{
+"text": "benda",
+"start": 33.956,
+"end": 34.2
+},
+{
+"text": "yang",
+"start": 34.2,
+"end": 34.44
+},
+{
+"text": "kita",
+"start": 34.44,
+"end": 34.78
+},
+{
+"text": "memikirkan,",
+"start": 34.78,
+"end": 35.46
+},
+{
+"text": "ham",
+"start": 35.46,
+"end": 35.61
+},
+{
+"text": "dia",
+"start": 35.61,
+"end": 35.76
+},
+{
+"text": "panggil,",
+"start": 35.76,
+"end": 36.16
+},
+{
+"text": "susah",
+"start": 36.16,
+"end": 36.71
+},
+{
+"text": "hati",
+"start": 36.71,
+"end": 37.15
+},
+{
+"text": "kita.",
+"start": 37.15,
+"end": 37.68
+},
+{
+"text": "Tapi",
+"start": 37.68,
+"end": 38.08
+},
+{
+"text": "bila",
+"start": 38.08,
+"end": 38.48
+},
+{
+"text": "sedih",
+"start": 38.48,
+"end": 39.02
+},
+{
+"text": "ni,",
+"start": 39.02,
+"end": 39.35
+},
+{
+"text": "kehilangan",
+"start": 39.35,
+"end": 40.19
+},
+{
+"text": "benda,",
+"start": 40.19,
+"end": 40.64
+},
+{
+"text": "marilah",
+"start": 40.64,
+"end": 41.8
+},
+{
+"text": "sedih.",
+"start": 41.8,
+"end": 42.64
+},
+{
+"text": "Oleh",
+"start": 42.64,
+"end": 43.1
+},
+{
+"text": "kerana",
+"start": 43.1,
+"end": 43.8
+},
+{
+"text": "benda",
+"start": 43.8,
+"end": 44.37
+},
+{
+"text": "ni,",
+"start": 44.37,
+"end": 44.76
+},
+{
+"text": "benda",
+"start": 44.76,
+"end": 45.09
+},
+{
+"text": "yang",
+"start": 45.09,
+"end": 45.36
+},
+{
+"text": "kita",
+"start": 45.36,
+"end": 45.72
+},
+{
+"text": "tak",
+"start": 45.72,
+"end": 46.25
+},
+{
+"text": "boleh",
+"start": 46.25,
+"end": 46.52
+},
+{
+"text": "nak",
+"start": 46.52,
+"end": 46.71
+},
+{
+"text": "kawal,",
+"start": 46.71,
+"end": 47.44
+},
+{
+"text": "satu",
+"start": 50.08,
+"end": 50.08
+},
+{
+"text": "benda",
+"start": 50.08,
+"end": 50.08
+},
+{
+"text": "yang",
+"start": 50.08,
+"end": 50.08
+},
+{
+"text": "tak",
+"start": 50.08,
+"end": 50.46
+},
+{
+"text": "boleh",
+"start": 50.46,
+"end": 51.21
+},
+{
+"text": "kita",
+"start": 51.21,
+"end": 51.91
+},
+{
+"text": "kawal,",
+"start": 51.91,
+"end": 52.96
+},
+{
+"text": "maka",
+"start": 52.96,
+"end": 53.33
+},
+{
+"text": "tempat",
+"start": 53.33,
+"end": 53.59
+},
+{
+"text": "lindungnya",
+"start": 53.59,
+"end": 54.3
+},
+{
+"text": "Allah",
+"start": 54.3,
+"end": 54.54
+},
+{
+"text": "sahaja.",
+"start": 54.54,
+"end": 54.96
+},
+{
+"text": "Rasa",
+"start": 54.96,
+"end": 55.62
+},
+{
+"text": "sedih",
+"start": 55.62,
+"end": 56.45
+},
+{
+"text": "tak",
+"start": 56.45,
+"end": 56.79
+},
+{
+"text": "boleh",
+"start": 56.79,
+"end": 56.94
+},
+{
+"text": "nak",
+"start": 56.79,
+"end": 57.44
+},
+{
+"text": "kawal.",
+"start": 57.44,
+"end": 58.32
+},
+{
+"text": "Kereta",
+"start": 58.32,
+"end": 58.81
+},
+{
+"text": "orang",
+"start": 58.81,
+"end": 59.42
+},
+{
+"text": "langgar,",
+"start": 59.42,
+"end": 60.32
+},
+{
+"text": "dum,",
+"start": 60.32,
+"end": 60.93
+},
+{
+"text": "sedih",
+"start": 60.93,
+"end": 61.66
+},
+{
+"text": "tak?",
+"start": 61.66,
+"end": 62.32
+},
+{
+"text": "Sedih,",
+"start": 62.32,
+"end": 62.73
+},
+{
+"text": "tapi",
+"start": 62.73,
+"end": 63.06
+},
+{
+"text": "tak",
+"start": 63.06,
+"end": 63.3
+},
+{
+"text": "nak",
+"start": 63.3,
+"end": 63.66
+},
+{
+"text": "keluar.",
+"start": 63.66,
+"end": 64.32
+},
+{
+"text": "Kalau",
+"start": 64.32,
+"end": 65.1
+},
+{
+"text": "dibayar",
+"start": 65.1,
+"end": 66.15
+},
+{
+"text": "oleh",
+"start": 66.15,
+"end": 66.81
+},
+{
+"text": "takaful",
+"start": 66.81,
+"end": 68.01
+},
+{
+"text": "pun,",
+"start": 68.2,
+"end": 68.72
+},
+{
+"text": "masa",
+"start": 68.72,
+"end": 69.12
+},
+{
+"text": "pula",
+"start": 69.12,
+"end": 69.5
+},
+{
+"text": "tak",
+"start": 69.5,
+"end": 69.7
+},
+{
+"text": "boleh.",
+"start": 69.7,
+"end": 70.4
+},
+{
+"text": "Nak",
+"start": 70.4,
+"end": 70.9
+},
+{
+"text": "bayar",
+"start": 70.9,
+"end": 71.74
+},
+{
+"text": "masa?",
+"start": 71.74,
+"end": 72.4
+},
+{
+"text": "Kereta",
+"start": 72.4,
+"end": 72.78
+},
+{
+"text": "hilang",
+"start": 72.78,
+"end": 73.3
+},
+{
+"text": "tiga",
+"start": 73.3,
+"end": 73.74
+},
+{
+"text": "minggu",
+"start": 73.74,
+"end": 74.19
+},
+{
+"text": "ke,",
+"start": 74.19,
+"end": 74.52
+},
+{
+"text": "duduk",
+"start": 74.52,
+"end": 74.86
+},
+{
+"text": "kat",
+"start": 74.86,
+"end": 75.06
+},
+{
+"text": "bengkel,",
+"start": 75.06,
+"end": 75.32
+},
+{
+"text": "nak",
+"start": 75.32,
+"end": 75.52
+},
+{
+"text": "klaim",
+"start": 75.52,
+"end": 75.845
+},
+{
+"text": "takaful",
+"start": 75.845,
+"end": 76.3
+},
+{
+"text": "lagi",
+"start": 76.3,
+"end": 76.57
+},
+{
+"text": "pula.",
+"start": 76.57,
+"end": 77.12
+},
+{
+"text": "Hal",
+"start": 77.12,
+"end": 77.5
+},
+{
+"text": "ini",
+"start": 77.5,
+"end": 77.66
+},
+{
+"text": "tak",
+"start": 77.66,
+"end": 77.93
+},
+{
+"text": "boleh",
+"start": 77.93,
+"end": 78.46
+},
+{
+"text": "kawal.",
+"start": 78.46,
+"end": 79.12
+},
+{
+"text": "Berlaku",
+"start": 79.12,
+"end": 79.89
+},
+{
+"text": "benda-benda",
+"start": 79.89,
+"end": 80.95
+},
+{
+"text": "yang",
+"start": 80.95,
+"end": 81.55
+},
+{
+"text": "mengganggu,",
+"start": 81.55,
+"end": 82.75
+},
+{
+"text": "susah",
+"start": 82.95,
+"end": 83.115
+},
+{
+"text": "hati,",
+"start": 83.115,
+"end": 83.28
+},
+{
+"text": "tak",
+"start": 83.28,
+"end": 83.44
+},
+{
+"text": "boleh",
+"start": 83.44,
+"end": 83.71
+},
+{
+"text": "kawal.",
+"start": 83.71,
+"end": 84.16
+},
+{
+"text": "Itu",
+"start": 84.16,
+"end": 84.62
+},
+{
+"text": "manusia.",
+"start": 84.62,
+"end": 85.82
+},
+{
+"text": "Maka",
+"start": 86.16,
+"end": 86.51
+},
+{
+"text": "bila",
+"start": 86.51,
+"end": 86.72
+},
+{
+"text": "benda",
+"start": 86.72,
+"end": 87.07
+},
+{
+"text": "luar",
+"start": 87.07,
+"end": 87.35
+},
+{
+"text": "kawalan",
+"start": 87.35,
+"end": 87.82
+},
+{
+"text": "kita,",
+"start": 87.82,
+"end": 88.33
+},
+{
+"text": "memang",
+"start": 88.33,
+"end": 88.85
+},
+{
+"text": "di",
+"start": 88.85,
+"end": 89.02
+},
+{
+"text": "luar",
+"start": 89.02,
+"end": 89.36
+},
+{
+"text": "kemampuan",
+"start": 89.36,
+"end": 90.13
+},
+{
+"text": "kita",
+"start": 90.13,
+"end": 90.48
+},
+{
+"text": "dah,",
+"start": 90.48,
+"end": 90.96
+},
+{
+"text": "maka",
+"start": 90.96,
+"end": 91.34
+},
+{
+"text": "kita",
+"start": 91.34,
+"end": 91.45
+},
+{
+"text": "nak",
+"start": 91.45,
+"end": 91.64
+},
+{
+"text": "bergantung",
+"start": 91.64,
+"end": 92.3
+},
+{
+"text": "kat",
+"start": 92.3,
+"end": 92.41
+},
+{
+"text": "siapa?",
+"start": 92.41,
+"end": 92.96
+},
+{
+"text": "Gantung",
+"start": 92.96,
+"end": 93.82
+},
+{
+"text": "pada",
+"start": 93.82,
+"end": 94.32
+},
+{
+"text": "Allah.",
+"start": 94.32,
+"end": 94.96
+}
+]

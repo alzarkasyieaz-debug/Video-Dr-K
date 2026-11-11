@@ -1,0 +1,99 @@
+{
+ "id": "04",
+ "slug": "MENGUAP_DALAM_SOLAT_CARA_NABI_AJAR",
+ "category": "ADAB SOLAT",
+ "title_lines": [
+  [
+   {
+    "t": "MENGUAP"
+   },
+   {
+    "t": "DALAM SOLAT?",
+    "gold": true
+   }
+  ],
+  [
+   {
+    "t": "INI CARA"
+   }
+  ],
+  [
+   {
+    "t": "NABI"
+   },
+   {
+    "t": "AJAR",
+    "gold": true
+   }
+  ]
+ ],
+ "header_html": "MENGUAP DALAM SOLAT? <span class=\"g\">INI CARA NABI AJAR</span>",
+ "whisper": "clips/whisper/w04.json",
+ "window": 362,
+ "start": 362.0,
+ "end": 465.9,
+ "arabic": [
+  {
+   "ar": "فَإِذَا تَثَاءَبَ أَحَدُكُمْ فَلْيَكْظِمْ مَا اسْتَطَاعَ",
+   "ms": "Apabila salah seorang daripada kamu menguap, hendaklah dia menahannya sedaya yang mampu.",
+   "ref": "HR AT-TIRMIZI",
+   "at": 10.0,
+   "dur": 12.6
+  },
+  {
+   "ar": "وَالْكَاظِمِينَ الْغَيْظَ وَالْعَافِينَ عَنِ النَّاسِ",
+   "ms": "…dan orang yang menahan kemarahannya, dan orang yang memaafkan kesalahan orang.",
+   "ref": "SURAH ALI 'IMRAN: 134",
+   "at": 35.0,
+   "dur": 15.0
+  }
+ ],
+ "points": [
+  {
+   "label": "KAZAMA = TAHAN",
+   "text": "Bila menguap, tahan sedaya yang mampu",
+   "at": 68.8,
+   "dur": 12.4
+  },
+  {
+   "label": "CARANYA",
+   "text": "Tahan mulut — jangan dibiarkan terbuka",
+   "at": 88.0,
+   "dur": 14.5
+  }
+ ],
+ "keywords": [
+  "menguap",
+  "tahan",
+  "syaitan",
+  "kazama",
+  "marah",
+  "mulut"
+ ],
+ "text": "Nabi kata, mengantuk kalau dalam solat ni, dia mari daripada syaitan. Nanti pengarang akan bahas maksud dia. Maka apa kita nak buat? Fa iza tatha'aba ahadukum. Bila mana? Maka apabila menguap seorang daripada kamu? Fal yakzim mastata'a. Maka hendaklah tahan ia sekuasanya. Bila mari menguap tu Nabi kata? Fal yakzim. Kazama, kazama ni tahan. Kalau orang marah, kemudian tahan marah, dia kazimul ghaiz. Wal kazimin al-ghaiza, wal 'afina 'anin nas. Orang yang kazim al-ghaiz, orang yang menahan kemarahan. Al-ghaiz ni kemarahan yang meluap-luap. Bila dia boleh tahan kemarahan yang meluap-luap, daripada dia ada kemarahan, dia boleh tahan. Wal 'afina 'anin nas, orang yang memaafkan manusia, dia orang yang baik. Kita nak ambil perkataan kazama, tahan. Nabi kata dia kena tahan. Mastata'a, apa hak dia boleh. Di sini tak beritahu nak tahan lagu mana. Cuma ambil perkataan awal dulu, tahan, apa hak boleh. Mari menguap, buat tahan. Tutup mulut. Eh, tak? Nak? Kalau ikut nak menguap tu, mulut nak buka ni. Tapi tahan, tahan mulut. Itu sebahagian daripada tahan.",
+ "speaker": "Kuliah Kitab Bahrul Mazi",
+ "speaker_role": "Syarah Mukhtasar Sahih at-Tirmizi • Siri 30",
+ "series": "KULIAH FIQH SOLAT",
+ "cover_lines": [
+  [
+   {
+    "t": "MENGUAP"
+   }
+  ],
+  [
+   {
+    "t": "DALAM SOLAT?",
+    "gold": true
+   }
+  ],
+  [
+   {
+    "t": "INI CARA"
+   },
+   {
+    "t": "NABI AJAR",
+    "gold": true
+   }
+  ]
+ ]
+}
