@@ -81,7 +81,9 @@ def main():
                 f"9. **Lower third:** {b['hook_end']+0.6:.1f}–{b['hook_end']+0.6+s.get('l3_dur',9):.1f} s — “{s.get('speaker','DR. K')}” / “{s.get('role','')}” / jalur topik “{s['topic'].upper()}”. "
                 "Panel navy, garis emas menegak, garis biru elektrik dilukis; kemudian berubah menjadi Topic Lower Third (pil kiri atas): "
                 + " → ".join(f'“{t["label"].upper()}” @ {tc(t["start"])}' for t in b["topics"]) + ".",
-                f"10. **Hyperframe motion:** Hook — kicker “{s.get('hook_kicker','')}”, tajuk 3D emas skala 1.25→1 berperingkat; kilat biru + whoosh sinematik pada peralihan. "
+                f"10. **Hyperframe motion:** Cover 0–{min(2.6, b['hook_end']-0.6):.1f} s (bingkai 0 = thumbnail, `output/covers/{cid}_{slug(s['topic'])}_COVER.jpg`): bingkai emas berganda, "
+                f"“PETIKAN UCAPAN”, cip emas “{s.get('hook_kicker','')}”, tajuk utama “{plain(s.get('cover_title', s['hook_title']))}” dengan sorotan emas, nama & jawatan di bawah; "
+                "hiasan cover pudar, tajuk mengecil dan kekal hingga hook tamat; kilat biru + whoosh sinematik pada peralihan. "
                 "Kamera: punch-in berselang 1.00×/1.10× pada setiap jump-cut, push-in perlahan 3.5% dalam setiap segmen, hook dizum 1.18×. "
                 f"Penutup ~{tc(b['conclusion']['start']) if b.get('conclusion') else '-'}: mesej utama + garis emas, slate akhir navy 3.2 s.",
                 f"11. **Muzik & audio:** {MOOD[s.get('mood','serious')]}. Skor asal dijana prosedural (bebas royalti) — `tools/score.py`. "

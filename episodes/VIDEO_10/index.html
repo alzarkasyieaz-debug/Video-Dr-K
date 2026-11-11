@@ -23,7 +23,27 @@ html,body{margin:0;width:1080px;height:1920px;overflow:hidden;background:#000}
 #hook h1{margin-top:26px;font:900 92px/1.04 Montserrat;text-transform:uppercase;letter-spacing:-.01em;
   text-shadow:0 2px 0 #b98a1d,0 4px 0 #8a6410,0 6px 0 #5e430a,0 14px 30px rgba(0,0,0,.75)}
 #hook h1 .hl{color:var(--gold2)}
-#hook h1 .ln{display:block}
+#hook h1 .b{color:#5cb6ff}
+#hook h1 .ln{display:block;white-space:nowrap;width:max-content;margin:0 auto}
+/* front cover (frame 0 = thumbnail) */
+#hook .box.cv{top:214px;left:60px;right:60px}
+#hook .chip{display:inline-block;padding:12px 26px;border-radius:6px;background:linear-gradient(180deg,var(--gold2),var(--gold));
+  color:#081634;font:800 28px/1 Montserrat;letter-spacing:.16em;text-transform:uppercase;box-shadow:0 6px 20px rgba(0,0,0,.45)}
+#hook .box.cv h1{margin-top:30px;line-height:1.02}
+#hook .box.cv .rule{margin-top:34px;width:440px;height:5px}
+#cvscrim{position:absolute;inset:0;background:linear-gradient(180deg,rgba(4,11,30,.95) 0%,rgba(6,18,46,.86) 26%,rgba(6,18,46,.25) 44%,
+  rgba(6,18,46,0) 56%,rgba(4,11,30,.55) 74%,rgba(4,11,30,.96) 92%)}
+.cvf{position:absolute;border:2px solid rgba(226,184,74,.9);border-radius:4px}
+.cvf.o{left:30px;top:30px;right:30px;bottom:30px}
+.cvf.i{left:44px;top:44px;right:44px;bottom:44px;border-width:1px;border-color:rgba(226,184,74,.55)}
+.cvc{position:absolute;width:26px;height:26px;background:var(--gold2);transform:rotate(45deg);box-shadow:0 0 16px rgba(255,215,106,.7)}
+.cvc::after{content:"";position:absolute;inset:7px;background:#081634}
+.cvtop{position:absolute;left:0;right:0;top:112px;text-align:center}
+.cvtop .kicker{font-size:28px;letter-spacing:.34em}
+.cvblue{position:absolute;left:390px;right:390px;top:160px;height:3px;background:linear-gradient(90deg,transparent,var(--blue),transparent)}
+.cvbot{position:absolute;left:0;right:0;top:1640px;text-align:center}
+.cvbot .nm{font:900 46px/1.1 Montserrat;letter-spacing:.06em;text-transform:uppercase;text-shadow:0 4px 16px rgba(0,0,0,.8)}
+.cvbot .rl{margin-top:14px;font:600 30px/1.2 Poppins;color:#cfe2ff;letter-spacing:.04em}
 #flash{position:absolute;inset:0;opacity:0;background:radial-gradient(circle at 50% 45%,rgba(120,190,255,.95),rgba(30,110,255,.55) 45%,rgba(4,11,30,0) 80%)}
 /* lower third */
 #l3{position:absolute;left:0;top:0;width:1080px;height:1920px}
@@ -119,7 +139,14 @@ html,body{margin:0;width:1080px;height:1920px;overflow:hidden;background:#000}
   <div id="scrimTop" class="layer"></div>
   <div id="scrimBot" class="layer"></div>
   <div id="hook" class="clip" data-start="0" data-duration="4.200" data-track-index="2">
-    <div class="box" id="hookb"><div class="kicker" id="hookk">PERPADUAN UMNO–PAS</div><div class="rule" id="hookr"></div><h1><span class="ln">BUKAN KERANA POLITIK —</span><span class="ln"><span class="hl">KERANA AGAMA</span></span></h1></div>
+    <div id="cvdeco"><div id="cvscrim"></div><div class="cvf o"></div><div class="cvf i"></div>
+      <div class="cvc" style="left:24px;top:24px"></div><div class="cvc" style="right:24px;top:24px"></div>
+      <div class="cvc" style="left:24px;bottom:24px"></div><div class="cvc" style="right:24px;bottom:24px"></div>
+      <div class="cvtop"><div class="kicker">PETIKAN UCAPAN</div></div><div class="cvblue"></div>
+      <div class="cvbot"><div class="nm">DR. KHAIRUDDIN AMAN RAZALI</div><div class="rl">Bekas Menteri Komoditi</div></div></div>
+    <div class="box cv" id="hookb" style="transform-origin:50% 0%"><div class="chip" id="hookk">PERPADUAN UMNO–PAS</div>
+      <h1><span class="ln" style="font-size:110px">BUKAN KERANA</span><span class="ln" style="font-size:134px">POLITIK —</span><span class="ln" style="font-size:110px"><span class="hl">KERANA AGAMA</span></span></h1>
+      <div class="rule" id="hookr"></div></div>
   </div>
   <div id="flash" class="clip" data-start="4.000" data-duration="0.6" data-track-index="7"></div>
   <div id="l3" class="clip" data-start="4.750" data-duration="9.000" data-track-index="2">
@@ -133,7 +160,7 @@ html,body{margin:0;width:1080px;height:1920px;overflow:hidden;background:#000}
 <div id="f2" class="clip card" data-start="49.310" data-duration="8.000" data-track-index="4"><div class="glow" id="f2g"></div><div class="in" id="f2i"><div class="row"><svg class="ic" width="96" height="96" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 30l12-12 10 4 8-4 14 2 12 10"/><path d="M16 18l-4 22 14 14 6-4 6 4 12-14 6-10"/><path d="M24 30l10 10M30 26l10 10"/></svg><div><div class="lbl">Hari ini</div><div class="kw" style="margin-top:8px"><span class="kl">PERCUBAAN</span><span class="kl"><span class="g">SETERUSNYA</span></span></div></div></div><div class=sub>Dengan kesungguhan pimpinan tertinggi dan ahli dua parti</div></div></div>
   <div id="concl" class="clip" data-start="60.630" data-duration="4.600" data-track-index="6"><div class="box" id="conclb"><div class="kicker">Harapan penceramah</div><div class="msg"><span style="display:block">BUKAN UNTUK DUNIA —</span><span style="display:block"><span class="g">SAMPAI KE AKHIRAT</span></span></div><div class="rule" id="conclr"></div></div></div>
   <div id="caps" class="clip" data-start="0" data-duration="64.930" data-track-index="8" data-track-kind="captions">
-    <div class="cg" id="cg0"><span class="w k" id="w0">Perpaduan</span><span class="w" id="w1">ini</span><span class="w" id="w2">bukan</span><span class="w" id="w3">hanya</span></div><div class="cg" id="cg1"><span class="w" id="w4">kerana</span><span class="w" id="w5">politik</span></div><div class="cg" id="cg2"><span class="w" id="w6">kerana</span><span class="w k" id="w7">agama.</span></div><div class="cg" id="cg3"><span class="w" id="w8">Kerana</span><span class="w" id="w9">menggambarkan</span></div><div class="cg" id="cg4"><span class="w" id="w10">memberi</span><span class="w" id="w11">mesej</span><span class="w" id="w12">kepada</span></div><div class="cg" id="cg5"><span class="w" id="w13">rakyat</span><span class="w" id="w14">bahawa</span><span class="w k" id="w15">perpaduan</span></div><div class="cg" id="cg6"><span class="w k" id="w16">perpaduan</span><span class="w" id="w17">dua</span><span class="w" id="w18">parti</span><span class="w" id="w19">ini</span></div><div class="cg" id="cg7"><span class="w" id="w20">adalah</span><span class="w" id="w21">perkara</span><span class="w" id="w22">yang</span><span class="w" id="w23">besar.</span></div><div class="cg" id="cg8"><span class="w k" id="w24">Perpaduan</span><span class="w" id="w25">ini</span><span class="w" id="w26">bukan</span><span class="w" id="w27">hanya</span></div><div class="cg" id="cg9"><span class="w" id="w28">kerana</span><span class="w" id="w29">politik</span></div><div class="cg" id="cg10"><span class="w" id="w30">kerana</span><span class="w k" id="w31">agama.</span></div><div class="cg" id="cg11"><span class="w" id="w32">Kenapa</span><span class="w" id="w33">kerana</span><span class="w k" id="w34">agama?</span></div><div class="cg" id="cg12"><span class="w" id="w35">Kerana</span></div><div class="cg" id="cg13"><span class="w" id="w36">dua</span><span class="w" id="w37">parti</span><span class="w" id="w38">terbesar</span><span class="w" id="w39">umat</span></div><div class="cg" id="cg14"><span class="w" id="w40">Islam</span></div><div class="cg" id="cg15"><span class="w k" id="w41">UMNO</span><span class="w" id="w42">dengan</span><span class="w" id="w43">3.6</span><span class="w k" id="w44">juta</span></div><div class="cg" id="cg16"><span class="w" id="w45">keahlian</span></div><div class="cg" id="cg17"><span class="w" id="w46">dan</span><span class="w k" id="w47">PAS</span><span class="w" id="w48">1</span><span class="w k" id="w49">juta</span></div><div class="cg" id="cg18"><span class="w" id="w50">keahlian</span><span class="w" id="w51">dua</span><span class="w" id="w52">parti</span><span class="w" id="w53">ini</span></div><div class="cg" id="cg19"><span class="w k" id="w54">bertelingkah</span><span class="w" id="w55">begitu</span><span class="w" id="w56">lama</span></div><div class="cg" id="cg20"><span class="w" id="w57">sejak</span></div><div class="cg" id="cg21"><span class="w k" id="w58">merdeka.</span></div><div class="cg" id="cg22"><span class="w" id="w59">Didamaikan</span><span class="w" id="w60">sekejap</span><span class="w" id="w61">1971</span></div><div class="cg" id="cg23"><span class="w" id="w62">hingga</span><span class="w" id="w63">1978</span></div><div class="cg" id="cg24"><span class="w" id="w64">terungkai</span><span class="w" id="w65">41</span><span class="w" id="w66">tahun</span></div><div class="cg" id="cg25"><span class="w" id="w67">didamaikan</span><span class="w" id="w68">kembali</span></div><div class="cg" id="cg26"><span class="w" id="w69">14</span><span class="w" id="w70">September</span><span class="w k" id="w71">2019</span></div><div class="cg" id="cg27"><span class="w" id="w72">terungkai</span><span class="w" id="w73">semula</span><span class="w k" id="w74">2022</span></div><div class="cg" id="cg28"><span class="w" id="w75">dan</span><span class="w" id="w76">ini</span><span class="w" id="w77">percubaan</span><span class="w" id="w78">kita</span></div><div class="cg" id="cg29"><span class="w" id="w79">yang</span><span class="w" id="w80">seterusnya.</span></div><div class="cg" id="cg30"><span class="w" id="w81">Dan</span><span class="w" id="w82">kita</span><span class="w" id="w83">harap</span><span class="w" id="w84">dan</span></div><div class="cg" id="cg31"><span class="w" id="w85">yakin</span></div><div class="cg" id="cg32"><span class="w" id="w86">kesungguhan</span><span class="w" id="w87">pada</span><span class="w" id="w88">pimpinan</span></div><div class="cg" id="cg33"><span class="w" id="w89">tertinggi</span><span class="w" id="w90">daripada</span><span class="w" id="w91">dua</span></div><div class="cg" id="cg34"><span class="w" id="w92">parti</span><span class="w" id="w93">daripada</span><span class="w" id="w94">ahli-ahli</span></div><div class="cg" id="cg35"><span class="w" id="w95">insyaAllah</span></div><div class="cg" id="cg36"><span class="w" id="w96">yang</span><span class="w" id="w97">bersama</span><span class="w" id="w98">kita</span><span class="w" id="w99">ini</span></div><div class="cg" id="cg37"><span class="w" id="w100">panjang</span><span class="w" id="w101">bukan</span><span class="w" id="w102">untuk</span></div><div class="cg" id="cg38"><span class="w" id="w103">dunia</span><span class="w" id="w104">sampai</span><span class="w" id="w105">ke</span><span class="w" id="w106">hari</span></div><div class="cg" id="cg39"><span class="w k" id="w107">akhirat</span><span class="w" id="w108">Allah</span><span class="w" id="w109">SWT</span></div>
+    <div class="cg" id="cg1"><span class="w" id="w4">kerana</span><span class="w" id="w5">politik</span></div><div class="cg" id="cg2"><span class="w" id="w6">kerana</span><span class="w k" id="w7">agama.</span></div><div class="cg" id="cg3"><span class="w" id="w8">Kerana</span><span class="w" id="w9">menggambarkan</span></div><div class="cg" id="cg4"><span class="w" id="w10">memberi</span><span class="w" id="w11">mesej</span><span class="w" id="w12">kepada</span></div><div class="cg" id="cg5"><span class="w" id="w13">rakyat</span><span class="w" id="w14">bahawa</span><span class="w k" id="w15">perpaduan</span></div><div class="cg" id="cg6"><span class="w k" id="w16">perpaduan</span><span class="w" id="w17">dua</span><span class="w" id="w18">parti</span><span class="w" id="w19">ini</span></div><div class="cg" id="cg7"><span class="w" id="w20">adalah</span><span class="w" id="w21">perkara</span><span class="w" id="w22">yang</span><span class="w" id="w23">besar.</span></div><div class="cg" id="cg8"><span class="w k" id="w24">Perpaduan</span><span class="w" id="w25">ini</span><span class="w" id="w26">bukan</span><span class="w" id="w27">hanya</span></div><div class="cg" id="cg9"><span class="w" id="w28">kerana</span><span class="w" id="w29">politik</span></div><div class="cg" id="cg10"><span class="w" id="w30">kerana</span><span class="w k" id="w31">agama.</span></div><div class="cg" id="cg11"><span class="w" id="w32">Kenapa</span><span class="w" id="w33">kerana</span><span class="w k" id="w34">agama?</span></div><div class="cg" id="cg12"><span class="w" id="w35">Kerana</span></div><div class="cg" id="cg13"><span class="w" id="w36">dua</span><span class="w" id="w37">parti</span><span class="w" id="w38">terbesar</span><span class="w" id="w39">umat</span></div><div class="cg" id="cg14"><span class="w" id="w40">Islam</span></div><div class="cg" id="cg15"><span class="w k" id="w41">UMNO</span><span class="w" id="w42">dengan</span><span class="w" id="w43">3.6</span><span class="w k" id="w44">juta</span></div><div class="cg" id="cg16"><span class="w" id="w45">keahlian</span></div><div class="cg" id="cg17"><span class="w" id="w46">dan</span><span class="w k" id="w47">PAS</span><span class="w" id="w48">1</span><span class="w k" id="w49">juta</span></div><div class="cg" id="cg18"><span class="w" id="w50">keahlian</span><span class="w" id="w51">dua</span><span class="w" id="w52">parti</span><span class="w" id="w53">ini</span></div><div class="cg" id="cg19"><span class="w k" id="w54">bertelingkah</span><span class="w" id="w55">begitu</span><span class="w" id="w56">lama</span></div><div class="cg" id="cg20"><span class="w" id="w57">sejak</span></div><div class="cg" id="cg21"><span class="w k" id="w58">merdeka.</span></div><div class="cg" id="cg22"><span class="w" id="w59">Didamaikan</span><span class="w" id="w60">sekejap</span><span class="w" id="w61">1971</span></div><div class="cg" id="cg23"><span class="w" id="w62">hingga</span><span class="w" id="w63">1978</span></div><div class="cg" id="cg24"><span class="w" id="w64">terungkai</span><span class="w" id="w65">41</span><span class="w" id="w66">tahun</span></div><div class="cg" id="cg25"><span class="w" id="w67">didamaikan</span><span class="w" id="w68">kembali</span></div><div class="cg" id="cg26"><span class="w" id="w69">14</span><span class="w" id="w70">September</span><span class="w k" id="w71">2019</span></div><div class="cg" id="cg27"><span class="w" id="w72">terungkai</span><span class="w" id="w73">semula</span><span class="w k" id="w74">2022</span></div><div class="cg" id="cg28"><span class="w" id="w75">dan</span><span class="w" id="w76">ini</span><span class="w" id="w77">percubaan</span><span class="w" id="w78">kita</span></div><div class="cg" id="cg29"><span class="w" id="w79">yang</span><span class="w" id="w80">seterusnya.</span></div><div class="cg" id="cg30"><span class="w" id="w81">Dan</span><span class="w" id="w82">kita</span><span class="w" id="w83">harap</span><span class="w" id="w84">dan</span></div><div class="cg" id="cg31"><span class="w" id="w85">yakin</span></div><div class="cg" id="cg32"><span class="w" id="w86">kesungguhan</span><span class="w" id="w87">pada</span><span class="w" id="w88">pimpinan</span></div><div class="cg" id="cg33"><span class="w" id="w89">tertinggi</span><span class="w" id="w90">daripada</span><span class="w" id="w91">dua</span></div><div class="cg" id="cg34"><span class="w" id="w92">parti</span><span class="w" id="w93">daripada</span><span class="w" id="w94">ahli-ahli</span></div><div class="cg" id="cg35"><span class="w" id="w95">insyaAllah</span></div><div class="cg" id="cg36"><span class="w" id="w96">yang</span><span class="w" id="w97">bersama</span><span class="w" id="w98">kita</span><span class="w" id="w99">ini</span></div><div class="cg" id="cg37"><span class="w" id="w100">panjang</span><span class="w" id="w101">bukan</span><span class="w" id="w102">untuk</span></div><div class="cg" id="cg38"><span class="w" id="w103">dunia</span><span class="w" id="w104">sampai</span><span class="w" id="w105">ke</span><span class="w" id="w106">hari</span></div><div class="cg" id="cg39"><span class="w k" id="w107">akhirat</span><span class="w" id="w108">Allah</span><span class="w" id="w109">SWT</span></div>
   </div>
   <div id="end" class="clip" data-start="64.930" data-duration="3.200" data-track-index="9">
     <div class="bg" id="endbg"></div>
@@ -143,9 +170,16 @@ html,body{margin:0;width:1080px;height:1920px;overflow:hidden;background:#000}
 </div>
 <script>
 window.__timelines = window.__timelines || {};
+// fit each cover title line to the frame (measured once at load; no time dependence)
+document.querySelectorAll("#hookb .ln").forEach(el => {
+  let fs = parseFloat(el.style.fontSize);
+  while (el.scrollWidth > 900 && fs > 56) { fs -= 2; el.style.fontSize = fs + "px"; }
+});
 const tl = gsap.timeline({ paused: true });
-tl.set("#cam",{scale:2.0060,x:-543.2,y:582.4},0.000);
-tl.to("#cam",{scale:2.0762,x:-581.2,y:610.5,duration:4.150,ease:"none"},0.000);
+tl.set("#cam",{scale:1.8856,x:-478.2,y:804.3},0);
+tl.to("#cam",{scale:1.9458,x:-510.7,y:828.3,duration:2.600,ease:"none"},0);
+tl.to("#cam",{scale:2.0060,x:-543.2,y:582.4,duration:.6,ease:"power2.inOut"},2.600);
+tl.to("#cam",{scale:2.0762,x:-581.2,y:610.5,duration:0.950,ease:"none"},3.200);
 tl.set("#cam",{scale:1.8700,x:-469.8,y:528.0},4.150);
 tl.to("#cam",{scale:1.9354,x:-505.1,y:554.2,duration:9.990,ease:"none"},4.150);
 tl.set("#cam",{scale:1.7000,x:-378.0,y:460.0},14.140);
@@ -164,9 +198,9 @@ tl.set("#cam",{scale:1.7000,x:-378.0,y:460.0},45.890);
 tl.to("#cam",{scale:1.7595,x:-410.1,y:483.8,duration:8.120,ease:"none"},45.890);
 tl.set("#cam",{scale:1.8700,x:-469.8,y:528.0},54.010);
 tl.to("#cam",{scale:1.9354,x:-505.1,y:554.2,duration:14.120,ease:"none"},54.010);
-tl.fromTo("#hookk",{opacity:0,y:-16},{opacity:1,y:0,duration:.6,ease:"power3.out"},0.05);
-tl.fromTo("#hookr",{scaleX:0},{scaleX:1,duration:.7,ease:"power3.out"},0.15);
-tl.from("#hook .ln",{opacity:0,y:60,scale:1.25,duration:.55,stagger:.14,ease:"power4.out"},0.12);
+tl.fromTo("#hookb",{scale:1},{scale:1.035,duration:2.600,ease:"none"},0);
+tl.to("#cvdeco",{opacity:0,duration:.45,ease:"power2.in"},2.400);
+tl.to("#hookb",{scale:.86,y:-40,duration:.6,ease:"power2.inOut"},2.600);
 tl.to("#hookb",{opacity:0,y:-30,duration:.35,ease:"power2.in"},3.800);
 tl.fromTo("#flash",{opacity:0},{opacity:.85,duration:.12,ease:"power2.out"},4.030);
 tl.to("#flash",{opacity:0,duration:.35,ease:"power2.in"},4.170);
@@ -206,16 +240,8 @@ tl.from("#conclb .msg span",{opacity:0,y:50,scale:1.15,duration:.55,stagger:.16,
 tl.fromTo("#conclr",{scaleX:0},{scaleX:1,duration:.8,ease:"power3.out"},60.930);
 tl.fromTo("#endbg",{opacity:0},{opacity:1,duration:.6,ease:"power2.out"},64.930);
 tl.from("#endb > *",{opacity:0,y:30,duration:.5,stagger:.12,ease:"power3.out"},65.130);
-tl.set("#cg0",{opacity:1,visibility:"visible"},0.010);
-tl.from("#cg0",{y:18,scale:.94,duration:.16,ease:"power2.out"},0.010);
-tl.fromTo("#w0",{opacity:.45,scale:0.8},{opacity:1,scale:1,duration:0.22,ease:"back.out(3)"},0.060);
-tl.fromTo("#w1",{opacity:.45,scale:0.94},{opacity:1,scale:1,duration:0.12,ease:"power2.out"},1.000);
-tl.fromTo("#w2",{opacity:.45,scale:0.94},{opacity:1,scale:1,duration:0.12,ease:"power2.out"},1.440);
-tl.fromTo("#w3",{opacity:.45,scale:0.94},{opacity:1,scale:1,duration:0.12,ease:"power2.out"},1.600);
-tl.to("#cg0",{opacity:0,duration:.1,ease:"power2.in"},1.740);
-tl.set("#cg0",{opacity:0,visibility:"hidden"},1.840);
-tl.set("#cg1",{opacity:1,visibility:"visible"},1.810);
-tl.from("#cg1",{y:18,scale:.94,duration:.16,ease:"power2.out"},1.810);
+tl.set("#cg1",{opacity:1,visibility:"visible"},2.550);
+tl.from("#cg1",{y:18,scale:.94,duration:.16,ease:"power2.out"},2.550);
 tl.fromTo("#w4",{opacity:.45,scale:0.94},{opacity:1,scale:1,duration:0.12,ease:"power2.out"},1.860);
 tl.fromTo("#w5",{opacity:.45,scale:0.94},{opacity:1,scale:1,duration:0.12,ease:"power2.out"},2.160);
 tl.to("#cg1",{opacity:0,duration:.1,ease:"power2.in"},2.870);

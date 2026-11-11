@@ -1,14 +1,18 @@
 #!/usr/bin/env python3
-"""Copy finished renders to output/<ID>_<TOPIK>.mp4 (report naming), re-encoding to CRF 23 if the bitrate is high."""
+"""Copy finished renders to output/<ID>_<TOPIK>.mp4 (report naming), re-encoding to CRF 23 if the bitrate is high,
+and save frame 0 (the front cover) as output/covers/<ID>_<TOPIK>_COVER.jpg for the Reels/TikTok thumbnail."""
 import glob, json, os, re, subprocess, sys, unicodedata
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "tools")); from report import slug
-os.makedirs(os.path.join(ROOT, "output"), exist_ok=True)
+os.makedirs(os.path.join(ROOT, "output/covers"), exist_ok=True)
 for p in sorted(glob.glob(os.path.join(ROOT, "renders/VIDEO_*.mp4"))):
     if ".tmp" in p: continue
     cid = re.match(r"(VIDEO_\d+)", os.path.basename(p)).group(1)
     s = json.load(open(os.path.join(ROOT, "specs", cid + ".json")))
     out = os.path.join(ROOT, "output", f"{cid}_{slug(s['topic'])}.mp4")
+    cover = os.path.join(ROOT, "output/covers", f"{cid}_{slug(s['topic'])}_COVER.jpg")
+    if not os.path.exists(cover) or os.path.getmtime(cover) < os.path.getmtime(p):
+        subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", p, "-frames:v", "1", "-q:v", "2", cover], check=True)
     if os.path.exists(out) and os.path.getmtime(out) > os.path.getmtime(p): continue
     for old in glob.glob(os.path.join(ROOT, "output", cid + "_*.mp4")): os.remove(old)
     br = float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=bit_rate", "-of", "csv=p=0", p], capture_output=True, text=True).stdout)

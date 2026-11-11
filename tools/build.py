@@ -212,7 +212,27 @@ html,body{margin:0;width:1080px;height:1920px;overflow:hidden;background:#000}
 #hook h1{margin-top:26px;font:900 92px/1.04 Montserrat;text-transform:uppercase;letter-spacing:-.01em;
   text-shadow:0 2px 0 #b98a1d,0 4px 0 #8a6410,0 6px 0 #5e430a,0 14px 30px rgba(0,0,0,.75)}
 #hook h1 .hl{color:var(--gold2)}
-#hook h1 .ln{display:block}
+#hook h1 .b{color:#5cb6ff}
+#hook h1 .ln{display:block;white-space:nowrap;width:max-content;margin:0 auto}
+/* front cover (frame 0 = thumbnail) */
+#hook .box.cv{top:214px;left:60px;right:60px}
+#hook .chip{display:inline-block;padding:12px 26px;border-radius:6px;background:linear-gradient(180deg,var(--gold2),var(--gold));
+  color:#081634;font:800 28px/1 Montserrat;letter-spacing:.16em;text-transform:uppercase;box-shadow:0 6px 20px rgba(0,0,0,.45)}
+#hook .box.cv h1{margin-top:30px;line-height:1.02}
+#hook .box.cv .rule{margin-top:34px;width:440px;height:5px}
+#cvscrim{position:absolute;inset:0;background:linear-gradient(180deg,rgba(4,11,30,.95) 0%,rgba(6,18,46,.86) 26%,rgba(6,18,46,.25) 44%,
+  rgba(6,18,46,0) 56%,rgba(4,11,30,.55) 74%,rgba(4,11,30,.96) 92%)}
+.cvf{position:absolute;border:2px solid rgba(226,184,74,.9);border-radius:4px}
+.cvf.o{left:30px;top:30px;right:30px;bottom:30px}
+.cvf.i{left:44px;top:44px;right:44px;bottom:44px;border-width:1px;border-color:rgba(226,184,74,.55)}
+.cvc{position:absolute;width:26px;height:26px;background:var(--gold2);transform:rotate(45deg);box-shadow:0 0 16px rgba(255,215,106,.7)}
+.cvc::after{content:"";position:absolute;inset:7px;background:#081634}
+.cvtop{position:absolute;left:0;right:0;top:112px;text-align:center}
+.cvtop .kicker{font-size:28px;letter-spacing:.34em}
+.cvblue{position:absolute;left:390px;right:390px;top:160px;height:3px;background:linear-gradient(90deg,transparent,var(--blue),transparent)}
+.cvbot{position:absolute;left:0;right:0;top:1640px;text-align:center}
+.cvbot .nm{font:900 46px/1.1 Montserrat;letter-spacing:.06em;text-transform:uppercase;text-shadow:0 4px 16px rgba(0,0,0,.8)}
+.cvbot .rl{margin-top:14px;font:600 30px/1.2 Poppins;color:#cfe2ff;letter-spacing:.04em}
 #flash{position:absolute;inset:0;opacity:0;background:radial-gradient(circle at 50% 45%,rgba(120,190,255,.95),rgba(30,110,255,.55) 45%,rgba(4,11,30,0) 80%)}
 /* lower third */
 #l3{position:absolute;left:0;top:0;width:1080px;height:1920px}
@@ -480,6 +500,7 @@ def build(spec_path, html_only=False):
     short = [f for f in facts if f["dur"] < 2.5]
     for f in short: print("  drop short card:", f.get("label"), f["dur"])
     facts = [f for f in facts if f["dur"] >= 2.5]
+    cover_end = round(min(2.6, hook_end - 0.6), 3) if hook_end else 0.0   # poster hold; frame 0 = thumbnail
     l3s = round(hook_end + 0.6, 3); l3d = spec.get("l3_dur", 9.0)
     topics = spec.get("topics", [{"label": spec["topic"]}])
     tstarts = []
@@ -514,12 +535,20 @@ def build(spec_path, html_only=False):
         f0 = frame_at(p["a"])
         s = f0["s"] * (1.18 if p["kind"] == "hook" else (1.0 if k % 2 == 0 else 1.10))
         dur = p["b"] - p["a"]
-        def txy(s):
-            tx = target[0] - 540 - s * (f0["x"] - 540); ty = target[1] - 960 - s * (f0["y"] - 960)
+        def txy(s, tgt=target):
+            tx = tgt[0] - 540 - s * (f0["x"] - 540); ty = tgt[1] - 960 - s * (f0["y"] - 960)
             lx, ly = 540 * (s - 1), 960 * (s - 1)
             return max(-lx, min(lx, tx)), max(-ly, min(ly, ty))
         s2 = s * 1.035
         x1, y1 = txy(s); x2, y2 = txy(s2)
+        if p["kind"] == "hook" and cover_end:
+            ct = (540, target[1] + spec.get("cover_face_dy", 270))
+            xa, ya = txy(s * 0.94, ct); xb, yb = txy(s * 0.97, ct)
+            cam_js.append(f'tl.set("#cam",{{scale:{s*0.94:.4f},x:{xa:.1f},y:{ya:.1f}}},0);')
+            cam_js.append(f'tl.to("#cam",{{scale:{s*0.97:.4f},x:{xb:.1f},y:{yb:.1f},duration:{cover_end:.3f},ease:"none"}},0);')
+            cam_js.append(f'tl.to("#cam",{{scale:{s:.4f},x:{x1:.1f},y:{y1:.1f},duration:.6,ease:"power2.inOut"}},{cover_end:.3f});')
+            cam_js.append(f'tl.to("#cam",{{scale:{s2:.4f},x:{x2:.1f},y:{y2:.1f},duration:{max(0.1, dur - cover_end - 0.6):.3f},ease:"none"}},{cover_end + 0.6:.3f});')
+            continue
         cam_js.append(f'tl.set("#cam",{{scale:{s:.4f},x:{x1:.1f},y:{y1:.1f}}},{p["o"]:.3f});')
         cam_js.append(f'tl.to("#cam",{{scale:{s2:.4f},x:{x2:.1f},y:{y2:.1f},duration:{dur:.3f},ease:"none"}},{p["o"]:.3f});')
 
@@ -533,6 +562,11 @@ def build(spec_path, html_only=False):
         nxt = ow[groups[gi + 1][0]]["s"] if gi + 1 < len(groups) else D
         ge2 = min(max(ge + 0.25, gs + 0.6), nxt - 0.02, D - end_dur)
         if gs >= D - end_dur: continue
+        srt_gs = gs   # captions appear once the poster clears; the SRT keeps the spoken times
+        if gs < cover_end:
+            if ge2 <= cover_end + 0.3:
+                srt.append((gs, ge2, " ".join(ow[j]["t"] for j in g))); continue
+            gs = cover_end
         spans = []
         for j in g:
             raw = ow[j]["t"]; low = re.sub(r"[^\w-]", "", raw.lower())
@@ -546,10 +580,14 @@ def build(spec_path, html_only=False):
             cap_js.append(f'tl.fromTo("#w{j}",{{opacity:.45,scale:{0.8 if cls_k else 0.94}}},{{opacity:1,scale:1,duration:{0.22 if cls_k else 0.12},ease:"{ "back.out(3)" if cls_k else "power2.out"}"}},{ow[j]["s"]:.3f});')
         cap_js.append(f'tl.to("#cg{gi}",{{opacity:0,duration:.1,ease:"power2.in"}},{ge2 - 0.1:.3f});')
         cap_js.append(f'tl.set("#cg{gi}",{{opacity:0,visibility:"hidden"}},{ge2:.3f});')
-        srt.append((gs, ge2, " ".join(ow[j]["t"] for j in g)))
+        srt.append((srt_gs, ge2, " ".join(ow[j]["t"] for j in g)))
 
     # ---- assemble HTML
-    hook_lines = "".join(f'<span class="ln">{ln.replace("class=\"g\"","class=\"hl\"")}</span>' for ln in kw_html(spec["hook_title"]))
+    def fit(ln):
+        n = len(re.sub(r"<[^>]+>", "", ln).replace("&amp;", "&"))
+        return int(max(70, min(134, 930 / (0.70 * max(n, 1)))))
+    hook_lines = "".join(f'<span class="ln" style="font-size:{fit(ln)}px">{ln.replace("class=\"g\"","class=\"hl\"")}</span>'
+                         for ln in kw_html(spec.get("cover_title", spec["hook_title"])))
     name = spec.get("speaker", "DR. KHAIRUDDIN AMAN RAZALI"); role = spec.get("role", "")
     fact_tags = "\n".join(fact_html(i, f) for i, f in enumerate(facts))
     tag_html = []
@@ -566,9 +604,9 @@ def build(spec_path, html_only=False):
     endmsg = "".join(f'<span style="display:block">{ln}</span>' for ln in kw_html(spec.get("end_text", spec["topic"])))
 
     js = []
-    js.append(f'tl.fromTo("#hookk",{{opacity:0,y:-16}},{{opacity:1,y:0,duration:.6,ease:"power3.out"}},0.05);')
-    js.append(f'tl.fromTo("#hookr",{{scaleX:0}},{{scaleX:1,duration:.7,ease:"power3.out"}},0.15);')
-    js.append(f'tl.from("#hook .ln",{{opacity:0,y:60,scale:1.25,duration:.55,stagger:.14,ease:"power4.out"}},0.12);')
+    js.append(f'tl.fromTo("#hookb",{{scale:1}},{{scale:1.035,duration:{cover_end:.3f},ease:"none"}},0);')
+    js.append(f'tl.to("#cvdeco",{{opacity:0,duration:.45,ease:"power2.in"}},{cover_end - 0.2:.3f});')
+    js.append(f'tl.to("#hookb",{{scale:.86,y:-40,duration:.6,ease:"power2.inOut"}},{cover_end:.3f});')
     js.append(f'tl.to("#hookb",{{opacity:0,y:-30,duration:.35,ease:"power2.in"}},{hook_end - 0.35:.3f});')
     js.append(f'tl.fromTo("#flash",{{opacity:0}},{{opacity:.85,duration:.12,ease:"power2.out"}},{hook_end - 0.12:.3f});')
     js.append(f'tl.to("#flash",{{opacity:0,duration:.35,ease:"power2.in"}},{hook_end + 0.02:.3f});')
@@ -608,7 +646,14 @@ def build(spec_path, html_only=False):
   <div id="scrimTop" class="layer"></div>
   <div id="scrimBot" class="layer"></div>
   <div id="hook" class="clip" data-start="0" data-duration="{hook_end + 0.05:.3f}" data-track-index="2">
-    <div class="box" id="hookb"><div class="kicker" id="hookk">{esc(spec.get("hook_kicker", "PETIKAN UCAPAN"))}</div><div class="rule" id="hookr"></div><h1>{hook_lines}</h1></div>
+    <div id="cvdeco"><div id="cvscrim"></div><div class="cvf o"></div><div class="cvf i"></div>
+      <div class="cvc" style="left:24px;top:24px"></div><div class="cvc" style="right:24px;top:24px"></div>
+      <div class="cvc" style="left:24px;bottom:24px"></div><div class="cvc" style="right:24px;bottom:24px"></div>
+      <div class="cvtop"><div class="kicker">{esc(spec.get("cover_kicker", "PETIKAN UCAPAN"))}</div></div><div class="cvblue"></div>
+      <div class="cvbot"><div class="nm">{esc(name)}</div><div class="rl">{esc(role)}</div></div></div>
+    <div class="box cv" id="hookb" style="transform-origin:50% 0%"><div class="chip" id="hookk">{esc(spec.get("hook_kicker", "PETIKAN UCAPAN"))}</div>
+      <h1>{hook_lines}</h1>
+      <div class="rule" id="hookr"></div></div>
   </div>
   <div id="flash" class="clip" data-start="{max(0, hook_end - 0.15):.3f}" data-duration="0.6" data-track-index="7"></div>
   <div id="l3" class="clip" data-start="{l3s:.3f}" data-duration="{l3d:.3f}" data-track-index="2">
@@ -630,6 +675,11 @@ def build(spec_path, html_only=False):
 </div>
 <script>
 window.__timelines = window.__timelines || {{}};
+// fit each cover title line to the frame (measured once at load; no time dependence)
+document.querySelectorAll("#hookb .ln").forEach(el => {{
+  let fs = parseFloat(el.style.fontSize);
+  while (el.scrollWidth > 900 && fs > 56) {{ fs -= 2; el.style.fontSize = fs + "px"; }}
+}});
 const tl = gsap.timeline({{ paused: true }});
 {chr(10).join(cam_js)}
 {chr(10).join(js)}

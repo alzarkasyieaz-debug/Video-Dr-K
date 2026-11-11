@@ -23,7 +23,27 @@ html,body{margin:0;width:1080px;height:1920px;overflow:hidden;background:#000}
 #hook h1{margin-top:26px;font:900 92px/1.04 Montserrat;text-transform:uppercase;letter-spacing:-.01em;
   text-shadow:0 2px 0 #b98a1d,0 4px 0 #8a6410,0 6px 0 #5e430a,0 14px 30px rgba(0,0,0,.75)}
 #hook h1 .hl{color:var(--gold2)}
-#hook h1 .ln{display:block}
+#hook h1 .b{color:#5cb6ff}
+#hook h1 .ln{display:block;white-space:nowrap;width:max-content;margin:0 auto}
+/* front cover (frame 0 = thumbnail) */
+#hook .box.cv{top:214px;left:60px;right:60px}
+#hook .chip{display:inline-block;padding:12px 26px;border-radius:6px;background:linear-gradient(180deg,var(--gold2),var(--gold));
+  color:#081634;font:800 28px/1 Montserrat;letter-spacing:.16em;text-transform:uppercase;box-shadow:0 6px 20px rgba(0,0,0,.45)}
+#hook .box.cv h1{margin-top:30px;line-height:1.02}
+#hook .box.cv .rule{margin-top:34px;width:440px;height:5px}
+#cvscrim{position:absolute;inset:0;background:linear-gradient(180deg,rgba(4,11,30,.95) 0%,rgba(6,18,46,.86) 26%,rgba(6,18,46,.25) 44%,
+  rgba(6,18,46,0) 56%,rgba(4,11,30,.55) 74%,rgba(4,11,30,.96) 92%)}
+.cvf{position:absolute;border:2px solid rgba(226,184,74,.9);border-radius:4px}
+.cvf.o{left:30px;top:30px;right:30px;bottom:30px}
+.cvf.i{left:44px;top:44px;right:44px;bottom:44px;border-width:1px;border-color:rgba(226,184,74,.55)}
+.cvc{position:absolute;width:26px;height:26px;background:var(--gold2);transform:rotate(45deg);box-shadow:0 0 16px rgba(255,215,106,.7)}
+.cvc::after{content:"";position:absolute;inset:7px;background:#081634}
+.cvtop{position:absolute;left:0;right:0;top:112px;text-align:center}
+.cvtop .kicker{font-size:28px;letter-spacing:.34em}
+.cvblue{position:absolute;left:390px;right:390px;top:160px;height:3px;background:linear-gradient(90deg,transparent,var(--blue),transparent)}
+.cvbot{position:absolute;left:0;right:0;top:1640px;text-align:center}
+.cvbot .nm{font:900 46px/1.1 Montserrat;letter-spacing:.06em;text-transform:uppercase;text-shadow:0 4px 16px rgba(0,0,0,.8)}
+.cvbot .rl{margin-top:14px;font:600 30px/1.2 Poppins;color:#cfe2ff;letter-spacing:.04em}
 #flash{position:absolute;inset:0;opacity:0;background:radial-gradient(circle at 50% 45%,rgba(120,190,255,.95),rgba(30,110,255,.55) 45%,rgba(4,11,30,0) 80%)}
 /* lower third */
 #l3{position:absolute;left:0;top:0;width:1080px;height:1920px}
@@ -119,7 +139,14 @@ html,body{margin:0;width:1080px;height:1920px;overflow:hidden;background:#000}
   <div id="scrimTop" class="layer"></div>
   <div id="scrimBot" class="layer"></div>
   <div id="hook" class="clip" data-start="0" data-duration="6.100" data-track-index="2">
-    <div class="box" id="hookb"><div class="kicker" id="hookk">DATA PILIHAN RAYA</div><div class="rule" id="hookr"></div><h1><span class="ln">HANG TUAH JAYA</span><span class="ln"><span class="hl">MILIK SIAPA</span>?</span></h1></div>
+    <div id="cvdeco"><div id="cvscrim"></div><div class="cvf o"></div><div class="cvf i"></div>
+      <div class="cvc" style="left:24px;top:24px"></div><div class="cvc" style="right:24px;top:24px"></div>
+      <div class="cvc" style="left:24px;bottom:24px"></div><div class="cvc" style="right:24px;bottom:24px"></div>
+      <div class="cvtop"><div class="kicker">PETIKAN UCAPAN</div></div><div class="cvblue"></div>
+      <div class="cvbot"><div class="nm">DR. KHAIRUDDIN AMAN RAZALI</div><div class="rl">Bekas Menteri Komoditi</div></div></div>
+    <div class="box cv" id="hookb" style="transform-origin:50% 0%"><div class="chip" id="hookk">DATA PILIHAN RAYA</div>
+      <h1><span class="ln" style="font-size:94px">HANG TUAH JAYA</span><span class="ln" style="font-size:110px"><span class="hl">MILIK SIAPA</span>?</span></h1>
+      <div class="rule" id="hookr"></div></div>
   </div>
   <div id="flash" class="clip" data-start="5.900" data-duration="0.6" data-track-index="7"></div>
   <div id="l3" class="clip" data-start="6.650" data-duration="9.000" data-track-index="2">
@@ -133,7 +160,7 @@ html,body{margin:0;width:1080px;height:1920px;overflow:hidden;background:#000}
 <div id="f2" class="clip card" data-start="63.410" data-duration="10.000" data-track-index="4"><div class="glow" id="f2g"></div><div class="in" id="f2i"><div class="row"><svg class="ic" width="96" height="96" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 30l12-12 10 4 8-4 14 2 12 10"/><path d="M16 18l-4 22 14 14 6-4 6 4 12-14 6-10"/><path d="M24 30l10 10M30 26l10 10"/></svg><div><div class="lbl">Rundingan kerusi</div><div class="kw" style="margin-top:8px"><span class="kl">PELUANG</span><span class="kl"><span class="g">PERIKATAN NASIONAL</span></span></div></div></div><div class=sub>Bertanding di Hang Tuah Jaya &amp; Alor Gajah</div></div></div>
   <div id="concl" class="clip" data-start="73.630" data-duration="4.600" data-track-index="6"><div class="box" id="conclb"><div class="kicker">Pesanan kepada ahli</div><div class="msg"><span style="display:block">JANGAN BERGADUH —</span><span style="display:block"><span class="g">BIAR PIMPINAN URUSKAN</span></span></div><div class="rule" id="conclr"></div></div></div>
   <div id="caps" class="clip" data-start="0" data-duration="77.930" data-track-index="8" data-track-kind="captions">
-    <div class="cg" id="cg0"><span class="w" id="w0">Agak-agak</span><span class="w" id="w1">Parlimen</span></div><div class="cg" id="cg1"><span class="w" id="w2">Hang Tuah</span><span class="w" id="w3">Jaya</span><span class="w k" id="w4">milik</span><span class="w" id="w5">siapa</span></div><div class="cg" id="cg2"><span class="w k" id="w6">milik</span><span class="w" id="w7">kita</span></div><div class="cg" id="cg3"><span class="w" id="w8">yang</span><span class="w" id="w9">YB</span><span class="w" id="w10">Adli</span><span class="w" id="w11">menang</span></div><div class="cg" id="cg4"><span class="w k" id="w12">majoriti</span><span class="w" id="w13">hanya</span><span class="w k" id="w14">800</span><span class="w" id="w15">sahaja</span></div><div class="cg" id="cg5"><span class="w k" id="w16">800</span></div><div class="cg" id="cg6"><span class="w k" id="w17">undi</span><span class="w e" id="w18">BN</span><span class="w" id="w19">27,000</span><span class="w k" id="w20">undi</span></div><div class="cg" id="cg7"><span class="w" id="w21">dia</span><span class="w e" id="w22">Pakatan</span><span class="w e" id="w23">Harapan</span><span class="w" id="w24">28,000</span></div><div class="cg" id="cg8"><span class="w k" id="w25">undi</span><span class="w e" id="w26">Perikatan</span><span class="w e" id="w27">Nasional</span></div><div class="cg" id="cg9"><span class="w" id="w28">17,000</span></div><div class="cg" id="cg10"><span class="w" id="w29">2022</span><span class="w" id="w30">kalau</span><span class="w" id="w31">tengok</span><span class="w" id="w32">data</span></div><div class="cg" id="cg11"><span class="w" id="w33">pilihan</span><span class="w" id="w34">pilihan</span><span class="w" id="w35">raya</span></div><div class="cg" id="cg12"><span class="w" id="w36">Parlimen</span><span class="w" id="w37">Hang Tuah</span><span class="w" id="w38">Jaya</span></div><div class="cg" id="cg13"><span class="w" id="w39">yang</span><span class="w" id="w40">menang</span><span class="w" id="w41">sekarang</span><span class="w" id="w42">Adam</span></div><div class="cg" id="cg14"><span class="w" id="w43">Adli</span><span class="w" id="w44">dia</span><span class="w" id="w45">menang</span><span class="w" id="w46">38,000</span></div><div class="cg" id="cg15"><span class="w e" id="w47">BN</span><span class="w" id="w48">ada</span><span class="w" id="w49">30,000</span><span class="w" id="w50">dan</span></div><div class="cg" id="cg16"><span class="w e" id="w51">Perikatan</span><span class="w e" id="w52">Nasional</span><span class="w" id="w53">ada</span><span class="w" id="w54">tak</span></div><div class="cg" id="cg17"><span class="w" id="w55">silap</span><span class="w" id="w56">20,000</span><span class="w" id="w57">kalau</span><span class="w" id="w58">gabung</span></div><div class="cg" id="cg18"><span class="w" id="w59">dua</span><span class="w k" id="w60">undi</span><span class="w" id="w61">agak-agak</span></div><div class="cg" id="cg19"><span class="w" id="w62">Parlimen</span><span class="w" id="w63">Hang Tuah</span><span class="w" id="w64">Jaya</span></div><div class="cg" id="cg20"><span class="w k" id="w65">milik</span><span class="w" id="w66">siapa</span></div><div class="cg" id="cg21"><span class="w k" id="w67">milik</span><span class="w" id="w68">kita</span><span class="w" id="w69">semua</span><span class="w" id="w70">yang</span></div><div class="cg" id="cg22"><span class="w" id="w71">bertanding</span><span class="w" id="w72">kali</span><span class="w" id="w73">kelak ada</span></div><div class="cg" id="cg23"><span class="w" id="w74">rundingan</span><span class="w k" id="w75">kerusi</span><span class="w" id="w76">parti</span></div><div class="cg" id="cg24"><span class="w" id="w77">yang</span><span class="w" id="w78">kedua</span><span class="w" id="w79">tertinggi</span><span class="w" id="w80">dia</span></div><div class="cg" id="cg25"><span class="w" id="w81">bukan</span><span class="w" id="w82">bertanding</span><span class="w" id="w83">peluang</span></div><div class="cg" id="cg26"><span class="w" id="w84">untuk</span><span class="w e" id="w85">Perikatan</span><span class="w e" id="w86">Nasional</span></div><div class="cg" id="cg27"><span class="w" id="w87">bertanding</span><span class="w" id="w88">di</span><span class="w" id="w89">Parlimen</span></div><div class="cg" id="cg28"><span class="w" id="w90">Hang Tuah</span><span class="w" id="w91">Jaya</span><span class="w" id="w92">dan</span></div><div class="cg" id="cg29"><span class="w" id="w93">bertanding</span><span class="w" id="w94">di</span><span class="w" id="w95">Parlimen</span></div><div class="cg" id="cg30"><span class="w" id="w96">Alor</span><span class="w" id="w97">Gajah</span><span class="w" id="w98">peluang</span><span class="w" id="w99">dan</span></div><div class="cg" id="cg31"><span class="w" id="w100">bergaduh</span><span class="w" id="w101">biar</span><span class="w" id="w102">pimpinan</span></div>
+    <div class="cg" id="cg1"><span class="w" id="w2">Hang Tuah</span><span class="w" id="w3">Jaya</span><span class="w k" id="w4">milik</span><span class="w" id="w5">siapa</span></div><div class="cg" id="cg2"><span class="w k" id="w6">milik</span><span class="w" id="w7">kita</span></div><div class="cg" id="cg3"><span class="w" id="w8">yang</span><span class="w" id="w9">YB</span><span class="w" id="w10">Adli</span><span class="w" id="w11">menang</span></div><div class="cg" id="cg4"><span class="w k" id="w12">majoriti</span><span class="w" id="w13">hanya</span><span class="w k" id="w14">800</span><span class="w" id="w15">sahaja</span></div><div class="cg" id="cg5"><span class="w k" id="w16">800</span></div><div class="cg" id="cg6"><span class="w k" id="w17">undi</span><span class="w e" id="w18">BN</span><span class="w" id="w19">27,000</span><span class="w k" id="w20">undi</span></div><div class="cg" id="cg7"><span class="w" id="w21">dia</span><span class="w e" id="w22">Pakatan</span><span class="w e" id="w23">Harapan</span><span class="w" id="w24">28,000</span></div><div class="cg" id="cg8"><span class="w k" id="w25">undi</span><span class="w e" id="w26">Perikatan</span><span class="w e" id="w27">Nasional</span></div><div class="cg" id="cg9"><span class="w" id="w28">17,000</span></div><div class="cg" id="cg10"><span class="w" id="w29">2022</span><span class="w" id="w30">kalau</span><span class="w" id="w31">tengok</span><span class="w" id="w32">data</span></div><div class="cg" id="cg11"><span class="w" id="w33">pilihan</span><span class="w" id="w34">pilihan</span><span class="w" id="w35">raya</span></div><div class="cg" id="cg12"><span class="w" id="w36">Parlimen</span><span class="w" id="w37">Hang Tuah</span><span class="w" id="w38">Jaya</span></div><div class="cg" id="cg13"><span class="w" id="w39">yang</span><span class="w" id="w40">menang</span><span class="w" id="w41">sekarang</span><span class="w" id="w42">Adam</span></div><div class="cg" id="cg14"><span class="w" id="w43">Adli</span><span class="w" id="w44">dia</span><span class="w" id="w45">menang</span><span class="w" id="w46">38,000</span></div><div class="cg" id="cg15"><span class="w e" id="w47">BN</span><span class="w" id="w48">ada</span><span class="w" id="w49">30,000</span><span class="w" id="w50">dan</span></div><div class="cg" id="cg16"><span class="w e" id="w51">Perikatan</span><span class="w e" id="w52">Nasional</span><span class="w" id="w53">ada</span><span class="w" id="w54">tak</span></div><div class="cg" id="cg17"><span class="w" id="w55">silap</span><span class="w" id="w56">20,000</span><span class="w" id="w57">kalau</span><span class="w" id="w58">gabung</span></div><div class="cg" id="cg18"><span class="w" id="w59">dua</span><span class="w k" id="w60">undi</span><span class="w" id="w61">agak-agak</span></div><div class="cg" id="cg19"><span class="w" id="w62">Parlimen</span><span class="w" id="w63">Hang Tuah</span><span class="w" id="w64">Jaya</span></div><div class="cg" id="cg20"><span class="w k" id="w65">milik</span><span class="w" id="w66">siapa</span></div><div class="cg" id="cg21"><span class="w k" id="w67">milik</span><span class="w" id="w68">kita</span><span class="w" id="w69">semua</span><span class="w" id="w70">yang</span></div><div class="cg" id="cg22"><span class="w" id="w71">bertanding</span><span class="w" id="w72">kali</span><span class="w" id="w73">kelak ada</span></div><div class="cg" id="cg23"><span class="w" id="w74">rundingan</span><span class="w k" id="w75">kerusi</span><span class="w" id="w76">parti</span></div><div class="cg" id="cg24"><span class="w" id="w77">yang</span><span class="w" id="w78">kedua</span><span class="w" id="w79">tertinggi</span><span class="w" id="w80">dia</span></div><div class="cg" id="cg25"><span class="w" id="w81">bukan</span><span class="w" id="w82">bertanding</span><span class="w" id="w83">peluang</span></div><div class="cg" id="cg26"><span class="w" id="w84">untuk</span><span class="w e" id="w85">Perikatan</span><span class="w e" id="w86">Nasional</span></div><div class="cg" id="cg27"><span class="w" id="w87">bertanding</span><span class="w" id="w88">di</span><span class="w" id="w89">Parlimen</span></div><div class="cg" id="cg28"><span class="w" id="w90">Hang Tuah</span><span class="w" id="w91">Jaya</span><span class="w" id="w92">dan</span></div><div class="cg" id="cg29"><span class="w" id="w93">bertanding</span><span class="w" id="w94">di</span><span class="w" id="w95">Parlimen</span></div><div class="cg" id="cg30"><span class="w" id="w96">Alor</span><span class="w" id="w97">Gajah</span><span class="w" id="w98">peluang</span><span class="w" id="w99">dan</span></div><div class="cg" id="cg31"><span class="w" id="w100">bergaduh</span><span class="w" id="w101">biar</span><span class="w" id="w102">pimpinan</span></div>
   </div>
   <div id="end" class="clip" data-start="77.930" data-duration="3.200" data-track-index="9">
     <div class="bg" id="endbg"></div>
@@ -143,9 +170,16 @@ html,body{margin:0;width:1080px;height:1920px;overflow:hidden;background:#000}
 </div>
 <script>
 window.__timelines = window.__timelines || {};
+// fit each cover title line to the frame (measured once at load; no time dependence)
+document.querySelectorAll("#hookb .ln").forEach(el => {
+  let fs = parseFloat(el.style.fontSize);
+  while (el.scrollWidth > 900 && fs > 56) { fs -= 2; el.style.fontSize = fs + "px"; }
+});
 const tl = gsap.timeline({ paused: true });
-tl.set("#cam",{scale:2.0060,x:82.2,y:50.7},0.000);
-tl.to("#cam",{scale:2.0762,x:85.1,y:59.5,duration:6.050,ease:"none"},0.000);
+tl.set("#cam",{scale:1.8856,x:77.3,y:305.7},0);
+tl.to("#cam",{scale:1.9458,x:79.8,y:313.2,duration:2.600,ease:"none"},0);
+tl.to("#cam",{scale:2.0060,x:82.2,y:50.7,duration:.6,ease:"power2.inOut"},2.600);
+tl.to("#cam",{scale:2.0762,x:85.1,y:59.5,duration:2.850,ease:"none"},3.200);
 tl.set("#cam",{scale:1.8700,x:76.7,y:33.8},6.050);
 tl.to("#cam",{scale:1.9354,x:79.4,y:41.9,duration:5.630,ease:"none"},6.050);
 tl.set("#cam",{scale:1.7000,x:69.7,y:12.5},11.680);
@@ -154,9 +188,9 @@ tl.set("#cam",{scale:1.8700,x:76.7,y:33.8},13.340);
 tl.to("#cam",{scale:1.9354,x:79.4,y:41.9,duration:15.140,ease:"none"},13.340);
 tl.set("#cam",{scale:1.7000,x:69.7,y:12.5},28.480);
 tl.to("#cam",{scale:1.7595,x:72.1,y:19.9,duration:52.650,ease:"none"},28.480);
-tl.fromTo("#hookk",{opacity:0,y:-16},{opacity:1,y:0,duration:.6,ease:"power3.out"},0.05);
-tl.fromTo("#hookr",{scaleX:0},{scaleX:1,duration:.7,ease:"power3.out"},0.15);
-tl.from("#hook .ln",{opacity:0,y:60,scale:1.25,duration:.55,stagger:.14,ease:"power4.out"},0.12);
+tl.fromTo("#hookb",{scale:1},{scale:1.035,duration:2.600,ease:"none"},0);
+tl.to("#cvdeco",{opacity:0,duration:.45,ease:"power2.in"},2.400);
+tl.to("#hookb",{scale:.86,y:-40,duration:.6,ease:"power2.inOut"},2.600);
 tl.to("#hookb",{opacity:0,y:-30,duration:.35,ease:"power2.in"},5.700);
 tl.fromTo("#flash",{opacity:0},{opacity:.85,duration:.12,ease:"power2.out"},5.930);
 tl.to("#flash",{opacity:0,duration:.35,ease:"power2.in"},6.070);
@@ -199,14 +233,8 @@ tl.from("#conclb .msg span",{opacity:0,y:50,scale:1.15,duration:.55,stagger:.16,
 tl.fromTo("#conclr",{scaleX:0},{scaleX:1,duration:.8,ease:"power3.out"},73.930);
 tl.fromTo("#endbg",{opacity:0},{opacity:1,duration:.6,ease:"power2.out"},77.930);
 tl.from("#endb > *",{opacity:0,y:30,duration:.5,stagger:.12,ease:"power3.out"},78.130);
-tl.set("#cg0",{opacity:1,visibility:"visible"},0.000);
-tl.from("#cg0",{y:18,scale:.94,duration:.16,ease:"power2.out"},0.000);
-tl.fromTo("#w0",{opacity:.45,scale:0.94},{opacity:1,scale:1,duration:0.12,ease:"power2.out"},0.050);
-tl.fromTo("#w1",{opacity:.45,scale:0.94},{opacity:1,scale:1,duration:0.12,ease:"power2.out"},0.950);
-tl.to("#cg0",{opacity:0,duration:.1,ease:"power2.in"},1.750);
-tl.set("#cg0",{opacity:0,visibility:"hidden"},1.850);
-tl.set("#cg1",{opacity:1,visibility:"visible"},1.820);
-tl.from("#cg1",{y:18,scale:.94,duration:.16,ease:"power2.out"},1.820);
+tl.set("#cg1",{opacity:1,visibility:"visible"},2.550);
+tl.from("#cg1",{y:18,scale:.94,duration:.16,ease:"power2.out"},2.550);
 tl.fromTo("#w2",{opacity:.45,scale:0.94},{opacity:1,scale:1,duration:0.12,ease:"power2.out"},1.870);
 tl.fromTo("#w3",{opacity:.45,scale:0.94},{opacity:1,scale:1,duration:0.12,ease:"power2.out"},2.310);
 tl.fromTo("#w4",{opacity:.45,scale:0.8},{opacity:1,scale:1,duration:0.22,ease:"back.out(3)"},2.810);
