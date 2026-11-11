@@ -4,3 +4,5 @@ renders/
 .hyperframes/
 .venv/
 exports/.render_*.log
+exports/.*hf-transaction*/
+exports/work-*/
