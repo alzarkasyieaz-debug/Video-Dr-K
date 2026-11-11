@@ -8,3 +8,4 @@ logs/
 renders/*.tmp.mp4
 renders/work-*
 !renders/VIDEO_*.mp4
+!output/*.mp4
