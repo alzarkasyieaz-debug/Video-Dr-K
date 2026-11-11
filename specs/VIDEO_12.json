@@ -1,0 +1,187 @@
+{
+ "source": "drk5",
+ "source_name": "Dr K 5.mp4",
+ "speaker": "DR. KHAIRUDDIN AMAN RAZALI",
+ "role": "Bekas Menteri Komoditi",
+ "gap": 0.9,
+ "tail": 1.2,
+ "frame": {
+  "x": 905,
+  "y": 560,
+  "s": 1.7
+ },
+ "focus": [
+  [
+   0,
+   905,
+   560
+  ],
+  [
+   500,
+   870,
+   560
+  ],
+  [
+   700,
+   800,
+   560
+  ],
+  [
+   900,
+   726,
+   560
+  ],
+  [
+   1150,
+   705,
+   560
+  ],
+  [
+   1290,
+   741,
+   560
+  ]
+ ],
+ "face_y": 740,
+ "grade": "eq=contrast=1.08:brightness=0.04:saturation=1.08:gamma=1.12",
+ "keywords_blue": [
+  "barisan",
+  "nasional",
+  "pakatan",
+  "harapan",
+  "perikatan",
+  "bn",
+  "ph",
+  "pn"
+ ],
+ "fix": {
+  "FAS": "PAS",
+  "pas": "PAS",
+  "Sejujuh": "Setuju",
+  "isyara": "Islam",
+  "berterikah": "bertelingkah",
+  "mesin": "mesej",
+  "gunyah": "dunia",
+  "BMI": "BN",
+  "PS": "PH",
+  "neraikan": "meraikan",
+  "Belaka": "Melaka",
+  "Pertakaan": "Perikatan",
+  "luar-luar": "luas-luas",
+  "menuduk": "duduk"
+ },
+ "id": "VIDEO_12",
+ "topic": "Johor, N. Sembilan, Melaka",
+ "hook_title": "BN MENANG BESAR|[DI JOHOR]",
+ "hook_kicker": "KESAN MUAFAKAT",
+ "hook": [
+  1303.5,
+  1306.75
+ ],
+ "ranges": [
+  [
+   1265.4,
+   1364.6
+  ]
+ ],
+ "mood": "inspire",
+ "seed": 33,
+ "keywords": [
+  "johor",
+  "melaka",
+  "negeri",
+  "sembilan",
+  "PAS",
+  "umno",
+  "bersama",
+  "pintu",
+  "kek",
+  "rauf",
+  "hadi",
+  "kerusi"
+ ],
+ "phrase_fix": [
+  [
+   "sebelah usi,",
+   "sebelas kerusi,"
+  ],
+  [
+   "terbakinya,",
+   "selebihnya,"
+  ],
+  [
+   "Datuk Sirau",
+   "Datuk Seri_Rauf"
+  ],
+  [
+   "Sirau,",
+   "Seri_Rauf,"
+  ],
+  [
+   "anjahit.",
+   "ajaib."
+  ],
+  [
+   "maulis ini,",
+   "di_Melaka ini,"
+  ],
+  [
+   "Bersambung negeri 9,",
+   "Bersambung Negeri Sembilan,"
+  ],
+  [
+   "padak lah,",
+   "padang lah,"
+  ],
+  [
+   "pengasal terusnya,",
+   "penggal seterusnya,"
+  ]
+ ],
+ "facts": [
+  {
+   "type": "number",
+   "at": "sebelas kerusi",
+   "icon": "map",
+   "label": "PRN Johor",
+   "value": 11,
+   "suffix": " KERUSI",
+   "sub": "PAS lawan UMNO di sini; selebihnya PAS sokong BN",
+   "src": "Menurut ucapan penceramah",
+   "dur": 9
+  },
+  {
+   "type": "keyword",
+   "at": "BN menang besar",
+   "after": 10,
+   "icon": "flag",
+   "label": "Kesannya",
+   "text": "BN|[MENANG BESAR DI JOHOR]",
+   "dur": 4
+  },
+  {
+   "type": "keyword",
+   "at": "Negeri Sembilan",
+   "icon": "handshake",
+   "label": "Seterusnya",
+   "text": "NEGERI SEMBILAN:|[KERAJAAN BERSAMA]",
+   "dur": 7
+  },
+  {
+   "type": "keyword",
+   "at": "buka pintu",
+   "icon": "link",
+   "label": "Melaka",
+   "text": "PINTU DIBUKA|[LUAS-LUAS]",
+   "sub": "Syarat besar: bersama PAS & Perikatan Nasional",
+   "dur": 9
+  }
+ ],
+ "conclusion": {
+  "at": "nak menangkan",
+  "after": 70,
+  "kicker": "Matlamat kempen",
+  "text": "MELAKA MILIK BERSAMA|[BN & PN]"
+ },
+ "end_text": "Johor · N. Sembilan · Melaka|[Muafakat yang berhasil]"
+}

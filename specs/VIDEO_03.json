@@ -1,0 +1,190 @@
+{
+ "source": "drk7",
+ "source_name": "Dr K 7.mp4",
+ "speaker": "DR. KHAIRUDDIN AMAN RAZALI",
+ "role": "Bekas Menteri Komoditi · Ahli Panel Forum",
+ "gap": 0.9,
+ "tail": 1.4,
+ "frame": {
+  "x": 528,
+  "y": 838,
+  "s": 1.75
+ },
+ "focus": [
+  [
+   560,
+   622,
+   812,
+   1.75
+  ]
+ ],
+ "face_y": 760,
+ "keywords_blue": [
+  "barisan",
+  "nasional",
+  "pakatan",
+  "harapan",
+  "perikatan",
+  "bn",
+  "ph",
+  "pn",
+  "gps",
+  "parlimen",
+  "pilihan",
+  "raya"
+ ],
+ "id": "VIDEO_03",
+ "topic": "Haram Jatuhkan Kerajaan Adil?",
+ "hook_title": "HARAM MENJATUHKAN|[KERAJAAN YANG ADIL]?",
+ "hook_kicker": "ISU YANG DIBANGKITKAN",
+ "hook": [
+  35.1,
+  38.25
+ ],
+ "ranges": [
+  [
+   15.95,
+   108.75
+  ]
+ ],
+ "mood": "serious",
+ "seed": 21,
+ "keywords": [
+  "haram",
+  "adil",
+  "benar",
+  "batil",
+  "demokrasi",
+  "rakyat",
+  "subjektif",
+  "kezaliman",
+  "kelantan",
+  "melaka",
+  "mandat",
+  "menilai"
+ ],
+ "phrase_fix": [
+  [
+   "Tidak kontak",
+   "Dalam konteks"
+  ],
+  [
+   "Menulis pilihan",
+   "Melalui pilihan"
+  ],
+  [
+   "dikali itu",
+   "di_kala itu"
+  ],
+  [
+   "Yang Mak",
+   "Yang Amat"
+  ],
+  [
+   "kalimatul hakim, uri dan bihal bautilah.",
+   "kalimatul haq ~ urida biha al-batil."
+  ],
+  [
+   "Kalimannya",
+   "Kalimahnya"
+  ],
+  [
+   "kebautilah.",
+   "kebatilan."
+  ],
+  [
+   "simpannya",
+   "sifatnya"
+  ],
+  [
+   "kada mana",
+   "sejauh_mana ~"
+  ]
+ ],
+ "facts": [
+  {
+   "type": "quote",
+   "at": "haram menjatuhkan kerajaan",
+   "after": 4,
+   "label": "Kenyataan yang dibangkitkan",
+   "text": "“Haram menjatuhkan|[kerajaan yang adil]”",
+   "who": "Disebut dalam program besar di Kelantan, di hadapan PM & MB Kelantan",
+   "src": "Menurut ucapan penceramah",
+   "dur": 9
+  },
+  {
+   "type": "keyword",
+   "at": "Kalimahnya benar",
+   "icon": "scale",
+   "label": "Kalimatul haq urida biha al-batil",
+   "text": "KALIMAH BENAR,|[TUJUAN BATIL]",
+   "sub": "Kaedah betul — lihat pula pada praktiknya",
+   "dur": 7
+  },
+  {
+   "type": "number",
+   "at": "lima tahun sekali",
+   "icon": "ballot",
+   "label": "Demokrasi berpilihan raya",
+   "value": 5,
+   "suffix": " TAHUN",
+   "sub": "Rakyat menilai mana-mana kerajaan sekali dalam tempoh ini",
+   "dur": 7
+  },
+  {
+   "type": "bullets",
+   "at": "Baik di Kelantan",
+   "icon": "map",
+   "label": "Berlaku di semua peringkat",
+   "items": [
+    {
+     "text": "Kelantan",
+     "at": "Kelantan"
+    },
+    {
+     "text": "Melaka",
+     "at": "Melaka"
+    },
+    {
+     "text": "Peringkat pusat",
+     "at": "peringkat pusat"
+    }
+   ],
+   "dur": 6.5
+  },
+  {
+   "type": "keyword",
+   "at": "adil itu",
+   "icon": "scale",
+   "label": "Hujah penceramah",
+   "text": "ADIL ITU|[SUBJEKTIF]",
+   "sub": "Diukur dan dinilai oleh rakyat yang berhak memilih",
+   "dur": 9
+  }
+ ],
+ "conclusion": {
+  "at": "Artinya peluang",
+  "after": 80,
+  "kicker": "Rumusan",
+  "text": "RAKYAT SENTIASA|[ADA PELUANG MEMILIH]"
+ },
+ "end_text": "Kerajaan dinilai|[melalui pilihan raya]",
+ "fix": {
+  "kursi": "kerusi",
+  "kursi,": "kerusi",
+  "syurah": "syura",
+  "syarih": "syarie",
+  "Keandahnya": "Kaedahnya",
+  "kendah": "kaedah",
+  "khawarish": "khawarij",
+  "Khawarish": "Khawarij",
+  "khawarishnya": "khawarijnya",
+  "PASnya": "PAS-nya",
+  "anjat": "anjal",
+  "bakal": "bakar",
+  "Pelih": "Perlis",
+  "bantar": "bentang",
+  "Arab": "haram",
+  "keandah": "kaedah"
+ }
+}

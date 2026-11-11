@@ -1,0 +1,1223 @@
+{
+ "id": "VIDEO_17",
+ "duration": 101.4,
+ "edl": [
+  {
+   "a": 1421.6,
+   "b": 1426.6,
+   "kind": "hook",
+   "o": 0.0
+  },
+  {
+   "a": 1325.8,
+   "b": 1338.21,
+   "kind": "body",
+   "o": 5.0
+  },
+  {
+   "a": 1339.39,
+   "b": 1345.33,
+   "kind": "body",
+   "o": 17.41
+  },
+  {
+   "a": 1346.15,
+   "b": 1367.3,
+   "kind": "body",
+   "o": 23.35
+  },
+  {
+   "a": 1386.1,
+   "b": 1426.71,
+   "kind": "body",
+   "o": 44.5
+  },
+  {
+   "a": 1427.45,
+   "b": 1439.97,
+   "kind": "body",
+   "o": 85.11
+  },
+  {
+   "a": 1440.53,
+   "b": 1444.3000000000002,
+   "kind": "body",
+   "tail": 1.4,
+   "o": 97.63
+  }
+ ],
+ "words": [
+  {
+   "t": "Saya",
+   "s": 0.09,
+   "e": 0.43,
+   "piece": 0
+  },
+  {
+   "t": "diberi",
+   "s": 0.43,
+   "e": 0.79,
+   "piece": 0
+  },
+  {
+   "t": "mandat",
+   "s": 0.79,
+   "e": 1.21,
+   "piece": 0
+  },
+  {
+   "t": "pada",
+   "s": 1.21,
+   "e": 1.63,
+   "piece": 0
+  },
+  {
+   "t": "ketika",
+   "s": 1.63,
+   "e": 2.03,
+   "piece": 0
+  },
+  {
+   "t": "itu",
+   "s": 2.03,
+   "e": 2.37,
+   "piece": 0
+  },
+  {
+   "t": "mewakili",
+   "s": 2.37,
+   "e": 2.99,
+   "piece": 0
+  },
+  {
+   "t": "PAS",
+   "s": 2.99,
+   "e": 3.47,
+   "piece": 0
+  },
+  {
+   "t": "sebagai",
+   "s": 3.47,
+   "e": 3.79,
+   "piece": 0
+  },
+  {
+   "t": "Menteri",
+   "s": 3.79,
+   "e": 4.27,
+   "piece": 0
+  },
+  {
+   "t": "Komoditi",
+   "s": 4.27,
+   "e": 4.89,
+   "piece": 0
+  },
+  {
+   "t": "untuk",
+   "s": 5.01,
+   "e": 6.79,
+   "piece": 1
+  },
+  {
+   "t": "bagi",
+   "s": 6.79,
+   "e": 7.07,
+   "piece": 1
+  },
+  {
+   "t": "isyarat",
+   "s": 7.07,
+   "e": 7.63,
+   "piece": 1
+  },
+  {
+   "t": "pada",
+   "s": 7.63,
+   "e": 8.47,
+   "piece": 1
+  },
+  {
+   "t": "satu",
+   "s": 8.47,
+   "e": 8.87,
+   "piece": 1
+  },
+  {
+   "t": "parti",
+   "s": 8.87,
+   "e": 9.31,
+   "piece": 1
+  },
+  {
+   "t": "parti",
+   "s": 9.31,
+   "e": 11.03,
+   "piece": 1
+  },
+  {
+   "t": "ini",
+   "s": 11.03,
+   "e": 11.41,
+   "piece": 1
+  },
+  {
+   "t": "walaupun",
+   "s": 11.41,
+   "e": 12.23,
+   "piece": 1
+  },
+  {
+   "t": "dia",
+   "s": 12.23,
+   "e": 12.49,
+   "piece": 1
+  },
+  {
+   "t": "baca",
+   "s": 12.49,
+   "e": 12.85,
+   "piece": 1
+  },
+  {
+   "t": "Perlembagaan",
+   "s": 12.85,
+   "e": 13.71,
+   "piece": 1
+  },
+  {
+   "t": "Islam",
+   "s": 13.71,
+   "e": 14.31,
+   "piece": 1
+  },
+  {
+   "t": "agama",
+   "s": 14.31,
+   "e": 14.81,
+   "piece": 1
+  },
+  {
+   "t": "Persekutuan",
+   "s": 14.81,
+   "e": 15.79,
+   "piece": 1
+  },
+  {
+   "t": "dia",
+   "s": 15.79,
+   "e": 16.75,
+   "piece": 1
+  },
+  {
+   "t": "tak",
+   "s": 16.75,
+   "e": 16.95,
+   "piece": 1
+  },
+  {
+   "t": "tak",
+   "s": 16.95,
+   "e": 17.11,
+   "piece": 1
+  },
+  {
+   "t": "faham",
+   "s": 17.11,
+   "e": 17.19,
+   "piece": 1
+  },
+  {
+   "t": "dalam",
+   "s": 17.55,
+   "e": 18.49,
+   "piece": 2
+  },
+  {
+   "t": "Perlembagaan",
+   "s": 18.49,
+   "e": 19.19,
+   "piece": 2
+  },
+  {
+   "t": "parti",
+   "s": 19.19,
+   "e": 19.57,
+   "piece": 2
+  },
+  {
+   "t": "dia",
+   "s": 19.57,
+   "e": 19.67,
+   "piece": 2
+  },
+  {
+   "t": "sebut",
+   "s": 19.67,
+   "e": 20.07,
+   "piece": 2
+  },
+  {
+   "t": "memperjuangkan",
+   "s": 20.07,
+   "e": 21.19,
+   "piece": 2
+  },
+  {
+   "t": "Malaysia",
+   "s": 21.19,
+   "e": 21.61,
+   "piece": 2
+  },
+  {
+   "t": "sebagai",
+   "s": 21.61,
+   "e": 22.11,
+   "piece": 2
+  },
+  {
+   "t": "negara",
+   "s": 22.11,
+   "e": 22.57,
+   "piece": 2
+  },
+  {
+   "t": "sekular",
+   "s": 22.57,
+   "e": 23.13,
+   "piece": 2
+  },
+  {
+   "t": "negara",
+   "s": 23.49,
+   "e": 24.43,
+   "piece": 3
+  },
+  {
+   "t": "sekular",
+   "s": 24.43,
+   "e": 24.93,
+   "piece": 3
+  },
+  {
+   "t": "negara",
+   "s": 24.93,
+   "e": 25.63,
+   "piece": 3
+  },
+  {
+   "t": "yang",
+   "s": 25.63,
+   "e": 25.85,
+   "piece": 3
+  },
+  {
+   "t": "misahkan",
+   "s": 25.85,
+   "e": 26.43,
+   "piece": 3
+  },
+  {
+   "t": "antara",
+   "s": 26.43,
+   "e": 26.69,
+   "piece": 3
+  },
+  {
+   "t": "agama",
+   "s": 26.69,
+   "e": 27.29,
+   "piece": 3
+  },
+  {
+   "t": "dengan",
+   "s": 27.29,
+   "e": 27.91,
+   "piece": 3
+  },
+  {
+   "t": "pemerintahan",
+   "s": 27.91,
+   "e": 28.63,
+   "piece": 3
+  },
+  {
+   "t": "walaupun",
+   "s": 28.63,
+   "e": 30.39,
+   "piece": 3
+  },
+  {
+   "t": "dia",
+   "s": 30.39,
+   "e": 30.51,
+   "piece": 3
+  },
+  {
+   "t": "tak",
+   "s": 30.51,
+   "e": 30.61,
+   "piece": 3
+  },
+  {
+   "t": "cakap",
+   "s": 30.61,
+   "e": 30.99,
+   "piece": 3
+  },
+  {
+   "t": "sekarang",
+   "s": 30.99,
+   "e": 31.57,
+   "piece": 3
+  },
+  {
+   "t": "walaupun",
+   "s": 32.06,
+   "e": 32.53,
+   "piece": 3
+  },
+  {
+   "t": "dia",
+   "s": 32.53,
+   "e": 32.73,
+   "piece": 3
+  },
+  {
+   "t": "pakat",
+   "s": 32.73,
+   "e": 33.15,
+   "piece": 3
+  },
+  {
+   "t": "dengan",
+   "s": 33.15,
+   "e": 33.35,
+   "piece": 3
+  },
+  {
+   "t": "parti",
+   "s": 33.35,
+   "e": 33.63,
+   "piece": 3
+  },
+  {
+   "t": "Islam",
+   "s": 33.63,
+   "e": 34.01,
+   "piece": 3
+  },
+  {
+   "t": "dia",
+   "s": 34.01,
+   "e": 34.21,
+   "piece": 3
+  },
+  {
+   "t": "tak",
+   "s": 34.21,
+   "e": 34.55,
+   "piece": 3
+  },
+  {
+   "t": "cakap",
+   "s": 34.55,
+   "e": 35.03,
+   "piece": 3
+  },
+  {
+   "t": "tapi",
+   "s": 35.03,
+   "e": 35.83,
+   "piece": 3
+  },
+  {
+   "t": "dia",
+   "s": 35.83,
+   "e": 36.19,
+   "piece": 3
+  },
+  {
+   "t": "termaktub",
+   "s": 36.19,
+   "e": 36.87,
+   "piece": 3
+  },
+  {
+   "t": "dalam",
+   "s": 36.87,
+   "e": 37.17,
+   "piece": 3
+  },
+  {
+   "t": "Perlembagaan",
+   "s": 37.17,
+   "e": 37.93,
+   "piece": 3
+  },
+  {
+   "t": "kita",
+   "s": 37.93,
+   "e": 39.29,
+   "piece": 3
+  },
+  {
+   "t": "tak",
+   "s": 39.29,
+   "e": 39.45,
+   "piece": 3
+  },
+  {
+   "t": "boleh",
+   "s": 39.45,
+   "e": 39.87,
+   "piece": 3
+  },
+  {
+   "t": "biarkan",
+   "s": 39.87,
+   "e": 40.47,
+   "piece": 3
+  },
+  {
+   "t": "parti",
+   "s": 40.47,
+   "e": 41.13,
+   "piece": 3
+  },
+  {
+   "t": "ini",
+   "s": 41.13,
+   "e": 41.43,
+   "piece": 3
+  },
+  {
+   "t": "untuk",
+   "s": 41.43,
+   "e": 42.17,
+   "piece": 3
+  },
+  {
+   "t": "menerajui",
+   "s": 42.17,
+   "e": 42.91,
+   "piece": 3
+  },
+  {
+   "t": "mana-mana",
+   "s": 42.91,
+   "e": 43.89,
+   "piece": 3
+  },
+  {
+   "t": "kerajaan",
+   "s": 43.89,
+   "e": 44.5,
+   "piece": 3
+  },
+  {
+   "t": "tapi",
+   "s": 44.59,
+   "e": 44.91,
+   "piece": 4
+  },
+  {
+   "t": "alhamdulillah",
+   "s": 44.91,
+   "e": 45.53,
+   "piece": 4
+  },
+  {
+   "t": "akhirnya",
+   "s": 45.53,
+   "e": 46.21,
+   "piece": 4
+  },
+  {
+   "t": "walaupun",
+   "s": 46.21,
+   "e": 46.95,
+   "piece": 4
+  },
+  {
+   "t": "kita",
+   "s": 46.95,
+   "e": 47.09,
+   "piece": 4
+  },
+  {
+   "t": "mulakan",
+   "s": 47.09,
+   "e": 47.69,
+   "piece": 4
+  },
+  {
+   "t": "dulu",
+   "s": 47.69,
+   "e": 48.19,
+   "piece": 4
+  },
+  {
+   "t": "muafakat",
+   "s": 48.19,
+   "e": 49.13,
+   "piece": 4
+  },
+  {
+   "t": "antara",
+   "s": 49.13,
+   "e": 49.47,
+   "piece": 4
+  },
+  {
+   "t": "PAS",
+   "s": 49.47,
+   "e": 49.73,
+   "piece": 4
+  },
+  {
+   "t": "dan",
+   "s": 49.73,
+   "e": 49.85,
+   "piece": 4
+  },
+  {
+   "t": "UMNO",
+   "s": 49.85,
+   "e": 50.35,
+   "piece": 4
+  },
+  {
+   "t": "tahun",
+   "s": 50.35,
+   "e": 50.93,
+   "piece": 4
+  },
+  {
+   "t": "2019",
+   "s": 50.93,
+   "e": 51.43,
+   "piece": 4
+  },
+  {
+   "t": "14",
+   "s": 51.43,
+   "e": 52.51,
+   "piece": 4
+  },
+  {
+   "t": "September",
+   "s": 52.51,
+   "e": 53.17,
+   "piece": 4
+  },
+  {
+   "t": "2019",
+   "s": 53.17,
+   "e": 54.11,
+   "piece": 4
+  },
+  {
+   "t": "selepas",
+   "s": 54.11,
+   "e": 55.61,
+   "piece": 4
+  },
+  {
+   "t": "41",
+   "s": 55.61,
+   "e": 56.31,
+   "piece": 4
+  },
+  {
+   "t": "tahun",
+   "s": 56.31,
+   "e": 57.05,
+   "piece": 4
+  },
+  {
+   "t": "yang",
+   "s": 57.77,
+   "e": 58.35,
+   "piece": 4
+  },
+  {
+   "t": "terakhir",
+   "s": 58.35,
+   "e": 58.91,
+   "piece": 4
+  },
+  {
+   "t": "PAS",
+   "s": 58.91,
+   "e": 59.15,
+   "piece": 4
+  },
+  {
+   "t": "dengan",
+   "s": 59.15,
+   "e": 59.41,
+   "piece": 4
+  },
+  {
+   "t": "UMNO",
+   "s": 59.41,
+   "e": 59.95,
+   "piece": 4
+  },
+  {
+   "t": "dalam",
+   "s": 59.95,
+   "e": 60.63,
+   "piece": 4
+  },
+  {
+   "t": "Barisan",
+   "s": 60.63,
+   "e": 60.99,
+   "piece": 4
+  },
+  {
+   "t": "Nasional",
+   "s": 60.99,
+   "e": 61.53,
+   "piece": 4
+  },
+  {
+   "t": "dulu",
+   "s": 61.53,
+   "e": 61.87,
+   "piece": 4
+  },
+  {
+   "t": "tahun",
+   "s": 61.87,
+   "e": 62.33,
+   "piece": 4
+  },
+  {
+   "t": "78.",
+   "s": 62.33,
+   "e": 62.85,
+   "piece": 4
+  },
+  {
+   "t": "2019",
+   "s": 62.85,
+   "e": 64.49,
+   "piece": 4
+  },
+  {
+   "t": "selepas",
+   "s": 64.49,
+   "e": 65.41,
+   "piece": 4
+  },
+  {
+   "t": "41",
+   "s": 65.41,
+   "e": 66.47,
+   "piece": 4
+  },
+  {
+   "t": "tahun",
+   "s": 66.47,
+   "e": 67.35,
+   "piece": 4
+  },
+  {
+   "t": "bersama",
+   "s": 67.35,
+   "e": 68.31,
+   "piece": 4
+  },
+  {
+   "t": "kembali",
+   "s": 68.31,
+   "e": 68.97,
+   "piece": 4
+  },
+  {
+   "t": "dan",
+   "s": 68.97,
+   "e": 69.43,
+   "piece": 4
+  },
+  {
+   "t": "berkat",
+   "s": 69.43,
+   "e": 69.97,
+   "piece": 4
+  },
+  {
+   "t": "bersama",
+   "s": 69.97,
+   "e": 70.31,
+   "piece": 4
+  },
+  {
+   "t": "itulah",
+   "s": 70.31,
+   "e": 70.93,
+   "piece": 4
+  },
+  {
+   "t": "kita",
+   "s": 70.93,
+   "e": 71.25,
+   "piece": 4
+  },
+  {
+   "t": "boleh",
+   "s": 71.25,
+   "e": 71.73,
+   "piece": 4
+  },
+  {
+   "t": "mengambil",
+   "s": 71.73,
+   "e": 72.23,
+   "piece": 4
+  },
+  {
+   "t": "alih",
+   "s": 72.23,
+   "e": 72.57,
+   "piece": 4
+  },
+  {
+   "t": "kerajaan",
+   "s": 72.57,
+   "e": 73.19,
+   "piece": 4
+  },
+  {
+   "t": "daripada",
+   "s": 73.19,
+   "e": 73.85,
+   "piece": 4
+  },
+  {
+   "t": "Pakatan",
+   "s": 73.85,
+   "e": 74.37,
+   "piece": 4
+  },
+  {
+   "t": "Harapan",
+   "s": 74.37,
+   "e": 74.79,
+   "piece": 4
+  },
+  {
+   "t": "PH",
+   "s": 74.79,
+   "e": 75.71,
+   "piece": 4
+  },
+  {
+   "t": "1.0",
+   "s": 75.71,
+   "e": 77.19,
+   "piece": 4
+  },
+  {
+   "t": "pada",
+   "s": 77.19,
+   "e": 77.55,
+   "piece": 4
+  },
+  {
+   "t": "ketika",
+   "s": 77.55,
+   "e": 77.93,
+   "piece": 4
+  },
+  {
+   "t": "itu",
+   "s": 77.93,
+   "e": 78.23,
+   "piece": 4
+  },
+  {
+   "t": "tumbang",
+   "s": 78.23,
+   "e": 78.87,
+   "piece": 4
+  },
+  {
+   "t": "kerajaan",
+   "s": 78.87,
+   "e": 79.47,
+   "piece": 4
+  },
+  {
+   "t": "dan",
+   "s": 79.47,
+   "e": 80.09,
+   "piece": 4
+  },
+  {
+   "t": "saya",
+   "s": 80.09,
+   "e": 80.43,
+   "piece": 4
+  },
+  {
+   "t": "diberi",
+   "s": 80.43,
+   "e": 80.79,
+   "piece": 4
+  },
+  {
+   "t": "mandat",
+   "s": 80.79,
+   "e": 81.21,
+   "piece": 4
+  },
+  {
+   "t": "pada",
+   "s": 81.21,
+   "e": 81.63,
+   "piece": 4
+  },
+  {
+   "t": "ketika",
+   "s": 81.63,
+   "e": 82.03,
+   "piece": 4
+  },
+  {
+   "t": "itu",
+   "s": 82.03,
+   "e": 82.37,
+   "piece": 4
+  },
+  {
+   "t": "mewakili",
+   "s": 82.37,
+   "e": 82.99,
+   "piece": 4
+  },
+  {
+   "t": "PAS",
+   "s": 82.99,
+   "e": 83.47,
+   "piece": 4
+  },
+  {
+   "t": "sebagai",
+   "s": 83.47,
+   "e": 83.79,
+   "piece": 4
+  },
+  {
+   "t": "Menteri",
+   "s": 83.79,
+   "e": 84.27,
+   "piece": 4
+  },
+  {
+   "t": "Komoditi",
+   "s": 84.27,
+   "e": 84.89,
+   "piece": 4
+  },
+  {
+   "t": "tetapi",
+   "s": 85.25,
+   "e": 86.29,
+   "piece": 5
+  },
+  {
+   "t": "usia",
+   "s": 86.29,
+   "e": 87.45,
+   "piece": 5
+  },
+  {
+   "t": "hubungan",
+   "s": 87.45,
+   "e": 87.83,
+   "piece": 5
+  },
+  {
+   "t": "tidak",
+   "s": 87.83,
+   "e": 88.17,
+   "piece": 5
+  },
+  {
+   "t": "panjang,",
+   "s": 88.17,
+   "e": 88.61,
+   "piece": 5
+  },
+  {
+   "t": "terungkai",
+   "s": 88.61,
+   "e": 90.27,
+   "piece": 5
+  },
+  {
+   "t": "dengan",
+   "s": 90.27,
+   "e": 91.33,
+   "piece": 5
+  },
+  {
+   "t": "pelbagai",
+   "s": 91.33,
+   "e": 91.67,
+   "piece": 5
+  },
+  {
+   "t": "faktor",
+   "s": 91.67,
+   "e": 92.11,
+   "piece": 5
+  },
+  {
+   "t": "dan",
+   "s": 92.11,
+   "e": 92.19,
+   "piece": 5
+  },
+  {
+   "t": "sebab",
+   "s": 92.19,
+   "e": 92.57,
+   "piece": 5
+  },
+  {
+   "t": "yang",
+   "s": 92.57,
+   "e": 93.35,
+   "piece": 5
+  },
+  {
+   "t": "tak",
+   "s": 93.35,
+   "e": 93.57,
+   "piece": 5
+  },
+  {
+   "t": "nak",
+   "s": 93.57,
+   "e": 93.77,
+   "piece": 5
+  },
+  {
+   "t": "kita",
+   "s": 93.77,
+   "e": 94.03,
+   "piece": 5
+  },
+  {
+   "t": "hurai",
+   "s": 94.03,
+   "e": 94.33,
+   "piece": 5
+  },
+  {
+   "t": "di",
+   "s": 94.33,
+   "e": 94.45,
+   "piece": 5
+  },
+  {
+   "t": "sini",
+   "s": 94.45,
+   "e": 94.73,
+   "piece": 5
+  },
+  {
+   "t": "kata",
+   "s": 94.73,
+   "e": 95.15,
+   "piece": 5
+  },
+  {
+   "t": "orang",
+   "s": 95.15,
+   "e": 95.35,
+   "piece": 5
+  },
+  {
+   "t": "arab,",
+   "s": 95.35,
+   "e": 95.63,
+   "piece": 5
+  },
+  {
+   "t": "yang",
+   "s": 96.39,
+   "e": 97.07,
+   "piece": 5
+  },
+  {
+   "t": "lepas,",
+   "s": 97.07,
+   "e": 97.41,
+   "piece": 5
+  },
+  {
+   "t": "lepas.",
+   "s": 97.77,
+   "e": 98.45,
+   "piece": 6
+  },
+  {
+   "t": "Yang",
+   "s": 98.45,
+   "e": 98.77,
+   "piece": 6
+  },
+  {
+   "t": "nak",
+   "s": 98.77,
+   "e": 99.15,
+   "piece": 6
+  },
+  {
+   "t": "bina",
+   "s": 99.15,
+   "e": 99.39,
+   "piece": 6
+  },
+  {
+   "t": "sekarang",
+   "s": 99.39,
+   "e": 99.69,
+   "piece": 6
+  },
+  {
+   "t": "benda",
+   "s": 99.69,
+   "e": 99.89,
+   "piece": 6
+  },
+  {
+   "t": "baru.",
+   "s": 99.89,
+   "e": 100.25,
+   "piece": 6
+  }
+ ],
+ "facts": [
+  {
+   "type": "keyword",
+   "at": "Memperjuangkan Malaysia",
+   "icon": "warning",
+   "label": "Menurut penceramah",
+   "text": "PERLEMBAGAAN PARTI:|[NEGARA SEKULAR]",
+   "sub": "Memisahkan agama daripada pemerintahan",
+   "src": "Dakwaan penceramah; parti tidak dinamakan dalam petikan ini",
+   "dur": 12,
+   "start": 19.95
+  },
+  {
+   "type": "timeline",
+   "at": "Muafakat Antara",
+   "label": "Muafakat Nasional",
+   "items": [
+    {
+     "y": "1978",
+     "d": "Akhir PAS dalam BN",
+     "at": "Terakhir",
+     "t": 58.25
+    },
+    {
+     "y": "2019",
+     "d": "14 September: bersatu kembali",
+     "at": "14",
+     "t": 51.33
+    }
+   ],
+   "dur": 14,
+   "start": 48.07
+  },
+  {
+   "type": "keyword",
+   "at": "Mengambil alih",
+   "icon": "flag",
+   "label": "Berkat bersama",
+   "text": "AMBIL ALIH|[KERAJAAN PH 1.0]",
+   "dur": 7,
+   "start": 71.61
+  },
+  {
+   "type": "keyword",
+   "at": "Saya Diberi",
+   "after": 40,
+   "icon": "mic",
+   "label": "Pengalaman penceramah",
+   "text": "MENTERI|[KOMODITI]",
+   "sub": "Mewakili PAS ketika itu",
+   "dur": 6,
+   "start": 79.97
+  }
+ ],
+ "conclusion": {
+  "at": "Yang Nak Bina",
+  "after": 60,
+  "kicker": "Pandangan ke hadapan",
+  "text": "YANG LEPAS, LEPAS —|[BINA BENDA BARU]",
+  "start": 98.35,
+  "dur": 0.15
+ },
+ "topics": [
+  {
+   "label": "Muafakat 2019 & Jawatan Menteri",
+   "start": 15.0
+  }
+ ],
+ "cues": [
+  [
+   "impact-bass-1.mp3",
+   0.05,
+   0.55
+  ],
+  [
+   "whoosh-cinematic.mp3",
+   4.45,
+   0.5
+  ],
+  [
+   "whoosh-short.mp3",
+   5.6,
+   0.35
+  ],
+  [
+   "whoosh-short.mp3",
+   19.95,
+   0.28
+  ],
+  [
+   "whoosh-short.mp3",
+   48.07,
+   0.28
+  ],
+  [
+   "whoosh-short.mp3",
+   71.61,
+   0.28
+  ],
+  [
+   "whoosh-short.mp3",
+   79.97,
+   0.28
+  ],
+  [
+   "impact-bass-2.mp3",
+   98.35,
+   0.5
+  ],
+  [
+   "whoosh-cinematic.mp3",
+   97.9,
+   0.4
+  ]
+ ],
+ "hook_end": 5.0
+}

@@ -1,0 +1,153 @@
+{
+ "id": "VIDEO_02",
+ "source": "drk6",
+ "source_name": "Dr K 6 .mp4",
+ "topic": "Muafakat UMNO–PAS",
+ "speaker": "DR. KHAIRUDDIN AMAN RAZALI",
+ "role": "Bekas Menteri Komoditi · Ahli Panel Forum",
+ "topics": [
+  {
+   "label": "Muafakat UMNO–PAS"
+  },
+  {
+   "at": "pertamanya timing",
+   "label": "Faktor Timing"
+  }
+ ],
+ "hook_title": "PINTU JANGAN|[TUTUP RAPAT]",
+ "hook_kicker": "PETIKAN UCAPAN",
+ "hook": [
+  195.8,
+  199.75
+ ],
+ "ranges": [
+  [
+   173.85,
+   284.75
+  ]
+ ],
+ "gap": 0.9,
+ "tail": 1.4,
+ "mood": "serious",
+ "seed": 12,
+ "frame": {
+  "x": 870,
+  "y": 860,
+  "s": 1.6
+ },
+ "face_y": 760,
+ "keywords": [
+  "umno",
+  "pas",
+  "muafakat",
+  "titah",
+  "derhaka",
+  "timing",
+  "pecah",
+  "melaka",
+  "malaysia",
+  "keputusan",
+  "terbuka",
+  "pintu",
+  "rapat-rapat",
+  "luas-luas"
+ ],
+ "keywords_blue": [
+  "barisan",
+  "nasional",
+  "pakatan",
+  "harapan",
+  "ph",
+  "zahid",
+  "agung"
+ ],
+ "fix": {
+  "luar-luas": "luas-luas",
+  "deraka": "derhaka",
+  "timbunnya": "timbulnya",
+  "Mabarakat": "muafakat",
+  "Ketir": "kita",
+  "dipertua": "Dipertuan"
+ },
+ "phrase_fix": [
+  [
+   "muafakat Islam",
+   "masyarakat Islam"
+  ],
+  [
+   "Musyidot Ampas",
+   "Mursyidul Am_PAS"
+  ],
+  [
+   "berunding Ampas",
+   "berunding dengan_PAS"
+  ],
+  [
+   "Tuhan ku",
+   "Tuanku ~"
+  ],
+  [
+   "mengharap enam",
+   "mengharapkan ~"
+  ],
+  [
+   "Indonesia",
+   "Malaysia"
+  ]
+ ],
+ "facts": [
+  {
+   "type": "keyword",
+   "at": "UMNO telah ada keputusan",
+   "icon": "ballot",
+   "label": "Pendirian UMNO",
+   "text": "UMNO TELAH ADA|[KEPUTUSAN]",
+   "sub": "Cuma tidak tunjuk pertembungan awal — tetap terbuka",
+   "dur": 8
+  },
+  {
+   "type": "quote",
+   "at": "pintu jangan",
+   "after": 10,
+   "label": "Pegangan rundingan",
+   "text": "Pintu jangan tutup [rapat-rapat],|jangan buka [luas-luas]",
+   "who": "Pandangan Mursyidul Am PAS, seperti disebut Datuk Seri Zahid",
+   "src": "Menurut ucapan penceramah",
+   "dur": 9
+  },
+  {
+   "type": "keyword",
+   "at": "titah",
+   "icon": "crown",
+   "label": "Menurut penceramah",
+   "text": "TITAH|[YANG DIPERTUAN AGONG]",
+   "sub": "Dipermainkan — “satu keingkaran”",
+   "src": "Dakwaan penceramah, bukan fakta yang disahkan",
+   "dur": 7
+  },
+  {
+   "type": "keyword",
+   "at": "pertamanya timing",
+   "icon": "clock",
+   "label": "Apa yang istimewa?",
+   "text": "PERTAMA:|[TIMING]",
+   "sub": "Waktu yang sangat menarik",
+   "dur": 6
+  },
+  {
+   "type": "keyword",
+   "at": "Pakatan Harapan pun sedang pecah",
+   "icon": "warning",
+   "label": "Menurut penceramah",
+   "text": "PH|[SEDANG PECAH]",
+   "sub": "Timbul parti berlogo kancil yang akan mengganggu PH",
+   "dur": 8
+  }
+ ],
+ "conclusion": {
+  "at": "Jadi kita doakan",
+  "kicker": "Harapan penceramah",
+  "text": "BUKAN HANYA MELAKA|[UNTUK MALAYSIA]"
+ },
+ "end_text": "Muafakat UMNO–PAS|[Pintu sentiasa terbuka]"
+}

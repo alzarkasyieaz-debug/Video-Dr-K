@@ -1,0 +1,1213 @@
+{
+ "id": "VIDEO_03",
+ "duration": 92.25,
+ "edl": [
+  {
+   "a": 35.1,
+   "b": 38.25,
+   "kind": "hook",
+   "o": 0.0
+  },
+  {
+   "a": 15.95,
+   "b": 28.58,
+   "kind": "body",
+   "o": 3.15
+  },
+  {
+   "a": 29.22,
+   "b": 31.26,
+   "kind": "body",
+   "o": 15.78
+  },
+  {
+   "a": 32.71,
+   "b": 34.35,
+   "kind": "body",
+   "o": 17.82
+  },
+  {
+   "a": 35.03,
+   "b": 45.33,
+   "kind": "body",
+   "o": 19.46
+  },
+  {
+   "a": 46.07,
+   "b": 57.11,
+   "kind": "body",
+   "o": 29.76
+  },
+  {
+   "a": 58.7,
+   "b": 110.15,
+   "kind": "body",
+   "tail": 1.4,
+   "o": 40.8
+  }
+ ],
+ "words": [
+  {
+   "t": "Haram",
+   "s": 0.07,
+   "e": 0.97,
+   "piece": 0
+  },
+  {
+   "t": "menjatuhkan",
+   "s": 0.97,
+   "e": 1.91,
+   "piece": 0
+  },
+  {
+   "t": "kerajaan",
+   "s": 1.91,
+   "e": 2.57,
+   "piece": 0
+  },
+  {
+   "t": "yang",
+   "s": 2.57,
+   "e": 2.73,
+   "piece": 0
+  },
+  {
+   "t": "adil.",
+   "s": 2.73,
+   "e": 3.09,
+   "piece": 0
+  },
+  {
+   "t": "iaitu",
+   "s": 3.2,
+   "e": 3.68,
+   "piece": 1
+  },
+  {
+   "t": "haram",
+   "s": 3.68,
+   "e": 4.28,
+   "piece": 1
+  },
+  {
+   "t": "menjatuhkan",
+   "s": 4.28,
+   "e": 5.36,
+   "piece": 1
+  },
+  {
+   "t": "kerajaan",
+   "s": 5.36,
+   "e": 6.0,
+   "piece": 1
+  },
+  {
+   "t": "yang",
+   "s": 6.0,
+   "e": 6.14,
+   "piece": 1
+  },
+  {
+   "t": "adil",
+   "s": 6.14,
+   "e": 6.58,
+   "piece": 1
+  },
+  {
+   "t": "dalam",
+   "s": 6.58,
+   "e": 8.08,
+   "piece": 1
+  },
+  {
+   "t": "program",
+   "s": 8.08,
+   "e": 8.48,
+   "piece": 1
+  },
+  {
+   "t": "besar",
+   "s": 8.48,
+   "e": 8.92,
+   "piece": 1
+  },
+  {
+   "t": "di",
+   "s": 8.92,
+   "e": 9.14,
+   "piece": 1
+  },
+  {
+   "t": "Kelantan,",
+   "s": 9.14,
+   "e": 9.68,
+   "piece": 1
+  },
+  {
+   "t": "di",
+   "s": 9.88,
+   "e": 10.02,
+   "piece": 1
+  },
+  {
+   "t": "hadapan",
+   "s": 10.02,
+   "e": 10.62,
+   "piece": 1
+  },
+  {
+   "t": "Yang",
+   "s": 10.62,
+   "e": 10.86,
+   "piece": 1
+  },
+  {
+   "t": "Amat",
+   "s": 10.86,
+   "e": 11.02,
+   "piece": 1
+  },
+  {
+   "t": "Berhormat",
+   "s": 11.02,
+   "e": 11.5,
+   "piece": 1
+  },
+  {
+   "t": "Perdana",
+   "s": 11.5,
+   "e": 11.86,
+   "piece": 1
+  },
+  {
+   "t": "Menteri",
+   "s": 11.86,
+   "e": 12.4,
+   "piece": 1
+  },
+  {
+   "t": "dan",
+   "s": 12.4,
+   "e": 12.7,
+   "piece": 1
+  },
+  {
+   "t": "di",
+   "s": 12.7,
+   "e": 12.84,
+   "piece": 1
+  },
+  {
+   "t": "hadapan",
+   "s": 12.84,
+   "e": 13.12,
+   "piece": 1
+  },
+  {
+   "t": "Yang",
+   "s": 13.12,
+   "e": 13.24,
+   "piece": 1
+  },
+  {
+   "t": "Amat",
+   "s": 13.24,
+   "e": 13.34,
+   "piece": 1
+  },
+  {
+   "t": "Berhormat",
+   "s": 13.34,
+   "e": 13.7,
+   "piece": 1
+  },
+  {
+   "t": "Menteri",
+   "s": 13.7,
+   "e": 14.44,
+   "piece": 1
+  },
+  {
+   "t": "Besar",
+   "s": 14.44,
+   "e": 14.84,
+   "piece": 1
+  },
+  {
+   "t": "Kelantan.",
+   "s": 14.84,
+   "e": 15.56,
+   "piece": 1
+  },
+  {
+   "t": "Kata-kata",
+   "s": 15.92,
+   "e": 17.06,
+   "piece": 2
+  },
+  {
+   "t": "ini",
+   "s": 17.06,
+   "e": 17.2,
+   "piece": 2
+  },
+  {
+   "t": "benar.",
+   "s": 17.2,
+   "e": 17.6,
+   "piece": 2
+  },
+  {
+   "t": "Kaedahnya",
+   "s": 17.96,
+   "e": 18.86,
+   "piece": 3
+  },
+  {
+   "t": "benar.",
+   "s": 18.86,
+   "e": 19.24,
+   "piece": 3
+  },
+  {
+   "t": "Haram",
+   "s": 19.6,
+   "e": 20.5,
+   "piece": 4
+  },
+  {
+   "t": "menjatuhkan",
+   "s": 20.5,
+   "e": 21.44,
+   "piece": 4
+  },
+  {
+   "t": "kerajaan",
+   "s": 21.44,
+   "e": 22.1,
+   "piece": 4
+  },
+  {
+   "t": "yang",
+   "s": 22.1,
+   "e": 22.26,
+   "piece": 4
+  },
+  {
+   "t": "adil.",
+   "s": 22.26,
+   "e": 22.62,
+   "piece": 4
+  },
+  {
+   "t": "Kaedahnya",
+   "s": 22.76,
+   "e": 23.42,
+   "piece": 4
+  },
+  {
+   "t": "benar.",
+   "s": 23.42,
+   "e": 23.76,
+   "piece": 4
+  },
+  {
+   "t": "Tetapi",
+   "s": 24.6,
+   "e": 25.5,
+   "piece": 4
+  },
+  {
+   "t": "kaedah",
+   "s": 25.5,
+   "e": 26.14,
+   "piece": 4
+  },
+  {
+   "t": "yang",
+   "s": 26.14,
+   "e": 26.32,
+   "piece": 4
+  },
+  {
+   "t": "benar,",
+   "s": 26.32,
+   "e": 26.94,
+   "piece": 4
+  },
+  {
+   "t": "kena",
+   "s": 27.36,
+   "e": 27.84,
+   "piece": 4
+  },
+  {
+   "t": "lihat",
+   "s": 27.84,
+   "e": 28.12,
+   "piece": 4
+  },
+  {
+   "t": "pula",
+   "s": 28.12,
+   "e": 28.36,
+   "piece": 4
+  },
+  {
+   "t": "pada",
+   "s": 28.36,
+   "e": 28.54,
+   "piece": 4
+  },
+  {
+   "t": "praktiknya",
+   "s": 28.54,
+   "e": 29.2,
+   "piece": 4
+  },
+  {
+   "t": "di",
+   "s": 29.2,
+   "e": 29.32,
+   "piece": 4
+  },
+  {
+   "t": "mana.",
+   "s": 29.32,
+   "e": 29.54,
+   "piece": 4
+  },
+  {
+   "t": "Kadang-kadang",
+   "s": 29.9,
+   "e": 30.78,
+   "piece": 5
+  },
+  {
+   "t": "pada",
+   "s": 30.78,
+   "e": 30.98,
+   "piece": 5
+  },
+  {
+   "t": "praktiknya",
+   "s": 30.98,
+   "e": 31.76,
+   "piece": 5
+  },
+  {
+   "t": "disebut",
+   "s": 31.76,
+   "e": 32.78,
+   "piece": 5
+  },
+  {
+   "t": "oleh",
+   "s": 32.78,
+   "e": 33.04,
+   "piece": 5
+  },
+  {
+   "t": "para",
+   "s": 33.04,
+   "e": 33.34,
+   "piece": 5
+  },
+  {
+   "t": "alim",
+   "s": 33.34,
+   "e": 33.62,
+   "piece": 5
+  },
+  {
+   "t": "ulama",
+   "s": 33.62,
+   "e": 34.0,
+   "piece": 5
+  },
+  {
+   "t": "kalimatul",
+   "s": 34.0,
+   "e": 34.84,
+   "piece": 5
+  },
+  {
+   "t": "haq,",
+   "s": 34.84,
+   "e": 35.42,
+   "piece": 5
+  },
+  {
+   "t": "urida",
+   "s": 36.22,
+   "e": 36.44,
+   "piece": 5
+  },
+  {
+   "t": "biha",
+   "s": 36.44,
+   "e": 36.7,
+   "piece": 5
+  },
+  {
+   "t": "al-batil.",
+   "s": 36.7,
+   "e": 37.18,
+   "piece": 5
+  },
+  {
+   "t": "Kalimahnya",
+   "s": 37.9,
+   "e": 38.42,
+   "piece": 5
+  },
+  {
+   "t": "benar,",
+   "s": 38.42,
+   "e": 38.92,
+   "piece": 5
+  },
+  {
+   "t": "tujuannya",
+   "s": 39.26,
+   "e": 39.7,
+   "piece": 5
+  },
+  {
+   "t": "adalah",
+   "s": 39.7,
+   "e": 39.92,
+   "piece": 5
+  },
+  {
+   "t": "kebatilan.",
+   "s": 39.92,
+   "e": 40.58,
+   "piece": 5
+  },
+  {
+   "t": "Kaedahnya",
+   "s": 40.94,
+   "e": 41.7,
+   "piece": 6
+  },
+  {
+   "t": "adalah",
+   "s": 41.7,
+   "e": 41.86,
+   "piece": 6
+  },
+  {
+   "t": "betul.",
+   "s": 41.86,
+   "e": 42.3,
+   "piece": 6
+  },
+  {
+   "t": "Dalam",
+   "s": 43.18,
+   "e": 43.66,
+   "piece": 6
+  },
+  {
+   "t": "konteks",
+   "s": 43.66,
+   "e": 44.02,
+   "piece": 6
+  },
+  {
+   "t": "kita",
+   "s": 44.02,
+   "e": 44.24,
+   "piece": 6
+  },
+  {
+   "t": "di",
+   "s": 44.24,
+   "e": 44.42,
+   "piece": 6
+  },
+  {
+   "t": "Malaysia,",
+   "s": 44.42,
+   "e": 44.86,
+   "piece": 6
+  },
+  {
+   "t": "Malaysia",
+   "s": 45.3,
+   "e": 46.6,
+   "piece": 6
+  },
+  {
+   "t": "konsep",
+   "s": 46.6,
+   "e": 47.66,
+   "piece": 6
+  },
+  {
+   "t": "demokrasi",
+   "s": 47.66,
+   "e": 48.54,
+   "piece": 6
+  },
+  {
+   "t": "berpilihan",
+   "s": 48.54,
+   "e": 49.16,
+   "piece": 6
+  },
+  {
+   "t": "raya,",
+   "s": 49.16,
+   "e": 49.54,
+   "piece": 6
+  },
+  {
+   "t": "memberi",
+   "s": 49.9,
+   "e": 50.48,
+   "piece": 6
+  },
+  {
+   "t": "peluang",
+   "s": 50.48,
+   "e": 50.8,
+   "piece": 6
+  },
+  {
+   "t": "kepada",
+   "s": 50.8,
+   "e": 50.96,
+   "piece": 6
+  },
+  {
+   "t": "rakyat",
+   "s": 50.96,
+   "e": 51.48,
+   "piece": 6
+  },
+  {
+   "t": "untuk",
+   "s": 51.48,
+   "e": 51.84,
+   "piece": 6
+  },
+  {
+   "t": "menilai",
+   "s": 51.84,
+   "e": 52.56,
+   "piece": 6
+  },
+  {
+   "t": "mana-mana",
+   "s": 52.56,
+   "e": 53.42,
+   "piece": 6
+  },
+  {
+   "t": "kerajaan",
+   "s": 53.42,
+   "e": 53.96,
+   "piece": 6
+  },
+  {
+   "t": "dalam",
+   "s": 53.96,
+   "e": 54.16,
+   "piece": 6
+  },
+  {
+   "t": "tempoh",
+   "s": 54.16,
+   "e": 54.54,
+   "piece": 6
+  },
+  {
+   "t": "lima",
+   "s": 54.54,
+   "e": 54.8,
+   "piece": 6
+  },
+  {
+   "t": "tahun",
+   "s": 54.8,
+   "e": 55.06,
+   "piece": 6
+  },
+  {
+   "t": "sekali.",
+   "s": 55.06,
+   "e": 55.36,
+   "piece": 6
+  },
+  {
+   "t": "Melalui",
+   "s": 55.98,
+   "e": 56.7,
+   "piece": 6
+  },
+  {
+   "t": "pilihan",
+   "s": 56.7,
+   "e": 56.96,
+   "piece": 6
+  },
+  {
+   "t": "raya.",
+   "s": 56.96,
+   "e": 57.28,
+   "piece": 6
+  },
+  {
+   "t": "Baik",
+   "s": 57.72,
+   "e": 58.44,
+   "piece": 6
+  },
+  {
+   "t": "di",
+   "s": 58.44,
+   "e": 58.56,
+   "piece": 6
+  },
+  {
+   "t": "Kelantan,",
+   "s": 58.56,
+   "e": 59.24,
+   "piece": 6
+  },
+  {
+   "t": "baik",
+   "s": 59.48,
+   "e": 59.68,
+   "piece": 6
+  },
+  {
+   "t": "di",
+   "s": 59.68,
+   "e": 59.86,
+   "piece": 6
+  },
+  {
+   "t": "Melaka,",
+   "s": 59.86,
+   "e": 60.26,
+   "piece": 6
+  },
+  {
+   "t": "baik",
+   "s": 60.44,
+   "e": 60.56,
+   "piece": 6
+  },
+  {
+   "t": "di",
+   "s": 60.56,
+   "e": 60.68,
+   "piece": 6
+  },
+  {
+   "t": "peringkat",
+   "s": 60.68,
+   "e": 60.98,
+   "piece": 6
+  },
+  {
+   "t": "pusat.",
+   "s": 60.98,
+   "e": 61.32,
+   "piece": 6
+  },
+  {
+   "t": "Maka",
+   "s": 61.32,
+   "e": 62.68,
+   "piece": 6
+  },
+  {
+   "t": "di kala",
+   "s": 62.68,
+   "e": 63.06,
+   "piece": 6
+  },
+  {
+   "t": "itu",
+   "s": 63.06,
+   "e": 63.3,
+   "piece": 6
+  },
+  {
+   "t": "rakyat",
+   "s": 63.3,
+   "e": 63.72,
+   "piece": 6
+  },
+  {
+   "t": "memilih",
+   "s": 63.72,
+   "e": 64.14,
+   "piece": 6
+  },
+  {
+   "t": "dan",
+   "s": 64.14,
+   "e": 64.28,
+   "piece": 6
+  },
+  {
+   "t": "melihat",
+   "s": 64.28,
+   "e": 64.72,
+   "piece": 6
+  },
+  {
+   "t": "dan",
+   "s": 64.72,
+   "e": 65.06,
+   "piece": 6
+  },
+  {
+   "t": "menilai",
+   "s": 65.06,
+   "e": 65.74,
+   "piece": 6
+  },
+  {
+   "t": "sejauh",
+   "s": 65.74,
+   "e": 66.3,
+   "piece": 6
+  },
+  {
+   "t": "mana",
+   "s": 66.3,
+   "e": 66.64,
+   "piece": 6
+  },
+  {
+   "t": "adilnya",
+   "s": 66.64,
+   "e": 67.6,
+   "piece": 6
+  },
+  {
+   "t": "sesebuah",
+   "s": 67.6,
+   "e": 68.12,
+   "piece": 6
+  },
+  {
+   "t": "kerajaan.",
+   "s": 68.12,
+   "e": 68.62,
+   "piece": 6
+  },
+  {
+   "t": "Kalau",
+   "s": 69.4,
+   "e": 70.04,
+   "piece": 6
+  },
+  {
+   "t": "sudah",
+   "s": 70.04,
+   "e": 70.32,
+   "piece": 6
+  },
+  {
+   "t": "adil,",
+   "s": 70.32,
+   "e": 70.88,
+   "piece": 6
+  },
+  {
+   "t": "tidak",
+   "s": 71.04,
+   "e": 71.34,
+   "piece": 6
+  },
+  {
+   "t": "salah",
+   "s": 71.34,
+   "e": 71.76,
+   "piece": 6
+  },
+  {
+   "t": "untuk",
+   "s": 71.76,
+   "e": 72.32,
+   "piece": 6
+  },
+  {
+   "t": "memberi",
+   "s": 72.32,
+   "e": 72.78,
+   "piece": 6
+  },
+  {
+   "t": "mandat",
+   "s": 72.78,
+   "e": 73.2,
+   "piece": 6
+  },
+  {
+   "t": "pada",
+   "s": 73.2,
+   "e": 73.54,
+   "piece": 6
+  },
+  {
+   "t": "yang",
+   "s": 73.54,
+   "e": 73.82,
+   "piece": 6
+  },
+  {
+   "t": "dirasakan",
+   "s": 73.82,
+   "e": 74.26,
+   "piece": 6
+  },
+  {
+   "t": "lagi",
+   "s": 74.26,
+   "e": 74.58,
+   "piece": 6
+  },
+  {
+   "t": "adil.",
+   "s": 74.58,
+   "e": 75.0,
+   "piece": 6
+  },
+  {
+   "t": "Kerana",
+   "s": 75.0,
+   "e": 75.94,
+   "piece": 6
+  },
+  {
+   "t": "adil",
+   "s": 75.94,
+   "e": 76.22,
+   "piece": 6
+  },
+  {
+   "t": "itu",
+   "s": 76.22,
+   "e": 76.46,
+   "piece": 6
+  },
+  {
+   "t": "sifatnya",
+   "s": 76.46,
+   "e": 76.94,
+   "piece": 6
+  },
+  {
+   "t": "subjektif.",
+   "s": 76.94,
+   "e": 77.62,
+   "piece": 6
+  },
+  {
+   "t": "Kalau",
+   "s": 77.94,
+   "e": 78.54,
+   "piece": 6
+  },
+  {
+   "t": "ada",
+   "s": 78.54,
+   "e": 78.8,
+   "piece": 6
+  },
+  {
+   "t": "daripada",
+   "s": 78.8,
+   "e": 79.06,
+   "piece": 6
+  },
+  {
+   "t": "yang",
+   "s": 79.06,
+   "e": 79.18,
+   "piece": 6
+  },
+  {
+   "t": "kezaliman,",
+   "s": 79.18,
+   "e": 79.86,
+   "piece": 6
+  },
+  {
+   "t": "sejauh mana",
+   "s": 80.28,
+   "e": 80.52,
+   "piece": 6
+  },
+  {
+   "t": "kezalimannya,",
+   "s": 80.88,
+   "e": 81.88,
+   "piece": 6
+  },
+  {
+   "t": "sejauh mana",
+   "s": 82.06,
+   "e": 82.38,
+   "piece": 6
+  },
+  {
+   "t": "keadilan",
+   "s": 82.74,
+   "e": 83.26,
+   "piece": 6
+  },
+  {
+   "t": "diukur",
+   "s": 83.26,
+   "e": 83.94,
+   "piece": 6
+  },
+  {
+   "t": "dan",
+   "s": 83.94,
+   "e": 84.22,
+   "piece": 6
+  },
+  {
+   "t": "nilai",
+   "s": 84.22,
+   "e": 84.62,
+   "piece": 6
+  },
+  {
+   "t": "oleh",
+   "s": 84.62,
+   "e": 84.86,
+   "piece": 6
+  },
+  {
+   "t": "mereka",
+   "s": 84.86,
+   "e": 85.48,
+   "piece": 6
+  },
+  {
+   "t": "yang",
+   "s": 85.48,
+   "e": 85.74,
+   "piece": 6
+  },
+  {
+   "t": "punya",
+   "s": 85.74,
+   "e": 85.9,
+   "piece": 6
+  },
+  {
+   "t": "rakyat",
+   "s": 85.9,
+   "e": 86.38,
+   "piece": 6
+  },
+  {
+   "t": "untuk",
+   "s": 86.38,
+   "e": 87.04,
+   "piece": 6
+  },
+  {
+   "t": "memilih",
+   "s": 87.04,
+   "e": 87.5,
+   "piece": 6
+  },
+  {
+   "t": "yang",
+   "s": 87.5,
+   "e": 87.64,
+   "piece": 6
+  },
+  {
+   "t": "baru.",
+   "s": 87.64,
+   "e": 87.96,
+   "piece": 6
+  },
+  {
+   "t": "Artinya",
+   "s": 88.66,
+   "e": 89.02,
+   "piece": 6
+  },
+  {
+   "t": "peluang",
+   "s": 89.02,
+   "e": 89.56,
+   "piece": 6
+  },
+  {
+   "t": "untuk",
+   "s": 89.56,
+   "e": 89.96,
+   "piece": 6
+  },
+  {
+   "t": "memilih",
+   "s": 89.96,
+   "e": 90.24,
+   "piece": 6
+  },
+  {
+   "t": "sentiasa",
+   "s": 90.24,
+   "e": 90.54,
+   "piece": 6
+  },
+  {
+   "t": "adil.",
+   "s": 90.54,
+   "e": 90.94,
+   "piece": 6
+  }
+ ],
+ "facts": [
+  {
+   "type": "quote",
+   "at": "haram menjatuhkan kerajaan",
+   "after": 4,
+   "label": "Kenyataan yang dibangkitkan",
+   "text": "“Haram menjatuhkan|[kerajaan yang adil]”",
+   "who": "Disebut dalam program besar di Kelantan, di hadapan PM & MB Kelantan",
+   "src": "Menurut ucapan penceramah",
+   "dur": 9,
+   "start": 19.48
+  },
+  {
+   "type": "keyword",
+   "at": "Kalimahnya benar",
+   "icon": "scale",
+   "label": "Kalimatul haq urida biha al-batil",
+   "text": "KALIMAH BENAR,|[TUJUAN BATIL]",
+   "sub": "Kaedah betul — lihat pula pada praktiknya",
+   "dur": 7,
+   "start": 37.78
+  },
+  {
+   "type": "number",
+   "at": "lima tahun sekali",
+   "icon": "ballot",
+   "label": "Demokrasi berpilihan raya",
+   "value": 5,
+   "suffix": " TAHUN",
+   "sub": "Rakyat menilai mana-mana kerajaan sekali dalam tempoh ini",
+   "dur": 3.13,
+   "start": 54.42
+  },
+  {
+   "type": "bullets",
+   "at": "Baik di Kelantan",
+   "icon": "map",
+   "label": "Berlaku di semua peringkat",
+   "items": [
+    {
+     "text": "Kelantan",
+     "at": "Kelantan",
+     "t": 58.46
+    },
+    {
+     "text": "Melaka",
+     "at": "Melaka",
+     "t": 59.76
+    },
+    {
+     "text": "Peringkat pusat",
+     "at": "peringkat pusat",
+     "t": 60.58
+    }
+   ],
+   "dur": 6.5,
+   "start": 57.6
+  },
+  {
+   "type": "keyword",
+   "at": "adil itu",
+   "icon": "scale",
+   "label": "Hujah penceramah",
+   "text": "ADIL ITU|[SUBJEKTIF]",
+   "sub": "Diukur dan dinilai oleh rakyat yang berhak memilih",
+   "dur": 9,
+   "start": 75.82
+  }
+ ],
+ "conclusion": {
+  "at": "Artinya peluang",
+  "after": 80,
+  "kicker": "Rumusan",
+  "text": "RAKYAT SENTIASA|[ADA PELUANG MEMILIH]",
+  "start": 88.56,
+  "dur": 0.79
+ },
+ "topics": [
+  {
+   "label": "Haram Jatuhkan Kerajaan Adil?",
+   "start": 13.15
+  }
+ ],
+ "cues": [
+  [
+   "impact-bass-1.mp3",
+   0.05,
+   0.55
+  ],
+  [
+   "whoosh-cinematic.mp3",
+   2.5999999999999988,
+   0.5
+  ],
+  [
+   "whoosh-short.mp3",
+   3.75,
+   0.35
+  ],
+  [
+   "whoosh-short.mp3",
+   19.48,
+   0.28
+  ],
+  [
+   "whoosh-short.mp3",
+   37.78,
+   0.28
+  ],
+  [
+   "impact-bass-2.mp3",
+   54.42,
+   0.4
+  ],
+  [
+   "whoosh-short.mp3",
+   57.6,
+   0.28
+  ],
+  [
+   "whoosh-short.mp3",
+   75.82,
+   0.28
+  ],
+  [
+   "impact-bass-2.mp3",
+   88.56,
+   0.5
+  ],
+  [
+   "whoosh-cinematic.mp3",
+   88.75,
+   0.4
+  ]
+ ],
+ "hook_end": 3.1499999999999986
+}

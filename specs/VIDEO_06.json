@@ -1,0 +1,177 @@
+{
+ "source": "drk7",
+ "source_name": "Dr K 7.mp4",
+ "speaker": "DR. KHAIRUDDIN AMAN RAZALI",
+ "role": "Bekas Menteri Komoditi · Ahli Panel Forum",
+ "gap": 0.9,
+ "tail": 1.4,
+ "frame": {
+  "x": 528,
+  "y": 838,
+  "s": 1.75
+ },
+ "focus": [
+  [
+   560,
+   622,
+   812,
+   1.75
+  ]
+ ],
+ "face_y": 760,
+ "keywords_blue": [
+  "barisan",
+  "nasional",
+  "pakatan",
+  "harapan",
+  "perikatan",
+  "bn",
+  "ph",
+  "pn",
+  "gps",
+  "parlimen",
+  "pilihan",
+  "raya"
+ ],
+ "id": "VIDEO_06",
+ "topic": "Dinamika Politik",
+ "hook_title": "POLITIK|[YANG ANJAL]",
+ "hook_kicker": "DINAMIKA BERPOLITIK",
+ "hook": [
+  473.25,
+  476.6
+ ],
+ "ranges": [
+  [
+   406.3,
+   504.2
+  ]
+ ],
+ "mood": "inspire",
+ "seed": 24,
+ "keywords": [
+  "johor",
+  "melaka",
+  "pas",
+  "umno",
+  "dinamika",
+  "anjal",
+  "berbeza",
+  "bersama",
+  "negeri",
+  "pusat",
+  "csa",
+  "sebelas",
+  "kontradiksi",
+  "perpaduan"
+ ],
+ "phrase_fix": [
+  [
+   "selai sebelah",
+   "selain sebelas"
+  ],
+  [
+   "kontrabi,",
+   "kontradiksi,"
+  ],
+  [
+   "Universiti Berasal Nasional,",
+   "Pengerusi Barisan Nasional,"
+  ],
+  [
+   "peringkatan nasional,",
+   "Perikatan Nasional,"
+  ],
+  [
+   "harapan segeri",
+   "Harapan di_negeri"
+  ],
+  [
+   "perkataan harapan",
+   "Pakatan Harapan"
+  ],
+  [
+   "dibakkan persembahan",
+   "dibangkitkan persoalan"
+  ],
+  [
+   "kepelekan.",
+   "kepelikan."
+  ]
+ ],
+ "facts": [
+  {
+   "type": "number",
+   "at": "selain sebelas",
+   "icon": "map",
+   "label": "PRN Johor",
+   "value": 11,
+   "suffix": " KERUSI",
+   "sub": "Selain kerusi ditandingi PAS, PAS cadang undi Barisan Nasional",
+   "src": "Menurut ucapan penceramah",
+   "dur": 7
+  },
+  {
+   "type": "keyword",
+   "at": "Pakatan Harapan menyerang",
+   "icon": "warning",
+   "label": "Serangan PH di Melaka",
+   "text": "PUSAT BERSAMA,|[NEGERI BERLAWAN]",
+   "sub": "Didakwa satu kontradiksi",
+   "dur": 9
+  },
+  {
+   "type": "keyword",
+   "at": "GPS",
+   "icon": "flag",
+   "label": "Sebelum PRN",
+   "text": "GPS|[TIDAK BERSAMA PH]",
+   "sub": "Dua parti besar kerajaan perpaduan berpisah di peringkat negeri",
+   "dur": 11
+  },
+  {
+   "type": "quote",
+   "at": "dinamika berpolitik",
+   "after": 8,
+   "label": "Dinamika berpolitik",
+   "text": "Boleh [berbeza] peringkat negeri,|tapi [bersama] peringkat pusat",
+   "who": "Pandangan Presiden UMNO / TPM, seperti dipetik penceramah",
+   "dur": 11
+  },
+  {
+   "type": "number",
+   "at": "sebelas ahli parlimen",
+   "icon": "doc",
+   "label": "Perjanjian CSA",
+   "value": 11,
+   "suffix": " AHLI PARLIMEN",
+   "sub": "Parti yang masih bersama PN buat CSA dengan kerajaan persekutuan",
+   "src": "Menurut ucapan penceramah",
+   "dur": 5
+  }
+ ],
+ "conclusion": {
+  "at": "bagi saya",
+  "after": 80,
+  "kicker": "Pandangan penceramah",
+  "text": "SITUASI POLITIK|[YANG SANGAT ANJAL]"
+ },
+ "end_text": "Berbeza di negeri|[Bersama di pusat]",
+ "fix": {
+  "kursi": "kerusi",
+  "kursi,": "kerusi",
+  "syurah": "syura",
+  "syarih": "syarie",
+  "Keandahnya": "Kaedahnya",
+  "kendah": "kaedah",
+  "khawarish": "khawarij",
+  "Khawarish": "Khawarij",
+  "khawarishnya": "khawarijnya",
+  "PASnya": "PAS-nya",
+  "anjat": "anjal",
+  "bakal": "bakar",
+  "Pelih": "Perlis",
+  "bantar": "bentang",
+  "Arab": "haram"
+ }
+}

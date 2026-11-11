@@ -1,0 +1,781 @@
+{
+ "id": "VIDEO_19",
+ "duration": 68.12,
+ "edl": [
+  {
+   "a": 1958.15,
+   "b": 1961.85,
+   "kind": "hook",
+   "o": 0.0
+  },
+  {
+   "a": 1955.4,
+   "b": 1976.38,
+   "kind": "body",
+   "o": 3.7
+  },
+  {
+   "a": 1979.61,
+   "b": 1987.15,
+   "kind": "body",
+   "o": 24.68
+  },
+  {
+   "a": 1989.8,
+   "b": 1997.04,
+   "kind": "body",
+   "o": 32.22
+  },
+  {
+   "a": 1998.2,
+   "b": 2003.88,
+   "kind": "body",
+   "o": 39.46
+  },
+  {
+   "a": 2004.56,
+   "b": 2023.69,
+   "kind": "body",
+   "o": 45.14
+  },
+  {
+   "a": 2025.25,
+   "b": 2029.1,
+   "kind": "body",
+   "tail": 1.8,
+   "o": 64.27
+  }
+ ],
+ "words": [
+  {
+   "t": "Saya",
+   "s": 0.03,
+   "e": 0.97,
+   "piece": 0
+  },
+  {
+   "t": "namakan",
+   "s": 1.15,
+   "e": 1.65,
+   "piece": 0
+  },
+  {
+   "t": "sebagai",
+   "s": 1.65,
+   "e": 2.17,
+   "piece": 0
+  },
+  {
+   "t": "politik",
+   "s": 2.17,
+   "e": 3.07,
+   "piece": 0
+  },
+  {
+   "t": "persepsi",
+   "s": 3.07,
+   "e": 3.7,
+   "piece": 0
+  },
+  {
+   "t": "tuan",
+   "s": 3.7,
+   "e": 4.06,
+   "piece": 1
+  },
+  {
+   "t": "apa",
+   "s": 4.06,
+   "e": 5.4,
+   "piece": 1
+  },
+  {
+   "t": "yang",
+   "s": 5.4,
+   "e": 5.6,
+   "piece": 1
+  },
+  {
+   "t": "berlaku",
+   "s": 5.6,
+   "e": 5.94,
+   "piece": 1
+  },
+  {
+   "t": "hari",
+   "s": 5.94,
+   "e": 6.18,
+   "piece": 1
+  },
+  {
+   "t": "ini",
+   "s": 6.18,
+   "e": 6.48,
+   "piece": 1
+  },
+  {
+   "t": "saya",
+   "s": 6.48,
+   "e": 7.42,
+   "piece": 1
+  },
+  {
+   "t": "namakan",
+   "s": 7.6,
+   "e": 8.1,
+   "piece": 1
+  },
+  {
+   "t": "sebagai",
+   "s": 8.1,
+   "e": 8.62,
+   "piece": 1
+  },
+  {
+   "t": "politik",
+   "s": 8.62,
+   "e": 9.52,
+   "piece": 1
+  },
+  {
+   "t": "persepsi",
+   "s": 9.52,
+   "e": 10.4,
+   "piece": 1
+  },
+  {
+   "t": "nak",
+   "s": 10.4,
+   "e": 12.32,
+   "piece": 1
+  },
+  {
+   "t": "mencipta",
+   "s": 12.32,
+   "e": 13.06,
+   "piece": 1
+  },
+  {
+   "t": "persepsi",
+   "s": 13.06,
+   "e": 13.9,
+   "piece": 1
+  },
+  {
+   "t": "terhadap",
+   "s": 13.9,
+   "e": 14.64,
+   "piece": 1
+  },
+  {
+   "t": "parti",
+   "s": 14.64,
+   "e": 15.36,
+   "piece": 1
+  },
+  {
+   "t": "UMNO",
+   "s": 15.36,
+   "e": 16.04,
+   "piece": 1
+  },
+  {
+   "t": "Barisan",
+   "s": 16.04,
+   "e": 16.5,
+   "piece": 1
+  },
+  {
+   "t": "Nasional",
+   "s": 16.5,
+   "e": 17.1,
+   "piece": 1
+  },
+  {
+   "t": "Sakau",
+   "s": 17.1,
+   "e": 17.74,
+   "piece": 1
+  },
+  {
+   "t": "berulang",
+   "s": 17.74,
+   "e": 19.18,
+   "piece": 1
+  },
+  {
+   "t": "perkataan",
+   "s": 19.18,
+   "e": 19.68,
+   "piece": 1
+  },
+  {
+   "t": "Sakau",
+   "s": 19.68,
+   "e": 20.38,
+   "piece": 1
+  },
+  {
+   "t": "Sakau",
+   "s": 20.38,
+   "e": 21.0,
+   "piece": 1
+  },
+  {
+   "t": "Sakau",
+   "s": 21.0,
+   "e": 21.56,
+   "piece": 1
+  },
+  {
+   "t": "yang",
+   "s": 21.56,
+   "e": 21.82,
+   "piece": 1
+  },
+  {
+   "t": "tak",
+   "s": 21.82,
+   "e": 22.1,
+   "piece": 1
+  },
+  {
+   "t": "wujud",
+   "s": 22.1,
+   "e": 22.66,
+   "piece": 1
+  },
+  {
+   "t": "dalam",
+   "s": 22.66,
+   "e": 23.14,
+   "piece": 1
+  },
+  {
+   "t": "Dewan",
+   "s": 23.14,
+   "e": 23.48,
+   "piece": 1
+  },
+  {
+   "t": "Bahasa",
+   "s": 23.48,
+   "e": 23.88,
+   "piece": 1
+  },
+  {
+   "t": "dan",
+   "s": 23.88,
+   "e": 24.02,
+   "piece": 1
+  },
+  {
+   "t": "Pustaka",
+   "s": 24.02,
+   "e": 24.46,
+   "piece": 1
+  },
+  {
+   "t": "ketika",
+   "s": 24.82,
+   "e": 26.08,
+   "piece": 2
+  },
+  {
+   "t": "PM",
+   "s": 26.08,
+   "e": 26.48,
+   "piece": 2
+  },
+  {
+   "t": "pegang",
+   "s": 26.48,
+   "e": 27.08,
+   "piece": 2
+  },
+  {
+   "t": "Tabung",
+   "s": 27.08,
+   "e": 27.6,
+   "piece": 2
+  },
+  {
+   "t": "Haji",
+   "s": 27.6,
+   "e": 28.0,
+   "piece": 2
+  },
+  {
+   "t": "menggunakan",
+   "s": 28.0,
+   "e": 30.1,
+   "piece": 2
+  },
+  {
+   "t": "satu",
+   "s": 30.1,
+   "e": 30.5,
+   "piece": 2
+  },
+  {
+   "t": "kaedah",
+   "s": 30.5,
+   "e": 31.08,
+   "piece": 2
+  },
+  {
+   "t": "perakaunan",
+   "s": 31.08,
+   "e": 32.0,
+   "piece": 2
+  },
+  {
+   "t": "mengisytiharkan",
+   "s": 32.36,
+   "e": 33.72,
+   "piece": 3
+  },
+  {
+   "t": "bahawa",
+   "s": 33.72,
+   "e": 34.34,
+   "piece": 3
+  },
+  {
+   "t": "Tabung",
+   "s": 34.34,
+   "e": 34.78,
+   "piece": 3
+  },
+  {
+   "t": "Haji",
+   "s": 34.78,
+   "e": 35.18,
+   "piece": 3
+  },
+  {
+   "t": "ada",
+   "s": 35.18,
+   "e": 35.5,
+   "piece": 3
+  },
+  {
+   "t": "kemampuan",
+   "s": 35.5,
+   "e": 36.3,
+   "piece": 3
+  },
+  {
+   "t": "untuk",
+   "s": 36.3,
+   "e": 36.84,
+   "piece": 3
+  },
+  {
+   "t": "membayar",
+   "s": 36.84,
+   "e": 37.56,
+   "piece": 3
+  },
+  {
+   "t": "yang",
+   "s": 37.56,
+   "e": 38.22,
+   "piece": 3
+  },
+  {
+   "t": "namanya",
+   "s": 38.22,
+   "e": 38.6,
+   "piece": 3
+  },
+  {
+   "t": "dividen",
+   "s": 38.6,
+   "e": 39.24,
+   "piece": 3
+  },
+  {
+   "t": "datang",
+   "s": 39.6,
+   "e": 40.48,
+   "piece": 4
+  },
+  {
+   "t": "kerajaan",
+   "s": 40.48,
+   "e": 40.96,
+   "piece": 4
+  },
+  {
+   "t": "baru",
+   "s": 40.96,
+   "e": 41.3,
+   "piece": 4
+  },
+  {
+   "t": "Pakatan",
+   "s": 41.3,
+   "e": 41.8,
+   "piece": 4
+  },
+  {
+   "t": "Harapan",
+   "s": 41.8,
+   "e": 42.2,
+   "piece": 4
+  },
+  {
+   "t": "pada",
+   "s": 42.2,
+   "e": 42.48,
+   "piece": 4
+  },
+  {
+   "t": "ketika",
+   "s": 42.48,
+   "e": 42.9,
+   "piece": 4
+  },
+  {
+   "t": "itu",
+   "s": 42.9,
+   "e": 43.16,
+   "piece": 4
+  },
+  {
+   "t": "dia",
+   "s": 43.16,
+   "e": 43.42,
+   "piece": 4
+  },
+  {
+   "t": "tukar",
+   "s": 43.42,
+   "e": 43.92,
+   "piece": 4
+  },
+  {
+   "t": "kaedah",
+   "s": 43.92,
+   "e": 44.26,
+   "piece": 4
+  },
+  {
+   "t": "pengiraan",
+   "s": 44.26,
+   "e": 44.92,
+   "piece": 4
+  },
+  {
+   "t": "supaya",
+   "s": 45.28,
+   "e": 46.16,
+   "piece": 5
+  },
+  {
+   "t": "yang",
+   "s": 46.16,
+   "e": 46.78,
+   "piece": 5
+  },
+  {
+   "t": "nampak",
+   "s": 46.78,
+   "e": 47.58,
+   "piece": 5
+  },
+  {
+   "t": "untung",
+   "s": 47.58,
+   "e": 48.12,
+   "piece": 5
+  },
+  {
+   "t": "boleh",
+   "s": 48.12,
+   "e": 48.5,
+   "piece": 5
+  },
+  {
+   "t": "bayar",
+   "s": 48.5,
+   "e": 49.2,
+   "piece": 5
+  },
+  {
+   "t": "dividen",
+   "s": 49.2,
+   "e": 50.58,
+   "piece": 5
+  },
+  {
+   "t": "dilihat",
+   "s": 50.58,
+   "e": 51.36,
+   "piece": 5
+  },
+  {
+   "t": "rugi",
+   "s": 51.36,
+   "e": 51.84,
+   "piece": 5
+  },
+  {
+   "t": "yang",
+   "s": 51.84,
+   "e": 52.2,
+   "piece": 5
+  },
+  {
+   "t": "tak",
+   "s": 52.2,
+   "e": 52.44,
+   "piece": 5
+  },
+  {
+   "t": "layak",
+   "s": 52.44,
+   "e": 52.88,
+   "piece": 5
+  },
+  {
+   "t": "bayar",
+   "s": 52.88,
+   "e": 53.36,
+   "piece": 5
+  },
+  {
+   "t": "dividen",
+   "s": 53.36,
+   "e": 55.06,
+   "piece": 5
+  },
+  {
+   "t": "kedua-dua",
+   "s": 55.06,
+   "e": 57.31,
+   "piece": 5
+  },
+  {
+   "t": "kaedah",
+   "s": 57.31,
+   "e": 57.65,
+   "piece": 5
+  },
+  {
+   "t": "yang",
+   "s": 57.65,
+   "e": 57.75,
+   "piece": 5
+  },
+  {
+   "t": "betul",
+   "s": 57.75,
+   "e": 58.05,
+   "piece": 5
+  },
+  {
+   "t": "belaka",
+   "s": 58.05,
+   "e": 58.53,
+   "piece": 5
+  },
+  {
+   "t": "tapi",
+   "s": 58.53,
+   "e": 59.51,
+   "piece": 5
+  },
+  {
+   "t": "kesan",
+   "s": 59.51,
+   "e": 60.11,
+   "piece": 5
+  },
+  {
+   "t": "kaedah",
+   "s": 60.11,
+   "e": 60.45,
+   "piece": 5
+  },
+  {
+   "t": "yang",
+   "s": 60.45,
+   "e": 60.59,
+   "piece": 5
+  },
+  {
+   "t": "kedua",
+   "s": 60.59,
+   "e": 60.97,
+   "piece": 5
+  },
+  {
+   "t": "ialah",
+   "s": 60.97,
+   "e": 61.55,
+   "piece": 5
+  },
+  {
+   "t": "terciptalah",
+   "s": 61.55,
+   "e": 62.89,
+   "piece": 5
+  },
+  {
+   "t": "perkataan",
+   "s": 62.89,
+   "e": 63.41,
+   "piece": 5
+  },
+  {
+   "t": "Sakau",
+   "s": 63.41,
+   "e": 63.83,
+   "piece": 5
+  },
+  {
+   "t": "tak",
+   "s": 63.83,
+   "e": 64.05,
+   "piece": 5
+  },
+  {
+   "t": "cukup",
+   "s": 64.41,
+   "e": 64.79,
+   "piece": 6
+  },
+  {
+   "t": "duit",
+   "s": 64.79,
+   "e": 65.11,
+   "piece": 6
+  },
+  {
+   "t": "kenapa",
+   "s": 65.11,
+   "e": 65.49,
+   "piece": 6
+  },
+  {
+   "t": "nak",
+   "s": 65.49,
+   "e": 65.67,
+   "piece": 6
+  },
+  {
+   "t": "bayar",
+   "s": 65.67,
+   "e": 66.05,
+   "piece": 6
+  },
+  {
+   "t": "dividen",
+   "s": 66.05,
+   "e": 66.53,
+   "piece": 6
+  }
+ ],
+ "facts": [
+  {
+   "type": "keyword",
+   "at": "Nak Mencipta",
+   "icon": "warning",
+   "label": "Menurut penceramah",
+   "text": "“SAKAU”|[BERULANG-ULANG]",
+   "sub": "Perkataan yang tiada dalam Kamus Dewan",
+   "dur": 10,
+   "start": 10.28
+  },
+  {
+   "type": "bullets",
+   "at": "Pegang Tabung",
+   "icon": "chart",
+   "label": "Dua kaedah perakaunan Tabung Haji",
+   "items": [
+    {
+     "text": "Kaedah lama: mampu bayar dividen",
+     "at": "Mengisytiharkan",
+     "t": 32.26
+    },
+    {
+     "text": "Kaedah baru (PH): dilihat rugi",
+     "at": "Tukar",
+     "t": 43.32
+    }
+   ],
+   "src": "Menurut ucapan penceramah",
+   "dur": 16,
+   "start": 26.36
+  },
+  {
+   "type": "keyword",
+   "at": "Betul",
+   "icon": "scale",
+   "label": "Hujah penceramah",
+   "text": "KEDUA-DUA KAEDAH|[BETUL BELAKA]",
+   "sub": "Tetapi kaedah kedua mencipta persepsi ‘sakau’",
+   "dur": 3.77,
+   "start": 57.63
+  }
+ ],
+ "conclusion": {
+  "at": "Terciptalah",
+  "after": 45,
+  "kicker": "Kesan politik persepsi",
+  "text": "TERCIPTALAH|[PERSEPSI “SAKAU”]",
+  "start": 61.45,
+  "dur": 3.77
+ },
+ "topics": [
+  {
+   "label": "Politik Persepsi & Tabung Haji",
+   "start": 13.700000000000001
+  }
+ ],
+ "cues": [
+  [
+   "impact-bass-1.mp3",
+   0.05,
+   0.55
+  ],
+  [
+   "whoosh-cinematic.mp3",
+   3.1499999999998183,
+   0.5
+  ],
+  [
+   "whoosh-short.mp3",
+   4.3,
+   0.35
+  ],
+  [
+   "whoosh-short.mp3",
+   10.28,
+   0.28
+  ],
+  [
+   "whoosh-short.mp3",
+   26.36,
+   0.28
+  ],
+  [
+   "whoosh-short.mp3",
+   57.63,
+   0.28
+  ],
+  [
+   "impact-bass-2.mp3",
+   61.45,
+   0.5
+  ],
+  [
+   "whoosh-cinematic.mp3",
+   64.62,
+   0.4
+  ]
+ ],
+ "hook_end": 3.699999999999818
+}

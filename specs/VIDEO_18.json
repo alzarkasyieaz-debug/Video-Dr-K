@@ -1,0 +1,258 @@
+{
+ "source": "drk3",
+ "source_name": "Dr K 3.mp4",
+ "speaker": "DR. KHAIRUDDIN AMAN RAZALI",
+ "role": "Bekas Menteri Komoditi",
+ "gap": 1.2,
+ "tail": 1.8,
+ "frame": {
+  "x": 680,
+  "y": 850,
+  "s": 1.7
+ },
+ "focus": [
+  [
+   0,
+   680,
+   850
+  ],
+  [
+   400,
+   600,
+   835
+  ],
+  [
+   800,
+   446,
+   830
+  ],
+  [
+   1150,
+   541,
+   840
+  ],
+  [
+   1500,
+   499,
+   835
+  ],
+  [
+   1800,
+   533,
+   840
+  ]
+ ],
+ "face_y": 760,
+ "grade": "eq=contrast=1.07:brightness=0.02:saturation=1.06:gamma=1.04",
+ "keywords_blue": [
+  "barisan",
+  "nasional",
+  "pakatan",
+  "harapan",
+  "perikatan",
+  "bn",
+  "ph",
+  "pn"
+ ],
+ "fix": {
+  "Amno": "UMNO",
+  "Pas": "PAS",
+  "Beresan": "Barisan",
+  "Bansai": "Barisan",
+  "Kurusi": "kerusi",
+  "Kursi": "kerusi",
+  "Peringkatan": "Perikatan",
+  "Muafakan": "Muafakat",
+  "Keedah": "kaedah",
+  "janazah": "jenazah",
+  "ijmat": "ijmak",
+  "ijmatnya": "ijmaknya",
+  "Ijmat": "Ijmak",
+  "Nyama": "nyawa",
+  "Masalah": "maslahah",
+  "Zuryak": "zuriat",
+  "Suduk": "sudut",
+  "Diputuk": "Dipertuan",
+  "Dibutuk": "Dipertuan",
+  "Termektuk": "termaktub",
+  "Dituburkan": "ditubuhkan",
+  "Makin": "Maka",
+  "Termantuk": "termaktub",
+  "Sekulah": "sekular",
+  "Perekkaunan": "perakaunan",
+  "Wuduk": "wujud"
+ },
+ "id": "VIDEO_18",
+ "topic": "Data PRU: Alor Gajah & Hang Tuah Jaya",
+ "hook_title": "HANG TUAH JAYA|[MILIK SIAPA]?",
+ "hook_kicker": "DATA PILIHAN RAYA",
+ "hook": [
+  1622.8,
+  1628.85
+ ],
+ "ranges": [
+  [
+   1514.2,
+   1539.0
+  ],
+  [
+   1597.6,
+   1648.45
+  ]
+ ],
+ "mood": "serious",
+ "seed": 46,
+ "keywords": [
+  "800",
+  "27,000",
+  "28,000",
+  "17,000",
+  "38,000",
+  "30,000",
+  "22,000",
+  "majoriti",
+  "undi",
+  "kerusi",
+  "milik"
+ ],
+ "phrase_fix": [
+  [
+   "WB",
+   "YB"
+  ],
+  [
+   "Haja",
+   "sahaja"
+  ],
+  [
+   "Majority",
+   "majoriti"
+  ],
+  [
+   "Perkata Harapan",
+   "Pakatan Harapan"
+  ],
+  [
+   "Perkata Nasional",
+   "Perikatan Nasional"
+  ],
+  [
+   "Hantu Hjaya Selara",
+   "Hang_Tuah Jaya ~"
+  ],
+  [
+   "Hantu Hjaya",
+   "Hang_Tuah Jaya"
+  ],
+  [
+   "Hantu Hadaya",
+   "Hang_Tuah Jaya"
+  ],
+  [
+   "Alung Gada",
+   "Alor Gajah"
+  ],
+  [
+   "Tak Serap",
+   "tak silap"
+  ],
+  [
+   "Udi",
+   "undi"
+  ],
+  [
+   "Kekada Pundingan",
+   "kelak_ada rundingan"
+  ],
+  [
+   "Perisah",
+   "Perikatan"
+  ],
+  [
+   "Dia Perkata",
+   "dia Pakatan"
+  ],
+  [
+   "22,000",
+   "20,000"
+  ]
+ ],
+ "facts": [
+  {
+   "type": "bars",
+   "at": "BN 27,000",
+   "label": "Parlimen Alor Gajah · majoriti PH hanya 800",
+   "items": [
+    {
+     "label": "PH",
+     "value": 28,
+     "show": "28,000",
+     "at": "Harapan",
+     "color": "linear-gradient(90deg,#c0392b,#ff6b5b)"
+    },
+    {
+     "label": "BN",
+     "value": 27,
+     "show": "27,000",
+     "at": "BN"
+    },
+    {
+     "label": "PN",
+     "value": 17,
+     "show": "17,000",
+     "at": "Nasional",
+     "color": "linear-gradient(90deg,#1e8f5a,#5fd39a)"
+    }
+   ],
+   "src": "Angka menurut ucapan penceramah",
+   "dur": 14
+  },
+  {
+   "type": "bars",
+   "at": "Adam Adli",
+   "label": "Parlimen Hang Tuah Jaya · PRU 2022",
+   "items": [
+    {
+     "label": "PH",
+     "value": 38,
+     "show": "38,000",
+     "at": "38,000",
+     "color": "linear-gradient(90deg,#c0392b,#ff6b5b)"
+    },
+    {
+     "label": "BN",
+     "value": 30,
+     "show": "30,000",
+     "at": "30,000"
+    },
+    {
+     "label": "PN",
+     "value": 20,
+     "show": "20,000",
+     "at": "20,000",
+     "color": "linear-gradient(90deg,#1e8f5a,#5fd39a)"
+    }
+   ],
+   "src": "Angka menurut ucapan penceramah",
+   "dur": 13
+  },
+  {
+   "type": "keyword",
+   "at": "rundingan kerusi",
+   "icon": "handshake",
+   "label": "Rundingan kerusi",
+   "text": "PELUANG|[PERIKATAN NASIONAL]",
+   "sub": "Bertanding di Hang Tuah Jaya & Alor Gajah",
+   "dur": 10
+  }
+ ],
+ "conclusion": {
+  "at": "Biar Pimpinan",
+  "after": 50,
+  "kicker": "Pesanan kepada ahli",
+  "text": "JANGAN BERGADUH —|[BIAR PIMPINAN URUSKAN]"
+ },
+ "end_text": "Gabung undi BN + PN|[Peluang baharu]",
+ "lowercase": true,
+ "notes": "Angka PN Hang Tuah Jaya: turbo mendengar 22,000; large-v3 mendengar 20,000 dan penceramah menyebut '20 ribu' dalam Dr K 5 — 20,000 digunakan. Sila semak dengan audio asal."
+}

@@ -1,0 +1,226 @@
+{
+ "source": "drk3",
+ "source_name": "Dr K 3.mp4",
+ "speaker": "DR. KHAIRUDDIN AMAN RAZALI",
+ "role": "Bekas Menteri Komoditi",
+ "gap": 0.9,
+ "tail": 1.4,
+ "frame": {
+  "x": 680,
+  "y": 850,
+  "s": 1.7
+ },
+ "focus": [
+  [
+   0,
+   680,
+   850
+  ],
+  [
+   400,
+   600,
+   835
+  ],
+  [
+   800,
+   446,
+   830
+  ],
+  [
+   1150,
+   541,
+   840
+  ],
+  [
+   1500,
+   499,
+   835
+  ],
+  [
+   1800,
+   533,
+   840
+  ]
+ ],
+ "face_y": 760,
+ "grade": "eq=contrast=1.07:brightness=0.02:saturation=1.06:gamma=1.04",
+ "keywords_blue": [
+  "barisan",
+  "nasional",
+  "pakatan",
+  "harapan",
+  "perikatan",
+  "bn",
+  "ph",
+  "pn"
+ ],
+ "fix": {
+  "Amno": "UMNO",
+  "Pas": "PAS",
+  "Beresan": "Barisan",
+  "Bansai": "Barisan",
+  "Kurusi": "kerusi",
+  "Kursi": "kerusi",
+  "Peringkatan": "Perikatan",
+  "Muafakan": "Muafakat",
+  "Keedah": "kaedah",
+  "janazah": "jenazah",
+  "ijmat": "ijmak",
+  "ijmatnya": "ijmaknya",
+  "Ijmat": "Ijmak",
+  "Nyama": "nyawa",
+  "Masalah": "maslahah",
+  "Zuryak": "zuriat",
+  "Suduk": "sudut",
+  "Diputuk": "Dipertuan",
+  "Dibutuk": "Dipertuan",
+  "Termektuk": "termaktub",
+  "Dituburkan": "ditubuhkan",
+  "Makin": "Maka",
+  "Termantuk": "termaktub",
+  "Sekulah": "sekular",
+  "Perekkaunan": "perakaunan",
+  "Wuduk": "wujud"
+ },
+ "id": "VIDEO_16",
+ "topic": "4.6 Juta Ahli: UMNO + PAS",
+ "hook_title": "4.6 JUTA —|[TIADA PARTI MENANDINGI]",
+ "hook_kicker": "UMNO + PAS",
+ "hook": [
+  1259.1,
+  1267.85
+ ],
+ "ranges": [
+  [
+   1238.8,
+   1325.9
+  ]
+ ],
+ "mood": "inspire",
+ "seed": 44,
+ "keywords": [
+  "umno",
+  "PAS",
+  "juta",
+  "melaka",
+  "menang",
+  "kerusi",
+  "21",
+  "28",
+  "pertama",
+  "bersama"
+ ],
+ "phrase_fix": [
+  [
+   "Tempu",
+   "tempoh"
+  ],
+  [
+   "Angkir Ini Dari Sudah Parti",
+   "angka ini dari sudut parti"
+  ],
+  [
+   "Berkabung",
+   "bergabung"
+  ],
+  [
+   "Mengeletak",
+   "~"
+  ],
+  [
+   "Bukan Tak Kabut Tapi Nak Beritur Angkir",
+   "~ ~ ~ ~ ~ ~ ~"
+  ],
+  [
+   "Tapi Kita Buat Kedua Dengan Padang Rengat",
+   "~ ~ ~ ~ ~ ~ ~"
+  ],
+  [
+   "Cikgu Insya Mudik",
+   "Cikgu ~ ~"
+  ],
+  [
+   "Yang Mbah",
+   "yang PAS"
+  ],
+  [
+   "28 0",
+   "28-0 ~"
+  ]
+ ],
+ "facts": [
+  {
+   "type": "keyword",
+   "at": "Kali Pertama",
+   "icon": "flag",
+   "label": "Melaka",
+   "text": "KALI PERTAMA|[UMNO + PAS BERSAMA]",
+   "sub": "Setelah tempoh yang panjang",
+   "dur": 10
+  },
+  {
+   "type": "bars",
+   "at": "3.6",
+   "label": "Keahlian orang Islam",
+   "items": [
+    {
+     "label": "UMNO",
+     "value": 3.6,
+     "show": "3.6 JUTA",
+     "at": "3.6"
+    },
+    {
+     "label": "PAS",
+     "value": 1,
+     "show": "1 JUTA",
+     "at": "1",
+     "color": "linear-gradient(90deg,#d9a520,#ffd76a)"
+    },
+    {
+     "label": "JUMLAH",
+     "value": 4.6,
+     "show": "4.6 JUTA",
+     "at": "4.6",
+     "color": "linear-gradient(90deg,#ffffff,#cfe2ff)"
+    }
+   ],
+   "src": "Menurut ucapan penceramah",
+   "dur": 9
+  },
+  {
+   "type": "keyword",
+   "at": "Bila bergabung",
+   "icon": "handshake",
+   "label": "Bila dua parti bergabung",
+   "text": "MELAKA|[BOLEH MENANG MUDAH]",
+   "dur": 7
+  },
+  {
+   "type": "number",
+   "at": "21",
+   "icon": "ballot",
+   "label": "Kerusi sedia dimenangi",
+   "value": 21,
+   "suffix": " KERUSI",
+   "sub": "Nak tambah kerusi PAS & rakan Perikatan Nasional",
+   "dur": 10
+  },
+  {
+   "type": "keyword",
+   "at": "28-0",
+   "icon": "flag",
+   "label": "Sasaran",
+   "text": "[28–0]",
+   "sub": "Isyarat kepada satu parti",
+   "dur": 5
+  }
+ ],
+ "conclusion": {
+  "at": "Kalau Boleh",
+  "after": 60,
+  "kicker": "Sasaran",
+  "text": "KALAU BOLEH|[28–0]"
+ },
+ "end_text": "UMNO + PAS|[4.6 juta ahli]",
+ "lowercase": true
+}

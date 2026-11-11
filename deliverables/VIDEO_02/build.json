@@ -1,0 +1,1442 @@
+{
+ "id": "VIDEO_02",
+ "duration": 111.11,
+ "edl": [
+  {
+   "a": 195.8,
+   "b": 199.75,
+   "kind": "hook",
+   "o": 0.0
+  },
+  {
+   "a": 173.85,
+   "b": 183.4,
+   "kind": "body",
+   "o": 3.95
+  },
+  {
+   "a": 184.19,
+   "b": 200.06,
+   "kind": "body",
+   "o": 13.5
+  },
+  {
+   "a": 200.7,
+   "b": 203.38,
+   "kind": "body",
+   "o": 29.37
+  },
+  {
+   "a": 204.02,
+   "b": 224.02,
+   "kind": "body",
+   "o": 32.05
+  },
+  {
+   "a": 224.64,
+   "b": 228.78,
+   "kind": "body",
+   "o": 52.05
+  },
+  {
+   "a": 229.53,
+   "b": 232.28,
+   "kind": "body",
+   "o": 56.19
+  },
+  {
+   "a": 233.08,
+   "b": 246.46,
+   "kind": "body",
+   "o": 58.94
+  },
+  {
+   "a": 247.36,
+   "b": 286.15,
+   "kind": "body",
+   "tail": 1.4,
+   "o": 72.32
+  }
+ ],
+ "words": [
+  {
+   "t": "kata",
+   "s": 0.08,
+   "e": 0.4,
+   "piece": 0
+  },
+  {
+   "t": "pintu",
+   "s": 0.4,
+   "e": 1.06,
+   "piece": 0
+  },
+  {
+   "t": "jangan",
+   "s": 1.06,
+   "e": 1.42,
+   "piece": 0
+  },
+  {
+   "t": "tutup",
+   "s": 1.42,
+   "e": 1.94,
+   "piece": 0
+  },
+  {
+   "t": "rapat-rapat",
+   "s": 1.94,
+   "e": 2.72,
+   "piece": 0
+  },
+  {
+   "t": "jangan",
+   "s": 2.72,
+   "e": 3.0,
+   "piece": 0
+  },
+  {
+   "t": "buka",
+   "s": 3.0,
+   "e": 3.36,
+   "piece": 0
+  },
+  {
+   "t": "luas-luas.",
+   "s": 3.36,
+   "e": 3.95,
+   "piece": 0
+  },
+  {
+   "t": "Tapi",
+   "s": 4.05,
+   "e": 4.46,
+   "piece": 1
+  },
+  {
+   "t": "UMNO",
+   "s": 4.46,
+   "e": 4.86,
+   "piece": 1
+  },
+  {
+   "t": "telah",
+   "s": 4.86,
+   "e": 5.06,
+   "piece": 1
+  },
+  {
+   "t": "ada",
+   "s": 5.06,
+   "e": 5.22,
+   "piece": 1
+  },
+  {
+   "t": "keputusan.",
+   "s": 5.22,
+   "e": 5.88,
+   "piece": 1
+  },
+  {
+   "t": "Cuma",
+   "s": 6.08,
+   "e": 6.38,
+   "piece": 1
+  },
+  {
+   "t": "UMNO",
+   "s": 6.38,
+   "e": 6.9,
+   "piece": 1
+  },
+  {
+   "t": "tidak",
+   "s": 6.9,
+   "e": 7.3,
+   "piece": 1
+  },
+  {
+   "t": "menunjukkan",
+   "s": 7.3,
+   "e": 8.44,
+   "piece": 1
+  },
+  {
+   "t": "pertembungan",
+   "s": 8.44,
+   "e": 9.72,
+   "piece": 1
+  },
+  {
+   "t": "awal",
+   "s": 9.72,
+   "e": 10.24,
+   "piece": 1
+  },
+  {
+   "t": "tunjuk",
+   "s": 10.24,
+   "e": 10.9,
+   "piece": 1
+  },
+  {
+   "t": "kita",
+   "s": 10.9,
+   "e": 11.44,
+   "piece": 1
+  },
+  {
+   "t": "terbuka.",
+   "s": 11.44,
+   "e": 12.04,
+   "piece": 1
+  },
+  {
+   "t": "Open.",
+   "s": 12.64,
+   "e": 13.28,
+   "piece": 1
+  },
+  {
+   "t": "Saya",
+   "s": 13.64,
+   "e": 14.05,
+   "piece": 2
+  },
+  {
+   "t": "selalu",
+   "s": 14.05,
+   "e": 14.47,
+   "piece": 2
+  },
+  {
+   "t": "disebut",
+   "s": 14.47,
+   "e": 14.91,
+   "piece": 2
+  },
+  {
+   "t": "oleh",
+   "s": 14.91,
+   "e": 15.25,
+   "piece": 2
+  },
+  {
+   "t": "Datuk",
+   "s": 15.25,
+   "e": 16.35,
+   "piece": 2
+  },
+  {
+   "t": "Seri",
+   "s": 16.35,
+   "e": 16.59,
+   "piece": 2
+  },
+  {
+   "t": "Zahid.",
+   "s": 16.59,
+   "e": 17.05,
+   "piece": 2
+  },
+  {
+   "t": "Dia",
+   "s": 17.29,
+   "e": 17.57,
+   "piece": 2
+  },
+  {
+   "t": "pegang",
+   "s": 17.57,
+   "e": 17.97,
+   "piece": 2
+  },
+  {
+   "t": "satu",
+   "s": 17.97,
+   "e": 18.29,
+   "piece": 2
+  },
+  {
+   "t": "pandangan",
+   "s": 18.29,
+   "e": 18.99,
+   "piece": 2
+  },
+  {
+   "t": "Mursyidul",
+   "s": 18.99,
+   "e": 19.87,
+   "piece": 2
+  },
+  {
+   "t": "Am PAS",
+   "s": 19.87,
+   "e": 20.43,
+   "piece": 2
+  },
+  {
+   "t": "yang",
+   "s": 20.43,
+   "e": 20.95,
+   "piece": 2
+  },
+  {
+   "t": "sebut",
+   "s": 20.95,
+   "e": 21.31,
+   "piece": 2
+  },
+  {
+   "t": "ke",
+   "s": 21.31,
+   "e": 21.43,
+   "piece": 2
+  },
+  {
+   "t": "beliau.",
+   "s": 21.43,
+   "e": 21.85,
+   "piece": 2
+  },
+  {
+   "t": "kata",
+   "s": 21.85,
+   "e": 23.21,
+   "piece": 2
+  },
+  {
+   "t": "Mursyidul",
+   "s": 23.21,
+   "e": 23.73,
+   "piece": 2
+  },
+  {
+   "t": "Am PAS",
+   "s": 23.73,
+   "e": 24.29,
+   "piece": 2
+  },
+  {
+   "t": "dia",
+   "s": 24.29,
+   "e": 25.19,
+   "piece": 2
+  },
+  {
+   "t": "kata",
+   "s": 25.19,
+   "e": 25.51,
+   "piece": 2
+  },
+  {
+   "t": "pintu",
+   "s": 25.51,
+   "e": 26.17,
+   "piece": 2
+  },
+  {
+   "t": "jangan",
+   "s": 26.17,
+   "e": 26.53,
+   "piece": 2
+  },
+  {
+   "t": "tutup",
+   "s": 26.53,
+   "e": 27.05,
+   "piece": 2
+  },
+  {
+   "t": "rapat-rapat",
+   "s": 27.05,
+   "e": 27.83,
+   "piece": 2
+  },
+  {
+   "t": "jangan",
+   "s": 27.83,
+   "e": 28.11,
+   "piece": 2
+  },
+  {
+   "t": "buka",
+   "s": 28.11,
+   "e": 28.47,
+   "piece": 2
+  },
+  {
+   "t": "luas-luas.",
+   "s": 28.47,
+   "e": 29.15,
+   "piece": 2
+  },
+  {
+   "t": "Maknanya",
+   "s": 29.51,
+   "e": 29.99,
+   "piece": 3
+  },
+  {
+   "t": "ruang",
+   "s": 29.99,
+   "e": 30.69,
+   "piece": 3
+  },
+  {
+   "t": "perlindungan",
+   "s": 30.69,
+   "e": 31.19,
+   "piece": 3
+  },
+  {
+   "t": "sentiasa",
+   "s": 31.19,
+   "e": 31.57,
+   "piece": 3
+  },
+  {
+   "t": "ada.",
+   "s": 31.57,
+   "e": 31.83,
+   "piece": 3
+  },
+  {
+   "t": "Dan",
+   "s": 32.19,
+   "e": 32.35,
+   "piece": 4
+  },
+  {
+   "t": "kali",
+   "s": 32.35,
+   "e": 32.53,
+   "piece": 4
+  },
+  {
+   "t": "ini",
+   "s": 32.53,
+   "e": 32.81,
+   "piece": 4
+  },
+  {
+   "t": "kita",
+   "s": 32.81,
+   "e": 33.75,
+   "piece": 4
+  },
+  {
+   "t": "berunding",
+   "s": 33.75,
+   "e": 34.13,
+   "piece": 4
+  },
+  {
+   "t": "dengan PAS",
+   "s": 34.13,
+   "e": 34.71,
+   "piece": 4
+  },
+  {
+   "t": "dan",
+   "s": 34.71,
+   "e": 35.01,
+   "piece": 4
+  },
+  {
+   "t": "insyaAllah",
+   "s": 35.01,
+   "e": 35.55,
+   "piece": 4
+  },
+  {
+   "t": "kita",
+   "s": 35.55,
+   "e": 35.85,
+   "piece": 4
+  },
+  {
+   "t": "mengharapkan",
+   "s": 35.85,
+   "e": 36.25,
+   "piece": 4
+  },
+  {
+   "t": "muafakat",
+   "s": 36.47,
+   "e": 37.11,
+   "piece": 4
+  },
+  {
+   "t": "yang",
+   "s": 37.11,
+   "e": 37.87,
+   "piece": 4
+  },
+  {
+   "t": "paling",
+   "s": 37.87,
+   "e": 38.25,
+   "piece": 4
+  },
+  {
+   "t": "baik",
+   "s": 38.25,
+   "e": 38.65,
+   "piece": 4
+  },
+  {
+   "t": "dalam",
+   "s": 38.65,
+   "e": 38.91,
+   "piece": 4
+  },
+  {
+   "t": "sejarah",
+   "s": 38.91,
+   "e": 39.53,
+   "piece": 4
+  },
+  {
+   "t": "Malaysia",
+   "s": 39.53,
+   "e": 40.05,
+   "piece": 4
+  },
+  {
+   "t": "insyaAllah",
+   "s": 40.05,
+   "e": 40.81,
+   "piece": 4
+  },
+  {
+   "t": "di",
+   "s": 40.81,
+   "e": 41.73,
+   "piece": 4
+  },
+  {
+   "t": "mana",
+   "s": 41.73,
+   "e": 41.89,
+   "piece": 4
+  },
+  {
+   "t": "kita",
+   "s": 41.89,
+   "e": 42.19,
+   "piece": 4
+  },
+  {
+   "t": "berhadapan",
+   "s": 42.19,
+   "e": 42.85,
+   "piece": 4
+  },
+  {
+   "t": "dengan",
+   "s": 42.85,
+   "e": 43.25,
+   "piece": 4
+  },
+  {
+   "t": "sikap",
+   "s": 43.25,
+   "e": 43.95,
+   "piece": 4
+  },
+  {
+   "t": "dan",
+   "s": 43.95,
+   "e": 44.91,
+   "piece": 4
+  },
+  {
+   "t": "tindakan",
+   "s": 44.91,
+   "e": 45.57,
+   "piece": 4
+  },
+  {
+   "t": "parti",
+   "s": 45.57,
+   "e": 46.73,
+   "piece": 4
+  },
+  {
+   "t": "yang",
+   "s": 46.73,
+   "e": 47.41,
+   "piece": 4
+  },
+  {
+   "t": "rakan",
+   "s": 47.41,
+   "e": 48.07,
+   "piece": 4
+  },
+  {
+   "t": "kita",
+   "s": 48.07,
+   "e": 48.47,
+   "piece": 4
+  },
+  {
+   "t": "dan",
+   "s": 48.47,
+   "e": 48.67,
+   "piece": 4
+  },
+  {
+   "t": "kerajaan",
+   "s": 48.67,
+   "e": 49.37,
+   "piece": 4
+  },
+  {
+   "t": "yang",
+   "s": 49.37,
+   "e": 50.35,
+   "piece": 4
+  },
+  {
+   "t": "bagi",
+   "s": 50.35,
+   "e": 50.65,
+   "piece": 4
+  },
+  {
+   "t": "kita",
+   "s": 50.65,
+   "e": 50.89,
+   "piece": 4
+  },
+  {
+   "t": "sangat-sangat",
+   "s": 50.89,
+   "e": 51.83,
+   "piece": 4
+  },
+  {
+   "t": "menyakitkan",
+   "s": 52.19,
+   "e": 52.93,
+   "piece": 5
+  },
+  {
+   "t": "hati.",
+   "s": 52.93,
+   "e": 53.33,
+   "piece": 5
+  },
+  {
+   "t": "Itu",
+   "s": 53.41,
+   "e": 53.73,
+   "piece": 5
+  },
+  {
+   "t": "bahasa",
+   "s": 53.73,
+   "e": 54.01,
+   "piece": 5
+  },
+  {
+   "t": "sakit",
+   "s": 54.01,
+   "e": 54.27,
+   "piece": 5
+  },
+  {
+   "t": "sangat",
+   "s": 54.27,
+   "e": 54.49,
+   "piece": 5
+  },
+  {
+   "t": "mudah",
+   "s": 54.49,
+   "e": 54.87,
+   "piece": 5
+  },
+  {
+   "t": "lah",
+   "s": 54.87,
+   "e": 54.99,
+   "piece": 5
+  },
+  {
+   "t": "menyakitkan",
+   "s": 54.99,
+   "e": 55.61,
+   "piece": 5
+  },
+  {
+   "t": "hati.",
+   "s": 55.61,
+   "e": 55.97,
+   "piece": 5
+  },
+  {
+   "t": "Dalam",
+   "s": 56.33,
+   "e": 56.7,
+   "piece": 6
+  },
+  {
+   "t": "keadaan",
+   "s": 56.7,
+   "e": 56.98,
+   "piece": 6
+  },
+  {
+   "t": "kita",
+   "s": 56.98,
+   "e": 57.22,
+   "piece": 6
+  },
+  {
+   "t": "masih",
+   "s": 57.22,
+   "e": 57.56,
+   "piece": 6
+  },
+  {
+   "t": "bersama",
+   "s": 57.56,
+   "e": 57.92,
+   "piece": 6
+  },
+  {
+   "t": "dengan",
+   "s": 57.92,
+   "e": 58.04,
+   "piece": 6
+  },
+  {
+   "t": "kerajaan",
+   "s": 58.04,
+   "e": 58.72,
+   "piece": 6
+  },
+  {
+   "t": "dipermainkan",
+   "s": 59.08,
+   "e": 59.82,
+   "piece": 7
+  },
+  {
+   "t": "bekas",
+   "s": 59.82,
+   "e": 60.22,
+   "piece": 7
+  },
+  {
+   "t": "pimpinan",
+   "s": 60.22,
+   "e": 60.86,
+   "piece": 7
+  },
+  {
+   "t": "barisan",
+   "s": 60.86,
+   "e": 61.22,
+   "piece": 7
+  },
+  {
+   "t": "nasional",
+   "s": 61.22,
+   "e": 61.74,
+   "piece": 7
+  },
+  {
+   "t": "dan",
+   "s": 61.74,
+   "e": 62.88,
+   "piece": 7
+  },
+  {
+   "t": "mempermainkan",
+   "s": 62.88,
+   "e": 63.54,
+   "piece": 7
+  },
+  {
+   "t": "pula",
+   "s": 63.54,
+   "e": 63.88,
+   "piece": 7
+  },
+  {
+   "t": "titah",
+   "s": 63.88,
+   "e": 64.46,
+   "piece": 7
+  },
+  {
+   "t": "yang",
+   "s": 64.46,
+   "e": 64.64,
+   "piece": 7
+  },
+  {
+   "t": "Dipertuan",
+   "s": 64.64,
+   "e": 65.1,
+   "piece": 7
+  },
+  {
+   "t": "agung",
+   "s": 65.1,
+   "e": 65.56,
+   "piece": 7
+  },
+  {
+   "t": "bila",
+   "s": 65.56,
+   "e": 66.02,
+   "piece": 7
+  },
+  {
+   "t": "Tuanku",
+   "s": 66.02,
+   "e": 66.26,
+   "piece": 7
+  },
+  {
+   "t": "keluarkan",
+   "s": 66.46,
+   "e": 67.16,
+   "piece": 7
+  },
+  {
+   "t": "titah",
+   "s": 67.16,
+   "e": 67.84,
+   "piece": 7
+  },
+  {
+   "t": "ini",
+   "s": 67.84,
+   "e": 68.46,
+   "piece": 7
+  },
+  {
+   "t": "suatu",
+   "s": 68.46,
+   "e": 68.9,
+   "piece": 7
+  },
+  {
+   "t": "keingkaran",
+   "s": 68.9,
+   "e": 69.82,
+   "piece": 7
+  },
+  {
+   "t": "atau",
+   "s": 69.82,
+   "e": 70.2,
+   "piece": 7
+  },
+  {
+   "t": "bahasa",
+   "s": 70.2,
+   "e": 70.68,
+   "piece": 7
+  },
+  {
+   "t": "yang",
+   "s": 70.68,
+   "e": 70.82,
+   "piece": 7
+  },
+  {
+   "t": "lagi",
+   "s": 70.82,
+   "e": 71.0,
+   "piece": 7
+  },
+  {
+   "t": "cantiknya",
+   "s": 71.0,
+   "e": 71.58,
+   "piece": 7
+  },
+  {
+   "t": "derhaka.",
+   "s": 71.58,
+   "e": 72.1,
+   "piece": 7
+  },
+  {
+   "t": "Jadi",
+   "s": 72.46,
+   "e": 72.88,
+   "piece": 8
+  },
+  {
+   "t": "kalau",
+   "s": 72.88,
+   "e": 73.2,
+   "piece": 8
+  },
+  {
+   "t": "ditanya",
+   "s": 73.2,
+   "e": 73.62,
+   "piece": 8
+  },
+  {
+   "t": "soalan",
+   "s": 73.62,
+   "e": 73.98,
+   "piece": 8
+  },
+  {
+   "t": "tadi",
+   "s": 73.98,
+   "e": 74.26,
+   "piece": 8
+  },
+  {
+   "t": "apa",
+   "s": 74.26,
+   "e": 74.62,
+   "piece": 8
+  },
+  {
+   "t": "special?",
+   "s": 74.62,
+   "e": 75.04,
+   "piece": 8
+  },
+  {
+   "t": "Special",
+   "s": 75.36,
+   "e": 76.2,
+   "piece": 8
+  },
+  {
+   "t": "pertamanya",
+   "s": 76.2,
+   "e": 76.96,
+   "piece": 8
+  },
+  {
+   "t": "timing.",
+   "s": 76.96,
+   "e": 77.54,
+   "piece": 8
+  },
+  {
+   "t": "Waktu",
+   "s": 78.32,
+   "e": 79.16,
+   "piece": 8
+  },
+  {
+   "t": "yang",
+   "s": 79.16,
+   "e": 79.34,
+   "piece": 8
+  },
+  {
+   "t": "kita",
+   "s": 79.34,
+   "e": 79.54,
+   "piece": 8
+  },
+  {
+   "t": "beri.",
+   "s": 79.54,
+   "e": 79.84,
+   "piece": 8
+  },
+  {
+   "t": "Waktu",
+   "s": 80.48,
+   "e": 81.32,
+   "piece": 8
+  },
+  {
+   "t": "yang",
+   "s": 81.32,
+   "e": 81.56,
+   "piece": 8
+  },
+  {
+   "t": "sangat",
+   "s": 81.56,
+   "e": 81.76,
+   "piece": 8
+  },
+  {
+   "t": "menarik",
+   "s": 81.76,
+   "e": 82.24,
+   "piece": 8
+  },
+  {
+   "t": "di",
+   "s": 82.24,
+   "e": 82.5,
+   "piece": 8
+  },
+  {
+   "t": "saat",
+   "s": 82.5,
+   "e": 82.74,
+   "piece": 8
+  },
+  {
+   "t": "mana",
+   "s": 82.74,
+   "e": 83.14,
+   "piece": 8
+  },
+  {
+   "t": "Pakatan",
+   "s": 83.14,
+   "e": 83.68,
+   "piece": 8
+  },
+  {
+   "t": "Harapan",
+   "s": 83.68,
+   "e": 84.02,
+   "piece": 8
+  },
+  {
+   "t": "pun",
+   "s": 84.02,
+   "e": 84.2,
+   "piece": 8
+  },
+  {
+   "t": "sedang",
+   "s": 84.2,
+   "e": 84.46,
+   "piece": 8
+  },
+  {
+   "t": "pecah",
+   "s": 84.46,
+   "e": 84.94,
+   "piece": 8
+  },
+  {
+   "t": "timbulnya",
+   "s": 84.94,
+   "e": 85.6,
+   "piece": 8
+  },
+  {
+   "t": "parti",
+   "s": 85.6,
+   "e": 85.84,
+   "piece": 8
+  },
+  {
+   "t": "yang",
+   "s": 85.84,
+   "e": 86.14,
+   "piece": 8
+  },
+  {
+   "t": "namanya",
+   "s": 86.14,
+   "e": 86.56,
+   "piece": 8
+  },
+  {
+   "t": "kancil",
+   "s": 86.56,
+   "e": 87.08,
+   "piece": 8
+  },
+  {
+   "t": "bersama",
+   "s": 87.08,
+   "e": 88.0,
+   "piece": 8
+  },
+  {
+   "t": "atau",
+   "s": 88.0,
+   "e": 88.96,
+   "piece": 8
+  },
+  {
+   "t": "logonya",
+   "s": 88.96,
+   "e": 89.62,
+   "piece": 8
+  },
+  {
+   "t": "kancil",
+   "s": 89.62,
+   "e": 90.14,
+   "piece": 8
+  },
+  {
+   "t": "yang",
+   "s": 90.14,
+   "e": 90.62,
+   "piece": 8
+  },
+  {
+   "t": "akan",
+   "s": 90.62,
+   "e": 90.94,
+   "piece": 8
+  },
+  {
+   "t": "mengganggu",
+   "s": 90.94,
+   "e": 91.62,
+   "piece": 8
+  },
+  {
+   "t": "kemenangan",
+   "s": 91.62,
+   "e": 92.3,
+   "piece": 8
+  },
+  {
+   "t": "PH",
+   "s": 92.3,
+   "e": 93.2,
+   "piece": 8
+  },
+  {
+   "t": "atau",
+   "s": 93.2,
+   "e": 93.72,
+   "piece": 8
+  },
+  {
+   "t": "mengganggu",
+   "s": 93.72,
+   "e": 94.26,
+   "piece": 8
+  },
+  {
+   "t": "kekalahan",
+   "s": 94.26,
+   "e": 94.94,
+   "piece": 8
+  },
+  {
+   "t": "PH",
+   "s": 94.94,
+   "e": 95.28,
+   "piece": 8
+  },
+  {
+   "t": "yang",
+   "s": 95.28,
+   "e": 95.9,
+   "piece": 8
+  },
+  {
+   "t": "sudah",
+   "s": 95.9,
+   "e": 96.2,
+   "piece": 8
+  },
+  {
+   "t": "sediakanlah",
+   "s": 96.2,
+   "e": 96.82,
+   "piece": 8
+  },
+  {
+   "t": "lagi",
+   "s": 96.82,
+   "e": 97.0,
+   "piece": 8
+  },
+  {
+   "t": "kalahlah",
+   "s": 97.0,
+   "e": 97.38,
+   "piece": 8
+  },
+  {
+   "t": "insyaAllah.",
+   "s": 97.38,
+   "e": 97.76,
+   "piece": 8
+  },
+  {
+   "t": "Jadi",
+   "s": 97.98,
+   "e": 98.62,
+   "piece": 8
+  },
+  {
+   "t": "kita",
+   "s": 98.62,
+   "e": 98.84,
+   "piece": 8
+  },
+  {
+   "t": "doakan",
+   "s": 98.84,
+   "e": 99.28,
+   "piece": 8
+  },
+  {
+   "t": "daripada",
+   "s": 99.28,
+   "e": 99.74,
+   "piece": 8
+  },
+  {
+   "t": "muafakat",
+   "s": 99.74,
+   "e": 100.2,
+   "piece": 8
+  },
+  {
+   "t": "kita",
+   "s": 100.2,
+   "e": 100.54,
+   "piece": 8
+  },
+  {
+   "t": "ini",
+   "s": 100.54,
+   "e": 100.78,
+   "piece": 8
+  },
+  {
+   "t": "memberikan",
+   "s": 100.78,
+   "e": 101.68,
+   "piece": 8
+  },
+  {
+   "t": "kebaikan",
+   "s": 101.68,
+   "e": 102.3,
+   "piece": 8
+  },
+  {
+   "t": "untuk",
+   "s": 102.3,
+   "e": 102.54,
+   "piece": 8
+  },
+  {
+   "t": "masyarakat",
+   "s": 102.54,
+   "e": 102.94,
+   "piece": 8
+  },
+  {
+   "t": "Islam",
+   "s": 102.94,
+   "e": 103.06,
+   "piece": 8
+  },
+  {
+   "t": "dan",
+   "s": 103.06,
+   "e": 103.92,
+   "piece": 8
+  },
+  {
+   "t": "seterusnya",
+   "s": 103.92,
+   "e": 104.52,
+   "piece": 8
+  },
+  {
+   "t": "bukan",
+   "s": 104.52,
+   "e": 104.8,
+   "piece": 8
+  },
+  {
+   "t": "hanya",
+   "s": 104.8,
+   "e": 105.08,
+   "piece": 8
+  },
+  {
+   "t": "untuk",
+   "s": 105.08,
+   "e": 105.36,
+   "piece": 8
+  },
+  {
+   "t": "Negeri",
+   "s": 105.36,
+   "e": 106.0,
+   "piece": 8
+  },
+  {
+   "t": "Melaka",
+   "s": 106.0,
+   "e": 106.88,
+   "piece": 8
+  },
+  {
+   "t": "untuk",
+   "s": 106.88,
+   "e": 107.8,
+   "piece": 8
+  },
+  {
+   "t": "negara",
+   "s": 107.8,
+   "e": 108.54,
+   "piece": 8
+  },
+  {
+   "t": "Malaysia",
+   "s": 108.54,
+   "e": 108.96,
+   "piece": 8
+  },
+  {
+   "t": "nanti",
+   "s": 108.96,
+   "e": 109.28,
+   "piece": 8
+  },
+  {
+   "t": "insyaAllah.",
+   "s": 109.28,
+   "e": 109.8,
+   "piece": 8
+  }
+ ],
+ "facts": [
+  {
+   "type": "keyword",
+   "at": "UMNO telah ada keputusan",
+   "icon": "ballot",
+   "label": "Pendirian UMNO",
+   "text": "UMNO TELAH ADA|[KEPUTUSAN]",
+   "sub": "Cuma tidak tunjuk pertembungan awal — tetap terbuka",
+   "dur": 8,
+   "start": 4.34
+  },
+  {
+   "type": "quote",
+   "at": "pintu jangan",
+   "after": 10,
+   "label": "Pegangan rundingan",
+   "text": "Pintu jangan tutup [rapat-rapat],|jangan buka [luas-luas]",
+   "who": "Pandangan Mursyidul Am PAS, seperti disebut Datuk Seri Zahid",
+   "src": "Menurut ucapan penceramah",
+   "dur": 9,
+   "start": 25.39
+  },
+  {
+   "type": "keyword",
+   "at": "titah",
+   "icon": "crown",
+   "label": "Menurut penceramah",
+   "text": "TITAH|[YANG DIPERTUAN AGONG]",
+   "sub": "Dipermainkan — “satu keingkaran”",
+   "src": "Dakwaan penceramah, bukan fakta yang disahkan",
+   "dur": 7,
+   "start": 63.76
+  },
+  {
+   "type": "keyword",
+   "at": "pertamanya timing",
+   "icon": "clock",
+   "label": "Apa yang istimewa?",
+   "text": "PERTAMA:|[TIMING]",
+   "sub": "Waktu yang sangat menarik",
+   "dur": 6,
+   "start": 76.08
+  },
+  {
+   "type": "keyword",
+   "at": "Pakatan Harapan pun sedang pecah",
+   "icon": "warning",
+   "label": "Menurut penceramah",
+   "text": "PH|[SEDANG PECAH]",
+   "sub": "Timbul parti berlogo kancil yang akan mengganggu PH",
+   "dur": 8,
+   "start": 83.02
+  }
+ ],
+ "conclusion": {
+  "at": "Jadi kita doakan",
+  "kicker": "Harapan penceramah",
+  "text": "BUKAN HANYA MELAKA|[UNTUK MALAYSIA]",
+  "start": 97.88,
+  "dur": 10.33
+ },
+ "topics": [
+  {
+   "label": "Muafakat UMNO–PAS",
+   "start": 13.950000000000001
+  },
+  {
+   "at": "pertamanya timing",
+   "label": "Faktor Timing",
+   "start": 76.1
+  }
+ ],
+ "cues": [
+  [
+   "impact-bass-1.mp3",
+   0.05,
+   0.55
+  ],
+  [
+   "whoosh-cinematic.mp3",
+   3.399999999999989,
+   0.5
+  ],
+  [
+   "whoosh-short.mp3",
+   4.55,
+   0.35
+  ],
+  [
+   "whoosh-short.mp3",
+   4.34,
+   0.28
+  ],
+  [
+   "whoosh-short.mp3",
+   25.39,
+   0.28
+  ],
+  [
+   "whoosh-short.mp3",
+   63.76,
+   0.28
+  ],
+  [
+   "whoosh-short.mp3",
+   76.08,
+   0.28
+  ],
+  [
+   "whoosh-short.mp3",
+   83.02,
+   0.28
+  ],
+  [
+   "impact-bass-2.mp3",
+   97.88,
+   0.5
+  ],
+  [
+   "whoosh-cinematic.mp3",
+   107.61,
+   0.4
+  ]
+ ],
+ "hook_end": 3.9499999999999886
+}
