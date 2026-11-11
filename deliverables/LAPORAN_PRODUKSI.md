@@ -828,6 +828,7 @@ Transkripsi: Whisper large-v3-turbo (Bahasa Melayu) dengan semakan angka utama m
 | `output/VIDEO_01_MUAFAKAT_UMNO_PAS.mp4` | 117.0 s |
 | `output/VIDEO_02_MUAFAKAT_UMNO_PAS.mp4` | 111.1 s |
 | `output/VIDEO_03_HARAM_JATUHKAN_KERAJAAN_ADIL.mp4` | 92.3 s |
+| `output/VIDEO_04_LABEL_KHAWARIJ.mp4` | 107.8 s |
 | `output/VIDEO_05_TITAH_TUANKU_DAN_KERAJAAN.mp4` | 61.4 s |
 | `output/VIDEO_06_DINAMIKA_POLITIK.mp4` | 93.7 s |
 | `output/VIDEO_07_JANGAN_BAKAR_JAMBATAN.mp4` | 65.3 s |
@@ -836,6 +837,9 @@ Transkripsi: Whisper large-v3-turbo (Bahasa Melayu) dengan semakan angka utama m
 | `output/VIDEO_10_PERPADUAN_KERANA_AGAMA.mp4` | 68.1 s |
 | `output/VIDEO_11_TABUNG_HAJI_DAN_ISTITAAH.mp4` | 79.8 s |
 | `output/VIDEO_12_JOHOR_N_SEMBILAN_MELAKA.mp4` | 99.3 s |
+| `output/VIDEO_13_PILIH_PEMERINTAH_DIUTAMAKAN.mp4` | 119.3 s |
+| `output/VIDEO_14_LIMA_MASLAHAH_MENILAI_PEMERINTAH.mp4` | 96.8 s |
+| `output/VIDEO_15_ISLAM_AGAMA_BAGI_PERSEKUTUAN.mp4` | 109.6 s |
 | `output/VIDEO_16_4_6_JUTA_AHLI_UMNO_PAS.mp4` | 94.3 s |
 | `output/VIDEO_17_MUAFAKAT_2019_DAN_JAWATAN_MENTERI.mp4` | 101.4 s |
 | `output/VIDEO_18_DATA_PRU_ALOR_GAJAH_DAN_HANG_TUAH_JAYA.mp4` | 81.1 s |
@@ -847,5 +851,6 @@ Transkripsi: Whisper large-v3-turbo (Bahasa Melayu) dengan semakan angka utama m
 | `output/VIDEO_24_MENYAMBUNG_LEGASI_BN.mp4` | 107.0 s |
 | `output/VIDEO_25_KENAPA_UMNO_PAS_BUKAN_SEMUA.mp4` | 114.1 s |
 | `output/VIDEO_26_PENGAMPUNAN_HAK_SEMUA.mp4` | 92.6 s |
+| `output/VIDEO_27_BILA_PRU_CADANGAN_BULAN_11.mp4` | 109.0 s |
 
 Format: MP4 H.264 1080×1920 (9:16) 30 fps, audio AAC 48 kHz stereo.
