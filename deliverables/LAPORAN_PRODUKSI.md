@@ -839,5 +839,13 @@ Transkripsi: Whisper large-v3-turbo (Bahasa Melayu) dengan semakan angka utama m
 | `output/VIDEO_16_4_6_JUTA_AHLI_UMNO_PAS.mp4` | 94.3 s |
 | `output/VIDEO_17_MUAFAKAT_2019_DAN_JAWATAN_MENTERI.mp4` | 101.4 s |
 | `output/VIDEO_18_DATA_PRU_ALOR_GAJAH_DAN_HANG_TUAH_JAYA.mp4` | 81.1 s |
+| `output/VIDEO_19_POLITIK_PERSEPSI_DAN_TABUNG_HAJI.mp4` | 68.1 s |
+| `output/VIDEO_20_PERTEMBUNGAN_PAS_UMNO_DAN_KELUARGA.mp4` | 90.8 s |
+| `output/VIDEO_21_14_SEPTEMBER_2019_DI_WTC.mp4` | 85.5 s |
+| `output/VIDEO_22_N_15_PENGKALAN_BATU.mp4` | 92.2 s |
+| `output/VIDEO_23_KENAPA_BN_SERTAI_KERAJAAN_PERPADUAN.mp4` | 106.3 s |
+| `output/VIDEO_24_MENYAMBUNG_LEGASI_BN.mp4` | 107.0 s |
+| `output/VIDEO_25_KENAPA_UMNO_PAS_BUKAN_SEMUA.mp4` | 114.1 s |
+| `output/VIDEO_26_PENGAMPUNAN_HAK_SEMUA.mp4` | 92.6 s |
 
 Format: MP4 H.264 1080×1920 (9:16) 30 fps, audio AAC 48 kHz stereo.
