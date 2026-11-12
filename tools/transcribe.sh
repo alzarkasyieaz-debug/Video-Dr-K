@@ -20,7 +20,7 @@ case "$1" in
   full)
     model small; mkdir -p "$3"
     ffmpeg -nostdin -v error -y -i "$2" -vn -ac 1 -ar 16000 "$3/full.wav"
-    "$CLI" -m "$W/models/ggml-small.bin" -f "$3/full.wav" -l ms -t "$(nproc)" -osrt -of "$3/full" -pp
+    "$CLI" -m "$W/models/ggml-small.bin" -f "$3/full.wav" -l ms -t "$(nproc)" -mc 0 -osrt -of "$3/full" -pp
     ;;
   clip)
     model medium; tmp=$(mktemp --suffix .wav)

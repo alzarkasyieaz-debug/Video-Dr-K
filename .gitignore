@@ -6,3 +6,5 @@ renders/
 exports/.render_*.log
 exports/.*hf-transaction*/
 exports/work-*/
+source/
+work/
