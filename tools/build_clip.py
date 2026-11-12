@@ -12,6 +12,7 @@ import json, os, shutil, subprocess, sys, html, re, argparse
 
 COVER_END = 2.6   # cover (poster) shows 0 -> 2.6 s; frame 0 is the thumbnail
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 W, H = 1080, 1920
 # speaker face in the source frame (432x768) scaled to 1080x1920
 FACE_X, FACE_Y = 595, 1088
@@ -113,6 +114,10 @@ def build(spec, source, media=True):
     last_word_end = max(w["end"] for w in words)
     speech_dur = round(min(end - start, last_word_end + 0.6), 2)
     D = round(min(120.0, max(min(speech_dur + 2.0, 120.0), speech_dur + 1.0)), 2)   # short outro, total kept <= 120 s
+    style_b = spec.get("style") == "B"
+    if style_b:   # Konsep B: longer interactive CTA outro
+        import style_b as SB
+        D = round(min(120.0, speech_dur + SB.OUTRO_B), 2)
 
     if media:
         clip = os.path.join(out, "assets", "clip.mp4")
@@ -377,6 +382,8 @@ def build(spec, source, media=True):
   </script>
 </template>
 """
+    if style_b:
+        overlay = SB.overlay(spec, speech_dur, D, COVER_END, title_html, FONT_FACES)
     open(os.path.join(out, "compositions", "overlay.html"), "w").write(overlay)
 
     # ---------- captions ----------
@@ -390,16 +397,25 @@ def build(spec, source, media=True):
         spans = []
         for wi, w in enumerate(g):
             k = " kw" if norm(w["text"]) in kw else ""
-            spans.append(f'<span class="w{k}" id="c{gi}w{wi}">{esc(w["text"])}</span>')
+            hl = '<i class="hl"></i>' if (style_b and k) else ""
+            spans.append(f'<span class="w{k}" id="c{gi}w{wi}">{hl}{esc(w["text"])}</span>')
         gh.append(f'      <div class="grp" id="c{gi}"><div class="line">{" ".join(spans)}</div></div>')
         gj.append(f'tl.fromTo("#c{gi}", {{opacity:0, y:18}}, {{opacity:1, y:0, duration:.14, ease:"power2.out"}}, {gs:.3f});')
         for wi, w in enumerate(g):
             ws = max(gs, w["start"])
             we = g[wi + 1]["start"] if wi + 1 < len(g) else ge
             pop = 1.2 if norm(w["text"]) in kw else 1.1
-            gj.append(f'tl.set("#c{gi}w{wi}", {{color:"#FFE16B"}}, {ws:.3f});')
-            gj.append(f'tl.fromTo("#c{gi}w{wi}", {{scale:1}}, {{scale:{pop}, duration:.09, ease:"power2.out", yoyo:true, repeat:1}}, {ws:.3f});')
-            gj.append(f'tl.set("#c{gi}w{wi}", {{color:"#FFFFFF"}}, {max(ws + 0.05, we):.3f});')
+            is_kw = norm(w["text"]) in kw
+            if style_b and is_kw:   # Konsep B: gold pill wipes in behind key words
+                gj.append(f'tl.set("#c{gi}w{wi}", {{color:"#081726", webkitTextStrokeColor:"#FFE16B"}}, {ws:.3f});')
+                gj.append(f'tl.fromTo("#c{gi}w{wi} .hl", {{scaleX:0, opacity:1}}, {{scaleX:1, opacity:1, duration:.16, ease:"power3.out"}}, {ws:.3f});')
+                gj.append(f'tl.fromTo("#c{gi}w{wi}", {{scale:1, rotation:0}}, {{scale:1.16, rotation:-2, duration:.12, ease:"power2.out", yoyo:true, repeat:1}}, {ws:.3f});')
+                gj.append(f'tl.set("#c{gi}w{wi}", {{color:"#FFE16B", webkitTextStrokeColor:"#000000"}}, {max(ws + 0.05, we):.3f});')
+                gj.append(f'tl.to("#c{gi}w{wi} .hl", {{opacity:0, duration:.12}}, {max(ws + 0.05, we):.3f});')
+            else:
+                gj.append(f'tl.set("#c{gi}w{wi}", {{color:"#FFE16B"}}, {ws:.3f});')
+                gj.append(f'tl.fromTo("#c{gi}w{wi}", {{scale:1}}, {{scale:{pop}, duration:.09, ease:"power2.out", yoyo:true, repeat:1}}, {ws:.3f});')
+                gj.append(f'tl.set("#c{gi}w{wi}", {{color:"#FFFFFF"}}, {max(ws + 0.05, we):.3f});')
         gj.append(f'tl.to("#c{gi}", {{opacity:0, duration:.1, ease:"power2.in"}}, {max(ge - 0.1, gs + 0.145):.3f});')
         ge = max(ge, gs + 0.25)
         gj.append(f'tl.set("#c{gi}", {{opacity:0, visibility:"hidden"}}, {ge:.3f});')
@@ -415,12 +431,18 @@ def build(spec, source, media=True):
       line-height: 1.16; color: #fff; text-transform: none; }}
     .w {{ display: inline-block; -webkit-text-stroke: 12px #000; paint-order: stroke fill;
       text-shadow: 0 6px 18px rgba(0,0,0,.65); transform-origin: 50% 70%; }}
+    .w.kw {{ position: relative; }}
+    .hl {{ position: absolute; left: -10px; right: -10px; top: 4px; bottom: -2px; z-index: -1; border-radius: 14px;
+      background: linear-gradient(90deg, #FFE16B, #D5B36A); transform-origin: 0 50%; transform: scaleX(0); box-shadow: 0 6px 18px rgba(0,0,0,.5); }}
   </style>
   <div id="root" data-composition-id="captions" data-width="{W}" data-height="{H}">
+    <div id="cap-wrap" style="position:absolute;inset:0">
 {chr(10).join(gh)}
+    </div>
   </div>
   <script>
     const tl = gsap.timeline({{ paused: true }});
+    {f'tl.fromTo("#cap-wrap", {{opacity:0}}, {{opacity:1, duration:.25}}, {COVER_END + 0.05});' if style_b else ''}
     {chr(10).join('    ' + c for c in gj).strip()}
     window.__timelines["captions"] = tl;
   </script>
