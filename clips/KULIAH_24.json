@@ -1,0 +1,81 @@
+{
+ "id": "24",
+ "slug": "PEMBUNUH_DAN_YANG_DIBUNUH_MASUK_SYURGA",
+ "category": "HADIS & SIRAH",
+ "title_lines": [
+  [
+   {
+    "t": "PEMBUNUH"
+   }
+  ],
+  [
+   {
+    "t": "& YANG DIBUNUH"
+   }
+  ],
+  [
+   {
+    "t": "MASUK SYURGA?",
+    "gold": true
+   }
+  ]
+ ],
+ "header_html": "PEMBUNUH &amp; YANG DIBUNUH <span class=\"g\">MASUK SYURGA?</span>",
+ "cover_kicker": "KULIAH SIRAH • FATHU MAKKAH",
+ "cover_sub": "Pondok Pengajian Darul Mubarak",
+ "speaker": "YB Ustaz Muhammad Ismi Mat Taib",
+ "speaker_role": "Pondok Pengajian Darul Mubarak • Sirah Fathu Makkah",
+ "series": "KULIAH SIRAH FATHU MAKKAH",
+ "face": [
+  550,
+  640
+ ],
+ "src_crop": [
+  146,
+  0,
+  788,
+  1400
+ ],
+ "music_volume": 0.1,
+ "whisper": "clips/whisper/w24.json",
+ "window": 2760,
+ "start": 2767.3,
+ "end": 2851.9,
+ "arabic": [
+  {
+   "ar": "يَضْحَكُ اللَّهُ إِلَى رَجُلَيْنِ يَقْتُلُ أَحَدُهُمَا الْآخَرَ، يَدْخُلَانِ الْجَنَّةَ",
+   "ms": "Allah 'ketawa' kepada dua orang lelaki; salah seorang membunuh yang lain, namun kedua-duanya masuk syurga.",
+   "ref": "HR AL-BUKHARI & MUSLIM",
+   "at": 13.6,
+   "dur": 14.0
+  }
+ ],
+ "points": [
+  {
+   "label": "WAHSYI",
+   "text": "Pembunuh Saidina Hamzah di Uhud — akhirnya memeluk Islam",
+   "at": 30.0,
+   "dur": 13.0
+  },
+  {
+   "label": "PENGAJARAN",
+   "text": "Islam membuka peluang — jangan kita tutup pintu taubat orang",
+   "at": 68.5,
+   "dur": 14.5
+  }
+ ],
+ "keywords": [
+  "syurga",
+  "Islam",
+  "Hamzah",
+  "Wahsyi",
+  "pembunuh",
+  "bunuh",
+  "peluang",
+  "syahid"
+ ],
+ "text": "Nabi ni sangat berlapang dada. Orang yang bunuh bapa saudara dia pun dia terima. Bila masuk Islamnya Wahsyi, Nabi kata apa? Allahu yadhak. Allah ketawa, kata Nabi. Maksudnya satu perkara yang lucu. Sahabat-sahabat bertanya, apa dia wahai Rasulullah? Kenapa? Al-qatil wal maqtul fil jannah. Pembunuh dan yang kena bunuh masuk syurga, kata Nabi. Siapa dia pembunuh? Wahsyi yang bunuh Saidina Hamzah dalam peperangan Uhud. Kenapa? Kerana dia masuk Islam akhirnya. Yang kena bunuh siapa? Saidina Hamzah. Pun Islam juga. Sahabat Nabi juga, sepupu Nabi, bapa saudara Nabi. Hamzah. Dah tentulah syurga sebab dia mati syahid di Medan Uhud. Jadi Nabi kata, Allahu yadhak, al-qatil wal maqtul fil jannah. Allah ketawa kepada pembunuh. Pembunuh dan yang kena bunuh masuk syurga. Jadi begitu Islam ni, agama yang memberikan peluang kepada orang lain untuk masuk Islam. Jangan kita tutup peluang-peluang itu.",
+ "lecture": "ismi_fathu_makkah",
+ "style": "B",
+ "episode": 12
+}
