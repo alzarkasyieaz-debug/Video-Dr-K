@@ -1,62 +1,527 @@
 {
-"01": {"score": [24,24,18,14,8,4], "topic": "Hukum & pahala solat duduk (huraian Imam an-Nawawi)",
- "titles": ["SOLAT DUDUK: PAHALA PENUH ATAU SEPARUH?", "SOLAT FARDU SAMBIL DUDUK, SAH KE?", "BILA SOLAT DUDUK DAPAT PAHALA PENUH?", "JANGAN DUDUK DALAM SOLAT FARDU TANPA UZUR!", "SOLAT SUNAT DUDUK: SEPARUH PAHALA?"],
- "lesson": "Solat sunat sambil duduk walaupun mampu berdiri adalah sah tetapi pahalanya separuh; duduk kerana uzur tidak mengurangkan pahala; solat fardu sambil duduk sedangkan mampu berdiri tidak sah dan berdosa kerana berdiri ialah rukun.",
- "caption": "Solat duduk — bila dapat pahala penuh, bila separuh, dan bila langsung tidak sah? Huraian Imam an-Nawawi dalam Syarah Muslim menurut mazhab Syafi'i. 🤲\n\n#KuliahFiqh #FiqhSolat #SolatDuduk #MazhabSyafie #IlmuAgama #BahrulMazi",
- "refs": "Imam an-Nawawi, Syarah Sahih Muslim (seperti dibacakan daripada kitab). Hadis 'Imran bin Husain berkaitan solat duduk — HR al-Bukhari (no. 1115–1117) [semak]."},
-"02": {"score": [23,20,18,15,8,4], "topic": "Makmum masbuk: bila rakaat dikira",
- "titles": ["MASBUK: BILA DAPAT RAKAAT?", "SEMPAT RUKUK DENGAN IMAM, DAPAT RAKAAT?", "RAMAI TERSILAP TAKBIRATUL IHRAM!", "JANGAN TERUS RUKUK TANPA TAKBIRATUL IHRAM!", "MAKMUM LEWAT? INI YANG PERLU DIBUAT"],
- "lesson": "Makmum yang sempat rukuk bersama imam mendapat rakaat itu dan Fatihahnya ditanggung imam; jika imam sudah bangun daripada rukuk, rakaat itu tidak dikira. Wajib takbiratul ihram terlebih dahulu sebelum takbir untuk rukuk.",
- "caption": "Datang lewat ke saf dan imam sedang rukuk — dapat rakaat atau tidak? Dan kesilapan yang ramai buat: terus 'Allahu Akbar' rukuk tanpa takbiratul ihram. 🕌\n\n#Masbuk #FiqhSolat #SolatBerjemaah #TakbiratulIhram #KuliahAgama",
- "refs": "Huraian penceramah dalam sesi soal jawab (tiada teks hadis dipaparkan)."},
-"03": {"score": [23,23,19,15,8,4], "topic": "Pahala amalan tetap ditulis ketika sakit atau musafir",
- "titles": ["SAKIT & MUSAFIR: PAHALA AMALAN TETAP DITULIS", "SAKIT, TAPI PAHALA TETAP MENGALIR", "TAK DAPAT BUAT AMALAN BIASA? JANGAN RISAU", "RAHMAT ALLAH KETIKA KITA SAKIT", "AMALAN BIASA, PAHALA LUAR BIASA"],
- "lesson": "Apabila seseorang sakit atau bermusafir, Allah tetap mencatat pahala amalan yang biasa dilakukannya ketika sihat dan bermukim — maka istiqamahlah beramal ketika mampu.",
- "caption": "Biasa solat dhuha setiap pagi, tiba-tiba sakit atau musafir sampai tertinggal? Rasulullah ﷺ menjelaskan pahalanya tetap ditulis. Istiqamah ketika sihat, Allah jaga ketika uzur. 🤍\n\n#HadisNabi #Istiqamah #SolatDhuha #Pahala #KuliahAgama",
- "refs": "HR al-Bukhari, no. 2996 [semak]."},
-"04": {"score": [22,22,18,13,8,4], "topic": "Menahan menguap dalam solat — maksud 'fal-yakzim'",
- "titles": ["MENGUAP DALAM SOLAT? INI CARA NABI AJAR", "BILA MENGUAP, TAHAN SEDAYA MAMPU!", "APA MAKSUD 'KAZAMA' DALAM HADIS INI?", "MENGUAP & MENAHAN MARAH: APA KAITANNYA?", "ADAB KECIL YANG RAMAI TERLEPAS"],
- "lesson": "Nabi ﷺ menyuruh orang yang menguap menahannya sedaya mampu (fal-yakzim) — perkataan yang sama dengan 'al-kazimin al-ghaiz' (orang yang menahan marah); antara caranya menahan mulut daripada terbuka.",
- "caption": "Menguap ketika solat — Nabi ﷺ ajar 'fal-yakzim mastata'a': tahan sedaya yang mampu. Rupanya perkataan yang sama digunakan untuk orang yang menahan marah. 📖\n\n#AdabSolat #Menguap #HadisNabi #Tadabbur #KuliahFiqh",
- "refs": "HR at-Tirmizi, no. 370 [semak]; Surah Ali 'Imran 3:134."},
-"05": {"score": [22,22,18,14,8,4], "topic": "Menutup mulut ketika menguap dan sebabnya",
- "titles": ["KENAPA TUTUP MULUT BILA MENGUAP?", "MENGUAP TANPA TUTUP MULUT? BACA INI", "SUNNAH KECIL YANG ADA SEBAB BESAR", "TANGAN ATAU SAPU TANGAN, YANG PENTING TUTUP", "PINTU MASUK SYAITAN YANG KITA ABAIKAN"],
- "lesson": "Sunnah menutup mulut dengan tangan (atau apa sahaja seperti sapu tangan) ketika menguap, kerana Nabi ﷺ menyebut syaitan boleh masuk ketika mulut terbuka.",
- "caption": "Kenapa Rasulullah ﷺ suruh tutup mulut ketika menguap? Dengar huraiannya — dengan tangan atau sapu tangan, yang penting ditutup. ✋\n\n#Sunnah #AdabHarian #Menguap #HadisSahih #KuliahAgama",
- "refs": "HR Muslim, no. 2995 [semak]; 'Syaitan mengalir dalam diri manusia mengikut aliran darah' — HR al-Bukhari no. 2038 & Muslim no. 2175 [semak]."},
-"06": {"score": [23,22,18,14,9,4], "topic": "Berkongsi pahala walaupun terhalang oleh uzur",
- "titles": ["TERHALANG UZUR? PAHALA TETAP BERSAMA", "NIAT BAIK TAPI SAKIT? INI KHABAR GEMBIRA", "TAK PERGI PUN DAPAT PAHALA?", "KISAH SAHABAT YANG TERHALANG KERANA SAKIT", "NIAT YANG IKHLAS TIDAK SIA-SIA"],
- "lesson": "Orang yang benar-benar berniat melakukan kebaikan yang wajib tetapi terhalang oleh sakit atau uzur tetap berkongsi pahala dengan mereka yang melakukannya.",
- "caption": "Rasulullah ﷺ bersabda tentang sahabat di Madinah yang tidak ikut berjihad kerana sakit — mereka tetap bersama dalam pahala. Niat yang benar tidak sia-sia di sisi Allah. 🌿\n\n#Niat #HadisNabi #Sirah #Pahala #KuliahAgama",
- "refs": "HR Muslim, no. 1911 [semak]. Nama sahabat buta (Abdullah Ibnu Ummi Maktum) perlu disemak dengan audio."},
-"07": {"score": [23,20,18,12,8,5], "topic": "Hukum berdehem dalam solat (mazhab Syafi'i)",
- "titles": ["BERDEHEM DALAM SOLAT: BATAL ATAU TIDAK?", "TEKAK GATAL MASA SOLAT? INI HUKUMNYA", "BERDEHEM YANG BOLEH & YANG MEMBATALKAN", "SATU HURUF PUN BOLEH BATALKAN SOLAT?", "FIQH SYAFI'I: BERDEHEM KETIKA BACA FATIHAH"],
- "lesson": "Berdehem untuk melancarkan bacaan wajib seperti al-Fatihah dibolehkan kerana hajat; berdehem tanpa hajat hingga terbit dua huruf, atau satu huruf yang memberi makna, membatalkan solat.",
- "caption": "Tekak tersekat masa baca Fatihah, boleh ke berdehem? Huraian mazhab Syafi'i — bila dibolehkan dan bila membatalkan solat. 🕌\n\n#FiqhSolat #MazhabSyafie #Berdehem #HukumSolat #KuliahFiqh",
- "refs": "Huraian fiqh mazhab Syafi'i oleh penceramah (tiada teks hadis dipaparkan)."},
-"08": {"score": [21,21,18,14,8,4], "topic": "Basmalah sebagai penghadang daripada syaitan",
- "titles": ["BISMILLAH: PENGHADANG DARIPADA SYAITAN", "JANGAN LUPA BISMILLAH SEBELUM MAKAN!", "KITA TAK NAMPAK MEREKA, MEREKA NAMPAK KITA", "KENAPA BACA BISMILLAH MASUK BILIK AIR?", "ZIKIR KECIL, PERLINDUNGAN BESAR"],
- "lesson": "Zikrullah, khususnya membaca basmalah ketika makan dan masuk bilik air, ialah penghadang daripada gangguan dan pandangan syaitan yang melihat kita dari arah yang kita tidak nampak.",
- "caption": "Makan, mandi, masuk bilik air — Nabi ﷺ ajar mulakan dengan Bismillah. Syaitan melihat kita dari arah yang kita tak nampak; basmalah penghadangnya. 🛡️\n\n#Bismillah #Zikir #AdabHarian #Sunnah #KuliahAgama",
- "refs": "Surah al-A'raf 7:27; hadis basmalah ketika masuk tandas — HR at-Tirmizi, no. 606 [semak]."},
-"09": {"score": [21,22,18,13,8,4], "topic": "Jangan bersuara ketika menguap",
- "titles": ["MENGUAP SAMPAI BERSUARA? SYAITAN KETAWA!", "JANGAN 'HAAA' BILA MENGUAP!", "ADAB MENGUAP YANG RAMAI TAK TAHU", "MENGUAP MACAM LOLONGAN? JAUHI", "SUNNAH MENGUAP: TUTUP & DIAM"],
- "lesson": "Menguap datang daripada syaitan; tahanlah sedaya mampu, letakkan tangan pada mulut dan jangan bersuara 'haa' atau melolong kerana syaitan mentertawakannya.",
- "caption": "Menguap kuat-kuat sampai berbunyi 'haaa'? Rasulullah ﷺ menyebut syaitan ketawa ketika itu. Tutup mulut, jangan bersuara. 🤫\n\n#AdabMenguap #HadisBukhari #Sunnah #AdabHarian #KuliahAgama",
- "refs": "HR al-Bukhari, no. 3289 [semak]; HR Ibnu Majah, no. 968 [semak]."},
-"10": {"score": [22,21,18,15,9,4], "topic": "Doa berlindung daripada susah hati dan dukacita",
- "titles": ["SUSAH HATI & SEDIH? INI DOA NABI", "BILA SEDIH DI LUAR KAWALAN, BERGANTUNGLAH PADA ALLAH", "BEZA 'AL-HAMM' DAN 'AL-HAZAN'", "DOA HARIAN UNTUK HATI YANG GELISAH", "APA YANG KITA TAK BOLEH KAWAL, SERAHKAN PADA ALLAH"],
- "lesson": "Nabi ﷺ mengajar doa berlindung daripada al-hamm (susah hati) dan al-hazan (dukacita); apabila sesuatu di luar kawalan kita, tempat bergantung hanyalah Allah.",
- "caption": "Ada perkara yang memang di luar kawalan kita — kehilangan, musibah, kerugian. Rasulullah ﷺ ajar kita berlindung kepada Allah daripada susah hati dan dukacita. 🤲\n\n#DoaNabi #SusahHati #Tawakal #Muhasabah #KuliahAgama",
- "refs": "HR al-Bukhari, no. 6369 [semak]."},
-"11": {"score": [21,22,18,11,8,4], "topic": "Hukum menguap dalam solat dan kaedah larangan",
- "titles": ["MENGUAP DALAM SOLAT: HARAM ATAU MAKRUH?", "APA MAKSUD 'KARAHIYAH' DALAM BAB INI?", "PERKARA YANG DISANDARKAN KEPADA SYAITAN", "BELAJAR KAEDAH HUKUM DARIPADA SATU HADIS", "MAKRUH TETAP PERLU DIJAUHI"],
- "lesson": "Menguap dalam solat hukumnya makruh berdasarkan hadis riwayat at-Tirmizi; sesuatu yang disandarkan kepada syaitan menunjukkan larangan, manakala tahap haram atau makruh ditentukan oleh dalil lain.",
- "caption": "Menguap dalam solat — haram atau makruh? Belajar cara ulama membaca dalil: perkara yang disandarkan kepada syaitan menunjukkan larangan, dan tahapnya ditentukan dalil lain. 📚\n\n#UsulFiqh #FiqhSolat #HadisTirmizi #KuliahKitab #BahrulMazi",
- "refs": "HR at-Tirmizi, no. 370 [semak]."},
-"12": {"score": [19,21,18,10,8,5], "topic": "Keistimewaan Nabi ﷺ: tidak menguap; mata tidur, hati jaga",
- "titles": ["NABI ﷺ TIDAK PERNAH MENGUAP?", "KEISTIMEWAAN NABI YANG JARANG DIDENGAR", "MATANYA TIDUR, HATINYA TIDAK", "BAGAIMANA ALLAH MEMELIHARA NABI ﷺ", "SYAMAIL NABI: SATU KELEBIHAN BAGINDA"],
- "lesson": "Disebut dalam hadis mursal (Tarikh al-Bukhari) bahawa Nabi ﷺ tidak pernah menguap, dan dalam hadis sahih bahawa mata baginda tidur tetapi hatinya tidak — tanda Allah memelihara baginda daripada ruang syaitan.",
- "caption": "Tahukah anda? Dalam satu riwayat mursal disebut Nabi ﷺ tidak pernah menguap, dan dalam hadis sahih matanya tidur tetapi hatinya tidak. Antara keistimewaan baginda. 🌙\n\n#Syamail #NabiMuhammad #Sirah #HadisNabi #KuliahAgama",
- "refs": "Riwayat mursal dalam at-Tarikh al-Kabir oleh al-Bukhari (status mursal disebut penceramah) [semak]; 'tanamu 'ainahu wa la yanamu qalbuh' — HR al-Bukhari, no. 3569 [semak]."}
+ "01": {
+  "score": [
+   24,
+   24,
+   18,
+   14,
+   8,
+   4
+  ],
+  "topic": "Hukum & pahala solat duduk (huraian Imam an-Nawawi)",
+  "titles": [
+   "SOLAT DUDUK: PAHALA PENUH ATAU SEPARUH?",
+   "SOLAT FARDU SAMBIL DUDUK, SAH KE?",
+   "BILA SOLAT DUDUK DAPAT PAHALA PENUH?",
+   "JANGAN DUDUK DALAM SOLAT FARDU TANPA UZUR!",
+   "SOLAT SUNAT DUDUK: SEPARUH PAHALA?"
+  ],
+  "lesson": "Solat sunat sambil duduk walaupun mampu berdiri adalah sah tetapi pahalanya separuh; duduk kerana uzur tidak mengurangkan pahala; solat fardu sambil duduk sedangkan mampu berdiri tidak sah dan berdosa kerana berdiri ialah rukun.",
+  "caption": "Solat duduk — bila dapat pahala penuh, bila separuh, dan bila langsung tidak sah? Huraian Imam an-Nawawi dalam Syarah Muslim menurut mazhab Syafi'i. 🤲\n\n#KuliahFiqh #FiqhSolat #SolatDuduk #MazhabSyafie #IlmuAgama #BahrulMazi",
+  "refs": "Imam an-Nawawi, Syarah Sahih Muslim (seperti dibacakan daripada kitab). Hadis 'Imran bin Husain berkaitan solat duduk — HR al-Bukhari (no. 1115–1117) [semak]."
+ },
+ "02": {
+  "score": [
+   23,
+   20,
+   18,
+   15,
+   8,
+   4
+  ],
+  "topic": "Makmum masbuk: bila rakaat dikira",
+  "titles": [
+   "MASBUK: BILA DAPAT RAKAAT?",
+   "SEMPAT RUKUK DENGAN IMAM, DAPAT RAKAAT?",
+   "RAMAI TERSILAP TAKBIRATUL IHRAM!",
+   "JANGAN TERUS RUKUK TANPA TAKBIRATUL IHRAM!",
+   "MAKMUM LEWAT? INI YANG PERLU DIBUAT"
+  ],
+  "lesson": "Makmum yang sempat rukuk bersama imam mendapat rakaat itu dan Fatihahnya ditanggung imam; jika imam sudah bangun daripada rukuk, rakaat itu tidak dikira. Wajib takbiratul ihram terlebih dahulu sebelum takbir untuk rukuk.",
+  "caption": "Datang lewat ke saf dan imam sedang rukuk — dapat rakaat atau tidak? Dan kesilapan yang ramai buat: terus 'Allahu Akbar' rukuk tanpa takbiratul ihram. 🕌\n\n#Masbuk #FiqhSolat #SolatBerjemaah #TakbiratulIhram #KuliahAgama",
+  "refs": "Huraian penceramah dalam sesi soal jawab (tiada teks hadis dipaparkan)."
+ },
+ "03": {
+  "score": [
+   23,
+   23,
+   19,
+   15,
+   8,
+   4
+  ],
+  "topic": "Pahala amalan tetap ditulis ketika sakit atau musafir",
+  "titles": [
+   "SAKIT & MUSAFIR: PAHALA AMALAN TETAP DITULIS",
+   "SAKIT, TAPI PAHALA TETAP MENGALIR",
+   "TAK DAPAT BUAT AMALAN BIASA? JANGAN RISAU",
+   "RAHMAT ALLAH KETIKA KITA SAKIT",
+   "AMALAN BIASA, PAHALA LUAR BIASA"
+  ],
+  "lesson": "Apabila seseorang sakit atau bermusafir, Allah tetap mencatat pahala amalan yang biasa dilakukannya ketika sihat dan bermukim — maka istiqamahlah beramal ketika mampu.",
+  "caption": "Biasa solat dhuha setiap pagi, tiba-tiba sakit atau musafir sampai tertinggal? Rasulullah ﷺ menjelaskan pahalanya tetap ditulis. Istiqamah ketika sihat, Allah jaga ketika uzur. 🤍\n\n#HadisNabi #Istiqamah #SolatDhuha #Pahala #KuliahAgama",
+  "refs": "HR al-Bukhari, no. 2996 [semak]."
+ },
+ "04": {
+  "score": [
+   22,
+   22,
+   18,
+   13,
+   8,
+   4
+  ],
+  "topic": "Menahan menguap dalam solat — maksud 'fal-yakzim'",
+  "titles": [
+   "MENGUAP DALAM SOLAT? INI CARA NABI AJAR",
+   "BILA MENGUAP, TAHAN SEDAYA MAMPU!",
+   "APA MAKSUD 'KAZAMA' DALAM HADIS INI?",
+   "MENGUAP & MENAHAN MARAH: APA KAITANNYA?",
+   "ADAB KECIL YANG RAMAI TERLEPAS"
+  ],
+  "lesson": "Nabi ﷺ menyuruh orang yang menguap menahannya sedaya mampu (fal-yakzim) — perkataan yang sama dengan 'al-kazimin al-ghaiz' (orang yang menahan marah); antara caranya menahan mulut daripada terbuka.",
+  "caption": "Menguap ketika solat — Nabi ﷺ ajar 'fal-yakzim mastata'a': tahan sedaya yang mampu. Rupanya perkataan yang sama digunakan untuk orang yang menahan marah. 📖\n\n#AdabSolat #Menguap #HadisNabi #Tadabbur #KuliahFiqh",
+  "refs": "HR at-Tirmizi, no. 370 [semak]; Surah Ali 'Imran 3:134."
+ },
+ "05": {
+  "score": [
+   22,
+   22,
+   18,
+   14,
+   8,
+   4
+  ],
+  "topic": "Menutup mulut ketika menguap dan sebabnya",
+  "titles": [
+   "KENAPA TUTUP MULUT BILA MENGUAP?",
+   "MENGUAP TANPA TUTUP MULUT? BACA INI",
+   "SUNNAH KECIL YANG ADA SEBAB BESAR",
+   "TANGAN ATAU SAPU TANGAN, YANG PENTING TUTUP",
+   "PINTU MASUK SYAITAN YANG KITA ABAIKAN"
+  ],
+  "lesson": "Sunnah menutup mulut dengan tangan (atau apa sahaja seperti sapu tangan) ketika menguap, kerana Nabi ﷺ menyebut syaitan boleh masuk ketika mulut terbuka.",
+  "caption": "Kenapa Rasulullah ﷺ suruh tutup mulut ketika menguap? Dengar huraiannya — dengan tangan atau sapu tangan, yang penting ditutup. ✋\n\n#Sunnah #AdabHarian #Menguap #HadisSahih #KuliahAgama",
+  "refs": "HR Muslim, no. 2995 [semak]; 'Syaitan mengalir dalam diri manusia mengikut aliran darah' — HR al-Bukhari no. 2038 & Muslim no. 2175 [semak]."
+ },
+ "06": {
+  "score": [
+   23,
+   22,
+   18,
+   14,
+   9,
+   4
+  ],
+  "topic": "Berkongsi pahala walaupun terhalang oleh uzur",
+  "titles": [
+   "TERHALANG UZUR? PAHALA TETAP BERSAMA",
+   "NIAT BAIK TAPI SAKIT? INI KHABAR GEMBIRA",
+   "TAK PERGI PUN DAPAT PAHALA?",
+   "KISAH SAHABAT YANG TERHALANG KERANA SAKIT",
+   "NIAT YANG IKHLAS TIDAK SIA-SIA"
+  ],
+  "lesson": "Orang yang benar-benar berniat melakukan kebaikan yang wajib tetapi terhalang oleh sakit atau uzur tetap berkongsi pahala dengan mereka yang melakukannya.",
+  "caption": "Rasulullah ﷺ bersabda tentang sahabat di Madinah yang tidak ikut berjihad kerana sakit — mereka tetap bersama dalam pahala. Niat yang benar tidak sia-sia di sisi Allah. 🌿\n\n#Niat #HadisNabi #Sirah #Pahala #KuliahAgama",
+  "refs": "HR Muslim, no. 1911 [semak]. Nama sahabat buta (Abdullah Ibnu Ummi Maktum) perlu disemak dengan audio."
+ },
+ "07": {
+  "score": [
+   23,
+   20,
+   18,
+   12,
+   8,
+   5
+  ],
+  "topic": "Hukum berdehem dalam solat (mazhab Syafi'i)",
+  "titles": [
+   "BERDEHEM DALAM SOLAT: BATAL ATAU TIDAK?",
+   "TEKAK GATAL MASA SOLAT? INI HUKUMNYA",
+   "BERDEHEM YANG BOLEH & YANG MEMBATALKAN",
+   "SATU HURUF PUN BOLEH BATALKAN SOLAT?",
+   "FIQH SYAFI'I: BERDEHEM KETIKA BACA FATIHAH"
+  ],
+  "lesson": "Berdehem untuk melancarkan bacaan wajib seperti al-Fatihah dibolehkan kerana hajat; berdehem tanpa hajat hingga terbit dua huruf, atau satu huruf yang memberi makna, membatalkan solat.",
+  "caption": "Tekak tersekat masa baca Fatihah, boleh ke berdehem? Huraian mazhab Syafi'i — bila dibolehkan dan bila membatalkan solat. 🕌\n\n#FiqhSolat #MazhabSyafie #Berdehem #HukumSolat #KuliahFiqh",
+  "refs": "Huraian fiqh mazhab Syafi'i oleh penceramah (tiada teks hadis dipaparkan)."
+ },
+ "08": {
+  "score": [
+   21,
+   21,
+   18,
+   14,
+   8,
+   4
+  ],
+  "topic": "Basmalah sebagai penghadang daripada syaitan",
+  "titles": [
+   "BISMILLAH: PENGHADANG DARIPADA SYAITAN",
+   "JANGAN LUPA BISMILLAH SEBELUM MAKAN!",
+   "KITA TAK NAMPAK MEREKA, MEREKA NAMPAK KITA",
+   "KENAPA BACA BISMILLAH MASUK BILIK AIR?",
+   "ZIKIR KECIL, PERLINDUNGAN BESAR"
+  ],
+  "lesson": "Zikrullah, khususnya membaca basmalah ketika makan dan masuk bilik air, ialah penghadang daripada gangguan dan pandangan syaitan yang melihat kita dari arah yang kita tidak nampak.",
+  "caption": "Makan, mandi, masuk bilik air — Nabi ﷺ ajar mulakan dengan Bismillah. Syaitan melihat kita dari arah yang kita tak nampak; basmalah penghadangnya. 🛡️\n\n#Bismillah #Zikir #AdabHarian #Sunnah #KuliahAgama",
+  "refs": "Surah al-A'raf 7:27; hadis basmalah ketika masuk tandas — HR at-Tirmizi, no. 606 [semak]."
+ },
+ "09": {
+  "score": [
+   21,
+   22,
+   18,
+   13,
+   8,
+   4
+  ],
+  "topic": "Jangan bersuara ketika menguap",
+  "titles": [
+   "MENGUAP SAMPAI BERSUARA? SYAITAN KETAWA!",
+   "JANGAN 'HAAA' BILA MENGUAP!",
+   "ADAB MENGUAP YANG RAMAI TAK TAHU",
+   "MENGUAP MACAM LOLONGAN? JAUHI",
+   "SUNNAH MENGUAP: TUTUP & DIAM"
+  ],
+  "lesson": "Menguap datang daripada syaitan; tahanlah sedaya mampu, letakkan tangan pada mulut dan jangan bersuara 'haa' atau melolong kerana syaitan mentertawakannya.",
+  "caption": "Menguap kuat-kuat sampai berbunyi 'haaa'? Rasulullah ﷺ menyebut syaitan ketawa ketika itu. Tutup mulut, jangan bersuara. 🤫\n\n#AdabMenguap #HadisBukhari #Sunnah #AdabHarian #KuliahAgama",
+  "refs": "HR al-Bukhari, no. 3289 [semak]; HR Ibnu Majah, no. 968 [semak]."
+ },
+ "10": {
+  "score": [
+   22,
+   21,
+   18,
+   15,
+   9,
+   4
+  ],
+  "topic": "Doa berlindung daripada susah hati dan dukacita",
+  "titles": [
+   "SUSAH HATI & SEDIH? INI DOA NABI",
+   "BILA SEDIH DI LUAR KAWALAN, BERGANTUNGLAH PADA ALLAH",
+   "BEZA 'AL-HAMM' DAN 'AL-HAZAN'",
+   "DOA HARIAN UNTUK HATI YANG GELISAH",
+   "APA YANG KITA TAK BOLEH KAWAL, SERAHKAN PADA ALLAH"
+  ],
+  "lesson": "Nabi ﷺ mengajar doa berlindung daripada al-hamm (susah hati) dan al-hazan (dukacita); apabila sesuatu di luar kawalan kita, tempat bergantung hanyalah Allah.",
+  "caption": "Ada perkara yang memang di luar kawalan kita — kehilangan, musibah, kerugian. Rasulullah ﷺ ajar kita berlindung kepada Allah daripada susah hati dan dukacita. 🤲\n\n#DoaNabi #SusahHati #Tawakal #Muhasabah #KuliahAgama",
+  "refs": "HR al-Bukhari, no. 6369 [semak]."
+ },
+ "11": {
+  "score": [
+   21,
+   22,
+   18,
+   11,
+   8,
+   4
+  ],
+  "topic": "Hukum menguap dalam solat dan kaedah larangan",
+  "titles": [
+   "MENGUAP DALAM SOLAT: HARAM ATAU MAKRUH?",
+   "APA MAKSUD 'KARAHIYAH' DALAM BAB INI?",
+   "PERKARA YANG DISANDARKAN KEPADA SYAITAN",
+   "BELAJAR KAEDAH HUKUM DARIPADA SATU HADIS",
+   "MAKRUH TETAP PERLU DIJAUHI"
+  ],
+  "lesson": "Menguap dalam solat hukumnya makruh berdasarkan hadis riwayat at-Tirmizi; sesuatu yang disandarkan kepada syaitan menunjukkan larangan, manakala tahap haram atau makruh ditentukan oleh dalil lain.",
+  "caption": "Menguap dalam solat — haram atau makruh? Belajar cara ulama membaca dalil: perkara yang disandarkan kepada syaitan menunjukkan larangan, dan tahapnya ditentukan dalil lain. 📚\n\n#UsulFiqh #FiqhSolat #HadisTirmizi #KuliahKitab #BahrulMazi",
+  "refs": "HR at-Tirmizi, no. 370 [semak]."
+ },
+ "12": {
+  "score": [
+   19,
+   21,
+   18,
+   10,
+   8,
+   5
+  ],
+  "topic": "Keistimewaan Nabi ﷺ: tidak menguap; mata tidur, hati jaga",
+  "titles": [
+   "NABI ﷺ TIDAK PERNAH MENGUAP?",
+   "KEISTIMEWAAN NABI YANG JARANG DIDENGAR",
+   "MATANYA TIDUR, HATINYA TIDAK",
+   "BAGAIMANA ALLAH MEMELIHARA NABI ﷺ",
+   "SYAMAIL NABI: SATU KELEBIHAN BAGINDA"
+  ],
+  "lesson": "Disebut dalam hadis mursal (Tarikh al-Bukhari) bahawa Nabi ﷺ tidak pernah menguap, dan dalam hadis sahih bahawa mata baginda tidur tetapi hatinya tidak — tanda Allah memelihara baginda daripada ruang syaitan.",
+  "caption": "Tahukah anda? Dalam satu riwayat mursal disebut Nabi ﷺ tidak pernah menguap, dan dalam hadis sahih matanya tidur tetapi hatinya tidak. Antara keistimewaan baginda. 🌙\n\n#Syamail #NabiMuhammad #Sirah #HadisNabi #KuliahAgama",
+  "refs": "Riwayat mursal dalam at-Tarikh al-Kabir oleh al-Bukhari (status mursal disebut penceramah) [semak]; 'tanamu 'ainahu wa la yanamu qalbuh' — HR al-Bukhari, no. 3569 [semak]."
+ },
+ "13": {
+  "score": [
+   22,
+   21,
+   19,
+   14,
+   9,
+   5
+  ],
+  "topic": "Safwan bin Umayyah lari ke Jeddah; Nabi ﷺ hadiahkan serban dan beri tempoh 4 bulan",
+  "titles": [
+   "MINTA 2 BULAN, NABI BERI 4 BULAN",
+   "SAFWAN BIN UMAYYAH: PENJENAYAH YANG DIMAAFKAN",
+   "SERBAN NABI UNTUK MUSUH YANG LARI",
+   "BEGINI NABI ﷺ MELAYAN ORANG YANG BERSALAH",
+   "DAKWAH NABI: BERI RUANG, BUKAN TEKANAN"
+  ],
+  "lesson": "Nabi ﷺ melayan orang yang bersalah dengan kebaikan dan memberi ruang lebih daripada yang diminta; yang penting dalam Islam ialah insaf, bukan hukuman.",
+  "caption": "Safwan bin Umayyah lari kerana takut dihukum. Nabi ﷺ hantar serban baginda sebagai tanda maaf — dan bila dia minta 2 bulan untuk berfikir, Nabi beri 4 bulan. 🕌\n\n#KuliahSirah #FathuMakkah #UstazIsmi #PondokDarulMubarak",
+  "refs": "Sirah Ibnu Hisyam (kisah Safwan bin Umayyah, Fathu Makkah) [semak]."
+ },
+ "14": {
+  "score": [
+   23,
+   22,
+   18,
+   15,
+   9,
+   4
+  ],
+  "topic": "Yassiru wala tu'assiru: permudahkan dakwah, masuk Islam cukup dengan syahadah",
+  "titles": [
+   "DAKWAH: MUDAHKAN, JANGAN PAYAHKAN",
+   "MASUK ISLAM CUKUP DENGAN DUA KALIMAH SYAHADAH",
+   "JANGAN BUAT ORANG LARI DARIPADA ISLAM",
+   "YASSIRU WALA TU'ASSIRU — PESAN NABI ﷺ",
+   "DAKWAH KENA LEMBUT, TAWAN HATI ORANG"
+  ],
+  "lesson": "Dakwah mesti memudahkan dan memberi khabar gembira; jangan dahulukan perkara yang menakutkan sehingga orang lari daripada Islam.",
+  "caption": "Nak ajak orang kepada Islam? Rasulullah ﷺ pesan: mudahkan, jangan payahkan; beri khabar gembira, jangan buat orang lari. 🤍\n\n#KuliahSirah #FathuMakkah #UstazIsmi #PondokDarulMubarak",
+  "refs": "HR al-Bukhari no. 69 & Muslim no. 1734 [semak]."
+ },
+ "15": {
+  "score": [
+   22,
+   21,
+   18,
+   15,
+   9,
+   4
+  ],
+  "topic": "Muslim sebenar: orang lain selamat daripada lidah dan tangannya",
+  "titles": [
+   "MUSLIM SEBENAR: ORANG RASA SELAMAT DENGAN KITA",
+   "ASYIK TANYA 'BILA NAK KAHWIN?'",
+   "JAGA LIDAH, JAGA TANGAN",
+   "KENAPA ORANG TAK NAK DATANG RUMAH KITA?",
+   "HADIS: AL-MUSLIMU MAN SALIMAL MUSLIMUN"
+  ],
+  "lesson": "Ukuran Muslim yang baik ialah orang lain rasa selamat dengan lidah dan tangannya; elakkan kata-kata yang menyakitkan hati.",
+  "caption": "Ada orang kita segan nak jumpa sebab mulutnya… Muslim sebenar ialah orang yang Muslim lain selamat daripada lidah dan tangannya. 🤲\n\n#KuliahSirah #FathuMakkah #UstazIsmi #PondokDarulMubarak",
+  "refs": "HR al-Bukhari no. 10 & Muslim no. 40 [semak]."
+ },
+ "16": {
+  "score": [
+   21,
+   22,
+   17,
+   13,
+   9,
+   5
+  ],
+  "topic": "Fadalah bin Umair berniat membunuh Nabi ﷺ ketika tawaf, lalu memeluk Islam",
+  "titles": [
+   "NAK BUNUH NABI KETIKA TAWAF, AKHIRNYA MASUK ISLAM",
+   "FADALAH BIN UMAIR: NIAT JAHAT YANG DIDEDAHKAN",
+   "NABI ﷺ TAHU APA DALAM HATINYA",
+   "KISAH TAWAF YANG MENGUBAH HIDUP",
+   "MUKJIZAT NABI KETIKA FATHU MAKKAH"
+  ],
+  "lesson": "Allah mendedahkan niat jahat Fadalah kepada Nabi ﷺ; kebenaran itu membuka hatinya untuk menerima Islam.",
+  "caption": "Dia datang ke Kaabah dengan niat membunuh Rasulullah ﷺ… tapi Nabi beritahu apa yang tersimpan dalam hatinya. Fadalah terus memeluk Islam. 🕋\n\n#KuliahSirah #FathuMakkah #UstazIsmi #PondokDarulMubarak",
+  "refs": "Sirah Ibnu Hisyam (kisah Fadalah bin Umair al-Laithi) [semak]."
+ },
+ "17": {
+  "score": [
+   24,
+   21,
+   18,
+   13,
+   8,
+   4
+  ],
+  "topic": "Khutbah Fathu Makkah: Makkah tanah haram sejak penciptaan langit dan bumi",
+  "titles": [
+   "MAKKAH TANAH HARAM SEJAK LANGIT & BUMI DICIPTA",
+   "KHUTBAH NABI ﷺ HARI KEDUA FATHU MAKKAH",
+   "KENAPA HARAM TUMPAH DARAH DI MAKKAH?",
+   "MAKKAH DIHARAMKAN ALLAH, BUKAN MANUSIA",
+   "NEGERI YANG AMAN — BALADIL AMIN"
+  ],
+  "lesson": "Kemuliaan Makkah ditetapkan Allah sejak awal penciptaan; haram menumpahkan darah dan merosakkan pokoknya hingga hari kiamat.",
+  "caption": "Hari kedua di Makkah, Rasulullah ﷺ berkhutbah: Makkah diharamkan Allah sejak Dia menciptakan langit dan bumi — bukan manusia yang mengharamkannya. 🕋\n\n#KuliahSirah #FathuMakkah #UstazIsmi #PondokDarulMubarak",
+  "refs": "HR al-Bukhari no. 104, 1834 & Muslim no. 1353, 1354 [semak]."
+ },
+ "18": {
+  "score": [
+   22,
+   23,
+   18,
+   15,
+   9,
+   4
+  ],
+  "topic": "Gandaan pahala di Makkah, Madinah dan al-Aqsa; adakah meliputi seluruh tanah haram",
+  "titles": [
+   "PAHALA 100,000 KALI GANDA DI SELURUH MAKKAH?",
+   "BACA QURAN DI HOTEL PUN DAPAT GANDAAN?",
+   "MAKKAH, MADINAH, AL-AQSA: BERAPA GANDA?",
+   "JUMHUR ULAMA: SELURUH TANAH HARAM",
+   "TAPI SOLAT DI SAF HADAPAN TETAP AFDAL"
+  ],
+  "lesson": "Menurut jumhur ulama gandaan 100,000 meliputi seluruh tanah haram Makkah, namun solat di masjid dan di saf hadapan tetap lebih afdal.",
+  "caption": "Pergi umrah? Ibadah di Makkah digandakan 100,000 kali — dan menurut jumhur ulama ia meliputi seluruh tanah haram, bukan masjid sahaja. 🕋\n\n#KuliahSirah #FathuMakkah #UstazIsmi #PondokDarulMubarak",
+  "refs": "HR Ibnu Majah no. 1406 & Ahmad (100,000); HR al-Bukhari no. 1190 (Masjid Nabawi); riwayat al-Aqsa 500 — status riwayat perlu disemak [semak]."
+ },
+ "19": {
+  "score": [
+   23,
+   21,
+   18,
+   14,
+   9,
+   5
+  ],
+  "topic": "Islam bermula dagang dan akan kembali dagang; beruntunglah al-ghuraba'",
+  "titles": [
+   "ISLAM DIANGGAP PELIK? BERUNTUNGLAH AL-GHURABA'",
+   "BADA'AL ISLAMU GHARIBAN",
+   "ORANG BERPEGANG TEGUH JADI SEDIKIT",
+   "AKHIR ZAMAN: ISLAM KEMBALI ASING",
+   "JANGAN MALU JADI 'PELIK' KERANA AGAMA"
+  ],
+  "lesson": "Berpegang teguh pada agama mungkin dianggap pelik, terutama di akhir zaman; Nabi ﷺ menjanjikan kebaikan kepada mereka.",
+  "caption": "Pernah rasa 'pelik' sebab pegang agama? Rasulullah ﷺ dah sebut: Islam bermula asing dan akan kembali asing — beruntunglah orang yang asing. 🌙\n\n#KuliahSirah #FathuMakkah #UstazIsmi #PondokDarulMubarak",
+  "refs": "HR Muslim no. 145 [semak]."
+ },
+ "20": {
+  "score": [
+   20,
+   23,
+   18,
+   14,
+   9,
+   4
+  ],
+  "topic": "Allah memelihara kita setiap saat; kenapa tidak bersyukur",
+  "titles": [
+   "SIAPA JAGA JANTUNG KITA 24 JAM?",
+   "MAK BAPAK PUN TAK JAGA MACAM ALLAH JAGA",
+   "KENAPA KITA TAK SAYANG ALLAH?",
+   "SETIAP DEGUPAN ADALAH NIKMAT",
+   "RENUNG SEKEJAP: SIAPA YANG PELIHARA KITA?"
+  ],
+  "lesson": "Jantung yang berdegup siang malam adalah pemeliharaan Allah; sepatutnya kita lebih sayang dan bersyukur kepada-Nya.",
+  "caption": "Masa kita tidur pun jantung masih berdegup. Siapa yang jaga? Allah pelihara kita setiap saat — jadi kenapa kita tak bersyukur? 🤍\n\n#KuliahSirah #FathuMakkah #UstazIsmi #PondokDarulMubarak",
+  "refs": "Muhasabah penceramah (tiada lafaz hadis khusus)."
+ },
+ "21": {
+  "score": [
+   21,
+   21,
+   18,
+   13,
+   9,
+   5
+  ],
+  "topic": "Abdul Muttalib, Abrahah dan unta: Kaabah ada Tuhan yang memeliharanya",
+  "titles": [
+   "KAABAH ADA TUHAN YANG MEMELIHARANYA",
+   "ABDUL MUTTALIB MINTA UNTA, BUKAN KAABAH",
+   "TAHUN GAJAH: KISAH ABRAHAH",
+   "JAWAPAN TOK NABI ﷺ YANG MENGEJUTKAN ABRAHAH",
+   "ALLAH SENDIRI MENJAGA MAKKAH"
+  ],
+  "lesson": "Makkah dan Kaabah dipelihara Allah; Abdul Muttalib yakin Tuhan Kaabah akan menjaganya ketika Abrahah datang menyerang.",
+  "caption": "Abrahah datang nak robohkan Kaabah, tapi Abdul Muttalib cuma tuntut unta-untanya. Kenapa? 'Kaabah itu ada Tuhan yang memeliharanya.' 🐘\n\n#KuliahSirah #FathuMakkah #UstazIsmi #PondokDarulMubarak",
+  "refs": "Sirah Ibnu Hisyam (peristiwa Tahun Gajah); Surah al-Fil [semak]."
+ },
+ "22": {
+  "score": [
+   22,
+   19,
+   18,
+   13,
+   10,
+   5
+  ],
+  "topic": "Kebimbangan Ansar selepas Fathu Makkah; janji Nabi ﷺ hidup dan mati bersama mereka",
+  "titles": [
+   "JANJI NABI KEPADA ANSAR: HIDUP & MATI BERSAMAMU",
+   "ANSAR TAKUT NABI ﷺ TAK BALIK MADINAH",
+   "AL-MAHYA MAHYAKUM WAL MAMAT MAMATUKUM",
+   "KESETIAAN NABI ﷺ KEPADA PENOLONGNYA",
+   "SELEPAS MENANG, NABI TETAP PULANG"
+  ],
+  "lesson": "Walaupun Makkah tanah tumpah darah baginda, Nabi ﷺ setia kepada Ansar: hidup dan mati baginda bersama mereka.",
+  "caption": "Selepas Makkah dibuka, kaum Ansar risau Nabi ﷺ akan menetap di tanah kelahirannya. Jawapan baginda: 'Hidupku bersama hidup kamu, matiku bersama mati kamu.' 🤍\n\n#KuliahSirah #FathuMakkah #UstazIsmi #PondokDarulMubarak",
+  "refs": "HR Muslim no. 1780 [semak]. Sebahagian dialog dalam loghat Kelantan — subtitle disemak; perkataan tidak jelas ditinggalkan."
+ },
+ "23": {
+  "score": [
+   22,
+   22,
+   18,
+   14,
+   9,
+   4
+  ],
+  "topic": "Cinta tanah air dihormati Islam tetapi agama paling utama; 5 dharuriyyat maqasid syariah",
+  "titles": [
+   "CINTA TANAH AIR ATAU AGAMA: MANA LEBIH UTAMA?",
+   "5 PERKARA YANG ISLAM JAGA",
+   "AGAMA NOMBOR SATU",
+   "MAQASID SYARIAH DALAM 90 SAAT",
+   "SILATURAHIM PENTING, AGAMA LEBIH PENTING"
+  ],
+  "lesson": "Islam tidak menafikan cinta tanah air dan keluarga, tetapi keredaan Allah dan agama mengatasi segalanya; agama ialah yang pertama dalam 5 dharuriyyat.",
+  "caption": "Islam tak larang cinta tanah air, kampung halaman dan keluarga. Tapi dalam maqasid syariah, agama tetap nombor satu. 📖\n\n#KuliahSirah #FathuMakkah #UstazIsmi #PondokDarulMubarak",
+  "refs": "Maqasid syariah: dharuriyyat al-khams (rujukan: al-Muwafaqat, al-Syatibi) [semak]."
+ },
+ "24": {
+  "score": [
+   23,
+   22,
+   18,
+   13,
+   9,
+   5
+  ],
+  "topic": "Wahsyi pembunuh Hamzah memeluk Islam; hadis pembunuh dan yang dibunuh masuk syurga",
+  "titles": [
+   "PEMBUNUH & YANG DIBUNUH MASUK SYURGA?",
+   "WAHSYI: PEMBUNUH HAMZAH YANG BERTAUBAT",
+   "ALLAH 'KETAWA' KEPADA DUA LELAKI INI",
+   "JANGAN TUTUP PINTU TAUBAT ORANG",
+   "BETAPA LUASNYA PELUANG ISLAM"
+  ],
+  "lesson": "Islam memberi peluang kepada sesiapa sahaja untuk kembali; jangan kita menutup pintu taubat orang lain.",
+  "caption": "Wahsyi membunuh Saidina Hamzah di Uhud, tapi akhirnya memeluk Islam. Nabi ﷺ menyebut dua lelaki — pembunuh dan yang dibunuh — kedua-duanya masuk syurga. 🤍\n\n#KuliahSirah #FathuMakkah #UstazIsmi #PondokDarulMubarak",
+  "refs": "HR al-Bukhari no. 2826 & Muslim no. 1890 [semak]; kisah Wahsyi — HR al-Bukhari no. 4072 [semak]."
+ },
+ "25": {
+  "score": [
+   22,
+   18,
+   18,
+   14,
+   10,
+   5
+  ],
+  "topic": "Hindun ketika bai'ah: isteri mengambil harta suami yang kedekut untuk keperluan",
+  "titles": [
+   "ISTERI BOLEH AMBIL DUIT SUAMI TANPA IZIN?",
+   "HINDUN MENYAMPUK KETIKA BAI'AH",
+   "SUAMI KEDEKUT: APA HAK ISTERI?",
+   "KHUZI MA YAKFIKI — PESAN NABI ﷺ",
+   "SYARAT & BATASANNYA"
+  ],
+  "lesson": "Isteri boleh mengambil harta suami yang tidak memberi nafkah sekadar keperluan diri dan anak secara makruf; jika suami menanggung dengan baik, tidak boleh.",
+  "caption": "Suami kedekut, tak beri nafkah — bolehkah isteri ambil duitnya? Rasulullah ﷺ jawab soalan Hindun: ambil sekadar keperluanmu dan anak-anak dengan cara yang baik. ⚖️\n\n#KuliahSirah #FathuMakkah #UstazIsmi #PondokDarulMubarak",
+  "refs": "HR al-Bukhari no. 5364 & Muslim no. 1714 [semak]. Sebahagian dialog dalam loghat Kelantan — subtitle disemak; perkataan tidak jelas ditinggalkan."
+ }
 }

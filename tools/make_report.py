@@ -16,7 +16,10 @@ def mmss(t):
 
 specs = {}
 for p in sorted(glob.glob(os.path.join(ROOT, "clips/KULIAH_*.json"))):
-    s = json.load(open(p)); specs[s["id"]] = s
+    s = json.load(open(p))
+    if s.get("lecture"):   # other lectures have their own report (tools/make_report_fathu_makkah.py)
+        continue
+    specs[s["id"]] = s
 
 rows = []
 for i, s in specs.items():
