@@ -78,6 +78,17 @@ def build(spec, source, media=True):
     global FACE_X, FACE_Y
     if "face" in spec:   # per-footage face position (x, y) in the 1080x1920-scaled source
         FACE_X, FACE_Y = spec["face"]
+    # optional 9:16 pre-crop [x, y, w, h] in the 1080x1920-scaled source, e.g. to drop a burned-in
+    # QR/donation banner. The crop is enlarged back to 1080x1920, so camera zoom is divided by
+    # the same factor to keep the approved framing.
+    crop = spec.get("src_crop")
+    zk = 1.0
+    vf_crop = ""
+    if crop:
+        cx, cy, cw, ch = crop
+        zk = cw / W
+        FACE_X, FACE_Y = (FACE_X - cx) / zk, (FACE_Y - cy) / zk
+        vf_crop = f"scale={W}:{H}:flags=lanczos,crop={cw}:{ch}:{cx}:{cy},"
     cid = spec["id"]
     name = f"KULIAH_{cid}"
     out = os.path.join(ROOT, "videos", name)
@@ -106,7 +117,7 @@ def build(spec, source, media=True):
     if media:
         clip = os.path.join(out, "assets", "clip.mp4")
         subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", str(start), "-i", source, "-t", str(speech_dur + 0.2),
-                        "-an", "-vf", "scale=1080:1920:flags=lanczos,fps=30,format=yuv420p",
+                        "-an", "-vf", vf_crop + "scale=1080:1920:flags=lanczos,fps=30,format=yuv420p",
                         "-c:v", "libx264", "-preset", "medium", "-crf", "22", "-g", "30", "-movflags", "+faststart", clip],
                        check=True)
         voice = os.path.join(out, "assets", "voice.m4a")
@@ -131,6 +142,7 @@ def build(spec, source, media=True):
         t = b + 0.2
     if speech_dur > t + 4:
         shots.append((t, 1.42, 790))
+    shots = [(st, max(1.0, round(s * zk, 3)), fy) for (st, s, fy) in shots]
     cam_js = []
     for i, (st, s, fy) in enumerate(shots):
         en = shots[i + 1][0] if i + 1 < len(shots) else D
