@@ -65,3 +65,17 @@ Jika nama penceramah diketahui, letak dalam `speaker`.
 - Kekalkan status riwayat yang disebut penceramah (cth. *mursal*) pada kad.
 - Jangan jana visual nabi, malaikat atau perkara ghaib; hanya rakaman asal, tipografi dan corak geometri.
 - Bahagian yang terlalu kabur (loghat berat, audio rosak) → senaraikan untuk semakan manual, jangan render.
+
+## Konsep B "Mihrab Emas" (diluluskan Nov 2026, siri Fathu Makkah — EP 01–13)
+
+Tambah `"style": "B"` dan `"episode": N` dalam spec (`tools/style_b.py`). Palet & fon sama; berbeza:
+cover gerbang mihrab emas membingkai wajah + lencana "EP NN" + panel navy melengkung (tajuk, kata kunci
+bersapu emas, nama penceramah, pil "▶ TONTON SAMPAI HABIS"); keluar dengan zoom melalui gerbang. Dalam video:
+bar progres emas + titik bab, kad bernombor dengan teks perkataan demi perkataan, kilauan & bar masa, kad Arab
+perkataan demi perkataan, pil emas pada kata kunci subtitle (subtitle bermula selepas cover), partikel cahaya,
+outro CTA ~4.4 s (SUKA / SIMPAN / KONGSI ditekan, "+ IKUTI" → "✓ DIIKUTI"). Contoh: `exports/KULIAH_13…25_*.mp4`,
+laporan `LAPORAN_KERATAN_FATHU_MAKKAH.md` (`tools/make_report_fathu_makkah.py`).
+
+Rakaman dengan banner/QR terbakar di bawah: `"src_crop": [x, y, w, h]` (9:16, koordinat sumber 1080×1920) dan
+`"face": [x, y]` dalam spec — zum kamera dikompensasi automatik. Siri Fathu Makkah: `[146, 0, 788, 1400]`, wajah `[550, 640]`.
+Transkrip penuh kini guna `-mc 0` (elak gelung halusinasi "Tidak ada yang mengucapkan").
