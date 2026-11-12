@@ -1,0 +1,73 @@
+{
+ "id": "20",
+ "slug": "SIAPA_JAGA_JANTUNG_KITA_24_JAM",
+ "category": "MUHASABAH",
+ "title_lines": [
+  [
+   {
+    "t": "SIAPA JAGA"
+   }
+  ],
+  [
+   {
+    "t": "JANTUNG",
+    "gold": true
+   },
+   {
+    "t": "KITA"
+   }
+  ],
+  [
+   {
+    "t": "24 JAM?"
+   }
+  ]
+ ],
+ "header_html": "SIAPA JAGA <span class=\"g\">JANTUNG</span> KITA 24 JAM?",
+ "cover_kicker": "KULIAH SIRAH • FATHU MAKKAH",
+ "cover_sub": "Pondok Pengajian Darul Mubarak",
+ "speaker": "YB Ustaz Muhammad Ismi Mat Taib",
+ "speaker_role": "Pondok Pengajian Darul Mubarak • Sirah Fathu Makkah",
+ "series": "KULIAH SIRAH FATHU MAKKAH",
+ "face": [
+  550,
+  640
+ ],
+ "src_crop": [
+  146,
+  0,
+  788,
+  1400
+ ],
+ "music_volume": 0.1,
+ "whisper": "clips/whisper/w20.json",
+ "window": 1836,
+ "start": 1842.3,
+ "end": 1910.7,
+ "arabic": [],
+ "points": [
+  {
+   "label": "RENUNG",
+   "text": "Jantung berdegup 24 jam — siapa yang menjaganya?",
+   "at": 24.0,
+   "dur": 12.0
+  },
+  {
+   "label": "PENGAJARAN",
+   "text": "Allah pelihara kita setiap saat — kenapa tak bersyukur?",
+   "at": 56.0,
+   "dur": 11.5
+  }
+ ],
+ "keywords": [
+  "Allah",
+  "pelihara",
+  "jantung",
+  "syukur",
+  "sayang",
+  "umur",
+  "kurnia"
+ ],
+ "text": "Allah bagi keamanan, bagi keselamatan. Kita, Allah bagi kita hidup, ni dah? Sampai umur 50, 60. Ni Pulau Pisang tadi, 40 dah meninggal. Muda lagi. Kita, Allah bagi panjang umur. Allah pelihara kita. Jantung kita berdegup sentiasa. Masa malam ke, masa siang ke, masa tidur ke, Allah pelihara kita 24 jam. Setiap detik, setiap saat hidup. Mak bapak kita pun tak pelihara kita macam Allah pelihara kita. Kalau Allah Ta'ala kata, eh cukup dah, tak payahlah berdegup jantung, matilah kita. Suami kita pun tak sayang sebagaimana Allah sayang kita. Allah bagi peluang. Allah pelihara kita. Jadi kenapa kita tak sayang Allah? Kenapa kita tak syukur kepada Allah? Dia yang bagi kurnia berbagai-bagai kepada kita.",
+ "lecture": "ismi_fathu_makkah"
+}

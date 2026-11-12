@@ -1,0 +1,78 @@
+{
+ "id": "21",
+ "slug": "KAABAH_ADA_TUHAN_YANG_MEMELIHARANYA",
+ "category": "SIRAH NABAWI",
+ "title_lines": [
+  [
+   {
+    "t": "KAABAH ADA"
+   }
+  ],
+  [
+   {
+    "t": "TUHAN",
+    "gold": true
+   }
+  ],
+  [
+   {
+    "t": "YANG MEMELIHARANYA"
+   }
+  ]
+ ],
+ "header_html": "KAABAH ADA <span class=\"g\">TUHAN</span> YANG MEMELIHARANYA",
+ "cover_kicker": "KULIAH SIRAH • FATHU MAKKAH",
+ "cover_sub": "Pondok Pengajian Darul Mubarak",
+ "speaker": "YB Ustaz Muhammad Ismi Mat Taib",
+ "speaker_role": "Pondok Pengajian Darul Mubarak • Sirah Fathu Makkah",
+ "series": "KULIAH SIRAH FATHU MAKKAH",
+ "face": [
+  550,
+  640
+ ],
+ "src_crop": [
+  146,
+  0,
+  788,
+  1400
+ ],
+ "music_volume": 0.1,
+ "whisper": "clips/whisper/w21.json",
+ "window": 2056,
+ "start": 2064.2,
+ "end": 2131.2,
+ "arabic": [
+  {
+   "ar": "إِنَّ لِلْبَيْتِ رَبًّا يَحْمِيهِ",
+   "ms": "Sesungguhnya Kaabah itu ada Tuhan yang memeliharanya.",
+   "ref": "KATA ABDUL MUTTALIB • SIRAH IBNU HISYAM",
+   "at": 52.6,
+   "dur": 12.5
+  }
+ ],
+ "points": [
+  {
+   "label": "TAHUN GAJAH",
+   "text": "Abrahah rampas unta-unta Abdul Muttalib",
+   "at": 9.0,
+   "dur": 12.0
+  },
+  {
+   "label": "SOALAN ABRAHAH",
+   "text": "Unta kamu tuntut, Kaabah kamu tak sayang?",
+   "at": 32.0,
+   "dur": 13.0
+  }
+ ],
+ "keywords": [
+  "Kaabah",
+  "unta",
+  "Abrahah",
+  "Tuhan",
+  "memelihara",
+  "pelihara",
+  "Allah"
+ ],
+ "text": "Pemimpin yang jaga Makkah ketika itu ialah Tok Nabi, Abdul Muttalib. Abdul Muttalib ni, sampai di sempadan, Abrahah ambil unta-unta Abdul Muttalib. Dia sembelih, dia bunuh unta-unta Abdul Muttalib. Abdul Muttalib pergi tuntut. Wahai Abrahah, bawa balik unta aku. Aku nak balik unta, kamu dah tangkap, dah sembelih, dah makan. Unta itu unta aku. Abrahah hairan. Hai, kamu ni, kamu hairankan unta kamu ni. Kamu tak tahu ke aku ni nak merobohkan Kaabah? Yang kamu sayangkan unta kamu. Kaabah kamu tak hairan ke? Apa kata Abdul Muttalib? Kaabah kamu tak sayang ke? Kata Abdul Muttalib, sesungguhnya bagi Kaabah itu, adanya Rabbun yahmih, adanya Tuhan yang memelihara dia. Abdul Muttalib tahu dah, turun-temurun Kaabah ni, Makkah ni, Allah pelihara.",
+ "lecture": "ismi_fathu_makkah"
+}
