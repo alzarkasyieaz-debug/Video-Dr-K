@@ -1,0 +1,85 @@
+{
+ "id": "23",
+ "slug": "CINTA_TANAH_AIR_ATAU_AGAMA_MANA_LEBIH_UTAMA",
+ "category": "MAQASID SYARIAH",
+ "title_lines": [
+  [
+   {
+    "t": "CINTA TANAH AIR"
+   }
+  ],
+  [
+   {
+    "t": "ATAU"
+   },
+   {
+    "t": "AGAMA:",
+    "gold": true
+   }
+  ],
+  [
+   {
+    "t": "MANA LEBIH UTAMA?"
+   }
+  ]
+ ],
+ "header_html": "CINTA TANAH AIR ATAU <span class=\"g\">AGAMA:</span> MANA LEBIH UTAMA?",
+ "cover_kicker": "KULIAH SIRAH • FATHU MAKKAH",
+ "cover_sub": "Pondok Pengajian Darul Mubarak",
+ "speaker": "YB Ustaz Muhammad Ismi Mat Taib",
+ "speaker_role": "Pondok Pengajian Darul Mubarak • Sirah Fathu Makkah",
+ "series": "KULIAH SIRAH FATHU MAKKAH",
+ "face": [
+  550,
+  640
+ ],
+ "src_crop": [
+  146,
+  0,
+  788,
+  1400
+ ],
+ "music_volume": 0.1,
+ "whisper": "clips/whisper/w23.json",
+ "window": 2468,
+ "start": 2473.0,
+ "end": 2566.2,
+ "arabic": [],
+ "points": [
+  {
+   "label": "CINTA TANAH AIR",
+   "text": "Islam tidak menafikannya — tetapi ia bukan prinsip perjuangan",
+   "at": 13.0,
+   "dur": 13.0
+  },
+  {
+   "label": "MATLAMAT",
+   "text": "Keredaan Allah mengatasi segala-galanya",
+   "at": 49.5,
+   "dur": 13.0
+  },
+  {
+   "label": "5 DHARURIYYAT",
+   "text": "Agama • Nyawa • Akal • Keturunan • Harta",
+   "at": 74.0,
+   "dur": 14.0
+  }
+ ],
+ "keywords": [
+  "agama",
+  "Islam",
+  "tanah",
+  "air",
+  "Allah",
+  "penting",
+  "nyawa",
+  "akal",
+  "keturunan",
+  "harta",
+  "utama"
+ ],
+ "text": "Jadi perjuangan Islam tidak menjadikan tanah air dan kaum sebagai prinsipnya. Walaupun kedua-duanya perasaan yang dihormati oleh Islam dan wajib dipertahankan. Memang Islam tak nafi kecintaan pada tanah air, kecintaan pada kampung halaman, kecintaan pada kaum keluarga, itu tak nafi. Tapi itu bukan menjadi prinsip kepada Islam. Hanya Islam yang menentukan arah matlamatnya yang betul dan menyelamatkan tanah air, keluarga, bangsa dan segala perkara yang berkait dengan manusia. Jadi yang menjadi matlamat ialah agama, perjuangan. Keredaan Allah itu lebih utama mengatasi segala-galanya. Memang silaturahim itu penting. Tapi agama lebih penting lagi. Dalam dharuriyyat al-khams, perkara dalam maqasid syariah, perkara dalam Islam ini, ada maslahahnya ada 3 jenis. Dharuriyyat, hajiyyat, tahsiniyyat. Dharuriyyat ini, paling penting sekali apa dia? Agama. Yang kedua, nyawa. Yang ketiga, akal. Yang keempat, keturunan. Yang kelima, harta. Keturunan penting. Tapi yang lebih penting ialah apa dia? Agama. Agama nombor satu.",
+ "lecture": "ismi_fathu_makkah",
+ "style": "B",
+ "episode": 11
+}
