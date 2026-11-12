@@ -1,0 +1,88 @@
+{
+ "id": "19",
+ "slug": "ISLAM_DIANGGAP_PELIK_BERUNTUNGLAH_AL_GHURABA",
+ "category": "HADIS & DAKWAH",
+ "title_lines": [
+  [
+   {
+    "t": "ISLAM DIANGGAP"
+   }
+  ],
+  [
+   {
+    "t": "PELIK?",
+    "gold": true
+   }
+  ],
+  [
+   {
+    "t": "BERUNTUNGLAH"
+   },
+   {
+    "t": "AL-GHURABA'",
+    "gold": true
+   }
+  ]
+ ],
+ "header_html": "ISLAM DIANGGAP <span class=\"g\">PELIK?</span> BERUNTUNGLAH <span class=\"g\">AL-GHURABA'</span>",
+ "cover_kicker": "KULIAH SIRAH • FATHU MAKKAH",
+ "cover_sub": "Pondok Pengajian Darul Mubarak",
+ "speaker": "YB Ustaz Muhammad Ismi Mat Taib",
+ "speaker_role": "Pondok Pengajian Darul Mubarak • Sirah Fathu Makkah",
+ "series": "KULIAH SIRAH FATHU MAKKAH",
+ "face": [
+  550,
+  640
+ ],
+ "src_crop": [
+  146,
+  0,
+  788,
+  1400
+ ],
+ "music_volume": 0.1,
+ "whisper": "clips/whisper/w19.json",
+ "window": 1652,
+ "start": 1656.9,
+ "end": 1745.0,
+ "arabic": [
+  {
+   "ar": "بَدَأَ الْإِسْلَامُ غَرِيبًا وَسَيَعُودُ كَمَا بَدَأَ غَرِيبًا، فَطُوبَى لِلْغُرَبَاءِ",
+   "ms": "Islam bermula dalam keadaan asing (dagang) dan akan kembali asing sebagaimana ia bermula. Maka beruntunglah orang-orang yang asing.",
+   "ref": "HR MUSLIM",
+   "at": 6.3,
+   "dur": 14.0
+  }
+ ],
+ "points": [
+  {
+   "label": "DAGANG",
+   "text": "Aneh, pelik — lain daripada lain",
+   "at": 22.0,
+   "dur": 11.0
+  },
+  {
+   "label": "AKHIR ZAMAN",
+   "text": "Islam kembali dagang — yang berpegang teguh jadi sedikit",
+   "at": 49.0,
+   "dur": 12.0
+  },
+  {
+   "label": "PENGAJARAN",
+   "text": "Beruntunglah yang tetap teguh walau dianggap pelik",
+   "at": 72.0,
+   "dur": 13.0
+  }
+ ],
+ "keywords": [
+  "dagang",
+  "pelik",
+  "Islam",
+  "aneh",
+  "ghuraba",
+  "teguh",
+  "kebaikanlah"
+ ],
+ "text": "Sebab apa? Sebab memang Islam ni dia dagang. Nabi kata, bada'al Islamu ghariban, wa saya'udu ghariban. Fa tuba lil ghuraba. Bermulanya Islam tu dalam keadaan dagang. Dagang ni maksudnya apa? Aneh. Pelik. Eh? Rare. Unique. Lain daripada lain. Maknanya, orang kebanyakan nak macam ni, tapi macam ni pula. Tengoklah hari ni. Mana ramai? Orang datang haji, orang tak datang? Orang tak datang lagi ramai. Jadi pelik ni, semua pelik. Ghariban. Dagang. Wa saya'udu ghariban kama bada'a. Maka akan kembali kepada dagang. Akhir zaman, akan jadi macam tu juga. Orang yang ikut Islam ni jadi aneh, jadi pelik. Sikit ni. Kemudian Nabi kata apa? Fa tuba lil ghuraba. Beroleh kebaikanlah. Beroleh keelokanlah kepada orang yang meletakkan diri dia dalam keadaan pelik, dalam keadaan dagang. Yang ni, menyertai Islam bersama-sama, memegang teguh agama Allah SWT. Itu memang resam, adat bagi agama kita Islam ni. Biasanya akan jadi pelik.",
+ "lecture": "ismi_fathu_makkah"
+}
