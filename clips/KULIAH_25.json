@@ -1,0 +1,87 @@
+{
+ "id": "25",
+ "slug": "ISTERI_BOLEH_AMBIL_DUIT_SUAMI_TANPA_IZIN",
+ "category": "FIQH KELUARGA",
+ "title_lines": [
+  [
+   {
+    "t": "ISTERI BOLEH AMBIL"
+   }
+  ],
+  [
+   {
+    "t": "DUIT SUAMI",
+    "gold": true
+   }
+  ],
+  [
+   {
+    "t": "TANPA IZIN?"
+   }
+  ]
+ ],
+ "header_html": "ISTERI BOLEH AMBIL <span class=\"g\">DUIT SUAMI</span> TANPA IZIN?",
+ "cover_kicker": "KULIAH SIRAH • FATHU MAKKAH",
+ "cover_sub": "Pondok Pengajian Darul Mubarak",
+ "speaker": "YB Ustaz Muhammad Ismi Mat Taib",
+ "speaker_role": "Pondok Pengajian Darul Mubarak • Sirah Fathu Makkah",
+ "series": "KULIAH SIRAH FATHU MAKKAH",
+ "face": [
+  550,
+  640
+ ],
+ "src_crop": [
+  146,
+  0,
+  788,
+  1400
+ ],
+ "music_volume": 0.1,
+ "whisper": "clips/whisper/w25.json",
+ "window": 2970,
+ "start": 2972.7,
+ "end": 3089.0,
+ "arabic": [
+  {
+   "ar": "خُذِي مَا يَكْفِيكِ وَوَلَدَكِ بِالْمَعْرُوفِ",
+   "ms": "Ambillah apa yang mencukupi keperluanmu dan anak-anakmu dengan cara yang baik (makruf).",
+   "ref": "HR AL-BUKHARI & MUSLIM",
+   "at": 81.6,
+   "dur": 13.4
+  }
+ ],
+ "points": [
+  {
+   "label": "HINDUN BINTI UTBAH",
+   "text": "Isteri Abu Sufyan bertanya ketika bai'ah",
+   "at": 6.0,
+   "dur": 10.0
+  },
+  {
+   "label": "SYARAT",
+   "text": "Suami kedekut, tidak beri nafkah — boleh ambil sekadar keperluan",
+   "at": 69.4,
+   "dur": 11.6
+  },
+  {
+   "label": "BATASAN",
+   "text": "Suami yang menanggung dengan baik — isteri tidak boleh ambil",
+   "at": 96.5,
+   "dur": 13.0
+  }
+ ],
+ "keywords": [
+  "kedekut",
+  "halal",
+  "nafkah",
+  "suami",
+  "isteri",
+  "keperluan",
+  "anak-anakmu",
+  "mencuri"
+ ],
+ "text": "Hindun bila sebut mencuri, eh ini. Ya Rasulullah, inna Aba Sufyan rajulun syahih, fa hal 'alayya haraj an asaba min malihi? Sesungguhnya Abu Sufyan seorang yang bakhil, adakah aku bersalah jika aku mengambil sedikit daripada hartanya? Macam mana pula? Tengah bai'ah satu-satu, hai, Hindun menyampuk. Nabi kata hendaklah kamu berjanji bahawa tak boleh mencuri. Eh, tak boleh mencuri pula. Macam mana ni? Abu Sufyan, laki aku ni kedekut. Kedekut, jadi tak bagi nafkah pada aku. Lantas Abu Sufyan menjawab, malu pula laki ni. Wa ma asabti fahuwa laki halal. Halal. Apa yang kamu ambil tu semuanya halal, kata Abu Sufyan. Isteri dia cakap macam tu kan, malulah dia. Yang kamu ambil tu aku halalkan. Jadi memang isteri boleh ambil harta suami, syaratnya suami kedekut. Kalau suami tak kedekut tak boleh ambil. Nabi kata, khuzi ma yakfiki wa waladaki. Ambillah untuk keperluanmu wa waladaki, dan anak-anakmu. Kedekut, tangkai jering laki. Duduk di rumah tak ada, tak bagi, kedekut. Boleh ambil. Untuk keperluan kamu dan anak-anakmu kena ambil. Tapi kalau laki dah tanggung elok, tak bolehlah ambil.",
+ "lecture": "ismi_fathu_makkah",
+ "style": "B",
+ "episode": 13
+}
