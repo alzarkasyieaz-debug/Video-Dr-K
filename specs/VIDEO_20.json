@@ -1,0 +1,230 @@
+{
+ "source": "drk2",
+ "source_name": "Dr K 2.mp4",
+ "speaker": "DR. KHAIRUDDIN AMAN RAZALI",
+ "role": "Bekas Menteri Komoditi",
+ "gap": 0.9,
+ "tail": 1.4,
+ "lowercase": true,
+ "frame": {
+  "x": 870,
+  "y": 570,
+  "s": 1.75
+ },
+ "focus": [
+  [
+   0,
+   905,
+   570
+  ],
+  [
+   500,
+   850,
+   565
+  ],
+  [
+   800,
+   895,
+   570
+  ],
+  [
+   1100,
+   845,
+   565
+  ],
+  [
+   1600,
+   858,
+   565
+  ],
+  [
+   2200,
+   855,
+   565
+  ],
+  [
+   2700,
+   893,
+   570
+  ]
+ ],
+ "face_y": 740,
+ "grade": "eq=contrast=1.07:brightness=0.02:saturation=1.06:gamma=1.05",
+ "keywords_blue": [
+  "barisan",
+  "nasional",
+  "pakatan",
+  "harapan",
+  "perikatan",
+  "bn",
+  "ph",
+  "pn",
+  "gps",
+  "grs",
+  "dap",
+  "pkr",
+  "amanah"
+ ],
+ "fix": {
+  "Amno": "UMNO",
+  "Pas": "PAS",
+  "Kursi": "kerusi",
+  "Kurusi": "kerusi",
+  "Muhafakat": "muafakat",
+  "Keedah": "kaedah",
+  "Besor": "besar",
+  "Belakar": "belaka",
+  "Pembangkan": "pembangkang",
+  "Hanyu": "hanya"
+ },
+ "id": "VIDEO_20",
+ "topic": "Pertembungan PAS–UMNO & Keluarga",
+ "hook_title": "KELUARGA SEMUA UMNO,|[SAYA SEORANG PAS]",
+ "hook_kicker": "KISAH PERIBADI",
+ "hook": [
+  656.9,
+  659.95
+ ],
+ "ranges": [
+  [
+   604.5,
+   676.6
+  ],
+  [
+   724.0,
+   746.3
+  ]
+ ],
+ "mood": "emotional",
+ "seed": 51,
+ "keywords": [
+  "keluarga",
+  "adik",
+  "beradik",
+  "pecah",
+  "PAS",
+  "umno",
+  "memudaratkan",
+  "islam",
+  "terengganu",
+  "98%",
+  "16",
+  "1989",
+  "agama"
+ ],
+ "phrase_fix": [
+  [
+   "Uhuah Persadaran",
+   "ukhuwah, persaudaraan"
+  ],
+  [
+   "Tuk Sedara Tujuh Sedara",
+   "tok saudara, tujuh saudara"
+  ],
+  [
+   "Sedara",
+   "saudara"
+  ],
+  [
+   "89",
+   "1989"
+  ],
+  [
+   "Akhidat Kedekat",
+   "~ ~"
+  ],
+  [
+   "Disupport",
+   "disokong"
+  ],
+  [
+   "Hadir Awam",
+   "Hadi Awang"
+  ],
+  [
+   "Kerja Seorang",
+   "kecuali seorang"
+  ]
+ ],
+ "facts": [
+  {
+   "type": "bars",
+   "at": "3.6",
+   "label": "Pertembungan orang Melayu",
+   "items": [
+    {
+     "label": "UMNO",
+     "value": 3.6,
+     "show": "3.6 JUTA",
+     "at": "3.6"
+    },
+    {
+     "label": "PAS",
+     "value": 1,
+     "show": "1 JUTA",
+     "at": "1",
+     "color": "linear-gradient(90deg,#d9a520,#ffd76a)"
+    }
+   ],
+   "src": "Menurut ucapan penceramah",
+   "dur": 6
+  },
+  {
+   "type": "bullets",
+   "at": "Pecah Keluarga",
+   "icon": "people",
+   "label": "Kesan pertembungan",
+   "items": [
+    {
+     "text": "Pecah keluarga & adik-beradik",
+     "at": "Pecah"
+    },
+    {
+     "text": "Sanak saudara",
+     "at": "Sanak"
+    },
+    {
+     "text": "Suami isteri lain parti",
+     "at": "Suami"
+    }
+   ],
+   "dur": 12
+  },
+  {
+   "type": "percent",
+   "at": "98",
+   "value": 98,
+   "label": "Negeri Terengganu",
+   "sub": "Penduduk Melayu — bukan Islam sekitar 2% sahaja",
+   "src": "Menurut ucapan penceramah",
+   "dur": 8
+  },
+  {
+   "type": "number",
+   "at": "1989",
+   "icon": "mic",
+   "label": "Penceramah masuk PAS",
+   "value": 16,
+   "suffix": " TAHUN",
+   "sub": "Tahun 1989 — ketika keluarga lain semua UMNO",
+   "dur": 9
+  },
+  {
+   "type": "keyword",
+   "at": "Menggerakkan Hubungan",
+   "icon": "handshake",
+   "label": "Kemudian",
+   "text": "MENGGERAKKAN|[HUBUNGAN PAS–UMNO]",
+   "sub": "Disokong Presiden PAS, Tuan Guru Haji Abdul Hadi Awang",
+   "dur": 7
+  }
+ ],
+ "conclusion": {
+  "at": "Maka Keadaan",
+  "after": 55,
+  "kicker": "Tekad penceramah",
+  "text": "KEADAAN INI|[TIDAK BOLEH DIBIARKAN]"
+ },
+ "end_text": "Pertembungan memudaratkan|[Perpaduan menyembuhkan]",
+ "cover_title": "KELUARGA|SEMUA UMNO,|[SAYA SEORANG PAS]"
+}

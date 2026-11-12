@@ -1,0 +1,1340 @@
+{
+ "id": "VIDEO_13",
+ "duration": 119.3,
+ "edl": [
+  {
+   "a": 333.85,
+   "b": 338.75,
+   "kind": "hook",
+   "o": 0.0
+  },
+  {
+   "a": 234.8,
+   "b": 247.32,
+   "kind": "body",
+   "o": 4.9
+  },
+  {
+   "a": 248.0,
+   "b": 276.78,
+   "kind": "body",
+   "o": 17.42
+  },
+  {
+   "a": 277.89,
+   "b": 294.29,
+   "kind": "body",
+   "o": 46.2
+  },
+  {
+   "a": 295.27,
+   "b": 298.03,
+   "kind": "body",
+   "o": 62.6
+  },
+  {
+   "a": 298.65,
+   "b": 325.37,
+   "kind": "body",
+   "o": 65.36
+  },
+  {
+   "a": 325.97,
+   "b": 347.45,
+   "kind": "body",
+   "o": 92.08
+  },
+  {
+   "a": 348.11,
+   "b": 353.84999999999997,
+   "kind": "body",
+   "tail": 1.4,
+   "o": 113.56
+  }
+ ],
+ "words": [
+  {
+   "t": "Mengutamakan",
+   "s": 0.08,
+   "e": 1.46,
+   "piece": 0
+  },
+  {
+   "t": "urusan",
+   "s": 1.46,
+   "e": 2.12,
+   "piece": 0
+  },
+  {
+   "t": "pemilihan",
+   "s": 2.12,
+   "e": 2.92,
+   "piece": 0
+  },
+  {
+   "t": "pemerintah",
+   "s": 2.92,
+   "e": 3.66,
+   "piece": 0
+  },
+  {
+   "t": "lebih",
+   "s": 3.66,
+   "e": 4.28,
+   "piece": 0
+  },
+  {
+   "t": "utama",
+   "s": 4.28,
+   "e": 4.84,
+   "piece": 0
+  },
+  {
+   "t": "kenapa",
+   "s": 4.98,
+   "e": 5.58,
+   "piece": 1
+  },
+  {
+   "t": "para",
+   "s": 5.58,
+   "e": 6.06,
+   "piece": 1
+  },
+  {
+   "t": "sahabat",
+   "s": 6.06,
+   "e": 6.64,
+   "piece": 1
+  },
+  {
+   "t": "Nabi",
+   "s": 6.64,
+   "e": 7.0,
+   "piece": 1
+  },
+  {
+   "t": "s.a.w.",
+   "s": 7.0,
+   "e": 8.2,
+   "piece": 1
+  },
+  {
+   "t": "menangguhkan",
+   "s": 8.46,
+   "e": 9.46,
+   "piece": 1
+  },
+  {
+   "t": "urusan",
+   "s": 9.46,
+   "e": 9.92,
+   "piece": 1
+  },
+  {
+   "t": "pengebumian",
+   "s": 9.92,
+   "e": 10.68,
+   "piece": 1
+  },
+  {
+   "t": "dan",
+   "s": 10.68,
+   "e": 12.22,
+   "piece": 1
+  },
+  {
+   "t": "mengutamakan",
+   "s": 12.22,
+   "e": 13.32,
+   "piece": 1
+  },
+  {
+   "t": "urusan",
+   "s": 13.32,
+   "e": 14.12,
+   "piece": 1
+  },
+  {
+   "t": "memilih",
+   "s": 14.12,
+   "e": 14.82,
+   "piece": 1
+  },
+  {
+   "t": "pengganti",
+   "s": 14.82,
+   "e": 15.34,
+   "piece": 1
+  },
+  {
+   "t": "bagi",
+   "s": 15.34,
+   "e": 15.84,
+   "piece": 1
+  },
+  {
+   "t": "dia",
+   "s": 15.84,
+   "e": 15.94,
+   "piece": 1
+  },
+  {
+   "t": "s.a.w.",
+   "s": 15.94,
+   "e": 17.2,
+   "piece": 1
+  },
+  {
+   "t": "Tidakkah",
+   "s": 17.56,
+   "e": 18.44,
+   "piece": 2
+  },
+  {
+   "t": "mereka",
+   "s": 18.44,
+   "e": 18.72,
+   "piece": 2
+  },
+  {
+   "t": "sedar",
+   "s": 18.72,
+   "e": 19.38,
+   "piece": 2
+  },
+  {
+   "t": "bahawa",
+   "s": 19.38,
+   "e": 19.82,
+   "piece": 2
+  },
+  {
+   "t": "Nabi",
+   "s": 19.82,
+   "e": 20.22,
+   "piece": 2
+  },
+  {
+   "t": "s.a.w.",
+   "s": 20.22,
+   "e": 21.28,
+   "piece": 2
+  },
+  {
+   "t": "menyebut",
+   "s": 21.38,
+   "e": 22.16,
+   "piece": 2
+  },
+  {
+   "t": "Asri'u",
+   "s": 22.16,
+   "e": 23.36,
+   "piece": 2
+  },
+  {
+   "t": "bil-janazah,",
+   "s": 23.36,
+   "e": 24.18,
+   "piece": 2
+  },
+  {
+   "t": "segerakan",
+   "s": 24.28,
+   "e": 25.08,
+   "piece": 2
+  },
+  {
+   "t": "menguruskan",
+   "s": 25.08,
+   "e": 25.72,
+   "piece": 2
+  },
+  {
+   "t": "jenazah",
+   "s": 25.72,
+   "e": 26.18,
+   "piece": 2
+  },
+  {
+   "t": "kamu",
+   "s": 26.18,
+   "e": 26.48,
+   "piece": 2
+  },
+  {
+   "t": "dengan",
+   "s": 26.48,
+   "e": 28.12,
+   "piece": 2
+  },
+  {
+   "t": "maksud",
+   "s": 28.12,
+   "e": 28.52,
+   "piece": 2
+  },
+  {
+   "t": "jenazah",
+   "s": 28.52,
+   "e": 29.34,
+   "piece": 2
+  },
+  {
+   "t": "sebaik",
+   "s": 29.34,
+   "e": 30.0,
+   "piece": 2
+  },
+  {
+   "t": "sahaja",
+   "s": 30.0,
+   "e": 30.48,
+   "piece": 2
+  },
+  {
+   "t": "mati,",
+   "s": 30.48,
+   "e": 30.98,
+   "piece": 2
+  },
+  {
+   "t": "kena",
+   "s": 31.1,
+   "e": 31.4,
+   "piece": 2
+  },
+  {
+   "t": "segerakan",
+   "s": 31.4,
+   "e": 32.14,
+   "piece": 2
+  },
+  {
+   "t": "kalau",
+   "s": 32.14,
+   "e": 33.52,
+   "piece": 2
+  },
+  {
+   "t": "paginya",
+   "s": 33.52,
+   "e": 34.12,
+   "piece": 2
+  },
+  {
+   "t": "mati,",
+   "s": 34.12,
+   "e": 34.62,
+   "piece": 2
+  },
+  {
+   "t": "petang",
+   "s": 34.82,
+   "e": 35.1,
+   "piece": 2
+  },
+  {
+   "t": "kita",
+   "s": 35.1,
+   "e": 35.4,
+   "piece": 2
+  },
+  {
+   "t": "kebumikan",
+   "s": 35.4,
+   "e": 36.06,
+   "piece": 2
+  },
+  {
+   "t": "kalau",
+   "s": 36.06,
+   "e": 36.5,
+   "piece": 2
+  },
+  {
+   "t": "malam",
+   "s": 36.5,
+   "e": 37.0,
+   "piece": 2
+  },
+  {
+   "t": "meninggal,",
+   "s": 37.0,
+   "e": 37.54,
+   "piece": 2
+  },
+  {
+   "t": "pagi",
+   "s": 37.66,
+   "e": 37.9,
+   "piece": 2
+  },
+  {
+   "t": "esok",
+   "s": 37.9,
+   "e": 38.16,
+   "piece": 2
+  },
+  {
+   "t": "kita",
+   "s": 38.16,
+   "e": 38.44,
+   "piece": 2
+  },
+  {
+   "t": "kebumikan",
+   "s": 38.44,
+   "e": 39.12,
+   "piece": 2
+  },
+  {
+   "t": "takkan",
+   "s": 39.12,
+   "e": 39.82,
+   "piece": 2
+  },
+  {
+   "t": "tangguh",
+   "s": 39.82,
+   "e": 40.28,
+   "piece": 2
+  },
+  {
+   "t": "sampai",
+   "s": 40.28,
+   "e": 40.74,
+   "piece": 2
+  },
+  {
+   "t": "satu",
+   "s": 40.74,
+   "e": 41.06,
+   "piece": 2
+  },
+  {
+   "t": "hari,",
+   "s": 41.06,
+   "e": 41.56,
+   "piece": 2
+  },
+  {
+   "t": "24",
+   "s": 41.94,
+   "e": 42.22,
+   "piece": 2
+  },
+  {
+   "t": "jam,",
+   "s": 42.22,
+   "e": 42.94,
+   "piece": 2
+  },
+  {
+   "t": "dua",
+   "s": 43.28,
+   "e": 43.44,
+   "piece": 2
+  },
+  {
+   "t": "hari",
+   "s": 43.44,
+   "e": 43.86,
+   "piece": 2
+  },
+  {
+   "t": "tak",
+   "s": 43.86,
+   "e": 44.08,
+   "piece": 2
+  },
+  {
+   "t": "mungkin,",
+   "s": 44.08,
+   "e": 44.46,
+   "piece": 2
+  },
+  {
+   "t": "tak",
+   "s": 44.62,
+   "e": 44.72,
+   "piece": 2
+  },
+  {
+   "t": "ditangguh",
+   "s": 44.72,
+   "e": 45.38,
+   "piece": 2
+  },
+  {
+   "t": "adakah",
+   "s": 45.38,
+   "e": 45.98,
+   "piece": 2
+  },
+  {
+   "t": "para",
+   "s": 46.34,
+   "e": 46.66,
+   "piece": 3
+  },
+  {
+   "t": "sahabat",
+   "s": 46.66,
+   "e": 47.12,
+   "piece": 3
+  },
+  {
+   "t": "tak",
+   "s": 47.12,
+   "e": 47.3,
+   "piece": 3
+  },
+  {
+   "t": "faham",
+   "s": 47.3,
+   "e": 47.68,
+   "piece": 3
+  },
+  {
+   "t": "hadis",
+   "s": 47.68,
+   "e": 47.98,
+   "piece": 3
+  },
+  {
+   "t": "Nabi,",
+   "s": 47.98,
+   "e": 48.28,
+   "piece": 3
+  },
+  {
+   "t": "mereka",
+   "s": 48.54,
+   "e": 48.86,
+   "piece": 3
+  },
+  {
+   "t": "faham",
+   "s": 48.86,
+   "e": 49.36,
+   "piece": 3
+  },
+  {
+   "t": "mereka",
+   "s": 49.36,
+   "e": 50.78,
+   "piece": 3
+  },
+  {
+   "t": "tahu",
+   "s": 50.78,
+   "e": 51.16,
+   "piece": 3
+  },
+  {
+   "t": "itu",
+   "s": 51.16,
+   "e": 51.4,
+   "piece": 3
+  },
+  {
+   "t": "hukumnya",
+   "s": 51.4,
+   "e": 51.98,
+   "piece": 3
+  },
+  {
+   "t": "tetapi",
+   "s": 51.98,
+   "e": 53.34,
+   "piece": 3
+  },
+  {
+   "t": "mereka",
+   "s": 53.34,
+   "e": 53.74,
+   "piece": 3
+  },
+  {
+   "t": "pegang",
+   "s": 53.74,
+   "e": 54.64,
+   "piece": 3
+  },
+  {
+   "t": "satu",
+   "s": 54.64,
+   "e": 54.92,
+   "piece": 3
+  },
+  {
+   "t": "kaedah",
+   "s": 54.92,
+   "e": 55.38,
+   "piece": 3
+  },
+  {
+   "t": "bila",
+   "s": 55.38,
+   "e": 56.88,
+   "piece": 3
+  },
+  {
+   "t": "mana",
+   "s": 56.88,
+   "e": 57.06,
+   "piece": 3
+  },
+  {
+   "t": "bertembung",
+   "s": 57.06,
+   "e": 57.84,
+   "piece": 3
+  },
+  {
+   "t": "dua",
+   "s": 57.84,
+   "e": 58.16,
+   "piece": 3
+  },
+  {
+   "t": "perkara",
+   "s": 58.16,
+   "e": 58.68,
+   "piece": 3
+  },
+  {
+   "t": "yang",
+   "s": 58.68,
+   "e": 58.86,
+   "piece": 3
+  },
+  {
+   "t": "besar",
+   "s": 58.86,
+   "e": 59.32,
+   "piece": 3
+  },
+  {
+   "t": "dua-dua",
+   "s": 59.32,
+   "e": 60.24,
+   "piece": 3
+  },
+  {
+   "t": "keadaannya,",
+   "s": 60.24,
+   "e": 61.18,
+   "piece": 3
+  },
+  {
+   "t": "fardu",
+   "s": 61.3,
+   "e": 61.76,
+   "piece": 3
+  },
+  {
+   "t": "kifayah",
+   "s": 61.76,
+   "e": 62.38,
+   "piece": 3
+  },
+  {
+   "t": "menguruskan",
+   "s": 62.74,
+   "e": 63.64,
+   "piece": 4
+  },
+  {
+   "t": "jenazah",
+   "s": 63.64,
+   "e": 64.18,
+   "piece": 4
+  },
+  {
+   "t": "fardu",
+   "s": 64.18,
+   "e": 64.56,
+   "piece": 4
+  },
+  {
+   "t": "kifayah",
+   "s": 64.56,
+   "e": 65.14,
+   "piece": 4
+  },
+  {
+   "t": "memilih",
+   "s": 65.5,
+   "e": 66.4,
+   "piece": 5
+  },
+  {
+   "t": "pengganti",
+   "s": 66.4,
+   "e": 66.92,
+   "piece": 5
+  },
+  {
+   "t": "Nabi",
+   "s": 66.92,
+   "e": 67.34,
+   "piece": 5
+  },
+  {
+   "t": "juga",
+   "s": 67.34,
+   "e": 67.62,
+   "piece": 5
+  },
+  {
+   "t": "fardu",
+   "s": 67.62,
+   "e": 68.12,
+   "piece": 5
+  },
+  {
+   "t": "kifayah",
+   "s": 68.12,
+   "e": 68.74,
+   "piece": 5
+  },
+  {
+   "t": "dengan",
+   "s": 68.74,
+   "e": 69.12,
+   "piece": 5
+  },
+  {
+   "t": "maksud,",
+   "s": 69.12,
+   "e": 69.58,
+   "piece": 5
+  },
+  {
+   "t": "kalau",
+   "s": 69.8,
+   "e": 70.06,
+   "piece": 5
+  },
+  {
+   "t": "tak",
+   "s": 70.06,
+   "e": 70.36,
+   "piece": 5
+  },
+  {
+   "t": "ada",
+   "s": 70.36,
+   "e": 70.58,
+   "piece": 5
+  },
+  {
+   "t": "orang",
+   "s": 70.58,
+   "e": 71.02,
+   "piece": 5
+  },
+  {
+   "t": "yang",
+   "s": 71.02,
+   "e": 71.32,
+   "piece": 5
+  },
+  {
+   "t": "uruskan",
+   "s": 71.32,
+   "e": 71.98,
+   "piece": 5
+  },
+  {
+   "t": "semua",
+   "s": 71.98,
+   "e": 72.58,
+   "piece": 5
+  },
+  {
+   "t": "akan",
+   "s": 72.58,
+   "e": 72.72,
+   "piece": 5
+  },
+  {
+   "t": "berdosa",
+   "s": 72.72,
+   "e": 73.18,
+   "piece": 5
+  },
+  {
+   "t": "tetapi",
+   "s": 73.18,
+   "e": 75.08,
+   "piece": 5
+  },
+  {
+   "t": "bila",
+   "s": 75.08,
+   "e": 75.36,
+   "piece": 5
+  },
+  {
+   "t": "bertemu",
+   "s": 75.36,
+   "e": 75.9,
+   "piece": 5
+  },
+  {
+   "t": "dua",
+   "s": 75.9,
+   "e": 76.26,
+   "piece": 5
+  },
+  {
+   "t": "fardu",
+   "s": 76.26,
+   "e": 76.7,
+   "piece": 5
+  },
+  {
+   "t": "kifayah",
+   "s": 76.7,
+   "e": 77.22,
+   "piece": 5
+  },
+  {
+   "t": "Fardu",
+   "s": 77.38,
+   "e": 77.94,
+   "piece": 5
+  },
+  {
+   "t": "kifayah",
+   "s": 77.94,
+   "e": 78.52,
+   "piece": 5
+  },
+  {
+   "t": "melibatkan",
+   "s": 78.52,
+   "e": 79.42,
+   "piece": 5
+  },
+  {
+   "t": "memilih",
+   "s": 79.42,
+   "e": 80.46,
+   "piece": 5
+  },
+  {
+   "t": "pemerintah,",
+   "s": 80.46,
+   "e": 81.12,
+   "piece": 5
+  },
+  {
+   "t": "mesti",
+   "s": 81.24,
+   "e": 81.44,
+   "piece": 5
+  },
+  {
+   "t": "diutamakan",
+   "s": 81.44,
+   "e": 82.22,
+   "piece": 5
+  },
+  {
+   "t": "lalu",
+   "s": 82.22,
+   "e": 84.14,
+   "piece": 5
+  },
+  {
+   "t": "kata",
+   "s": 84.14,
+   "e": 84.44,
+   "piece": 5
+  },
+  {
+   "t": "para",
+   "s": 84.44,
+   "e": 84.74,
+   "piece": 5
+  },
+  {
+   "t": "alim",
+   "s": 84.74,
+   "e": 85.06,
+   "piece": 5
+  },
+  {
+   "t": "ulama'",
+   "s": 85.06,
+   "e": 85.62,
+   "piece": 5
+  },
+  {
+   "t": "ini",
+   "s": 85.74,
+   "e": 86.1,
+   "piece": 5
+  },
+  {
+   "t": "satu",
+   "s": 86.1,
+   "e": 86.28,
+   "piece": 5
+  },
+  {
+   "t": "ijmak",
+   "s": 86.28,
+   "e": 86.72,
+   "piece": 5
+  },
+  {
+   "t": "dan",
+   "s": 86.72,
+   "e": 88.26,
+   "piece": 5
+  },
+  {
+   "t": "itu",
+   "s": 88.26,
+   "e": 88.48,
+   "piece": 5
+  },
+  {
+   "t": "ijmak",
+   "s": 88.48,
+   "e": 89.0,
+   "piece": 5
+  },
+  {
+   "t": "yang",
+   "s": 89.0,
+   "e": 89.26,
+   "piece": 5
+  },
+  {
+   "t": "berlaku",
+   "s": 89.26,
+   "e": 89.8,
+   "piece": 5
+  },
+  {
+   "t": "selepas",
+   "s": 89.8,
+   "e": 90.4,
+   "piece": 5
+  },
+  {
+   "t": "wafatnya",
+   "s": 90.4,
+   "e": 91.0,
+   "piece": 5
+  },
+  {
+   "t": "Nabi",
+   "s": 91.0,
+   "e": 91.34,
+   "piece": 5
+  },
+  {
+   "t": "SAW",
+   "s": 91.34,
+   "e": 91.86,
+   "piece": 5
+  },
+  {
+   "t": "ijmak",
+   "s": 92.22,
+   "e": 92.7,
+   "piece": 6
+  },
+  {
+   "t": "yang",
+   "s": 92.7,
+   "e": 92.84,
+   "piece": 6
+  },
+  {
+   "t": "pertama",
+   "s": 92.84,
+   "e": 93.38,
+   "piece": 6
+  },
+  {
+   "t": "di",
+   "s": 93.38,
+   "e": 94.02,
+   "piece": 6
+  },
+  {
+   "t": "kalangan",
+   "s": 94.02,
+   "e": 94.4,
+   "piece": 6
+  },
+  {
+   "t": "para",
+   "s": 94.4,
+   "e": 94.68,
+   "piece": 6
+  },
+  {
+   "t": "sahabat",
+   "s": 94.68,
+   "e": 95.3,
+   "piece": 6
+  },
+  {
+   "t": "itu",
+   "s": 95.3,
+   "e": 95.98,
+   "piece": 6
+  },
+  {
+   "t": "ijmaknya",
+   "s": 95.98,
+   "e": 96.82,
+   "piece": 6
+  },
+  {
+   "t": "para",
+   "s": 96.82,
+   "e": 97.08,
+   "piece": 6
+  },
+  {
+   "t": "sahabat",
+   "s": 97.08,
+   "e": 97.78,
+   "piece": 6
+  },
+  {
+   "t": "sepakatnya",
+   "s": 97.78,
+   "e": 98.74,
+   "piece": 6
+  },
+  {
+   "t": "para",
+   "s": 98.74,
+   "e": 98.98,
+   "piece": 6
+  },
+  {
+   "t": "sahabat",
+   "s": 98.98,
+   "e": 99.5,
+   "piece": 6
+  },
+  {
+   "t": "bahawa",
+   "s": 99.5,
+   "e": 100.04,
+   "piece": 6
+  },
+  {
+   "t": "mengutamakan",
+   "s": 100.04,
+   "e": 101.42,
+   "piece": 6
+  },
+  {
+   "t": "urusan",
+   "s": 101.42,
+   "e": 102.08,
+   "piece": 6
+  },
+  {
+   "t": "pemilihan",
+   "s": 102.08,
+   "e": 102.88,
+   "piece": 6
+  },
+  {
+   "t": "pemerintah",
+   "s": 102.88,
+   "e": 103.62,
+   "piece": 6
+  },
+  {
+   "t": "lebih",
+   "s": 103.62,
+   "e": 104.24,
+   "piece": 6
+  },
+  {
+   "t": "utama",
+   "s": 104.24,
+   "e": 104.8,
+   "piece": 6
+  },
+  {
+   "t": "berbanding",
+   "s": 104.8,
+   "e": 105.36,
+   "piece": 6
+  },
+  {
+   "t": "urusan",
+   "s": 105.36,
+   "e": 105.96,
+   "piece": 6
+  },
+  {
+   "t": "menguruskan",
+   "s": 105.96,
+   "e": 106.62,
+   "piece": 6
+  },
+  {
+   "t": "jenazah",
+   "s": 106.62,
+   "e": 107.14,
+   "piece": 6
+  },
+  {
+   "t": "dan",
+   "s": 107.14,
+   "e": 108.68,
+   "piece": 6
+  },
+  {
+   "t": "ini",
+   "s": 108.68,
+   "e": 108.94,
+   "piece": 6
+  },
+  {
+   "t": "hukum",
+   "s": 108.94,
+   "e": 109.48,
+   "piece": 6
+  },
+  {
+   "t": "yang",
+   "s": 109.48,
+   "e": 109.96,
+   "piece": 6
+  },
+  {
+   "t": "disepakati",
+   "s": 109.96,
+   "e": 110.74,
+   "piece": 6
+  },
+  {
+   "t": "oleh",
+   "s": 110.74,
+   "e": 110.98,
+   "piece": 6
+  },
+  {
+   "t": "para",
+   "s": 110.98,
+   "e": 111.28,
+   "piece": 6
+  },
+  {
+   "t": "alim",
+   "s": 111.28,
+   "e": 111.6,
+   "piece": 6
+  },
+  {
+   "t": "ulama'",
+   "s": 111.6,
+   "e": 112.0,
+   "piece": 6
+  },
+  {
+   "t": "dulu",
+   "s": 112.0,
+   "e": 112.58,
+   "piece": 6
+  },
+  {
+   "t": "sampai",
+   "s": 112.58,
+   "e": 112.96,
+   "piece": 6
+  },
+  {
+   "t": "ke",
+   "s": 112.96,
+   "e": 113.16,
+   "piece": 6
+  },
+  {
+   "t": "hari",
+   "s": 113.16,
+   "e": 113.34,
+   "piece": 6
+  },
+  {
+   "t": "dan",
+   "s": 113.7,
+   "e": 114.64,
+   "piece": 7
+  },
+  {
+   "t": "kita",
+   "s": 114.64,
+   "e": 114.96,
+   "piece": 7
+  },
+  {
+   "t": "malam",
+   "s": 114.96,
+   "e": 115.38,
+   "piece": 7
+  },
+  {
+   "t": "ni",
+   "s": 115.38,
+   "e": 115.56,
+   "piece": 7
+  },
+  {
+   "t": "bersama",
+   "s": 115.56,
+   "e": 116.14,
+   "piece": 7
+  },
+  {
+   "t": "untuk",
+   "s": 116.14,
+   "e": 116.58,
+   "piece": 7
+  },
+  {
+   "t": "memilih",
+   "s": 116.58,
+   "e": 117.22,
+   "piece": 7
+  },
+  {
+   "t": "pemerintah",
+   "s": 117.22,
+   "e": 117.78,
+   "piece": 7
+  }
+ ],
+ "facts": [
+  {
+   "type": "keyword",
+   "at": "kenapa para sahabat",
+   "icon": "clock",
+   "label": "Persoalan",
+   "text": "KENAPA SAHABAT|[TANGGUH PENGEBUMIAN]?",
+   "sub": "Dan dahulukan urusan memilih pengganti Nabi ﷺ",
+   "dur": 12,
+   "start": 4.86
+  },
+  {
+   "type": "quote",
+   "at": "segerakan menguruskan",
+   "label": "Hadis Nabi ﷺ",
+   "text": "“Segerakan menguruskan|[jenazah] kamu”",
+   "who": "Asri'u bil-janazah",
+   "dur": 8,
+   "start": 24.16
+  },
+  {
+   "type": "bullets",
+   "at": "bertembung dua perkara",
+   "icon": "scale",
+   "label": "Dua fardu kifayah bertembung",
+   "items": [
+    {
+     "text": "Menguruskan jenazah",
+     "at": "Menguruskan jenazah",
+     "t": 62.64
+    },
+    {
+     "text": "Memilih pengganti Nabi ﷺ",
+     "at": "Memilih pengganti",
+     "t": 65.4
+    }
+   ],
+   "dur": 12,
+   "start": 56.94
+  },
+  {
+   "type": "keyword",
+   "at": "Ijmak yang pertama",
+   "icon": "people",
+   "label": "Kata para alim ulama",
+   "text": "IJMAK|[PERTAMA PARA SAHABAT]",
+   "sub": "Urusan memilih pemerintah lebih utama",
+   "dur": 9,
+   "start": 92.1
+  }
+ ],
+ "conclusion": {
+  "at": "kita malam ni",
+  "after": 70,
+  "kicker": "Malam ini",
+  "text": "KITA BERSAMA|[MEMILIH PEMERINTAH]",
+  "start": 111.8,
+  "dur": 4.6
+ },
+ "topics": [
+  {
+   "label": "Pilih Pemerintah Diutamakan",
+   "start": 14.9
+  }
+ ],
+ "cues": [
+  [
+   "impact-bass-1.mp3",
+   0.05,
+   0.55
+  ],
+  [
+   "whoosh-cinematic.mp3",
+   4.349999999999977,
+   0.5
+  ],
+  [
+   "whoosh-short.mp3",
+   5.5,
+   0.35
+  ],
+  [
+   "whoosh-short.mp3",
+   4.86,
+   0.28
+  ],
+  [
+   "whoosh-short.mp3",
+   24.16,
+   0.28
+  ],
+  [
+   "whoosh-short.mp3",
+   56.94,
+   0.28
+  ],
+  [
+   "whoosh-short.mp3",
+   92.1,
+   0.28
+  ],
+  [
+   "impact-bass-2.mp3",
+   111.8,
+   0.5
+  ],
+  [
+   "whoosh-cinematic.mp3",
+   115.8,
+   0.4
+  ]
+ ],
+ "hook_end": 4.899999999999977
+}

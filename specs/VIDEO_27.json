@@ -1,0 +1,207 @@
+{
+ "source": "drk2",
+ "source_name": "Dr K 2.mp4",
+ "speaker": "DR. KHAIRUDDIN AMAN RAZALI",
+ "role": "Bekas Menteri Komoditi",
+ "gap": 0.8,
+ "tail": 1.4,
+ "lowercase": true,
+ "frame": {
+  "x": 870,
+  "y": 570,
+  "s": 1.75
+ },
+ "focus": [
+  [
+   0,
+   905,
+   570
+  ],
+  [
+   500,
+   850,
+   565
+  ],
+  [
+   800,
+   895,
+   570
+  ],
+  [
+   1100,
+   845,
+   565
+  ],
+  [
+   1600,
+   858,
+   565
+  ],
+  [
+   2200,
+   855,
+   565
+  ],
+  [
+   2700,
+   893,
+   570
+  ]
+ ],
+ "face_y": 740,
+ "grade": "eq=contrast=1.07:brightness=0.02:saturation=1.06:gamma=1.05",
+ "keywords_blue": [
+  "barisan",
+  "nasional",
+  "pakatan",
+  "harapan",
+  "perikatan",
+  "bn",
+  "ph",
+  "pn",
+  "gps",
+  "grs",
+  "dap",
+  "pkr",
+  "amanah"
+ ],
+ "fix": {
+  "Amno": "UMNO",
+  "Pas": "PAS",
+  "Kursi": "kerusi",
+  "Kurusi": "kerusi",
+  "Muhafakat": "muafakat",
+  "Keedah": "kaedah",
+  "Besor": "besar",
+  "Belakar": "belaka",
+  "Pembangkan": "pembangkang",
+  "Hanyu": "hanya"
+ },
+ "id": "VIDEO_27",
+ "topic": "Bila PRU? Cadangan Bulan 11",
+ "hook_title": "PRU SELEWAT-LEWATNYA|[BULAN 11]",
+ "hook_kicker": "CADANGAN KEPADA PM",
+ "hook": [
+  2806.7,
+  2811.15
+ ],
+ "ranges": [
+  [
+   2790.1,
+   2900.1
+  ]
+ ],
+ "mood": "serious",
+ "seed": 58,
+ "keywords": [
+  "pru",
+  "sebelas",
+  "momentum",
+  "perang",
+  "ekonomi",
+  "terjejas",
+  "uk",
+  "jerman",
+  "perancis",
+  "eropah",
+  "melaka",
+  "menang",
+  "besar"
+ ],
+ "phrase_fix": [
+  [
+   "Tintang kami",
+   "TPM kami"
+  ],
+  [
+   "sebelah",
+   "sebelas"
+  ],
+  [
+   "BM",
+   "BN"
+  ],
+  [
+   "tumbuh",
+   "tunggu"
+  ],
+  [
+   "kebarang",
+   "~"
+  ],
+  [
+   "talimat",
+   "taklimat"
+  ],
+  [
+   "PRM",
+   "PRN"
+  ],
+  [
+   "piang raya",
+   "pilihan raya"
+  ],
+  [
+   "sebulan apa",
+   "~ ~"
+  ]
+ ],
+ "facts": [
+  {
+   "type": "keyword",
+   "at": "kena buat pilihan",
+   "icon": "clock",
+   "label": "Cadangan TPM kepada PM",
+   "text": "PRU SELEWAT-LEWATNYA|[BULAN 11]",
+   "sub": "Sebelum bergolak antara BN dan PH",
+   "src": "Menurut ucapan penceramah",
+   "dur": 12
+  },
+  {
+   "type": "keyword",
+   "at": "momentum",
+   "icon": "chart",
+   "label": "Kenapa?",
+   "text": "MOMENTUM KERAJAAN|[SANGAT BAIK]",
+   "dur": 7
+  },
+  {
+   "type": "bullets",
+   "at": "UK kerajaan",
+   "icon": "warning",
+   "label": "Amaran simpan barang keperluan",
+   "items": [
+    {
+     "text": "United Kingdom",
+     "at": "UK kerajaan"
+    },
+    {
+     "text": "Jerman",
+     "at": "Jerman"
+    },
+    {
+     "text": "Perancis & Eropah",
+     "at": "Perancisnya"
+    }
+   ],
+   "src": "Menurut ucapan penceramah",
+   "dur": 10
+  },
+  {
+   "type": "keyword",
+   "at": "kalau berlaku perang",
+   "icon": "warning",
+   "label": "Risiko",
+   "text": "PERANG → EKONOMI TERJEJAS|[PRU SAKIT KERAJAAN]",
+   "dur": 9
+  }
+ ],
+ "conclusion": {
+  "at": "saya menjangkakan",
+  "after": 60,
+  "kicker": "Jangkaan penceramah",
+  "text": "PRN MELAKA:|[BN MENANG BESAR]"
+ },
+ "end_text": "PRU bulan 11?|[Momentum kerajaan]",
+ "cover_title": "PRU|SELEWAT-LEWATNYA|[BULAN 11]"
+}

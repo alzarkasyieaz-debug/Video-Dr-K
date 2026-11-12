@@ -1,0 +1,182 @@
+{
+ "source": "drk3",
+ "source_name": "Dr K 3.mp4",
+ "speaker": "DR. KHAIRUDDIN AMAN RAZALI",
+ "role": "Bekas Menteri Komoditi",
+ "gap": 0.9,
+ "tail": 1.8,
+ "frame": {
+  "x": 680,
+  "y": 850,
+  "s": 1.7
+ },
+ "focus": [
+  [
+   0,
+   680,
+   850
+  ],
+  [
+   400,
+   600,
+   835
+  ],
+  [
+   800,
+   446,
+   830
+  ],
+  [
+   1150,
+   541,
+   840
+  ],
+  [
+   1500,
+   499,
+   835
+  ],
+  [
+   1800,
+   533,
+   840
+  ]
+ ],
+ "face_y": 760,
+ "grade": "eq=contrast=1.07:brightness=0.02:saturation=1.06:gamma=1.04",
+ "keywords_blue": [
+  "barisan",
+  "nasional",
+  "pakatan",
+  "harapan",
+  "perikatan",
+  "bn",
+  "ph",
+  "pn"
+ ],
+ "fix": {
+  "Amno": "UMNO",
+  "Pas": "PAS",
+  "Beresan": "Barisan",
+  "Bansai": "Barisan",
+  "Kurusi": "kerusi",
+  "Kursi": "kerusi",
+  "Peringkatan": "Perikatan",
+  "Muafakan": "Muafakat",
+  "Keedah": "kaedah",
+  "janazah": "jenazah",
+  "ijmat": "ijmak",
+  "ijmatnya": "ijmaknya",
+  "Ijmat": "Ijmak",
+  "Nyama": "nyawa",
+  "Masalah": "maslahah",
+  "Zuryak": "zuriat",
+  "Suduk": "sudut",
+  "Diputuk": "Dipertuan",
+  "Dibutuk": "Dipertuan",
+  "Termektuk": "termaktub",
+  "Dituburkan": "ditubuhkan",
+  "Makin": "Maka",
+  "Termantuk": "termaktub",
+  "Sekulah": "sekular",
+  "Perekkaunan": "perakaunan",
+  "Wuduk": "wujud",
+  "Perkataan": "perkataan"
+ },
+ "id": "VIDEO_19",
+ "topic": "Politik Persepsi & Tabung Haji",
+ "hook_title": "POLITIK|[PERSEPSI]",
+ "hook_kicker": "ISU TABUNG HAJI",
+ "hook": [
+  1958.15,
+  1961.85
+ ],
+ "ranges": [
+  [
+   1955.4,
+   2027.3
+  ]
+ ],
+ "mood": "serious",
+ "seed": 47,
+ "keywords": [
+  "persepsi",
+  "sakau",
+  "dividen",
+  "dividend",
+  "kaedah",
+  "perakaunan",
+  "tabung",
+  "haji",
+  "rugi",
+  "untung"
+ ],
+ "phrase_fix": [
+  [
+   "Kan Namakan",
+   "~ namakan"
+  ],
+  [
+   "Dawak Bahasa Dan Pustak",
+   "Dewan Bahasa dan Pustaka"
+  ],
+  [
+   "Perkataan Harapan",
+   "Pakatan Harapan"
+  ],
+  [
+   "Belakar",
+   "belaka"
+  ],
+  [
+   "Dividend",
+   "dividen"
+  ]
+ ],
+ "facts": [
+  {
+   "type": "keyword",
+   "at": "Nak Mencipta",
+   "icon": "warning",
+   "label": "Menurut penceramah",
+   "text": "“SAKAU”|[BERULANG-ULANG]",
+   "sub": "Perkataan yang tiada dalam Kamus Dewan",
+   "dur": 10
+  },
+  {
+   "type": "bullets",
+   "at": "Pegang Tabung",
+   "icon": "chart",
+   "label": "Dua kaedah perakaunan Tabung Haji",
+   "items": [
+    {
+     "text": "Kaedah lama: mampu bayar dividen",
+     "at": "Mengisytiharkan"
+    },
+    {
+     "text": "Kaedah baru (PH): dilihat rugi",
+     "at": "Tukar"
+    }
+   ],
+   "src": "Menurut ucapan penceramah",
+   "dur": 16
+  },
+  {
+   "type": "keyword",
+   "at": "Betul",
+   "icon": "scale",
+   "label": "Hujah penceramah",
+   "text": "KEDUA-DUA KAEDAH|[BETUL BELAKA]",
+   "sub": "Tetapi kaedah kedua mencipta persepsi ‘sakau’",
+   "dur": 8
+  }
+ ],
+ "conclusion": {
+  "at": "Terciptalah",
+  "after": 45,
+  "kicker": "Kesan politik persepsi",
+  "text": "TERCIPTALAH|[PERSEPSI “SAKAU”]"
+ },
+ "end_text": "Politik persepsi|[Tabung Haji]",
+ "lowercase": true
+}

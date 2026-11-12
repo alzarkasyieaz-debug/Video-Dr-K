@@ -1,0 +1,193 @@
+{
+ "source": "drk5",
+ "source_name": "Dr K 5.mp4",
+ "speaker": "DR. KHAIRUDDIN AMAN RAZALI",
+ "role": "Bekas Menteri Komoditi",
+ "gap": 0.9,
+ "tail": 1.4,
+ "frame": {
+  "x": 905,
+  "y": 560,
+  "s": 1.7
+ },
+ "focus": [
+  [
+   0,
+   905,
+   560
+  ],
+  [
+   500,
+   870,
+   560
+  ],
+  [
+   700,
+   800,
+   560
+  ],
+  [
+   900,
+   726,
+   560
+  ],
+  [
+   1150,
+   705,
+   560
+  ],
+  [
+   1290,
+   741,
+   560
+  ]
+ ],
+ "face_y": 740,
+ "grade": "eq=contrast=1.08:brightness=0.04:saturation=1.08:gamma=1.12",
+ "keywords_blue": [
+  "barisan",
+  "nasional",
+  "pakatan",
+  "harapan",
+  "perikatan",
+  "bn",
+  "ph",
+  "pn"
+ ],
+ "fix": {
+  "FAS": "PAS",
+  "pas": "PAS",
+  "Sejujuh": "Setuju",
+  "isyara": "Islam",
+  "berterikah": "bertelingkah",
+  "mesin": "mesej",
+  "gunyah": "dunia",
+  "BMI": "BN",
+  "PS": "PH",
+  "neraikan": "meraikan",
+  "Belaka": "Melaka",
+  "Pertakaan": "Perikatan",
+  "luar-luar": "luas-luas",
+  "menuduk": "duduk"
+ },
+ "id": "VIDEO_10",
+ "topic": "Perpaduan Kerana Agama",
+ "hook_title": "BUKAN KERANA POLITIK —|[KERANA AGAMA]",
+ "hook_kicker": "PERPADUAN UMNO–PAS",
+ "hook": [
+  287.3,
+  291.45
+ ],
+ "ranges": [
+  [
+   275.5,
+   346.0
+  ]
+ ],
+ "mood": "inspire",
+ "seed": 31,
+ "keywords": [
+  "umno",
+  "pas",
+  "perpaduan",
+  "agama",
+  "juta",
+  "2019",
+  "2022",
+  "bertelingkah",
+  "akhirat",
+  "merdeka"
+ ],
+ "phrase_fix": [
+  [
+   "berlaku berdeka.",
+   "~ merdeka."
+  ],
+  [
+   "71 hingga 78,",
+   "1971 hingga 1978,"
+  ],
+  [
+   "3,6",
+   "3.6"
+  ],
+  [
+   "teryakin,",
+   "yakin,"
+  ],
+  [
+   "pandang,",
+   "panjang,"
+  ]
+ ],
+ "facts": [
+  {
+   "type": "bars",
+   "at": "UMNO, dengan",
+   "label": "Dua parti terbesar umat Islam",
+   "items": [
+    {
+     "label": "UMNO",
+     "value": 3.6,
+     "show": "3.6 JUTA",
+     "at": "UMNO"
+    },
+    {
+     "label": "PAS",
+     "value": 1.0,
+     "show": "1 JUTA",
+     "at": "PAS,",
+     "color": "linear-gradient(90deg,#d9a520,#ffd76a)"
+    }
+   ],
+   "sub": "Jumlah keahlian",
+   "src": "Menurut ucapan penceramah",
+   "dur": 8.5
+  },
+  {
+   "type": "timeline",
+   "at": "Didamaikan sekejap",
+   "label": "Sejarah hubungan UMNO–PAS",
+   "items": [
+    {
+     "y": "1971–78",
+     "d": "Didamaikan sekejap",
+     "at": "1971"
+    },
+    {
+     "y": "41 TAHUN",
+     "d": "Terungkai",
+     "at": "41"
+    },
+    {
+     "y": "2019",
+     "d": "14 Sept: bersatu kembali",
+     "at": "14"
+    },
+    {
+     "y": "2022",
+     "d": "Terungkai semula",
+     "at": "2022"
+    }
+   ],
+   "dur": 16.5
+  },
+  {
+   "type": "keyword",
+   "at": "percubaan",
+   "icon": "handshake",
+   "label": "Hari ini",
+   "text": "PERCUBAAN|[SETERUSNYA]",
+   "sub": "Dengan kesungguhan pimpinan tertinggi dan ahli dua parti",
+   "dur": 8
+  }
+ ],
+ "conclusion": {
+  "at": "bukan untuk",
+  "after": 55,
+  "kicker": "Harapan penceramah",
+  "text": "BUKAN UNTUK DUNIA —|[SAMPAI KE AKHIRAT]"
+ },
+ "end_text": "UMNO + PAS|[Perpaduan kerana agama]",
+ "cover_title": "BUKAN KERANA|POLITIK —|[KERANA AGAMA]"
+}

@@ -1,0 +1,107 @@
+{
+ "id": "VIDEO_01",
+ "source": "drk6",
+ "source_name": "Dr K 6 .mp4",
+ "topic": "Muafakat UMNO–PAS",
+ "speaker": "DR. KHAIRUDDIN AMAN RAZALI",
+ "role": "Bekas Menteri Komoditi · Ahli Panel Forum",
+ "hook_title": "APA YANG|[ISTIMEWA]|KALI INI?",
+ "hook_kicker": "MUAFAKAT UMNO–PAS",
+ "hook": [
+  19.8,
+  24.72
+ ],
+ "ranges": [
+  [
+   24.72,
+   140.75
+  ]
+ ],
+ "gap": 0.9,
+ "tail": 1.4,
+ "mood": "inspire",
+ "seed": 11,
+ "frame": {
+  "x": 870,
+  "y": 860,
+  "s": 1.6
+ },
+ "face_y": 760,
+ "keywords": [
+  "umno",
+  "pas",
+  "muafakat",
+  "islam",
+  "bercerai",
+  "melaka",
+  "special",
+  "specialnya",
+  "2019",
+  "menyatukan",
+  "ketakutan"
+ ],
+ "keywords_blue": [
+  "barisan",
+  "nasional",
+  "pakatan",
+  "harapan",
+  "perikatan",
+  "bn"
+ ],
+ "fix": {
+  "kemanangan": "kemenangan"
+ },
+ "facts": [
+  {
+   "type": "pair",
+   "at": "UMNO dan juga",
+   "items": [
+    "UMNO",
+    "PAS"
+   ],
+   "label": "Dua parti terbesar orang Islam",
+   "sub": "Menyatukan dua kelompok terbesar orang Islam",
+   "dur": 7.5
+  },
+  {
+   "type": "keyword",
+   "at": "Sudah dua kali bercerai",
+   "icon": "link",
+   "label": "Sejarah hubungan",
+   "text": "DUA KALI|[BERCERAI]",
+   "dur": 6
+  },
+  {
+   "type": "keyword",
+   "at": "tahun 2019",
+   "icon": "handshake",
+   "label": "Diusahakan semula",
+   "text": "[2019]|{MUAFAKAT} NASIONAL",
+   "dur": 5.5
+  },
+  {
+   "type": "keyword",
+   "at": "Tahun ini dalam situasi",
+   "icon": "warning",
+   "label": "Situasi semasa",
+   "text": "SITUASI|[TIDAK DIJANGKA]",
+   "sub": "BN bersama PH — bekas saingan politik UMNO",
+   "dur": 9
+  },
+  {
+   "type": "keyword",
+   "at": "Melaka muafakat",
+   "icon": "map",
+   "label": "Negeri Melaka",
+   "text": "MUAFAKAT|[LEBIH JELAS]",
+   "sub": "Persefahaman dibuat · kemenangan dijangka dimiliki bersama",
+   "dur": 8
+  }
+ ],
+ "conclusion": {
+  "at": "tapi yang specialnya",
+  "kicker": "Menurut penceramah",
+  "text": "YANG ISTIMEWA:|[MENIMBULKAN KETAKUTAN]|PAKATAN HARAPAN"
+ },
+ "end_text": "Muafakat UMNO–PAS|[Kali ini lebih istimewa]"
+}

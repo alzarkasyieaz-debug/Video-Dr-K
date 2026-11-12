@@ -1,0 +1,218 @@
+{
+ "source": "drk3",
+ "source_name": "Dr K 3.mp4",
+ "speaker": "DR. KHAIRUDDIN AMAN RAZALI",
+ "role": "Bekas Menteri Komoditi",
+ "gap": 0.9,
+ "tail": 1.4,
+ "frame": {
+  "x": 680,
+  "y": 850,
+  "s": 1.7
+ },
+ "focus": [
+  [
+   0,
+   680,
+   850
+  ],
+  [
+   400,
+   600,
+   835
+  ],
+  [
+   800,
+   446,
+   830
+  ],
+  [
+   1150,
+   541,
+   840
+  ],
+  [
+   1500,
+   499,
+   835
+  ],
+  [
+   1800,
+   533,
+   840
+  ]
+ ],
+ "face_y": 760,
+ "grade": "eq=contrast=1.07:brightness=0.02:saturation=1.06:gamma=1.04",
+ "keywords_blue": [
+  "barisan",
+  "nasional",
+  "pakatan",
+  "harapan",
+  "perikatan",
+  "bn",
+  "ph",
+  "pn"
+ ],
+ "fix": {
+  "Amno": "UMNO",
+  "Pas": "PAS",
+  "Beresan": "Barisan",
+  "Bansai": "Barisan",
+  "Kurusi": "kerusi",
+  "Kursi": "kerusi",
+  "Peringkatan": "Perikatan",
+  "Muafakan": "Muafakat",
+  "Keedah": "kaedah",
+  "janazah": "jenazah",
+  "ijmat": "ijmak",
+  "ijmatnya": "ijmaknya",
+  "Ijmat": "Ijmak",
+  "Nyama": "nyawa",
+  "Masalah": "maslahah",
+  "Zuryak": "zuriat",
+  "Suduk": "sudut",
+  "Diputuk": "Dipertuan",
+  "Dibutuk": "Dipertuan",
+  "Termektuk": "termaktub",
+  "Dituburkan": "ditubuhkan",
+  "Makin": "Maka",
+  "Termantuk": "termaktub",
+  "Sekulah": "sekular",
+  "Perekkaunan": "perakaunan",
+  "Wuduk": "wujud"
+ },
+ "id": "VIDEO_17",
+ "topic": "Muafakat 2019 & Jawatan Menteri",
+ "hook_title": "DIBERI MANDAT|[MENTERI KOMODITI]",
+ "hook_kicker": "MEWAKILI PAS KETIKA ITU",
+ "hook": [
+  1421.6,
+  1426.6
+ ],
+ "ranges": [
+  [
+   1325.8,
+   1367.3
+  ],
+  [
+   1386.1,
+   1442.9
+  ]
+ ],
+ "mood": "serious",
+ "seed": 45,
+ "keywords": [
+  "sekular",
+  "perlembagaan",
+  "islam",
+  "2019",
+  "41",
+  "PAS",
+  "umno",
+  "mandat",
+  "komoditi",
+  "menteri",
+  "persekutuan"
+ ],
+ "phrase_fix": [
+  [
+   "Pertampiran",
+   "pemerintahan"
+  ],
+  [
+   "Menegara",
+   "negara"
+  ],
+  [
+   "Patu Islam",
+   "parti Islam"
+  ],
+  [
+   "Adif",
+   "alih"
+  ],
+  [
+   "Tumpah",
+   "tumbang"
+  ],
+  [
+   "Usia Hubung Ketirak Panjang Terukai",
+   "usia hubungan tidak panjang, terungkai"
+  ],
+  [
+   "Pakatan Faktor",
+   "pelbagai faktor"
+  ],
+  [
+   "Muafakan",
+   "Muafakat"
+  ],
+  [
+   "Tahun 28 2019",
+   "tahun 78. 2019"
+  ],
+  [
+   "Kata Orang Arab Yang Lepas Lepas Yang Nak Bina Sekarang Benda Baru",
+   "Kata orang Arab, yang lepas, lepas. Yang nak bina sekarang benda baru."
+  ]
+ ],
+ "facts": [
+  {
+   "type": "keyword",
+   "at": "Memperjuangkan Malaysia",
+   "icon": "warning",
+   "label": "Menurut penceramah",
+   "text": "PERLEMBAGAAN PARTI:|[NEGARA SEKULAR]",
+   "sub": "Memisahkan agama daripada pemerintahan",
+   "src": "Dakwaan penceramah; parti tidak dinamakan dalam petikan ini",
+   "dur": 12
+  },
+  {
+   "type": "timeline",
+   "at": "Muafakat Antara",
+   "label": "Muafakat Nasional",
+   "items": [
+    {
+     "y": "1978",
+     "d": "Akhir PAS dalam BN",
+     "at": "Terakhir"
+    },
+    {
+     "y": "2019",
+     "d": "14 September: bersatu kembali",
+     "at": "14"
+    }
+   ],
+   "dur": 14
+  },
+  {
+   "type": "keyword",
+   "at": "Mengambil alih",
+   "icon": "flag",
+   "label": "Berkat bersama",
+   "text": "AMBIL ALIH|[KERAJAAN PH 1.0]",
+   "dur": 7
+  },
+  {
+   "type": "keyword",
+   "at": "Saya Diberi",
+   "after": 40,
+   "icon": "mic",
+   "label": "Pengalaman penceramah",
+   "text": "MENTERI|[KOMODITI]",
+   "sub": "Mewakili PAS ketika itu",
+   "dur": 6
+  }
+ ],
+ "conclusion": {
+  "at": "Yang Nak Bina",
+  "after": 60,
+  "kicker": "Pandangan ke hadapan",
+  "text": "YANG LEPAS, LEPAS —|[BINA BENDA BARU]"
+ },
+ "end_text": "Muafakat Nasional|[Bina benda baru]",
+ "notes": "Tahun '78' disimpulkan daripada 'Tahun 28' (transkripsi) kerana penceramah menyebut 'selepas 41 tahun' sebelum 2019 dan 1971–1978 dalam Dr K 5 (disahkan large-v3).",
+ "lowercase": true,
+ "cover_title": "DIBERI MANDAT|[MENTERI]|[KOMODITI]"
+}

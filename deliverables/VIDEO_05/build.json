@@ -1,0 +1,754 @@
+{
+ "id": "VIDEO_05",
+ "duration": 61.4,
+ "edl": [
+  {
+   "a": 337.35,
+   "b": 340.85,
+   "kind": "hook",
+   "o": 0.0
+  },
+  {
+   "a": 325.15,
+   "b": 383.05,
+   "kind": "body",
+   "tail": 1.8,
+   "o": 3.5
+  }
+ ],
+ "words": [
+  {
+   "t": "tak",
+   "s": 0.03,
+   "e": 0.31,
+   "piece": 0
+  },
+  {
+   "t": "ada",
+   "s": 0.31,
+   "e": 0.49,
+   "piece": 0
+  },
+  {
+   "t": "hukum",
+   "s": 0.49,
+   "e": 0.81,
+   "piece": 0
+  },
+  {
+   "t": "halal",
+   "s": 0.81,
+   "e": 1.27,
+   "piece": 0
+  },
+  {
+   "t": "haram",
+   "s": 1.27,
+   "e": 1.61,
+   "piece": 0
+  },
+  {
+   "t": "di",
+   "s": 1.61,
+   "e": 1.73,
+   "piece": 0
+  },
+  {
+   "t": "sini.",
+   "s": 1.73,
+   "e": 1.95,
+   "piece": 0
+  },
+  {
+   "t": "Dibolehkan,",
+   "s": 2.15,
+   "e": 2.77,
+   "piece": 0
+  },
+  {
+   "t": "diharuskan.",
+   "s": 2.87,
+   "e": 3.47,
+   "piece": 0
+  },
+  {
+   "t": "Buat",
+   "s": 3.59,
+   "e": 3.83,
+   "piece": 1
+  },
+  {
+   "t": "undi",
+   "s": 3.83,
+   "e": 4.07,
+   "piece": 1
+  },
+  {
+   "t": "tak",
+   "s": 4.07,
+   "e": 4.25,
+   "piece": 1
+  },
+  {
+   "t": "percaya",
+   "s": 4.25,
+   "e": 4.69,
+   "piece": 1
+  },
+  {
+   "t": "di",
+   "s": 4.69,
+   "e": 5.05,
+   "piece": 1
+  },
+  {
+   "t": "parlimen,",
+   "s": 5.05,
+   "e": 5.61,
+   "piece": 1
+  },
+  {
+   "t": "sempena",
+   "s": 6.15,
+   "e": 6.55,
+   "piece": 1
+  },
+  {
+   "t": "sidang",
+   "s": 6.55,
+   "e": 6.99,
+   "piece": 1
+  },
+  {
+   "t": "yang",
+   "s": 6.99,
+   "e": 7.15,
+   "piece": 1
+  },
+  {
+   "t": "sedang",
+   "s": 7.15,
+   "e": 7.45,
+   "piece": 1
+  },
+  {
+   "t": "berlangsung,",
+   "s": 7.45,
+   "e": 7.99,
+   "piece": 1
+  },
+  {
+   "t": "maka",
+   "s": 8.49,
+   "e": 8.71,
+   "piece": 1
+  },
+  {
+   "t": "ialah",
+   "s": 8.71,
+   "e": 9.01,
+   "piece": 1
+  },
+  {
+   "t": "kaedah",
+   "s": 9.01,
+   "e": 9.37,
+   "piece": 1
+  },
+  {
+   "t": "yang",
+   "s": 9.37,
+   "e": 9.57,
+   "piece": 1
+  },
+  {
+   "t": "syarie,",
+   "s": 9.57,
+   "e": 9.95,
+   "piece": 1
+  },
+  {
+   "t": "untuk",
+   "s": 10.13,
+   "e": 10.31,
+   "piece": 1
+  },
+  {
+   "t": "menurunkan,",
+   "s": 10.31,
+   "e": 11.35,
+   "piece": 1
+  },
+  {
+   "t": "atau,",
+   "s": 11.59,
+   "e": 12.19,
+   "piece": 1
+  },
+  {
+   "t": "bila",
+   "s": 12.45,
+   "e": 12.73,
+   "piece": 1
+  },
+  {
+   "t": "nama",
+   "s": 12.73,
+   "e": 12.97,
+   "piece": 1
+  },
+  {
+   "t": "menjatuhkan,",
+   "s": 12.97,
+   "e": 13.81,
+   "piece": 1
+  },
+  {
+   "t": "seorang",
+   "s": 14.01,
+   "e": 14.25,
+   "piece": 1
+  },
+  {
+   "t": "pemerintah.",
+   "s": 14.25,
+   "e": 14.73,
+   "piece": 1
+  },
+  {
+   "t": "syarie,",
+   "s": 14.73,
+   "e": 15.61,
+   "piece": 1
+  },
+  {
+   "t": "tak",
+   "s": 15.73,
+   "e": 16.01,
+   "piece": 1
+  },
+  {
+   "t": "ada",
+   "s": 16.01,
+   "e": 16.19,
+   "piece": 1
+  },
+  {
+   "t": "hukum",
+   "s": 16.19,
+   "e": 16.51,
+   "piece": 1
+  },
+  {
+   "t": "halal",
+   "s": 16.51,
+   "e": 16.97,
+   "piece": 1
+  },
+  {
+   "t": "haram",
+   "s": 16.97,
+   "e": 17.31,
+   "piece": 1
+  },
+  {
+   "t": "di",
+   "s": 17.31,
+   "e": 17.43,
+   "piece": 1
+  },
+  {
+   "t": "sini.",
+   "s": 17.43,
+   "e": 17.65,
+   "piece": 1
+  },
+  {
+   "t": "Dibolehkan,",
+   "s": 17.85,
+   "e": 18.47,
+   "piece": 1
+  },
+  {
+   "t": "diharuskan.",
+   "s": 18.57,
+   "e": 19.17,
+   "piece": 1
+  },
+  {
+   "t": "Tapi",
+   "s": 20.17,
+   "e": 20.91,
+   "piece": 1
+  },
+  {
+   "t": "kalau",
+   "s": 20.91,
+   "e": 21.19,
+   "piece": 1
+  },
+  {
+   "t": "nak",
+   "s": 21.19,
+   "e": 21.33,
+   "piece": 1
+  },
+  {
+   "t": "bincang",
+   "s": 21.33,
+   "e": 21.63,
+   "piece": 1
+  },
+  {
+   "t": "bab adil,",
+   "s": 21.63,
+   "e": 22.25,
+   "piece": 1
+  },
+  {
+   "t": "adakah",
+   "s": 23.39,
+   "e": 23.75,
+   "piece": 1
+  },
+  {
+   "t": "kerajaan",
+   "s": 23.75,
+   "e": 24.23,
+   "piece": 1
+  },
+  {
+   "t": "pada",
+   "s": 24.23,
+   "e": 24.45,
+   "piece": 1
+  },
+  {
+   "t": "hari",
+   "s": 24.45,
+   "e": 24.71,
+   "piece": 1
+  },
+  {
+   "t": "ini,",
+   "s": 24.71,
+   "e": 25.08,
+   "piece": 1
+  },
+  {
+   "t": "bila",
+   "s": 25.69,
+   "e": 26.37,
+   "piece": 1
+  },
+  {
+   "t": "mana,",
+   "s": 26.37,
+   "e": 26.75,
+   "piece": 1
+  },
+  {
+   "t": "peguam",
+   "s": 26.75,
+   "e": 27.37,
+   "piece": 1
+  },
+  {
+   "t": "negara,",
+   "s": 27.37,
+   "e": 28.49,
+   "piece": 1
+  },
+  {
+   "t": "diarahkan,",
+   "s": 28.83,
+   "e": 29.69,
+   "piece": 1
+  },
+  {
+   "t": "dalam",
+   "s": 29.85,
+   "e": 30.17,
+   "piece": 1
+  },
+  {
+   "t": "kurungan,",
+   "s": 30.17,
+   "e": 31.31,
+   "piece": 1
+  },
+  {
+   "t": "untuk",
+   "s": 32.31,
+   "e": 33.05,
+   "piece": 1
+  },
+  {
+   "t": "membuat",
+   "s": 33.05,
+   "e": 33.43,
+   "piece": 1
+  },
+  {
+   "t": "kenyataan,",
+   "s": 33.43,
+   "e": 33.99,
+   "piece": 1
+  },
+  {
+   "t": "menangguhkan,",
+   "s": 34.17,
+   "e": 34.95,
+   "piece": 1
+  },
+  {
+   "t": "pelepasan",
+   "s": 36.13,
+   "e": 36.87,
+   "piece": 1
+  },
+  {
+   "t": "Datuk",
+   "s": 36.87,
+   "e": 37.11,
+   "piece": 1
+  },
+  {
+   "t": "Seri Najib,",
+   "s": 37.11,
+   "e": 37.63,
+   "piece": 1
+  },
+  {
+   "t": "untuk",
+   "s": 37.79,
+   "e": 37.99,
+   "piece": 1
+  },
+  {
+   "t": "dipindahkan",
+   "s": 37.99,
+   "e": 38.71,
+   "piece": 1
+  },
+  {
+   "t": "daripada",
+   "s": 38.71,
+   "e": 39.07,
+   "piece": 1
+  },
+  {
+   "t": "penjara",
+   "s": 39.07,
+   "e": 39.53,
+   "piece": 1
+  },
+  {
+   "t": "Kajang,",
+   "s": 39.53,
+   "e": 40.07,
+   "piece": 1
+  },
+  {
+   "t": "ke",
+   "s": 40.23,
+   "e": 40.47,
+   "piece": 1
+  },
+  {
+   "t": "penjara",
+   "s": 40.47,
+   "e": 41.09,
+   "piece": 1
+  },
+  {
+   "t": "baru,",
+   "s": 41.09,
+   "e": 41.49,
+   "piece": 1
+  },
+  {
+   "t": "iaitu",
+   "s": 41.61,
+   "e": 41.91,
+   "piece": 1
+  },
+  {
+   "t": "rumahnya",
+   "s": 41.91,
+   "e": 42.35,
+   "piece": 1
+  },
+  {
+   "t": "sendiri.",
+   "s": 42.35,
+   "e": 42.61,
+   "piece": 1
+  },
+  {
+   "t": "dengan",
+   "s": 43.77,
+   "e": 44.33,
+   "piece": 1
+  },
+  {
+   "t": "melanggar",
+   "s": 44.33,
+   "e": 44.89,
+   "piece": 1
+  },
+  {
+   "t": "titah,",
+   "s": 44.89,
+   "e": 45.41,
+   "piece": 1
+  },
+  {
+   "t": "tuanku,",
+   "s": 45.49,
+   "e": 46.43,
+   "piece": 1
+  },
+  {
+   "t": "hingga",
+   "s": 46.53,
+   "e": 46.83,
+   "piece": 1
+  },
+  {
+   "t": "tuanku,",
+   "s": 46.83,
+   "e": 47.25,
+   "piece": 1
+  },
+  {
+   "t": "keluarkan",
+   "s": 47.31,
+   "e": 47.63,
+   "piece": 1
+  },
+  {
+   "t": "kenyataan,",
+   "s": 47.63,
+   "e": 48.31,
+   "piece": 1
+  },
+  {
+   "t": "ini",
+   "s": 49.07,
+   "e": 49.31,
+   "piece": 1
+  },
+  {
+   "t": "kuasa,",
+   "s": 49.31,
+   "e": 49.97,
+   "piece": 1
+  },
+  {
+   "t": "prerogatif,",
+   "s": 50.19,
+   "e": 50.75,
+   "piece": 1
+  },
+  {
+   "t": "tuanku,",
+   "s": 50.97,
+   "e": 51.43,
+   "piece": 1
+  },
+  {
+   "t": "bagi",
+   "s": 51.97,
+   "e": 52.43,
+   "piece": 1
+  },
+  {
+   "t": "semua",
+   "s": 52.43,
+   "e": 52.61,
+   "piece": 1
+  },
+  {
+   "t": "macam",
+   "s": 52.61,
+   "e": 52.85,
+   "piece": 1
+  },
+  {
+   "t": "itu,",
+   "s": 52.85,
+   "e": 53.13,
+   "piece": 1
+  },
+  {
+   "t": "jangan",
+   "s": 53.61,
+   "e": 53.87,
+   "piece": 1
+  },
+  {
+   "t": "ingkar.",
+   "s": 53.87,
+   "e": 54.43,
+   "piece": 1
+  },
+  {
+   "t": "Ingkar",
+   "s": 55.21,
+   "e": 55.59,
+   "piece": 1
+  },
+  {
+   "t": "itu,",
+   "s": 55.59,
+   "e": 55.73,
+   "piece": 1
+  },
+  {
+   "t": "bahasa",
+   "s": 55.91,
+   "e": 56.03,
+   "piece": 1
+  },
+  {
+   "t": "ringan,",
+   "s": 56.03,
+   "e": 56.43,
+   "piece": 1
+  },
+  {
+   "t": "bahasa",
+   "s": 56.59,
+   "e": 56.85,
+   "piece": 1
+  },
+  {
+   "t": "kasar,",
+   "s": 56.85,
+   "e": 57.23,
+   "piece": 1
+  },
+  {
+   "t": "derhaka.",
+   "s": 57.31,
+   "e": 57.59,
+   "piece": 1
+  },
+  {
+   "t": "Adakah",
+   "s": 58.63,
+   "e": 58.97,
+   "piece": 1
+  },
+  {
+   "t": "ada",
+   "s": 58.97,
+   "e": 59.27,
+   "piece": 1
+  },
+  {
+   "t": "di",
+   "s": 59.27,
+   "e": 59.43,
+   "piece": 1
+  },
+  {
+   "t": "situ?",
+   "s": 59.43,
+   "e": 59.55,
+   "piece": 1
+  }
+ ],
+ "facts": [
+  {
+   "type": "keyword",
+   "at": "Buat undi tak percaya",
+   "after": 3,
+   "icon": "ballot",
+   "label": "Di Parlimen",
+   "text": "UNDI TAK PERCAYA|[CARA SYARIE]",
+   "sub": "Tiada hukum halal haram — dibolehkan, diharuskan",
+   "dur": 10,
+   "start": 3.47
+  },
+  {
+   "type": "keyword",
+   "at": "peguam negara",
+   "icon": "doc",
+   "label": "Menurut penceramah",
+   "text": "KENYATAAN|[PEGUAM NEGARA]",
+   "sub": "Menangguhkan pemindahan Datuk Seri Najib dari Penjara Kajang ke rumahnya",
+   "src": "Dakwaan penceramah",
+   "dur": 10.5,
+   "start": 26.63
+  },
+  {
+   "type": "keyword",
+   "at": "ini kuasa",
+   "icon": "crown",
+   "label": "Titah Tuanku",
+   "text": "KUASA|[PREROGATIF]",
+   "sub": "Tuanku keluarkan kenyataan: jangan ingkar",
+   "dur": 4.9,
+   "start": 48.95
+  }
+ ],
+ "conclusion": {
+  "at": "Ingkar itu",
+  "after": 40,
+  "kicker": "Persoalan penceramah",
+  "text": "ADAKAH ADIL|[MELANGGAR TITAH]?",
+  "start": 53.9,
+  "dur": 4.6
+ },
+ "topics": [
+  {
+   "label": "Titah Tuanku & Kerajaan",
+   "start": 13.5
+  }
+ ],
+ "cues": [
+  [
+   "impact-bass-1.mp3",
+   0.05,
+   0.55
+  ],
+  [
+   "whoosh-cinematic.mp3",
+   2.95,
+   0.5
+  ],
+  [
+   "whoosh-short.mp3",
+   4.1,
+   0.35
+  ],
+  [
+   "whoosh-short.mp3",
+   3.47,
+   0.28
+  ],
+  [
+   "whoosh-short.mp3",
+   26.63,
+   0.28
+  ],
+  [
+   "whoosh-short.mp3",
+   48.95,
+   0.28
+  ],
+  [
+   "impact-bass-2.mp3",
+   53.9,
+   0.5
+  ],
+  [
+   "whoosh-cinematic.mp3",
+   57.9,
+   0.4
+  ]
+ ],
+ "hook_end": 3.5
+}

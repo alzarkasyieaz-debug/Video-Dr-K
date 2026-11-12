@@ -1,0 +1,196 @@
+{
+ "source": "drk3",
+ "source_name": "Dr K 3.mp4",
+ "speaker": "DR. KHAIRUDDIN AMAN RAZALI",
+ "role": "Bekas Menteri Komoditi",
+ "gap": 0.9,
+ "tail": 1.4,
+ "frame": {
+  "x": 680,
+  "y": 850,
+  "s": 1.7
+ },
+ "focus": [
+  [
+   0,
+   680,
+   850
+  ],
+  [
+   400,
+   600,
+   835
+  ],
+  [
+   800,
+   446,
+   830
+  ],
+  [
+   1150,
+   541,
+   840
+  ],
+  [
+   1500,
+   499,
+   835
+  ],
+  [
+   1800,
+   533,
+   840
+  ]
+ ],
+ "face_y": 760,
+ "grade": "eq=contrast=1.07:brightness=0.02:saturation=1.06:gamma=1.04",
+ "keywords_blue": [
+  "barisan",
+  "nasional",
+  "pakatan",
+  "harapan",
+  "perikatan",
+  "bn",
+  "ph",
+  "pn"
+ ],
+ "fix": {
+  "Amno": "UMNO",
+  "Pas": "PAS",
+  "Beresan": "Barisan",
+  "Bansai": "Barisan",
+  "Kurusi": "kerusi",
+  "Kursi": "kerusi",
+  "Peringkatan": "Perikatan",
+  "Muafakan": "Muafakat",
+  "Keedah": "kaedah",
+  "janazah": "jenazah",
+  "ijmat": "ijmak",
+  "ijmatnya": "ijmaknya",
+  "Ijmat": "Ijmak",
+  "Nyama": "nyawa",
+  "Masalah": "maslahah",
+  "Zuryak": "zuriat",
+  "Suduk": "sudut",
+  "Diputuk": "Dipertuan",
+  "Dibutuk": "Dipertuan",
+  "Termektuk": "termaktub",
+  "Dituburkan": "ditubuhkan",
+  "Makin": "Maka",
+  "Termantuk": "termaktub",
+  "Sekulah": "sekular",
+  "Perekkaunan": "perakaunan",
+  "Wuduk": "wujud"
+ },
+ "id": "VIDEO_15",
+ "topic": "Islam Agama Bagi Persekutuan",
+ "hook_title": "NOMBOR SATU:|[MENJAGA AGAMA]",
+ "hook_kicker": "TANGGUNGJAWAB PEMIMPIN",
+ "hook": [
+  1058.7,
+  1063.75
+ ],
+ "ranges": [
+  [
+   892.3,
+   972.0
+  ],
+  [
+   1030.1,
+   1063.9
+  ]
+ ],
+ "mood": "emotional",
+ "seed": 43,
+ "keywords": [
+  "islam",
+  "agama",
+  "persekutuan",
+  "upacara",
+  "sumpah",
+  "agong",
+  "agung",
+  "memelihara",
+  "perlembagaan",
+  "rasmi",
+  "menjaga"
+ ],
+ "phrase_fix": [
+  [
+   "Kalau Laka",
+   "Kalau langgar"
+  ],
+  [
+   "Kewaja Penyelah",
+   "kewajipan ~"
+  ],
+  [
+   "Dah Perlembagaan",
+   "~ Perlembagaan"
+  ]
+ ],
+ "facts": [
+  {
+   "type": "keyword",
+   "at": "Tak sebut Agama Rasmi",
+   "icon": "doc",
+   "label": "Perlembagaan Persekutuan",
+   "text": "TIDAK SEBUT|[“AGAMA RASMI”]",
+   "dur": 8
+  },
+  {
+   "type": "keyword",
+   "at": "Bukan Untuk Upacara",
+   "icon": "mosque",
+   "label": "Hujah penceramah",
+   "text": "ISLAM|[BUKAN UNTUK UPACARA]",
+   "sub": "Islam agama bagi negara",
+   "dur": 7
+  },
+  {
+   "type": "keyword",
+   "at": "Antaranya Memelihara",
+   "icon": "crown",
+   "label": "Sumpah Yang di-Pertuan Agong",
+   "text": "MEMELIHARA ISLAM|[PADA SETIAP MASA]",
+   "dur": 10
+  },
+  {
+   "type": "quote",
+   "at": "Perlembagaan Menyebut",
+   "label": "Perkara 3(1) Perlembagaan Persekutuan",
+   "text": "Islam ialah|[agama bagi Persekutuan]",
+   "who": "Seperti dipetik penceramah",
+   "dur": 5
+  },
+  {
+   "type": "bullets",
+   "at": "Perdana Menteri",
+   "icon": "people",
+   "label": "Mesti letak agama nombor satu",
+   "items": [
+    {
+     "text": "Perdana Menteri",
+     "at": "Perdana Menteri"
+    },
+    {
+     "text": "Menteri Besar",
+     "at": "Menteri Besar"
+    },
+    {
+     "text": "Ketua Menteri",
+     "at": "Ketua Menteri"
+    }
+   ],
+   "dur": 6
+  }
+ ],
+ "conclusion": {
+  "at": "Mesti Meletakkan",
+  "after": 60,
+  "kicker": "Tanggungjawab pemimpin",
+  "text": "NOMBOR SATU:|[MENJAGA AGAMA]"
+ },
+ "end_text": "Islam agama bagi Persekutuan|[Bukan sekadar upacara]",
+ "lowercase": true
+}

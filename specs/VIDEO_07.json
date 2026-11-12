@@ -1,0 +1,160 @@
+{
+ "source": "drk7",
+ "source_name": "Dr K 7.mp4",
+ "speaker": "DR. KHAIRUDDIN AMAN RAZALI",
+ "role": "Bekas Menteri Komoditi · Ahli Panel Forum",
+ "gap": 0.9,
+ "tail": 1.4,
+ "frame": {
+  "x": 528,
+  "y": 838,
+  "s": 1.75
+ },
+ "focus": [
+  [
+   560,
+   622,
+   812,
+   1.75
+  ]
+ ],
+ "face_y": 760,
+ "keywords_blue": [
+  "barisan",
+  "nasional",
+  "pakatan",
+  "harapan",
+  "perikatan",
+  "bn",
+  "ph",
+  "pn",
+  "gps",
+  "parlimen",
+  "pilihan",
+  "raya"
+ ],
+ "id": "VIDEO_07",
+ "topic": "Jangan Bakar Jambatan",
+ "hook_title": "JANGAN|[BAKAR JAMBATAN]",
+ "hook_kicker": "PESANAN DALAM POLITIK",
+ "hook": [
+  524.85,
+  531.65
+ ],
+ "ranges": [
+  [
+   505.15,
+   565.7
+  ]
+ ],
+ "mood": "inspire",
+ "seed": 25,
+ "keywords": [
+  "jambatan",
+  "bakar",
+  "bersama",
+  "bercerai",
+  "rujuk",
+  "perpaduan",
+  "dinamika",
+  "pas",
+  "umno",
+  "terengganu",
+  "kelantan",
+  "perlis",
+  "melaka",
+  "sihat"
+ ],
+ "phrase_fix": [
+  [
+   "kita bersen",
+   "kita bersaing"
+  ],
+  [
+   "cina butir,",
+   "cina buta,"
+  ],
+  [
+   "sebermungkin,",
+   "segala_kemungkinan,"
+  ]
+ ],
+ "facts": [
+  {
+   "type": "keyword",
+   "at": "persepsi",
+   "icon": "warning",
+   "label": "Bersaing secara sihat",
+   "text": "TIDAK MENCIPTA|[PERSEPSI]",
+   "dur": 5
+  },
+  {
+   "type": "keyword",
+   "at": "jangan bakar jambatan",
+   "after": 8,
+   "icon": "link",
+   "label": "Pesanan kepada Menteri PH",
+   "text": "JANGAN|[BAKAR JAMBATAN]",
+   "sub": "Hari ini bersama, esok mungkin tidak",
+   "dur": 9
+  },
+  {
+   "type": "keyword",
+   "at": "Tengok, apa berlaku",
+   "icon": "handshake",
+   "label": "Sejarah PAS & UMNO",
+   "text": "BERCERAI,|[BOLEH RUJUK BALIK]",
+   "sub": "Itu politik — biasa sahaja",
+   "dur": 13
+  },
+  {
+   "type": "bullets",
+   "at": "terengganu lain",
+   "icon": "map",
+   "label": "Mungkin berbeza ikut negeri",
+   "items": [
+    {
+     "text": "Terengganu",
+     "at": "terengganu"
+    },
+    {
+     "text": "Kelantan",
+     "at": "Kelantan lain"
+    },
+    {
+     "text": "Perlis",
+     "at": "Perlis"
+    },
+    {
+     "text": "Melaka",
+     "at": "Melaka lain"
+    }
+   ],
+   "dur": 4.5
+  }
+ ],
+ "conclusion": {
+  "at": "Yang penting",
+  "after": 50,
+  "kicker": "Yang penting",
+  "text": "SATU BENDA BESAR:|[PERPADUAN]"
+ },
+ "end_text": "Dinamika politik|[Perpaduan yang utama]",
+ "fix": {
+  "kursi": "kerusi",
+  "kursi,": "kerusi",
+  "syurah": "syura",
+  "syarih": "syarie",
+  "Keandahnya": "Kaedahnya",
+  "kendah": "kaedah",
+  "khawarish": "khawarij",
+  "Khawarish": "Khawarij",
+  "khawarishnya": "khawarijnya",
+  "PASnya": "PAS-nya",
+  "anjat": "anjal",
+  "bakal": "bakar",
+  "Pelih": "Perlis",
+  "bantar": "bentang",
+  "Arab": "haram"
+ }
+}

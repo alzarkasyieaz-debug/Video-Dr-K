@@ -1,0 +1,165 @@
+{
+ "source": "drk2",
+ "source_name": "Dr K 2.mp4",
+ "speaker": "DR. KHAIRUDDIN AMAN RAZALI",
+ "role": "Bekas Menteri Komoditi",
+ "gap": 1.0,
+ "tail": 1.8,
+ "lowercase": true,
+ "frame": {
+  "x": 870,
+  "y": 570,
+  "s": 1.75
+ },
+ "focus": [
+  [
+   0,
+   905,
+   570
+  ],
+  [
+   500,
+   850,
+   565
+  ],
+  [
+   800,
+   895,
+   570
+  ],
+  [
+   1100,
+   845,
+   565
+  ],
+  [
+   1600,
+   858,
+   565
+  ],
+  [
+   2200,
+   855,
+   565
+  ],
+  [
+   2700,
+   893,
+   570
+  ]
+ ],
+ "face_y": 740,
+ "grade": "eq=contrast=1.07:brightness=0.02:saturation=1.06:gamma=1.05",
+ "keywords_blue": [
+  "barisan",
+  "nasional",
+  "pakatan",
+  "harapan",
+  "perikatan",
+  "bn",
+  "ph",
+  "pn",
+  "gps",
+  "grs",
+  "dap",
+  "pkr",
+  "amanah"
+ ],
+ "fix": {
+  "Amno": "UMNO",
+  "Pas": "PAS",
+  "Kursi": "kerusi",
+  "Kurusi": "kerusi",
+  "Muhafakat": "muafakat",
+  "Keedah": "kaedah",
+  "Besor": "besar",
+  "Belakar": "belaka",
+  "Pembangkan": "pembangkang",
+  "Hanyu": "hanya"
+ },
+ "id": "VIDEO_26",
+ "topic": "Pengampunan: Hak Semua",
+ "hook_title": "PENGAMPUNAN|[HAK SEMUA RAKYAT]",
+ "hook_kicker": "ISU DATUK SERI NAJIB",
+ "hook": [
+  1648.0,
+  1651.5
+ ],
+ "ranges": [
+  [
+   1646.5,
+   1741.3
+  ]
+ ],
+ "mood": "serious",
+ "seed": 57,
+ "keywords": [
+  "pengampunan",
+  "hak",
+  "perlembagaan",
+  "banduan",
+  "penjara",
+  "hukuman",
+  "najib",
+  "campur",
+  "tangan",
+  "kacau"
+ ],
+ "phrase_fix": [
+  [
+   "Tak Kena Dini Botak Cing Ke Yang",
+   "~ ~ ~ ~ ~ ~ ~"
+  ],
+  [
+   "Dukat Seri",
+   "Datuk Seri"
+  ],
+  [
+   "Ternah",
+   "telah"
+  ],
+  [
+   "Peningkat Awak Dah Patut Dapat",
+   "~ ~ ~ ~ ~"
+  ],
+  [
+   "Kuat Sikit",
+   "kuat sikit,"
+  ]
+ ],
+ "facts": [
+  {
+   "type": "keyword",
+   "at": "Perlembagaan Sebut",
+   "icon": "doc",
+   "label": "Menurut penceramah",
+   "text": "PENGAMPUNAN =|[HAK SEMUA BANDUAN]",
+   "sub": "Yang telah dihukum mahkamah & menjalani hukuman",
+   "dur": 14
+  },
+  {
+   "type": "keyword",
+   "at": "Perdana Menteri Kita",
+   "icon": "crown",
+   "label": "Contoh disebut penceramah",
+   "text": "PERDANA MENTERI|[PERNAH DAPAT PENGAMPUNAN]",
+   "dur": 9
+  },
+  {
+   "type": "keyword",
+   "at": "Kesalahan Dia",
+   "icon": "scale",
+   "label": "Pendirian penceramah",
+   "text": "TIDAK PERTIKAI KESALAHAN —|[HAK MOHON PENGAMPUNAN]",
+   "dur": 12
+  }
+ ],
+ "conclusion": {
+  "at": "Tapi Bila Mana",
+  "after": 60,
+  "kicker": "Dakwaan penceramah",
+  "text": "ADA USAHA PENGAMPUNAN —|[ADA CAMPUR TANGAN]"
+ },
+ "end_text": "Pengampunan|[Hak semua rakyat]",
+ "cover_title": "PENGAMPUNAN|[HAK SEMUA]|[RAKYAT]"
+}

@@ -1,0 +1,215 @@
+{
+ "source": "drk7",
+ "source_name": "Dr K 7.mp4",
+ "speaker": "DR. KHAIRUDDIN AMAN RAZALI",
+ "role": "Bekas Menteri Komoditi · Ahli Panel Forum",
+ "gap": 0.9,
+ "tail": 1.4,
+ "frame": {
+  "x": 528,
+  "y": 838,
+  "s": 1.75
+ },
+ "focus": [
+  [
+   560,
+   622,
+   812,
+   1.75
+  ]
+ ],
+ "face_y": 760,
+ "keywords_blue": [
+  "barisan",
+  "nasional",
+  "pakatan",
+  "harapan",
+  "perikatan",
+  "bn",
+  "ph",
+  "pn",
+  "gps",
+  "parlimen",
+  "pilihan",
+  "raya"
+ ],
+ "id": "VIDEO_04",
+ "topic": "Label Khawarij",
+ "hook_title": "KHAWARIJ:|[MEMBERONTAK]|[BERSENJATA]",
+ "hook_kicker": "MAKNA SEBENAR",
+ "hook": [
+  160.25,
+  165.45
+ ],
+ "ranges": [
+  [
+   108.8,
+   145.5
+  ],
+  [
+   154.4,
+   159.0
+  ],
+  [
+   160.25,
+   165.6
+  ],
+  [
+   221.0,
+   251.0
+  ],
+  [
+   285.55,
+   311.0
+  ]
+ ],
+ "mood": "serious",
+ "seed": 22,
+ "keywords": [
+  "khawarij",
+  "senjata",
+  "haram",
+  "konsisten",
+  "syarie",
+  "kelantan",
+  "melaka",
+  "umno",
+  "pas",
+  "dap",
+  "amanah",
+  "darah",
+  "pemerintah"
+ ],
+ "phrase_fix": [
+  [
+   "dari Sultan Arifat.",
+   "dari segi syariat."
+  ],
+  [
+   "memperontak,",
+   "memberontak,"
+  ],
+  [
+   "kereta di Indonesia,",
+   "kita di_Malaysia, ~"
+  ],
+  [
+   "penuh dan",
+   "undang-undang ~"
+  ],
+  [
+   "Syekh Khunah",
+   "Syeikh ~"
+  ],
+  [
+   "penyerapannya",
+   "penerapannya"
+  ],
+  [
+   "keteruskan",
+   "teruskan"
+  ],
+  [
+   "imam di",
+   "sama_ada di"
+  ]
+ ],
+ "facts": [
+  {
+   "type": "keyword",
+   "at": "mudah dikonotasikan",
+   "icon": "warning",
+   "label": "Label yang digunakan",
+   "text": "MELAWAN PEMERINTAH|= [KHAWARIJ]?",
+   "dur": 6
+  },
+  {
+   "type": "bullets",
+   "at": "Kerana kalau di Kelantan",
+   "icon": "map",
+   "label": "Label ikut siapa kerajaan",
+   "items": [
+    {
+     "text": "Kelantan: UMNO dilabel khawarij",
+     "at": "Kerana kalau di Kelantan"
+    },
+    {
+     "text": "Pusat: PN & PAS dilabel khawarij",
+     "at": "Kalau di pusat"
+    },
+    {
+     "text": "Melaka: PAS dilabel khawarij",
+     "at": "sekarang kita di Melaka"
+    }
+   ],
+   "dur": 18
+  },
+  {
+   "type": "keyword",
+   "at": "Jadi ini suatu keadaan",
+   "icon": "scale",
+   "label": "Hujah penceramah",
+   "text": "TIDAK|[KONSISTEN]",
+   "dur": 4.5
+  },
+  {
+   "type": "keyword",
+   "at": "menentang pemerintah dengan senjata",
+   "icon": "shield",
+   "label": "Pegangan para ulama",
+   "text": "MENENTANG DENGAN SENJATA|[HUKUMNYA HARAM]",
+   "sub": "Termasuk menumpahkan darah",
+   "dur": 7
+  },
+  {
+   "type": "keyword",
+   "at": "Ia bukan pertembungan",
+   "icon": "ballot",
+   "label": "Konteks Malaysia",
+   "text": "PERSAINGAN,|[BUKAN ANGKAT SENJATA]",
+   "sub": "Menawarkan mana yang lebih baik kepada rakyat",
+   "dur": 7
+  },
+  {
+   "type": "bullets",
+   "at": "menerusi pilihan raya",
+   "icon": "ballot",
+   "label": "Cara syarie menurunkan pemerintah",
+   "items": [
+    {
+     "text": "Pilihan raya",
+     "at": "pilihan raya"
+    },
+    {
+     "text": "Undi tidak percaya",
+     "at": "undi tak percaya"
+    }
+   ],
+   "dur": 6
+  }
+ ],
+ "conclusion": {
+  "at": "untuk menurunkan pemerintah",
+  "after": 95,
+  "kicker": "Rumusan",
+  "text": "TURUNKAN PEMERINTAH|[DENGAN CARA SYARIE]"
+ },
+ "end_text": "Persaingan politik|[bukan pemberontakan]",
+ "fix": {
+  "kursi": "kerusi",
+  "kursi,": "kerusi",
+  "syurah": "syura",
+  "syarih": "syarie",
+  "Keandahnya": "Kaedahnya",
+  "kendah": "kaedah",
+  "khawarish": "khawarij",
+  "Khawarish": "Khawarij",
+  "khawarishnya": "khawarijnya",
+  "PASnya": "PAS-nya",
+  "anjat": "anjal",
+  "bakal": "bakar",
+  "Pelih": "Perlis",
+  "bantar": "bentang",
+  "Arab": "haram"
+ }
+}
