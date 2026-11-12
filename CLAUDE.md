@@ -9,7 +9,8 @@ MP4.
 Untuk sebarang kerja memotong/menyunting rakaman kuliah atau ceramah, baca dahulu skill projek
 `/kuliah-cinematic` (`.claude/skills/kuliah-cinematic/SKILL.md`). Ia menyimpan gaya visual yang telah
 diluluskan dan aliran kerja penuh (`tools/transcribe.sh`, `tools/build_clip.py`, `tools/render_all.sh`,
-`clips/TEMPLATE.json`).
+`clips/TEMPLATE.json`). Dua gaya: **Style Kuliah Versi 1** (asal) dan **Style Kuliah Versi 2** (cover mihrab emas,
+animasi interaktif — `"style": "V2"`, `clips/TEMPLATE_V2.json`).
 
 ## Skills — read these first
 

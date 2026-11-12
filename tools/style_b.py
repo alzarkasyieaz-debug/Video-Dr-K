@@ -1,6 +1,6 @@
-"""Konsep B "Mihrab Emas": alternative cover + more animated overlay for build_clip.py.
+"""Style Kuliah Versi 2 (Konsep B "Mihrab Emas"): alternative cover + more animated overlay for build_clip.py.
 
-Selected per clip with  "style": "B"  in the spec. Same palette (emerald / gold / navy) and fonts
+Selected per clip with  "style": "V2"  (or the older "B") in the spec. Same palette (emerald / gold / navy) and fonts
 as the approved style; adds a mihrab-arch cover, progress bar with chapter dots, numbered cards with
 word-by-word reveals and a countdown bar, word-by-word Arabic, drifting light particles and an
 interactive CTA outro (suka / simpan / kongsi / ikuti).

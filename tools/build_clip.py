@@ -114,7 +114,7 @@ def build(spec, source, media=True):
     last_word_end = max(w["end"] for w in words)
     speech_dur = round(min(end - start, last_word_end + 0.6), 2)
     D = round(min(120.0, max(min(speech_dur + 2.0, 120.0), speech_dur + 1.0)), 2)   # short outro, total kept <= 120 s
-    style_b = spec.get("style") == "B"
+    style_b = str(spec.get("style", "")).upper() in ("B", "V2")   # "V2" = Style Kuliah Versi 2
     if style_b:   # Konsep B: longer interactive CTA outro
         import style_b as SB
         D = round(min(120.0, speech_dur + SB.OUTRO_B), 2)

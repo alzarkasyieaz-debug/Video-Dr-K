@@ -1,11 +1,15 @@
 ---
 name: kuliah-cinematic
-description: House style and pipeline for turning a full Islamic lecture (kuliah, ceramah, tazkirah) into 60–120 s vertical 9:16 knowledge clips — Premium Islamic Cinematic Documentary look (emerald/gold/navy), karaoke Malay subtitles, key-point and Arabic reference cards, cleaned voice and an original ambient bed. Use whenever the user asks to clip, cut, edit or style a lecture/kuliah video, or says "guna style yang sama / style kuliah".
+description: House style and pipeline for turning a full Islamic lecture (kuliah, ceramah, tazkirah) into 60–120 s vertical 9:16 knowledge clips — Premium Islamic Cinematic Documentary look (emerald/gold/navy), karaoke Malay subtitles, key-point and Arabic reference cards, cleaned voice and an original ambient bed. Use whenever the user asks to clip, cut, edit or style a lecture/kuliah video, or says "guna style yang sama / style kuliah". "Style Kuliah Versi 2" (or "versi 2", "V2", "Konsep B") selects the mihrab-arch cover with animated cards, progress bar and interactive CTA outro.
 ---
 
 # Kuliah Cinematic — gaya & aliran kerja tersimpan
 
-Gaya ini diluluskan oleh pengguna (siri *Bahrul Mazi*, Nov 2026). Gunakan semula tanpa mereka bentuk baharu
+Dua gaya tersimpan:
+- **Style Kuliah Versi 1** — gaya asal di bawah (siri *Bahrul Mazi*). Lalai jika pengguna sebut "style kuliah" sahaja.
+- **Style Kuliah Versi 2** — lihat bahagian di hujung fail. Guna apabila pengguna sebut "Style Kuliah Versi 2", "versi 2", "V2" atau "Konsep B".
+
+Versi 1 diluluskan oleh pengguna (siri *Bahrul Mazi*, Nov 2026). Gunakan semula tanpa mereka bentuk baharu
 melainkan pengguna minta. Contoh siap: `exports/KULIAH_01_*.mp4` … `KULIAH_12_*.mp4`, laporan `LAPORAN_KERATAN.md`.
 
 ## Gaya visual (jangan ubah tanpa diminta)
@@ -66,9 +70,11 @@ Jika nama penceramah diketahui, letak dalam `speaker`.
 - Jangan jana visual nabi, malaikat atau perkara ghaib; hanya rakaman asal, tipografi dan corak geometri.
 - Bahagian yang terlalu kabur (loghat berat, audio rosak) → senaraikan untuk semakan manual, jangan render.
 
-## Konsep B "Mihrab Emas" (diluluskan Nov 2026, siri Fathu Makkah — EP 01–13)
+## Style Kuliah Versi 2 — "Mihrab Emas" (diluluskan Nov 2026, siri Fathu Makkah — EP 01–13)
 
-Tambah `"style": "B"` dan `"episode": N` dalam spec (`tools/style_b.py`). Palet & fon sama; berbeza:
+Mula daripada `clips/TEMPLATE_V2.json`: `"style": "V2"` dan `"episode": N` dalam spec (`tools/style_b.py`;
+`"B"` juga diterima). Rujukan visual: `reference/covers_v2.jpg` (13 cover) dan `reference/frames_v2.jpg`
+(cover → bar progres → kad Arab → kad bernombor → outro CTA). Hasil baharu mesti kelihatan sama. Palet & fon sama; berbeza:
 cover gerbang mihrab emas membingkai wajah + lencana "EP NN" + panel navy melengkung (tajuk, kata kunci
 bersapu emas, nama penceramah, pil "▶ TONTON SAMPAI HABIS"); keluar dengan zoom melalui gerbang. Dalam video:
 bar progres emas + titik bab, kad bernombor dengan teks perkataan demi perkataan, kilauan & bar masa, kad Arab
