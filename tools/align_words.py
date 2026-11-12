@@ -43,6 +43,8 @@ def main():
                 continue
             if i2 > i1:
                 a, b = raw[i1]["start"], raw[i2 - 1]["end"]
+                if b - a < 0.15 * (j2 - j1) and out:   # replaced words heard in a silent gap before
+                    a = min(a, max(out[-1]["end"], b - 0.3 * (j2 - j1)))
             else:  # pure insertion: squeeze between neighbours
                 a = out[-1]["end"] if out else (raw[i1]["start"] if i1 < len(raw) else 0)
                 b = raw[i1]["start"] if i1 < len(raw) else a + 0.3 * (j2 - j1)

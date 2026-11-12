@@ -1,0 +1,81 @@
+{
+ "id": "15",
+ "slug": "MUSLIM_SEBENAR_ORANG_RASA_SELAMAT",
+ "category": "AKHLAK & ADAB",
+ "title_lines": [
+  [
+   {
+    "t": "MUSLIM SEBENAR:"
+   }
+  ],
+  [
+   {
+    "t": "ORANG RASA"
+   },
+   {
+    "t": "SELAMAT",
+    "gold": true
+   }
+  ],
+  [
+   {
+    "t": "DENGAN KITA"
+   }
+  ]
+ ],
+ "header_html": "MUSLIM SEBENAR: ORANG RASA <span class=\"g\">SELAMAT</span> DENGAN KITA",
+ "cover_kicker": "KULIAH SIRAH • FATHU MAKKAH",
+ "cover_sub": "Pondok Pengajian Darul Mubarak",
+ "speaker": "YB Ustaz Muhammad Ismi Mat Taib",
+ "speaker_role": "Pondok Pengajian Darul Mubarak • Sirah Fathu Makkah",
+ "series": "KULIAH SIRAH FATHU MAKKAH",
+ "face": [
+  550,
+  640
+ ],
+ "src_crop": [
+  146,
+  0,
+  788,
+  1400
+ ],
+ "music_volume": 0.1,
+ "whisper": "clips/whisper/w15.json",
+ "window": 556,
+ "start": 556.0,
+ "end": 655.0,
+ "arabic": [
+  {
+   "ar": "الْمُسْلِمُ مَنْ سَلِمَ الْمُسْلِمُونَ مِنْ لِسَانِهِ وَيَدِهِ",
+   "ms": "Muslim (yang sebenar) ialah orang yang Muslim lain selamat daripada lidah dan tangannya.",
+   "ref": "HR AL-BUKHARI & MUSLIM",
+   "at": 5.6,
+   "dur": 13.0
+  }
+ ],
+ "points": [
+  {
+   "label": "CONTOH",
+   "text": "Asyik tanya 'bila nak kahwin?' — menyakitkan hati orang",
+   "at": 37.0,
+   "dur": 13.0
+  },
+  {
+   "label": "PENGAJARAN",
+   "text": "Jaga lidah & tangan — biar orang rasa selamat dengan kita",
+   "at": 85.0,
+   "dur": 12.5
+  }
+ ],
+ "keywords": [
+  "selamat",
+  "lidah",
+  "tangan",
+  "Muslim",
+  "gembira",
+  "hati",
+  "kahwin"
+ ],
+ "text": "Nabi kata apa? Al-muslimu man salimal muslimuna min lisanihi wa yadih. Muslim yang baik ialah muslim lain rasa selamat dengan dia pada lidahnya dan tangannya. Bila orang lain rasa selamat tentang kita ni, pada lidah kita dan tangan kita. Adakah orang yang kita rasa tak selamat? Lidah dia dan tangannya. Ada. Tak nak pergi jumpa Mok Cu, sekarang tak ada, dia kata. Mok Cu ni, cerita tak ada cerita lain, cerita bila nak kahwin. Kita tak kahwin-kahwin. Cerita tak ada lain, cerita bila nak beranak. Jadi kita kena bagi khabar gembira, jangan menyakitkan hati orang. Muslim yang baik ialah apabila muslim lain rasa selamat dengan dia pada lidah dan tangannya. Hai, nak pergi tak? Pergilah raya rumah Mok Cu. Kenapa? Eh, eh, Mok Cu bagus. Cakap pun yang elok-elok je. Puji, bagi nasihat elok-elok. Kalau dikata-kata, mana orang nak datang ke rumah kita. Orang lain rasa tak selamat pada kita, pada lidah dan tangan kita.",
+ "lecture": "ismi_fathu_makkah"
+}
