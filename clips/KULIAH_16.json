@@ -1,0 +1,98 @@
+{
+ "id": "16",
+ "slug": "FADALAH_NAK_BUNUH_NABI_KETIKA_TAWAF",
+ "category": "SIRAH NABAWI",
+ "title_lines": [
+  [
+   {
+    "t": "NAK BUNUH NABI"
+   }
+  ],
+  [
+   {
+    "t": "KETIKA"
+   },
+   {
+    "t": "TAWAF,",
+    "gold": true
+   }
+  ],
+  [
+   {
+    "t": "AKHIRNYA"
+   },
+   {
+    "t": "MASUK ISLAM",
+    "gold": true
+   }
+  ]
+ ],
+ "header_html": "NAK BUNUH NABI KETIKA <span class=\"g\">TAWAF,</span> AKHIRNYA <span class=\"g\">MASUK ISLAM</span>",
+ "cover_kicker": "KULIAH SIRAH • FATHU MAKKAH",
+ "cover_sub": "Pondok Pengajian Darul Mubarak",
+ "speaker": "YB Ustaz Muhammad Ismi Mat Taib",
+ "speaker_role": "Pondok Pengajian Darul Mubarak • Sirah Fathu Makkah",
+ "series": "KULIAH SIRAH FATHU MAKKAH",
+ "face": [
+  550,
+  640
+ ],
+ "src_crop": [
+  146,
+  0,
+  788,
+  1400
+ ],
+ "music_volume": 0.1,
+ "whisper": "clips/whisper/w16.json",
+ "window": 718,
+ "start": 722.6,
+ "end": 788.3,
+ "arabic": [],
+ "points": [
+  {
+   "label": "NIAT JAHAT",
+   "text": "Fadalah bin Umair rancang bunuh Nabi ﷺ ketika tawaf",
+   "at": 20.0,
+   "dur": 12.0
+  },
+  {
+   "label": "PENGAJARAN",
+   "text": "Allah dedahkan niatnya — Fadalah terus memeluk Islam",
+   "at": 52.0,
+   "dur": 11.5
+  }
+ ],
+ "keywords": [
+  "bunuh",
+  "tawaf",
+  "wahyu",
+  "Islam",
+  "Allah",
+  "Nabi",
+  "Fadalah"
+ ],
+ "text": "Adapun Fadalah bin Umair, seorang pahlawan yang gagah berani. Dia kata dua tokoh tadi kan. Tadi satu Safwan, satu lagi Fadalah. Dia dah risau, takut Nabi hukum dia. Beliau adalah seorang pahlawan yang gagah berani. Berniat untuk membunuh Rasulullah ketika tawaf, yang dikira kesempatan dan peluang terbaik untuk melakukan kejahatan tersebut. Masa Nabi tawaf, dia dah rancang nak bunuh Nabi. Akan tetapi Allah SWT yang mengetahui mendedahkan niat jahat itu kepada Rasulullah. Nabi tahu, Allah wahyukan kepada Nabi tentang niat jahat Fadalah bin Umair ini. Lalu Rasulullah SAW memberitahu kepadanya niatnya yang jahat itu. Maka Fadalah terus mengisytiharkan dirinya menjadi seorang Islam. Fadalah tengok, \"Oh, ini betul Nabi ni. Pasti dia tahu aku nak bunuh dia. Memang dia Nabi, dia dapat wahyu daripada Allah.\"",
+ "cover_lines": [
+  [
+   {
+    "t": "NAK BUNUH NABI"
+   }
+  ],
+  [
+   {
+    "t": "KETIKA"
+   },
+   {
+    "t": "TAWAF,",
+    "gold": true
+   }
+  ],
+  [
+   {
+    "t": "AKHIRNYA MASUK ISLAM"
+   }
+  ]
+ ],
+ "lecture": "ismi_fathu_makkah"
+}

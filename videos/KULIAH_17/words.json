@@ -1,0 +1,827 @@
+[
+{
+"text": "Hari",
+"start": 0.0,
+"end": 1.09
+},
+{
+"text": "kedua",
+"start": 1.09,
+"end": 2.29
+},
+{
+"text": "berada",
+"start": 2.36,
+"end": 3.56
+},
+{
+"text": "di",
+"start": 4.37,
+"end": 4.62
+},
+{
+"text": "Makkah,",
+"start": 4.62,
+"end": 5.82
+},
+{
+"text": "Rasulullah",
+"start": 6.04,
+"end": 6.26
+},
+{
+"text": "SAW",
+"start": 6.26,
+"end": 6.51
+},
+{
+"text": "menyampaikan",
+"start": 6.51,
+"end": 6.96
+},
+{
+"text": "khutbahnya.",
+"start": 6.96,
+"end": 8.16
+},
+{
+"text": "Setelah",
+"start": 8.36,
+"end": 8.56
+},
+{
+"text": "memuji",
+"start": 8.56,
+"end": 8.96
+},
+{
+"text": "dan",
+"start": 8.96,
+"end": 9.12
+},
+{
+"text": "menyebut",
+"start": 9.12,
+"end": 9.49
+},
+{
+"text": "kebesaran",
+"start": 9.49,
+"end": 10.0
+},
+{
+"text": "Allah",
+"start": 10.0,
+"end": 10.74
+},
+{
+"text": "dan",
+"start": 10.74,
+"end": 10.976
+},
+{
+"text": "kemuliaan-Nya,",
+"start": 10.976,
+"end": 12.08
+},
+{
+"text": "maka",
+"start": 12.08,
+"end": 12.24
+},
+{
+"text": "baginda",
+"start": 12.24,
+"end": 12.52
+},
+{
+"text": "bersabda",
+"start": 12.52,
+"end": 12.85
+},
+{
+"text": "kepada",
+"start": 12.85,
+"end": 13.16
+},
+{
+"text": "orang",
+"start": 13.16,
+"end": 13.47
+},
+{
+"text": "ramai:",
+"start": 13.47,
+"end": 13.98
+},
+{
+"text": "Inna",
+"start": 13.98,
+"end": 14.48
+},
+{
+"text": "hazal",
+"start": 14.48,
+"end": 15.18
+},
+{
+"text": "balada",
+"start": 15.18,
+"end": 16.07
+},
+{
+"text": "harramahullahu",
+"start": 16.07,
+"end": 17.27
+},
+{
+"text": "yauma",
+"start": 17.325,
+"end": 17.773
+},
+{
+"text": "khalaqas",
+"start": 17.773,
+"end": 18.49
+},
+{
+"text": "samawati",
+"start": 18.49,
+"end": 19.29
+},
+{
+"text": "wal",
+"start": 19.29,
+"end": 19.67
+},
+{
+"text": "ardh,",
+"start": 19.67,
+"end": 20.49
+},
+{
+"text": "fa",
+"start": 20.49,
+"end": 20.74
+},
+{
+"text": "huwa",
+"start": 20.74,
+"end": 20.98
+},
+{
+"text": "haramun",
+"start": 20.98,
+"end": 21.55
+},
+{
+"text": "bi",
+"start": 21.55,
+"end": 21.65
+},
+{
+"text": "hurmatillahi",
+"start": 21.65,
+"end": 22.69
+},
+{
+"text": "ila",
+"start": 22.69,
+"end": 22.94
+},
+{
+"text": "yaumil",
+"start": 22.94,
+"end": 23.36
+},
+{
+"text": "qiyamah.",
+"start": 23.36,
+"end": 24.38
+},
+{
+"text": "Sesungguhnya",
+"start": 24.38,
+"end": 25.37
+},
+{
+"text": "Allah",
+"start": 25.37,
+"end": 25.79
+},
+{
+"text": "telah",
+"start": 25.79,
+"end": 26.48
+},
+{
+"text": "mengharamkan",
+"start": 26.48,
+"end": 27.19
+},
+{
+"text": "Makkah,",
+"start": 27.19,
+"end": 27.75
+},
+{
+"text": "haram",
+"start": 27.75,
+"end": 28.16
+},
+{
+"text": "melakukan",
+"start": 28.16,
+"end": 28.91
+},
+{
+"text": "beberapa",
+"start": 28.91,
+"end": 29.58
+},
+{
+"text": "perkara",
+"start": 29.58,
+"end": 30.16
+},
+{
+"text": "di",
+"start": 30.16,
+"end": 30.38
+},
+{
+"text": "kawasannya",
+"start": 30.38,
+"end": 31.34
+},
+{
+"text": "sejak",
+"start": 31.34,
+"end": 31.75
+},
+{
+"text": "Dia",
+"start": 31.75,
+"end": 31.95
+},
+{
+"text": "menciptakan",
+"start": 31.95,
+"end": 32.86
+},
+{
+"text": "langit",
+"start": 32.86,
+"end": 33.34
+},
+{
+"text": "dan",
+"start": 33.34,
+"end": 33.57
+},
+{
+"text": "bumi.",
+"start": 33.57,
+"end": 34.1
+},
+{
+"text": "Maka",
+"start": 34.1,
+"end": 34.41
+},
+{
+"text": "negeri",
+"start": 34.41,
+"end": 34.82
+},
+{
+"text": "ini",
+"start": 34.82,
+"end": 35.13
+},
+{
+"text": "menjadi",
+"start": 35.13,
+"end": 35.58
+},
+{
+"text": "tanah",
+"start": 35.58,
+"end": 36.17
+},
+{
+"text": "haram",
+"start": 36.17,
+"end": 36.37
+},
+{
+"text": "dengan",
+"start": 36.37,
+"end": 36.77
+},
+{
+"text": "keharaman",
+"start": 36.77,
+"end": 37.44
+},
+{
+"text": "daripada",
+"start": 37.44,
+"end": 37.98
+},
+{
+"text": "Allah",
+"start": 37.98,
+"end": 38.69
+},
+{
+"text": "hingga",
+"start": 38.69,
+"end": 38.86
+},
+{
+"text": "hari",
+"start": 38.86,
+"end": 39.16
+},
+{
+"text": "kiamat.",
+"start": 39.16,
+"end": 40.06
+},
+{
+"text": "Inna",
+"start": 40.06,
+"end": 40.71
+},
+{
+"text": "Makkata",
+"start": 40.71,
+"end": 41.59
+},
+{
+"text": "harramahallahu",
+"start": 41.59,
+"end": 42.79
+},
+{
+"text": "wa",
+"start": 43.35,
+"end": 43.62
+},
+{
+"text": "lam",
+"start": 43.62,
+"end": 44.01
+},
+{
+"text": "yuharrimhan",
+"start": 44.01,
+"end": 45.21
+},
+{
+"text": "nas.",
+"start": 45.741,
+"end": 46.37
+},
+{
+"text": "Fala",
+"start": 46.37,
+"end": 46.9
+},
+{
+"text": "yahillu",
+"start": 46.9,
+"end": 47.82
+},
+{
+"text": "limri'in",
+"start": 47.82,
+"end": 48.9
+},
+{
+"text": "yu'minu",
+"start": 48.9,
+"end": 49.92
+},
+{
+"text": "billahi",
+"start": 49.92,
+"end": 50.88
+},
+{
+"text": "wal",
+"start": 50.88,
+"end": 51.266
+},
+{
+"text": "yaumil",
+"start": 51.266,
+"end": 52.037
+},
+{
+"text": "akhir",
+"start": 52.037,
+"end": 52.68
+},
+{
+"text": "an",
+"start": 52.68,
+"end": 52.94
+},
+{
+"text": "yasfika",
+"start": 52.94,
+"end": 53.85
+},
+{
+"text": "biha",
+"start": 53.85,
+"end": 54.38
+},
+{
+"text": "daman",
+"start": 54.38,
+"end": 55.38
+},
+{
+"text": "wa",
+"start": 55.38,
+"end": 55.72
+},
+{
+"text": "la",
+"start": 55.72,
+"end": 56.04
+},
+{
+"text": "ya'dhida",
+"start": 56.04,
+"end": 57.24
+},
+{
+"text": "biha",
+"start": 57.35,
+"end": 58.01
+},
+{
+"text": "syajaratan.",
+"start": 58.01,
+"end": 59.21
+},
+{
+"text": "Fa",
+"start": 60.46,
+"end": 60.85
+},
+{
+"text": "in",
+"start": 60.85,
+"end": 61.11
+},
+{
+"text": "ahadun",
+"start": 61.11,
+"end": 62.02
+},
+{
+"text": "tarakhkhasa",
+"start": 62.02,
+"end": 63.17
+},
+{
+"text": "li",
+"start": 63.17,
+"end": 63.44
+},
+{
+"text": "qitali",
+"start": 63.44,
+"end": 64.086
+},
+{
+"text": "Rasulillah,",
+"start": 64.086,
+"end": 65.27
+},
+{
+"text": "fa",
+"start": 65.92,
+"end": 66.18
+},
+{
+"text": "qulu",
+"start": 66.18,
+"end": 66.74
+},
+{
+"text": "lahu",
+"start": 66.74,
+"end": 67.22
+},
+{
+"text": "innallaha",
+"start": 67.22,
+"end": 68.42
+},
+{
+"text": "azina",
+"start": 68.48,
+"end": 69.18
+},
+{
+"text": "li",
+"start": 69.18,
+"end": 69.44
+},
+{
+"text": "Rasulihi",
+"start": 69.44,
+"end": 70.35
+},
+{
+"text": "wa",
+"start": 71.22,
+"end": 71.4
+},
+{
+"text": "lam",
+"start": 71.4,
+"end": 71.67
+},
+{
+"text": "ya'zan",
+"start": 71.67,
+"end": 72.3
+},
+{
+"text": "lakum.",
+"start": 72.3,
+"end": 73.2
+},
+{
+"text": "Wa",
+"start": 73.2,
+"end": 73.48
+},
+{
+"text": "innama",
+"start": 73.48,
+"end": 74.32
+},
+{
+"text": "azina",
+"start": 74.32,
+"end": 75.16
+},
+{
+"text": "li",
+"start": 75.16,
+"end": 75.44
+},
+{
+"text": "sa'atan",
+"start": 75.44,
+"end": 76.43
+},
+{
+"text": "min",
+"start": 76.43,
+"end": 76.86
+},
+{
+"text": "naharin,",
+"start": 76.86,
+"end": 77.85
+},
+{
+"text": "wa",
+"start": 77.85,
+"end": 78.2
+},
+{
+"text": "qad",
+"start": 78.2,
+"end": 78.54
+},
+{
+"text": "'adat",
+"start": 78.54,
+"end": 79.116
+},
+{
+"text": "hurmatuhal",
+"start": 79.116,
+"end": 80.269
+},
+{
+"text": "yauma,",
+"start": 80.269,
+"end": 80.961
+},
+{
+"text": "hurmatuhal",
+"start": 80.961,
+"end": 82.114
+},
+{
+"text": "yauma",
+"start": 82.114,
+"end": 82.69
+},
+{
+"text": "ka",
+"start": 82.69,
+"end": 82.87
+},
+{
+"text": "hurmatiha",
+"start": 82.87,
+"end": 83.28
+},
+{
+"text": "bil",
+"start": 83.28,
+"end": 83.44
+},
+{
+"text": "ams,",
+"start": 83.44,
+"end": 83.77
+},
+{
+"text": "wal",
+"start": 83.77,
+"end": 84.177
+},
+{
+"text": "yuballighis",
+"start": 84.177,
+"end": 85.377
+},
+{
+"text": "syahidul",
+"start": 85.667,
+"end": 86.751
+},
+{
+"text": "gha'ib.",
+"start": 86.751,
+"end": 87.7
+},
+{
+"text": "Sesungguhnya",
+"start": 87.7,
+"end": 88.66
+},
+{
+"text": "Allah",
+"start": 88.66,
+"end": 89.06
+},
+{
+"text": "telah",
+"start": 89.06,
+"end": 89.52
+},
+{
+"text": "mengharamkan",
+"start": 89.52,
+"end": 90.42
+},
+{
+"text": "Makkah,",
+"start": 90.42,
+"end": 91.62
+},
+{
+"text": "manusia",
+"start": 91.62,
+"end": 92.08
+},
+{
+"text": "tidak",
+"start": 92.08,
+"end": 92.41
+},
+{
+"text": "mengharamkannya.",
+"start": 92.41,
+"end": 93.46
+},
+{
+"text": "Maka",
+"start": 93.46,
+"end": 93.7
+},
+{
+"text": "tidak",
+"start": 93.7,
+"end": 94.01
+},
+{
+"text": "halal",
+"start": 94.01,
+"end": 94.31
+},
+{
+"text": "bagi",
+"start": 94.31,
+"end": 94.55
+},
+{
+"text": "seorang",
+"start": 94.55,
+"end": 95.07
+},
+{
+"text": "yang",
+"start": 95.07,
+"end": 95.23
+},
+{
+"text": "beriman",
+"start": 95.23,
+"end": 95.85
+},
+{
+"text": "kepada",
+"start": 95.85,
+"end": 96.07
+},
+{
+"text": "Allah",
+"start": 96.07,
+"end": 96.34
+},
+{
+"text": "dan",
+"start": 96.34,
+"end": 96.54
+},
+{
+"text": "hari",
+"start": 96.54,
+"end": 96.77
+},
+{
+"text": "akhirat",
+"start": 96.77,
+"end": 97.37
+},
+{
+"text": "menumpahkan",
+"start": 97.37,
+"end": 98.44
+},
+{
+"text": "darah",
+"start": 98.44,
+"end": 98.74
+},
+{
+"text": "di",
+"start": 98.74,
+"end": 98.92
+},
+{
+"text": "kawasannya.",
+"start": 98.92,
+"end": 99.9
+},
+{
+"text": "Jadi",
+"start": 99.9,
+"end": 100.45
+},
+{
+"text": "negeri",
+"start": 100.45,
+"end": 101.26
+},
+{
+"text": "Makkah",
+"start": 101.26,
+"end": 102.07
+},
+{
+"text": "ini",
+"start": 102.07,
+"end": 102.47
+},
+{
+"text": "negeri",
+"start": 102.47,
+"end": 103.29
+},
+{
+"text": "yang",
+"start": 103.29,
+"end": 104.26
+},
+{
+"text": "aman.",
+"start": 104.26,
+"end": 104.5
+}
+]

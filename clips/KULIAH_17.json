@@ -1,0 +1,86 @@
+{
+ "id": "17",
+ "slug": "MAKKAH_TANAH_HARAM_SEJAK_LANGIT_BUMI_DICIPTA",
+ "category": "SIRAH NABAWI",
+ "title_lines": [
+  [
+   {
+    "t": "MAKKAH"
+   }
+  ],
+  [
+   {
+    "t": "TANAH HARAM",
+    "gold": true
+   }
+  ],
+  [
+   {
+    "t": "SEJAK LANGIT & BUMI DICIPTA"
+   }
+  ]
+ ],
+ "header_html": "MAKKAH <span class=\"g\">TANAH HARAM</span> SEJAK LANGIT &amp; BUMI DICIPTA",
+ "cover_kicker": "KULIAH SIRAH • FATHU MAKKAH",
+ "cover_sub": "Pondok Pengajian Darul Mubarak",
+ "speaker": "YB Ustaz Muhammad Ismi Mat Taib",
+ "speaker_role": "Pondok Pengajian Darul Mubarak • Sirah Fathu Makkah",
+ "series": "KULIAH SIRAH FATHU MAKKAH",
+ "face": [
+  550,
+  640
+ ],
+ "src_crop": [
+  146,
+  0,
+  788,
+  1400
+ ],
+ "music_volume": 0.1,
+ "whisper": "clips/whisper/w17.json",
+ "window": 799,
+ "start": 799.0,
+ "end": 903.6,
+ "arabic": [
+  {
+   "ar": "إِنَّ هَذَا الْبَلَدَ حَرَّمَهُ اللَّهُ يَوْمَ خَلَقَ السَّمَاوَاتِ وَالْأَرْضَ",
+   "ms": "Sesungguhnya negeri ini telah diharamkan oleh Allah sejak hari Dia menciptakan langit dan bumi.",
+   "ref": "HR AL-BUKHARI & MUSLIM",
+   "at": 14.0,
+   "dur": 14.5
+  },
+  {
+   "ar": "إِنَّ مَكَّةَ حَرَّمَهَا اللَّهُ وَلَمْ يُحَرِّمْهَا النَّاسُ",
+   "ms": "Sesungguhnya Makkah diharamkan oleh Allah, bukan diharamkan oleh manusia. Tidak halal bagi orang beriman menumpahkan darah di dalamnya.",
+   "ref": "HR AL-BUKHARI & MUSLIM",
+   "at": 40.0,
+   "dur": 18.0
+  }
+ ],
+ "points": [
+  {
+   "label": "KHUTBAH FATHU MAKKAH",
+   "text": "Hari kedua di Makkah, Nabi ﷺ berkhutbah",
+   "at": 6.0,
+   "dur": 7.6
+  },
+  {
+   "label": "PENGAJARAN",
+   "text": "Makkah tanah haram — haram menumpahkan darah di dalamnya",
+   "at": 88.0,
+   "dur": 14.5
+  }
+ ],
+ "keywords": [
+  "haram",
+  "Makkah",
+  "Allah",
+  "aman",
+  "darah",
+  "kiamat",
+  "langit",
+  "bumi"
+ ],
+ "text": "Hari kedua berada di Makkah, Rasulullah SAW menyampaikan khutbahnya. Setelah memuji dan menyebut kebesaran Allah dan kemuliaan-Nya, maka baginda bersabda kepada orang ramai: Inna hazal balada harramahullahu yauma khalaqas samawati wal ardh, fa huwa haramun bi hurmatillahi ila yaumil qiyamah. Sesungguhnya Allah telah mengharamkan Makkah, haram melakukan beberapa perkara di kawasannya sejak Dia menciptakan langit dan bumi. Maka negeri ini menjadi tanah haram dengan keharaman daripada Allah hingga hari kiamat. Inna Makkata harramahallahu wa lam yuharrimhan nas. Fala yahillu limri'in yu'minu billahi wal yaumil akhir an yasfika biha daman wa la ya'dhida biha syajaratan. Fa in ahadun tarakhkhasa li qitali Rasulillah, fa qulu lahu innallaha azina li Rasulihi wa lam ya'zan lakum. Wa innama azina li sa'atan min naharin, wa qad 'adat hurmatuhal yauma, hurmatuhal yauma ka hurmatiha bil ams, wal yuballighis syahidul gha'ib. Sesungguhnya Allah telah mengharamkan Makkah, manusia tidak mengharamkannya. Maka tidak halal bagi seorang yang beriman kepada Allah dan hari akhirat menumpahkan darah di kawasannya. Jadi negeri Makkah ini negeri yang aman.",
+ "lecture": "ismi_fathu_makkah"
+}
