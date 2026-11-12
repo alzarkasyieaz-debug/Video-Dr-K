@@ -1,0 +1,86 @@
+{
+ "id": "13",
+ "slug": "MINTA_2_BULAN_NABI_BERI_4_BULAN",
+ "category": "SIRAH NABAWI",
+ "title_lines": [
+  [
+   {
+    "t": "MINTA 2 BULAN,"
+   }
+  ],
+  [
+   {
+    "t": "NABI BERI"
+   }
+  ],
+  [
+   {
+    "t": "4 BULAN",
+    "gold": true
+   }
+  ]
+ ],
+ "header_html": "MINTA 2 BULAN, NABI BERI <span class=\"g\">4 BULAN</span>",
+ "cover_kicker": "KULIAH SIRAH • FATHU MAKKAH",
+ "cover_sub": "Pondok Pengajian Darul Mubarak",
+ "speaker": "YB Ustaz Muhammad Ismi Mat Taib",
+ "speaker_role": "Pondok Pengajian Darul Mubarak • Sirah Fathu Makkah",
+ "series": "KULIAH SIRAH FATHU MAKKAH",
+ "face": [
+  550,
+  640
+ ],
+ "src_crop": [
+  146,
+  0,
+  788,
+  1400
+ ],
+ "music_volume": 0.1,
+ "whisper": "clips/whisper/w13_ismi.json",
+ "window": 145,
+ "start": 148.6,
+ "end": 260.8,
+ "arabic": [
+  {
+   "ar": "أَنْتَ بِالْخِيَارِ أَرْبَعَةَ أَشْهُرٍ",
+   "ms": "Engkau diberi tempoh untuk membuat pilihan selama empat bulan.",
+   "ref": "SABDA NABI ﷺ KEPADA SAFWAN • SIRAH IBNU HISYAM",
+   "at": 94.2,
+   "dur": 13.0
+  }
+ ],
+ "points": [
+  {
+   "label": "SAFWAN BIN UMAYYAH",
+   "text": "Pemimpin Makkah lari ke Jeddah, takut dihukum",
+   "at": 7.0,
+   "dur": 12.0
+  },
+  {
+   "label": "HADIAH SERBAN",
+   "text": "Nabi ﷺ hadiahkan serban baginda — tanda dimaafkan",
+   "at": 35.6,
+   "dur": 14.0
+  },
+  {
+   "label": "MINTA TEMPOH",
+   "text": "Safwan minta 2 bulan untuk berfikir masuk Islam",
+   "at": 71.0,
+   "dur": 13.0
+  }
+ ],
+ "keywords": [
+  "serban",
+  "bulan",
+  "Islam",
+  "Safwan",
+  "takut",
+  "memaafkan",
+  "Rasulullah"
+ ],
+ "text": "Sahabat karib ini, Umair bin Wahab mencarinya. Sahabat karib kepada Safwan ini cari dia, mana pergi Safwan. Rupanya dia takut. Takut kalau-kalau Nabi akan menghukum dia. Dan bertemu ketika dia menaiki kapal ke Jeddah. Menaiki kapal di Jeddah untuk melarikan diri ke Yaman. Dia dah siap nak pergi ke Yaman lah, nak naik kapal. Dibawa menghadap Rasulullah SAW, janganlah kamu pergi ke Yaman. Mari, mari jumpa Muhammad, jumpa Rasulullah SAW. Apabila menghadap Rasulullah SAW, memberikan hadiah kepada dia, serban yang dipakai baginda. Nabi bagi serban. Walaupun dia penjenayah, walaupun dia ini buat salah, Nabi buat baik dengan dia, bagi serban. Ketika memasuki Makkah, Nabi bagi dia. Dia dapat faham ini petanda yang baiklah bahawa Nabi akan menerima dia. Memaafkan dia. Lalu Safwan berkata, ij'alni bil khiyar syahraini. Berikan aku masa 2 bulan. Untuk aku berfikir, memilih sikap. Maksudnya untuk aku tentukan sikap aku, aku nak masuk Islam atau tak masuk Islam. Beri aku 2 bulan, kata Safwan. Rasulullah SAW menjawab, anta bil khiyar arba'ata asyhur. Aku berikan kamu tempoh selama 4 bulan. Tak usahlah 2 bulan. Untuk kamu fikir nak masuk Islam. Bukan 2 bulan, 4 bulan aku beri kamu.",
+ "lecture": "ismi_fathu_makkah",
+ "style": "B",
+ "episode": 1
+}
