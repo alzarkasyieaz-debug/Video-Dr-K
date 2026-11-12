@@ -1,0 +1,76 @@
+{
+ "id": "18",
+ "slug": "PAHALA_100000_KALI_GANDA_DI_MAKKAH",
+ "category": "FADILAT & IBADAH",
+ "title_lines": [
+  [
+   {
+    "t": "PAHALA"
+   }
+  ],
+  [
+   {
+    "t": "100,000 KALI GANDA",
+    "gold": true
+   }
+  ],
+  [
+   {
+    "t": "DI SELURUH MAKKAH?"
+   }
+  ]
+ ],
+ "header_html": "PAHALA <span class=\"g\">100,000 KALI GANDA</span> DI SELURUH MAKKAH?",
+ "cover_kicker": "KULIAH SIRAH • FATHU MAKKAH",
+ "cover_sub": "Pondok Pengajian Darul Mubarak",
+ "speaker": "YB Ustaz Muhammad Ismi Mat Taib",
+ "speaker_role": "Pondok Pengajian Darul Mubarak • Sirah Fathu Makkah",
+ "series": "KULIAH SIRAH FATHU MAKKAH",
+ "face": [
+  550,
+  640
+ ],
+ "src_crop": [
+  146,
+  0,
+  788,
+  1400
+ ],
+ "music_volume": 0.1,
+ "whisper": "clips/whisper/w18.json",
+ "window": 1138,
+ "start": 1141.0,
+ "end": 1221.2,
+ "arabic": [],
+ "points": [
+  {
+   "label": "GANDAAN PAHALA",
+   "text": "Makkah 100,000 • Masjid Nabawi 1,000 • Al-Aqsa 500",
+   "at": 6.0,
+   "dur": 13.0
+  },
+  {
+   "label": "JUMHUR ULAMA",
+   "text": "Gandaan meliputi seluruh kota suci Makkah, bukan masjid sahaja",
+   "at": 32.0,
+   "dur": 13.0
+  },
+  {
+   "label": "NAMUN",
+   "text": "Solat di masjid & di saf hadapan tetap lebih afdal",
+   "at": 57.0,
+   "dur": 14.0
+  }
+ ],
+ "keywords": [
+  "pahala",
+  "ganda",
+  "Makkah",
+  "ulama",
+  "afdal",
+  "masjid",
+  "ribu"
+ ],
+ "text": "Allah gandakan berapa gandaan pahala orang beribadah di Makkah? 100 ribu kali ganda. Masjid Nabawi, 1000 kali ganda. Masjid al-Aqsa, 500 kali ganda. Makkah ni 100 ribu kali ganda. Orang yang beribadah di Makkah, digandakan 100 ribu pahala. Para ulama berselisih, adakah di Masjidil Haram saja, atau di seluruh kota suci Makkah itu? Jumhur ulama menyatakan bahawa 100 ribu kali gandaan itu diberikan kepada seluruh kota suci Makkah, tidak hanya Masjidil Haram. Maknanya, di dalam bilik kita, di hotel pun, kalau kita baca Quran, dapat gandaan 100 ribu kali ganda. Kita solat dhuha, di dalam masjid pun dapat 100 ribu kali ganda. Walaupun itu pun, fadilat kita sembahyang di masjid itu lebihlah afdal. Macam orang sembahyang masjid, sama ke orang sembahyang saf belakang dengan saf depan? Tidak sama, saf depanlah lebih afdal. Sama ke orang sembahyang di luar, jalan raya itu, dengan orang depan? Di depan lagi afdal.",
+ "lecture": "ismi_fathu_makkah"
+}
