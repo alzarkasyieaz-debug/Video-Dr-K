@@ -26,4 +26,5 @@ for id in "$@"; do
   b=$(ffprobe -v error -count_frames -select_streams v -show_entries stream=nb_read_frames -of csv=p=0 "$tmp")
   [ "$a" = "$b" ] || { echo "FRAME COUNT MISMATCH $id old=$a new=$b"; continue; }
   cp -n "$old" "renders/work-cover/$id.orig.mp4" && mv "$tmp" "$old" && touch "renders/work-cover/$id.done" && echo "[$(date +%T)] done $old (T=$T)"
+  rm -rf /tmp/hyperframes-extract-cache-0   # decoded-frame cache grows ~200 MB per render
 done
