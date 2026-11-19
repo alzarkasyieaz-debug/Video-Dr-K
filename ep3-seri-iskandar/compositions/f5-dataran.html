@@ -1,0 +1,81 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; font-family: Inter, sans-serif; }
+    .ill { position: absolute; padding: 4px 10px; border-radius: 5px; font-weight: 800; font-size: 28px; letter-spacing: .16em;
+      color: #c9d2e0; border: 1px solid rgba(201,210,224,.5); background: rgba(7,17,31,.6); }
+    .zone { position: absolute; left: 60px; top: 846px; width: 960px; height: 300px; }
+    .zk { position: absolute; left: 0; top: 0; font-size: 28px; font-weight: 800; letter-spacing: .18em; color: #c9d2e0; }
+    .zone .ill { right: 0; top: -2px; }
+    .gold3d { color: #f8d77e; text-shadow: 0 1px 0 #e0b04f, 0 2px 0 #d3a344, 0 3px 0 #c4953a, 0 4px 0 #b28430, 0 5px 0 #9c7226,
+      0 6px 0 #845f1d, 0 7px 0 #6c4c16, 0 16px 28px rgba(0,0,0,.75); }
+    .silver3d { color: #eef1f6; text-shadow: 0 1px 0 #c3cad6, 0 2px 0 #a9b2c0, 0 3px 0 #8e97a6, 0 4px 0 #747d8c, 0 14px 24px rgba(0,0,0,.6); }
+    .chip { position: absolute; left: 44px; top: 262px; padding: 10px 18px; border-radius: 10px; background: rgba(242,197,92,.95);
+      color: #17110a; font-weight: 900; font-size: 30px; letter-spacing: .08em; }
+    .col { position: absolute; left: 44px; top: 860px; width: 600px; height: 290px; }
+    .pill { position: absolute; left: 0; height: 64px; padding: 0 20px; border-radius: 12px; background: rgba(7,17,31,.9);
+      border: 1px solid rgba(231,235,242,.35); color: #f4f6fa; font-size: 30px; font-weight: 900; letter-spacing: .04em; line-height: 64px; white-space: nowrap; }
+    .pill.red { border: 2px solid rgba(224,68,58,.85); color: #ff8e83; }
+    .pill.gold { background: #f2c55c; color: #17110a; border: none; }
+    .stamp { position: absolute; text-align: center; border-radius: 10px; border: 5px solid #ff5a4c; color: #ff6a5c;
+      font-weight: 900; letter-spacing: .08em; line-height: 1.1; background: rgba(30,6,6,.8); box-shadow: 0 0 30px rgba(224,68,58,.45); }
+
+    #d-big { position: absolute; left: 0; top: 56px; width: 440px; }
+    #d-big span { display: block; white-space: nowrap; font-size: 80px; font-weight: 900; line-height: 1; letter-spacing: -0.03em; }
+    #d-big b { display: block; margin-top: 8px; font-size: 28px; font-weight: 800; letter-spacing: .14em; color: #ff8e83; }
+    #d-map { position: absolute; left: 470px; top: 50px; width: 490px; height: 250px; border-radius: 18px; overflow: hidden;
+      background: rgba(13,29,51,.92); border: 1px solid rgba(231,235,242,.25); }
+    #d-map svg { position: absolute; inset: 0; width: 540px; height: 250px; }
+    .d-tile { position: absolute; width: 470px; height: 112px; border-radius: 14px; background: rgba(13,29,51,.94);
+      border: 1px solid rgba(242,197,92,.55); padding: 0 20px 0 74px; display: flex; align-items: center;
+      font-size: 30px; font-weight: 900; line-height: 1.12; color: #f4f6fa; }
+    .d-tile em { position: absolute; left: 20px; top: 36px; width: 40px; height: 40px; border-radius: 10px; background: #f2c55c;
+      color: #17110a; font-style: normal; font-size: 28px; font-weight: 900; text-align: center; line-height: 40px; }
+    #d-t1 { left: 0; top: 52px; } #d-t2 { left: 490px; top: 52px; } #d-t3 { left: 0; top: 184px; } #d-t4 { left: 490px; top: 184px; }
+    #d-k2 { position: absolute; left: 0; top: 0; font-size: 28px; font-weight: 800; letter-spacing: .18em; color: #f2c55c; }
+  </style>
+  <div id="root" data-composition-id="f5-dataran" data-width="1080" data-height="1920">
+    <div class="chip" id="d-chip">ISU 3 · DATARAN SUNGAI SELUANG</div>
+    <div class="zone" id="d-zone">
+      <div class="zk" id="d-k">DATARAN SUNGAI SELUANG</div>
+      <div class="ill">ILUSTRASI</div>
+      <div id="d-sec1">
+        <div id="d-big"><span class="gold3d">19 HEKTAR</span><b>BELUM DINAIK TARAF</b></div>
+        <div id="d-map">
+          <svg viewBox="0 0 540 250" fill="none">
+            <path id="d-area" d="M40 200 C 60 80 180 40 300 50 C 420 60 510 120 500 190 C 470 230 120 240 40 200 Z"
+              fill="rgba(47,107,63,.35)" stroke="#f2c55c" stroke-width="3" stroke-dasharray="1400" stroke-dashoffset="1400" />
+            <path d="M0 230 C 120 210 260 245 540 214" stroke="#5aa9f0" stroke-width="10" opacity=".8" />
+          </svg>
+        </div>
+      </div>
+      <div id="d-sec2">
+        <div id="d-k2">SESUAI DINAIK TARAF DENGAN</div>
+        <div class="d-tile" id="d-t1"><em>1</em>TAMAN PERMAINAN KANAK-KANAK</div>
+        <div class="d-tile" id="d-t2"><em>2</em>TEMPAT DUDUK &amp; TEDUHAN</div>
+        <div class="d-tile" id="d-t3"><em>3</em>TANDAS AWAM</div>
+        <div class="d-tile" id="d-t4"><em>4</em>LAMPU</div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#d-chip", { opacity: 0, x: -24 }, { opacity: 1, x: 0, duration: 0.4, ease: "expo.out" }, 0.1);
+    tl.to("#d-chip", { opacity: 0, duration: 0.25 }, 19.4);
+    // split local 3.5
+    tl.fromTo(["#d-k", "#d-zone .ill"], { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.4, ease: "expo.out" }, 3.85);
+    tl.fromTo("#d-map", { opacity: 0, rotationX: 35, transformPerspective: 1100 }, { opacity: 1, rotationX: 0, duration: 0.6, ease: "expo.out" }, 3.9);
+    tl.fromTo("#d-area", { strokeDashoffset: 1400 }, { strokeDashoffset: 0, duration: 1.4, ease: "power2.inOut" }, 4.1);
+    // "19 hektar" local 4.42; "belum dinaik taraf" local 5.8
+    tl.fromTo("#d-big span", { opacity: 0, scale: 1.6, rotationX: -50, transformPerspective: 900 }, { opacity: 1, scale: 1, rotationX: 0, duration: 0.25, ease: "expo.out" }, 4.38);
+    tl.fromTo("#d-big b", { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.3, ease: "expo.out" }, 5.8);
+    tl.to("#d-sec1", { opacity: 0, filter: "blur(8px)", duration: 0.25, ease: "power2.in" }, 8.2);
+    // "Ianya sangat sesuai untuk dinaik taraf…" local 8.4
+    tl.set(["#d-k", "#d-zone .ill"], { opacity: 0 }, 8.4);
+    tl.fromTo("#d-k2", { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.35, ease: "expo.out" }, 8.5);
+    [["#d-t1", 12.45], ["#d-t2", 15.25], ["#d-t3", 17.05], ["#d-t4", 17.95]].forEach(([t, at]) => {
+      tl.fromTo(t, { opacity: 0, y: 24, rotationX: -40, transformPerspective: 900 }, { opacity: 1, y: 0, rotationX: 0, duration: 0.4, ease: "expo.out" }, at);
+    });
+    tl.to("#d-zone", { opacity: 0, filter: "blur(8px)", duration: 0.25, ease: "power2.in" }, 19.3);
+    window.__timelines["f5-dataran"] = tl;
+  </script>
+</template>

@@ -1,0 +1,37 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; font-family: Inter, sans-serif; }
+    #h-zone { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; }
+    .h-kick { position: absolute; left: 0; width: 1080px; top: 862px; text-align: center;
+      font-size: 28px; font-weight: 800; letter-spacing: .2em; color: #f2c55c; }
+    .h-kick span { padding: 8px 18px; border: 1px solid rgba(242,197,92,.6); border-radius: 8px; background: rgba(7,17,31,.7); }
+    .h-line { position: absolute; left: 40px; width: 1000px; text-align: center; font-weight: 900; color: #f4f6fa;
+      font-size: 50px; letter-spacing: .01em; text-shadow: 0 4px 0 rgba(0,0,0,.45), 0 10px 30px rgba(0,0,0,.8); }
+    .h-3d { position: absolute; left: 20px; width: 1040px; text-align: center; font-weight: 900; line-height: 1;
+      letter-spacing: -0.02em; color: #f8d77e;
+      text-shadow: 0 1px 0 #e0b04f, 0 2px 0 #d3a344, 0 3px 0 #c4953a, 0 4px 0 #b28430, 0 5px 0 #9c7226,
+        0 6px 0 #845f1d, 0 7px 0 #6c4c16, 0 8px 0 #5a3f12, 0 18px 30px rgba(0,0,0,.75), 0 0 60px rgba(242,197,92,.35); }
+    .bd { position: absolute; left: 0; top: 840px; width: 1080px; height: 330px;
+      background: linear-gradient(180deg, rgba(4,8,16,0) 0%, rgba(4,8,16,.72) 22%, rgba(4,8,16,.78) 80%, rgba(4,8,16,0) 100%); }
+  </style>
+  <div id="root" data-composition-id="f1-hook" data-width="1080" data-height="1920">
+    <div id="h-zone">
+      <div class="bd" id="h-bd"></div>
+      <div class="h-kick" id="h-kick"><span>SERI ISKANDAR, PARIT · DEWAN RAKYAT</span></div>
+      <div class="h-line" id="h-l1" style="top: 922px">“MALANGNYA, DI SERI ISKANDAR INI</div>
+      <div class="h-line" id="h-l2" style="top: 1000px">MASIH LAGI TIDAK ADA</div>
+      <div class="h-3d" id="h-l3" style="top: 1082px; font-size: 124px; white-space: nowrap">PASAR AWAM.”</div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    // frame 0 = thumbnail: kicker and the first line already on screen
+    tl.fromTo(["#h-kick", "#h-l1"], { opacity: 1 }, { opacity: 1, duration: 0.01 }, 0);
+    tl.fromTo("#h-l2", { opacity: 0, filter: "blur(8px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.18, ease: "power3.out" }, 1.3);
+    tl.fromTo("#h-l3", { opacity: 0, scale: 1.9, rotationX: -55, transformPerspective: 900 },
+      { opacity: 1, scale: 1, rotationX: 0, duration: 0.22, ease: "expo.out" }, 2.5);
+    tl.to(["#h-l1", "#h-l2"], { opacity: 0.6, duration: 0.3 }, 2.5);
+    tl.to("#h-zone", { opacity: 0, filter: "blur(10px)", duration: 0.16, ease: "power2.in" }, 3.22);
+    window.__timelines["f1-hook"] = tl;
+  </script>
+</template>

@@ -1,0 +1,77 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; font-family: Inter, sans-serif; }
+    .ill { position: absolute; padding: 4px 10px; border-radius: 5px; font-weight: 800; font-size: 28px; letter-spacing: .16em;
+      color: #c9d2e0; border: 1px solid rgba(201,210,224,.5); background: rgba(7,17,31,.6); }
+    .zone { position: absolute; left: 60px; top: 846px; width: 960px; height: 300px; }
+    .zk { position: absolute; left: 0; top: 0; font-size: 28px; font-weight: 800; letter-spacing: .18em; color: #c9d2e0; }
+    .zone .ill { right: 0; top: -2px; }
+    .gold3d { color: #f8d77e; text-shadow: 0 1px 0 #e0b04f, 0 2px 0 #d3a344, 0 3px 0 #c4953a, 0 4px 0 #b28430, 0 5px 0 #9c7226,
+      0 6px 0 #845f1d, 0 7px 0 #6c4c16, 0 16px 28px rgba(0,0,0,.75); }
+    .silver3d { color: #eef1f6; text-shadow: 0 1px 0 #c3cad6, 0 2px 0 #a9b2c0, 0 3px 0 #8e97a6, 0 4px 0 #747d8c, 0 14px 24px rgba(0,0,0,.6); }
+    .chip { position: absolute; left: 44px; top: 262px; padding: 10px 18px; border-radius: 10px; background: rgba(242,197,92,.95);
+      color: #17110a; font-weight: 900; font-size: 30px; letter-spacing: .08em; }
+    .col { position: absolute; left: 44px; top: 860px; width: 600px; height: 290px; }
+    .pill { position: absolute; left: 0; height: 64px; padding: 0 20px; border-radius: 12px; background: rgba(7,17,31,.9);
+      border: 1px solid rgba(231,235,242,.35); color: #f4f6fa; font-size: 30px; font-weight: 900; letter-spacing: .04em; line-height: 64px; white-space: nowrap; }
+    .pill.red { border: 2px solid rgba(224,68,58,.85); color: #ff8e83; }
+    .pill.gold { background: #f2c55c; color: #17110a; border: none; }
+    .stamp { position: absolute; text-align: center; border-radius: 10px; border: 5px solid #ff5a4c; color: #ff6a5c;
+      font-weight: 900; letter-spacing: .08em; line-height: 1.1; background: rgba(30,6,6,.8); box-shadow: 0 0 30px rgba(224,68,58,.45); }
+
+    .p-row { position: absolute; left: 0; width: 960px; height: 100px; }
+    .p-row b { position: absolute; left: 0; top: 4px; font-size: 28px; font-weight: 800; letter-spacing: .14em; color: #c9d2e0; }
+    .p-row span { position: absolute; left: 0; top: 38px; font-size: 64px; font-weight: 900; line-height: 1; }
+    .p-track { position: absolute; left: 330px; top: 48px; width: 630px; height: 42px; border-radius: 10px; background: rgba(231,235,242,.08); }
+    .p-bar { position: absolute; left: 0; top: 0; height: 42px; border-radius: 10px; transform-origin: 0 50%; }
+    #p-r1 { top: 50px; } #p-r2 { top: 160px; }
+    #p-b1 { width: 267px; background: linear-gradient(180deg, #e8ecf3, #9aa3b2); }
+    #p-b2 { width: 630px; background: linear-gradient(180deg, #ffe08f, #d9a641 60%, #a8781f); box-shadow: 0 0 26px rgba(242,197,92,.4); }
+    #p-stamp { left: 130px; top: 960px; width: 820px; white-space: nowrap; padding: 14px 0; font-size: 50px; }
+    #k-p1 { top: 0; } #k-p2 { top: 76px; } #k-p3 { top: 76px; left: 190px; } #k-p4 { top: 152px; } #k-p5 { top: 228px; }
+  </style>
+  <div id="root" data-composition-id="f3-pasar" data-width="1080" data-height="1920">
+    <div class="chip" id="p-chip">ISU 1 · PASAR AWAM</div>
+    <div class="zone" id="p-zone">
+      <div class="zk" id="p-k">PENDUDUK SERI ISKANDAR</div>
+      <div class="ill">GRAFIK</div>
+      <div class="p-row" id="p-r1"><b>BANCI 2020</b><span class="silver3d">14,827</span><div class="p-track"><div class="p-bar" id="p-b1"></div></div></div>
+      <div class="p-row" id="p-r2"><b>TERKINI · LEBIH</b><span class="gold3d">35,000</span><div class="p-track"><div class="p-bar" id="p-b2"></div></div></div>
+    </div>
+    <div class="stamp" id="p-stamp">MASIH TIADA PASAR AWAM</div>
+
+    <div class="col" id="k-col">
+      <div class="pill gold" id="k-p1">KEPERLUAN RUMAH</div>
+      <div class="pill" id="k-p2">IKAN</div>
+      <div class="pill" id="k-p3">SAYUR</div>
+      <div class="pill" id="k-p4">KEDAI-KEDAI BERSELERAK</div>
+      <div class="pill red" id="k-p5">PENCEMARAN</div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#p-chip", { opacity: 0, x: -24 }, { opacity: 1, x: 0, duration: 0.4, ease: "expo.out" }, 0.1);
+    tl.to("#p-chip", { opacity: 0, duration: 0.25 }, 25.4);
+    // split is opening (root 9.6)
+    tl.fromTo(["#p-k", "#p-zone .ill"], { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.4, ease: "expo.out" }, 0.45);
+    // "14,827" local 0.85
+    tl.fromTo("#p-r1", { opacity: 0, x: -24 }, { opacity: 1, x: 0, duration: 0.35, ease: "expo.out" }, 0.8);
+    tl.fromTo("#p-b1", { scaleX: 0 }, { scaleX: 1, duration: 0.8, ease: "power3.out" }, 0.9);
+    // "lebih 35,000 orang" local 7.55 (bars on one scale: 14,827 / 35,000)
+    tl.fromTo("#p-r2", { opacity: 0, x: -24 }, { opacity: 1, x: 0, duration: 0.35, ease: "expo.out" }, 7.0);
+    tl.fromTo("#p-b2", { scaleX: 0 }, { scaleX: 1, duration: 1.0, ease: "power3.out" }, 7.5);
+    // "masih lagi tidak ada pasar awam" local 11.5
+    tl.set("#p-stamp", { opacity: 0, rotation: -5 }, 0);
+    tl.to(["#p-r1", "#p-r2"], { opacity: 0, duration: 0.2 }, 11.3);
+    tl.fromTo("#p-stamp", { opacity: 0, scale: 2.0, rotation: -14 }, { opacity: 1, scale: 1, rotation: -5, duration: 0.2, ease: "power4.out", immediateRender: false }, 11.45);
+    tl.to(["#p-zone", "#p-stamp"], { opacity: 0, filter: "blur(8px)", duration: 0.25, ease: "power2.in" }, 12.85);
+
+    // full frame: what people buy, where, and the cost
+    [["#k-p1", 16.3], ["#k-p2", 17.6], ["#k-p3", 18.2], ["#k-p4", 20.1]].forEach(([p, t]) => {
+      tl.fromTo(p, { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: 0.35, ease: "expo.out" }, t);
+    });
+    tl.fromTo("#k-p5", { opacity: 0, scale: 1.3 }, { opacity: 1, scale: 1, duration: 0.3, ease: "back.out(2)" }, 23.8);
+    tl.to("#k-col", { opacity: 0, x: -30, duration: 0.3, ease: "power2.in" }, 25.45);
+    window.__timelines["f3-pasar"] = tl;
+  </script>
+</template>
