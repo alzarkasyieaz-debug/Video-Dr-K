@@ -1,0 +1,1957 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | CPU : SSE3 = 1 | SSSE3 = 1 | AVX = 1 | AVX_VNNI = 1 | AVX2 = 1 | F16C = 1 | FMA = 1 | BMI2 = 1 | AVX512 = 1 | AVX512_VBMI = 1 | AVX512_VNNI = 1 | AVX512_BF16 = 1 | AMX_INT8 = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "medium",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 1024,
+			"head": 16,
+			"layer": 24
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1024,
+			"head": 16,
+			"layer": 24
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/root/.cache/hyperframes/whisper/models/ggml-medium.bin",
+		"language": "ms",
+		"translate": false
+	},
+	"result": {
+		"language": "ms"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,100"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 100
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,100",
+				"to": "00:00:00,170"
+			},
+			"offsets": {
+				"from": 100,
+				"to": 170
+			},
+			"text": " Nak"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,170",
+				"to": "00:00:00,400"
+			},
+			"offsets": {
+				"from": 170,
+				"to": 400
+			},
+			"text": " buat"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,400",
+				"to": "00:00:01,000"
+			},
+			"offsets": {
+				"from": 400,
+				"to": 1000
+			},
+			"text": " perjanjian"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,000",
+				"to": "00:00:01,330"
+			},
+			"offsets": {
+				"from": 1000,
+				"to": 1330
+			},
+			"text": " yang"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,330",
+				"to": "00:00:01,520"
+			},
+			"offsets": {
+				"from": 1330,
+				"to": 1520
+			},
+			"text": " kita"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,520",
+				"to": "00:00:01,920"
+			},
+			"offsets": {
+				"from": 1520,
+				"to": 1920
+			},
+			"text": " tahu,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,920",
+				"to": "00:00:02,750"
+			},
+			"offsets": {
+				"from": 1920,
+				"to": 2750
+			},
+			"text": " perjanjian"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,750",
+				"to": "00:00:03,200"
+			},
+			"offsets": {
+				"from": 2750,
+				"to": 3200
+			},
+			"text": " Budaibiyah"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,200",
+				"to": "00:00:03,440"
+			},
+			"offsets": {
+				"from": 3200,
+				"to": 3440
+			},
+			"text": " kita"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,440",
+				"to": "00:00:03,630"
+			},
+			"offsets": {
+				"from": 3440,
+				"to": 3630
+			},
+			"text": " dah"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,630",
+				"to": "00:00:04,040"
+			},
+			"offsets": {
+				"from": 3630,
+				"to": 4040
+			},
+			"text": " belajar"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,040",
+				"to": "00:00:04,280"
+			},
+			"offsets": {
+				"from": 4040,
+				"to": 4280
+			},
+			"text": " satu"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,280",
+				"to": "00:00:04,520"
+			},
+			"offsets": {
+				"from": 4280,
+				"to": 4520
+			},
+			"text": " masa"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,520",
+				"to": "00:00:04,800"
+			},
+			"offsets": {
+				"from": 4520,
+				"to": 4800
+			},
+			"text": " dulu."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:05,440",
+				"to": "00:00:05,440"
+			},
+			"offsets": {
+				"from": 5440,
+				"to": 5440
+			},
+			"text": " Di"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:05,440",
+				"to": "00:00:05,540"
+			},
+			"offsets": {
+				"from": 5440,
+				"to": 5540
+			},
+			"text": " mana"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:05,540",
+				"to": "00:00:05,690"
+			},
+			"offsets": {
+				"from": 5540,
+				"to": 5690
+			},
+			"text": " isi"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:05,690",
+				"to": "00:00:06,630"
+			},
+			"offsets": {
+				"from": 5690,
+				"to": 6630
+			},
+			"text": " perjanjian"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:06,630",
+				"to": "00:00:07,860"
+			},
+			"offsets": {
+				"from": 6630,
+				"to": 7860
+			},
+			"text": " Budaibiyah?"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:07,860",
+				"to": "00:00:07,880"
+			},
+			"offsets": {
+				"from": 7860,
+				"to": 7880
+			},
+			"text": " Apa"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:07,880",
+				"to": "00:00:07,880"
+			},
+			"offsets": {
+				"from": 7880,
+				"to": 7880
+			},
+			"text": " dia?"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:10,040",
+				"to": "00:00:10,040"
+			},
+			"offsets": {
+				"from": 10040,
+				"to": 10040
+			},
+			"text": " Nampak"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:10,040",
+				"to": "00:00:10,120"
+			},
+			"offsets": {
+				"from": 10040,
+				"to": 10120
+			},
+			"text": " macam"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:10,120",
+				"to": "00:00:10,440"
+			},
+			"offsets": {
+				"from": 10120,
+				"to": 10440
+			},
+			"text": " berat"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:10,440",
+				"to": "00:00:11,730"
+			},
+			"offsets": {
+				"from": 10440,
+				"to": 11730
+			},
+			"text": " sebelah,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:11,730",
+				"to": "00:00:12,150"
+			},
+			"offsets": {
+				"from": 11730,
+				"to": 12150
+			},
+			"text": " iaitu"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:12,150",
+				"to": "00:00:12,370"
+			},
+			"offsets": {
+				"from": 12150,
+				"to": 12370
+			},
+			"text": " Nabi"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:12,370",
+				"to": "00:00:12,850"
+			},
+			"offsets": {
+				"from": 12370,
+				"to": 12850
+			},
+			"text": " kena"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:12,850",
+				"to": "00:00:13,460"
+			},
+			"offsets": {
+				"from": 12850,
+				"to": 13460
+			},
+			"text": " balik-balik"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:13,460",
+				"to": "00:00:13,560"
+			},
+			"offsets": {
+				"from": 13460,
+				"to": 13560
+			},
+			"text": " ke"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:13,560",
+				"to": "00:00:14,160"
+			},
+			"offsets": {
+				"from": 13560,
+				"to": 14160
+			},
+			"text": " Madinah."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:15,240",
+				"to": "00:00:15,240"
+			},
+			"offsets": {
+				"from": 15240,
+				"to": 15240
+			},
+			"text": " Tak"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:15,240",
+				"to": "00:00:15,240"
+			},
+			"offsets": {
+				"from": 15240,
+				"to": 15240
+			},
+			"text": " boleh"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:15,240",
+				"to": "00:00:15,670"
+			},
+			"offsets": {
+				"from": 15240,
+				"to": 15670
+			},
+			"text": " menunaikan"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:15,670",
+				"to": "00:00:16,090"
+			},
+			"offsets": {
+				"from": 15670,
+				"to": 16090
+			},
+			"text": " umrah"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:16,090",
+				"to": "00:00:16,440"
+			},
+			"offsets": {
+				"from": 16090,
+				"to": 16440
+			},
+			"text": " tapi"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:16,440",
+				"to": "00:00:16,850"
+			},
+			"offsets": {
+				"from": 16440,
+				"to": 16850
+			},
+			"text": " boleh"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:16,850",
+				"to": "00:00:17,350"
+			},
+			"offsets": {
+				"from": 16850,
+				"to": 17350
+			},
+			"text": " datang"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:17,350",
+				"to": "00:00:18,020"
+			},
+			"offsets": {
+				"from": 17350,
+				"to": 18020
+			},
+			"text": " tahun"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:18,020",
+				"to": "00:00:18,680"
+			},
+			"offsets": {
+				"from": 18020,
+				"to": 18680
+			},
+			"text": " berikutnya."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:20,000",
+				"to": "00:00:20,000"
+			},
+			"offsets": {
+				"from": 20000,
+				"to": 20000
+			},
+			"text": " Yang"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:20,000",
+				"to": "00:00:20,000"
+			},
+			"offsets": {
+				"from": 20000,
+				"to": 20000
+			},
+			"text": " kita"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:20,000",
+				"to": "00:00:20,720"
+			},
+			"offsets": {
+				"from": 20000,
+				"to": 20720
+			},
+			"text": " bincangkan"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:20,720",
+				"to": "00:00:21,330"
+			},
+			"offsets": {
+				"from": 20720,
+				"to": 21330
+			},
+			"text": " umrah"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:21,330",
+				"to": "00:00:21,650"
+			},
+			"offsets": {
+				"from": 21330,
+				"to": 21650
+			},
+			"text": " tul"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:21,650",
+				"to": "00:00:22,420"
+			},
+			"offsets": {
+				"from": 21650,
+				"to": 22420
+			},
+			"text": " qadha,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:22,420",
+				"to": "00:00:23,020"
+			},
+			"offsets": {
+				"from": 22420,
+				"to": 23020
+			},
+			"text": " umrah"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:23,020",
+				"to": "00:00:23,590"
+			},
+			"offsets": {
+				"from": 23020,
+				"to": 23590
+			},
+			"text": " ganti"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:23,590",
+				"to": "00:00:24,320"
+			},
+			"offsets": {
+				"from": 23590,
+				"to": 24320
+			},
+			"text": " qadha."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:25,400",
+				"to": "00:00:25,400"
+			},
+			"offsets": {
+				"from": 25400,
+				"to": 25400
+			},
+			"text": " Boleh"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:25,400",
+				"to": "00:00:25,500"
+			},
+			"offsets": {
+				"from": 25400,
+				"to": 25500
+			},
+			"text": " datang"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:25,500",
+				"to": "00:00:25,550"
+			},
+			"offsets": {
+				"from": 25500,
+				"to": 25550
+			},
+			"text": " tahun"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:25,550",
+				"to": "00:00:26,320"
+			},
+			"offsets": {
+				"from": 25550,
+				"to": 26320
+			},
+			"text": " berikutnya"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:26,320",
+				"to": "00:00:26,920"
+			},
+			"offsets": {
+				"from": 26320,
+				"to": 26920
+			},
+			"text": " berjumpa"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:26,920",
+				"to": "00:00:27,390"
+			},
+			"offsets": {
+				"from": 26920,
+				"to": 27390
+			},
+			"text": " dengan"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:27,390",
+				"to": "00:00:27,640"
+			},
+			"offsets": {
+				"from": 27390,
+				"to": 27640
+			},
+			"text": " siapa"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:27,640",
+				"to": "00:00:28,400"
+			},
+			"offsets": {
+				"from": 27640,
+				"to": 28400
+			},
+			"text": " juga."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:30,160",
+				"to": "00:00:30,160"
+			},
+			"offsets": {
+				"from": 30160,
+				"to": 30160
+			},
+			"text": " Dan"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:30,160",
+				"to": "00:00:30,160"
+			},
+			"offsets": {
+				"from": 30160,
+				"to": 30160
+			},
+			"text": " adanya"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:30,160",
+				"to": "00:00:30,930"
+			},
+			"offsets": {
+				"from": 30160,
+				"to": 30930
+			},
+			"text": " genjata-senjata"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:30,930",
+				"to": "00:00:31,790"
+			},
+			"offsets": {
+				"from": 30930,
+				"to": 31790
+			},
+			"text": " keamanan"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:31,790",
+				"to": "00:00:32,970"
+			},
+			"offsets": {
+				"from": 31790,
+				"to": 32970
+			},
+			"text": " selama"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:32,970",
+				"to": "00:00:33,070"
+			},
+			"offsets": {
+				"from": 32970,
+				"to": 33070
+			},
+			"text": " 10"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:33,070",
+				"to": "00:00:34,000"
+			},
+			"offsets": {
+				"from": 33070,
+				"to": 34000
+			},
+			"text": " tahun."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:34,760",
+				"to": "00:00:34,860"
+			},
+			"offsets": {
+				"from": 34760,
+				"to": 34860
+			},
+			"text": " Itulah"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:34,860",
+				"to": "00:00:34,860"
+			},
+			"offsets": {
+				"from": 34860,
+				"to": 34860
+			},
+			"text": " yang"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:34,860",
+				"to": "00:00:35,810"
+			},
+			"offsets": {
+				"from": 34860,
+				"to": 35810
+			},
+			"text": " didambarkan"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:35,810",
+				"to": "00:00:36,210"
+			},
+			"offsets": {
+				"from": 35810,
+				"to": 36210
+			},
+			"text": " oleh"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:36,210",
+				"to": "00:00:36,800"
+			},
+			"offsets": {
+				"from": 36210,
+				"to": 36800
+			},
+			"text": " Nabi."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:37,480",
+				"to": "00:00:37,920"
+			},
+			"offsets": {
+				"from": 37480,
+				"to": 37920
+			},
+			"text": " Didambarkan"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:37,920",
+				"to": "00:00:38,330"
+			},
+			"offsets": {
+				"from": 37920,
+				"to": 38330
+			},
+			"text": " oleh"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:38,330",
+				"to": "00:00:39,040"
+			},
+			"offsets": {
+				"from": 38330,
+				"to": 39040
+			},
+			"text": " Islam,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:39,040",
+				"to": "00:00:40,290"
+			},
+			"offsets": {
+				"from": 39040,
+				"to": 40290
+			},
+			"text": " dimahukan"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:40,290",
+				"to": "00:00:40,370"
+			},
+			"offsets": {
+				"from": 40290,
+				"to": 40370
+			},
+			"text": " oleh"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:40,370",
+				"to": "00:00:41,240"
+			},
+			"offsets": {
+				"from": 40370,
+				"to": 41240
+			},
+			"text": " Islam."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:41,720",
+				"to": "00:00:41,820"
+			},
+			"offsets": {
+				"from": 41720,
+				"to": 41820
+			},
+			"text": " Memang"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:41,820",
+				"to": "00:00:42,090"
+			},
+			"offsets": {
+				"from": 41820,
+				"to": 42090
+			},
+			"text": " Islam"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:42,090",
+				"to": "00:00:42,390"
+			},
+			"offsets": {
+				"from": 42090,
+				"to": 42390
+			},
+			"text": " suka"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:42,390",
+				"to": "00:00:42,710"
+			},
+			"offsets": {
+				"from": 42390,
+				"to": 42710
+			},
+			"text": " pada"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:42,710",
+				"to": "00:00:43,760"
+			},
+			"offsets": {
+				"from": 42710,
+				"to": 43760
+			},
+			"text": " perdamaian."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:44,760",
+				"to": "00:00:44,760"
+			},
+			"offsets": {
+				"from": 44760,
+				"to": 44760
+			},
+			"text": " Islam"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:44,760",
+				"to": "00:00:44,760"
+			},
+			"offsets": {
+				"from": 44760,
+				"to": 44760
+			},
+			"text": " tak"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:44,760",
+				"to": "00:00:44,960"
+			},
+			"offsets": {
+				"from": 44760,
+				"to": 44960
+			},
+			"text": " mahu"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:44,960",
+				"to": "00:00:45,560"
+			},
+			"offsets": {
+				"from": 44960,
+				"to": 45560
+			},
+			"text": " kepada"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:45,560",
+				"to": "00:00:46,760"
+			},
+			"offsets": {
+				"from": 45560,
+				"to": 46760
+			},
+			"text": " persenketaan"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:46,760",
+				"to": "00:00:46,990"
+			},
+			"offsets": {
+				"from": 46760,
+				"to": 46990
+			},
+			"text": " yang"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:46,990",
+				"to": "00:00:48,720"
+			},
+			"offsets": {
+				"from": 46990,
+				"to": 48720
+			},
+			"text": " berpanjangan."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:50,160",
+				"to": "00:00:50,160"
+			},
+			"offsets": {
+				"from": 50160,
+				"to": 50160
+			},
+			"text": " Perperangan"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:50,160",
+				"to": "00:00:50,260"
+			},
+			"offsets": {
+				"from": 50160,
+				"to": 50260
+			},
+			"text": " dan"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:50,260",
+				"to": "00:00:51,020"
+			},
+			"offsets": {
+				"from": 50260,
+				"to": 51020
+			},
+			"text": " pergaduhan"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:51,020",
+				"to": "00:00:51,360"
+			},
+			"offsets": {
+				"from": 51020,
+				"to": 51360
+			},
+			"text": " ini"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:51,360",
+				"to": "00:00:52,050"
+			},
+			"offsets": {
+				"from": 51360,
+				"to": 52050
+			},
+			"text": " membawa"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:52,050",
+				"to": "00:00:52,390"
+			},
+			"offsets": {
+				"from": 52050,
+				"to": 52390
+			},
+			"text": " kepada"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:52,390",
+				"to": "00:00:54,080"
+			},
+			"offsets": {
+				"from": 52390,
+				"to": 54080
+			},
+			"text": " kemurderatan."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:56,000",
+				"to": "00:00:56,000"
+			},
+			"offsets": {
+				"from": 56000,
+				"to": 56000
+			},
+			"text": " Yang"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:56,000",
+				"to": "00:00:56,000"
+			},
+			"offsets": {
+				"from": 56000,
+				"to": 56000
+			},
+			"text": " lebih"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:56,000",
+				"to": "00:00:56,000"
+			},
+			"offsets": {
+				"from": 56000,
+				"to": 56000
+			},
+			"text": " utama"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:56,000",
+				"to": "00:00:56,380"
+			},
+			"offsets": {
+				"from": 56000,
+				"to": 56380
+			},
+			"text": " ialah"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:56,380",
+				"to": "00:00:58,000"
+			},
+			"offsets": {
+				"from": 56380,
+				"to": 58000
+			},
+			"text": " perdamaian."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:58,480",
+				"to": "00:00:58,580"
+			},
+			"offsets": {
+				"from": 58480,
+				"to": 58580
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:58,580",
+				"to": "00:00:58,910"
+			},
+			"offsets": {
+				"from": 58580,
+				"to": 58910
+			},
+			"text": " Tetapi"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:58,910",
+				"to": "00:00:59,240"
+			},
+			"offsets": {
+				"from": 58910,
+				"to": 59240
+			},
+			"text": " kalau"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:59,240",
+				"to": "00:00:59,810"
+			},
+			"offsets": {
+				"from": 59240,
+				"to": 59810
+			},
+			"text": " terpaksa"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:59,810",
+				"to": "00:01:00,690"
+			},
+			"offsets": {
+				"from": 59810,
+				"to": 60690
+			},
+			"text": " berperang,"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:00,690",
+				"to": "00:01:01,290"
+			},
+			"offsets": {
+				"from": 60690,
+				"to": 61290
+			},
+			"text": " orang"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:01,290",
+				"to": "00:01:01,900"
+			},
+			"offsets": {
+				"from": 61290,
+				"to": 61900
+			},
+			"text": " serang"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:01,900",
+				"to": "00:01:02,470"
+			},
+			"offsets": {
+				"from": 61900,
+				"to": 62470
+			},
+			"text": " kita,"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:02,470",
+				"to": "00:01:02,700"
+			},
+			"offsets": {
+				"from": 62470,
+				"to": 62700
+			},
+			"text": " kita"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:02,700",
+				"to": "00:01:02,990"
+			},
+			"offsets": {
+				"from": 62700,
+				"to": 62990
+			},
+			"text": " mesti"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:02,990",
+				"to": "00:01:03,480"
+			},
+			"offsets": {
+				"from": 62990,
+				"to": 63480
+			},
+			"text": " lawan."
+		},
+		{
+			"timestamps": {
+				"from": "00:01:03,800",
+				"to": "00:01:03,880"
+			},
+			"offsets": {
+				"from": 63800,
+				"to": 63880
+			},
+			"text": " Kita"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:03,880",
+				"to": "00:01:04,200"
+			},
+			"offsets": {
+				"from": 63880,
+				"to": 64200
+			},
+			"text": " mesti"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:04,200",
+				"to": "00:01:04,840"
+			},
+			"offsets": {
+				"from": 64200,
+				"to": 64840
+			},
+			"text": " serang,"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:04,840",
+				"to": "00:01:05,240"
+			},
+			"offsets": {
+				"from": 64840,
+				"to": 65240
+			},
+			"text": " kita"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:05,240",
+				"to": "00:01:05,690"
+			},
+			"offsets": {
+				"from": 65240,
+				"to": 65690
+			},
+			"text": " mesti"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:05,690",
+				"to": "00:01:06,280"
+			},
+			"offsets": {
+				"from": 65690,
+				"to": 66280
+			},
+			"text": " lawan."
+		},
+		{
+			"timestamps": {
+				"from": "00:01:07,360",
+				"to": "00:01:07,360"
+			},
+			"offsets": {
+				"from": 67360,
+				"to": 67360
+			},
+			"text": " Tapi"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:07,360",
+				"to": "00:01:07,460"
+			},
+			"offsets": {
+				"from": 67360,
+				"to": 67460
+			},
+			"text": " yang"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:07,460",
+				"to": "00:01:07,740"
+			},
+			"offsets": {
+				"from": 67460,
+				"to": 67740
+			},
+			"text": " lebih"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:07,740",
+				"to": "00:01:08,280"
+			},
+			"offsets": {
+				"from": 67740,
+				"to": 68280
+			},
+			"text": " utama"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:08,280",
+				"to": "00:01:08,850"
+			},
+			"offsets": {
+				"from": 68280,
+				"to": 68850
+			},
+			"text": " ialah"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:08,850",
+				"to": "00:01:10,360"
+			},
+			"offsets": {
+				"from": 68850,
+				"to": 70360
+			},
+			"text": " perdamaian."
+		},
+		{
+			"timestamps": {
+				"from": "00:01:11,240",
+				"to": "00:01:11,240"
+			},
+			"offsets": {
+				"from": 71240,
+				"to": 71240
+			},
+			"text": " Bila"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:11,240",
+				"to": "00:01:11,580"
+			},
+			"offsets": {
+				"from": 71240,
+				"to": 71580
+			},
+			"text": " berlakunya"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:11,580",
+				"to": "00:01:12,440"
+			},
+			"offsets": {
+				"from": 71580,
+				"to": 72440
+			},
+			"text": " perjanjian"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:12,440",
+				"to": "00:01:12,860"
+			},
+			"offsets": {
+				"from": 72440,
+				"to": 72860
+			},
+			"text": " damai"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:12,860",
+				"to": "00:01:14,050"
+			},
+			"offsets": {
+				"from": 72860,
+				"to": 74050
+			},
+			"text": " Budaibiyah,"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:14,050",
+				"to": "00:01:14,410"
+			},
+			"offsets": {
+				"from": 74050,
+				"to": 74410
+			},
+			"text": " ramai"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:14,410",
+				"to": "00:01:14,820"
+			},
+			"offsets": {
+				"from": 74410,
+				"to": 74820
+			},
+			"text": " orang"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:14,820",
+				"to": "00:01:15,210"
+			},
+			"offsets": {
+				"from": 74820,
+				"to": 75210
+			},
+			"text": " masuk"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:15,210",
+				"to": "00:01:15,720"
+			},
+			"offsets": {
+				"from": 75210,
+				"to": 75720
+			},
+			"text": " Islam."
+		},
+		{
+			"timestamps": {
+				"from": "00:01:16,400",
+				"to": "00:01:16,500"
+			},
+			"offsets": {
+				"from": 76400,
+				"to": 76500
+			},
+			"text": " Sebab"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:16,500",
+				"to": "00:01:16,650"
+			},
+			"offsets": {
+				"from": 76500,
+				"to": 76650
+			},
+			"text": " memang"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:16,650",
+				"to": "00:01:17,020"
+			},
+			"offsets": {
+				"from": 76650,
+				"to": 77020
+			},
+			"text": " semua"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:17,020",
+				"to": "00:01:17,430"
+			},
+			"offsets": {
+				"from": 77020,
+				"to": 77430
+			},
+			"text": " orang"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:17,430",
+				"to": "00:01:17,750"
+			},
+			"offsets": {
+				"from": 77430,
+				"to": 77750
+			},
+			"text": " suka"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:17,750",
+				"to": "00:01:18,150"
+			},
+			"offsets": {
+				"from": 77750,
+				"to": 78150
+			},
+			"text": " jalan"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:18,150",
+				"to": "00:01:18,840"
+			},
+			"offsets": {
+				"from": 78150,
+				"to": 78840
+			},
+			"text": " damai."
+		},
+		{
+			"timestamps": {
+				"from": "00:01:19,520",
+				"to": "00:01:19,520"
+			},
+			"offsets": {
+				"from": 79520,
+				"to": 79520
+			},
+			"text": " Orang"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:19,520",
+				"to": "00:01:19,620"
+			},
+			"offsets": {
+				"from": 79520,
+				"to": 79620
+			},
+			"text": " tak"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:19,620",
+				"to": "00:01:19,750"
+			},
+			"offsets": {
+				"from": 79620,
+				"to": 79750
+			},
+			"text": " suka"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:19,750",
+				"to": "00:01:20,320"
+			},
+			"offsets": {
+				"from": 79750,
+				"to": 80320
+			},
+			"text": " berpecah"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:20,320",
+				"to": "00:01:20,850"
+			},
+			"offsets": {
+				"from": 80320,
+				"to": 80850
+			},
+			"text": " belak,"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:20,850",
+				"to": "00:01:21,060"
+			},
+			"offsets": {
+				"from": 80850,
+				"to": 81060
+			},
+			"text": " tak"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:21,060",
+				"to": "00:01:21,420"
+			},
+			"offsets": {
+				"from": 81060,
+				"to": 81420
+			},
+			"text": " suka"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:21,420",
+				"to": "00:01:22,240"
+			},
+			"offsets": {
+				"from": 81420,
+				"to": 82240
+			},
+			"text": " bergaduh."
+		},
+		{
+			"timestamps": {
+				"from": "00:01:22,960",
+				"to": "00:01:23,060"
+			},
+			"offsets": {
+				"from": 82960,
+				"to": 83060
+			},
+			"text": " Suka"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:23,060",
+				"to": "00:01:23,120"
+			},
+			"offsets": {
+				"from": 83060,
+				"to": 83120
+			},
+			"text": " pada"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:23,120",
+				"to": "00:01:24,480"
+			},
+			"offsets": {
+				"from": 83120,
+				"to": 84480
+			},
+			"text": " perdamaian,"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:24,480",
+				"to": "00:01:25,160"
+			},
+			"offsets": {
+				"from": 84480,
+				"to": 85160
+			},
+			"text": " pada"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:25,160",
+				"to": "00:01:26,180"
+			},
+			"offsets": {
+				"from": 85160,
+				"to": 86180
+			},
+			"text": " muajah"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:26,180",
+				"to": "00:01:27,030"
+			},
+			"offsets": {
+				"from": 86180,
+				"to": 87030
+			},
+			"text": " hasil"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:27,030",
+				"to": "00:01:27,920"
+			},
+			"offsets": {
+				"from": 87030,
+				"to": 87920
+			},
+			"text": " miyah."
+		},
+		{
+			"timestamps": {
+				"from": "00:01:29,480",
+				"to": "00:01:29,480"
+			},
+			"offsets": {
+				"from": 89480,
+				"to": 89480
+			},
+			"text": " Ya,"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:29,480",
+				"to": "00:01:29,580"
+			},
+			"offsets": {
+				"from": 89480,
+				"to": 89580
+			},
+			"text": " itu"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:29,580",
+				"to": "00:01:29,950"
+			},
+			"offsets": {
+				"from": 89580,
+				"to": 89950
+			},
+			"text": " memang"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:29,950",
+				"to": "00:01:30,930"
+			},
+			"offsets": {
+				"from": 89950,
+				"to": 90930
+			},
+			"text": " fitrah"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:30,930",
+				"to": "00:01:32,480"
+			},
+			"offsets": {
+				"from": 90930,
+				"to": 92480
+			},
+			"text": " manusia."
+		},
+		{
+			"timestamps": {
+				"from": "00:01:33,480",
+				"to": "00:01:33,480"
+			},
+			"offsets": {
+				"from": 93480,
+				"to": 93480
+			},
+			"text": " Suka"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:33,480",
+				"to": "00:01:33,580"
+			},
+			"offsets": {
+				"from": 93480,
+				"to": 93580
+			},
+			"text": " pada"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:33,580",
+				"to": "00:01:34,500"
+			},
+			"offsets": {
+				"from": 93580,
+				"to": 94500
+			},
+			"text": " perdamaian,"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:34,500",
+				"to": "00:01:34,930"
+			},
+			"offsets": {
+				"from": 94500,
+				"to": 94930
+			},
+			"text": " suka"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:34,930",
+				"to": "00:01:35,380"
+			},
+			"offsets": {
+				"from": 94930,
+				"to": 95380
+			},
+			"text": " pada"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:35,380",
+				"to": "00:01:36,430"
+			},
+			"offsets": {
+				"from": 95380,
+				"to": 96430
+			},
+			"text": " penyatuan,"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:36,430",
+				"to": "00:01:36,900"
+			},
+			"offsets": {
+				"from": 96430,
+				"to": 96900
+			},
+			"text": " suka"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:36,900",
+				"to": "00:01:37,250"
+			},
+			"offsets": {
+				"from": 96900,
+				"to": 97250
+			},
+			"text": " pada"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:37,250",
+				"to": "00:01:38,480"
+			},
+			"offsets": {
+				"from": 97250,
+				"to": 98480
+			},
+			"text": " keamanan."
+		},
+		{
+			"timestamps": {
+				"from": "00:01:40,480",
+				"to": "00:01:40,480"
+			},
+			"offsets": {
+				"from": 100480,
+				"to": 100480
+			},
+			"text": " Ada"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:40,480",
+				"to": "00:01:40,480"
+			},
+			"offsets": {
+				"from": 100480,
+				"to": 100480
+			},
+			"text": " pun"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:40,480",
+				"to": "00:01:40,480"
+			},
+			"offsets": {
+				"from": 100480,
+				"to": 100480
+			},
+			"text": " persiwa"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:40,480",
+				"to": "00:01:41,120"
+			},
+			"offsets": {
+				"from": 100480,
+				"to": 101120
+			},
+			"text": " pembukaan"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:41,120",
+				"to": "00:01:42,080"
+			},
+			"offsets": {
+				"from": 101120,
+				"to": 102080
+			},
+			"text": " kotemeka"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:42,080",
+				"to": "00:01:42,550"
+			},
+			"offsets": {
+				"from": 102080,
+				"to": 102550
+			},
+			"text": " pada"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:42,550",
+				"to": "00:01:43,480"
+			},
+			"offsets": {
+				"from": 102550,
+				"to": 103480
+			},
+			"text": " kita."
+		}
+	]
+}

@@ -1,0 +1,79 @@
+{
+ "id": "28",
+ "slug": "ISLAM_AGAMA_PERANG_ATAU_PERDAMAIAN",
+ "category": "SIRAH & FIKRAH",
+ "title_lines": [
+  [
+   {
+    "t": "ISLAM AGAMA"
+   }
+  ],
+  [
+   {
+    "t": "PERANG ATAU"
+   }
+  ],
+  [
+   {
+    "t": "PERDAMAIAN?",
+    "gold": true
+   }
+  ]
+ ],
+ "header_html": "ISLAM AGAMA PERANG ATAU <span class=\"g\" style=\"white-space:nowrap\">PERDAMAIAN?</span>",
+ "cover_kicker": "KULIAH DHUHA • SIRAH & FIQH",
+ "cover_sub": "Pondok Pengajian Darul Mubarak",
+ "speaker": "YB Ustaz Muhammad Ismi Mat Taib",
+ "speaker_role": "Pondok Pengajian Darul Mubarak • Kuliah Dhuha",
+ "series": "KULIAH DHUHA DARUL MUBARAK",
+ "face": [
+  550,
+  560
+ ],
+ "src_crop": [
+  145,
+  0,
+  810,
+  1440
+ ],
+ "music_volume": 0.1,
+ "whisper": "clips/whisper/w28.json",
+ "window": 1328,
+ "start": 1333.3,
+ "end": 1426.7,
+ "arabic": [],
+ "points": [
+  {
+   "label": "PERJANJIAN HUDAIBIYAH",
+   "text": "Nampak berat sebelah — tetapi membawa gencatan senjata 10 tahun",
+   "at": 6.0,
+   "dur": 13.0
+  },
+  {
+   "label": "PRINSIP ISLAM",
+   "text": "Perdamaian lebih utama — jika diserang, barulah wajib mempertahankan diri",
+   "at": 37.0,
+   "dur": 14.0
+  },
+  {
+   "label": "FITRAH MANUSIA",
+   "text": "Suka damai, penyatuan & keamanan — ramai yang memeluk Islam",
+   "at": 66.0,
+   "dur": 14.0
+  }
+ ],
+ "keywords": [
+  "perdamaian",
+  "damai",
+  "Islam",
+  "Hudaibiyah",
+  "keamanan",
+  "fitrah",
+  "lawan",
+  "utama"
+ ],
+ "text": "Di mana isi perjanjian Hudaibiyah? Apa dia? Nampak macam berat sebelah, iaitu Nabi kena balik ke Madinah. Tak boleh menunaikan umrah tapi boleh datang tahun berikutnya. Yang kita bincangkan umratul qadha, umrah ganti, qadha. Boleh datang tahun berikutnya berjumpa dengan siapa juga. Dan adanya gencatan senjata, keamanan selama 10 tahun. Itulah yang didambakan oleh Nabi. Didambakan oleh Islam, dimahukan oleh Islam. Memang Islam suka pada perdamaian. Islam tak mahu kepada persengketaan yang berpanjangan. Peperangan dan pergaduhan ini membawa kepada kemudaratan. Yang lebih utama ialah perdamaian. Tetapi kalau terpaksa berperang, orang serang kita, kita mesti lawan. Kita mesti lawan. Tapi yang lebih utama ialah perdamaian. Bila berlakunya perjanjian damai Hudaibiyah, ramai orang masuk Islam. Sebab memang semua orang suka jalan damai. Orang tak suka berpecah belah, tak suka bergaduh. Suka pada perdamaian. Ya, itu memang fitrah manusia. Suka pada perdamaian, suka pada penyatuan, suka pada keamanan.",
+ "lecture": "ismi_kuliah_dhuha",
+ "style": "V2",
+ "episode": 3
+}
