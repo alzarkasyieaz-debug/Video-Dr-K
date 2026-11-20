@@ -1,0 +1,389 @@
+{
+ "_lecture": {
+  "glob": "clips/KULIAH_2_*.json",
+  "out": "LAPORAN_KERATAN_HADIS_NILAI.md",
+  "header": [
+   "# Laporan Keratan Kuliah — Ensiklopedia Hadis Nilai (Kuliah Maghrib Jumaat)\n",
+   "**Sumber:** rakaman \"Kuliah Terbaru.mp4\" (53:22, 432×768 menegak) dari folder Google Drive pengguna.  ",
+   "**Kitab:** *Mawsu'ah Ahadith al-Qiyam* (Ensiklopedia Hadis Nilai), 4 jilid, 3,788 hadis, karya Syeikh Dr. Hammam Sa'id (Jordan); terjemahan sedang diusahakan oleh YADIM dengan Dewan Bahasa dan Pustaka. Kuliah ini ceramah khas promosi kitab — bukan siri Bahrul Mazi.  ",
+   "**Kaedah:** transkripsi penuh (Whisper *small*) → transkripsi perkataan setiap keratan (Whisper *medium*) → semakan teks manual → pengesanan wajah automatik untuk framing → HyperFrames (gaya Kuliah Cinematic).\n"
+  ],
+  "topics": [
+   [
+    "00:00–01:13",
+    "Pembukaan, tahmid, selawat, doa",
+    "—"
+   ],
+   [
+    "01:13–04:00",
+    "Pengenalan: siri Bahrul Mazi ditangguh; ceramah khas YADIM tentang Ensiklopedia Hadis Nilai",
+    "Pengenalan"
+   ],
+   [
+    "04:00–07:45",
+    "Struktur kitab: 4 jilid, 8 topik — iman & masyarakat, akhlak, politik & ekonomi, sains, kesihatan, alam sekitar, estetika",
+    "Pengenalan kitab"
+   ],
+   [
+    "07:45–09:57",
+    "Apa itu nilai: kayu ukur & kadar; contoh telefon pintar",
+    "Nilai"
+   ],
+   [
+    "09:57–11:26",
+    "Nilai iman ketika musibah; Surah at-Taubah: 51",
+    "Akidah"
+   ],
+   [
+    "11:26–16:28",
+    "Kisah anak mengadu tentang ayah; 'Engkau dan hartamu milik ayahmu'; jasa ibu bapa",
+    "Keluarga"
+   ],
+   [
+    "16:28–20:00",
+    "Ketaatan isteri kepada suami; hadis sujud; kisah wanita yang ayahnya meninggal",
+    "Keluarga"
+   ],
+   [
+    "20:00–25:00",
+    "Nilai ekonomi: Nabi ﷺ mandi dengan satu sa' & wuduk dengan satu mud; jimat air (pengalaman di Jordan)",
+    "Ekonomi"
+   ],
+   [
+    "25:00–29:09",
+    "(Transkrip kabur — bahagian demonstrasi botol air)",
+    "—"
+   ],
+   [
+    "29:09–31:39",
+    "Ilmu ekonomi: sumber terhad, kehendak tidak terhad; dharuriyyat, hajiyyat, tahsiniyyat",
+    "Ekonomi"
+   ],
+   [
+    "32:08–33:53",
+    "Nilai perniagaan: jual beli, orang tengah (hulu & Seberang Takir)",
+    "Perniagaan"
+   ],
+   [
+    "33:53–38:53",
+    "Hijrah; Abdurrahman bin Auf & Sa'd bin ar-Rabi'; tunjukkan aku pasar; berdikari",
+    "Sirah"
+   ],
+   [
+    "38:53–41:33",
+    "Kekayaan Abdurrahman bin Auf ketika wafat; pengiraan nilai dinar",
+    "Sirah"
+   ],
+   [
+    "41:33–43:46",
+    "Galakkan anak berniaga; gaji ada had, perniagaan tiada had",
+    "Perniagaan"
+   ],
+   [
+    "43:46–47:37",
+    "Nilai alam sekitar: hadis tanah — tanam, pinjamkan atau jaga",
+    "Alam sekitar"
+   ],
+   [
+    "47:37–51:43",
+    "Hadis fasilah ketika kiamat; Surah 'Abasa: 34–36; menanam sebagai sedekah",
+    "Alam sekitar"
+   ],
+   [
+    "51:43–53:02",
+    "Penutup: bumi hijau; rancangan edaran terjemahan bersama JAKIM; doa",
+    "Penutup"
+   ]
+  ],
+  "not_rendered": [
+   [
+    "04:00–07:45",
+    "Struktur Ensiklopedia Hadis Nilai (4 jilid, 8 topik)",
+    "Kandungan promosi/pengenalan — boleh dijadikan video pengenalan siri jika dikehendaki (skor anggaran 78)"
+   ],
+   [
+    "16:28–20:00",
+    "Ketaatan isteri kepada suami; kisah wanita yang tidak menziarahi ayahnya tanpa izin suami",
+    "Kisah itu daripada riwayat yang status sanadnya dipertikai ulama — perlu semakan ustaz sebelum dijadikan klip berdiri sendiri"
+   ],
+   [
+    "23:53–25:00",
+    "Jimat air: pengalaman beli air di Jordan",
+    "Sambungan VIDEO 2_04; transkrip selepas 25:00 kabur"
+   ],
+   [
+    "38:35–41:33",
+    "Modal 'sebiji nawat emas' & kekayaan Abdurrahman bin Auf ketika wafat",
+    "Dalam riwayat al-Bukhari, 'wazna nawatin min dhahab' ialah mahar perkahwinan, bukan modal berniaga; angka pengiraan dinar juga tidak jelas dalam audio — dikecualikan demi ketepatan"
+   ],
+   [
+    "43:01–43:46",
+    "Perbandingan sikap orang Melayu dan Cina terhadap perniagaan",
+    "Sensitif dan di luar isi hadis — VIDEO 2_09 ditamatkan sebelum bahagian ini"
+   ]
+  ],
+  "notes": [
+   "- **Subtitle** dibina daripada transkrip Whisper *medium* dan disemak berdasarkan konteks; loghat Terengganu dinormalkan hanya jika maksudnya jelas (contoh *berah* → beras). Perkataan yang tidak dapat dikenal pasti **ditinggalkan, bukan direka**. Sila semak semua SRT dengan audio.",
+   "- **Teks Arab** pada kad ialah lafaz hadis/ayat yang dikenal pasti daripada kutipan penceramah. Rujukan untuk disemak: at-Taubah 9:51; 'Abasa 80:34–36; *anta wa maluka li abik* — Ibnu Majah 2291 & Abu Dawud 3530; mandi dengan sa' — al-Bukhari 201 & Muslim 325; *barakallahu laka fi ahlika wa malik* & *fama raja'a hatta istafdala aqitan wa samnan* — al-Bukhari 2049; hadis tanah — al-Bukhari 2340 & Muslim 1536; hadis fasilah — Ahmad 12902 (juga al-Adab al-Mufrad 479); menanam sebagai sedekah — al-Bukhari 2320 & Muslim 1553. Semua nombor ini **[semak]**.",
+   "- **VIDEO 2_02:** perkataan 'kenapalah aku *turun* masa ni' didengar sebagai 'tua' oleh mesin — sila sahkan.",
+   "- **VIDEO 2_03:** penceramah memberi tafsiran 'kalau ayah minta, itu hak dia'. Ulama menjelaskan hadis ini dengan syarat (ayah mengambil sekadar keperluan tanpa memudaratkan anak) — pertimbangkan nota dalam kapsyen.",
+   "- **VIDEO 2_10:** bahagian 'kera… tali elektrik, tali Unifi' ditafsir daripada audio yang kurang jelas — sila sahkan.",
+   "- **VIDEO 2_12:** frasa 'Tanam mangga, tak rasa nak makan. Orang curi' kurang jelas dalam audio.",
+   "- **Nama penceramah** tidak disebut dalam rakaman; lower-third memaparkan 'Kuliah Maghrib Jumaat — Ensiklopedia Hadis Nilai • YADIM & DBP'. Beri nama penceramah untuk ditukar dan dirender semula.",
+   "- **Framing:** penceramah banyak bergerak dalam kuliah ini, jadi kedudukan wajah dikesan secara automatik bagi setiap klip (`tools/face_track.py`) dan zoom close-up dihadkan ×1.36.",
+   "- Tiada visual nabi, malaikat atau peristiwa ghaib dijana. Hanya rakaman asal, tipografi dan corak geometri.\n"
+  ]
+ },
+ "2_01": {
+  "score": [
+   20,
+   22,
+   18,
+   13,
+   9,
+   4
+  ],
+  "topic": "Maksud nilai: kayu ukur & kadar",
+  "titles": [
+   "APA ITU NILAI? SEMUANYA ADA KAYU UKUR",
+   "FUNGSI SAMA, HARGA BERBEZA — KENAPA?",
+   "MEMAHAMI NILAI DENGAN CONTOH TELEFON",
+   "SETIAP BENDA ADA KADARNYA",
+   "ASAS MEMAHAMI ENSIKLOPEDIA HADIS NILAI"
+  ],
+  "lesson": "Nilai ialah kayu ukur yang mempunyai kadar; benda yang fungsinya sama boleh berbeza nilainya — begitu juga kehidupan manusia.",
+  "caption": "Telefon RM500 dan RM10,000 — fungsinya sama, kenapa nilainya berbeza? Kerana setiap benda ada kayu ukur dan kadarnya. Begitulah juga nilai dalam kehidupan. 📏\n\n#KuliahHadisNilai #EnsiklopediaHadisNilai #NilaiIslam #KuliahMaghrib",
+  "refs": "Pengenalan konsep oleh penceramah (tiada teks hadis dipaparkan)."
+ },
+ "2_02": {
+  "score": [
+   23,
+   22,
+   18,
+   15,
+   9,
+   4
+  ],
+  "topic": "Nilai iman ketika ditimpa musibah",
+  "titles": [
+   "DITIMPA MUSIBAH? DI SINILAH NILAI IMAN",
+   "KENAPA ORANG BERIMAN LEBIH TENANG?",
+   "BILA EKSIDEN BERLAKU, APA KATA HATI KITA?",
+   "SEMUANYA TELAH ALLAH TETAPKAN",
+   "IMAN MEMBEZAKAN MANUSIA"
+  ],
+  "lesson": "Iman membezakan manusia; orang beriman menerima musibah dengan yakin bahawa tiada yang menimpa melainkan apa yang Allah tetapkan.",
+  "caption": "Bila ditimpa musibah, ada yang meraung dan menyesal. Orang beriman berpegang: tiada yang menimpa kita melainkan apa yang Allah tetapkan (at-Taubah: 51). 🤲\n\n#KuliahHadisNilai #EnsiklopediaHadisNilai #NilaiIslam #KuliahMaghrib",
+  "refs": "Surah at-Taubah 9:51."
+ },
+ "2_03": {
+  "score": [
+   23,
+   21,
+   18,
+   15,
+   9,
+   4
+  ],
+  "topic": "Hak ayah: engkau dan hartamu milik ayahmu",
+  "titles": [
+   "ENGKAU & HARTAMU MILIK AYAHMU",
+   "JASA AYAH TAK TERBALAS WALAU 40 TAHUN",
+   "KENAPA ANAK TAK BOLEH BERKIRA DENGAN AYAH?",
+   "HADIS YANG MENGINGATKAN KITA PADA MAK AYAH",
+   "KEJAYAAN KITA HARI INI, JASA SIAPA?"
+  ],
+  "lesson": "Islam meletakkan nilai yang tinggi pada hubungan anak dengan ayah; jasa ibu bapa tidak akan terbalas, dan kejayaan anak hari ini lahir daripada pengorbanan mereka.",
+  "caption": "Seorang anak mengadu ayahnya selalu meminta hartanya. Jawapan Nabi ﷺ: 'Engkau dan hartamu milik ayahmu.' Jasa 20 tahun mereka tak terbalas walau 40 tahun. 🤍\n\n#KuliahHadisNilai #EnsiklopediaHadisNilai #NilaiIslam #KuliahMaghrib",
+  "refs": "HR Ibnu Majah no. 2291 & Abu Dawud no. 3530 [semak]."
+ },
+ "2_04": {
+  "score": [
+   22,
+   21,
+   18,
+   13,
+   9,
+   5
+  ],
+  "topic": "Nabi ﷺ mandi dengan satu gantang air",
+  "titles": [
+   "NABI ﷺ MANDI DENGAN SATU GANTANG AIR",
+   "BERAPA BANYAK AIR NABI GUNA UNTUK MANDI?",
+   "SA' DAN MUD: SUKATAN ZAMAN NABI",
+   "BUKAN SETIMBA, CUMA SATU GANTANG!",
+   "NILAI EKONOMI DALAM MANDI & WUDUK"
+  ],
+  "lesson": "Nabi ﷺ mandi dengan satu sa' (gantang) hingga lima mud dan berwuduk dengan satu mud (cupak) — teladan berjimat dalam penggunaan air.",
+  "caption": "Rasulullah ﷺ mandi hanya dengan satu sa' — lebih kurang satu gantang — dan berwuduk dengan satu mud. Bukan setimba! Nilai ekonomi dalam ibadah harian. 💧\n\n#KuliahHadisNilai #EnsiklopediaHadisNilai #NilaiIslam #KuliahMaghrib",
+  "refs": "HR al-Bukhari no. 201 & Muslim no. 325 [semak]."
+ },
+ "2_05": {
+  "score": [
+   23,
+   23,
+   19,
+   15,
+   9,
+   5
+  ],
+  "topic": "Tiga tahap keperluan: dharuriyyat, hajiyyat, tahsiniyyat",
+  "titles": [
+   "3 TAHAP KEPERLUAN DALAM ISLAM",
+   "KERETA DULU ATAU RUMAH DULU?",
+   "GAJI TERHAD, KEHENDAK TAK TERHAD — MACAM MANA?",
+   "DHARURIYYAT, HAJIYYAT, TAHSINIYYAT",
+   "ILMU EKONOMI ALA ISLAM"
+  ],
+  "lesson": "Ekonomi ialah memenuhi kehendak yang tidak terhad dengan sumber yang terhad; susun keperluan mengikut keutamaan — dharuriyyat, hajiyyat, kemudian tahsiniyyat — secara sederhana dan seimbang.",
+  "caption": "Gaji terhad, kehendak tak pernah habis. Islam ajar susun keutamaan: dharuriyyat (wajib ada), hajiyyat (perlu), tahsiniyyat (hiasan). Jangan ada kereta tapi tiada rumah! 🏠\n\n#KuliahHadisNilai #EnsiklopediaHadisNilai #NilaiIslam #KuliahMaghrib",
+  "refs": "Huraian maqasid oleh penceramah (tiada teks hadis dipaparkan)."
+ },
+ "2_06": {
+  "score": [
+   21,
+   22,
+   18,
+   13,
+   9,
+   4
+  ],
+  "topic": "Nilai perniagaan dan peranan orang tengah",
+  "titles": [
+   "TANPA PENIAGA, BERAS TAK SAMPAI!",
+   "PERNIAGAAN: ANAK KUNCI KEPERLUAN MANUSIA",
+   "DARI HULU KE SEBERANG TAKIR",
+   "JUAL BELI ASAS PERNIAGAAN",
+   "KENAPA ISLAM MEMULIAKAN PENIAGA?"
+  ],
+  "lesson": "Islam meletakkan perniagaan sebagai anak kunci untuk manusia memperoleh keperluan; jual beli dan orang tengah menghubungkan pengeluar dengan pengguna.",
+  "caption": "Orang laut ada ikan, orang hulu ada beras. Siapa yang menghubungkan? Peniaga! Islam meletakkan perniagaan sebagai anak kunci keperluan manusia. 🛶\n\n#KuliahHadisNilai #EnsiklopediaHadisNilai #NilaiIslam #KuliahMaghrib",
+  "refs": "Huraian penceramah tentang bab nilai perniagaan dalam kitab."
+ },
+ "2_07": {
+  "score": [
+   22,
+   22,
+   18,
+   13,
+   9,
+   4
+  ],
+  "topic": "Abdurrahman bin Auf & Sa'd bin ar-Rabi'",
+  "titles": [
+   "\"TUNJUKKAN AKU PASAR!\" — ABDURRAHMAN BIN AUF",
+   "DITAWAR HARTA & ISTERI, DIA PILIH PASAR",
+   "PERSAUDARAAN MUHAJIRIN & ANSAR",
+   "KEMULIAAN JIWA SEORANG SAHABAT",
+   "BUKAN SEDEKAH YANG DIMINTA, TAPI PELUANG"
+  ],
+  "lesson": "Sa'd bin ar-Rabi' menawarkan separuh hartanya; Abdurrahman bin Auf mendoakan keberkatan dan hanya meminta ditunjukkan pasar — memilih usaha berbanding pemberian.",
+  "caption": "Sa'd bin ar-Rabi' menawarkan separuh hartanya. Jawapan Abdurrahman bin Auf: 'Semoga Allah memberkati keluarga dan hartamu… tunjukkan aku di mana pasar.' 🐪\n\n#KuliahHadisNilai #EnsiklopediaHadisNilai #NilaiIslam #KuliahMaghrib",
+  "refs": "HR al-Bukhari no. 2049 [semak]."
+ },
+ "2_08": {
+  "score": [
+   22,
+   22,
+   18,
+   14,
+   8,
+   4
+  ],
+  "topic": "Berdikari, bukan bergantung",
+  "titles": [
+   "BERDIKARI, BUKAN BERGANTUNG",
+   "UNTUNG PERTAMA ABDURRAHMAN BIN AUF",
+   "MINTA BANTUAN TAK SAMA DENGAN BERGANTUNG",
+   "SIFAT SAHABAT YANG PATUT KITA CONTOHI",
+   "DARI PASAR MADINAH, TERUS BERNIAGA"
+  ],
+  "lesson": "Abdurrahman bin Auf terus berniaga dan mendapat untung pertama; meminta bantuan seperti ditunjukkan pasar bukan pergantungan — Muslim mesti berdikari.",
+  "caption": "Hari pertama di pasar Madinah, Abdurrahman bin Auf pulang dengan keju dan minyak sapi hasil untungnya. Minta bantuan tak salah — bergantung sepenuhnya itu yang salah. 💪\n\n#KuliahHadisNilai #EnsiklopediaHadisNilai #NilaiIslam #KuliahMaghrib",
+  "refs": "HR al-Bukhari no. 2049 [semak]."
+ },
+ "2_09": {
+  "score": [
+   20,
+   21,
+   18,
+   15,
+   9,
+   4
+  ],
+  "topic": "Galakkan anak berniaga",
+  "titles": [
+   "AJAR ANAK BERNIAGA, BUKAN SEKADAR MAKAN GAJI",
+   "GAJI ADA HAD, PERNIAGAAN TIADA HAD",
+   "NASIHAT UNTUK IBU BAPA HARI INI",
+   "KENAPA ISLAM MENGGALAKKAN PERNIAGAAN?",
+   "REZEKI IKUT USAHA"
+  ],
+  "lesson": "Perniagaan menjadi sebab manusia kaya; ibu bapa patut menggalakkan anak terlibat dalam perniagaan, kerana gaji ada had sedangkan rezeki perniagaan mengikut usaha.",
+  "caption": "Kita selalu pesan anak: belajar rajin-rajin, dapat kerja elok, dapat pencen. Tapi gaji ada had. Islam menggalakkan perniagaan — rezeki ikut usaha masing-masing. 📈\n\n#KuliahHadisNilai #EnsiklopediaHadisNilai #NilaiIslam #KuliahMaghrib",
+  "refs": "Huraian penceramah (tiada teks hadis dipaparkan)."
+ },
+ "2_10": {
+  "score": [
+   21,
+   20,
+   18,
+   12,
+   9,
+   4
+  ],
+  "topic": "Tanah jangan dibiar terbiar",
+  "titles": [
+   "ADA TANAH? TANAMLAH! JANGAN BIAR JADI HUTAN",
+   "TANAH TERBIAR MENGGANGGU JIRAN",
+   "HADIS TENTANG TANAH YANG RAMAI TAK TAHU",
+   "ISLAM DAN PENJAGAAN ALAM SEKITAR",
+   "TANAM, PINJAMKAN ATAU JAGA"
+  ],
+  "lesson": "Nabi ﷺ menyuruh pemilik tanah menanaminya atau memberikannya kepada saudaranya untuk diusahakan; tanah yang terbiar menjadi hutan dan mengganggu jiran.",
+  "caption": "Tanah pusaka terbiar jadi hutan, kera datang, jiran terganggu. Nabi ﷺ ajar: ada tanah, tanamlah — atau beri saudaramu usahakan. 🌱\n\n#KuliahHadisNilai #EnsiklopediaHadisNilai #NilaiIslam #KuliahMaghrib",
+  "refs": "HR al-Bukhari no. 2340 & Muslim no. 1536 [semak]."
+ },
+ "2_11": {
+  "score": [
+   23,
+   22,
+   18,
+   13,
+   9,
+   5
+  ],
+  "topic": "Hadis fasilah: tanam walaupun kiamat",
+  "titles": [
+   "KIAMAT PUN, TETAP TANAM!",
+   "HADIS ANAK POKOK KETIKA KIAMAT",
+   "KALAU KIAMAT PUN DISURUH TANAM…",
+   "PADA HARI MANUSIA LARI DARIPADA ANAKNYA",
+   "KESUNGGUHAN MEMBUAT KEBAIKAN"
+  ],
+  "lesson": "Hadis fasilah ialah penegasan (mubalaghah): kalau ketika kiamat pun disuruh menanam, apatah lagi pada hari biasa — teruskan berbuat kebaikan.",
+  "caption": "Jika kiamat berlaku dan di tanganmu ada anak pokok — tanamlah! Kalau ketika kiamat pun Nabi ﷺ suruh tanam, apatah lagi hari ini. 🌳\n\n#KuliahHadisNilai #EnsiklopediaHadisNilai #NilaiIslam #KuliahMaghrib",
+  "refs": "HR Ahmad no. 12902; al-Bukhari, al-Adab al-Mufrad no. 479 [semak]; Surah 'Abasa 80:34–36."
+ },
+ "2_12": {
+  "score": [
+   23,
+   22,
+   18,
+   14,
+   8,
+   4
+  ],
+  "topic": "Menanam pokok sebagai sedekah berterusan",
+  "titles": [
+   "TANAM POKOK, DAPAT SEDEKAH BERTERUSAN",
+   "BURUNG MAKAN BUAH POKOK KITA? ITU SEDEKAH!",
+   "SETIAP YANG DITANAM PASTI BERMANFAAT",
+   "KENA CURI PUN DAPAT PAHALA",
+   "AMAL KECIL, MANFAAT BESAR"
+  ],
+  "lesson": "Setiap tanaman pasti memberi manfaat: menghijaukan bumi, membekalkan oksigen, dan apa yang dimakan burung, binatang atau manusia daripadanya menjadi sedekah bagi penanamnya.",
+  "caption": "Pokok yang kita tanam — buahnya dimakan burung, binatang atau manusia, malah dicuri sekalipun — semuanya sedekah bagi kita. Tanamlah, walau kita sendiri tak sempat merasa. 🍃\n\n#KuliahHadisNilai #EnsiklopediaHadisNilai #NilaiIslam #KuliahMaghrib",
+  "refs": "HR al-Bukhari no. 2320 & Muslim no. 1553; 'wa ma suriqa minhu lahu sadaqah' — Muslim no. 1552 [semak]."
+ }
+}
