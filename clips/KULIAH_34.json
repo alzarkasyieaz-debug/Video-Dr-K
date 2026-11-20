@@ -1,0 +1,79 @@
+{
+ "id": "34",
+ "slug": "ZIARAH_ORANG_SAKIT_JANGAN_TAKUT_TAKUTKAN",
+ "category": "ADAB & AKHLAK",
+ "title_lines": [
+  [
+   {
+    "t": "ZIARAH ORANG SAKIT?"
+   }
+  ],
+  [
+   {
+    "t": "JANGAN"
+   }
+  ],
+  [
+   {
+    "t": "TAKUT-TAKUTKAN",
+    "gold": true
+   }
+  ]
+ ],
+ "header_html": "ZIARAH ORANG SAKIT? JANGAN <span class=\"g\" style=\"white-space:nowrap\">TAKUT-TAKUTKAN</span>",
+ "cover_kicker": "KULIAH DHUHA • SIRAH & FIQH",
+ "cover_sub": "Pondok Pengajian Darul Mubarak",
+ "speaker": "YB Ustaz Muhammad Ismi Mat Taib",
+ "speaker_role": "Pondok Pengajian Darul Mubarak • Kuliah Dhuha",
+ "series": "KULIAH DHUHA DARUL MUBARAK",
+ "face": [
+  550,
+  560
+ ],
+ "src_crop": [
+  145,
+  0,
+  810,
+  1440
+ ],
+ "music_volume": 0.1,
+ "whisper": "clips/whisper/w34.json",
+ "window": 2840,
+ "start": 2845.0,
+ "end": 2913.1,
+ "arabic": [],
+ "points": [
+  {
+   "label": "ADAB ZIARAH",
+   "text": "Datang untuk menggembira & menenangkan — jangan takut-takutkan pesakit",
+   "at": 6.0,
+   "dur": 12.0
+  },
+  {
+   "label": "CERITA YANG BETUL",
+   "text": "Kongsikan kisah yang sembuh, bukan yang tidak pulih",
+   "at": 31.0,
+   "dur": 12.0
+  },
+  {
+   "label": "PENGAJARAN",
+   "text": "Ajak pesakit berfikiran positif & bergantung kepada Allah",
+   "at": 44.0,
+   "dur": 13.0
+  }
+ ],
+ "keywords": [
+  "tenangkan",
+  "pulih",
+  "positif",
+  "Allah",
+  "sakit",
+  "sihat",
+  "doa",
+  "gembirakan"
+ ],
+ "text": "Patutnya dia datang gembirakan, tenangkan, bahagiakan. Jangan takut-takutkan dia. Ramai orang baik. Kanser, banyaknya orang baik. Ada kawan saya, dia rawat kanser, kemo kali-kali. Sel kanser aktif dia kosong. Terus baik, pulih. Sel kanser dia kosong jadi. Maknanya, boleh pulih. Jangan kita ceritakan orang yang tak pulih. Ceritakan orang yang pulih, orang yang pulih. Tenangkan dia, insya-Allah. Dia tentukan semuanya. Ingat pada Allah, Dia bagi sakit, Dia bagi sihat. Doa, minta banyak-banyak. Positif, ajar orang sakit ini positif. Positif. Jangan runsingkan dia, jangan susahkan dia. Jadi semua yang jamak ini rukhsah. Agama kita ini tidak memayahkan kita, menyenangkan kita.",
+ "lecture": "ismi_kuliah_dhuha",
+ "style": "V2",
+ "episode": 9
+}
