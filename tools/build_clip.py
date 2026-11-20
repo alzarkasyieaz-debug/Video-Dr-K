@@ -431,8 +431,8 @@ def build(spec, source, media=True):
       line-height: 1.16; color: #fff; text-transform: none; }}
     .w {{ display: inline-block; -webkit-text-stroke: 12px #000; paint-order: stroke fill;
       text-shadow: 0 6px 18px rgba(0,0,0,.65); transform-origin: 50% 70%; }}
-    .w.kw {{ position: relative; }}
-    .hl {{ position: absolute; left: -10px; right: -10px; top: 4px; bottom: -2px; z-index: -1; border-radius: 14px;
+    .w.kw {{ position: relative; {'margin: 0 .16em;' if style_b else ''} }}
+    .hl {{ position: absolute; left: -8px; right: -8px; top: 4px; bottom: -2px; z-index: -1; border-radius: 14px;
       background: linear-gradient(90deg, #FFE16B, #D5B36A); transform-origin: 0 50%; transform: scaleX(0); box-shadow: 0 6px 18px rgba(0,0,0,.5); }}
   </style>
   <div id="root" data-composition-id="captions" data-width="{W}" data-height="{H}">

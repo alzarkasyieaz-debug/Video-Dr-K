@@ -1,0 +1,79 @@
+{
+ "id": "31",
+ "slug": "MAKMUM_TAK_TAHU_IMAM_SOLAT_APA_BEGINI_NIATNYA",
+ "category": "FIQH SOLAT",
+ "title_lines": [
+  [
+   {
+    "t": "MAKMUM TAK TAHU"
+   }
+  ],
+  [
+   {
+    "t": "IMAM SOLAT APA?"
+   }
+  ],
+  [
+   {
+    "t": "BEGINI NIATNYA",
+    "gold": true
+   }
+  ]
+ ],
+ "header_html": "MAKMUM TAK TAHU IMAM SOLAT APA? <span class=\"g\" style=\"white-space:nowrap\">BEGINI NIATNYA</span>",
+ "cover_kicker": "KULIAH DHUHA • SIRAH & FIQH",
+ "cover_sub": "Pondok Pengajian Darul Mubarak",
+ "speaker": "YB Ustaz Muhammad Ismi Mat Taib",
+ "speaker_role": "Pondok Pengajian Darul Mubarak • Kuliah Dhuha",
+ "series": "KULIAH DHUHA DARUL MUBARAK",
+ "face": [
+  550,
+  560
+ ],
+ "src_crop": [
+  145,
+  0,
+  810,
+  1440
+ ],
+ "music_volume": 0.1,
+ "whisper": "clips/whisper/w31.json",
+ "window": 2158,
+ "start": 2195.3,
+ "end": 2286.8,
+ "arabic": [],
+ "points": [
+  {
+   "label": "MAKMUM QASAR",
+   "text": "Boleh ikut imam 4 rakaat — tetapi wajib ikut sempurna 4",
+   "at": 6.0,
+   "dur": 12.0
+  },
+  {
+   "label": "SOLAT BERJEMAAH",
+   "text": "Tak pasti imam solat apa? Tetap ikut — jemaah 27 darjat",
+   "at": 44.0,
+   "dur": 12.0
+  },
+  {
+   "label": "LAFAZ NIAT",
+   "text": "‘Sahaja aku solat yang disolatkan oleh imam ini kerana Allah Ta’ala’",
+   "at": 64.5,
+   "dur": 14.0
+  }
+ ],
+ "keywords": [
+  "imam",
+  "ikut",
+  "niat",
+  "Maghrib",
+  "Isyak",
+  "jemaah",
+  "empat",
+  "tiga"
+ ],
+ "text": "Soalan, kalau katalah kita sembahyang dua, boleh tak kita ikut imam yang sembahyang empat? Bolehlah. Tapi kita kena ikut empat. Kena ikut imam. Jangan kita berhenti tengah jalan. Kita ikut imam, dia buat empat, dia buat empat. Kemudian kita tambah, tambah tiga. Jamak takhir, Maghrib, Isyak, Isyak dulu. Kalau kita sampai, kita tengok dekat highway, dia ni sembahyang Maghrib ke sembahyang Isyak? Sebab Maghrib 3, Isyak 2. Kalau dekat highway, biasa jemaah sembahyang jamak lah kan? Tapi kita tak tahu dia ni sembahyang Maghrib ke Isyak? Nak ikut ke tak ikut? Kita ikut dia. Sebab kalau kita sembahyang seorang-seorang, dapat satu. Sembahyang jemaah dapat apa? 27. Jadi, macam mana kita nak niat? Nak niat tiga ke nak niat dua? Sebab kita tak tahu dia tiga ke dua. Cara niatnya, sahaja aku sembahyang yang disembahyangkan oleh imam ni kerana Allah Ta'ala. Niat macam itu. Solat yang disembahyangkan oleh imam ni. Aku ikut dia. Tengok-tengok tiga, okey lah nasib baik. Kalau kita niat sembahyang Isyak, macam mana? Dia tiga, kita kena ikut dia.",
+ "lecture": "ismi_kuliah_dhuha",
+ "style": "V2",
+ "episode": 6
+}
