@@ -1,0 +1,78 @@
+{
+ "id": "32",
+ "slug": "MUSAFIR_LEBIH_4_HARI_MASIH_BOLEH_JAMAK",
+ "category": "FIQH SOLAT",
+ "title_lines": [
+  [
+   {
+    "t": "MUSAFIR LEBIH"
+   }
+  ],
+  [
+   {
+    "t": "4 HARI:",
+    "gold": true
+   }
+  ],
+  [
+   {
+    "t": "MASIH BOLEH JAMAK?"
+   }
+  ]
+ ],
+ "header_html": "MUSAFIR LEBIH <span class=\"g\" style=\"white-space:nowrap\">4 HARI:</span> MASIH BOLEH JAMAK?",
+ "cover_kicker": "KULIAH DHUHA • SIRAH & FIQH",
+ "cover_sub": "Pondok Pengajian Darul Mubarak",
+ "speaker": "YB Ustaz Muhammad Ismi Mat Taib",
+ "speaker_role": "Pondok Pengajian Darul Mubarak • Kuliah Dhuha",
+ "series": "KULIAH DHUHA DARUL MUBARAK",
+ "face": [
+  550,
+  560
+ ],
+ "src_crop": [
+  145,
+  0,
+  810,
+  1440
+ ],
+ "music_volume": 0.1,
+ "whisper": "clips/whisper/w32.json",
+ "window": 2380,
+ "start": 2380.0,
+ "end": 2480.1,
+ "arabic": [],
+ "points": [
+  {
+   "label": "FATHU MAKKAH",
+   "text": "Nabi ﷺ 18 hari di Makkah — terus jamak & qasar",
+   "at": 6.0,
+   "dur": 12.0
+  },
+  {
+   "label": "TAK TAHU BILA SELESAI",
+   "text": "Contoh: kereta rosak — boleh jamak qasar sepanjang menunggu",
+   "at": 44.0,
+   "dur": 14.0
+  },
+  {
+   "label": "SUDAH TAHU LEBIH 4 HARI",
+   "text": "Niat menetap lebih 4 hari — tidak boleh jamak qasar sejak tiba",
+   "at": 82.0,
+   "dur": 14.0
+  }
+ ],
+ "keywords": [
+  "jamak",
+  "qasar",
+  "hari",
+  "tahu",
+  "selesai",
+  "Makkah",
+  "seminggu"
+ ],
+ "text": "Jadi cerita Fathu Makkah ni, bila 18 hari Nabi di Makkah semuanya jamak qasar, sedangkan yang kita tahu jamak qasar ni 4 hari, 3 hari dia. Jadi boleh kita jamak qasar bila kita duduk di satu tempat, selagi tempat tu kita tak tahu bila selesainya. Kalau urusan tu kita tahu selesainya, ini aku nak duduk rumah anak ni seminggu, maknanya sampai saja tu tak bolehlah jamak qasar. Sebab dah dulu seminggu kita tahu. Nabi tak tahu selesainya bila. Katalah kita pergi rumah anak kita, pergi cadangnya nak balik tu boleh, tapi kereta rosak, tunggu, tunggu, tunggu, tunggu, tunggu seminggu atau dua minggu baru siap kereta. Sepanjang itulah kita boleh jamak qasar, sebab kita tak tahu bila akan berakhir urusan kita tu. Macam juga Nabi di Makkah, belum dipastikan 18 hari ke 7 hari ke. Jadi sepanjang-panjang itu kita boleh jamak qasar. Kalau kita tahu, kalau kita dah tentu aku nak duduk 6 hari, 7 hari, jadi tak bolehlah jamak, sampai saja tak boleh jamaklah. Bukan selepas 4 hari baru tak boleh jamak, sampai saja tak boleh jamaklah, sebab kita dah tahu dah kita nak duduk situ lebih daripada 4 hari.",
+ "lecture": "ismi_kuliah_dhuha",
+ "style": "V2",
+ "episode": 7
+}
