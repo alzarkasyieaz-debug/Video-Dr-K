@@ -75,6 +75,9 @@ STAR = ('<svg viewBox="-50 -50 100 100" width="{s}" height="{s}"><g fill="none" 
 
 
 def build(spec, source, media=True):
+    global FACE_X, FACE_Y
+    if spec.get("face"):  # per-clip face position in 1080x1920 space (camera angle differs per lecture)
+        FACE_X, FACE_Y = spec["face"]
     cid = spec["id"]
     name = f"KULIAH_{cid}"
     out = os.path.join(ROOT, "videos", name)
