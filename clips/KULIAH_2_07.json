@@ -1,0 +1,104 @@
+{
+ "speaker": "Kuliah Maghrib Jumaat",
+ "speaker_role": "Ensiklopedia Hadis Nilai • YADIM & DBP",
+ "series": "KULIAH HADIS NILAI",
+ "cover_kicker": "ENSIKLOPEDIA HADIS NILAI",
+ "cover_sub": "Mawsu'ah Ahadith al-Qiyam • Syeikh Dr. Hammam Sa'id",
+ "max_zoom": 1.36,
+ "id": "2_07",
+ "slug": "TUNJUKKAN_AKU_PASAR_ABDURRAHMAN_BIN_AUF",
+ "category": "SIRAH SAHABAT",
+ "face": [
+  449,
+  922
+ ],
+ "title_lines": [
+  [
+   {
+    "t": "\"TUNJUKKAN"
+   }
+  ],
+  [
+   {
+    "t": "AKU",
+    "gold": true
+   },
+   {
+    "t": "PASAR!\"",
+    "gold": true
+   }
+  ],
+  [
+   {
+    "t": "KISAH ABDURRAHMAN BIN AUF"
+   }
+  ]
+ ],
+ "cover_lines": [
+  [
+   {
+    "t": "\"TUNJUKKAN"
+   }
+  ],
+  [
+   {
+    "t": "AKU PASAR!\"",
+    "gold": true
+   }
+  ],
+  [
+   {
+    "t": "KISAH ABDURRAHMAN"
+   }
+  ],
+  [
+   {
+    "t": "BIN AUF"
+   }
+  ]
+ ],
+ "header_html": "\"TUNJUKKAN AKU <span class=\"g\">PASAR!</span>\" — ABDURRAHMAN BIN AUF",
+ "window": 2105,
+ "start": 2114.4,
+ "end": 2221.2,
+ "arabic": [
+  {
+   "ar": "بَارَكَ اللَّهُ لَكَ فِي أَهْلِكَ وَمَالِكَ",
+   "ms": "Semoga Allah memberkati engkau pada keluargamu dan hartamu.",
+   "ref": "HR AL-BUKHARI",
+   "at": 72.0,
+   "dur": 13.0
+  }
+ ],
+ "points": [
+  {
+   "label": "PERSAUDARAAN",
+   "text": "Nabi ﷺ mempersaudarakan Abdurrahman bin Auf dengan Sa'd bin ar-Rabi'",
+   "at": 6.0,
+   "dur": 12.0
+  },
+  {
+   "label": "TAWARAN SA'D",
+   "text": "Separuh harta, malah isteri — demi saudara seislam",
+   "at": 26.0,
+   "dur": 14.0
+  },
+  {
+   "label": "JAWAPANNYA",
+   "text": "Doa keberkatan, kemudian: tunjukkan aku di mana pasar",
+   "at": 88.0,
+   "dur": 17.0
+  }
+ ],
+ "keywords": [
+  "Abdurrahman",
+  "Sa'd",
+  "pasar",
+  "harta",
+  "isteri",
+  "barakah",
+  "berkati"
+ ],
+ "text": "Nabi persaudarakan Abdurrahman bin Auf dengan seorang sahabat namanya Sa'd bin ar-Rabi'. Dia orang kaya, ahli perniagaan, sesuai dengan Abdurrahman ahli perniagaan. Lalu kata Sa'd bin ar-Rabi', dia kata, aku ada isteri. Fanzur, cuba tengok, mana satu yang kamu rasa suka? Utalliquha, aku ceraikan, mu pilih mana hak mu nak, hak orang nak mesti hak comel lah, mu pilih, aku cerai. Sanggup buat begitu kita? Kita ada bini dua, nak cerai rasa? Kenapa nak dia beri isteri? Sebab kawan ni main seorang-seorang diri. Tak ada isteri. Tak ada isteri, ada macam-macam masalah akan berlaku. Nak ceraikan. Aku ada harta, aku nak agih pada kamu. Kamu separuh, aku separuh. Sahabat Nabi, nama Sa'd bin ar-Rabi'. Tapi apa kata Abdurrahman bin Auf? Barakallahu laka fi ahlika wa malik. Moga Allah berkati kamu pada keluarga kamu dan harta kamu. Maksudnya apa? Dia menolak pemberian dan cadangan. Barakallahu laka fi ahlika wa malik. Dia doa agar ada barakah. Tapi apa yang dia nak? Kata dia, dulluni 'alas suq, tunjukkan pada saya mana pasar. Mana pasar? Tunjukkan saya. Mana pasar? Nak tunjuk pasar kat mana?",
+ "whisper": "clips/whisper/w2_07.json"
+}

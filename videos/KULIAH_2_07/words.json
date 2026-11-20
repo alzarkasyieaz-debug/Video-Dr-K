@@ -1,0 +1,902 @@
+[
+{
+"text": "Nabi",
+"start": 0.1,
+"end": 0.3
+},
+{
+"text": "persaudarakan",
+"start": 0.3,
+"end": 1.134
+},
+{
+"text": "Abdurrahman",
+"start": 1.134,
+"end": 1.84
+},
+{
+"text": "bin",
+"start": 1.84,
+"end": 2.05
+},
+{
+"text": "Auf",
+"start": 2.05,
+"end": 2.2
+},
+{
+"text": "dengan",
+"start": 3.0,
+"end": 3.49
+},
+{
+"text": "seorang",
+"start": 3.49,
+"end": 3.9
+},
+{
+"text": "sahabat",
+"start": 3.9,
+"end": 4.32
+},
+{
+"text": "namanya",
+"start": 4.32,
+"end": 5.13
+},
+{
+"text": "Sa'd",
+"start": 5.13,
+"end": 5.548
+},
+{
+"text": "bin",
+"start": 5.548,
+"end": 5.861
+},
+{
+"text": "ar-Rabi'.",
+"start": 5.861,
+"end": 6.8
+},
+{
+"text": "Dia",
+"start": 6.8,
+"end": 7.09
+},
+{
+"text": "orang",
+"start": 7.09,
+"end": 7.41
+},
+{
+"text": "kaya,",
+"start": 7.41,
+"end": 7.88
+},
+{
+"text": "ahli",
+"start": 7.88,
+"end": 8.15
+},
+{
+"text": "perniagaan,",
+"start": 8.15,
+"end": 9.07
+},
+{
+"text": "sesuai",
+"start": 9.07,
+"end": 9.52
+},
+{
+"text": "dengan",
+"start": 9.52,
+"end": 9.98
+},
+{
+"text": "Abdurrahman",
+"start": 9.98,
+"end": 10.79
+},
+{
+"text": "ahli",
+"start": 10.79,
+"end": 11.08
+},
+{
+"text": "perniagaan.",
+"start": 11.08,
+"end": 12.28
+},
+{
+"text": "Lalu",
+"start": 12.51,
+"end": 13.04
+},
+{
+"text": "kata",
+"start": 13.04,
+"end": 13.65
+},
+{
+"text": "Sa'd",
+"start": 13.65,
+"end": 14.293
+},
+{
+"text": "bin",
+"start": 14.293,
+"end": 14.774
+},
+{
+"text": "ar-Rabi',",
+"start": 14.774,
+"end": 15.974
+},
+{
+"text": "dia",
+"start": 16.22,
+"end": 16.71
+},
+{
+"text": "kata,",
+"start": 16.71,
+"end": 17.71
+},
+{
+"text": "aku",
+"start": 17.71,
+"end": 18.05
+},
+{
+"text": "ada",
+"start": 18.05,
+"end": 18.51
+},
+{
+"text": "isteri.",
+"start": 18.51,
+"end": 19.71
+},
+{
+"text": "Fanzur,",
+"start": 20.02,
+"end": 20.9
+},
+{
+"text": "cuba",
+"start": 20.9,
+"end": 21.12
+},
+{
+"text": "tengok,",
+"start": 21.12,
+"end": 22.32
+},
+{
+"text": "mana",
+"start": 23.21,
+"end": 23.4
+},
+{
+"text": "satu",
+"start": 23.4,
+"end": 24.6
+},
+{
+"text": "yang",
+"start": 25.72,
+"end": 26.06
+},
+{
+"text": "kamu",
+"start": 26.06,
+"end": 26.66
+},
+{
+"text": "rasa",
+"start": 26.66,
+"end": 27.26
+},
+{
+"text": "suka?",
+"start": 27.26,
+"end": 27.944
+},
+{
+"text": "Utalliquha,",
+"start": 27.944,
+"end": 29.144
+},
+{
+"text": "aku",
+"start": 29.45,
+"end": 29.89
+},
+{
+"text": "ceraikan,",
+"start": 29.89,
+"end": 31.09
+},
+{
+"text": "mu",
+"start": 31.37,
+"end": 31.67
+},
+{
+"text": "pilih",
+"start": 31.67,
+"end": 32.4
+},
+{
+"text": "mana",
+"start": 32.4,
+"end": 33.12
+},
+{
+"text": "hak",
+"start": 33.12,
+"end": 33.62
+},
+{
+"text": "mu",
+"start": 33.62,
+"end": 34.0
+},
+{
+"text": "nak,",
+"start": 34.0,
+"end": 34.65
+},
+{
+"text": "hak",
+"start": 34.65,
+"end": 35.48
+},
+{
+"text": "orang",
+"start": 35.48,
+"end": 35.765
+},
+{
+"text": "nak",
+"start": 35.765,
+"end": 35.935
+},
+{
+"text": "mesti",
+"start": 35.935,
+"end": 36.22
+},
+{
+"text": "hak",
+"start": 36.22,
+"end": 36.53
+},
+{
+"text": "comel",
+"start": 36.53,
+"end": 37.02
+},
+{
+"text": "lah,",
+"start": 37.02,
+"end": 37.57
+},
+{
+"text": "mu",
+"start": 37.57,
+"end": 37.72
+},
+{
+"text": "pilih,",
+"start": 37.72,
+"end": 38.42
+},
+{
+"text": "aku",
+"start": 38.42,
+"end": 38.72
+},
+{
+"text": "cerai.",
+"start": 38.72,
+"end": 39.52
+},
+{
+"text": "Sanggup",
+"start": 39.52,
+"end": 40.39
+},
+{
+"text": "buat",
+"start": 40.39,
+"end": 40.62
+},
+{
+"text": "begitu",
+"start": 40.62,
+"end": 41.22
+},
+{
+"text": "kita?",
+"start": 41.22,
+"end": 41.92
+},
+{
+"text": "Kita",
+"start": 41.92,
+"end": 42.32
+},
+{
+"text": "ada",
+"start": 42.32,
+"end": 42.72
+},
+{
+"text": "bini",
+"start": 42.72,
+"end": 43.23
+},
+{
+"text": "dua,",
+"start": 43.23,
+"end": 43.68
+},
+{
+"text": "nak",
+"start": 43.68,
+"end": 43.92
+},
+{
+"text": "cerai",
+"start": 43.92,
+"end": 44.42
+},
+{
+"text": "rasa?",
+"start": 44.42,
+"end": 44.94
+},
+{
+"text": "Kenapa",
+"start": 50.32,
+"end": 50.76
+},
+{
+"text": "nak",
+"start": 50.76,
+"end": 50.89
+},
+{
+"text": "dia",
+"start": 50.89,
+"end": 51.13
+},
+{
+"text": "beri",
+"start": 51.13,
+"end": 51.33
+},
+{
+"text": "isteri?",
+"start": 51.33,
+"end": 51.97
+},
+{
+"text": "Sebab",
+"start": 51.97,
+"end": 52.2
+},
+{
+"text": "kawan",
+"start": 52.2,
+"end": 52.51
+},
+{
+"text": "ni",
+"start": 52.51,
+"end": 52.651
+},
+{
+"text": "main",
+"start": 52.651,
+"end": 52.933
+},
+{
+"text": "seorang-seorang",
+"start": 52.933,
+"end": 53.99
+},
+{
+"text": "diri.",
+"start": 53.99,
+"end": 54.43
+},
+{
+"text": "Tak",
+"start": 54.43,
+"end": 54.718
+},
+{
+"text": "ada",
+"start": 54.718,
+"end": 55.007
+},
+{
+"text": "isteri.",
+"start": 55.007,
+"end": 55.68
+},
+{
+"text": "Tak",
+"start": 55.68,
+"end": 55.97
+},
+{
+"text": "ada",
+"start": 55.97,
+"end": 56.12
+},
+{
+"text": "isteri,",
+"start": 56.12,
+"end": 56.64
+},
+{
+"text": "ada",
+"start": 56.64,
+"end": 56.81
+},
+{
+"text": "macam-macam",
+"start": 56.81,
+"end": 57.53
+},
+{
+"text": "masalah",
+"start": 57.53,
+"end": 58.27
+},
+{
+"text": "akan",
+"start": 58.27,
+"end": 58.513
+},
+{
+"text": "berlaku.",
+"start": 58.513,
+"end": 59.0
+},
+{
+"text": "Nak",
+"start": 59.0,
+"end": 59.19
+},
+{
+"text": "ceraikan.",
+"start": 59.19,
+"end": 60.35
+},
+{
+"text": "Aku",
+"start": 60.35,
+"end": 60.95
+},
+{
+"text": "ada",
+"start": 60.95,
+"end": 61.08
+},
+{
+"text": "harta,",
+"start": 61.08,
+"end": 61.71
+},
+{
+"text": "aku",
+"start": 61.71,
+"end": 61.98
+},
+{
+"text": "nak",
+"start": 61.98,
+"end": 62.25
+},
+{
+"text": "agih",
+"start": 62.25,
+"end": 62.77
+},
+{
+"text": "pada",
+"start": 62.77,
+"end": 62.97
+},
+{
+"text": "kamu.",
+"start": 62.97,
+"end": 63.74
+},
+{
+"text": "Kamu",
+"start": 63.74,
+"end": 63.96
+},
+{
+"text": "separuh,",
+"start": 63.96,
+"end": 64.6
+},
+{
+"text": "aku",
+"start": 64.6,
+"end": 64.96
+},
+{
+"text": "separuh.",
+"start": 64.96,
+"end": 65.87
+},
+{
+"text": "Sahabat",
+"start": 65.87,
+"end": 66.6
+},
+{
+"text": "Nabi,",
+"start": 66.6,
+"end": 67.11
+},
+{
+"text": "nama",
+"start": 67.11,
+"end": 67.44
+},
+{
+"text": "Sa'd",
+"start": 67.44,
+"end": 67.82
+},
+{
+"text": "bin",
+"start": 67.82,
+"end": 68.105
+},
+{
+"text": "ar-Rabi'.",
+"start": 68.105,
+"end": 68.96
+},
+{
+"text": "Tapi",
+"start": 68.96,
+"end": 69.42
+},
+{
+"text": "apa",
+"start": 69.42,
+"end": 69.67
+},
+{
+"text": "kata",
+"start": 69.67,
+"end": 69.99
+},
+{
+"text": "Abdurrahman",
+"start": 69.99,
+"end": 71.19
+},
+{
+"text": "bin",
+"start": 71.457,
+"end": 71.857
+},
+{
+"text": "Auf?",
+"start": 71.857,
+"end": 72.39
+},
+{
+"text": "Barakallahu",
+"start": 72.39,
+"end": 73.45
+},
+{
+"text": "laka",
+"start": 73.45,
+"end": 73.939
+},
+{
+"text": "fi",
+"start": 73.939,
+"end": 74.183
+},
+{
+"text": "ahlika",
+"start": 74.183,
+"end": 74.916
+},
+{
+"text": "wa",
+"start": 74.916,
+"end": 75.16
+},
+{
+"text": "malik.",
+"start": 75.16,
+"end": 75.93
+},
+{
+"text": "Moga",
+"start": 75.93,
+"end": 76.19
+},
+{
+"text": "Allah",
+"start": 76.19,
+"end": 76.63
+},
+{
+"text": "berkati",
+"start": 76.63,
+"end": 77.23
+},
+{
+"text": "kamu",
+"start": 77.23,
+"end": 77.82
+},
+{
+"text": "pada",
+"start": 77.82,
+"end": 77.93
+},
+{
+"text": "keluarga",
+"start": 77.93,
+"end": 78.67
+},
+{
+"text": "kamu",
+"start": 78.67,
+"end": 78.97
+},
+{
+"text": "dan",
+"start": 78.97,
+"end": 79.2
+},
+{
+"text": "harta",
+"start": 79.2,
+"end": 79.83
+},
+{
+"text": "kamu.",
+"start": 79.83,
+"end": 80.4
+},
+{
+"text": "Maksudnya",
+"start": 80.4,
+"end": 81.52
+},
+{
+"text": "apa?",
+"start": 81.52,
+"end": 81.95
+},
+{
+"text": "Dia",
+"start": 81.95,
+"end": 82.12
+},
+{
+"text": "menolak",
+"start": 82.12,
+"end": 82.56
+},
+{
+"text": "pemberian",
+"start": 82.56,
+"end": 83.08
+},
+{
+"text": "dan",
+"start": 83.08,
+"end": 83.26
+},
+{
+"text": "cadangan.",
+"start": 83.26,
+"end": 83.97
+},
+{
+"text": "Barakallahu",
+"start": 83.97,
+"end": 84.49
+},
+{
+"text": "laka",
+"start": 84.49,
+"end": 84.816
+},
+{
+"text": "fi",
+"start": 84.816,
+"end": 84.979
+},
+{
+"text": "ahlika",
+"start": 84.979,
+"end": 85.467
+},
+{
+"text": "wa",
+"start": 85.467,
+"end": 85.63
+},
+{
+"text": "malik.",
+"start": 85.63,
+"end": 85.95
+},
+{
+"text": "Dia",
+"start": 85.95,
+"end": 86.085
+},
+{
+"text": "doa",
+"start": 86.085,
+"end": 86.22
+},
+{
+"text": "agar",
+"start": 86.22,
+"end": 86.4
+},
+{
+"text": "ada",
+"start": 86.4,
+"end": 86.64
+},
+{
+"text": "barakah.",
+"start": 86.64,
+"end": 87.84
+},
+{
+"text": "Tapi",
+"start": 87.98,
+"end": 88.52
+},
+{
+"text": "apa",
+"start": 88.52,
+"end": 89.3
+},
+{
+"text": "yang",
+"start": 89.3,
+"end": 89.46
+},
+{
+"text": "dia",
+"start": 89.46,
+"end": 89.86
+},
+{
+"text": "nak?",
+"start": 89.86,
+"end": 90.55
+},
+{
+"text": "Kata",
+"start": 90.55,
+"end": 91.31
+},
+{
+"text": "dia,",
+"start": 91.31,
+"end": 91.91
+},
+{
+"text": "dulluni",
+"start": 91.91,
+"end": 92.536
+},
+{
+"text": "'alas",
+"start": 92.536,
+"end": 92.982
+},
+{
+"text": "suq,",
+"start": 92.982,
+"end": 93.34
+},
+{
+"text": "tunjukkan",
+"start": 93.34,
+"end": 94.54
+},
+{
+"text": "pada",
+"start": 94.58,
+"end": 95.2
+},
+{
+"text": "saya",
+"start": 95.2,
+"end": 96.09
+},
+{
+"text": "mana",
+"start": 96.09,
+"end": 96.966
+},
+{
+"text": "pasar.",
+"start": 96.966,
+"end": 98.166
+},
+{
+"text": "Mana",
+"start": 98.28,
+"end": 98.72
+},
+{
+"text": "pasar?",
+"start": 98.72,
+"end": 99.92
+},
+{
+"text": "Tunjukkan",
+"start": 99.98,
+"end": 100.94
+},
+{
+"text": "saya.",
+"start": 100.94,
+"end": 101.38
+},
+{
+"text": "Mana",
+"start": 102.95,
+"end": 103.17
+},
+{
+"text": "pasar?",
+"start": 103.17,
+"end": 103.92
+},
+{
+"text": "Nak",
+"start": 103.92,
+"end": 104.2
+},
+{
+"text": "tunjuk",
+"start": 104.87,
+"end": 105.59
+},
+{
+"text": "pasar",
+"start": 105.59,
+"end": 105.92
+},
+{
+"text": "kat",
+"start": 105.92,
+"end": 106.24
+},
+{
+"text": "mana?",
+"start": 106.24,
+"end": 106.8
+}
+]
