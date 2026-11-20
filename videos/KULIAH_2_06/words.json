@@ -1,0 +1,972 @@
+[
+{
+"text": "Pengarang",
+"start": 0.1,
+"end": 0.85
+},
+{
+"text": "masuk",
+"start": 0.85,
+"end": 1.267
+},
+{
+"text": "dalam",
+"start": 1.267,
+"end": 1.683
+},
+{
+"text": "tajuk",
+"start": 1.683,
+"end": 2.1
+},
+{
+"text": "qimatut",
+"start": 2.1,
+"end": 3.15
+},
+{
+"text": "tijarah,",
+"start": 3.15,
+"end": 4.1
+},
+{
+"text": "nilai",
+"start": 6.1,
+"end": 6.725
+},
+{
+"text": "perniagaan.",
+"start": 6.725,
+"end": 7.925
+},
+{
+"text": "Kita",
+"start": 10.1,
+"end": 10.352
+},
+{
+"text": "mungkin",
+"start": 10.352,
+"end": 10.792
+},
+{
+"text": "nampak",
+"start": 10.792,
+"end": 11.17
+},
+{
+"text": "kecil",
+"start": 11.17,
+"end": 12.1
+},
+{
+"text": "kepentingan",
+"start": 12.1,
+"end": 13.25
+},
+{
+"text": "perniagaan,",
+"start": 13.25,
+"end": 14.1
+},
+{
+"text": "tapi",
+"start": 14.1,
+"end": 14.491
+},
+{
+"text": "Islam",
+"start": 14.491,
+"end": 14.98
+},
+{
+"text": "meletakkan",
+"start": 14.98,
+"end": 16.1
+},
+{
+"text": "perniagaan",
+"start": 16.1,
+"end": 17.3
+},
+{
+"text": "adalah",
+"start": 17.32,
+"end": 18.1
+},
+{
+"text": "anak",
+"start": 18.1,
+"end": 18.217
+},
+{
+"text": "kunci",
+"start": 18.217,
+"end": 18.364
+},
+{
+"text": "untuk",
+"start": 18.364,
+"end": 18.51
+},
+{
+"text": "manusia",
+"start": 18.51,
+"end": 19.1
+},
+{
+"text": "dapat",
+"start": 19.1,
+"end": 20.1
+},
+{
+"text": "keperluan.",
+"start": 20.1,
+"end": 21.3
+},
+{
+"text": "Kita",
+"start": 21.743,
+"end": 22.4
+},
+{
+"text": "ada",
+"start": 22.4,
+"end": 22.63
+},
+{
+"text": "keperluan",
+"start": 22.63,
+"end": 23.31
+},
+{
+"text": "untuk",
+"start": 23.31,
+"end": 23.69
+},
+{
+"text": "makan",
+"start": 23.69,
+"end": 24.1
+},
+{
+"text": "nasi,",
+"start": 24.1,
+"end": 25.3
+},
+{
+"text": "kita",
+"start": 26.1,
+"end": 26.67
+},
+{
+"text": "tidak",
+"start": 26.67,
+"end": 27.38
+},
+{
+"text": "tanam",
+"start": 27.38,
+"end": 28.1
+},
+{
+"text": "beras,",
+"start": 28.1,
+"end": 29.3
+},
+{
+"text": "yang",
+"start": 29.3,
+"end": 30.1
+},
+{
+"text": "tanam",
+"start": 30.1,
+"end": 30.289
+},
+{
+"text": "pada",
+"start": 30.289,
+"end": 30.44
+},
+{
+"text": "orang",
+"start": 30.44,
+"end": 31.34
+},
+{
+"text": "lain.",
+"start": 31.34,
+"end": 32.1
+},
+{
+"text": "Kita",
+"start": 32.1,
+"end": 32.52
+},
+{
+"text": "orang",
+"start": 33.04,
+"end": 33.56
+},
+{
+"text": "laut.",
+"start": 33.56,
+"end": 34.1
+},
+{
+"text": "Untuk",
+"start": 34.1,
+"end": 34.81
+},
+{
+"text": "kita",
+"start": 34.81,
+"end": 35.38
+},
+{
+"text": "dapat",
+"start": 35.38,
+"end": 36.1
+},
+{
+"text": "beras,",
+"start": 36.1,
+"end": 36.532
+},
+{
+"text": "padi",
+"start": 36.532,
+"end": 36.82
+},
+{
+"text": "dan",
+"start": 36.82,
+"end": 37.36
+},
+{
+"text": "juga",
+"start": 37.36,
+"end": 38.1
+},
+{
+"text": "beras,",
+"start": 38.1,
+"end": 38.532
+},
+{
+"text": "kita",
+"start": 38.532,
+"end": 38.82
+},
+{
+"text": "kena",
+"start": 38.82,
+"end": 39.54
+},
+{
+"text": "ada",
+"start": 39.54,
+"end": 40.1
+},
+{
+"text": "pertukaran",
+"start": 40.1,
+"end": 41.2
+},
+{
+"text": "yang",
+"start": 41.2,
+"end": 41.64
+},
+{
+"text": "kita",
+"start": 41.64,
+"end": 42.1
+},
+{
+"text": "nak",
+"start": 42.1,
+"end": 42.245
+},
+{
+"text": "bagi",
+"start": 42.245,
+"end": 42.439
+},
+{
+"text": "kepada",
+"start": 42.439,
+"end": 42.73
+},
+{
+"text": "orang",
+"start": 42.73,
+"end": 43.25
+},
+{
+"text": "yang",
+"start": 43.25,
+"end": 43.67
+},
+{
+"text": "jual,",
+"start": 43.67,
+"end": 44.1
+},
+{
+"text": "yang",
+"start": 44.1,
+"end": 44.67
+},
+{
+"text": "punya",
+"start": 44.67,
+"end": 45.38
+},
+{
+"text": "beras.",
+"start": 45.38,
+"end": 46.1
+},
+{
+"text": "Yang",
+"start": 46.1,
+"end": 46.48
+},
+{
+"text": "kita",
+"start": 46.48,
+"end": 46.86
+},
+{
+"text": "ada",
+"start": 46.86,
+"end": 47.14
+},
+{
+"text": "adalah",
+"start": 47.14,
+"end": 47.71
+},
+{
+"text": "ikan,",
+"start": 47.71,
+"end": 48.1
+},
+{
+"text": "kerana",
+"start": 48.1,
+"end": 48.67
+},
+{
+"text": "kita",
+"start": 48.67,
+"end": 49.05
+},
+{
+"text": "orang",
+"start": 49.05,
+"end": 49.52
+},
+{
+"text": "laut.",
+"start": 49.52,
+"end": 50.1
+},
+{
+"text": "Ikan",
+"start": 50.1,
+"end": 50.54
+},
+{
+"text": "kita",
+"start": 50.54,
+"end": 50.98
+},
+{
+"text": "ditukarkan",
+"start": 50.98,
+"end": 52.1
+},
+{
+"text": "dengan",
+"start": 52.1,
+"end": 52.52
+},
+{
+"text": "beras",
+"start": 52.52,
+"end": 52.87
+},
+{
+"text": "dengan",
+"start": 52.87,
+"end": 53.29
+},
+{
+"text": "kadar",
+"start": 53.29,
+"end": 54.1
+},
+{
+"text": "yang",
+"start": 54.1,
+"end": 54.354
+},
+{
+"text": "tertentu,",
+"start": 54.354,
+"end": 54.925
+},
+{
+"text": "mungkin",
+"start": 54.925,
+"end": 55.37
+},
+{
+"text": "ikan",
+"start": 55.37,
+"end": 56.1
+},
+{
+"text": "sekian",
+"start": 56.1,
+"end": 56.293
+},
+{
+"text": "banyak,",
+"start": 56.293,
+"end": 56.519
+},
+{
+"text": "beras",
+"start": 56.519,
+"end": 56.68
+},
+{
+"text": "sekian",
+"start": 56.68,
+"end": 57.38
+},
+{
+"text": "banyak.",
+"start": 57.38,
+"end": 58.1
+},
+{
+"text": "Maka",
+"start": 58.1,
+"end": 58.38
+},
+{
+"text": "berlakulah",
+"start": 58.38,
+"end": 59.1
+},
+{
+"text": "pertukaran",
+"start": 59.1,
+"end": 60.1
+},
+{
+"text": "barang,",
+"start": 60.1,
+"end": 60.331
+},
+{
+"text": "itu",
+"start": 60.331,
+"end": 60.43
+},
+{
+"text": "namanya",
+"start": 60.43,
+"end": 61.2
+},
+{
+"text": "jual",
+"start": 61.2,
+"end": 61.64
+},
+{
+"text": "beli.",
+"start": 61.64,
+"end": 62.1
+},
+{
+"text": "Dan",
+"start": 62.1,
+"end": 62.64
+},
+{
+"text": "jual",
+"start": 62.64,
+"end": 63.36
+},
+{
+"text": "beli",
+"start": 63.36,
+"end": 64.1
+},
+{
+"text": "itulah",
+"start": 64.1,
+"end": 64.36
+},
+{
+"text": "membentuk",
+"start": 64.36,
+"end": 64.75
+},
+{
+"text": "asas",
+"start": 64.75,
+"end": 65.03
+},
+{
+"text": "pada",
+"start": 65.03,
+"end": 65.32
+},
+{
+"text": "perniagaan.",
+"start": 65.32,
+"end": 66.1
+},
+{
+"text": "Orang",
+"start": 66.1,
+"end": 66.81
+},
+{
+"text": "yang",
+"start": 66.81,
+"end": 67.38
+},
+{
+"text": "ambil",
+"start": 67.38,
+"end": 68.1
+},
+{
+"text": "untung",
+"start": 68.1,
+"end": 68.58
+},
+{
+"text": "daripada",
+"start": 68.58,
+"end": 69.22
+},
+{
+"text": "urusan",
+"start": 69.22,
+"end": 70.1
+},
+{
+"text": "jual",
+"start": 70.1,
+"end": 70.715
+},
+{
+"text": "beli",
+"start": 70.715,
+"end": 71.331
+},
+{
+"text": "untuk",
+"start": 71.331,
+"end": 72.1
+},
+{
+"text": "melunaskan",
+"start": 72.1,
+"end": 72.679
+},
+{
+"text": "keperluan",
+"start": 72.679,
+"end": 73.2
+},
+{
+"text": "manusia.",
+"start": 73.2,
+"end": 74.1
+},
+{
+"text": "Kalau",
+"start": 74.1,
+"end": 74.42
+},
+{
+"text": "tak",
+"start": 74.42,
+"end": 74.61
+},
+{
+"text": "ada",
+"start": 74.61,
+"end": 74.8
+},
+{
+"text": "orang",
+"start": 74.8,
+"end": 75.14
+},
+{
+"text": "berniaga,",
+"start": 75.14,
+"end": 76.1
+},
+{
+"text": "beras",
+"start": 76.1,
+"end": 76.8
+},
+{
+"text": "tak",
+"start": 76.8,
+"end": 77.22
+},
+{
+"text": "sampai.",
+"start": 77.22,
+"end": 78.1
+},
+{
+"text": "Beras",
+"start": 78.1,
+"end": 79.0
+},
+{
+"text": "di",
+"start": 79.0,
+"end": 79.36
+},
+{
+"text": "hulu,",
+"start": 79.36,
+"end": 80.1
+},
+{
+"text": "ikannya",
+"start": 81.26,
+"end": 82.1
+},
+{
+"text": "di",
+"start": 82.1,
+"end": 82.237
+},
+{
+"text": "bandar,",
+"start": 82.237,
+"end": 82.716
+},
+{
+"text": "di",
+"start": 82.716,
+"end": 82.853
+},
+{
+"text": "Seberang",
+"start": 82.853,
+"end": 83.4
+},
+{
+"text": "Takir.",
+"start": 83.4,
+"end": 84.1
+},
+{
+"text": "Orang",
+"start": 84.1,
+"end": 84.65
+},
+{
+"text": "Seberang",
+"start": 84.65,
+"end": 85.53
+},
+{
+"text": "Takir",
+"start": 85.53,
+"end": 86.1
+},
+{
+"text": "tak",
+"start": 86.1,
+"end": 86.1
+},
+{
+"text": "pergi",
+"start": 86.1,
+"end": 86.1
+},
+{
+"text": "ke",
+"start": 86.1,
+"end": 86.1
+},
+{
+"text": "hulu",
+"start": 86.1,
+"end": 86.1
+},
+{
+"text": "nak",
+"start": 86.1,
+"end": 86.45
+},
+{
+"text": "ambil",
+"start": 86.91,
+"end": 87.49
+},
+{
+"text": "beras.",
+"start": 87.49,
+"end": 88.1
+},
+{
+"text": "Orang",
+"start": 88.1,
+"end": 88.62
+},
+{
+"text": "di",
+"start": 88.62,
+"end": 88.83
+},
+{
+"text": "hulu",
+"start": 88.83,
+"end": 89.24
+},
+{
+"text": "tak",
+"start": 89.24,
+"end": 89.55
+},
+{
+"text": "mari",
+"start": 89.55,
+"end": 90.1
+},
+{
+"text": "ke",
+"start": 90.1,
+"end": 90.1
+},
+{
+"text": "Seberang",
+"start": 90.1,
+"end": 90.1
+},
+{
+"text": "Takir",
+"start": 90.1,
+"end": 90.1
+},
+{
+"text": "nak",
+"start": 90.1,
+"end": 90.1
+},
+{
+"text": "jual",
+"start": 90.1,
+"end": 90.229
+},
+{
+"text": "beras.",
+"start": 90.229,
+"end": 90.423
+},
+{
+"text": "Ada",
+"start": 90.423,
+"end": 90.52
+},
+{
+"text": "orang",
+"start": 90.52,
+"end": 91.23
+},
+{
+"text": "tengah.",
+"start": 91.23,
+"end": 92.1
+},
+{
+"text": "Orang",
+"start": 92.1,
+"end": 93.0
+},
+{
+"text": "tengah",
+"start": 93.0,
+"end": 94.1
+},
+{
+"text": "yang",
+"start": 94.1,
+"end": 94.239
+},
+{
+"text": "berkayuh",
+"start": 94.239,
+"end": 94.517
+},
+{
+"text": "sampan",
+"start": 94.517,
+"end": 94.83
+},
+{
+"text": "pergi",
+"start": 94.83,
+"end": 95.12
+},
+{
+"text": "ke",
+"start": 95.12,
+"end": 95.23
+},
+{
+"text": "hulu",
+"start": 95.23,
+"end": 95.45
+},
+{
+"text": "ambil",
+"start": 95.45,
+"end": 95.73
+},
+{
+"text": "beras,",
+"start": 95.73,
+"end": 96.348
+},
+{
+"text": "bawa",
+"start": 96.348,
+"end": 96.76
+},
+{
+"text": "datang",
+"start": 96.76,
+"end": 97.75
+},
+{
+"text": "ke",
+"start": 97.75,
+"end": 98.1
+},
+{
+"text": "orang",
+"start": 98.1,
+"end": 98.1
+},
+{
+"text": "Seberang",
+"start": 98.1,
+"end": 98.25
+},
+{
+"text": "Takir.",
+"start": 98.1,
+"end": 98.1
+},
+{
+"text": "Dia",
+"start": 98.1,
+"end": 98.3
+},
+{
+"text": "pula",
+"start": 98.3,
+"end": 98.56
+},
+{
+"text": "ambil",
+"start": 98.56,
+"end": 98.89
+},
+{
+"text": "ikan",
+"start": 98.89,
+"end": 99.15
+},
+{
+"text": "Seberang",
+"start": 99.15,
+"end": 99.68
+},
+{
+"text": "Takir,",
+"start": 99.68,
+"end": 100.1
+},
+{
+"text": "hantar",
+"start": 100.1,
+"end": 100.257
+},
+{
+"text": "ke",
+"start": 100.257,
+"end": 100.31
+},
+{
+"text": "hulu.",
+"start": 100.31,
+"end": 100.441
+},
+{
+"text": "Dia",
+"start": 100.441,
+"end": 100.52
+},
+{
+"text": "orang",
+"start": 100.52,
+"end": 101.23
+},
+{
+"text": "tengah,",
+"start": 101.23,
+"end": 102.1
+},
+{
+"text": "itulah",
+"start": 102.1,
+"end": 102.226
+},
+{
+"text": "perniagaan,",
+"start": 102.226,
+"end": 102.456
+},
+{
+"text": "yang",
+"start": 102.456,
+"end": 102.54
+},
+{
+"text": "ada",
+"start": 102.54,
+"end": 102.87
+},
+{
+"text": "orang",
+"start": 102.87,
+"end": 103.42
+},
+{
+"text": "tengah.",
+"start": 103.42,
+"end": 104.0
+}
+]

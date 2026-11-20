@@ -1,0 +1,100 @@
+{
+ "speaker": "Kuliah Maghrib Jumaat",
+ "speaker_role": "Ensiklopedia Hadis Nilai • YADIM & DBP",
+ "series": "KULIAH HADIS NILAI",
+ "cover_kicker": "ENSIKLOPEDIA HADIS NILAI",
+ "cover_sub": "Mawsu'ah Ahadith al-Qiyam • Syeikh Dr. Hammam Sa'id",
+ "max_zoom": 1.36,
+ "id": "2_03",
+ "slug": "ENGKAU_DAN_HARTAMU_MILIK_AYAHMU",
+ "category": "KELUARGA & MASYARAKAT",
+ "face": [
+  426,
+  920
+ ],
+ "title_lines": [
+  [
+   {
+    "t": "ENGKAU"
+   },
+   {
+    "t": "&"
+   },
+   {
+    "t": "HARTAMU"
+   }
+  ],
+  [
+   {
+    "t": "MILIK",
+    "gold": true
+   },
+   {
+    "t": "AYAHMU",
+    "gold": true
+   }
+  ]
+ ],
+ "cover_lines": [
+  [
+   {
+    "t": "ENGKAU &"
+   }
+  ],
+  [
+   {
+    "t": "HARTAMU"
+   }
+  ],
+  [
+   {
+    "t": "MILIK AYAHMU",
+    "gold": true
+   }
+  ]
+ ],
+ "header_html": "ENGKAU &amp; HARTAMU <span class=\"g\">MILIK AYAHMU</span>",
+ "window": 830,
+ "start": 872.2,
+ "end": 988.15,
+ "arabic": [
+  {
+   "ar": "أَنْتَ وَمَالُكَ لِأَبِيكَ",
+   "ms": "Engkau dan hartamu adalah milik ayahmu.",
+   "ref": "HR IBNU MAJAH & ABU DAWUD",
+   "at": 14.6,
+   "dur": 13.0
+  }
+ ],
+ "points": [
+  {
+   "label": "KISAHNYA",
+   "text": "Seorang anak mengadu kepada Nabi ﷺ: ayahnya selalu meminta hartanya",
+   "at": 5.8,
+   "dur": 8.4
+  },
+  {
+   "label": "JASA AYAH",
+   "text": "Jasa 20 tahun tidak terbalas walaupun dibalas 40 tahun",
+   "at": 63.0,
+   "dur": 14.0
+  },
+  {
+   "label": "PENGAJARAN",
+   "text": "Kejayaan kita hari ini kerana jasa mak dan ayah",
+   "at": 105.4,
+   "dur": 9.6
+  }
+ ],
+ "keywords": [
+  "ayah",
+  "harta",
+  "milik",
+  "jasa",
+  "mak",
+  "Islam",
+  "nilai"
+ ],
+ "text": "Cara lelaki bagi hujah. Nabi nak dengar hujah dia. Tapi Islam telah ada kayu ukur dah. Lalu kata Nabi sallallahu 'alaihi wasallam, anta wa maluka li abik. Kamu dan harta kamu milik bapa kamu. Bahasa kasar kita, mu dan harta milik pok mu, bahasa kasar kita. Mu sendiri milik apa? Milik pok mu. Harta pun milik pok mu. Adakah nilai ini ada pada kita bangsa Melayu? Tak ada. Tapi ada pada orang yang beragama Islam. Bangsa mungkin berbeza. Tapi agama ada nilai dia. Nilai kemasyarakatan yang diajar oleh Islam melibatkan hubungan anak dengan ayah ialah kamu wahai anak dan harta kamu wahai anak milik ayah kamu. Maka kalau ayah minta, itu hak dia minta. Nak balas balik hak dia buat untuk kamu 20 tahun, tidak akan terbalas walaupun kamu balas selama 40 tahun. Sebab apa? Sebab ketika kamu tidak ada, tidak ada apa, dia memberi. Hari ni kamu boleh bekerja, kerja sederhana ke kerja sedap, sebab apa? Sebab dulu masa membesar, ayah bagi semua ni. Beri makan ke mu, mak beri susu ke mu, hantar mu pergi sekolah. Kalau mak tak hantar sekolah, ayah tak hantar sekolah, bodoh. Tak boleh pergi sekolah, tak pergi sekolah, bodoh. Kalau tak hantar ke sekolah, mana mu jadi bodoh. Kalau tak hantar ke universiti, mu jadi bodoh. Hari ni kamu boleh jadi atas, sebab apa? Kerana jasa mak dan ayah kamu. Itu Islam ajar.",
+ "whisper": "clips/whisper/w2_03.json"
+}

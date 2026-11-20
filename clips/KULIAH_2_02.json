@@ -1,0 +1,74 @@
+{
+ "speaker": "Kuliah Maghrib Jumaat",
+ "speaker_role": "Ensiklopedia Hadis Nilai • YADIM & DBP",
+ "series": "KULIAH HADIS NILAI",
+ "cover_kicker": "ENSIKLOPEDIA HADIS NILAI",
+ "cover_sub": "Mawsu'ah Ahadith al-Qiyam • Syeikh Dr. Hammam Sa'id",
+ "max_zoom": 1.36,
+ "id": "2_02",
+ "slug": "NILAI_IMAN_KETIKA_DITIMPA_MUSIBAH",
+ "category": "AKIDAH & IMAN",
+ "face": [
+  436,
+  934
+ ],
+ "title_lines": [
+  [
+   {
+    "t": "DITIMPA"
+   },
+   {
+    "t": "MUSIBAH?",
+    "gold": true
+   }
+  ],
+  [
+   {
+    "t": "DI SINILAH"
+   }
+  ],
+  [
+   {
+    "t": "NILAI IMAN",
+    "gold": true
+   }
+  ]
+ ],
+ "header_html": "DITIMPA MUSIBAH? DI SINILAH <span class=\"g\">NILAI IMAN</span>",
+ "window": 590,
+ "start": 597.3,
+ "end": 685.9,
+ "arabic": [
+  {
+   "ar": "قُل لَّن يُصِيبَنَا إِلَّا مَا كَتَبَ اللَّهُ لَنَا",
+   "ms": "Katakanlah: Tidak sekali-kali akan menimpa kami melainkan apa yang telah ditetapkan Allah bagi kami.",
+   "ref": "SURAH AT-TAUBAH: 51",
+   "at": 65.0,
+   "dur": 17.0
+  }
+ ],
+ "points": [
+  {
+   "label": "NILAI IMAN",
+   "text": "Iman membezakan seorang manusia dengan manusia yang lain",
+   "at": 24.0,
+   "dur": 13.0
+  },
+  {
+   "label": "TANPA IMAN",
+   "text": "Ditimpa musibah: merintih, resah, meraung, menyesal",
+   "at": 45.0,
+   "dur": 15.0
+  }
+ ],
+ "keywords": [
+  "iman",
+  "Allah",
+  "musibah",
+  "catat",
+  "nilai",
+  "beriman"
+ ],
+ "text": "Artinya benda Allah Ta'ala buat dunia ini dia nilai-nilai berbeza. Maka betul juga dengan kehidupan kita. Keimanan. Nilai-nilai yang ada pada iman. Iman pada Allah Ta'ala, iman pada Nabi, iman pada malaikat, iman pada hari kiamat, iman pada qada' dan qadar. Semua nilai-nilai keimanan itu membezakan antara seorang manusia dengan seorang manusia. Seorang yang ada iman, beriman kepada adanya Allah, sama ke dengan orang yang tak beriman adanya Allah? Dia takkan sama. Nilai iman dia menyebabkan dia berbeza. Beza macam mana? Kalau orang yang tak beriman kepada Allah, bila berlaku musibah, dia akan merintih, dia akan resah, dia akan meraung, dia akan menyesal. Dia berlaku eksiden. Dia kata kenapalah aku turun masa ni. Dan kenapalah lalu jalan ni hingga berlaku eksiden. Sebab dia tidak ada iman. Tapi iman mengajar seorang yang beriman kepada Allah Ta'ala, sebutlah wahai Muhammad, tidak ada sama sekali boleh menimpa kita, melainkan apa yang Allah catat untuk kita. Yang Allah catat kita lalu itu akan berlaku. Itu contoh nilai iman.",
+ "whisper": "clips/whisper/w2_02.json"
+}
