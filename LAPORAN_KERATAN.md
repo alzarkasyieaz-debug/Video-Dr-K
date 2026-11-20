@@ -70,8 +70,8 @@ Skor = Kepentingan ilmu (25) + Kejelasan (25) + Kesempurnaan dalam 1–2 minit (
 - **Pengajaran utama:** Solat sunat sambil duduk walaupun mampu berdiri adalah sah tetapi pahalanya separuh; duduk kerana uzur tidak mengurangkan pahala; solat fardu sambil duduk sedangkan mampu berdiri tidak sah dan berdosa kerana berdiri ialah rukun.
 - **Rujukan:** Imam an-Nawawi, Syarah Sahih Muslim (seperti dibacakan daripada kitab). Hadis 'Imran bin Husain berkaitan solat duduk — HR al-Bukhari (no. 1115–1117) [semak].
 - **Timeline suntingan:**
-  - `00:00` Hook — tajuk besar + close-up penceramah, subtitle bermula
-  - `00:05` Tajuk mampat di atas; lower-third kitab (5.6–11 s)
+  - `00:00` Cover — poster tajuk (bingkai pertama = thumbnail), subtitle bermula
+  - `00:03` Cover terangkat → close-up; tajuk mampat di atas; lower-third (5.6–11 s)
   - `00:26` Kad 'SOLAT SUNAT' (shot sederhana)
   - `00:36` Kad 'KERANA UZUR' (shot sederhana)
   - `01:16` Kad 'SOLAT FARDU' (shot sederhana)
@@ -103,8 +103,8 @@ Solat duduk — bila dapat pahala penuh, bila separuh, dan bila langsung tidak s
 - **Pengajaran utama:** Apabila seseorang sakit atau bermusafir, Allah tetap mencatat pahala amalan yang biasa dilakukannya ketika sihat dan bermukim — maka istiqamahlah beramal ketika mampu.
 - **Rujukan:** HR al-Bukhari, no. 2996 [semak].
 - **Timeline suntingan:**
-  - `00:00` Hook — tajuk besar + close-up penceramah, subtitle bermula
-  - `00:05` Tajuk mampat di atas; lower-third kitab (5.6–11 s)
+  - `00:00` Cover — poster tajuk (bingkai pertama = thumbnail), subtitle bermula
+  - `00:03` Cover terangkat → close-up; tajuk mampat di atas; lower-third (5.6–11 s)
   - `00:06` Kad teks Arab — HR AL-BUKHARI (shot lebar, wajah di bawah kad)
   - `00:16` Kad 'POIN 1' (shot sederhana)
   - `00:29` Kad 'CONTOH' (shot sederhana)
@@ -137,8 +137,8 @@ Biasa solat dhuha setiap pagi, tiba-tiba sakit atau musafir sampai tertinggal? R
 - **Pengajaran utama:** Orang yang benar-benar berniat melakukan kebaikan yang wajib tetapi terhalang oleh sakit atau uzur tetap berkongsi pahala dengan mereka yang melakukannya.
 - **Rujukan:** HR Muslim, no. 1911 [semak]. Nama sahabat buta (Abdullah Ibnu Ummi Maktum) perlu disemak dengan audio.
 - **Timeline suntingan:**
-  - `00:00` Hook — tajuk besar + close-up penceramah, subtitle bermula
-  - `00:05` Tajuk mampat di atas; lower-third kitab (5.6–11 s)
+  - `00:00` Cover — poster tajuk (bingkai pertama = thumbnail), subtitle bermula
+  - `00:03` Cover terangkat → close-up; tajuk mampat di atas; lower-third (5.6–11 s)
   - `00:06` Kad teks Arab — HR MUSLIM (shot lebar, wajah di bawah kad)
   - `00:50` Kad 'BERKONGSI PAHALA' (shot sederhana)
   - `01:17` Kad 'SEBABNYA' (shot sederhana)
@@ -171,8 +171,8 @@ Rasulullah ﷺ bersabda tentang sahabat di Madinah yang tidak ikut berjihad kera
 - **Pengajaran utama:** Nabi ﷺ mengajar doa berlindung daripada al-hamm (susah hati) dan al-hazan (dukacita); apabila sesuatu di luar kawalan kita, tempat bergantung hanyalah Allah.
 - **Rujukan:** HR al-Bukhari, no. 6369 [semak].
 - **Timeline suntingan:**
-  - `00:00` Hook — tajuk besar + close-up penceramah, subtitle bermula
-  - `00:05` Tajuk mampat di atas; lower-third kitab (5.6–11 s)
+  - `00:00` Cover — poster tajuk (bingkai pertama = thumbnail), subtitle bermula
+  - `00:03` Cover terangkat → close-up; tajuk mampat di atas; lower-third (5.6–11 s)
   - `00:06` Kad teks Arab — HR AL-BUKHARI (shot lebar, wajah di bawah kad)
   - `00:27` Kad 'AL-HAZAN' (shot sederhana)
   - `00:37` Kad 'AL-HAMM' (shot sederhana)
@@ -204,8 +204,8 @@ Ada perkara yang memang di luar kawalan kita — kehilangan, musibah, kerugian. 
 - **Pengajaran utama:** Makmum yang sempat rukuk bersama imam mendapat rakaat itu dan Fatihahnya ditanggung imam; jika imam sudah bangun daripada rukuk, rakaat itu tidak dikira. Wajib takbiratul ihram terlebih dahulu sebelum takbir untuk rukuk.
 - **Rujukan:** Huraian penceramah dalam sesi soal jawab (tiada teks hadis dipaparkan).
 - **Timeline suntingan:**
-  - `00:00` Hook — tajuk besar + close-up penceramah, subtitle bermula
-  - `00:05` Tajuk mampat di atas; lower-third kitab (5.6–11 s)
+  - `00:00` Cover — poster tajuk (bingkai pertama = thumbnail), subtitle bermula
+  - `00:03` Cover terangkat → close-up; tajuk mampat di atas; lower-third (5.6–11 s)
   - `00:18` Kad 'SEMPAT RUKUK' (shot sederhana)
   - `00:29` Kad 'TERLEPAS RUKUK' (shot sederhana)
   - `01:14` Kad 'JANGAN TERSILAP' (shot sederhana)
@@ -238,8 +238,8 @@ Datang lewat ke saf dan imam sedang rukuk — dapat rakaat atau tidak? Dan kesil
 - **Pengajaran utama:** Sunnah menutup mulut dengan tangan (atau apa sahaja seperti sapu tangan) ketika menguap, kerana Nabi ﷺ menyebut syaitan boleh masuk ketika mulut terbuka.
 - **Rujukan:** HR Muslim, no. 2995 [semak]; 'Syaitan mengalir dalam diri manusia mengikut aliran darah' — HR al-Bukhari no. 2038 & Muslim no. 2175 [semak].
 - **Timeline suntingan:**
-  - `00:00` Hook — tajuk besar + close-up penceramah, subtitle bermula
-  - `00:05` Tajuk mampat di atas; lower-third kitab (5.6–11 s)
+  - `00:00` Cover — poster tajuk (bingkai pertama = thumbnail), subtitle bermula
+  - `00:03` Cover terangkat → close-up; tajuk mampat di atas; lower-third (5.6–11 s)
   - `00:06` Kad teks Arab — HR MUSLIM (shot lebar, wajah di bawah kad)
   - `00:23` Kad 'ADABNYA' (shot sederhana)
   - `01:05` Kad 'KATA ULAMA' (shot sederhana)
@@ -273,8 +273,8 @@ Kenapa Rasulullah ﷺ suruh tutup mulut ketika menguap? Dengar huraiannya — de
 - **Pengajaran utama:** Nabi ﷺ menyuruh orang yang menguap menahannya sedaya mampu (fal-yakzim) — perkataan yang sama dengan 'al-kazimin al-ghaiz' (orang yang menahan marah); antara caranya menahan mulut daripada terbuka.
 - **Rujukan:** HR at-Tirmizi, no. 370 [semak]; Surah Ali 'Imran 3:134.
 - **Timeline suntingan:**
-  - `00:00` Hook — tajuk besar + close-up penceramah, subtitle bermula
-  - `00:05` Tajuk mampat di atas; lower-third kitab (5.6–11 s)
+  - `00:00` Cover — poster tajuk (bingkai pertama = thumbnail), subtitle bermula
+  - `00:03` Cover terangkat → close-up; tajuk mampat di atas; lower-third (5.6–11 s)
   - `00:10` Kad teks Arab — HR AT-TIRMIZI (shot lebar, wajah di bawah kad)
   - `00:35` Kad teks Arab — SURAH ALI 'IMRAN: 134 (shot lebar, wajah di bawah kad)
   - `01:09` Kad 'KAZAMA = TAHAN' (shot sederhana)
@@ -306,8 +306,8 @@ Menguap ketika solat — Nabi ﷺ ajar 'fal-yakzim mastata'a': tahan sedaya yang
 - **Pengajaran utama:** Berdehem untuk melancarkan bacaan wajib seperti al-Fatihah dibolehkan kerana hajat; berdehem tanpa hajat hingga terbit dua huruf, atau satu huruf yang memberi makna, membatalkan solat.
 - **Rujukan:** Huraian fiqh mazhab Syafi'i oleh penceramah (tiada teks hadis dipaparkan).
 - **Timeline suntingan:**
-  - `00:00` Hook — tajuk besar + close-up penceramah, subtitle bermula
-  - `00:05` Tajuk mampat di atas; lower-third kitab (5.6–11 s)
+  - `00:00` Cover — poster tajuk (bingkai pertama = thumbnail), subtitle bermula
+  - `00:03` Cover terangkat → close-up; tajuk mampat di atas; lower-third (5.6–11 s)
   - `00:17` Kad 'ADA HAJAT' (shot sederhana)
   - `01:02` Kad 'TANPA HAJAT' (shot sederhana)
   - `01:25` Kad 'SATU HURUF' (shot sederhana)
@@ -339,8 +339,8 @@ Tekak tersekat masa baca Fatihah, boleh ke berdehem? Huraian mazhab Syafi'i — 
 - **Pengajaran utama:** Zikrullah, khususnya membaca basmalah ketika makan dan masuk bilik air, ialah penghadang daripada gangguan dan pandangan syaitan yang melihat kita dari arah yang kita tidak nampak.
 - **Rujukan:** Surah al-A'raf 7:27; hadis basmalah ketika masuk tandas — HR at-Tirmizi, no. 606 [semak].
 - **Timeline suntingan:**
-  - `00:00` Hook — tajuk besar + close-up penceramah, subtitle bermula
-  - `00:05` Tajuk mampat di atas; lower-third kitab (5.6–11 s)
+  - `00:00` Cover — poster tajuk (bingkai pertama = thumbnail), subtitle bermula
+  - `00:03` Cover terangkat → close-up; tajuk mampat di atas; lower-third (5.6–11 s)
   - `00:09` Kad 'PENGHALANGNYA' (shot sederhana)
   - `00:27` Kad teks Arab — HR AT-TIRMIZI (shot lebar, wajah di bawah kad)
   - `00:43` Kad teks Arab — SURAH AL-A'RAF: 27 (shot lebar, wajah di bawah kad)
@@ -373,8 +373,8 @@ Makan, mandi, masuk bilik air — Nabi ﷺ ajar mulakan dengan Bismillah. Syaita
 - **Pengajaran utama:** Menguap datang daripada syaitan; tahanlah sedaya mampu, letakkan tangan pada mulut dan jangan bersuara 'haa' atau melolong kerana syaitan mentertawakannya.
 - **Rujukan:** HR al-Bukhari, no. 3289 [semak]; HR Ibnu Majah, no. 968 [semak].
 - **Timeline suntingan:**
-  - `00:00` Hook — tajuk besar + close-up penceramah, subtitle bermula
-  - `00:05` Tajuk mampat di atas; lower-third kitab (5.6–11 s)
+  - `00:00` Cover — poster tajuk (bingkai pertama = thumbnail), subtitle bermula
+  - `00:03` Cover terangkat → close-up; tajuk mampat di atas; lower-third (5.6–11 s)
   - `00:06` Kad teks Arab — HR AL-BUKHARI (shot lebar, wajah di bawah kad)
   - `00:34` Kad 'KENAPA DITAHAN?' (shot sederhana)
   - `00:59` Kad teks Arab — HR IBNU MAJAH (shot lebar, wajah di bawah kad)
@@ -407,8 +407,8 @@ Menguap kuat-kuat sampai berbunyi 'haaa'? Rasulullah ﷺ menyebut syaitan ketawa
 - **Pengajaran utama:** Menguap dalam solat hukumnya makruh berdasarkan hadis riwayat at-Tirmizi; sesuatu yang disandarkan kepada syaitan menunjukkan larangan, manakala tahap haram atau makruh ditentukan oleh dalil lain.
 - **Rujukan:** HR at-Tirmizi, no. 370 [semak].
 - **Timeline suntingan:**
-  - `00:00` Hook — tajuk besar + close-up penceramah, subtitle bermula
-  - `00:05` Tajuk mampat di atas; lower-third kitab (5.6–11 s)
+  - `00:00` Cover — poster tajuk (bingkai pertama = thumbnail), subtitle bermula
+  - `00:03` Cover terangkat → close-up; tajuk mampat di atas; lower-third (5.6–11 s)
   - `00:06` Kad 'KARAHIYAH' (shot sederhana)
   - `00:49` Kad 'DALILNYA' (shot sederhana)
   - `01:10` Kad teks Arab — HR AT-TIRMIZI (shot lebar, wajah di bawah kad)
@@ -440,8 +440,8 @@ Menguap dalam solat — haram atau makruh? Belajar cara ulama membaca dalil: per
 - **Pengajaran utama:** Disebut dalam hadis mursal (Tarikh al-Bukhari) bahawa Nabi ﷺ tidak pernah menguap, dan dalam hadis sahih bahawa mata baginda tidur tetapi hatinya tidak — tanda Allah memelihara baginda daripada ruang syaitan.
 - **Rujukan:** Riwayat mursal dalam at-Tarikh al-Kabir oleh al-Bukhari (status mursal disebut penceramah) [semak]; 'tanamu 'ainahu wa la yanamu qalbuh' — HR al-Bukhari, no. 3569 [semak].
 - **Timeline suntingan:**
-  - `00:00` Hook — tajuk besar + close-up penceramah, subtitle bermula
-  - `00:05` Tajuk mampat di atas; lower-third kitab (5.6–11 s)
+  - `00:00` Cover — poster tajuk (bingkai pertama = thumbnail), subtitle bermula
+  - `00:03` Cover terangkat → close-up; tajuk mampat di atas; lower-third (5.6–11 s)
   - `00:19` Kad 'HADIS MURSAL • TARIKH AL-BUKHARI' (shot sederhana)
   - `00:47` Kad teks Arab — HR AL-BUKHARI (shot lebar, wajah di bawah kad)
   - `01:18` Kad 'PENGAJARAN' (shot sederhana)

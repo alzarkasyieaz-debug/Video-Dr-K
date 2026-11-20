@@ -1,0 +1,65 @@
+{
+ "speaker": "Kuliah Maghrib Jumaat",
+ "speaker_role": "Ensiklopedia Hadis Nilai • YADIM & DBP",
+ "series": "KULIAH HADIS NILAI",
+ "cover_kicker": "ENSIKLOPEDIA HADIS NILAI",
+ "cover_sub": "Mawsu'ah Ahadith al-Qiyam • Syeikh Dr. Hammam Sa'id",
+ "max_zoom": 1.36,
+ "id": "2_01",
+ "slug": "APA_ITU_NILAI_KAYU_UKUR",
+ "category": "NILAI ISLAM",
+ "face": [
+  481,
+  932
+ ],
+ "title_lines": [
+  [
+   {
+    "t": "APA ITU"
+   },
+   {
+    "t": "NILAI?",
+    "gold": true
+   }
+  ],
+  [
+   {
+    "t": "SEMUANYA ADA"
+   }
+  ],
+  [
+   {
+    "t": "KAYU UKUR",
+    "gold": true
+   }
+  ]
+ ],
+ "header_html": "APA ITU NILAI? SEMUANYA ADA <span class=\"g\">KAYU UKUR</span>",
+ "window": 460,
+ "start": 470.1,
+ "end": 583.0,
+ "points": [
+  {
+   "label": "DEFINISI",
+   "text": "Nilai ialah kayu ukur — dengan kadarnya yang tersendiri",
+   "at": 10.4,
+   "dur": 12.4
+  },
+  {
+   "label": "CONTOH",
+   "text": "Telefon pintar: fungsi sama, nilai berbeza — RM500 hingga RM10,000",
+   "at": 76.0,
+   "dur": 13.5
+  }
+ ],
+ "keywords": [
+  "nilai",
+  "kayu",
+  "ukur",
+  "kadar",
+  "handphone",
+  "harga"
+ ],
+ "text": "Nilai ni apa dia? Nilai ni pertama sekali, nilai ni satu kayu ukur. Satu kayu ukur. Kalau kita nak nilai barang, kita perlu satu kayu ukur dia. Nak nilai barang ni bagus ke tak bagus? Mesti ada kayu ukur dia. Ikan bagus macam ni, tak bagus macam ni. Ikan tak bagus, mata merah. Contoh. Mesti ada kayu ukur. Bangunan yang bagus sekian, hal tak bagus sekian. Mesti ada kayu ukur. Dan bila ada kayu ukur, dia kena ada kadar. Setiap benda ada kadar dia. Maka bila ada kayu ukur, ada kadar dia, itu namanya nilai. Kita nak buat nilai pada handphone di tangan kita. Nak beza dengan handphone yang satu lagi. Ini jenama apa? Ini jenama apa? Mesti ada kayu ukur. Kenapa jenama ni diterima, yang ni kurang diterima? Kenapa orang beli hal ni, tak beli hal ni? Kenapa hal ni harga sekian, hal ni harga sekian? Tentunya berbeza. Hal ni harga RM500, hal ni harga RM8000. Padahal semua handphone belaka, kita nak telefon, nak buka, tengok WhatsApp, tengok Facebook, tengok internet. Semua handphone macam tu belaka. Handphone smartphone dia panggil. Tetapi nilai yang ada pada setiap handphone berbeza. Kayu ukur untuk baik atau tak baik, hal ni berapa dia punya kapasiti, hal ni berapa punya kapasiti, kelajuan yang macam mana. Ini semua akan menentukan nilai yang namanya handphone. Yang orang sanggup beli harga RM8000, harga RM10,000.",
+ "whisper": "clips/whisper/w2_01.json"
+}

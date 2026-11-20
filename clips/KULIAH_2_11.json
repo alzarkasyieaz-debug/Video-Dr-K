@@ -1,0 +1,98 @@
+{
+ "speaker": "Kuliah Maghrib Jumaat",
+ "speaker_role": "Ensiklopedia Hadis Nilai • YADIM & DBP",
+ "series": "KULIAH HADIS NILAI",
+ "cover_kicker": "ENSIKLOPEDIA HADIS NILAI",
+ "cover_sub": "Mawsu'ah Ahadith al-Qiyam • Syeikh Dr. Hammam Sa'id",
+ "max_zoom": 1.36,
+ "id": "2_11",
+ "slug": "KIAMAT_PUN_TETAP_TANAM",
+ "category": "NILAI ALAM SEKITAR",
+ "face": [
+  464,
+  882
+ ],
+ "title_lines": [
+  [
+   {
+    "t": "KIAMAT"
+   },
+   {
+    "t": "PUN,",
+    "gold": true
+   }
+  ],
+  [
+   {
+    "t": "TETAP"
+   },
+   {
+    "t": "TANAM!",
+    "gold": true
+   }
+  ]
+ ],
+ "cover_lines": [
+  [
+   {
+    "t": "KIAMAT PUN,"
+   }
+  ],
+  [
+   {
+    "t": "TETAP"
+   }
+  ],
+  [
+   {
+    "t": "TANAM!",
+    "gold": true
+   }
+  ]
+ ],
+ "header_html": "KIAMAT PUN, <span class=\"g\">TETAP TANAM!</span>",
+ "window": 2850,
+ "start": 2861.3,
+ "end": 2980.0,
+ "arabic": [
+  {
+   "ar": "إِنْ قَامَتِ السَّاعَةُ وَفِي يَدِ أَحَدِكُمْ فَسِيلَةٌ، فَإِنِ اسْتَطَاعَ أَنْ لَا تَقُومَ حَتَّى يَغْرِسَهَا فَلْيَغْرِسْهَا",
+   "ms": "Jika kiamat berlaku sedang di tangan salah seorang daripada kamu ada anak pokok, jika dia mampu menanamnya sebelum kiamat berlaku, maka tanamlah.",
+   "ref": "HR AHMAD",
+   "at": 5.8,
+   "dur": 17.0
+  },
+  {
+   "ar": "يَوْمَ يَفِرُّ الْمَرْءُ مِنْ أَخِيهِ، وَأُمِّهِ وَأَبِيهِ، وَصَاحِبَتِهِ وَبَنِيهِ",
+   "ms": "Pada hari seseorang lari daripada saudaranya, ibunya dan bapanya, isterinya dan anak-anaknya.",
+   "ref": "SURAH 'ABASA: 34–36",
+   "at": 48.6,
+   "dur": 16.0
+  }
+ ],
+ "points": [
+  {
+   "label": "MUBALAGHAH",
+   "text": "Hadis ini bukan bermaksud ia akan berlaku — ia penegasan kesungguhan",
+   "at": 95.0,
+   "dur": 11.0
+  },
+  {
+   "label": "PENGAJARAN",
+   "text": "Kalau ketika kiamat pun disuruh menanam, apatah lagi hari ini",
+   "at": 107.0,
+   "dur": 11.5
+  }
+ ],
+ "keywords": [
+  "kiamat",
+  "tanam",
+  "benih",
+  "fasilah",
+  "lari",
+  "anak",
+  "bini"
+ ],
+ "text": "In qamatis sa'ah, apabila berlaku kiamat. In qamat 'ala ahadikumul qiyamah, sekiranya berlaku pada seseorang kamu kiamat. Wa fi yadihi fasilah, sedangkan di tangannya ada benih. Fasilah ni macam pokok benih, anak pokok. Falyaghrisha, tanam. Sekiranya berlaku kiamat. Bila kiamat berlaku, sempat lagi nak menanam ke? Tak dah, dan menanam. Kiamat. Kita berlaku goncangan, gempa bumi, bertempiaran lari. Tinggal semua benda. Ini kiamat yang Allah telah sebut, yauma yafirrul mar'u min akhihi, wa ummihi wa abihi, wa sahibatihi wa banih. Pada hari di mana seseorang itu akan lari daripada saudara dia, ibu dia, ayah dia, isteri dia, dan anak-anak dia. Bila kita ambil keadaan kat situ, yang paling disayang anak. Maka Allah sebut hak hujung sekali, hak dia sayang sekali, anak, tinggal juga. Lepas pada anak dia sayang bini, bini pun dia tinggal juga. Lepas sayang bini, dia sayang ayah, ayah dia pun dia tinggal juga. Lepas ayah dia, adik-beradik dia pun dia tinggal belakang. Bila kiamat, dan kalau itu keadaan semua bakal lari belakang, tak akan sempat nak pergi menanam, tak sempat dah. Tapi Islam mengajar, kalau dikira ada benih, tanam. Hadis yang Nabi sebut, tidak menunjukkan yang akan berlaku, tapi mubalaghah, satu kesungguhan. Nak beritahu, kalau kiamat pun Nabi suruh tanam, hak tak kiamat apatah lagi?",
+ "whisper": "clips/whisper/w2_11.json"
+}

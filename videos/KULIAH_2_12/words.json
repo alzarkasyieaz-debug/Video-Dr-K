@@ -1,0 +1,937 @@
+[
+{
+"text": "Dan",
+"start": 0.07,
+"end": 0.43
+},
+{
+"text": "menanam",
+"start": 0.43,
+"end": 1.27
+},
+{
+"text": "ketika",
+"start": 1.27,
+"end": 1.99
+},
+{
+"text": "kiamat,",
+"start": 1.99,
+"end": 2.95
+},
+{
+"text": "hasilnya",
+"start": 2.95,
+"end": 3.91
+},
+{
+"text": "bila?",
+"start": 3.91,
+"end": 4.79
+},
+{
+"text": "Tak",
+"start": 4.79,
+"end": 5.5
+},
+{
+"text": "ada",
+"start": 5.5,
+"end": 5.75
+},
+{
+"text": "hasil",
+"start": 5.75,
+"end": 6.55
+},
+{
+"text": "dah,",
+"start": 6.55,
+"end": 7.39
+},
+{
+"text": "tak",
+"start": 7.39,
+"end": 7.87
+},
+{
+"text": "sempat",
+"start": 7.87,
+"end": 8.17
+},
+{
+"text": "hasil",
+"start": 8.17,
+"end": 8.43
+},
+{
+"text": "dah.",
+"start": 8.43,
+"end": 8.65
+},
+{
+"text": "Lalu",
+"start": 8.65,
+"end": 9.05
+},
+{
+"text": "ulama",
+"start": 9.05,
+"end": 9.55
+},
+{
+"text": "mengambil",
+"start": 9.55,
+"end": 10.45
+},
+{
+"text": "faedah",
+"start": 10.45,
+"end": 11.05
+},
+{
+"text": "dekat",
+"start": 11.05,
+"end": 11.56
+},
+{
+"text": "situ,",
+"start": 11.56,
+"end": 12.15
+},
+{
+"text": "dia",
+"start": 12.15,
+"end": 12.45
+},
+{
+"text": "kata",
+"start": 12.45,
+"end": 12.85
+},
+{
+"text": "satu",
+"start": 12.85,
+"end": 13.31
+},
+{
+"text": "benda",
+"start": 13.31,
+"end": 14.08
+},
+{
+"text": "yang",
+"start": 14.08,
+"end": 14.335
+},
+{
+"text": "kita",
+"start": 14.335,
+"end": 14.59
+},
+{
+"text": "tanam,",
+"start": 14.59,
+"end": 15.09
+},
+{
+"text": "mungkin",
+"start": 15.09,
+"end": 15.61
+},
+{
+"text": "pada",
+"start": 15.61,
+"end": 15.91
+},
+{
+"text": "kita",
+"start": 15.91,
+"end": 16.21
+},
+{
+"text": "tak",
+"start": 16.21,
+"end": 16.36
+},
+{
+"text": "ada",
+"start": 16.21,
+"end": 16.43
+},
+{
+"text": "manfaat",
+"start": 16.43,
+"end": 16.95
+},
+{
+"text": "tapi",
+"start": 16.95,
+"end": 17.47
+},
+{
+"text": "ada",
+"start": 17.47,
+"end": 17.629
+},
+{
+"text": "manfaat",
+"start": 17.629,
+"end": 18.0
+},
+{
+"text": "yang",
+"start": 18.0,
+"end": 18.33
+},
+{
+"text": "lain.",
+"start": 18.33,
+"end": 19.05
+},
+{
+"text": "Sekurang-kurangnya",
+"start": 19.05,
+"end": 20.25
+},
+{
+"text": "pohon",
+"start": 21.11,
+"end": 22.31
+},
+{
+"text": "yang",
+"start": 22.31,
+"end": 22.55
+},
+{
+"text": "ditanam",
+"start": 22.55,
+"end": 23.29
+},
+{
+"text": "menghijaukan",
+"start": 23.29,
+"end": 24.49
+},
+{
+"text": "bumi,",
+"start": 24.88,
+"end": 25.19
+},
+{
+"text": "membekalkan",
+"start": 25.19,
+"end": 26.36
+},
+{
+"text": "oksigen.",
+"start": 26.36,
+"end": 27.56
+},
+{
+"text": "Kalau",
+"start": 27.98,
+"end": 28.19
+},
+{
+"text": "pokok",
+"start": 28.19,
+"end": 28.76
+},
+{
+"text": "itu",
+"start": 28.76,
+"end": 29.15
+},
+{
+"text": "ada",
+"start": 29.15,
+"end": 29.48
+},
+{
+"text": "buah,",
+"start": 29.48,
+"end": 29.75
+},
+{
+"text": "manusia",
+"start": 29.75,
+"end": 30.31
+},
+{
+"text": "tak",
+"start": 30.31,
+"end": 30.55
+},
+{
+"text": "makan,",
+"start": 30.55,
+"end": 31.11
+},
+{
+"text": "dimakan",
+"start": 31.11,
+"end": 31.67
+},
+{
+"text": "oleh",
+"start": 31.67,
+"end": 32.14
+},
+{
+"text": "burung.",
+"start": 32.14,
+"end": 32.75
+},
+{
+"text": "Kalau",
+"start": 32.75,
+"end": 33.5
+},
+{
+"text": "burung,",
+"start": 33.5,
+"end": 34.7
+},
+{
+"text": "ada",
+"start": 34.7,
+"end": 35.18
+},
+{
+"text": "pokok",
+"start": 35.18,
+"end": 35.71
+},
+{
+"text": "yang",
+"start": 35.71,
+"end": 35.87
+},
+{
+"text": "barangkali",
+"start": 35.87,
+"end": 36.44
+},
+{
+"text": "bukan",
+"start": 36.44,
+"end": 36.724
+},
+{
+"text": "buahnya,",
+"start": 36.724,
+"end": 37.18
+},
+{
+"text": "binatang",
+"start": 37.18,
+"end": 37.58
+},
+{
+"text": "boleh",
+"start": 37.58,
+"end": 37.84
+},
+{
+"text": "tumpang",
+"start": 37.84,
+"end": 38.27
+},
+{
+"text": "sekali.",
+"start": 38.27,
+"end": 38.75
+},
+{
+"text": "Kalau",
+"start": 38.75,
+"end": 39.63
+},
+{
+"text": "ada",
+"start": 39.63,
+"end": 39.83
+},
+{
+"text": "buah",
+"start": 39.83,
+"end": 40.07
+},
+{
+"text": "yang",
+"start": 40.07,
+"end": 40.39
+},
+{
+"text": "binatang",
+"start": 40.76,
+"end": 41.13
+},
+{
+"text": "boleh",
+"start": 41.13,
+"end": 41.37
+},
+{
+"text": "tumpang,",
+"start": 41.37,
+"end": 41.78
+},
+{
+"text": "manusia",
+"start": 41.78,
+"end": 42.11
+},
+{
+"text": "boleh",
+"start": 42.11,
+"end": 42.35
+},
+{
+"text": "makan,",
+"start": 42.35,
+"end": 42.79
+},
+{
+"text": "dia",
+"start": 42.79,
+"end": 43.22
+},
+{
+"text": "curi",
+"start": 43.22,
+"end": 43.79
+},
+{
+"text": "pun",
+"start": 43.79,
+"end": 44.23
+},
+{
+"text": "dapat",
+"start": 44.23,
+"end": 44.55
+},
+{
+"text": "pahala",
+"start": 44.55,
+"end": 44.75
+},
+{
+"text": "daripada",
+"start": 44.75,
+"end": 45.81
+},
+{
+"text": "kita.",
+"start": 45.81,
+"end": 46.74
+},
+{
+"text": "Nabi",
+"start": 46.74,
+"end": 47.27
+},
+{
+"text": "sebut",
+"start": 47.27,
+"end": 47.843
+},
+{
+"text": "dalam",
+"start": 47.843,
+"end": 48.417
+},
+{
+"text": "hadis",
+"start": 48.417,
+"end": 48.99
+},
+{
+"text": "lain,",
+"start": 48.99,
+"end": 49.77
+},
+{
+"text": "Nabi",
+"start": 49.77,
+"end": 50.39
+},
+{
+"text": "kata,",
+"start": 50.39,
+"end": 51.1
+},
+{
+"text": "ma",
+"start": 51.1,
+"end": 51.36
+},
+{
+"text": "min",
+"start": 51.36,
+"end": 51.75
+},
+{
+"text": "muslimin",
+"start": 51.75,
+"end": 52.79
+},
+{
+"text": "yaghrisu",
+"start": 52.79,
+"end": 53.83
+},
+{
+"text": "gharsan,",
+"start": 53.83,
+"end": 54.87
+},
+{
+"text": "mana-mana",
+"start": 54.87,
+"end": 55.84
+},
+{
+"text": "orang",
+"start": 55.84,
+"end": 56.43
+},
+{
+"text": "Islam",
+"start": 56.43,
+"end": 57.08
+},
+{
+"text": "yang",
+"start": 57.08,
+"end": 57.5
+},
+{
+"text": "menanam",
+"start": 57.5,
+"end": 58.24
+},
+{
+"text": "satu",
+"start": 58.24,
+"end": 58.66
+},
+{
+"text": "pokok,",
+"start": 58.66,
+"end": 59.44
+},
+{
+"text": "fa",
+"start": 59.44,
+"end": 59.58
+},
+{
+"text": "ya'kulu",
+"start": 59.58,
+"end": 60.07
+},
+{
+"text": "minhu",
+"start": 60.07,
+"end": 60.55
+},
+{
+"text": "tairun,",
+"start": 60.55,
+"end": 61.51
+},
+{
+"text": "lalu",
+"start": 61.51,
+"end": 61.93
+},
+{
+"text": "dimakan",
+"start": 61.93,
+"end": 62.94
+},
+{
+"text": "oleh",
+"start": 62.94,
+"end": 63.11
+},
+{
+"text": "burung,",
+"start": 63.11,
+"end": 63.96
+},
+{
+"text": "aw",
+"start": 63.96,
+"end": 64.27
+},
+{
+"text": "insanun,",
+"start": 64.27,
+"end": 65.11
+},
+{
+"text": "atau",
+"start": 65.11,
+"end": 65.98
+},
+{
+"text": "manusia,",
+"start": 65.98,
+"end": 66.31
+},
+{
+"text": "aw",
+"start": 66.31,
+"end": 66.76
+},
+{
+"text": "bahimatun,",
+"start": 66.76,
+"end": 67.55
+},
+{
+"text": "atau",
+"start": 67.55,
+"end": 67.95
+},
+{
+"text": "binatang,",
+"start": 67.95,
+"end": 68.91
+},
+{
+"text": "illa",
+"start": 68.91,
+"end": 69.393
+},
+{
+"text": "kana",
+"start": 69.393,
+"end": 69.877
+},
+{
+"text": "lahu",
+"start": 69.877,
+"end": 70.36
+},
+{
+"text": "bihi",
+"start": 70.36,
+"end": 70.75
+},
+{
+"text": "sadaqah,",
+"start": 70.75,
+"end": 71.51
+},
+{
+"text": "melainkan",
+"start": 71.51,
+"end": 72.31
+},
+{
+"text": "baginya",
+"start": 72.31,
+"end": 72.97
+},
+{
+"text": "sedekah.",
+"start": 72.97,
+"end": 73.93
+},
+{
+"text": "Ada",
+"start": 73.93,
+"end": 74.28
+},
+{
+"text": "hadis",
+"start": 74.28,
+"end": 74.79
+},
+{
+"text": "yang",
+"start": 74.79,
+"end": 75.17
+},
+{
+"text": "lain",
+"start": 75.17,
+"end": 75.55
+},
+{
+"text": "lagi,",
+"start": 75.55,
+"end": 75.89
+},
+{
+"text": "wa",
+"start": 75.89,
+"end": 76.05
+},
+{
+"text": "ma",
+"start": 76.05,
+"end": 76.16
+},
+{
+"text": "suriqa",
+"start": 76.16,
+"end": 76.488
+},
+{
+"text": "minhu",
+"start": 76.488,
+"end": 76.761
+},
+{
+"text": "lahu",
+"start": 76.761,
+"end": 76.98
+},
+{
+"text": "sadaqah,",
+"start": 76.98,
+"end": 77.59
+},
+{
+"text": "yang",
+"start": 77.59,
+"end": 77.81
+},
+{
+"text": "kena",
+"start": 77.81,
+"end": 78.02
+},
+{
+"text": "curi",
+"start": 78.02,
+"end": 78.27
+},
+{
+"text": "pun.",
+"start": 78.27,
+"end": 79.47
+},
+{
+"text": "Tanam",
+"start": 80.27,
+"end": 80.887
+},
+{
+"text": "mangga,",
+"start": 80.887,
+"end": 81.75
+},
+{
+"text": "tak",
+"start": 81.75,
+"end": 82.11
+},
+{
+"text": "rasa",
+"start": 82.11,
+"end": 82.53
+},
+{
+"text": "nak",
+"start": 82.53,
+"end": 82.84
+},
+{
+"text": "makan.",
+"start": 82.84,
+"end": 83.68
+},
+{
+"text": "Orang",
+"start": 83.68,
+"end": 84.5
+},
+{
+"text": "curi.",
+"start": 84.5,
+"end": 84.82
+},
+{
+"text": "Dia",
+"start": 92.79,
+"end": 93.32
+},
+{
+"text": "curi,",
+"start": 93.32,
+"end": 94.31
+},
+{
+"text": "pahala",
+"start": 94.31,
+"end": 94.6
+},
+{
+"text": "pula",
+"start": 94.6,
+"end": 94.87
+},
+{
+"text": "ke",
+"start": 94.87,
+"end": 95.06
+},
+{
+"text": "dia.",
+"start": 95.06,
+"end": 95.67
+},
+{
+"text": "Maksudnya",
+"start": 95.67,
+"end": 96.53
+},
+{
+"text": "apa?",
+"start": 96.53,
+"end": 97.11
+},
+{
+"text": "Setiap",
+"start": 97.11,
+"end": 97.68
+},
+{
+"text": "benda",
+"start": 97.68,
+"end": 98.15
+},
+{
+"text": "yang",
+"start": 98.15,
+"end": 98.53
+},
+{
+"text": "ditanam",
+"start": 98.53,
+"end": 99.2
+},
+{
+"text": "pasti",
+"start": 99.2,
+"end": 99.68
+},
+{
+"text": "memberi",
+"start": 99.68,
+"end": 100.43
+},
+{
+"text": "manfaat.",
+"start": 100.43,
+"end": 101.1
+},
+{
+"text": "Maka",
+"start": 101.1,
+"end": 101.43
+},
+{
+"text": "Islam",
+"start": 101.43,
+"end": 101.79
+},
+{
+"text": "mengajar,",
+"start": 101.79,
+"end": 102.23
+},
+{
+"text": "buatlah",
+"start": 102.23,
+"end": 102.78
+},
+{
+"text": "sesuatu,",
+"start": 102.78,
+"end": 103.55
+},
+{
+"text": "walaupun",
+"start": 103.55,
+"end": 104.17
+},
+{
+"text": "pada",
+"start": 104.17,
+"end": 104.63
+},
+{
+"text": "mata",
+"start": 104.63,
+"end": 104.81
+},
+{
+"text": "kita",
+"start": 104.81,
+"end": 105.14
+},
+{
+"text": "mungkin",
+"start": 105.14,
+"end": 105.48
+},
+{
+"text": "tak",
+"start": 105.48,
+"end": 105.68
+},
+{
+"text": "ada",
+"start": 105.68,
+"end": 105.93
+},
+{
+"text": "manfaat,",
+"start": 105.93,
+"end": 106.61
+},
+{
+"text": "tapi",
+"start": 106.61,
+"end": 106.75
+},
+{
+"text": "sebenarnya",
+"start": 106.75,
+"end": 107.11
+},
+{
+"text": "ada",
+"start": 107.11,
+"end": 107.43
+},
+{
+"text": "manfaat",
+"start": 107.43,
+"end": 108.2
+},
+{
+"text": "pada",
+"start": 108.2,
+"end": 108.65
+},
+{
+"text": "orang",
+"start": 108.65,
+"end": 109.21
+},
+{
+"text": "lain.",
+"start": 109.21,
+"end": 109.75
+}
+]

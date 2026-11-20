@@ -1,0 +1,72 @@
+{
+ "speaker": "Kuliah Maghrib Jumaat",
+ "speaker_role": "Ensiklopedia Hadis Nilai • YADIM & DBP",
+ "series": "KULIAH HADIS NILAI",
+ "cover_kicker": "ENSIKLOPEDIA HADIS NILAI",
+ "cover_sub": "Mawsu'ah Ahadith al-Qiyam • Syeikh Dr. Hammam Sa'id",
+ "max_zoom": 1.36,
+ "id": "2_06",
+ "slug": "TANPA_PENIAGA_BERAS_TAK_SAMPAI",
+ "category": "NILAI PERNIAGAAN",
+ "face": [
+  471,
+  900
+ ],
+ "title_lines": [
+  [
+   {
+    "t": "TANPA"
+   },
+   {
+    "t": "PENIAGA,",
+    "gold": true
+   }
+  ],
+  [
+   {
+    "t": "BERAS"
+   }
+  ],
+  [
+   {
+    "t": "TAK SAMPAI!",
+    "gold": true
+   }
+  ]
+ ],
+ "header_html": "TANPA PENIAGA, <span class=\"g\">BERAS TAK SAMPAI!</span>",
+ "window": 1920,
+ "start": 1927.9,
+ "end": 2031.9,
+ "points": [
+  {
+   "label": "NILAI PERNIAGAAN",
+   "text": "Perniagaan ialah anak kunci manusia mendapat keperluan",
+   "at": 10.0,
+   "dur": 14.0
+  },
+  {
+   "label": "ASASNYA",
+   "text": "Pertukaran barang = jual beli — asas perniagaan",
+   "at": 54.0,
+   "dur": 12.0
+  },
+  {
+   "label": "ORANG TENGAH",
+   "text": "Peniaga menghubungkan hulu dengan Seberang Takir",
+   "at": 86.0,
+   "dur": 15.0
+  }
+ ],
+ "keywords": [
+  "perniagaan",
+  "beras",
+  "ikan",
+  "jual",
+  "beli",
+  "tengah",
+  "berniaga"
+ ],
+ "text": "Pengarang masuk dalam tajuk qimatut tijarah, nilai perniagaan. Kita mungkin nampak kecil kepentingan perniagaan, tapi Islam meletakkan perniagaan adalah anak kunci untuk manusia dapat keperluan. Kita ada keperluan untuk makan nasi, kita tidak tanam beras, yang tanam pada orang lain. Kita orang laut. Untuk kita dapat beras, padi dan juga beras, kita kena ada pertukaran yang kita nak bagi kepada orang yang jual, yang punya beras. Yang kita ada adalah ikan, kerana kita orang laut. Ikan kita ditukarkan dengan beras dengan kadar yang tertentu, mungkin ikan sekian banyak, beras sekian banyak. Maka berlakulah pertukaran barang, itu namanya jual beli. Dan jual beli itulah membentuk asas pada perniagaan. Orang yang ambil untung daripada urusan jual beli untuk melunaskan keperluan manusia. Kalau tak ada orang berniaga, beras tak sampai. Beras di hulu, ikannya di bandar, di Seberang Takir. Orang Seberang Takir tak pergi ke hulu nak ambil beras. Orang di hulu tak mari ke Seberang Takir nak jual beras. Ada orang tengah. Orang tengah yang berkayuh sampan pergi ke hulu ambil beras, bawa datang ke orang Seberang Takir. Dia pula ambil ikan Seberang Takir, hantar ke hulu. Dia orang tengah, itulah perniagaan, yang ada orang tengah.",
+ "whisper": "clips/whisper/w2_06.json"
+}

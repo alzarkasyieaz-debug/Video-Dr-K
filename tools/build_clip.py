@@ -75,6 +75,9 @@ STAR = ('<svg viewBox="-50 -50 100 100" width="{s}" height="{s}"><g fill="none" 
 
 
 def build(spec, source, media=True):
+    global FACE_X, FACE_Y
+    if spec.get("face"):  # per-clip face position in 1080x1920 space (camera angle differs per lecture)
+        FACE_X, FACE_Y = spec["face"]
     cid = spec["id"]
     name = f"KULIAH_{cid}"
     out = os.path.join(ROOT, "videos", name)
@@ -128,6 +131,9 @@ def build(spec, source, media=True):
         t = b + 0.2
     if speech_dur > t + 4:
         shots.append((t, 1.42, 790))
+    mz = spec.get("max_zoom")  # cap zoom when the speaker moves a lot (wider framing keeps him in shot)
+    if mz:
+        shots = [(st, min(sc, mz) if sc > 1.25 else sc, fy) for st, sc, fy in shots]
     cam_js = []
     for i, (st, s, fy) in enumerate(shots):
         en = shots[i + 1][0] if i + 1 < len(shots) else D

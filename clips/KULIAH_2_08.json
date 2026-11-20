@@ -1,0 +1,71 @@
+{
+ "speaker": "Kuliah Maghrib Jumaat",
+ "speaker_role": "Ensiklopedia Hadis Nilai • YADIM & DBP",
+ "series": "KULIAH HADIS NILAI",
+ "cover_kicker": "ENSIKLOPEDIA HADIS NILAI",
+ "cover_sub": "Mawsu'ah Ahadith al-Qiyam • Syeikh Dr. Hammam Sa'id",
+ "max_zoom": 1.36,
+ "id": "2_08",
+ "slug": "BERDIKARI_BUKAN_BERGANTUNG",
+ "category": "SIRAH SAHABAT",
+ "face": [
+  451,
+  926
+ ],
+ "title_lines": [
+  [
+   {
+    "t": "BERDIKARI,",
+    "gold": true
+   }
+  ],
+  [
+   {
+    "t": "BUKAN"
+   }
+  ],
+  [
+   {
+    "t": "BERGANTUNG"
+   }
+  ]
+ ],
+ "header_html": "<span class=\"g\">BERDIKARI,</span> BUKAN BERGANTUNG",
+ "window": 2210,
+ "start": 2222.0,
+ "end": 2311.0,
+ "arabic": [
+  {
+   "ar": "فَمَا رَجَعَ حَتَّى اسْتَفْضَلَ أَقِطًا وَسَمْنًا",
+   "ms": "Dia tidak pulang sehinggalah memperoleh lebihan keju dan minyak sapi.",
+   "ref": "HR AL-BUKHARI",
+   "at": 5.8,
+   "dur": 13.0
+  }
+ ],
+ "points": [
+  {
+   "label": "UNTUNG PERTAMA",
+   "text": "Abdurrahman bin Auf terus berniaga — untung keju & minyak sapi",
+   "at": 31.0,
+   "dur": 13.0
+  },
+  {
+   "label": "PENGAJARAN",
+   "text": "Minta bantuan (tunjuk pasar) bukan bergantung — muslim mesti berdikari",
+   "at": 60.0,
+   "dur": 18.0
+  }
+ ],
+ "keywords": [
+  "berdikari",
+  "bergantung",
+  "berniaga",
+  "untung",
+  "keju",
+  "minyak",
+  "pasar"
+ ],
+ "text": "Fa ma raja'a, dia tidak pulang semula ke rumah sahabat Sa'd bin ar-Rabi' tadi, hatta istafdala, hinggalah dia dapat lebihan aqit wa samn. Dia dapat dua barang makanan, satu macam keju, satu macam minyak, minyak sapi. Dia pergi berniaga dan dia dapat untung, dalam hadis disebut fa rabiha, dia untung. Untungnya apa? Untungnya dapat keju dengan minyak sapi. Inilah dua barang keperluan. Ini asas dia. Keju boleh dimakan. Minyak untuk kegunaan masakan dan sebagainya. Dua barang ni. Dia balik tunjuk kat keluarga. Hadis ini menunjukkan macam mana para sahabat Nabi SAW, orang yang berdikari. Tidak bergantung pada pemberian. Seorang yang ada sifat berdikari. Memberitahu orang Islam kena ada sifat berdikari, tak bergantung pada orang sepenuhnya. Cuma minta bantuan, tunjuk pasar kat mana. Itu minta bantuan. Itu bukan pergantungan.",
+ "whisper": "clips/whisper/w2_08.json"
+}

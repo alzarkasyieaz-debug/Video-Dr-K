@@ -42,6 +42,15 @@ Medan ini bertulis untuk siri *Bahrul Mazi* — tukar dalam setiap spec, jangan 
 `speaker`, `speaker_role`, `series`, dan `FACE_X/FACE_Y` dalam `tools/build_clip.py` jika sudut kamera berbeza.
 Jika nama penceramah diketahui, letak dalam `speaker`.
 
+## Kuliah kedua dan seterusnya
+
+- ID klip berawalan nombor kuliah: `2_01`, `2_02`… → `clips/KULIAH_2_01.json`, `videos/KULIAH_2_01/`, `exports/KULIAH_2_01_<SLUG>.mp4`.
+- Kedudukan wajah: `python3 tools/face_track.py <lecture.mp4> <from> <to> 3` → letak hasil `[x, y]` dalam medan `face` spec.
+  Jika `spread_x` besar (penceramah banyak bergerak, > ~150 px), letak `"max_zoom": 1.36` supaya close-up tidak memotong.
+- Laporan berasingan: `clips/report_meta_<n>.json` dengan blok `_lecture` (`glob`, `out`, `header`, `topics`, `not_rendered`, `notes`), kemudian `python3 tools/make_report.py clips/report_meta_<n>.json`.
+- Mulakan setiap `tools/render_all.sh` dalam panggilan shell yang berasingan (dua runner dalam satu panggilan boleh menyebabkan satu terbatal `render_cancelled_parent_exited`).
+- Contoh kuliah kedua: *Ensiklopedia Hadis Nilai* (`LAPORAN_KERATAN_HADIS_NILAI.md`, `exports/KULIAH_2_*`).
+
 ## Aliran kerja
 
 1. **Muat turun** rakaman (Drive: `drive.usercontent.google.com/download?id=<ID>&export=download&confirm=t`).

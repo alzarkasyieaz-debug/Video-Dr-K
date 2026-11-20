@@ -1,0 +1,822 @@
+[
+{
+"text": "Artinya",
+"start": 0.14,
+"end": 1.22
+},
+{
+"text": "benda",
+"start": 1.22,
+"end": 2.33
+},
+{
+"text": "Allah",
+"start": 2.33,
+"end": 2.625
+},
+{
+"text": "Ta'ala",
+"start": 2.625,
+"end": 2.98
+},
+{
+"text": "buat",
+"start": 2.98,
+"end": 3.23
+},
+{
+"text": "dunia",
+"start": 3.23,
+"end": 3.98
+},
+{
+"text": "ini",
+"start": 3.98,
+"end": 4.31
+},
+{
+"text": "dia",
+"start": 4.31,
+"end": 4.64
+},
+{
+"text": "nilai-nilai",
+"start": 4.64,
+"end": 5.84
+},
+{
+"text": "berbeza.",
+"start": 6.02,
+"end": 7.22
+},
+{
+"text": "Maka",
+"start": 7.54,
+"end": 7.94
+},
+{
+"text": "betul",
+"start": 7.94,
+"end": 8.67
+},
+{
+"text": "juga",
+"start": 8.67,
+"end": 9.1
+},
+{
+"text": "dengan",
+"start": 9.1,
+"end": 9.84
+},
+{
+"text": "kehidupan",
+"start": 9.84,
+"end": 11.04
+},
+{
+"text": "kita.",
+"start": 11.31,
+"end": 11.77
+},
+{
+"text": "Keimanan.",
+"start": 11.77,
+"end": 12.97
+},
+{
+"text": "Nilai-nilai",
+"start": 13.18,
+"end": 14.03
+},
+{
+"text": "yang",
+"start": 14.03,
+"end": 14.42
+},
+{
+"text": "ada",
+"start": 14.42,
+"end": 14.68
+},
+{
+"text": "pada",
+"start": 14.68,
+"end": 14.98
+},
+{
+"text": "iman.",
+"start": 14.98,
+"end": 15.63
+},
+{
+"text": "Iman",
+"start": 15.63,
+"end": 15.97
+},
+{
+"text": "pada",
+"start": 15.97,
+"end": 16.3
+},
+{
+"text": "Allah",
+"start": 16.3,
+"end": 16.76
+},
+{
+"text": "Ta'ala,",
+"start": 16.76,
+"end": 17.45
+},
+{
+"text": "iman",
+"start": 17.45,
+"end": 18.19
+},
+{
+"text": "pada",
+"start": 18.19,
+"end": 18.541
+},
+{
+"text": "Nabi,",
+"start": 18.541,
+"end": 18.98
+},
+{
+"text": "iman",
+"start": 18.98,
+"end": 19.22
+},
+{
+"text": "pada",
+"start": 19.22,
+"end": 19.62
+},
+{
+"text": "malaikat,",
+"start": 19.62,
+"end": 20.52
+},
+{
+"text": "iman",
+"start": 20.52,
+"end": 20.8
+},
+{
+"text": "pada",
+"start": 20.8,
+"end": 21.09
+},
+{
+"text": "hari",
+"start": 21.09,
+"end": 21.38
+},
+{
+"text": "kiamat,",
+"start": 21.38,
+"end": 21.95
+},
+{
+"text": "iman",
+"start": 21.95,
+"end": 22.23
+},
+{
+"text": "pada",
+"start": 22.23,
+"end": 22.52
+},
+{
+"text": "qada'",
+"start": 22.52,
+"end": 22.99
+},
+{
+"text": "dan",
+"start": 22.99,
+"end": 23.22
+},
+{
+"text": "qadar.",
+"start": 23.22,
+"end": 24.35
+},
+{
+"text": "Semua",
+"start": 24.35,
+"end": 24.72
+},
+{
+"text": "nilai-nilai",
+"start": 24.72,
+"end": 25.92
+},
+{
+"text": "keimanan",
+"start": 25.97,
+"end": 26.99
+},
+{
+"text": "itu",
+"start": 26.99,
+"end": 27.24
+},
+{
+"text": "membezakan",
+"start": 27.24,
+"end": 28.44
+},
+{
+"text": "antara",
+"start": 28.5,
+"end": 29.1
+},
+{
+"text": "seorang",
+"start": 29.1,
+"end": 30.22
+},
+{
+"text": "manusia",
+"start": 30.22,
+"end": 30.41
+},
+{
+"text": "dengan",
+"start": 30.41,
+"end": 30.92
+},
+{
+"text": "seorang",
+"start": 30.92,
+"end": 31.64
+},
+{
+"text": "manusia.",
+"start": 31.64,
+"end": 32.57
+},
+{
+"text": "Seorang",
+"start": 32.57,
+"end": 33.23
+},
+{
+"text": "yang",
+"start": 33.23,
+"end": 33.66
+},
+{
+"text": "ada",
+"start": 33.66,
+"end": 33.78
+},
+{
+"text": "iman,",
+"start": 33.78,
+"end": 34.25
+},
+{
+"text": "beriman",
+"start": 34.25,
+"end": 34.91
+},
+{
+"text": "kepada",
+"start": 34.91,
+"end": 35.31
+},
+{
+"text": "adanya",
+"start": 35.31,
+"end": 35.77
+},
+{
+"text": "Allah,",
+"start": 35.77,
+"end": 36.38
+},
+{
+"text": "sama",
+"start": 36.38,
+"end": 36.68
+},
+{
+"text": "ke",
+"start": 36.68,
+"end": 36.83
+},
+{
+"text": "dengan",
+"start": 36.83,
+"end": 37.55
+},
+{
+"text": "orang",
+"start": 37.55,
+"end": 37.74
+},
+{
+"text": "yang",
+"start": 37.74,
+"end": 38.02
+},
+{
+"text": "tak",
+"start": 38.02,
+"end": 38.29
+},
+{
+"text": "beriman",
+"start": 38.29,
+"end": 39.14
+},
+{
+"text": "adanya",
+"start": 39.14,
+"end": 39.53
+},
+{
+"text": "Allah?",
+"start": 39.53,
+"end": 40.27
+},
+{
+"text": "Dia",
+"start": 40.27,
+"end": 40.56
+},
+{
+"text": "takkan",
+"start": 40.56,
+"end": 41.13
+},
+{
+"text": "sama.",
+"start": 41.13,
+"end": 41.79
+},
+{
+"text": "Nilai",
+"start": 41.79,
+"end": 42.26
+},
+{
+"text": "iman",
+"start": 42.26,
+"end": 42.82
+},
+{
+"text": "dia",
+"start": 42.82,
+"end": 42.972
+},
+{
+"text": "menyebabkan",
+"start": 42.972,
+"end": 43.53
+},
+{
+"text": "dia",
+"start": 43.53,
+"end": 43.7
+},
+{
+"text": "berbeza.",
+"start": 43.7,
+"end": 44.28
+},
+{
+"text": "Beza",
+"start": 44.28,
+"end": 44.51
+},
+{
+"text": "macam",
+"start": 44.51,
+"end": 44.78
+},
+{
+"text": "mana?",
+"start": 44.78,
+"end": 45.22
+},
+{
+"text": "Kalau",
+"start": 45.22,
+"end": 45.52
+},
+{
+"text": "orang",
+"start": 45.52,
+"end": 45.9
+},
+{
+"text": "yang",
+"start": 45.9,
+"end": 46.1
+},
+{
+"text": "tak",
+"start": 46.1,
+"end": 46.46
+},
+{
+"text": "beriman",
+"start": 46.46,
+"end": 47.59
+},
+{
+"text": "kepada",
+"start": 47.59,
+"end": 47.955
+},
+{
+"text": "Allah,",
+"start": 47.955,
+"end": 48.32
+},
+{
+"text": "bila",
+"start": 48.32,
+"end": 48.69
+},
+{
+"text": "berlaku",
+"start": 48.69,
+"end": 49.34
+},
+{
+"text": "musibah,",
+"start": 49.34,
+"end": 50.23
+},
+{
+"text": "dia",
+"start": 50.23,
+"end": 50.44
+},
+{
+"text": "akan",
+"start": 50.44,
+"end": 50.9
+},
+{
+"text": "merintih,",
+"start": 50.9,
+"end": 51.45
+},
+{
+"text": "dia",
+"start": 51.45,
+"end": 51.62
+},
+{
+"text": "akan",
+"start": 51.62,
+"end": 52.02
+},
+{
+"text": "resah,",
+"start": 52.02,
+"end": 52.25
+},
+{
+"text": "dia",
+"start": 52.25,
+"end": 52.42
+},
+{
+"text": "akan",
+"start": 52.42,
+"end": 52.64
+},
+{
+"text": "meraung,",
+"start": 52.64,
+"end": 53.15
+},
+{
+"text": "dia",
+"start": 53.15,
+"end": 53.31
+},
+{
+"text": "akan",
+"start": 53.31,
+"end": 53.66
+},
+{
+"text": "menyesal.",
+"start": 53.66,
+"end": 54.86
+},
+{
+"text": "Dia",
+"start": 55.02,
+"end": 55.37
+},
+{
+"text": "berlaku",
+"start": 55.37,
+"end": 56.24
+},
+{
+"text": "eksiden.",
+"start": 56.24,
+"end": 57.44
+},
+{
+"text": "Dia",
+"start": 57.49,
+"end": 57.86
+},
+{
+"text": "kata",
+"start": 57.86,
+"end": 58.46
+},
+{
+"text": "kenapalah",
+"start": 58.46,
+"end": 59.66
+},
+{
+"text": "aku",
+"start": 59.78,
+"end": 59.98
+},
+{
+"text": "turun",
+"start": 59.98,
+"end": 60.22
+},
+{
+"text": "masa",
+"start": 60.22,
+"end": 60.53
+},
+{
+"text": "ni.",
+"start": 60.53,
+"end": 61.26
+},
+{
+"text": "Dan",
+"start": 61.26,
+"end": 61.45
+},
+{
+"text": "kenapalah",
+"start": 61.45,
+"end": 62.02
+},
+{
+"text": "lalu",
+"start": 62.02,
+"end": 62.38
+},
+{
+"text": "jalan",
+"start": 62.38,
+"end": 62.8
+},
+{
+"text": "ni",
+"start": 62.8,
+"end": 62.98
+},
+{
+"text": "hingga",
+"start": 62.98,
+"end": 63.5
+},
+{
+"text": "berlaku",
+"start": 63.5,
+"end": 64.22
+},
+{
+"text": "eksiden.",
+"start": 64.22,
+"end": 64.74
+},
+{
+"text": "Sebab",
+"start": 64.74,
+"end": 65.17
+},
+{
+"text": "dia",
+"start": 65.17,
+"end": 65.86
+},
+{
+"text": "tidak",
+"start": 65.86,
+"end": 66.066
+},
+{
+"text": "ada",
+"start": 66.066,
+"end": 66.19
+},
+{
+"text": "iman.",
+"start": 66.19,
+"end": 66.8
+},
+{
+"text": "Tapi",
+"start": 66.8,
+"end": 67.13
+},
+{
+"text": "iman",
+"start": 67.13,
+"end": 67.54
+},
+{
+"text": "mengajar",
+"start": 67.54,
+"end": 68.17
+},
+{
+"text": "seorang",
+"start": 68.17,
+"end": 68.9
+},
+{
+"text": "yang",
+"start": 68.9,
+"end": 69.5
+},
+{
+"text": "beriman",
+"start": 69.5,
+"end": 70.7
+},
+{
+"text": "kepada",
+"start": 70.9,
+"end": 72.1
+},
+{
+"text": "Allah",
+"start": 72.11,
+"end": 73.27
+},
+{
+"text": "Ta'ala,",
+"start": 73.27,
+"end": 74.34
+},
+{
+"text": "sebutlah",
+"start": 74.34,
+"end": 75.035
+},
+{
+"text": "wahai",
+"start": 75.035,
+"end": 75.47
+},
+{
+"text": "Muhammad,",
+"start": 75.47,
+"end": 75.95
+},
+{
+"text": "tidak",
+"start": 75.95,
+"end": 76.22
+},
+{
+"text": "ada",
+"start": 76.22,
+"end": 76.57
+},
+{
+"text": "sama",
+"start": 76.57,
+"end": 76.88
+},
+{
+"text": "sekali",
+"start": 76.88,
+"end": 78.06
+},
+{
+"text": "boleh",
+"start": 78.06,
+"end": 78.289
+},
+{
+"text": "menimpa",
+"start": 78.289,
+"end": 78.61
+},
+{
+"text": "kita,",
+"start": 78.61,
+"end": 79.19
+},
+{
+"text": "melainkan",
+"start": 79.19,
+"end": 79.65
+},
+{
+"text": "apa",
+"start": 79.65,
+"end": 79.89
+},
+{
+"text": "yang",
+"start": 79.89,
+"end": 80.21
+},
+{
+"text": "Allah",
+"start": 80.21,
+"end": 80.62
+},
+{
+"text": "catat",
+"start": 80.62,
+"end": 81.1
+},
+{
+"text": "untuk",
+"start": 81.1,
+"end": 81.83
+},
+{
+"text": "kita.",
+"start": 81.83,
+"end": 82.86
+},
+{
+"text": "Yang",
+"start": 82.86,
+"end": 83.78
+},
+{
+"text": "Allah",
+"start": 83.78,
+"end": 84.18
+},
+{
+"text": "catat",
+"start": 84.18,
+"end": 84.91
+},
+{
+"text": "kita",
+"start": 84.91,
+"end": 85.1
+},
+{
+"text": "lalu",
+"start": 85.1,
+"end": 85.29
+},
+{
+"text": "itu",
+"start": 85.29,
+"end": 85.53
+},
+{
+"text": "akan",
+"start": 85.53,
+"end": 85.79
+},
+{
+"text": "berlaku.",
+"start": 85.79,
+"end": 86.71
+},
+{
+"text": "Itu",
+"start": 86.71,
+"end": 86.96
+},
+{
+"text": "contoh",
+"start": 86.96,
+"end": 87.55
+},
+{
+"text": "nilai",
+"start": 87.55,
+"end": 87.94
+},
+{
+"text": "iman.",
+"start": 87.94,
+"end": 88.6
+}
+]

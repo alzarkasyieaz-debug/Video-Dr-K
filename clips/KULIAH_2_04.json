@@ -1,0 +1,106 @@
+{
+ "speaker": "Kuliah Maghrib Jumaat",
+ "speaker_role": "Ensiklopedia Hadis Nilai • YADIM & DBP",
+ "series": "KULIAH HADIS NILAI",
+ "cover_kicker": "ENSIKLOPEDIA HADIS NILAI",
+ "cover_sub": "Mawsu'ah Ahadith al-Qiyam • Syeikh Dr. Hammam Sa'id",
+ "max_zoom": 1.36,
+ "id": "2_04",
+ "slug": "NABI_SAW_MANDI_DENGAN_SATU_GANTANG_AIR",
+ "category": "NILAI EKONOMI",
+ "face": [
+  481,
+  932
+ ],
+ "title_lines": [
+  [
+   {
+    "t": "NABI ﷺ MANDI"
+   }
+  ],
+  [
+   {
+    "t": "DENGAN"
+   },
+   {
+    "t": "SATU GANTANG",
+    "gold": true
+   }
+  ],
+  [
+   {
+    "t": "AIR"
+   }
+  ]
+ ],
+ "cover_lines": [
+  [
+   {
+    "t": "NABI ﷺ"
+   },
+   {
+    "t": "MANDI"
+   }
+  ],
+  [
+   {
+    "t": "DENGAN"
+   }
+  ],
+  [
+   {
+    "t": "SATU GANTANG",
+    "gold": true
+   }
+  ],
+  [
+   {
+    "t": "AIR"
+   }
+  ]
+ ],
+ "header_html": "NABI ﷺ MANDI DENGAN <span class=\"g\">SATU GANTANG</span> AIR",
+ "window": 1200,
+ "start": 1211.8,
+ "end": 1329.6,
+ "arabic": [
+  {
+   "ar": "كَانَ النَّبِيُّ ﷺ يَغْتَسِلُ بِالصَّاعِ إِلَى خَمْسَةِ أَمْدَادٍ، وَيَتَوَضَّأُ بِالْمُدِّ",
+   "ms": "Nabi ﷺ mandi dengan satu sa' hingga lima mud, dan berwuduk dengan satu mud.",
+   "ref": "HR AL-BUKHARI & MUSLIM • DARIPADA ANAS BIN MALIK",
+   "at": 16.2,
+   "dur": 17.0
+  }
+ ],
+ "points": [
+  {
+   "label": "UKURANNYA",
+   "text": "Mandi: satu gantang (sa') • Wuduk: satu cupak (mud)",
+   "at": 34.2,
+   "dur": 12.6
+  },
+  {
+   "label": "SUKATAN LAMA",
+   "text": "Empat cupak = satu gantang",
+   "at": 78.0,
+   "dur": 10.5
+  },
+  {
+   "label": "NILAI EKONOMI",
+   "text": "Bukan setimba — Nabi ﷺ mandi hanya dengan satu gantang",
+   "at": 99.0,
+   "dur": 15.5
+  }
+ ],
+ "keywords": [
+  "gantang",
+  "cupak",
+  "mandi",
+  "wuduk",
+  "air",
+  "Nabi",
+  "ekonomi"
+ ],
+ "text": "Saya nak ambil satu nilai. Nilai melibatkan ekonomi yang diajar oleh Islam. Ini hadis dalam kitab ini, hadis nombor dua, lapan, dua, satu. Kata Anas bin Malik. Nabi sallallahu 'alaihi wasallam dulunya, bila mandi, mandi dengan satu gantang, hingga pada lima cupak, dan berwuduk dengan satu cupak. Ini kayu ukur dulu. Kayu ukur dulu melibatkan air, melibatkan barang-barang, disukat menggunakan gantang ataupun cupak. Kalau kita alam lain, ada satu lagi kecil sikit lagi, dipanggil leng. Ingat tak? Leng. Cupak ni empat cupak, satu gantang. Gantang lebih kurang, tinggi ni lah, bulat tu. Gantang. Ada orang simpan lagi ke ni? Orang tua lama simpan, gantang. Cupak dah kecil, empat cupak, satu gantang. Artinya, Nabi bila mandi, mandinya hanya satu gantang. Satu gantang berapa? Setimba besar, mana boleh setimba? Bukan setimba, satu gantang.",
+ "whisper": "clips/whisper/w2_04.json"
+}
