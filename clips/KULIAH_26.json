@@ -1,0 +1,80 @@
+{
+ "id": "26",
+ "slug": "KHALID_AL_WALID_DAN_JELMAAN_AL_UZZA",
+ "category": "SIRAH NABAWI",
+ "title_lines": [
+  [
+   {
+    "t": "KHALID AL-WALID"
+   }
+  ],
+  [
+   {
+    "t": "VS JELMAAN"
+   }
+  ],
+  [
+   {
+    "t": "AL-UZZA",
+    "gold": true
+   }
+  ]
+ ],
+ "header_html": "KHALID AL-WALID VS JELMAAN <span class=\"g\" style=\"white-space:nowrap\">AL-UZZA</span>",
+ "cover_kicker": "KULIAH DHUHA • SIRAH & FIQH",
+ "cover_sub": "Pondok Pengajian Darul Mubarak",
+ "speaker": "YB Ustaz Muhammad Ismi Mat Taib",
+ "speaker_role": "Pondok Pengajian Darul Mubarak • Kuliah Dhuha",
+ "series": "KULIAH DHUHA DARUL MUBARAK",
+ "face": [
+  550,
+  560
+ ],
+ "src_crop": [
+  145,
+  0,
+  810,
+  1440
+ ],
+ "music_volume": 0.1,
+ "whisper": "clips/whisper/w26.json",
+ "window": 312,
+ "start": 337.5,
+ "end": 445.0,
+ "arabic": [
+  {
+   "ar": "فَإِنَّكَ لَمْ تَهْدِمْهَا، فَارْجِعْ إِلَيْهَا فَاهْدِمْهَا",
+   "ms": "Sesungguhnya engkau belum memusnahkannya. Kembalilah ke sana dan musnahkanlah ia.",
+   "ref": "HR AN-NASA'I (AS-SUNAN AL-KUBRA)",
+   "at": 5.6,
+   "dur": 13.0
+  }
+ ],
+ "points": [
+  {
+   "label": "AL-UZZA",
+   "text": "Berhala terbesar Quraisy — bukan berhala biasa, ada 'penunggunya'",
+   "at": 19.5,
+   "dur": 12.5
+  },
+  {
+   "label": "JELMAAN JIN",
+   "text": "Perempuan hitam itu jelmaan al-Uzza — Khalid menetaknya hingga putus dua",
+   "at": 87.0,
+   "dur": 13.0
+  }
+ ],
+ "keywords": [
+  "Uzza",
+  "Khalid",
+  "berhala",
+  "musnahkan",
+  "jin",
+  "jelmaan",
+  "memusnahkannya"
+ ],
+ "text": "Khalid kata, tak ada apa-apa. Apa kata Nabi SAW? Fa innaka lam tahdimha, farji' ilaiha fahdimha. Sesungguhnya kamu belum lagi memusnahkannya. Kembali semula ke sana dan memusnahkannya. Nabi tahu, al-Uzza ni bukan biasa-biasa berhala ni. Banyak dia punya penunggu-penunggu ni. Barangkali Khalid sekadar merobohkannya, menumbangkan dia. Bila Nabi kata, kamu masa pergi tadi, kamu ada nampak apa-apa? Tak ada. Baik, pergi balik. Kamu belum memusnahkannya lagi. Kalau kamu memusnahkannya, pasti kamu akan nampak sesuatu. Jadi, Khalid pergi balik dengan marah dan menghunus pedang. Apabila tiba di tempat berhala itu, tiba-tiba menjelma seorang perempuan hitam yang bertelanjang dengan rambut yang mengerbang dan penjaga berhala bertempik. Ya Uzza, 'awwiriha! Ya Uzza, khabbiliha! Ya Uzza, butakan dia. Musnahkan dia. Ya Uzza, musnahkan dia, butakan dia. Maksudnya, perempuan tadi itu adalah jelmaan bagi Uzza. Jin yang dinampakkan. Lalu, Khalid dengan pantas menetaknya sehingga putus dua. Kemudian, beliau kembali menghadap Rasulullah SAW dan baginda bersabda, na'am, tilkal Uzza.",
+ "lecture": "ismi_kuliah_dhuha",
+ "style": "V2",
+ "episode": 1
+}

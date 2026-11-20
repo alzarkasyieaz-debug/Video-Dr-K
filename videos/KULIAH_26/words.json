@@ -1,0 +1,767 @@
+[
+{
+"text": "Khalid",
+"start": 0.0,
+"end": 0.69
+},
+{
+"text": "kata,",
+"start": 0.69,
+"end": 1.23
+},
+{
+"text": "tak",
+"start": 1.23,
+"end": 1.67
+},
+{
+"text": "ada",
+"start": 1.67,
+"end": 1.97
+},
+{
+"text": "apa-apa.",
+"start": 1.97,
+"end": 3.14
+},
+{
+"text": "Apa",
+"start": 3.14,
+"end": 3.46
+},
+{
+"text": "kata",
+"start": 3.46,
+"end": 3.89
+},
+{
+"text": "Nabi",
+"start": 3.89,
+"end": 4.32
+},
+{
+"text": "SAW?",
+"start": 4.32,
+"end": 5.19
+},
+{
+"text": "Fa",
+"start": 5.19,
+"end": 5.487
+},
+{
+"text": "innaka",
+"start": 5.487,
+"end": 6.38
+},
+{
+"text": "lam",
+"start": 6.38,
+"end": 6.56
+},
+{
+"text": "tahdimha,",
+"start": 6.56,
+"end": 7.61
+},
+{
+"text": "farji'",
+"start": 7.61,
+"end": 8.31
+},
+{
+"text": "ilaiha",
+"start": 8.31,
+"end": 9.01
+},
+{
+"text": "fahdimha.",
+"start": 9.01,
+"end": 10.06
+},
+{
+"text": "Sesungguhnya",
+"start": 10.06,
+"end": 11.26
+},
+{
+"text": "kamu",
+"start": 11.26,
+"end": 11.95
+},
+{
+"text": "belum",
+"start": 11.95,
+"end": 12.23
+},
+{
+"text": "lagi",
+"start": 12.23,
+"end": 12.56
+},
+{
+"text": "memusnahkannya.",
+"start": 12.56,
+"end": 13.76
+},
+{
+"text": "Kembali",
+"start": 14.28,
+"end": 15.35
+},
+{
+"text": "semula",
+"start": 15.35,
+"end": 16.1
+},
+{
+"text": "ke",
+"start": 16.1,
+"end": 16.38
+},
+{
+"text": "sana",
+"start": 16.38,
+"end": 16.93
+},
+{
+"text": "dan",
+"start": 16.93,
+"end": 17.14
+},
+{
+"text": "memusnahkannya.",
+"start": 17.14,
+"end": 17.98
+},
+{
+"text": "Nabi",
+"start": 17.98,
+"end": 18.47
+},
+{
+"text": "tahu,",
+"start": 18.47,
+"end": 19.25
+},
+{
+"text": "al-Uzza",
+"start": 19.25,
+"end": 20.15
+},
+{
+"text": "ni",
+"start": 20.15,
+"end": 20.39
+},
+{
+"text": "bukan",
+"start": 20.39,
+"end": 21.03
+},
+{
+"text": "biasa-biasa",
+"start": 21.03,
+"end": 22.23
+},
+{
+"text": "berhala",
+"start": 22.79,
+"end": 23.29
+},
+{
+"text": "ni.",
+"start": 23.29,
+"end": 24.08
+},
+{
+"text": "Banyak",
+"start": 24.08,
+"end": 24.68
+},
+{
+"text": "dia",
+"start": 24.68,
+"end": 24.83
+},
+{
+"text": "punya",
+"start": 24.83,
+"end": 25.52
+},
+{
+"text": "penunggu-penunggu",
+"start": 25.52,
+"end": 26.1
+},
+{
+"text": "ni.",
+"start": 26.1,
+"end": 26.68
+},
+{
+"text": "Barangkali",
+"start": 28.38,
+"end": 28.68
+},
+{
+"text": "Khalid",
+"start": 28.68,
+"end": 29.17
+},
+{
+"text": "sekadar",
+"start": 29.17,
+"end": 30.18
+},
+{
+"text": "merobohkannya,",
+"start": 30.18,
+"end": 31.38
+},
+{
+"text": "menumbangkan",
+"start": 32.12,
+"end": 33.32
+},
+{
+"text": "dia.",
+"start": 33.97,
+"end": 34.66
+},
+{
+"text": "Bila",
+"start": 34.66,
+"end": 35.22
+},
+{
+"text": "Nabi",
+"start": 35.22,
+"end": 35.74
+},
+{
+"text": "kata,",
+"start": 35.74,
+"end": 36.62
+},
+{
+"text": "kamu",
+"start": 36.62,
+"end": 37.32
+},
+{
+"text": "masa",
+"start": 37.32,
+"end": 37.88
+},
+{
+"text": "pergi",
+"start": 37.88,
+"end": 38.39
+},
+{
+"text": "tadi,",
+"start": 38.39,
+"end": 39.59
+},
+{
+"text": "kamu",
+"start": 39.6,
+"end": 39.93
+},
+{
+"text": "ada",
+"start": 39.93,
+"end": 40.1
+},
+{
+"text": "nampak",
+"start": 40.1,
+"end": 40.67
+},
+{
+"text": "apa-apa?",
+"start": 40.67,
+"end": 41.56
+},
+{
+"text": "Tak",
+"start": 41.56,
+"end": 41.89
+},
+{
+"text": "ada.",
+"start": 41.89,
+"end": 42.49
+},
+{
+"text": "Baik,",
+"start": 42.49,
+"end": 43.02
+},
+{
+"text": "pergi",
+"start": 43.02,
+"end": 43.43
+},
+{
+"text": "balik.",
+"start": 43.43,
+"end": 43.99
+},
+{
+"text": "Kamu",
+"start": 43.99,
+"end": 44.89
+},
+{
+"text": "belum",
+"start": 44.89,
+"end": 45.214
+},
+{
+"text": "memusnahkannya",
+"start": 45.214,
+"end": 46.12
+},
+{
+"text": "lagi.",
+"start": 46.12,
+"end": 46.92
+},
+{
+"text": "Kalau",
+"start": 46.92,
+"end": 47.4
+},
+{
+"text": "kamu",
+"start": 47.4,
+"end": 47.72
+},
+{
+"text": "memusnahkannya,",
+"start": 47.72,
+"end": 48.92
+},
+{
+"text": "pasti",
+"start": 49.09,
+"end": 49.4
+},
+{
+"text": "kamu",
+"start": 49.4,
+"end": 49.81
+},
+{
+"text": "akan",
+"start": 49.81,
+"end": 50.04
+},
+{
+"text": "nampak",
+"start": 50.04,
+"end": 50.52
+},
+{
+"text": "sesuatu.",
+"start": 50.52,
+"end": 51.4
+},
+{
+"text": "Jadi,",
+"start": 51.4,
+"end": 52.2
+},
+{
+"text": "Khalid",
+"start": 52.2,
+"end": 53.4
+},
+{
+"text": "pergi",
+"start": 53.48,
+"end": 54.0
+},
+{
+"text": "balik",
+"start": 54.0,
+"end": 54.47
+},
+{
+"text": "dengan",
+"start": 54.47,
+"end": 55.04
+},
+{
+"text": "marah",
+"start": 55.04,
+"end": 55.51
+},
+{
+"text": "dan",
+"start": 55.51,
+"end": 56.16
+},
+{
+"text": "menghunus",
+"start": 56.16,
+"end": 56.55
+},
+{
+"text": "pedang.",
+"start": 56.55,
+"end": 57.39
+},
+{
+"text": "Apabila",
+"start": 57.39,
+"end": 57.87
+},
+{
+"text": "tiba",
+"start": 57.87,
+"end": 58.23
+},
+{
+"text": "di",
+"start": 58.23,
+"end": 58.7
+},
+{
+"text": "tempat",
+"start": 58.7,
+"end": 59.26
+},
+{
+"text": "berhala",
+"start": 59.26,
+"end": 59.65
+},
+{
+"text": "itu,",
+"start": 59.65,
+"end": 60.06
+},
+{
+"text": "tiba-tiba",
+"start": 60.06,
+"end": 60.36
+},
+{
+"text": "menjelma",
+"start": 60.36,
+"end": 60.95
+},
+{
+"text": "seorang",
+"start": 60.95,
+"end": 61.52
+},
+{
+"text": "perempuan",
+"start": 61.52,
+"end": 62.14
+},
+{
+"text": "hitam",
+"start": 62.14,
+"end": 62.53
+},
+{
+"text": "yang",
+"start": 62.53,
+"end": 62.81
+},
+{
+"text": "bertelanjang",
+"start": 62.81,
+"end": 63.71
+},
+{
+"text": "dengan",
+"start": 63.71,
+"end": 64.16
+},
+{
+"text": "rambut",
+"start": 64.16,
+"end": 64.72
+},
+{
+"text": "yang",
+"start": 64.72,
+"end": 64.87
+},
+{
+"text": "mengerbang",
+"start": 64.87,
+"end": 65.65
+},
+{
+"text": "dan",
+"start": 65.65,
+"end": 66.85
+},
+{
+"text": "penjaga",
+"start": 67.42,
+"end": 68.12
+},
+{
+"text": "berhala",
+"start": 68.12,
+"end": 69.19
+},
+{
+"text": "bertempik.",
+"start": 69.19,
+"end": 70.39
+},
+{
+"text": "Ya",
+"start": 70.84,
+"end": 71.42
+},
+{
+"text": "Uzza,",
+"start": 71.42,
+"end": 72.47
+},
+{
+"text": "'awwiriha!",
+"start": 72.47,
+"end": 73.67
+},
+{
+"text": "Ya",
+"start": 73.97,
+"end": 74.64
+},
+{
+"text": "Uzza,",
+"start": 74.64,
+"end": 75.62
+},
+{
+"text": "khabbiliha!",
+"start": 75.62,
+"end": 76.82
+},
+{
+"text": "Ya",
+"start": 77.32,
+"end": 78.02
+},
+{
+"text": "Uzza,",
+"start": 78.02,
+"end": 78.92
+},
+{
+"text": "butakan",
+"start": 78.92,
+"end": 80.12
+},
+{
+"text": "dia.",
+"start": 80.12,
+"end": 81.05
+},
+{
+"text": "Musnahkan",
+"start": 81.05,
+"end": 82.08
+},
+{
+"text": "dia.",
+"start": 82.08,
+"end": 83.28
+},
+{
+"text": "Ya",
+"start": 83.36,
+"end": 83.79
+},
+{
+"text": "Uzza,",
+"start": 83.79,
+"end": 84.12
+},
+{
+"text": "musnahkan",
+"start": 84.12,
+"end": 85.02
+},
+{
+"text": "dia,",
+"start": 85.02,
+"end": 85.49
+},
+{
+"text": "butakan",
+"start": 85.49,
+"end": 86.29
+},
+{
+"text": "dia.",
+"start": 86.29,
+"end": 87.01
+},
+{
+"text": "Maksudnya,",
+"start": 87.01,
+"end": 88.14
+},
+{
+"text": "perempuan",
+"start": 88.14,
+"end": 89.34
+},
+{
+"text": "tadi",
+"start": 89.37,
+"end": 89.547
+},
+{
+"text": "itu",
+"start": 89.547,
+"end": 89.68
+},
+{
+"text": "adalah",
+"start": 89.68,
+"end": 90.37
+},
+{
+"text": "jelmaan",
+"start": 90.37,
+"end": 91.0
+},
+{
+"text": "bagi",
+"start": 91.0,
+"end": 91.52
+},
+{
+"text": "Uzza.",
+"start": 91.52,
+"end": 92.72
+},
+{
+"text": "Jin",
+"start": 93.12,
+"end": 93.39
+},
+{
+"text": "yang",
+"start": 93.39,
+"end": 93.61
+},
+{
+"text": "dinampakkan.",
+"start": 93.61,
+"end": 94.81
+},
+{
+"text": "Lalu,",
+"start": 95.01,
+"end": 95.55
+},
+{
+"text": "Khalid",
+"start": 95.55,
+"end": 96.09
+},
+{
+"text": "dengan",
+"start": 96.09,
+"end": 96.7
+},
+{
+"text": "pantas",
+"start": 96.7,
+"end": 97.17
+},
+{
+"text": "menetaknya",
+"start": 97.17,
+"end": 98.12
+},
+{
+"text": "sehingga",
+"start": 98.12,
+"end": 98.77
+},
+{
+"text": "putus",
+"start": 98.77,
+"end": 99.11
+},
+{
+"text": "dua.",
+"start": 99.11,
+"end": 100.12
+},
+{
+"text": "Kemudian,",
+"start": 100.12,
+"end": 100.71
+},
+{
+"text": "beliau",
+"start": 100.71,
+"end": 101.1
+},
+{
+"text": "kembali",
+"start": 101.1,
+"end": 101.5
+},
+{
+"text": "menghadap",
+"start": 101.5,
+"end": 102.22
+},
+{
+"text": "Rasulullah",
+"start": 102.22,
+"end": 102.64
+},
+{
+"text": "SAW",
+"start": 102.64,
+"end": 102.84
+},
+{
+"text": "dan",
+"start": 102.84,
+"end": 103.01
+},
+{
+"text": "baginda",
+"start": 103.01,
+"end": 103.6
+},
+{
+"text": "bersabda,",
+"start": 103.6,
+"end": 104.8
+},
+{
+"text": "na'am,",
+"start": 105.12,
+"end": 105.67
+},
+{
+"text": "tilkal",
+"start": 105.67,
+"end": 106.22
+},
+{
+"text": "Uzza.",
+"start": 106.22,
+"end": 107.28
+}
+]
