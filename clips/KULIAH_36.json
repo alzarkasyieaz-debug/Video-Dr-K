@@ -1,0 +1,86 @@
+{
+ "id": "36",
+ "slug": "ZIARAH_MALAIKAT_DOAKAN_SEPANJANG_JALAN",
+ "category": "ADAB & AKHLAK",
+ "title_lines": [
+  [
+   {
+    "t": "ZIARAH:"
+   }
+  ],
+  [
+   {
+    "t": "MALAIKAT DOAKAN",
+    "gold": true
+   }
+  ],
+  [
+   {
+    "t": "SEPANJANG JALAN"
+   }
+  ]
+ ],
+ "header_html": "ZIARAH: <span class=\"g\" style=\"white-space:nowrap\">MALAIKAT DOAKAN</span> SEPANJANG JALAN",
+ "cover_kicker": "KULIAH DHUHA • SIRAH & FIQH",
+ "cover_sub": "Pondok Pengajian Darul Mubarak",
+ "speaker": "YB Ustaz Muhammad Ismi Mat Taib",
+ "speaker_role": "Pondok Pengajian Darul Mubarak • Kuliah Dhuha",
+ "series": "KULIAH DHUHA DARUL MUBARAK",
+ "face": [
+  550,
+  560
+ ],
+ "src_crop": [
+  145,
+  0,
+  810,
+  1440
+ ],
+ "music_volume": 0.1,
+ "whisper": "clips/whisper/w36.json",
+ "window": 3100,
+ "start": 3100.7,
+ "end": 3209.4,
+ "arabic": [
+  {
+   "ar": "طِبْتَ وَطَابَ مَمْشَاكَ، وَتَبَوَّأْتَ مِنَ الْجَنَّةِ مَنْزِلًا",
+   "ms": "Baiklah engkau, baiklah perjalananmu, dan engkau telah menempati sebuah kediaman di dalam syurga.",
+   "ref": "HR AT-TIRMIZI",
+   "at": 16.4,
+   "dur": 14.0
+  }
+ ],
+ "points": [
+  {
+   "label": "SILATURAHIM",
+   "text": "Ziarah bukan hanya orang sakit — ziarah keluarga pun berpahala",
+   "at": 5.8,
+   "dur": 10.2
+  },
+  {
+   "label": "JANGAN TUNGGU RAYA",
+   "text": "Ziarah itu sunat bila-bila masa — bukan tunggu open house",
+   "at": 61.0,
+   "dur": 13.0
+  },
+  {
+   "label": "RENUNG",
+   "text": "Bila tua barulah terasa betapa gembiranya diziarahi",
+   "at": 88.0,
+   "dur": 14.0
+  }
+ ],
+ "keywords": [
+  "ziarah",
+  "malaikat",
+  "syurga",
+  "kebaikan",
+  "silaturahim",
+  "tua",
+  "senang"
+ ],
+ "text": "Ini orang-orang sekarang ini lupa. Kalau kita pergi ziarah orang sakit, pergi ziarah bukan sakit pun, sahaja nak silaturahim. Nabi kata, akan adanya malaikat yang mendoakan. Malaikat doa, tibta wa taba mamsyaka wa tabawwa'ta minal jannati manzila. Tanjung Malim, ziarah pak saudara kita, lama tak jumpa. Sepanjang-panjang pemergian kita itu malaikat mendoakan. Nabi kata, tibta. Tibta ini maknanya apa? Berolehlah kebaikan kamu. Dan berolehlah kebaikan perjalananmu. Dan disediakan bagi kamu di dalam syurga istana-istana yang indah. Kita hari ini raya pun tak nak ziarah. Nak tunggu open house. Nak tunggu open house baru nak ziarah. Ziarah ni tak raya pun sunat ziarah. Kita tak rasa, orang muda ni lah. Orang tua rasakan orang ziarah macam mana? Senang. Dia menanggung di rumah. Tak ada siapa jenguk dia. Ini siapa datang. Haa, baru tahu. Dah tua baru tahu. Muda hari tu tak nak ziarah orang. Dah tua baru tahu. Rupanya bila orang ziarah, senang.",
+ "lecture": "ismi_kuliah_dhuha",
+ "style": "V2",
+ "episode": 11
+}
