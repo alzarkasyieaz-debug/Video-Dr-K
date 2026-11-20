@@ -1,0 +1,78 @@
+{
+ "id": "33",
+ "slug": "SAKIT_DAN_NYANYUK_MASIH_WAJIB_SOLAT",
+ "category": "FIQH SOLAT",
+ "title_lines": [
+  [
+   {
+    "t": "SAKIT & NYANYUK:"
+   }
+  ],
+  [
+   {
+    "t": "MASIH WAJIB",
+    "gold": true
+   }
+  ],
+  [
+   {
+    "t": "SOLAT?"
+   }
+  ]
+ ],
+ "header_html": "SAKIT &amp; NYANYUK: <span class=\"g\" style=\"white-space:nowrap\">MASIH WAJIB</span> SOLAT?",
+ "cover_kicker": "KULIAH DHUHA • SIRAH & FIQH",
+ "cover_sub": "Pondok Pengajian Darul Mubarak",
+ "speaker": "YB Ustaz Muhammad Ismi Mat Taib",
+ "speaker_role": "Pondok Pengajian Darul Mubarak • Kuliah Dhuha",
+ "series": "KULIAH DHUHA DARUL MUBARAK",
+ "face": [
+  550,
+  560
+ ],
+ "src_crop": [
+  145,
+  0,
+  810,
+  1440
+ ],
+ "music_volume": 0.1,
+ "whisper": "clips/whisper/w33.json",
+ "window": 2500,
+ "start": 2510.7,
+ "end": 2585.3,
+ "arabic": [],
+ "points": [
+  {
+   "label": "ORANG SAKIT",
+   "text": "Tetap wajib solat selagi berakal — gunakan rukhsah jamak",
+   "at": 8.0,
+   "dur": 13.0
+  },
+  {
+   "label": "SYARAT WAJIB",
+   "text": "Baligh & berakal — hilang akal (nyanyuk), gugur kewajipan solat",
+   "at": 33.0,
+   "dur": 14.0
+  },
+  {
+   "label": "KELUARGA NYANYUK",
+   "text": "Tidak wajib — tetapi boleh diajak solat supaya dia ingat",
+   "at": 58.0,
+   "dur": 13.0
+  }
+ ],
+ "keywords": [
+  "sakit",
+  "nyanyuk",
+  "wajib",
+  "akal",
+  "sembahyang",
+  "syarat",
+  "berakal"
+ ],
+ "text": "Macam orang sakit, jamaklah sembahyang. Sakit, kalau sakit ringan-ringan. Orang sakit ni, kita kena sembahyang juga. Ingat? Jangan ingat, sakit tak payah sembahyang. Selagi ada akal, selagi itulah kena sembahyang. Kalau dah nyanyuk, itu tak wajib sembahyang. Dia hilang syarat wajib, sembahyangnya tak ada, maka tak wajib dah sembahyang. Selagi ada syarat wajib sembahyang pada dia, dia wajib sembahyang. Dia akil, dia baligh, dia berakal, dia mesti kena sembahyang. Kalau nyanyuk itu tak wajib sembahyang. Katalah, ahli keluarga kita nyanyuk. Ini dipaksa-paksa dia sembahyang. Kalau sekadar suruh-suruh untuk dia buat, tak apalah. Tapi kalau dia tiga ke empat ke, empat dia itu tak apalah. Yang pentingnya dia buat yang dia kena sembahyang. Sebenarnya dia pun dah tak wajib dah. Sebab dia pun dah hilang akal dia. Tak wajib dah. Tapi kalau kita sahaja-sahaja nak suruh dia, tak ada masalah. Supaya dia ingat, insya-Allah dia pulih.",
+ "lecture": "ismi_kuliah_dhuha",
+ "style": "V2",
+ "episode": 8
+}
