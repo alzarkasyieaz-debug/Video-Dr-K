@@ -1,0 +1,87 @@
+{
+ "id": "37",
+ "slug": "PUTUS_SILATURAHIM_TAK_MASUK_SYURGA",
+ "category": "ADAB & AKHLAK",
+ "title_lines": [
+  [
+   {
+    "t": "PUTUS"
+   }
+  ],
+  [
+   {
+    "t": "SILATURAHIM?"
+   }
+  ],
+  [
+   {
+    "t": "TAK MASUK SYURGA",
+    "gold": true
+   }
+  ]
+ ],
+ "header_html": "PUTUS SILATURAHIM? <span class=\"g\" style=\"white-space:nowrap\">TAK MASUK SYURGA</span>",
+ "cover_kicker": "KULIAH DHUHA • SIRAH & FIQH",
+ "cover_sub": "Pondok Pengajian Darul Mubarak",
+ "speaker": "YB Ustaz Muhammad Ismi Mat Taib",
+ "speaker_role": "Pondok Pengajian Darul Mubarak • Kuliah Dhuha",
+ "series": "KULIAH DHUHA DARUL MUBARAK",
+ "face": [
+  550,
+  560
+ ],
+ "src_crop": [
+  145,
+  0,
+  810,
+  1440
+ ],
+ "music_volume": 0.1,
+ "whisper": "clips/whisper/w37.json",
+ "window": 3295,
+ "start": 3299.0,
+ "end": 3402.1,
+ "arabic": [
+  {
+   "ar": "مَنْ كَانَ يُؤْمِنُ بِاللَّهِ وَالْيَوْمِ الْآخِرِ فَلْيَصِلْ رَحِمَهُ",
+   "ms": "Sesiapa yang beriman kepada Allah dan hari akhirat, hendaklah dia menghubungkan silaturahim.",
+   "ref": "HR AL-BUKHARI",
+   "at": 35.0,
+   "dur": 14.0
+  },
+  {
+   "ar": "لَا يَدْخُلُ الْجَنَّةَ قَاطِعٌ",
+   "ms": "Tidak akan masuk syurga orang yang memutuskan (silaturahim).",
+   "ref": "HR AL-BUKHARI & MUSLIM",
+   "at": 85.0,
+   "dur": 13.0
+  }
+ ],
+ "points": [
+  {
+   "label": "SILATURAHIM",
+   "text": "Hubungan keluarga: ibu bapa, adik-beradik, sepupu-sepapat",
+   "at": 6.0,
+   "dur": 13.0
+  },
+  {
+   "label": "BUAT, JANGAN BERTEORI",
+   "text": "Pernah bergaduh? Pergi minta maaf — mana tahu mati esok",
+   "at": 67.0,
+   "dur": 14.0
+  }
+ ],
+ "keywords": [
+  "silaturahim",
+  "syurga",
+  "keluarga",
+  "maaf",
+  "Allah",
+  "dendam",
+  "buat"
+ ],
+ "text": "Apatah lagi silaturahim. Silaturahim apa dia? Hubungan rahim, hubungan keluarga. Anak dengan mak itu silaturahim. Adik-beradik silaturahim. Sepupu sepapat itu silaturahim. Itu dia silaturahim. Dengan kawan-kawan ini ukhuwah, berkawan. Tapi dengan ahli keluarga silaturahim. Nabi SAW bersabda, man kana yu'minu billahi wal yaumil akhir falyasil rahimah. Barang siapa yang beriman dengan Allah dan hari akhirat, hendaklah dia merapatkan silaturahim. Menghubungkan silaturahim. Buatlah. Jangan teori-teori saja. Berteori saja. Nak buat itu, nak buat ini, haram dia buat. Orang dia buat, haram nak datang. Buat. Buat. Jangan cakap banyak-banyak. Buat. Ada kita bergaduh dengan siapa-siapa, pergi minta maaf. Mana tahu mati esok-esok. Kadang-kadang mak dengan anak bergaduh. Silaturahim ini wajib kita jaga. Nabi kata apa? La yadkhulul jannata qati'. Tak masuk syurga orang yang memutuskan silaturahim. Buang dendam kesumat, buang. Biar kita selesaikan urusan kita dengan semua orang.",
+ "lecture": "ismi_kuliah_dhuha",
+ "style": "V2",
+ "episode": 12
+}
