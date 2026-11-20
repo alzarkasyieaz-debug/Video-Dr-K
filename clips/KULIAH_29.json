@@ -1,0 +1,79 @@
+{
+ "id": "29",
+ "slug": "MUSAFIR_SOLAT_2_RAKAAT_LEBIH_AFDAL",
+ "category": "FIQH SOLAT",
+ "title_lines": [
+  [
+   {
+    "t": "MUSAFIR:"
+   }
+  ],
+  [
+   {
+    "t": "SOLAT 2 RAKAAT"
+   }
+  ],
+  [
+   {
+    "t": "LEBIH AFDAL?",
+    "gold": true
+   }
+  ]
+ ],
+ "header_html": "MUSAFIR: SOLAT 2 RAKAAT <span class=\"g\" style=\"white-space:nowrap\">LEBIH AFDAL?</span>",
+ "cover_kicker": "KULIAH DHUHA • SIRAH & FIQH",
+ "cover_sub": "Pondok Pengajian Darul Mubarak",
+ "speaker": "YB Ustaz Muhammad Ismi Mat Taib",
+ "speaker_role": "Pondok Pengajian Darul Mubarak • Kuliah Dhuha",
+ "series": "KULIAH DHUHA DARUL MUBARAK",
+ "face": [
+  550,
+  560
+ ],
+ "src_crop": [
+  145,
+  0,
+  810,
+  1440
+ ],
+ "music_volume": 0.1,
+ "whisper": "clips/whisper/w29.json",
+ "window": 1672,
+ "start": 1734.0,
+ "end": 1796.4,
+ "arabic": [],
+ "points": [
+  {
+   "label": "QASAR",
+   "text": "Hanya solat 4 rakaat jadi 2 — Maghrib & Subuh tidak dipendekkan",
+   "at": 8.0,
+   "dur": 13.0
+  },
+  {
+   "label": "LEBIH AFDAL",
+   "text": "Guna kelonggaran = ikut sunnah Nabi ﷺ, lebih besar pahala",
+   "at": 34.0,
+   "dur": 13.0
+  },
+  {
+   "label": "JAMAK",
+   "text": "Taqdim (di awal) atau takhir (di akhir) — kedua-duanya boleh",
+   "at": 49.5,
+   "dur": 11.5
+  }
+ ],
+ "keywords": [
+  "musafir",
+  "dua",
+  "empat",
+  "pahala",
+  "sunnah",
+  "kelonggaran",
+  "jamak",
+  "sembahyang"
+ ],
+ "text": "Begitu juga sembahyang. Orang musafir ni sembahyang dua-dua pada yang empat rakaat, sembahyang dua-dua. Yang tiga tak jadi dua, tak jadi satu setengah. Yang dua pun tak jadi satu, bukannya setengah. Orang musafir ni sembahyang empat jadi dua. Jadi jangan pula tak sempurna rasa sembahyang dua, nak empat juga. Sebenarnya sembahyang dua tu lebih besar pahala lagi daripada sembahyang empat, walaupun empat tu banyak. Dapat kita pahala sunnah Rasulullah, ikut cara Nabi. Diberi kelonggaran. Gunakanlah kelonggaran itu. Jamak taqdim boleh. Jamak takhir boleh. Nak di awal pun boleh. Nak di akhir pun boleh.",
+ "lecture": "ismi_kuliah_dhuha",
+ "style": "V2",
+ "episode": 4
+}
