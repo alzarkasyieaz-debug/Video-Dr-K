@@ -1,0 +1,86 @@
+{
+ "id": "27",
+ "slug": "BERHALA_SUWA_DIRUNTUH_PENJAGANYA_MASUK_ISLAM",
+ "category": "SIRAH NABAWI",
+ "title_lines": [
+  [
+   {
+    "t": "BERHALA DIRUNTUH,"
+   }
+  ],
+  [
+   {
+    "t": "PENJAGANYA"
+   }
+  ],
+  [
+   {
+    "t": "MASUK ISLAM",
+    "gold": true
+   }
+  ]
+ ],
+ "header_html": "BERHALA DIRUNTUH, PENJAGANYA <span class=\"g\" style=\"white-space:nowrap\">MASUK ISLAM</span>",
+ "cover_kicker": "KULIAH DHUHA • SIRAH & FIQH",
+ "cover_sub": "Pondok Pengajian Darul Mubarak",
+ "speaker": "YB Ustaz Muhammad Ismi Mat Taib",
+ "speaker_role": "Pondok Pengajian Darul Mubarak • Kuliah Dhuha",
+ "series": "KULIAH DHUHA DARUL MUBARAK",
+ "face": [
+  550,
+  560
+ ],
+ "src_crop": [
+  145,
+  0,
+  810,
+  1440
+ ],
+ "music_volume": 0.1,
+ "whisper": "clips/whisper/w27.json",
+ "window": 575,
+ "start": 578.0,
+ "end": 676.3,
+ "arabic": [
+  {
+   "ar": "أَسْلَمْتُ لِلَّهِ",
+   "ms": "Aku menyerah diri (memeluk Islam) kerana Allah.",
+   "ref": "KATA PENJAGA BERHALA SUWA' • SIRAH",
+   "at": 88.6,
+   "dur": 9.0
+  }
+ ],
+ "points": [
+  {
+   "label": "AMARAN PENJAGA",
+   "text": "‘Kamu takkan dapat memusnahkannya — kamu akan dihalang!’",
+   "at": 6.0,
+   "dur": 10.0
+  },
+  {
+   "label": "HUJAH AMR AL-AS",
+   "text": "Berhala tak mendengar, tak melihat, tak beri manfaat mahupun mudarat",
+   "at": 30.0,
+   "dur": 13.0
+  },
+  {
+   "label": "DIRUNTUHKAN",
+   "text": "Berhala Suwa' dimusnahkan — tiada apa-apa pun berlaku",
+   "at": 50.0,
+   "dur": 12.0
+  }
+ ],
+ "keywords": [
+  "berhala",
+  "Islam",
+  "Amr",
+  "musnahkan",
+  "Allah",
+  "kebatilan",
+  "apa-apa"
+ ],
+ "text": "Lalu Amr datang nak memusnahkan. Kamu takkan dapat. Kamu akan dihalang, kata orang Quraisy. Apa kata Amr? Sehingga sekarang kamu masih lagi dalam kebatilan. Adakah kamu dapati berhala ini boleh dengar atau melihat? Kamu percaya lagi berhala ini. Bukankah kamu saksikan dia tak boleh berbuat apa-apa. Tak boleh memberikan manfaat mahupun mudarat. Tak boleh mendengar mahupun melihat. Lalu Amr al-As tampil ke depan dan terus meruntuhkan berhala itu. Serta mengarahkan sahabat-sahabat memusnahkan rumah khazanahnya. Yang ini rumah berhala itu. Mereka tidak mendapati apa-apa pun. Maksudnya tak ada berlaku apa-apa. Kaifa ra'aita? Bagaimana pendapat kamu melihat semua ini? Tengok aku dah musnahkan, kata Amr. Tak ada apa-apa berlaku. Aslamtu lillah. Lalu orang kafir yang baru masuk Islam, yang mengatakan bahawa kamu akan dihalang, sedangkan tidak ada apa-apa halangan untuk memusnahkan. Dia menjawab, aslamtu lillah. Aku memeluk Islam kerana Allah. Maka dia menyaksikan bahawa berhala itu memang tak boleh buat apa-apa.",
+ "lecture": "ismi_kuliah_dhuha",
+ "style": "V2",
+ "episode": 2
+}
