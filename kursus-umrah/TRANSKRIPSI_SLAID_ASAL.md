@@ -99,3 +99,18 @@ Penganjur: Darul Mubarak Travel & Tours (logo DM ungu/hijau). Penceramah: Ustaz 
 36 (Hubungan kelamin): berkahwin/mengahwinkan/menerima wakil kahwin; pendahuluan persetubuhan; melakukan persetubuhan — lelaki & wanita
 37 DIELAKKAN (lain-lain): mencaci, mencerca, memaki hamun dgn kata-kata kotor, keji atau bertengkar
 63 Sunat Sai'e 1-3: keluar ke tempat sa'ie melalui pintu Safa; menaiki Bukit Safa dan Marwah hingga sampai batu-batu bukit; menghadap kiblat dan melambai kedua tangan serta bertakbir "Bismillah Allahu Akbar Walillahilhamdu" setiap kali berada di Safa dan Marwah
+--- +Updates batch 2 (13:34) ---
+16 JENIS PAKEJ PENERBANGAN: Penerbangan Direct (Terus) — terus menuju ke Jeddah @ Madinah; Penerbangan Transit — singgah sebentar di lokasi mengikut airlines dan masa tertentu.
+28 Pembahagi: PEMAKAIAN IHRAM.
+30 PAKAIAN IHRAM UMRAH LELAKI: Dua helai kain lepas (tidak bercantum); sehelai dipakai untuk menutup aurat di antara pusat dan lutut dan sehelai lagi dibuat selendang.
+48 SUNAT-SUNAT TAWAF: 01 Berdoa setiap pusingan; 02 7 kali berturut-turut; 03 Memakai pakaian putih; 04 Berittiba' bagi lelaki; 05 Berlari-lari anak di 3 pusingan pertama (lelaki); 06 Istilam ke Hajarul Aswad lalu mengucup tangan dan Rukun Yamani.
+49 NIAT TAWAF: اَللَّهُمَّ إِنِّى أُرِيدُ طَوَافَ بَيْتِكَ الْحَرَامِ سَبْعَةَ أَشْوَاطٍ طَوَافَ الْعُمْرَةِ لِلَّهِ تَعَالَى — "Ya Allah aku hendak tawaf Baitul-Haram, tujuh keliling, tawaf umrah, kerana Allah Taala".
+50 PETA TAWAF (Uwais Madinah): mengelilingi Kaabah 7 pusingan; 1 pusingan: 350–500 m; 7 pusingan = ~3.5 km.
+59 Gambar sa'i: Safa Start; Bukit Safa; Bukit Marwah; tempat sa'ie skuter & kerusi roda.
+65 Sunat sa'ie 7-9: 7 Berwuduk; 8 Berjalan melainkan jika uzur boleh menggunakan kenderaan @ peralatan sokongan; 9 Berdoa.
+74 PERLANGGARAN HUKUM DAN DENDANYA: 1 Lelaki menutup kepala — sembelih seekor kambing. 2 Memotong rambut lebih dari 12 helai — sembelih seekor kambing. 3 Lelaki/wanita memakai haruman atau wangian — sedekah 1 mud (675 g). 4 Wanita menutup muka atau tangan — sembelih seekor kambing. 5 Lelaki memakai pakaian biasa (berjahit) — sembelih seekor kambing atau puasa 10 hari (3 hari di tanah suci, baki di tanah air). 6 Merosakkan tanaman di tanah suci — sembelih seekor kambing. 7 Berburu/membunuh binatang buruan — sembelih seekor kambing atau memberi makan 60 orang miskin atau berpuasa setiap fakir miskin satu hari puasa. 8 Melakukan akad nikah atau menikahkan sebelum tahallul — "awal" dendanya menyembelih seekor kambing [kata "awal" dalam slaid asal — mungkin salah taip].
+75 TAWAF WADA': tawaf 'selamat tinggal' kepada Kaabah kerana permusafiran melebihi dua marhalah atau meninggalkan kota Mekah. Hukumnya WAJIB di sisi Mazhab As-Syafi'ei.
+78 ZIARAH Makkah | Madinah | Taif: ibadah umrah pastinya akan melaksanakan ziarah terutama tempat dalam kitab sirah; pakej Darul Mubarak — ziarah Makkah, Madinah dan Taif.
+79 MASJID NABAWI: masjid kedua terbesar di dunia; dibina Nabi SAW tahun 1 Hijrah (622 M) bersebelahan rumah baginda. Tempat rehat (makam) Nabi SAW. Hadis Abu Hurairah RA: صَلَاةٌ فِي مَسْجِدِي هَذَا أَفْضَلُ مِنْ أَلْفِ صَلَاةٍ فِيمَا سِوَاهُ إِلَّا الْمَسْجِدَ الْحَرَامَ — "Solat di masjidku ini lebih baik daripada seribu kali solat di tempat lain kecuali Masjidil Haram" [Riwayat Muslim (1394)]. Imam al-Nawawi: kelebihan ... [al-Minhaj Syarh Muslim, 163/9].
+80 HUKUM ZIARAH SUNAT — Madinah. Ziarah dalam: Masjid Nabawi; Maqam Rasulullah SAW; Raudhah; Maqam 2 Sahabat; Masjid Ghamamah. Ziarah luar: Masjid Quba'; Masjid Qiblatain; Jabal Uhud; Masjid Tujuh; Ladang Kurma.
+81 KAWASAN DALAM RAUDHAH (gambar lebih jelas)
