@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KURSUS UMRAH — Fahami Ilmu, Hayati Ibadah</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Inter:wght@400;500;600;700&family=Rajdhani:wght@600;700&family=Poppins:wght@500;600;700;800&display=swap">
+<style>
+/*
+  VOICE   khusyuk tetapi bertenaga — kursus mutawwif yang dipersembahkan seperti antara muka masa depan
+  IDEA    "kompas cahaya": setiap slaid ialah panel hologram yang menyala di atas langit malam Makkah
+  PICTURE gambar sebenar Tanah Suci dalam bingkai kubah bercahaya; rajah tawaf, sa'i dan miqat yang hidup
+  COLOUR  biru malam angkasa, neon zamrud, emas cahaya, ungu jenama DM sebagai aksen halus
+  TYPE    Poppins (tajuk), Inter (isi), Orbitron (angka & label HUD), Amiri (Arab, RTL)
+*/
+:root{
+  --bg0:#040818;--bg1:#081131;--bg2:#0d1a45;--glass:rgba(16,30,72,.55);--glass2:rgba(22,40,92,.72);
+  --line:rgba(120,170,255,.18);--line2:rgba(242,196,109,.45);
+  --ink:#f4f1e8;--mut:#b6c2dc;--gold:#f2c46d;--gold2:#c9a44c;--emer:#2ef2b0;--emer2:#10b981;--violet:#a78bfa;--cyan:#5eead4;
+  --rukun:#10b981;--wajib:#3b82f6;--sunat:#f2c46d;--larangan:#f43f5e;
+  --ok:#34d399;--bad:#fb7185;
+  --disp:Poppins,Inter,system-ui,sans-serif;--sans:Inter,system-ui,sans-serif;--hud:Rajdhani,Poppins,sans-serif;--ar:Amiri,"Noto Naskh Arabic",serif;
+  --ease:cubic-bezier(.2,.8,.2,1);
+}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;background:#000;overflow:hidden}
+body{font-family:var(--sans);color:var(--ink);-webkit-font-smoothing:antialiased}
+button{font-family:inherit}
+#stage{position:absolute;left:0;top:0;width:1920px;height:1080px;transform-origin:0 0;overflow:hidden;
+  background:radial-gradient(1200px 700px at 75% 20%,#16246a 0,transparent 60%),radial-gradient(900px 600px at 10% 90%,#0b3b4a 0,transparent 60%),linear-gradient(160deg,var(--bg1),var(--bg0) 70%)}
+#fx{position:absolute;inset:0;pointer-events:none}
+.grid-floor{position:absolute;left:-20%;right:-20%;bottom:-10%;height:46%;pointer-events:none;opacity:.35;
+  background-image:linear-gradient(rgba(46,242,176,.35) 1px,transparent 1px),linear-gradient(90deg,rgba(46,242,176,.35) 1px,transparent 1px);background-size:80px 80px;
+  transform:perspective(600px) rotateX(62deg);transform-origin:top;-webkit-mask-image:linear-gradient(to bottom,transparent,#000 40%,transparent);mask-image:linear-gradient(to bottom,transparent,#000 40%,transparent);animation:floor 6s linear infinite}
+@keyframes floor{to{background-position:0 80px,0 0}}
+.khatam{position:absolute;pointer-events:none;opacity:.16}
+.khatam.k1{width:900px;height:900px;right:-260px;top:-300px;animation:spin 120s linear infinite}
+.khatam.k2{width:520px;height:520px;left:-200px;bottom:-200px;animation:spin 90s linear infinite reverse}
+@keyframes spin{to{transform:rotate(360deg)}}
+#deck{position:absolute;inset:0 0 92px 0}
+.slide{position:absolute;inset:0;overflow:hidden;visibility:hidden;opacity:0;clip-path:circle(0% at var(--cx,50%) var(--cy,50%));transition:clip-path .8s var(--ease),opacity .5s,visibility 0s .8s}
+.slide.on{visibility:visible;opacity:1;clip-path:circle(150% at var(--cx,50%) var(--cy,50%));transition:clip-path .8s var(--ease),opacity .4s,visibility 0s}
+.pad{position:absolute;inset:80px 80px 40px;display:flex;flex-direction:column;gap:28px}
+h1,h2,h3,p{margin:0}
+.hud{font:700 18px/1 var(--hud);letter-spacing:.28em;text-transform:uppercase;color:var(--emer);display:flex;align-items:center;gap:14px}
+.hud::before{content:"";width:46px;height:2px;background:linear-gradient(90deg,var(--emer),transparent);box-shadow:0 0 10px var(--emer)}
+.title{font:800 66px/1.05 var(--disp);letter-spacing:-.01em;text-wrap:balance;max-width:1700px;
+  background:linear-gradient(100deg,#fff 0,#fff3d6 40%,var(--gold) 60%,#fff 80%);background-size:250% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:sheen 7s linear infinite}
+@keyframes sheen{to{background-position:-250% 0}}
+.lead{font-size:34px;line-height:1.4;color:var(--mut);max-width:1500px}
+.lead b,.hl{color:var(--gold)}
+.big{font-size:34px;line-height:1.4}.body{font-size:27px;line-height:1.45}.cap{font:500 19px/1.4 var(--sans);color:var(--mut)}
+.ar{font-family:var(--ar);direction:rtl;unicode-bidi:isolate;line-height:1.9;color:var(--gold)}
+.src-tag{position:absolute;right:80px;top:30px;font:600 15px/1 var(--hud);letter-spacing:.18em;color:var(--mut);opacity:.7}
+/* reveal */
+.rv{opacity:0;transform:translateY(28px);filter:blur(8px);transition:opacity .7s var(--ease),transform .7s var(--ease),filter .7s var(--ease)}
+.slide.on .rv{opacity:1;transform:none;filter:none}
+.slide.on .rv:nth-child(2){transition-delay:.12s}.slide.on .rv:nth-child(3){transition-delay:.24s}.slide.on .rv:nth-child(4){transition-delay:.36s}.slide.on .rv:nth-child(5){transition-delay:.48s}.slide.on .rv:nth-child(6){transition-delay:.6s}
+.step{opacity:0;transform:translateY(22px) scale(.97);filter:blur(6px);transition:all .55s var(--ease)}
+.step.shown{opacity:1;transform:none;filter:none}
+/* glass card */
+.card{position:relative;background:linear-gradient(160deg,var(--glass2),var(--glass));border:1px solid var(--line);border-radius:24px;padding:26px 30px;display:flex;flex-direction:column;gap:12px;
+  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 20px 60px rgba(0,0,0,.35),inset 0 1px 0 rgba(255,255,255,.06);transition:transform .35s var(--ease),box-shadow .35s,border-color .35s}
+.card::after{content:"";position:absolute;inset:-1px;border-radius:inherit;padding:1px;background:linear-gradient(130deg,rgba(242,196,109,.7),transparent 35%,transparent 65%,rgba(46,242,176,.6));-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none;opacity:.55}
+.card:hover{border-color:var(--line2);box-shadow:0 24px 70px rgba(0,0,0,.45),0 0 40px rgba(46,242,176,.18)}
+.card h3{font:700 36px/1.15 var(--disp)}
+.num{font:800 46px/1 var(--disp);color:transparent;-webkit-text-stroke:1.5px var(--gold);text-shadow:0 0 18px rgba(242,196,109,.35)}
+.grid{display:grid;gap:24px}
+ul.pts{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:18px}
+ul.pts li{font-size:32px;line-height:1.35;display:flex;gap:18px;align-items:flex-start}
+ul.pts li>span{flex:1}
+ul.pts li::before{content:"";flex:none;width:14px;height:14px;margin-top:14px;border:2px solid var(--emer);transform:rotate(45deg);box-shadow:0 0 10px var(--emer)}
+ul.pts.sm li{font-size:26px}ul.pts.sm li::before{margin-top:11px;width:11px;height:11px}
+.cat{display:inline-flex;align-items:center;gap:10px;align-self:flex-start;font:700 20px/1 var(--hud);letter-spacing:.12em;text-transform:uppercase;padding:10px 16px;border-radius:8px;border:1.5px solid currentColor;background:rgba(0,0,0,.25)}
+.cat.rukun{color:var(--rukun)}.cat.rukun::before{content:"◆"}
+.cat.wajib{color:#7fb0ff}.cat.wajib::before{content:"●"}
+.cat.sunat{color:var(--sunat)}.cat.sunat::before{content:"○"}
+.cat.larangan{color:var(--bad)}.cat.larangan::before{content:"✕"}
+.cat.urus{color:var(--cyan)}.cat.urus::before{content:"✈"}
+/* photo frame dome */
+.dome{position:relative;overflow:hidden;border-radius:999px 999px 28px 28px;border:2px solid rgba(242,196,109,.7);box-shadow:0 0 0 8px rgba(242,196,109,.08),0 0 60px rgba(242,196,109,.25)}
+.dome img,.frame img{width:100%;height:100%;object-fit:cover;display:block}
+.frame{position:relative;overflow:hidden;border-radius:24px;border:1px solid var(--line2);box-shadow:0 0 50px rgba(46,242,176,.15)}
+.frame.contain img{object-fit:contain;background:#0a1230}
+.scan::after{content:"";position:absolute;left:0;right:0;height:30%;top:-30%;background:linear-gradient(to bottom,transparent,rgba(46,242,176,.18),transparent);animation:scan 4.5s linear infinite;pointer-events:none}
+@keyframes scan{to{top:100%}}
+.kenburns img{animation:kb 18s ease-in-out infinite alternate}
+@keyframes kb{from{transform:scale(1)}to{transform:scale(1.12) translate(-2%,-2%)}}
+.credit{position:absolute;right:12px;bottom:10px;font:500 14px/1 var(--sans);color:#fff;background:rgba(0,0,0,.55);padding:6px 10px;border-radius:99px}
+/* hero */
+.hero-img{position:absolute;right:90px;top:70px;width:700px;height:860px}
+.orbit{position:absolute;border:1.5px solid rgba(46,242,176,.4);border-radius:50%;pointer-events:none}
+.orbit.o1{width:980px;height:980px;right:-50px;top:-30px;border-style:dashed;animation:spin 60s linear infinite}
+.orbit.o2{width:840px;height:840px;right:20px;top:40px;border-color:rgba(242,196,109,.35);animation:spin 40s linear infinite reverse}
+.orbit i{position:absolute;width:14px;height:14px;border-radius:50%;background:var(--emer);box-shadow:0 0 16px var(--emer);top:50%;left:-7px}
+.orbit.o2 i{background:var(--gold);box-shadow:0 0 16px var(--gold);left:auto;right:-7px;top:30%}
+.hero-tx{position:absolute;left:96px;top:0;bottom:0;width:880px;display:flex;flex-direction:column;justify-content:center;gap:30px}
+.hero-tx h1{font:800 124px/.92 var(--disp);letter-spacing:-.02em}
+.hero-tx h1 span{display:block;color:transparent;-webkit-text-stroke:2px var(--gold);text-shadow:0 0 40px rgba(242,196,109,.3)}
+.hero-tx .sub{font:600 46px/1.15 var(--disp);color:var(--emer);text-shadow:0 0 24px rgba(46,242,176,.45)}
+.meta{display:grid;grid-template-columns:auto 1fr;gap:12px 26px;font-size:26px;color:var(--mut)}.meta b{color:var(--ink)}
+.typed::after{content:"▍";color:var(--emer);animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+/* divider */
+.div-num{font:800 300px/.8 var(--disp);color:transparent;-webkit-text-stroke:2px rgba(242,196,109,.8);text-shadow:0 0 60px rgba(242,196,109,.25)}
+/* buttons */
+.btn{font:600 22px/1 var(--sans);color:var(--ink);background:rgba(14,26,64,.8);border:1.5px solid var(--line2);border-radius:14px;padding:14px 20px;cursor:pointer;min-height:54px;transition:all .25s}
+.btn:hover{border-color:var(--emer);box-shadow:0 0 22px rgba(46,242,176,.35)}
+.btn.pri{background:linear-gradient(120deg,#0f9f75,#10b981);border-color:transparent;color:#fff}
+.btn.gold{background:linear-gradient(120deg,#e9b955,#f2c46d);border-color:transparent;color:#1a1408}
+.btn[aria-pressed=true]{background:var(--gold);color:#1a1408}
+.btn:disabled{opacity:.35;cursor:default;box-shadow:none}
+button:focus-visible,label:focus-within{outline:3px solid var(--gold);outline-offset:3px}
+.row{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+/* quiz */
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.opt{display:flex;align-items:center;gap:18px;width:100%;text-align:left;font:500 29px/1.3 var(--sans);color:var(--ink);background:rgba(14,26,64,.7);border:2px solid var(--line);border-radius:18px;padding:18px 24px;cursor:pointer;transition:all .3s}
+.opt:hover:not(:disabled){border-color:var(--emer);transform:translateY(-2px)}
+.opt .k{flex:none;width:50px;height:50px;border-radius:12px;display:grid;place-items:center;font:700 22px/1 var(--hud);border:1.5px solid var(--gold);color:var(--gold)}
+.opt .fb{margin-left:auto;font-weight:700;font-size:24px;white-space:nowrap}
+.opt.right{border-color:var(--ok);box-shadow:0 0 30px rgba(52,211,153,.35)}.opt.right .fb{color:var(--ok)}
+.opt.wrong{border-color:var(--bad);box-shadow:0 0 30px rgba(251,113,133,.3)}.opt.wrong .fb{color:var(--bad)}
+.opt:disabled{cursor:default}
+.explain{background:rgba(46,242,176,.08);border:1px solid rgba(46,242,176,.35);border-radius:16px;padding:18px 24px;font-size:27px;line-height:1.45}
+.score{margin-left:auto;font:700 22px/1 var(--hud);color:var(--gold);letter-spacing:.1em}
+.q{font:700 54px/1.15 var(--disp);max-width:1700px;text-wrap:balance}
+.story{font-size:32px;line-height:1.4;border-left:4px solid var(--gold);padding:8px 0 8px 24px;color:var(--mut)}
+/* sequence */
+.slots,.pool{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.slot{height:170px;border:2px dashed rgba(242,196,109,.5);border-radius:20px;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:8px;font:700 32px/1.2 var(--disp);text-align:center;padding:16px}
+.slot .n{font:700 18px/1 var(--hud);color:var(--mut);letter-spacing:.15em}
+.slot.fill{border-style:solid;border-color:var(--ok);background:rgba(52,211,153,.1);box-shadow:0 0 30px rgba(52,211,153,.25)}
+.opt.card-o{height:140px;justify-content:center;text-align:center;font:700 32px/1.2 var(--disp)}
+.shake{animation:shake .3s;border-color:var(--bad)!important}
+@keyframes shake{25%{transform:translateX(-10px)}75%{transform:translateX(10px)}}
+.msg{font-size:30px;min-height:40px}
+/* checklist */
+.list{display:grid;grid-template-columns:1fr 1fr;gap:14px 36px}
+.item{display:flex;align-items:center;gap:18px;font-size:27px;line-height:1.3;padding:14px 20px;background:rgba(14,26,64,.6);border:1.5px solid var(--line);border-radius:16px;cursor:pointer;transition:all .3s}
+.item input{appearance:none;width:42px;height:42px;flex:none;border:2px solid var(--gold);border-radius:10px;display:grid;place-items:center;margin:0;cursor:pointer}
+.item input:checked{background:var(--emer2);border-color:var(--emer);box-shadow:0 0 18px rgba(46,242,176,.6)}
+.item input:checked::after{content:"✓";color:#fff;font:700 28px/1 var(--sans)}
+.item:has(input:checked){border-color:var(--emer)}
+.item:has(input:checked) span{color:var(--mut);text-decoration:line-through}
+.meter{flex:1;max-width:560px;height:12px;background:rgba(255,255,255,.08);border-radius:99px;overflow:hidden}
+.meter i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--emer),var(--gold));box-shadow:0 0 14px var(--emer);transition:width .5s}
+/* tabs */
+.tabs{display:flex;gap:12px;flex-wrap:wrap}
+.tab{font:700 22px/1.1 var(--disp);color:var(--mut);background:rgba(14,26,64,.6);border:1.5px solid var(--line);border-radius:14px;padding:14px 20px;cursor:pointer;transition:all .3s}
+.tab[aria-selected=true]{color:#1a1408;background:linear-gradient(120deg,#e9b955,#f2c46d);border-color:transparent;box-shadow:0 0 26px rgba(242,196,109,.4)}
+.panel{display:none}.panel.on{display:flex;animation:pin .5s var(--ease)}
+@keyframes pin{from{opacity:0;transform:translateY(14px)}}
+/* hotspot */
+.hot{position:absolute;width:44px;height:44px;margin:-22px 0 0 -22px;border-radius:50%;background:rgba(46,242,176,.25);border:2px solid var(--emer);cursor:pointer;box-shadow:0 0 0 0 rgba(46,242,176,.6);animation:pulse 2s infinite}
+.hot[aria-pressed=true]{background:var(--gold);border-color:var(--gold);animation:none;box-shadow:0 0 24px var(--gold)}
+@keyframes pulse{70%{box-shadow:0 0 0 22px rgba(46,242,176,0)}100%{box-shadow:0 0 0 0 rgba(46,242,176,0)}}
+/* sims */
+.count{font:800 140px/1 var(--disp);color:var(--gold);text-shadow:0 0 30px rgba(242,196,109,.4)}.count small{font-size:50px;color:var(--mut)}
+.status{font-size:30px;line-height:1.35;min-height:84px}
+.ctrl{display:grid;grid-template-columns:1fr 1fr;gap:14px}.ctrl .btn{font-size:24px;min-height:66px}
+.illus{display:inline-block;align-self:flex-start;font:700 15px/1 var(--hud);letter-spacing:.14em;text-transform:uppercase;color:var(--gold);border:1px solid var(--gold);border-radius:99px;padding:8px 14px}
+svg text{font-family:var(--sans)}
+/* flow */
+.flow{position:relative;display:grid;gap:22px}
+.flow .card{min-height:0}
+.node{width:62px;height:62px;border-radius:50%;display:grid;place-items:center;font:900 24px/1 var(--hud);color:#04121d;background:radial-gradient(circle,var(--emer),#0f9f75);box-shadow:0 0 24px rgba(46,242,176,.6)}
+.beam{position:absolute;height:3px;background:linear-gradient(90deg,var(--emer),var(--gold));box-shadow:0 0 12px var(--emer);transform-origin:left;transform:scaleX(0);transition:transform 1.6s var(--ease) .3s}
+.slide.on .beam{transform:scaleX(1)}
+/* ===== FX futuristik ===== */
+.flowline{animation:fdash 1s linear infinite}.flowline.rev{animation-direction:reverse}@keyframes fdash{to{stroke-dashoffset:-40}}
+.sweep{animation:spin 6s linear infinite}.sweep.rev{animation-direction:reverse}
+.spin-slow{animation:spin 60s linear infinite}.spin-rev{animation:spin 40s linear infinite reverse}
+.fping{transform-box:fill-box;transform-origin:center;opacity:0}
+.cur .fping{animation:fping 1.6s ease-out infinite}@keyframes fping{0%{opacity:.9;transform:scale(1)}100%{opacity:0;transform:scale(2.3)}}
+.fcard{opacity:.14;filter:blur(3px);transform:translateY(16px);transition:all .6s var(--ease)}.fcard.on{opacity:1;filter:none;transform:none}
+.fcard.cur{border-color:var(--emer);box-shadow:0 0 44px rgba(46,242,176,.35),inset 0 0 30px rgba(46,242,176,.08)}
+.fnode .fhex,.wn .wc{transition:fill .4s,stroke .4s}.fnode.done .fhex,.wn.done .wc{fill:#0f9f75;stroke:#2ef2b0}.fnode.done text,.wn.done text{fill:#04121d}
+.fnode.cur .fhex,.wn.cur .wc{stroke:#2ef2b0;stroke-width:5;fill:#0b2a4a}.fhex2{transform-box:fill-box;transform-origin:center;animation:spin 14s linear infinite}
+.wfloat{animation:wfloat 4s ease-in-out infinite}@keyframes wfloat{50%{transform:translateY(-12px)}}
+.wscan{transform-box:fill-box;transform-origin:center;opacity:0;animation:wscan 3s ease-out infinite}@keyframes wscan{0%{opacity:.8;transform:translateY(0) scale(1)}100%{opacity:0;transform:translateY(-190px) scale(.55)}}
+.mqwave{transform-box:fill-box;transform-origin:center;opacity:0;animation:mqwave 3s ease-out infinite}@keyframes mqwave{0%{opacity:.7;transform:scale(.6)}100%{opacity:0;transform:scale(7)}}
+.mq .mqring{transform-box:fill-box;transform-origin:center;opacity:0}.mq.on .mqring{animation:fping 1.4s ease-out infinite}
+.mq.on .mqhalo{fill:rgba(242,196,109,.35);stroke:#f2c46d}.mqcore{animation:corepulse 2.4s ease-in-out infinite;transform-box:fill-box;transform-origin:center}@keyframes corepulse{50%{transform:scale(1.25);opacity:.5}}
+.tstart{animation:tglow 1.6s ease-in-out infinite}@keyframes tglow{50%{opacity:.45}}
+.tkaabah{animation:tglow 3s ease-in-out infinite}
+.tburst{transform-box:fill-box;transform-origin:center}.tburst.go{animation:burst .9s ease-out}@keyframes burst{0%{opacity:1;transform:scale(1)}100%{opacity:0;transform:scale(4)}}
+.tlap{display:grid;place-items:center;height:54px;border-radius:12px;font:700 26px/1 var(--hud);color:var(--mut);border:1.5px solid var(--line);background:rgba(14,26,64,.6);transition:all .4s}
+.tlap.done{background:linear-gradient(135deg,#0f9f75,#10b981);color:#fff;border-color:var(--emer);box-shadow:0 0 18px rgba(46,242,176,.45)}
+.tlap.cur{border-color:var(--gold);color:var(--gold);animation:tglow 1.2s ease-in-out infinite;box-shadow:0 0 18px rgba(242,196,109,.4)}
+.szone.hot{animation:tglow .5s ease-in-out infinite}
+.sbeam{animation:flick 1.8s ease-in-out infinite}.sbeam:nth-of-type(2n){animation-delay:.6s}@keyframes flick{0%,100%{opacity:.35}50%{opacity:1}}
+.schev path{animation:chev 1.4s linear infinite}@keyframes chev{0%{opacity:.15}50%{opacity:1}100%{opacity:.15}}
+.shill .hring{transform-box:fill-box;transform-origin:center;opacity:0}.shill.target .hring{animation:fping 1.5s ease-out infinite}
+.sseg{display:flex;flex-direction:column;gap:6px;font:700 15px/1.1 var(--hud);letter-spacing:.06em;color:var(--mut)}
+.sseg i{display:block;height:10px;border-radius:6px;background:rgba(255,255,255,.08);overflow:hidden}.sseg b{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--emer),var(--gold));box-shadow:0 0 12px var(--emer)}
+.sseg.cur{color:var(--gold)}.sseg.done{color:var(--emer)}
+/* nav */
+#nav{position:absolute;left:0;right:0;bottom:0;height:92px;background:linear-gradient(to top,rgba(4,8,24,.96),rgba(4,8,24,.75));border-top:1px solid var(--line);display:flex;align-items:center;gap:12px;padding:0 40px;z-index:5;backdrop-filter:blur(10px)}
+#nav .grow{flex:1;display:flex;align-items:center;gap:18px}
+.bar{flex:1;height:6px;border-radius:99px;background:rgba(255,255,255,.08);overflow:hidden}.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--emer),var(--gold));box-shadow:0 0 12px var(--emer);width:0;transition:width .5s}
+#count{font:700 22px/1 var(--hud);color:var(--gold);min-width:110px;text-align:center}
+#chap{font:700 16px/1 var(--hud);color:var(--emer);letter-spacing:.14em;text-transform:uppercase;white-space:nowrap;max-width:420px;overflow:hidden;text-overflow:ellipsis}
+#notes{position:absolute;right:40px;bottom:110px;width:820px;max-height:640px;overflow:auto;background:rgba(8,17,49,.96);border:1px solid var(--line2);border-radius:22px;padding:22px 26px;font-size:21px;line-height:1.55;z-index:6;box-shadow:0 20px 60px rgba(0,0,0,.6)}
+#notes h4{margin:0 0 10px;font:700 15px/1 var(--hud);letter-spacing:.2em;text-transform:uppercase;color:var(--emer)}
+#notes .src{margin-top:12px;padding-top:12px;border-top:1px solid var(--line);font-size:17px;color:var(--mut)}
+#notes .warn{color:var(--gold);font-weight:700}
+#menu{position:absolute;inset:0 0 92px 0;background:rgba(4,8,24,.96);z-index:6;padding:60px 70px;overflow:auto}
+#menu h2{font:800 56px/1.1 var(--disp);margin-bottom:26px}
+.mgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.mcard{text-align:left;color:var(--ink);background:rgba(14,26,64,.75);border:1.5px solid var(--line);border-radius:18px;padding:18px 22px;cursor:pointer;display:flex;flex-direction:column;gap:8px;transition:all .25s}
+.mcard:hover{border-color:var(--emer);box-shadow:0 0 24px rgba(46,242,176,.25)}
+.mcard b{font:700 27px/1.15 var(--disp)}.mcard small{font:700 14px/1 var(--hud);letter-spacing:.14em;color:var(--emer)}
+[hidden]{display:none!important}
+.reduce *,.reduce *::before,.reduce *::after{animation:none!important;transition-duration:0ms!important;transition-delay:0ms!important}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+/* print */
+#pbar{display:none;position:sticky;top:0;z-index:9;background:#0b1433;color:#f4f1e8;padding:12px 20px;font:500 16px/1.4 var(--sans);align-items:center;gap:16px}
+#pbar button{font:700 15px/1 var(--sans);padding:10px 16px;border-radius:8px;border:0;background:#f2c46d;color:#1a1408;cursor:pointer}
+body.print{overflow:auto;background:#1b2240}
+body.print #pbar{display:flex}
+body.print #view{position:static}
+body.print #stage{position:relative;transform:none!important;height:auto;background:none;zoom:var(--pz,.5);margin:0 auto}
+body.print #deck{position:static}
+body.print .slide{position:relative;visibility:visible;opacity:1;clip-path:none;width:1920px;height:1080px;margin:0 0 30px;overflow:hidden;break-after:page;background:radial-gradient(1200px 700px at 75% 20%,#16246a 0,transparent 60%),linear-gradient(160deg,#081131,#040818 70%)}
+body.print .rv,body.print .step{opacity:1;transform:none;filter:none}
+body.print #nav,body.print #menu,body.print #notes,body.print #fx,body.print .grid-floor,body.print .khatam{display:none!important}
+body.print .pnote{display:block}
+body.print .beam{transform:scaleX(1)}
+.pnote{display:none;position:absolute;left:0;right:0;bottom:0;background:rgba(4,8,24,.9);border-top:1px solid var(--line);padding:10px 80px;font-size:16px;line-height:1.4;color:var(--mut);max-height:110px;overflow:hidden}
+@media print{@page{size:16in 9in;margin:0}html,body{height:auto;overflow:visible}#pbar{display:none!important}body.print #stage{zoom:.8}body.print .slide{margin:0}*{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+</style>
+</head>
+<body>
+<div id="pbar"><span><b>Mod Cetak</b> — salinan statik untuk PDF. Semua poin dan jawapan dipaparkan; nota penceramah di bawah setiap slaid. Animasi, simulasi dan interaktiviti hanya pada versi HTML. Cetak: Ctrl/Cmd + P → Simpan sebagai PDF (buka dalam tab penuh jika bingkai menyekat).</span><button id="pexit">Kembali ke pembentangan</button></div>
+<div id="view">
+<div id="stage">
+ <canvas id="fx" width="1920" height="1080"></canvas>
+ <div class="grid-floor"></div>
+ <svg class="khatam k1" viewBox="0 0 200 200" aria-hidden="true"><g fill="none" stroke="#f2c46d" stroke-width=".6"><rect x="50" y="50" width="100" height="100"/><rect x="50" y="50" width="100" height="100" transform="rotate(45 100 100)"/><circle cx="100" cy="100" r="70"/><circle cx="100" cy="100" r="90" stroke-dasharray="2 4"/><rect x="65" y="65" width="70" height="70" transform="rotate(22.5 100 100)"/><rect x="65" y="65" width="70" height="70" transform="rotate(67.5 100 100)"/></g></svg>
+ <svg class="khatam k2" viewBox="0 0 200 200" aria-hidden="true"><g fill="none" stroke="#2ef2b0" stroke-width=".7"><rect x="50" y="50" width="100" height="100"/><rect x="50" y="50" width="100" height="100" transform="rotate(45 100 100)"/><circle cx="100" cy="100" r="80" stroke-dasharray="1 3"/></g></svg>
+ <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs></svg>
+ <div id="deck"></div>
+ <div id="menu" hidden></div>
+ <aside id="notes" hidden></aside>
+ <nav id="nav" aria-label="Navigasi slaid">
+  <button class="btn" id="bMenu">☰ Menu</button>
+  <button class="btn" id="bPrev">← Sebelum</button>
+  <button class="btn pri" id="bNext">Seterusnya →</button>
+  <div class="grow"><span id="chap"></span><div class="bar"><i id="prog"></i></div><span id="count"></span></div>
+  <button class="btn" id="bNotes" aria-pressed="false">Nota</button>
+  <button class="btn" id="bReduce" aria-pressed="false">Kurangkan Animasi</button>
+  <button class="btn" id="bPrint">Mod Cetak</button>
+ </nav>
+</div>
+</div>
+<script>
+{
+const CH={A:"Pembukaan",B:"Asas Umrah",C:"Miqat, Niat & Ihram",D:"Ibadah Tawaf",E:"Sa‘i & Tahallul",F:"Dam",G:"Madinah & Nusuk",H:"Persiapan & Penutup"};
+const img=f=>"img/"+f+".jpg";
+const draft=`<span class="src-tag">SEMAKAN PENCERAMAH</span>`;
+const SA="Slaid asal Darul Mubarak (Drive: Slide Kursus/";
+const src=(...n)=>SA+n.map(x=>x+".png").join(", ")+")";
+/* ================= DATA SLAID — ikut susunan slaid asal ================= */
+const S=[
+{ch:"A",t:"hero",src:src(1),notes:"Alu-aluan. Kursus dikendalikan oleh Darul Mubarak Travel & Tours bersama Ustaz Zulhafeez Ahmad Zahidi Al-Hafiz (seperti slaid asal 1)."},
+{ch:"A",t:"agenda",src:src(2),notes:"Kandungan kursus mengikut slaid asal 2. Setiap kad boleh diklik untuk terus ke bahagian berkenaan."},
+{ch:"A",t:"profile",src:src(3,4,5,6,7,8,9,10,11),notes:"Ringkasan profil mutawwif daripada slaid asal 3–11 (pendidikan, persijilan, penulisan, kerjaya dan hubungan). Penceramah boleh menambah cerita peribadi di sini."},
+{ch:"A",t:"question",src:"Aktiviti pembukaan",q:"Apakah perkara yang paling anda risaukan sebelum menunaikan umrah?",ideas:["Terlupa urutan ibadah","Tersalah niat / terlepas miqat","Larangan ihram","Kesesakan ketika tawaf","Kesihatan & stamina","Tersesat di masjid"],notes:"Kumpul jawapan audiens dahulu, kemudian tekan Seterusnya untuk memaparkan kebimbangan lazim satu demi satu dan beritahu bab mana yang menjawabnya."},
+/* B */
+{ch:"B",t:"divider",n:"01",items:["Pengertian umrah","Hukum & dalil","Carta alir perjalanan","Rukun & wajib umrah"],img:"kaabah-tawaf",src:"—",notes:"Bab asas umrah."},
+{ch:"B",t:"quote",hud:"Pengertian Umrah",title:"Apa itu umrah?",quote:"Umrah ialah menziarahi Kaabah pada bila-bila masa untuk mengerjakan <b>tawaf</b>, <b>saie</b> dan <b>bercukur</b> mengikut syarat-syarat yang tertentu.",img:"kaabah-tawaf",src:src(12),notes:"Takrif seperti slaid asal 12."},
+{ch:"B",t:"dalil",hud:"Hukum & Dalil Umrah",title:"Wajib sekali seumur hidup",pts:["Ibadah umrah merupakan salah satu kewajipan yang mesti dilaksanakan oleh setiap Muslim yang mukallaf.","Hukumnya <b>wajib sekali seumur hidup</b> apabila memenuhi syarat-syaratnya."],cards:[{h:"Firman Allah SWT",t:"“…dan sempurnakanlah ibadah haji dan umrah kerana Allah SWT.”",r:"Surah Al-Baqarah : 196"},{h:"Sabda Rasulullah SAW",t:"Dari Abu Hurairah RA: “Dosa di antara dua umrah akan terhapus dan haji mabrur (yang diterima) akan mendapat balasan syurga.”",r:"Riwayat Bukhari, Muslim, Tirmizi, Nasa’i, Ahmad, Ibnu Majah dan Malik"}],src:src(13,14),notes:"Dalil seperti tertulis dalam slaid asal 13–14 (terjemahan Melayu sahaja; teks Arab tidak dimasukkan kerana tiada dalam bahan asal)."},
+{ch:"B",t:"flow8",hud:"Carta Alir Perjalanan Umrah",title:"Lapan fasa perjalanan anda",items:[["Persediaan di Malaysia","Tarikh cadangan & pemilihan pakej"],["Agensi Pelancongan","Ikut kemampuan kewangan"],["Pemilihan Pakej","Penerbangan, waktu bertolak & transit"],["Pengurusan Penerbangan","Imigresen & ketibaan di Jeddah"],["Umrah Pertama","Bimbingan mutawwif · niat ihram di miqat"],["Ziarah Madinah","Ziarah & penerangan sirah"],["Tawaf Wada’","Sebelum berangkat pulang"],["Penerbangan Pulang","Imigresen & pintu perlepasan"]],src:src(15,17),notes:"Slaid asal 15 dan 17 (slaid 16 tidak dapat dibaca kerana fail melebihi had saiz). Tekan Seterusnya untuk memaparkan setiap fasa."},
+{ch:"B",t:"rukunwajib",hud:"Rukun & Wajib Umrah",title:"Tujuh perkara utama",items:[["Niat Ihram Umrah","rukun"],["Di Miqat","wajib"],["Jaga Larangan Ihram","wajib"],["Tawaf","rukun"],["Sa‘ie","rukun"],["Tahallul","rukun"],["Tertib","rukun"]],src:src(18),notes:"Infografik slaid asal 18. Rukun: tinggal = umrah tidak sah. Wajib: tinggal = dikenakan dam (lihat Bab F). Klik penapis untuk menyerlahkan kategori."},
+{ch:"B",t:"tof",hud:"Aktiviti · Betul atau Perlu Dibetulkan?",items:[{st:"“Berniat ihram di miqat ialah rukun umrah.”",a:"fix",why:"Perlu dibetulkan: berniat ihram ialah RUKUN, tetapi melakukannya DI MIQAT ialah WAJIB umrah (slaid asal 18)."},{st:"“Tahallul (bercukur/bergunting) ialah salah satu rukun umrah.”",a:"ok",why:"Betul. Tahallul ialah rukun keenam dalam infografik slaid asal 18."},{st:"“Umrah boleh dikerjakan pada bila-bila masa sepanjang tahun.”",a:"ok",why:"Betul — Miqat Zamani umrah ialah sepanjang tahun, selain ketika seseorang sedang berihram haji (slaid asal 19)."}],src:src(18,19),notes:"Tiga kenyataan."},
+/* C */
+{ch:"C",t:"divider",n:"02",items:["Pengertian miqat","Peta miqat makani","Carta alir ibadah","Talbiah, ihram & larangan"],img:"haram-menara",src:"—",notes:"Bab miqat, niat dan ihram."},
+{ch:"C",t:"miqatdef",hud:"Pengertian Miqat",title:"Miqat: masa & tempat berniat ihram",src:src(19),notes:"Slaid asal 19. Bahasa: waktu. Istilah: ketentuan masa/tempat untuk berniat ihram haji atau umrah. Berniat ihram di miqat adalah salah satu perkara wajib."},
+{ch:"C",t:"miqatmap",hud:"Miqat Makani · Peta Interaktif",title:"Lima lokasi miqat",src:src(20,21,22,23,24),notes:"Klik setiap penanda. Jarak hanya dipaparkan jika dinyatakan dalam slaid asal (Hudaibiah ~22 km, Qarnul Manazil ~94 km, Ja’ranah ~24 km). Rajah ialah ilustrasi arah — bukan skala sebenar."},
+{ch:"C",t:"wheel",hud:"Carta Alir Ibadah Umrah",title:"Lapan langkah ibadah",items:["Mandi Sunat Ihram","Memakai Ihram","Berniat Ihram di Miqat","Tawaf Berittiba’","Berdoa di Multazam","Solat Sunat di Belakang Maqam Ibrahim","Sa‘ie antara Safa & Marwah","Bercukur @ Bergunting"],src:src(25),notes:"Roda slaid asal 25. Tekan Seterusnya — penunjuk bergerak ke langkah berikutnya."},
+{ch:"C",t:"niat",src:src(26),notes:"Slaid asal 26 (versi JPG dalam folder +Updates). Lafaz niat umrah ditaip semula; lafaz niat bersyarat dipaparkan sebagai imej asal daripada slaid supaya baris Arab tidak berubah. Niat bersyarat sesuai bagi yang bimbang terhalang (sakit, haid, dsb.) — rujuk slaid Dam Ihsar."},
+{ch:"C",t:"arabic",hud:"Lafaz Talbiah",ar:"لَبَّيْكَ ٱللَّٰهُمَّ لَبَّيْكَ، لَبَّيْكَ لَا شَرِيكَ لَكَ لَبَّيْكَ، إِنَّ ٱلْحَمْدَ وَٱلنِّعْمَةَ لَكَ وَٱلْمُلْكَ، لَا شَرِيكَ لَكَ",makna:"“HambaMu datang menyahut panggilanMu ya Allah, hambaMu datang menyahut panggilanMu. HambaMu datang menyahut panggilanMu, Tuhan yang tiada sekutu bagiMu. Sesungguhnya segala puji dan nikmat dan kerajaan adalah kepunyaanMu, tiada sekutu bagiMu.”",src:src(27),notes:"Teks Arab dan maksud disalin daripada slaid asal 27. Talbiah dibaca selepas berniat ihram."},
+{ch:"C",t:"ihram",hud:"Pakaian Ihram Umrah",title:"Lelaki & wanita",src:src(29,31),notes:"Slaid asal 29 & 31. Idtiba’ (berittiba’) bagi lelaki hanya ketika tawaf. Slaid 30 (kemungkinan pakaian lelaki) tidak dapat dibaca."},
+{ch:"C",t:"larangan",src:src(32,33,34,35,36,37),notes:"Slaid asal 32–37 (versi JPG dalam folder +Updates). Klik setiap tab kategori atau tekan Seterusnya. Melanggar larangan dikenakan dam (Bahagian 05)."},
+{ch:"C",t:"quiz",hud:"Kuiz · Miqat & Ihram",qs:[{q:"Jemaah yang datang dari arah Madinah berniat ihram di miqat mana?",o:["Masjid Aisyah Tan’eim","Bir Ali @ Zulhulaifah","Qarnul Manazil","Ja’ranah"],a:1,why:"Bir Ali @ Zulhulaifah ialah miqat bagi jemaah dari arah Madinah (slaid asal 24)."},{q:"Miqat yang paling hampir dengan Makkah ialah…",o:["Hudaibiah","Ja’ranah","Masjid Aisyah Tan’eim","Qarnul Manazil"],a:2,why:"Masjid Aisyah di Tan’eim ialah miqat paling hampir dengan Makkah (slaid asal 23)."},{q:"Bagi wanita, pakaian ihram mesti menutup seluruh tubuh KECUALI…",o:["Muka dan dua pergelangan tangan","Kaki","Rambut","Tiada pengecualian"],a:0,why:"Wanita menutup semua anggota selain muka dan dua pergelangan tangan (slaid asal 31)."},{q:"Larangan memakai sarung tangan ketika ihram terpakai kepada…",o:["Lelaki sahaja","Wanita sahaja","Lelaki dan wanita","Tiada larangan"],a:2,why:"Memakai sarung tangan dilarang bagi lelaki dan wanita (slaid asal 32)."}],src:src(23,24,31),notes:"Tiga soalan. Markah sesi pada peranti ini sahaja."},
+/* D */
+{ch:"D",t:"divider",n:"03",items:["Pengertian & syarat tawaf","Jenis-jenis tawaf","Penjuru Kaabah & lampu hijau","Ibadah selepas tawaf"],img:"kaabah-tawaf",src:"—",notes:"Bab ibadah tawaf."},
+{ch:"D",t:"quote",hud:"Ibadah Tawaf",title:"Tawaf",quote:"Mengelilingi Kaabah sebanyak <b>7 pusingan</b> bermula dan berakhir di <b>Hajarul Aswad</b> dengan syarat-syarat tertentu. Elakkan perbualan yang sia-sia.",img:"menara-jam-makkah",src:src(38),notes:"Slaid asal 38."},
+{ch:"D",t:"syarat",hud:"Syarat-Syarat Sah Tawaf",title:"Sembilan syarat — klik untuk buka",items:["Suci dari hadas dan berwudu’","Suci badan, pakaian dan tempat tawaf daripada najis","Menutup aurat","Berniat melakukan tawaf","Bermula dan berakhir pada sudut Hajarul Aswad","Berjalan bertujuan tawaf, bukan yang lain","Menjadikan Baitullah di sebelah kiri dan berjalan mengelilingi Kaabah","Cukup 7 kali dengan yakin","Dilakukan dalam masjid, di luar Hijir Ismail dan tidak menyentuh mana-mana bahagian Kaabah"],src:src(39,40,41),notes:"Slaid asal 39–41. Klik kad untuk mendedahkan setiap syarat, atau tekan Seterusnya."},
+{ch:"D",t:"hex",hud:"Jenis-Jenis Tawaf",title:"Enam jenis tawaf",items:[["Qudum","Tawaf pertama yang dilakukan oleh jemaah haji apabila tiba di Mekah untuk haji atau umrah."],["Sunat","Tawaf pilihan yang boleh dilakukan oleh umat Islam pada bila-bila masa."],["Ifadhah","Tawaf yang menjadi rukun haji, dilakukan selepas pulang wukuf di Arafah. Juga dinamakan bagi tawaf rukun umrah."],["Umrah","Tawaf yang menjadi rukun ibadah umrah."],["Nazar","Tawaf untuk memenuhi nazarnya."],["Wada’","Tawaf perpisahan yang dilakukan oleh jemaah haji atau umrah sebelum meninggalkan Mekah."]],src:src(42,43,44,45,46,47),notes:"Slaid asal 42–47. Klik heksagon untuk penerangan. (Penerangan 'Tawaf Umrah' diringkaskan daripada slaid 44 — sahkan.)"},
+{ch:"D",t:"kaabah",hud:"Rukun @ Penjuru Kaabah",title:"Kenali empat penjuru",src:src(52,53,54,55),notes:"Slaid asal 52–55. Klik penanda pada rajah. Doa Rukun Yamani (Al-Baqarah 201) disalin daripada slaid 55."},
+{ch:"D",t:"lampu",hud:"Lampu Hijau",title:"Penanda permulaan tawaf",src:src(51,52),notes:"Slaid asal 51–52. Lampu hijau di mataf sejajar penjuru Aswad — supaya jemaah tidak sesat dan terlupa. Istilam sambil menyebut “Bismillahi Allahu Akbar ×3 Walillahilhamd” pada permulaan setiap pusingan."},
+{ch:"D",t:"tawaf",src:src(38,40,41,51),notes:"Simulasi ilustrasi: mula di garis lampu hijau sejajar Hajarul Aswad, Kaabah di kiri, di luar Hijir Ismail, 7 pusingan. Main = satu pusingan; Langkah = satu penjuru."},
+{ch:"D",t:"after",hud:"Ibadah Selepas Tawaf",title:"Tiga amalan selepas tawaf",items:[["Berdoa di Multazam","Kawasan antara Hajar Aswad dan Pintu Kaabah — jika ada ruang"],["Solat Sunat Tawaf","Di belakang Maqam Nabi Ibrahim"],["Minum Air Zam-Zam","Berdiri & duduk"]],src:src(56),notes:"Slaid asal 56."},
+{ch:"D",t:"quiz",hud:"Kuiz · Tawaf",qs:[{q:"Penjuru Kaabah manakah yang sunnah disentuh ketika tawaf sunat?",o:["Penjuru Iraqi","Penjuru Syami","Rukun Yamani","Penjuru Hijir"],a:2,why:"Sunnah menyentuh Rukun Yamani sekiranya melakukan tawaf sunat (slaid asal 55)."},{q:"Tawaf perpisahan sebelum meninggalkan Mekah dinamakan…",o:["Tawaf Qudum","Tawaf Wada’","Tawaf Nazar","Tawaf Ifadhah"],a:1,why:"Tawaf Wada’ ialah tawaf perpisahan (slaid asal 45)."},{q:"Di manakah Maqam Ibrahim terletak?",o:["Antara Penjuru Aswad & Penjuru Iraqi","Dalam Hijir Ismail","Di Rukun Yamani","Di atas Kaabah"],a:0,why:"Maqam Ibrahim terletak antara Penjuru Aswad dan Penjuru Iraqi (slaid asal 53)."}],src:src(45,53,55),notes:"Tiga soalan."},
+/* E */
+{ch:"E",t:"divider",n:"04",items:["Pengertian & jarak Safa–Marwah","Syarat & sunat sa‘i","Bercukur & tertib"],img:"saie-atas",src:"—",notes:"Bab sa‘i dan tahallul."},
+{ch:"E",t:"saiedef",hud:"Ibadah Sa‘ie",title:"Berjalan berulang-alik antara Safa & Marwah",src:src(57,58,60),notes:"Slaid asal 57, 58 & 60. Safa dan Marwah: bukit batu hitam pejal, tinggi 15 meter, di dinding Masjidil Haram. Laluan tingkat atas, skuter dan kerusi roda disediakan."},
+{ch:"E",t:"syaratsaie",hud:"Syarat-Syarat Sah Sa‘ie",title:"Lima syarat sah",items:["Dilakukan selepas tawaf (mengikut tertib)","Dimulakan dari Safa dan berakhir di Marwah","Mesti sempurna sebanyak 7 kali","Dilakukan kerana ibadah, bukan kerana sebab lain","Dilakukan di Batnul Wadi (tempat yang termaklum)"],src:src(62),notes:"Slaid asal 62."},
+{ch:"E",t:"sunatsaie",hud:"Sunat Sa‘ie & Lampu Hijau",title:"Berlari-lari anak di kawasan lampu hijau",src:src(61,64),notes:"Slaid asal 61 & 64. Sunat 1–3 daripada slaid 63 (versi JPG dalam +Updates)."},
+{ch:"E",t:"saie",src:src(57,61,62),notes:"Simulasi ilustrasi: mula di Safa, akhir di Marwah, 7 perjalanan. Zon hijau menandakan kawasan lampu hijau (lelaki berlari-lari anak). Kedudukan zon ialah ilustrasi."},
+{ch:"E",t:"tahallul",src:src(66,67),notes:"Slaid asal 66 & 67."},
+{ch:"E",t:"sequence",hud:"Aktiviti · Susun Tertib",title:"Klik kad mengikut tertib rukun umrah",order:["Niat Ihram","Tawaf","Sa‘ie","Bercukur / Bergunting"],shown:[2,0,3,1],src:src(67),notes:"Tertib seperti slaid asal 67."},
+/* F */
+{ch:"F",t:"divider",n:"05",items:["Pengertian dam","Empat jenis dam","Cara melaksanakan dam ihsar"],img:"haram-koridor",src:"—",notes:"Bab dam."},
+{ch:"F",t:"dam",src:src(68),notes:"Slaid asal 68. DM (Darul Mubarak) membantu menguruskan dam di Mekah sekiranya jemaah terlupa dan telah pulang ke Malaysia."},
+{ch:"F",t:"damtabs",src:src(69,70,71,72,73),notes:"Slaid asal 69–73. Klik tab untuk setiap jenis dam. Cupak: secupak = sehari puasa."},
+{ch:"F",t:"quiz",kind:"scenario",hud:"Senario · Apa tindakan anda?",qs:[{story:"Pak Ali terlupa dan memotong kuku selepas berniat ihram.",q:"Perkara ini termasuk dalam dam jenis apa?",o:["Dam Tertib dan Taqdir","Dam Ihsar","Tiada dam","Dam Takhyir (tumbuhan)"],a:0,why:"Memotong rambut atau kuku termasuk sebab Dam Tertib dan Taqdir (slaid asal 70): sembelih seekor kambing; jika tidak mampu, puasa 10 hari (3 di Mekah, 7 di kampung)."},{story:"Mak Som jatuh sakit teruk selepas berniat ihram dan terpaksa dihantar pulang ke Malaysia sebelum sempat tawaf.",q:"Apakah jalan keluar menurut slaid kursus?",o:["Teruskan pantang larang ihram selama-lamanya","Bertahallul ihsar dengan Dam Ihsar","Tiada apa-apa perlu dibuat","Dam Takhyir"],a:1,why:"Pesakit berat yang terpaksa dihantar pulang termasuk keadaan Dam Ihsar (slaid asal 69, 73)."},{story:"Selepas pulang ke Malaysia, Haji Daud baru sedar dia terlupa satu perkara wajib dan dikenakan dam.",q:"Apa yang boleh dilakukan?",o:["Abaikan sahaja","Hubungi Darul Mubarak untuk bantuan menguruskan dam di Mekah","Ulang umrah tahun depan","Bayar kepada sesiapa sahaja"],a:1,why:"Slaid asal 68: DM akan membantu menguruskan dam di Mekah."}],src:src(68,69,70,73),notes:"Tiga senario berdasarkan slaid dam."},
+/* G */
+{ch:"G",t:"divider",n:"06",items:["Niat tawaf wada’","Raudhah & 6 tiang","Maqam Rasulullah SAW","Aplikasi Nusuk"],img:"nabawi-kubah-hijau",src:"—",notes:"Bab Madinah dan Nusuk."},
+{ch:"G",t:"arabic",hud:"Niat Tawaf Wada’",ar:"اَللَّهُمَّ إِنِّي أُرِيْدُ طَوَافَ بَيْتِكَ الْحَرَامِ سَبْعَةَ أَشْوَاطٍ طَوَافَ الْوَدَاعِ فَيَسِّرْهُ لِي وَتَقَبَّلْهُ مِنِّي لِلَّهِ تَعَالَى",makna:"“Ya Allah, sahaja aku tawaf di Baitullah ini tujuh pusingan kerana tawaf selamat tinggal, maka permudahkanlah pekerjaanku dan terimalah kerana Allah Taala.”",src:src(76),notes:"Teks Arab dan maksud disalin daripada slaid asal 76 — sila semak baris Arab."},
+{ch:"G",t:"break",src:src(77),notes:"Rehat sebentar (slaid asal 77)."},
+{ch:"G",t:"raudhah",src:src(82,84,85),notes:"Slaid asal 82, 84 & 85. Klik setiap tiang. Hadis Raudhah disalin daripada slaid 84 (HR Bukhari & Muslim). ⚠ Slaid 78–81 dan 83 tidak dapat dibaca kerana saiz fail."},
+{ch:"G",t:"photo",hud:"Madinah Al-Munawwarah",title:"Maqam Rasulullah SAW & Sahabat",img:"maqam-rasulullah",pts:["Ziarah dengan adab: tenang, perlahan, tidak bersesak","Ikut arahan petugas masjid","Perbanyakkan selawat"],src:src(89,90),notes:"Gambar slaid asal 90. Poin adab ialah cadangan umum — sesuaikan dengan penerangan penceramah."},
+{ch:"G",t:"nusuk",src:src(91,92,93,94,95,100),notes:"Slaid asal 91–95 dan 100: pasang aplikasi Nusuk sebelum berangkat; isi slot Raudhah dan Umrah. Klik setiap langkah dalam simulasi permit Raudhah."},
+{ch:"G",t:"ziarah",src:src(96),notes:"Slaid asal 96: hukum ziarah — SUNAT. Lokasi ziarah di Makkah."},
+/* H */
+{ch:"H",t:"divider",n:"07",items:["Niat & tujuan","Ilmu ibadah","Persiapan fizikal & pakaian","Peluang cipta pahala"],img:"nabawi-payung",src:"—",notes:"Bab persiapan penting."},
+{ch:"H",t:"cards",hud:"Persiapan Penting",title:"Niat & tujuan",cols:3,cards:[{h:"Ikhlas kerana Allah",t:"Apa yang kita cari dan hajatkan? Tetapkan niat dan matlamat."},{h:"Dekatkan diri",t:"Kesediaan untuk beribadah; menyerah diri pada ketentuan Allah."},{h:"Sabar & solat",t:"Minta bantuan dengan jalan sabar dan mengerjakan solat."},{h:"Perbanyakkan doa",t:"Berdoa di tempat-tempat mustajab."},{h:"Zikir & istighfar",t:"Perbanyakkan istighfar, zikir, baca Al-Quran dan selawat."},{h:"Ilmu ibadah",t:"Rukun & wajib umrah · ibadah harian (solat, taharah) · ibadah musafir (jamak, solat dalam kenderaan, wuduk dengan spray)."}],src:src(97,98),notes:"Slaid asal 97 & 98."},
+{ch:"H",t:"checklist",hud:"Persiapan Fizikal · Senarai Semak",title:"Apa yang masih belum saya sediakan?",items:["Hadam maklumat aturcara","Install aplikasi Nusuk sebelum berangkat","Isi slot Raudhah & Umrah dalam Nusuk","Amalkan gaya hidup sihat & banyakkan berjalan","Pakaian secukupnya ikut suhu (solat + umrah + ziarah)","Kasut yang sesuai","Barangan kebersihan diri + toiletries","Stok ubat-ubatan & rekod kesihatan","HP + charger + power bank + extension"],src:src(100),notes:"Slaid asal 100. Tanda mengikut respons audiens."},
+{ch:"H",t:"packing",src:src(101,102,103),notes:"Slaid asal 101–103. Klik tab Lelaki / Wanita / Tambahan; setiap item boleh ditanda."},
+{ch:"H",t:"pahala",src:src(105),notes:"Slaid asal 105. Harga seperti slaid asal: Wakaf Al-Quran 1 mushaf SAR 60 / RM 70; Infaq Sabil 1 pek SAR 20 / RM 30 — sahkan harga semasa."},
+{ch:"H",t:"quiz",hud:"Kuiz Ulang Kaji",qs:[{q:"Berapakah bilangan syarat sah tawaf dalam slaid kursus?",o:["5","7","9","12"],a:2,why:"Sembilan syarat sah tawaf (slaid asal 39–41)."},{q:"Sa‘ie dimulakan dari…",o:["Marwah","Safa","Hajar Aswad","Maqam Ibrahim"],a:1,why:"Dimulakan dari Safa dan berakhir di Marwah (slaid asal 62)."},{q:"Bercukur sekurang-kurangnya…",o:["1 helai","3 helai","Separuh kepala","Seluruh kepala"],a:1,why:"Sekurang-kurangnya tiga helai rambut, dilakukan selepas sa‘ie (slaid asal 66)."},{q:"Tiang dalam Raudhah yang bernombor 119 ialah…",o:["Tiang Aisyah","Tiang Ali","Tiang Wufud","Tiang Sarir"],a:0,why:"Tiang Aisyah bernombor 119 (slaid asal 85)."},{q:"Aplikasi rasmi untuk permit umrah & Raudhah ialah…",o:["Nusuk","Tawakkalna sahaja","Google Maps","Tiada aplikasi"],a:0,why:"Nusuk — nusuk.sa (slaid asal 91–95)."}],src:src(39,62,66,85,91),notes:"Lima soalan ulang kaji."},
+{ch:"H",t:"end",src:src(11),notes:"Sesi soal jawab. Maklumat hubungan seperti slaid asal 11."},
+{ch:"H",t:"sources",src:"—",notes:"Senarai sumber untuk penceramah."}
+];
+/* ============ TEMPLAT ============ */
+const catT={rukun:"Rukun",wajib:"Wajib",sunat:"Sunat",larangan:"Larangan",urus:"Urusan perjalanan"};
+const cat=c=>`<span class="cat ${c}">${catT[c]}</span>`;
+const head=s=>`<div class="hud rv">${s.hud}</div>${s.title?`<h2 class="title rv">${s.title}</h2>`:""}`;
+const hex=r=>[0,1,2,3,4,5].map(k=>{const a=Math.PI/3*k+Math.PI/6;return (r*Math.cos(a)).toFixed(1)+","+(r*Math.sin(a)).toFixed(1)}).join(" ");
+const T={
+hero:()=>`<div class="orbit o1"><i></i></div><div class="orbit o2"><i></i></div>
+ <div class="hero-img dome kenburns scan"><img src="${img("kaabah-tawaf")}" alt="Kaabah dikelilingi jemaah berihram"></div>
+ <div class="hero-tx"><div class="hud rv">Darul Mubarak Travel & Tours</div><h1 class="rv">KURSUS<span>UMRAH</span></h1><div class="sub rv typed" data-type="Fahami Ilmu, Hayati Ibadah"></div>
+ <div class="meta rv"><span>Penceramah</span><b>Ustaz Zulhafeez Ahmad Zahidi Al-Hafiz</b><span>Penganjur</span><b>Darul Mubarak Travel & Tours</b></div></div>`,
+agenda:()=>`<div class="pad">${head({hud:"Kandungan Kursus",title:"Peta perjalanan ilmu hari ini"})}<div class="grid" style="grid-template-columns:repeat(4,1fr)">${[["Pengertian Umrah",5],["Hukum & Dalil",6],["Carta Alir Perjalanan",7],["Rukun & Wajib",8],["Miqat",11],["Carta Alir Ibadah",13],["Niat, Talbiah & Ihram",14],["Larangan Ihram",17],["Tawaf & Syarat",20],["Sa‘ie",29],["Bertahallul",33],["Soal Jawab",S.length-2]].map(([h,g],i)=>`<button class="card rv jump" data-go="${g}" style="cursor:pointer;text-align:left;color:inherit;font:inherit"><span class="num" style="font-size:34px">${String(i+1).padStart(2,"0")}</span><b style="font:700 28px/1.2 var(--disp)">${h}</b></button>`).join("")}</div></div>`,
+profile:()=>`<div class="pad" style="flex-direction:row;gap:60px;align-items:center">
+ <div style="width:520px;display:flex;flex-direction:column;gap:22px"><div class="hud rv">Profil Mutawwif</div><h2 class="title rv" style="font-size:58px">Ustaz Zulhafeez Ahmad Zahidi Al-Hafiz</h2><p class="lead rv" style="font-size:28px">Ketua Pegawai Pemasaran · Mutawwif Darul Mubarak · Pengurus DM Cawangan Marang</p>
+ <div class="row rv" style="gap:12px"><span class="cat urus" style="font-size:16px">019-400 9726</span><span class="cat sunat" style="font-size:16px">@UstazDesignerCreative</span></div></div>
+ <div class="grid" style="grid-template-columns:1fr 1fr;flex:1">
+ <div class="card step"><span class="hud" style="font-size:14px">Pendidikan</span><ul class="pts sm"><li><span>Syahadah Tahfiz Al-Quran</span></li><li><span>Sijil Tinggi Agama Malaysia</span></li><li><span>Bahasa Arab, Al-Azhar Mesir</span></li></ul></div>
+ <div class="card step"><span class="hud" style="font-size:14px">Persijilan</span><ul class="pts sm"><li><span>Jurulatih HRD Corp</span></li><li><span>Profesional CBT Coach · Praktis Parenting Coach (PKPM)</span></li><li><span>Eksekutif Halal JAKIM · Asas Coach NLP</span></li></ul></div>
+ <div class="card step"><span class="hud" style="font-size:14px">Kerjaya</span><ul class="pts sm"><li><span>2007–13 Imam & guru tahfiz</span></li><li><span>2014–18 Harakah & TSIS (IT)</span></li><li><span>2019–kini Syariah perhotelan · Darul Mubarak</span></li></ul></div>
+ <div class="card step"><span class="hud" style="font-size:14px">Penulisan & latihan</span><ul class="pts sm"><li><span>5 judul buku termasuk “Nota Hati Seorang Walid”</span></li><li><span>Hampir 10 tahun melatih agensi kerajaan & swasta</span></li></ul></div></div></div>`,
+question:s=>`<div class="pad" style="justify-content:center"><div class="hud rv">Soalan Pembuka</div><p class="q rv" style="font-size:72px">${s.q}</p><div class="row" style="gap:16px">${s.ideas.map(i=>`<span class="card step" style="padding:14px 26px;font-size:28px;border-radius:99px">${i}</span>`).join("")}</div></div>`,
+divider:s=>`<div class="hero-img dome kenburns" style="width:620px;height:820px;right:120px;top:90px"><img src="${img(s.img)}" alt=""></div><div class="orbit o2" style="width:760px;height:760px;right:50px;top:120px"><i></i></div>
+ <div class="hero-tx" style="width:900px;gap:26px"><div class="div-num rv">${s.n}</div><div class="hud rv">Bahagian ${s.n}</div><h2 class="title rv" style="font-size:84px">${CH[s.ch]}</h2><div class="rv" style="display:flex;flex-direction:column;gap:10px">${s.items.map(i=>`<span style="font-size:30px;color:var(--mut)"><span style="color:var(--emer)">▸</span> ${i}</span>`).join("")}</div></div>`,
+quote:s=>`${s.img?`<div class="hero-img dome kenburns scan" style="width:600px;height:800px;right:110px;top:100px"><img src="${img(s.img)}" alt=""></div>`:""}
+ <div class="pad" style="right:800px;justify-content:center">${head(s)}<p class="rv" style="font:600 46px/1.35 var(--disp);border-left:5px solid var(--gold);padding-left:32px">${s.quote}</p></div>`,
+dalil:s=>`<div class="pad">${head(s)}<ul class="pts rv">${s.pts.map(p=>`<li><span>${p}</span></li>`).join("")}</ul><div class="grid" style="grid-template-columns:1fr 1fr">${s.cards.map(c=>`<div class="card step"><span class="hud" style="font-size:15px">${c.h}</span><p style="font:600 32px/1.4 var(--disp)">${c.t}</p><span class="cap" style="color:var(--gold)">— ${c.r}</span></div>`).join("")}</div></div>`,
+flow8:s=>{const NX=[150,580,1010,1440,1440,1010,580,150],NY=[96,96,96,96,410,410,410,410],D="M150 96 H1440 C1730 96 1730 410 1440 410 H150";
+ return `<div class="pad" data-flow>${head(s)}<span class="hud fhud" style="position:absolute;right:0;top:12px;font-size:16px">FASA 01/08</span>
+ <div style="position:relative;width:1760px;height:640px">
+ <svg viewBox="0 0 1760 640" width="1760" height="640" style="position:absolute;inset:0;overflow:visible">
+ <defs><linearGradient id="fgrad" x1="0" x2="1"><stop offset="0" stop-color="#2ef2b0"/><stop offset="1" stop-color="#f2c46d"/></linearGradient></defs>
+ <path class="fbase" d="${D}" fill="none" stroke="rgba(120,170,255,.14)" stroke-width="22" stroke-linecap="round"/>
+ <path d="${D}" fill="none" stroke="rgba(120,170,255,.3)" stroke-width="1" transform="translate(0 -11)"/><path d="${D}" fill="none" stroke="rgba(120,170,255,.3)" stroke-width="1" transform="translate(0 11)"/>
+ <path class="flowline" d="${D}" fill="none" stroke="rgba(46,242,176,.45)" stroke-width="3" stroke-dasharray="4 16"/>
+ <path class="fprog" d="${D}" fill="none" stroke="url(#fgrad)" stroke-width="9" stroke-linecap="round" filter="url(#glow)"/>
+ ${NX.map((x,i)=>`<g class="fnode" data-i="${i}" transform="translate(${x} ${NY[i]})" style="cursor:pointer"><circle class="fping" r="34" fill="none" stroke="#2ef2b0" stroke-width="3"/><polygon class="fhex2" points="${hex(44)}" fill="none" stroke="rgba(242,196,109,.35)" stroke-width="1.5" stroke-dasharray="6 6"/><polygon class="fhex" points="${hex(32)}" fill="#081131" stroke="rgba(242,196,109,.55)" stroke-width="3"/><text y="9" text-anchor="middle" font-size="28" font-weight="700" fill="#f2c46d" font-family="Rajdhani">${i+1}</text></g>`).join("")}
+ <g class="fcomet">${[7,6,5,4,3,2,1].map(k=>`<circle r="${12-k}" fill="#2ef2b0" opacity="${(.5-k*.06).toFixed(2)}"/>`).join("")}<circle r="12" fill="#fff" filter="url(#glow)"/></g>
+ </svg>
+ ${s.items.map((it,i)=>`<div class="card fcard" data-i="${i}" style="position:absolute;left:${NX[i]-165}px;top:${NY[i]+56}px;width:330px;padding:14px 20px;gap:6px"><span class="hud" style="font-size:13px">FASA ${String(i+1).padStart(2,"0")}</span><h3 style="font-size:26px">${it[0]}</h3><span class="body" style="font-size:20px;color:var(--mut)">${it[1]}</span></div>`).join("")}
+ </div></div>`;},
+rukunwajib:s=>`<div class="pad">${head(s)}<div class="row rv"><span class="cap">Tapis:</span><button class="tab rwf" aria-selected="true" data-f="all">Semua</button><button class="tab rwf" aria-selected="false" data-f="rukun">◆ Rukun</button><button class="tab rwf" aria-selected="false" data-f="wajib">● Wajib</button></div>
+ <div class="grid" style="grid-template-columns:repeat(7,1fr);margin-top:10px">${s.items.map((it,i)=>`<div class="card step rwc" data-c="${it[1]}" style="min-height:330px;padding:22px 18px;transition:all .4s"><span class="num">${String(i+1).padStart(2,"0")}</span><h3 style="font-size:28px;flex:1">${it[0]}</h3>${cat(it[1])}</div>`).join("")}</div>
+ <p class="cap rv">◆ Rukun: tinggal = umrah tidak sah · ● Wajib: tinggal = dikenakan dam</p></div>`,
+miqatdef:()=>`<div class="pad">${head({hud:"Pengertian Miqat",title:"Miqat: masa & tempat berniat ihram"})}
+ <p class="lead rv">Bahasa: <b>waktu</b>. Istilah: ketentuan masa atau tempat untuk berniat ihram haji atau umrah. Berniat ihram di miqat ialah salah satu perkara <b>wajib</b> haji dan umrah.</p>
+ <div class="grid" style="grid-template-columns:1fr 1fr"><div class="card step"><span class="num">⌛</span><h3>Miqat Zamani</h3><span class="hud" style="font-size:14px">Ketentuan masa</span><ul class="pts sm"><li><span><b class="hl">Umrah:</b> sepanjang tahun, selain masa seseorang berihram haji</span></li><li><span><b class="hl">Haji:</b> 1 Syawal hingga terbit fajar 10 Zulhijjah</span></li></ul></div>
+ <div class="card step"><span class="num">⌖</span><h3>Miqat Makani</h3><span class="hud" style="font-size:14px">Ketentuan tempat</span><ul class="pts sm"><li><span>Sempadan tempat terakhir bagi jemaah dari luar Makkah untuk berniat ihram</span></li><li><span>Lokasi ditentukan mengikut arah jemaah datang ke Tanah Haram</span></li></ul></div></div></div>`,
+miqatmap:()=>{const M=[["Bir Ali @ Zulhulaifah",470,90,"Bagi jemaah yang datang dari arah <b>Madinah</b>.",""],["Masjid Aisyah · Tan’eim",500,345,"Miqat <b>paling hampir</b> dengan Makkah. Lokasi bermiqat isteri Rasulullah SAW, Saidatina Aisyah.",""],["Masjid Ja’ranah",640,330,"Kira-kira <b>24 km</b> dari Masjidil Haram. Lokasi bermiqat yang afdal untuk berihram.","24 km"],["Qarnul Manazil (Al-Sail Al-Kabir)",880,420,"Kira-kira <b>94 km</b> di timur Makkah (~220 km dari Lapangan Terbang King Abdul Aziz). Miqat jemaah dari arah timur: Riyadh, Najd, Taif, Pakistan.","94 km"],["Masjid Syumaisi · Hudaibiah",300,450,"Kira-kira <b>22 km</b> di sempadan Makkah menuju Jeddah. Tempat Nabi dihalang memasuki Makkah pada tahun ke-6 Hijrah — berlakunya Perjanjian Hudaibiyah.","22 km"]];
+ return `<div class="pad" style="flex-direction:row;gap:46px"><div style="flex:1;display:flex;flex-direction:column;gap:20px">${head({hud:"Miqat Makani · Radar Interaktif",title:"Lima lokasi miqat"})}<span class="illus rv">Ilustrasi arah · bukan skala sebenar</span>
+ <div class="card rv" style="min-height:360px"><span class="hud mqidx" style="font-size:15px">SASARAN —/05</span><h3 id="mqT">Pilih satu miqat</h3><div class="mqkm" style="font:800 64px/1 var(--disp);color:var(--gold);text-shadow:0 0 24px rgba(242,196,109,.4);min-height:64px"></div><p class="body" id="mqD" style="color:var(--mut)">Klik penanda pada radar, atau tekan Seterusnya untuk mengimbas satu demi satu.</p></div>
+ <div class="row rv"><button class="btn gold mqscan">⟳ Imbas Semua</button><button class="btn mqreset">↺ Ulang</button></div></div>
+ <div class="frame rv" style="width:980px;height:820px;background:radial-gradient(circle at 50% 56%,rgba(46,242,176,.14),transparent 62%),#050d26"><svg viewBox="0 0 1000 820" width="980" height="820" style="display:block">
+ <defs><pattern id="mqhex" width="36" height="62" patternUnits="userSpaceOnUse"><path d="M18 0 L36 10 L36 31 L18 41 L0 31 L0 10 Z M18 41 L18 62" fill="none" stroke="rgba(46,242,176,.08)" stroke-width="1"/></pattern>
+ <linearGradient id="mqsw" x1="0" x2="1"><stop offset="0" stop-color="rgba(46,242,176,0)"/><stop offset="1" stop-color="rgba(46,242,176,.38)"/></linearGradient></defs>
+ <rect width="1000" height="820" fill="url(#mqhex)"/>
+ ${[110,220,330,440].map(r=>`<circle cx="500" cy="460" r="${r}" fill="none" stroke="rgba(46,242,176,.18)" stroke-dasharray="3 9"/>`).join("")}
+ ${[0,1,2].map(k=>`<circle class="mqwave" cx="500" cy="460" r="60" fill="none" stroke="#2ef2b0" stroke-width="2" style="animation-delay:${k}s"/>`).join("")}
+ <g class="sweep" style="transform-origin:500px 460px"><path d="M500 460 L940 460 A440 440 0 0 0 881 240 Z" fill="url(#mqsw)"/><line x1="500" y1="460" x2="940" y2="460" stroke="#2ef2b0" stroke-width="2" opacity=".8"/></g>
+ <g class="spin-slow" style="transform-origin:500px 460px">${Array.from({length:72},(_,i)=>{const a=i*5*Math.PI/180,r1=i%6?452:444;return `<line x1="${(500+r1*Math.cos(a)).toFixed(1)}" y1="${(460+r1*Math.sin(a)).toFixed(1)}" x2="${(500+460*Math.cos(a)).toFixed(1)}" y2="${(460+460*Math.sin(a)).toFixed(1)}" stroke="rgba(242,196,109,.45)" stroke-width="${i%6?1:2}"/>`}).join("")}</g>
+ <line x1="500" y1="20" x2="500" y2="810" stroke="rgba(255,255,255,.06)"/><line x1="40" y1="460" x2="960" y2="460" stroke="rgba(255,255,255,.06)"/>
+ <text x="500" y="44" fill="#b6c2dc" font-size="18" text-anchor="end" dx="-18">U ▲ (Madinah)</text><text x="60" y="450" fill="#b6c2dc" font-size="18">◀ B (Jeddah)</text><text x="960" y="450" fill="#b6c2dc" font-size="18" text-anchor="end">T ▶</text>
+ ${M.map((m,i)=>`<line class="mqline" x1="500" y1="460" x2="${m[1]}" y2="${m[2]}" stroke="rgba(242,196,109,.25)" stroke-width="1.5" stroke-dasharray="4 8"/>`).join("")}
+ <line class="mqbeam" x1="500" y1="460" x2="500" y2="460" stroke="#2ef2b0" stroke-width="5" stroke-linecap="round" filter="url(#glow)"/>
+ <circle class="mqpk" r="9" fill="#fff" filter="url(#glow)" opacity="0"><animateMotion class="mqmo" dur="1.3s" repeatCount="indefinite" path="M500 460 L500 460"/></circle>
+ <g><circle cx="500" cy="460" r="46" fill="rgba(242,196,109,.12)" class="mqcore"/><rect x="476" y="436" width="48" height="48" fill="#111" stroke="#f2c46d" stroke-width="3" transform="rotate(45 500 460)"/><text x="500" y="530" fill="#f2c46d" font-size="24" font-weight="700" text-anchor="middle">MAKKAH</text></g>
+ ${M.map((m,i)=>`<g class="mq" data-i="${i}" style="cursor:pointer" tabindex="0" role="button" aria-label="${m[0]}"><circle class="mqring" cx="${m[1]}" cy="${m[2]}" r="20" fill="none" stroke="#2ef2b0" stroke-width="2"/><circle class="mqhalo" cx="${m[1]}" cy="${m[2]}" r="22" fill="rgba(46,242,176,.18)" stroke="#2ef2b0" stroke-width="3"/><circle cx="${m[1]}" cy="${m[2]}" r="7" fill="#2ef2b0"/><text x="${m[1]+[26,-18,18,0,0][i]}" y="${m[2]+[8,-26,-26,-34,-34][i]}" fill="#f4f1e8" font-size="21" font-weight="600" text-anchor="${["start","end","start","middle","middle"][i]}">${m[0].split(" · ")[0].split(" (")[0]}</text>${m[4]?`<text x="${m[1]}" y="${m[2]+46}" fill="#f2c46d" font-size="19" font-weight="700" text-anchor="middle">${m[4]}</text>`:""}</g>`).join("")}
+ </svg></div></div><script type="application/json" class="mqdata">${JSON.stringify(M)}<\/script>`;},
+wheel:s=>{const C=440,R=330;return `<div class="pad" style="flex-direction:row;gap:40px;align-items:center"><div style="width:640px;display:flex;flex-direction:column;gap:22px">${head(s)}
+ <div class="card rv" style="min-height:280px"><span class="hud" style="font-size:14px">LANGKAH <span class="wnum">01</span> / 08</span><h3 class="wname" style="font-size:44px">${s.items[0]}</h3>
+ <div class="wbar" style="display:grid;grid-template-columns:repeat(8,1fr);gap:6px">${s.items.map(()=>`<i style="height:8px;border-radius:4px;background:rgba(255,255,255,.1);transition:all .4s"></i>`).join("")}</div>
+ <span class="cap">Tekan Seterusnya atau klik nod pada roda</span></div></div>
+ <div class="rv" style="position:relative;width:880px;height:880px"><svg viewBox="0 0 880 880" width="880" height="880" style="overflow:visible">
+ <defs><linearGradient id="wsw" x1="0" x2="1"><stop offset="0" stop-color="rgba(46,242,176,0)"/><stop offset="1" stop-color="rgba(46,242,176,.3)"/></linearGradient>
+ <radialGradient id="wbase"><stop offset="0" stop-color="rgba(242,196,109,.55)"/><stop offset="1" stop-color="rgba(242,196,109,0)"/></radialGradient></defs>
+ <circle cx="${C}" cy="${C}" r="420" fill="rgba(46,242,176,.04)"/>
+ <g class="sweep" style="transform-origin:${C}px ${C}px"><path d="M${C} ${C} L${C+410} ${C} A410 410 0 0 0 ${(C+410*Math.cos(-.7)).toFixed(1)} ${(C+410*Math.sin(-.7)).toFixed(1)} Z" fill="url(#wsw)"/></g>
+ <g class="spin-slow" style="transform-origin:${C}px ${C}px">${Array.from({length:96},(_,i)=>{const a=i*3.75*Math.PI/180,r1=i%4?404:394;return `<line x1="${(C+r1*Math.cos(a)).toFixed(1)}" y1="${(C+r1*Math.sin(a)).toFixed(1)}" x2="${(C+412*Math.cos(a)).toFixed(1)}" y2="${(C+412*Math.sin(a)).toFixed(1)}" stroke="rgba(242,196,109,.5)" stroke-width="${i%4?1:2}"/>`}).join("")}</g>
+ <circle class="spin-rev" cx="${C}" cy="${C}" r="372" fill="none" stroke="rgba(46,242,176,.35)" stroke-width="2" stroke-dasharray="40 14 4 14" style="transform-origin:${C}px ${C}px"/>
+ <circle cx="${C}" cy="${C}" r="${R}" fill="none" stroke="rgba(242,196,109,.25)" stroke-width="6"/>
+ <circle class="warc" cx="${C}" cy="${C}" r="${R}" fill="none" stroke="#2ef2b0" stroke-width="7" stroke-linecap="round" stroke-dasharray="2073" stroke-dashoffset="2073" transform="rotate(-90 ${C} ${C})" filter="url(#glow)"/>
+ <line class="wbeam flowline" x1="${C}" y1="${C}" x2="${C}" y2="${C-R}" stroke="rgba(46,242,176,.7)" stroke-width="3" stroke-dasharray="4 16"/>
+ <ellipse cx="${C}" cy="565" rx="130" ry="34" fill="url(#wbase)"/>
+ ${[0,1,2].map(k=>`<ellipse class="wscan" cx="${C}" cy="560" rx="110" ry="28" fill="none" stroke="#2ef2b0" stroke-width="2" style="animation-delay:${k*1}s"/>`).join("")}
+ <g class="wfloat"><polygon points="440,350 522,397 440,444 358,397" fill="#1d1d1d" stroke="#f2c46d" stroke-width="2"/><polygon points="358,397 440,444 440,548 358,501" fill="#070707" stroke="#f2c46d" stroke-width="2"/><polygon points="440,444 522,397 522,501 440,548" fill="#111" stroke="#f2c46d" stroke-width="2"/>
+ <polygon points="358,418 440,465 440,479 358,432" fill="#f2c46d"/><polygon points="440,465 522,418 522,432 440,479" fill="#e0b250"/></g>
+ <g class="wcomet">${[7,6,5,4,3,2,1].map(k=>`<circle r="${13-k}" fill="#2ef2b0" opacity="${(.5-k*.06).toFixed(2)}"/>`).join("")}<circle r="13" fill="#fff" filter="url(#glow)"/></g>
+ ${s.items.map((n,i)=>{const a=-Math.PI/2+i*Math.PI/4,x=C+R*Math.cos(a),y=C+R*Math.sin(a);return `<g class="wn" data-i="${i}" transform="translate(${x.toFixed(1)} ${y.toFixed(1)})" style="cursor:pointer"><circle class="fping" r="40" fill="none" stroke="#2ef2b0" stroke-width="3"/><circle class="wc" r="40" fill="#081131" stroke="#f2c46d" stroke-width="3"/><text y="10" fill="#f2c46d" font-size="30" font-weight="700" text-anchor="middle" font-family="Rajdhani">${i+1}</text></g>`}).join("")}
+ </svg></div></div>`;},
+arabic:s=>`<div class="pad" style="justify-content:center;align-items:center;text-align:center;gap:34px"><div class="hud rv" style="justify-content:center">${s.hud}</div>
+ <div class="card rv" style="max-width:1600px;padding:44px 60px;align-items:center"><p class="ar" lang="ar" dir="rtl" style="font-size:${s.ar.length>110?60:66}px;text-shadow:0 0 30px rgba(242,196,109,.35)">${s.ar}</p></div>
+ <p class="rv" style="font:500 30px/1.5 var(--sans);max-width:1500px;color:var(--mut)">${s.makna}</p></div>`,
+niat:()=>`<div class="pad" style="gap:26px">${head({hud:"Niat Umrah",title:"Lafaz niat ketika berihram"})}<div class="grid" style="grid-template-columns:1fr 1fr;flex:1">
+ <div class="card step" style="align-items:center;text-align:center;justify-content:center;gap:20px"><span class="hud" style="font-size:16px">Niat Umrah</span><p class="ar" lang="ar" dir="rtl" style="font-size:62px;text-shadow:0 0 30px rgba(242,196,109,.35)">نَوَيْتُ الْعُمْرَةَ وَأَحْرَمْتُ بِهَا لِلَّهِ تَعَالَى</p><p class="body" style="color:var(--mut)">“Sahaja aku mengerjakan umrah dan berihram dengannya kerana Allah Taala.”</p></div>
+ <div class="card step" style="align-items:center;text-align:center;justify-content:center;gap:20px"><span class="hud" style="font-size:16px">Niat Umrah Bersyarat</span><div class="frame" style="width:100%;background:#fff;border-radius:14px"><img src="${img("niat-bersyarat")}" alt="Lafaz Arab niat umrah bersyarat seperti dalam slaid asal" style="object-fit:contain;height:auto"></div><p class="body" style="color:var(--mut)">“Sahaja aku mengerjakan umrah dan aku berihram dengannya kerana Allah SWT; sekiranya aku terhalang oleh sesuatu, ketika itu aku jadi halal.”</p></div></div></div>`,
+ihram:()=>`<div class="pad">${head({hud:"Pakaian Ihram Umrah",title:"Lelaki & wanita"})}<div class="grid" style="grid-template-columns:1fr 1fr;flex:1">
+ <div class="card step"><span class="num">♂</span><h3>Lelaki</h3><ul class="pts sm"><li><span>Dua helai kain ihram (kain ihram 1 pasang + 1 & tali pinggang — slaid 101)</span></li><li><span><b class="hl">Berittiba’</b> (kain di bawah ketiak kanan) <b>hanya semasa melakukan tawaf</b></span></li></ul></div>
+ <div class="card step"><span class="num">♀</span><h3>Wanita</h3><ul class="pts sm"><li><span>Menutup semua anggota tubuh <b class="hl">selain muka dan dua pergelangan tangan</b></span></li><li><span>Tiada pakaian khusus seperti jemaah lelaki</span></li><li><span>Sarung lengan agak tebal — <b class="hl">nampak aurat, tak sah tawaf</b> (slaid 102)</span></li></ul></div></div></div>`,
+larangan:()=>{const L=[["Pakaian",[["Memakai pakaian bersarung / berjahit / bercantum","Lelaki"],["Menutup kepala atau sebahagiannya","Lelaki"],["Menutup muka","Wanita"],["Memakai sarung tangan","Lelaki & wanita"]]],["Wangian",[["Memakai bau-bauan atau menghidunya","Lelaki & wanita"],["Memakai minyak wangi di kepala, janggut dan bulu muka","Lelaki & wanita"]]],["Kecantikan",[["Menanggalkan atau mencabut rambut atau bulu","Lelaki & wanita"],["Mengerat atau memotong kuku dan rambut","Lelaki & wanita"]]],["Alam sekitar",[["Memotong, menebang, mengerat atau mencabut pokok di Tanah Haram","Lelaki & wanita"],["Memburu binatang yang halal dimakan","Lelaki & wanita"]]],["Hubungan kelamin",[["Berkahwin, mengahwinkan atau menerima wakil kahwin","Lelaki & wanita"],["Pendahuluan persetubuhan","Lelaki & wanita"],["Melakukan persetubuhan","Lelaki & wanita"]]],["Lain-lain (dielakkan)",[["Mencaci, mencerca, memaki hamun dengan kata-kata kotor, keji atau bertengkar","Semua"]]]];
+ return `<div class="pad">${head({hud:"Perkara Yang Dilarang Ketika Dalam Ihram",title:"Enam kategori larangan"})}<div class="tabs rv">${L.map((l,i)=>`<button class="tab lt" data-i="${i}" aria-selected="${i===0}">${String(i+1).padStart(2,"0")} · ${l[0]}</button>`).join("")}</div>
+ ${L.map((l,i)=>`<div class="panel lp ${i===0?"on":""}" data-i="${i}" style="gap:24px;flex-wrap:wrap">${l[1].map(x=>`<div class="card" style="flex:1 1 380px;min-height:230px;border-color:rgba(251,113,133,.4)">${cat("larangan")}<span style="font:600 32px/1.3 var(--disp);flex:1">${x[0]}</span><span class="hud" style="font-size:18px;color:var(--gold)">Bagi ${x[1].toLowerCase()}</span></div>`).join("")}</div>`).join("")}
+ <p class="cap rv">Melanggar larangan → dikenakan <b class="hl">dam</b> (Bahagian 05).</p></div>`;},
+quiz:s=>`<div class="pad" data-quiz><div class="row"><span class="hud">${s.hud} · <span class="qn"></span></span><span class="score"></span></div>${s.kind?`<div class="story"></div>`:""}<p class="q" style="font-size:${s.kind?44:52}px"></p><div class="opts"></div><div class="explain" hidden></div>
+ <div class="row"><button class="btn gold rv2">Buka Jawapan</button><button class="btn rs">↺ Ulang</button><button class="btn pri nx">Soalan Seterusnya →</button><span class="cap">Penceramah memilih berdasarkan respons audiens.</span></div></div>`,
+tof:s=>`<div class="pad" style="justify-content:center" data-tof><span class="hud">${s.hud} · <span class="qn"></span></span><p class="q st" style="font-size:58px"></p>
+ <div class="row" style="gap:24px"><button class="opt" data-v="ok" style="width:auto;min-width:460px;justify-content:center;font-size:32px">✓ Betul<span class="fb"></span></button><button class="opt" data-v="fix" style="width:auto;min-width:520px;justify-content:center;font-size:32px">✎ Perlu Dibetulkan<span class="fb"></span></button></div>
+ <div class="explain" hidden></div><div class="row"><button class="btn gold rv2">Buka Jawapan</button><button class="btn rs">↺ Ulang</button><button class="btn pri nx">Kenyataan Seterusnya →</button></div></div>`,
+syarat:s=>`<div class="pad">${head(s)}<div class="grid" style="grid-template-columns:repeat(3,1fr);gap:18px">${s.items.map((t,i)=>`<button class="card flip" style="min-height:170px;cursor:pointer;text-align:left;color:inherit;font:inherit;padding:20px 24px"><span class="num" style="font-size:36px">${String(i+1).padStart(2,"0")}</span><span class="fx-t" style="font:600 25px/1.3 var(--disp);opacity:0;transition:opacity .4s">${t}</span></button>`).join("")}</div><div class="row"><button class="btn gold sall">Buka Semua</button><button class="btn sres">↺ Ulang</button></div></div>`,
+hex:s=>`<div class="pad" style="flex-direction:row;gap:50px;align-items:center"><div style="width:640px;display:flex;flex-direction:column;gap:22px">${head(s)}<div class="card rv" style="min-height:300px"><span class="hud" style="font-size:15px" id="hxk">Pilih jenis tawaf</span><h3 class="hxh" style="font-size:52px">Pilih satu</h3><p class="body hxd" style="color:var(--mut)">Klik heksagon di sebelah.</p></div></div>
+ <div class="rv" style="position:relative;width:1000px;height:820px">${s.items.map((it,i)=>{const p=[[250,60],[530,60],[110,300],[670,300],[250,540],[530,540]][i];return `<button class="hxb" data-i="${i}" style="position:absolute;left:${p[0]}px;top:${p[1]}px;width:250px;height:230px;clip-path:polygon(25% 0,75% 0,100% 50%,75% 100%,25% 100%,0 50%);background:linear-gradient(150deg,rgba(242,196,109,.9),rgba(46,242,176,.75));border:0;cursor:pointer;display:grid;place-items:center;transition:transform .3s,filter .3s"><span style="position:absolute;inset:4px;clip-path:inherit;background:#0b1640;display:grid;place-items:center;font:800 34px/1 var(--disp);color:#fff">${it[0]}<small style="position:absolute;top:28px;font:700 16px var(--hud);color:var(--gold)">${String(i+1).padStart(2,"0")}</small></span></button>`}).join("")}
+ <div style="position:absolute;left:390px;top:300px;width:250px;height:230px;display:grid;place-items:center;text-align:center;font:800 34px/1.1 var(--disp)">Jenis<br><span style="color:var(--gold)">Tawaf</span></div></div></div>`,
+kaabah:()=>{const K=[["Hajarul Aswad",42,65,"Terletak pada penjuru yang menghala ke arah <b>timur</b> (Penjuru Aswad). Tempat penanda <b>permulaan dan penghabisan</b> setiap pusingan tawaf. Lampu hijau di mataf sejajar penjuru ini. Beristilam sambil menyebut “Bismillahi Allahu Akbar ×3 Walillahilhamd”.",""],["Penjuru Iraqi",62,40,"Menghala ke arah negeri Iraq. <b>Maqam Ibrahim</b> terletak antara Penjuru Aswad dan Penjuru Iraqi. Kiswah di penjuru ini kosong tanpa kaligrafi sulaman emas. Terdapat pintu Hijir Ismail yang jarang dibuka.",""],["Penjuru Syami",37,30,"Menghala ke arah negeri Syam. Antara Penjuru Iraqi dan Syami terletak <b>Hijir Ismail</b>, dan di atasnya <b>pancuran emas</b> — salah satu tempat mustajab doa.",""],["Rukun Yamani",30,45,"Menghala ke arah Yaman, sejajar dengan Hajar Aswad. Mudah dikecam — kaligrafi sulaman emas bersambung lurus ke atas. <b>Sunnah menyentuh</b> sekiranya melakukan tawaf sunat. Kawasan mustajab doa. Bacalah:","رَبَّنَآ ءَاتِنَا فِى ٱلدُّنْيَا حَسَنَةً وَفِى ٱلْءَاخِرَةِ حَسَنَةً وَقِنَا عَذَابَ ٱلنَّارِ"]];
+ return `<div class="pad" style="flex-direction:row;gap:50px"><div style="width:820px;display:flex;flex-direction:column;gap:20px">${head({hud:"Rukun @ Penjuru Kaabah",title:"Kenali empat penjuru"})}
+ <div class="card rv" style="flex:1"><span class="hud" style="font-size:15px">Klik penanda bercahaya</span><h3 class="kbh" style="font-size:44px;color:var(--gold)">Pilih satu penjuru</h3><p class="body kbd"></p><p class="ar kba" lang="ar" dir="rtl" style="font-size:40px"></p><p class="cap kbm"></p></div></div>
+ <div class="frame contain rv" style="width:870px;height:650px;align-self:center;background:#f1f1f1"><img src="${img("rajah-kaabah")}" alt="Rajah Kaabah berlabel daripada slaid kursus" style="background:#f1f1f1">${K.map((k,i)=>`<button class="hot kb" data-i="${i}" aria-label="${k[0]}" style="left:${k[1]}%;top:${k[2]}%"></button>`).join("")}</div></div><script type="application/json" class="kbdata">${JSON.stringify(K)}<\/script>`;},
+lampu:()=>`<div class="pad" style="flex-direction:row;gap:60px;align-items:center"><div style="flex:1;display:flex;flex-direction:column;gap:26px">${head({hud:"Lampu Hijau",title:"Penanda permulaan tawaf"})}
+ <ul class="pts"><li class="step"><span>Di mataf, sejajar penjuru Aswad, kelihatan <b class="hl">lampu berwarna hijau</b> sebagai penanda permulaan tawaf</span></li><li class="step"><span>Membantu jemaah <b class="hl">tidak sesat dan terlupa</b> bilangan pusingan</span></li><li class="step"><span>Beristilam pada permulaan setiap pusingan sambil menyebut <i>“Bismillahi Allahu Akbar ×3 Walillahilhamd”</i></span></li></ul></div>
+ <div class="frame rv scan" style="width:560px;height:740px;box-shadow:0 0 80px rgba(46,242,176,.4)"><img src="${img("lampu-hijau-tawaf")}" alt="Lampu hijau penanda permulaan tawaf"></div></div>`,
+tawaf:()=>`${draft}<div style="position:absolute;inset:0;display:grid;grid-template-columns:1000px 1fr" data-tawaf><div class="tviz" style="position:relative;perspective:1700px;overflow:hidden">
+ <div class="tplane" style="position:absolute;inset:0;transition:transform 1s var(--ease);transform-origin:50% 52%;transform-style:preserve-3d">
+ <canvas class="tcrowd" width="1000" height="988" style="position:absolute;inset:0"></canvas>
+ <svg viewBox="0 0 1000 988" width="1000" height="988" style="position:absolute;inset:0;overflow:visible" role="img" aria-label="Rajah tawaf dari atas">
+ <defs><radialGradient id="tg"><stop offset="0" stop-color="rgba(46,242,176,.2)"/><stop offset="1" stop-color="transparent"/></radialGradient><linearGradient id="tsw" x1="0" x2="1"><stop offset="0" stop-color="rgba(46,242,176,0)"/><stop offset="1" stop-color="rgba(46,242,176,.28)"/></linearGradient></defs>
+ <circle cx="500" cy="500" r="480" fill="url(#tg)"/>
+ <g class="sweep rev" style="transform-origin:500px 500px"><path d="M500 500 L960 500 A460 460 0 0 1 ${(500+460*Math.cos(.6)).toFixed(1)} ${(500+460*Math.sin(.6)).toFixed(1)} Z" fill="url(#tsw)"/></g>
+ <g class="spin-rev" style="transform-origin:500px 500px">${Array.from({length:120},(_,i)=>{const a=i*3*Math.PI/180,r1=i%10?462:448;return `<line x1="${(500+r1*Math.cos(a)).toFixed(1)}" y1="${(500+r1*Math.sin(a)).toFixed(1)}" x2="${(500+472*Math.cos(a)).toFixed(1)}" y2="${(500+472*Math.sin(a)).toFixed(1)}" stroke="rgba(242,196,109,.45)" stroke-width="${i%10?1:2.5}"/>`}).join("")}</g>
+ ${[250,300,340,380,420].map(r=>`<circle cx="500" cy="500" r="${r}" fill="none" stroke="rgba(46,242,176,.12)" stroke-dasharray="2 10"/>`).join("")}
+ <circle cx="500" cy="500" r="340" fill="none" stroke="rgba(46,242,176,.35)" stroke-width="3" stroke-dasharray="8 10" class="flowline rev"/>
+ <path class="trail" fill="none" stroke="#2ef2b0" stroke-width="12" stroke-linecap="round" d="" filter="url(#glow)"/>
+ <line class="tstart" x1="652" y1="500" x2="910" y2="500" stroke="#22c55e" stroke-width="9" stroke-linecap="round" filter="url(#glow)"/>
+ <path d="M 350 500 A 106 106 0 0 1 500 350" fill="none" stroke="#f4ecd8" stroke-width="4" stroke-dasharray="2 10" stroke-linecap="round"/>
+ <polygon class="tkaabah" points="500,350 650,500 500,650 350,500" fill="#0a0a0a" stroke="#f2c46d" stroke-width="4" filter="url(#glow)"/><polygon points="500,378 622,500 500,622 378,500" fill="none" stroke="#f2c46d" stroke-width="7" opacity=".85"/><polygon points="500,410 590,500 500,590 410,500" fill="none" stroke="rgba(242,196,109,.3)" stroke-width="1.5"/>
+ <circle cx="604" cy="396" r="9" fill="#f4ecd8" stroke="#f2c46d" stroke-width="2"/><text x="618" y="388" fill="#f4ecd8" font-size="17">Maqam Ibrahim</text>
+ ${[[650,500],[500,350],[350,500],[500,650]].map((c,i)=>`<circle class="tcorner" data-c="${i}" cx="${c[0]}" cy="${c[1]}" r="12" fill="#f2c46d" stroke="#081131" stroke-width="3"/><circle class="tburst" data-c="${i}" cx="${c[0]}" cy="${c[1]}" r="20" fill="none" stroke="#2ef2b0" stroke-width="4" opacity="0"/>`).join("")}
+ <g fill="#f4f1e8" font-weight="600" font-size="25"><text x="664" y="560">Hajarul Aswad</text><text x="520" y="334">Penjuru Iraqi</text><text x="330" y="488" text-anchor="end">Penjuru Syami</text><text x="500" y="692" text-anchor="middle">Rukun Yamani</text></g>
+ <g fill="#2ef2b0" font-weight="600" font-size="21"><text x="388" y="376" text-anchor="end">Hijir Ismail</text><text x="866" y="470">Lampu hijau</text><text x="866" y="540">garis mula</text></g>
+ <g class="ttail">${Array.from({length:16},(_,k)=>`<circle r="${(4+k*1.05).toFixed(1)}" fill="#f2c46d" opacity="${(.04+k*.035).toFixed(2)}"/>`).join("")}</g>
+ <circle class="dot" r="22" cx="840" cy="500" fill="#f2c46d" stroke="#fff" stroke-width="4" filter="url(#glow)"/></svg></div>
+ <div class="treadout" style="position:absolute;left:28px;top:26px;font:700 17px/1.9 var(--hud);letter-spacing:.16em;color:var(--emer);text-shadow:0 0 10px rgba(46,242,176,.6)"></div></div>
+ <div style="display:flex;flex-direction:column;gap:20px;padding:84px 70px 30px 20px"><span class="illus">Ilustrasi panduan · bukan skala sebenar</span><div class="hud">Simulasi Tawaf · Lawan Arah Jam</div><div class="count" aria-live="polite"></div>
+ <div class="tlaps" style="display:grid;grid-template-columns:repeat(7,1fr);gap:8px">${[1,2,3,4,5,6,7].map(n=>`<span class="tlap">${n}</span>`).join("")}</div>
+ <div class="status"></div>
+ <div class="ctrl"><button class="btn pri play">▶ Main</button><button class="btn pause">❚❚ Jeda</button><button class="btn gold stepb">Langkah Seterusnya</button><button class="btn reset">↺ Ulang</button></div>
+ <button class="btn t3d" aria-pressed="false" style="min-height:58px">◈ Paparan 3D</button><span class="cap">Main = satu pusingan · Langkah = satu penjuru</span></div></div>`,
+after:s=>`<div class="pad">${head(s)}<div style="position:relative;margin-top:20px"><div class="beam" style="left:60px;right:60px;top:40px"></div><div class="grid" style="grid-template-columns:repeat(3,1fr);gap:40px">${s.items.map((it,i)=>`<div class="step" style="display:flex;flex-direction:column;gap:20px"><span class="node" style="width:80px;height:80px;font-size:30px">${i+1}</span><div class="card" style="min-height:300px"><h3 style="font-size:40px">${it[0]}</h3><span class="body" style="color:var(--mut)">${it[1]}</span></div></div>`).join("")}</div></div></div>`,
+saiedef:()=>`<div class="pad" style="flex-direction:row;gap:50px"><div style="width:760px;display:flex;flex-direction:column;gap:24px">${head({hud:"Ibadah Sa‘ie",title:"Berjalan berulang-alik antara Safa & Marwah"})}<p class="lead rv">Mengikut syarat-syaratnya.</p>
+ <div class="grid" style="grid-template-columns:1fr 1fr"><div class="card step"><span class="num" data-count="15">0</span><span class="hud" style="font-size:14px">meter · Bukit Safa</span><span class="body" style="font-size:22px">Bukit batu hitam pejal di penjuru dinding Masjidil Haram</span></div><div class="card step"><span class="num" data-count="15">0</span><span class="hud" style="font-size:14px">meter · Bukit Marwah</span><span class="body" style="font-size:22px">Bukit batu hitam pejal di tepi dinding Masjidil Haram</span></div></div></div>
+ <div style="flex:1;display:grid;grid-template-rows:1fr 1fr;gap:20px"><div class="frame rv"><img src="${img("saie-atas")}" alt="Tempat sa'i tingkat atas"></div><div class="frame rv"><img src="${img("saie-skuter")}" alt="Laluan skuter dan kerusi roda"></div></div></div>`,
+syaratsaie:s=>`<div class="pad">${head(s)}<div style="position:relative;margin-top:10px"><div class="beam" style="left:40px;right:40px;top:31px"></div><div class="grid" style="grid-template-columns:repeat(5,1fr)">${s.items.map((t,i)=>`<div class="step" style="display:flex;flex-direction:column;gap:18px"><span class="node">${i+1}</span><div class="card" style="min-height:330px">${cat("rukun").replace("Rukun","Syarat "+(i+1))}<span style="font:600 28px/1.3 var(--disp)">${t}</span></div></div>`).join("")}</div></div></div>`,
+sunatsaie:()=>{const U=[["Keluar ke tempat sa‘ie melalui pintu Safa",""],["Menaiki Bukit Safa dan Marwah hingga sampai ke batu-batu bukit",""],["Menghadap kiblat, melambai kedua tangan serta bertakbir “Bismillah Allahu Akbar Walillahilhamdu” setiap kali berada di Safa dan Marwah",""],["Berlari-lari anak bagi lelaki (tidak bagi wanita) di kawasan lampu hijau / tiang hijau sambil membaca doa","g"],["Menutup aurat",""],["Berturut-turut sebanyak 7 kali",""]];
+ return `<div class="pad" style="flex-direction:row;gap:46px"><div style="flex:1;display:flex;flex-direction:column;gap:18px">${head({hud:"Sunat-Sunat Sa‘ie",title:"Enam amalan sunat"})}
+ <div class="grid" style="grid-template-columns:1fr 1fr;gap:16px">${U.map((u,i)=>`<div class="card step" style="padding:18px 22px;gap:8px;${u[1]?"border-color:rgba(34,197,94,.7);box-shadow:0 0 30px rgba(34,197,94,.3)":""}"><span class="num" style="font-size:32px">${i+1}</span><span style="font:600 23px/1.3 var(--disp)">${u[0]}</span></div>`).join("")}</div>
+ <p class="cap rv">Lampu hijau terdapat di laluan Safa → Marwah dan Marwah → Safa, termasuk di tingkat bawah tanah (lowerground).</p></div>
+ <div class="frame rv scan" style="width:560px;height:620px;align-self:center;box-shadow:0 0 80px rgba(46,242,176,.4)"><img src="${img("lampu-hijau-saie")}" alt="Lampu hijau di tempat sa'i"></div></div>`;},
+saie:()=>`${draft}<div class="pad" data-saie style="gap:22px"><div class="row" style="justify-content:space-between;align-items:flex-start"><div style="display:flex;flex-direction:column;gap:16px"><span class="illus">Ilustrasi panduan · bukan skala sebenar</span><div class="hud">Simulasi Sa‘ie</div><h2 class="title sdir" style="font-size:60px">Safa → Marwah</h2></div><div class="count" aria-live="polite"></div></div>
+ <div style="position:relative;height:380px;perspective:1300px"><div style="position:absolute;inset:0;transform:rotateX(30deg);transform-origin:50% 100%">
+ <svg viewBox="0 0 1760 380" style="width:100%;height:380px;overflow:visible" role="img" aria-label="Laluan sa'i dari Safa ke Marwah">
+ <defs><linearGradient id="gz" x1="0" x2="1"><stop offset="0" stop-color="rgba(34,197,94,0)"/><stop offset=".5" stop-color="rgba(34,197,94,.6)"/><stop offset="1" stop-color="rgba(34,197,94,0)"/></linearGradient>
+ <linearGradient id="gbeam" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="rgba(74,222,128,0)"/><stop offset=".7" stop-color="rgba(74,222,128,.55)"/><stop offset="1" stop-color="rgba(74,222,128,.9)"/></linearGradient>
+ <linearGradient id="ghill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2ef2b0"/><stop offset="1" stop-color="#0b3b4a"/></linearGradient></defs>
+ <rect x="170" y="132" width="1420" height="96" rx="20" fill="rgba(255,255,255,.04)" stroke="rgba(120,170,255,.3)"/>
+ ${Array.from({length:30},(_,i)=>`<line x1="${200+i*48}" y1="134" x2="${200+i*48}" y2="226" stroke="rgba(120,170,255,.08)"/>`).join("")}
+ <line x1="170" y1="180" x2="1590" y2="180" stroke="rgba(46,242,176,.25)" stroke-width="2" stroke-dasharray="4 12" class="flowline sflow"/>
+ <rect class="szone" x="760" y="120" width="240" height="120" rx="12" fill="url(#gz)"/>
+ ${[790,850,910,970].map(x=>`<rect class="sbeam" x="${x-6}" y="20" width="12" height="110" fill="url(#gbeam)"/>`).join("")}
+ <text x="880" y="12" text-anchor="middle" fill="#4ade80" font-size="22" font-weight="700">ZON LAMPU HIJAU · lelaki berlari-lari anak</text>
+ <g class="schev" opacity=".7">${Array.from({length:18},(_,i)=>`<path d="M${240+i*74} 168 l14 12 l-14 12" fill="none" stroke="#2ef2b0" stroke-width="4" stroke-linecap="round"/>`).join("")}</g>
+ <path class="walk" d="" stroke="#2ef2b0" stroke-width="14" stroke-linecap="round" filter="url(#glow)"/>
+ <g class="shill" data-h="0"><circle class="hring" cx="110" cy="180" r="112" fill="none" stroke="#2ef2b0" stroke-width="3"/><polygon points="10,250 60,150 95,185 130,110 210,250" fill="url(#ghill)" stroke="#f2c46d" stroke-width="3"/><text x="110" y="292" text-anchor="middle" fill="#fff" font-size="42" font-weight="700">Safa</text><text x="110" y="326" text-anchor="middle" fill="#b6c2dc" font-size="22">Titik mula</text></g>
+ <g class="shill" data-h="1"><circle class="hring" cx="1650" cy="180" r="112" fill="none" stroke="#2ef2b0" stroke-width="3"/><polygon points="1550,250 1610,120 1650,170 1690,140 1750,250" fill="url(#ghill)" stroke="#f2c46d" stroke-width="3"/><text x="1650" y="292" text-anchor="middle" fill="#fff" font-size="40" font-weight="700">Marwah</text><text x="1650" y="326" text-anchor="middle" fill="#b6c2dc" font-size="22">Titik akhir</text></g>
+ <g class="stail">${Array.from({length:14},(_,k)=>`<circle cy="180" r="${(5+k*1.4).toFixed(1)}" fill="#f2c46d" opacity="${(.04+k*.04).toFixed(2)}"/>`).join("")}</g>
+ <circle class="dot" r="30" cx="210" cy="180" fill="#f2c46d" stroke="#fff" stroke-width="5" filter="url(#glow)"/></svg></div></div>
+ <div class="ssegs" style="display:grid;grid-template-columns:repeat(7,1fr);gap:10px">${[1,2,3,4,5,6,7].map(n=>`<div class="sseg"><span>${n} · ${n%2?"Safa → Marwah":"Marwah → Safa"}</span><i><b></b></i></div>`).join("")}</div>
+ <div class="row"><div class="status" style="flex:1;min-height:0"></div><button class="btn pri play">▶ Main</button><button class="btn pause">❚❚ Jeda</button><button class="btn gold stepb">Langkah Seterusnya</button><button class="btn reset">↺ Ulang</button></div></div>`,
+tahallul:()=>`<div class="pad">${head({hud:"Bertahallul & Tertib",title:"Menamatkan ibadah umrah"})}<div class="grid" style="grid-template-columns:1fr 1fr;flex:1">
+ <div class="card step">${cat("rukun")}<h3 style="font-size:46px">Bercukur @ Bergunting</h3><p class="big">Sekurang-kurangnya <b class="hl">tiga helai rambut</b>, dan ia dilakukan <b class="hl">selepas sa‘ie</b>.</p></div>
+ <div class="card step">${cat("rukun")}<h3 style="font-size:46px">Tertib</h3><p class="big">Mengerjakan rukun umrah mengikut susunannya satu demi satu: bermula dengan <b class="hl">niat</b>, kemudian <b class="hl">tawaf</b>, <b class="hl">sa‘ie</b> dan <b class="hl">bercukur atau bergunting</b>.</p></div></div></div>`,
+sequence:s=>`<div class="pad" data-seq><span class="hud">${s.hud}</span><h2 class="title">${s.title}</h2><div class="slots"></div><div class="pool"></div><div class="msg" aria-live="polite"></div><div class="row"><button class="btn gold rv2">Buka Jawapan</button><button class="btn rs">↺ Ulang</button></div></div>`,
+dam:()=>`<div class="hero-img dome kenburns" style="width:600px;height:800px;right:110px;top:100px"><img src="${img("haram-ruang-solat")}" alt=""></div>
+ <div class="pad" style="right:800px;justify-content:center">${head({hud:"Dam",title:"Denda atau tebusan"})}<p class="rv" style="font:600 40px/1.4 var(--disp)"><span style="color:var(--bad)">Dam</span> ialah denda atau tebusan bagi mereka yang <b class="hl">melanggar pantang larang</b> atau <b class="hl">meninggalkan perkara yang diwajibkan</b> ketika dalam ihram haji dan umrah.</p>
+ <div class="card rv">${cat("urus")}<span class="body">Apabila terlupa dan sudah pulang ke Malaysia, <b class="hl">Darul Mubarak akan membantu menguruskan dam itu di Mekah</b>.</span></div></div>`,
+damtabs:()=>{const D=[["Tertib & Taqdir","<b class='hl'>Denda:</b> menyembelih seekor kambing. Jika tidak mampu, berpuasa 10 hari — 3 hari di Mekah dan 7 hari di kampung sekembalinya.","Antara sebabnya: memakai pakaian berjahit · memotong rambut atau kuku · menggunakan harum-haruman · berciuman & sentuhan syahwat · melakukan larangan-larangan ihram · meninggalkan salah satu perkara wajib haji dan umrah."],["Tertib & Takdil","Jika tidak mampu memberi makan fakir miskin senilai seekor unta, diganti dengan berpuasa 10 hari: 3 hari di tanah suci, baki di tanah air.","<b class='hl'>1. Bersetubuh</b> setelah tahallul pertama atau sebelum selesai kerja umrah: sembelih seekor unta / lembu / 7 ekor kambing / sedekah makanan senilai seekor unta / puasa sebanyak bilangan cupak senilai seekor unta — wajib menghabiskan kerja umrah dan qada tahun berikutnya. <b class='hl'>2. Tersekat</b> selepas berihram (sakit, dikepung musuh): bertahallul ihsar — sembelih seekor kambing & bergunting / makanan senilai seekor kambing / puasa (secupak sehari)."],["Takhyir & Takdil","Takhyir bererti damnya boleh dipilih satu daripada perkara yang ditetapkan.","<b class='hl'>1. Membunuh binatang buruan</b> di tanah suci: sembelih binatang sama besar / makanan senilai untuk fakir miskin Mekah / puasa (secupak sehari). <b class='hl'>2. Menebang, mengerat atau mencabut tumbuhan</b> di tanah Mekah: sembelih binatang mengikut bilangan pokok (besar: lembu; kecil: kambing) / wang harga tafsiran dibelikan makanan untuk fakir miskin Mekah / puasa."],["Ihsar","Untuk melepaskan diri daripada larangan ihram bagi yang sudah berniat tetapi tidak dapat menyelesaikan rukun kerana peperangan, musuh, wabak, penyakit — termasuk wanita yang haid dan terpaksa pulang segera, atau pesakit berat yang dihantar pulang.","Sembelih seekor kambing & bercukur/bergunting → jika tidak mampu, makanan senilai seekor kambing untuk fakir miskin di tempat tahallul → jika tidak mampu, puasa (1 cupak = 1 hari) + bercukur dengan niat tahallul. <b class='hl'>Cara:</b> setelah keluar Makkah sejauh dua marhalah (~91 km) atau setelah tiba di tanah air. Dengan berpuasa dan bercukur dengan niat tahallul ihsar, terhasillah tahallulnya meskipun bilangan hari puasa belum selesai."]];
+ return `${draft}<div class="pad">${head({hud:"Jenis-Jenis Dam",title:"Empat jenis dam"})}<div class="tabs rv">${D.map((d,i)=>`<button class="tab dt" aria-selected="${i===0}" data-i="${i}">Dam ${d[0]}</button>`).join("")}</div>
+ ${D.map((d,i)=>`<div class="panel dp ${i===0?"on":""}" data-i="${i}" style="gap:24px;flex:1"><div class="card" style="flex:1"><span class="num">${String(i+1).padStart(2,"0")}</span><h3 style="font-size:40px">Dam ${d[0]}</h3><p class="big" style="font-size:29px">${d[1]}</p></div><div class="card" style="flex:1.3"><span class="hud" style="font-size:14px">Sebab & cara</span><p class="body" style="font-size:24px">${d[2]}</p></div></div>`).join("")}</div>`;},
+break:()=>`<div class="pad" style="justify-content:center;align-items:center;text-align:center"><div class="div-num rv" style="font-size:180px">☕</div><h2 class="title rv" style="font-size:120px">Rehat Sebentar</h2><p class="lead rv">Coffee break · kita sambung sebentar lagi</p></div>`,
+raudhah:()=>{const R=[["Tiang Muhallaqah","Di bawahnya telah ditanam batang pokok kurma yang pernah menangis kerana tidak digunakan lagi oleh baginda SAW ketika menyampaikan khutbah. Nabi memujuk batang kurma itu dengan menjanjikan ia akan tumbuh di dalam syurga."],["Tiang Sarir (Tiang Katil)","Tiang tempat Nabi Muhammad SAW berehat."],["Tiang Abi Lubabah (Tiang Taubat)","Abi Lubabah melakukan kesilapan; kerana rasa bersalah, dia mengikat dirinya di tiang ini selama 3 hari. Digelar tiang taubat Abi Lubabah."],["Tiang Aisyah (119)","Di tiang ini Nabi selalu mengerjakan solat tahajud dan taubat setiap malam. Sabda baginda: “Sekiranya kamu tahu kelebihan solat di situ, pasti kamu akan beratur untuk solat di situ.” Bernombor 119."],["Tiang Ali (Pengawal)","Tempat pengawal rumah Nabi Muhammad SAW, diketuai oleh Saidina Ali."],["Tiang Wufud (Perundingan)","Tempat Nabi SAW berjumpa pemimpin dari luar yang datang ke Madinah untuk persidangan."]];
+ return `<div class="pad" style="flex-direction:row;gap:46px"><div style="width:800px;display:flex;flex-direction:column;gap:20px">${head({hud:"Raudhah · Masjid Nabawi",title:"Taman dari taman-taman syurga"})}
+ <div class="card rv"><p class="ar" lang="ar" dir="rtl" style="font-size:44px">مَا بَيْنَ بَيْتِي وَمِنْبَرِي رَوْضَةٌ مِنْ رِيَاضِ الجَنَّةِ</p><p class="body">“Tempat yang terletak di antara rumahku dan mimbarku adalah salah satu di antara taman-taman syurga.”</p><span class="cap" style="color:var(--gold)">— Hadis Riwayat Bukhari dan Muslim</span></div>
+ <div class="frame rv" style="flex:1"><img src="${img("raudhah")}" alt="Kawasan dalam Raudhah"></div></div>
+ <div style="flex:1;display:flex;flex-direction:column;gap:16px"><span class="hud rv" style="font-size:15px">6 tiang dalam Raudhah · klik</span><div class="grid" style="grid-template-columns:1fr 1fr;gap:14px">${R.map((r,i)=>`<button class="tab rt" data-i="${i}" aria-selected="false" style="text-align:left;font-size:22px;padding:16px 18px">${String(i+1).padStart(2,"0")} · ${r[0]}</button>`).join("")}</div>
+ <div class="card rv" style="flex:1"><h3 class="rth" style="color:var(--gold)">Pilih satu tiang</h3><p class="big rtd" style="font-size:28px;color:var(--mut)">Setiap tiang menyimpan kisah sirah.</p></div></div></div><script type="application/json" class="rdata">${JSON.stringify(R)}<\/script>`;},
+photo:s=>`<div class="pad" style="flex-direction:row;gap:56px"><div class="frame rv kenburns" style="width:1100px"><img src="${img(s.img)}" alt="${s.title}"></div><div style="flex:1;display:flex;flex-direction:column;gap:26px;justify-content:center">${head(s)}<ul class="pts">${s.pts.map(p=>`<li class="step"><span>${p}</span></li>`).join("")}</ul></div></div>`,
+nusuk:()=>`<div class="pad" style="flex-direction:row;gap:50px"><div style="width:760px;display:flex;flex-direction:column;gap:22px">${head({hud:"Aplikasi Nusuk · nusuk.sa",title:"Permit umrah & Raudhah"})}
+ <ul class="pts sm rv"><li><span><b class="hl">Install Nusuk</b> sebelum berangkat</span></li><li><span>Daftar sebagai <b>Foreign Guest</b>: nombor visa, kewarganegaraan, nombor pasport</span></li><li><span>Isi slot <b class="hl">Umrah</b> dan <b class="hl">Raudhah</b></span></li><li><span>Servis lain: lihat permit, kereta elektrik, aduan</span></li></ul>
+ <div class="card rv"><span class="hud" style="font-size:14px">Simulasi · Permit Raudhah</span><div class="row" style="gap:10px">${["Pilih teman","Tarikh & masa","Sahkan"].map((t,i)=>`<button class="tab ns" data-i="${i}" aria-selected="${i===0}" style="font-size:20px">${i+1}. ${t}</button>`).join("")}</div><p class="body nsd" style="font-size:24px">Pilih ahli kumpulan (companion) yang akan bersama anda.</p></div></div>
+ <div class="frame rv" style="flex:1;align-self:center;height:640px;background:#fff"><img class="nsi" src="${img("nusuk-servis")}" alt="Paparan aplikasi Nusuk" style="object-fit:contain;background:#fff"></div></div>`,
+ziarah:()=>`<div class="pad">${head({hud:"Hukum Ziarah: Sunat",title:"Ziarah sekitar Makkah"})}<div class="grid" style="grid-template-columns:repeat(4,1fr)">${[["Jabal Nur","Tempat wahyu pertama"],["Jabal Thur","Tempat persembunyian hijrah"],["Muzium Wahyu",""],["Jabal Rahmah",""],["Padang Arafah",""],["Muzdalifah",""],["Mina",""],["Tempat Peristiwa Korban",""]].map((z,i)=>`<div class="card step" style="min-height:170px"><span style="font:700 18px var(--hud);color:var(--emer)">⌖ ${String(i+1).padStart(2,"0")}</span><h3 style="font-size:32px">${z[0]}</h3>${z[1]?`<span class="cap">${z[1]}</span>`:""}</div>`).join("")}</div><div class="frame rv" style="height:250px"><img src="${img("makkah-malam")}" alt="Masjidil Haram waktu malam"></div></div>`,
+cards:s=>`<div class="pad">${head(s)}<div class="grid" style="grid-template-columns:repeat(${s.cols},1fr)">${s.cards.map(c=>`<div class="card step" style="min-height:230px"><h3 style="font-size:32px;color:var(--gold)">${c.h}</h3><span class="body" style="font-size:24px">${c.t}</span></div>`).join("")}</div></div>`,
+checklist:s=>`<div class="pad" data-check><span class="hud">${s.hud}</span><h2 class="title">${s.title}</h2><div class="list">${s.items.map(i=>`<label class="item"><input type="checkbox"><span>${i}</span></label>`).join("")}</div>
+ <div class="row" style="gap:24px"><div class="meter"><i></i></div><span class="stat" style="font:700 26px/1 var(--hud);color:var(--gold)"></span><button class="btn rs">↺ Ulang</button></div></div>`,
+packing:()=>{const P=[["Lelaki",["Kain ihram 1 pasang + 1 & tali pinggang","2/3 helai baju Raihan / Melayu / jubah","2/3 helai seluar panjang & seluar berzip","2/3 helai T-shirt","Stokin"]],["Wanita",["2/3 helai tudung telekung / telekung / tudung labuh (tutup dagu)","2/3 helai jubah / mini jubah / t-shirt labuh + seluar","5/6 pasang stokin","2 pasang sarung lengan agak tebal — nampak aurat, tak sah tawaf","2/3 seluar","Baju kurung / jubah (poket di depan)","Tuala wanita (banyak)"]],["Tambahan",["Cermin mata hitam, baju panas","Losyen pelembap, pisau cukur, ketip kuku","Tali, marker pen, hanger","Botol spray / botol air"]]];
+ return `<div class="pad" data-pack>${head({hud:"Persiapan Pakaian & Barangan",title:"Senarai bawaan"})}<div class="tabs rv">${P.map((p,i)=>`<button class="tab pt" data-i="${i}" aria-selected="${i===0}">${["♂ ","♀ ","✚ "][i]}${p[0]}</button>`).join("")}</div>
+ ${P.map((p,i)=>`<div class="panel pp ${i===0?"on":""}" data-i="${i}" style="flex-direction:column;gap:14px"><div class="list">${p[1].map(t=>`<label class="item"><input type="checkbox"><span>${t}</span></label>`).join("")}</div></div>`).join("")}<div class="row"><button class="btn rs">↺ Ulang semua</button></div></div>`;},
+pahala:()=>`<div class="pad" style="flex-direction:row;gap:50px;align-items:center"><div style="flex:1;display:flex;flex-direction:column;gap:26px">${head({hud:"Peluang Cipta Pahala",title:"Di bumi Haramain"})}
+ <div class="grid" style="grid-template-columns:1fr 1fr"><div class="card step"><span class="hud" style="font-size:14px">Wakaf Al-Quran</span><span class="num" style="font-size:66px">RM <span data-count="70">0</span></span><span class="cap">1 mushaf · SAR 60</span></div><div class="card step"><span class="hud" style="font-size:14px">Infaq Sabil</span><span class="num" style="font-size:66px">RM <span data-count="30">0</span></span><span class="cap">1 pek · SAR 20</span></div></div></div>
+ <div class="frame rv" style="width:700px;height:600px"><img src="${img("wakaf-infaq")}" alt="Wakaf Al-Quran dan Infaq Sabil"></div></div>`,
+end:()=>`<div class="hero-img dome kenburns" style="width:620px;height:820px;right:120px;top:90px"><img src="${img("nabawi-payung")}" alt=""></div><div class="orbit o1" style="width:900px;height:900px;right:0;top:50px"><i></i></div>
+ <div class="hero-tx" style="width:900px"><div class="hud rv">Penutup</div><h1 class="rv" style="font-size:110px">Sesi<span>Soal Jawab</span></h1><p class="big rv" style="color:var(--mut)">Semoga Allah menerima ibadah kita dan menjadikan umrah ini umrah yang mabrur.</p>
+ <div class="meta rv"><span>Mutawwif</span><b>Ustaz Zulhafeez Ahmad Zahidi Al-Hafiz</b><span>Hubungi</span><b>019-400 9726</b><span>Media sosial</span><b>FB Walid Amir El-Haq · TikTok Waleed Amir El Haq · IG UstazDesignerCreative</b></div></div>`,
+sources:()=>`<div class="pad" style="gap:18px">${head({hud:"Lampiran",title:"Sumber & status bahan"})}
+ <p class="body" style="font-size:22px"><b class="hl">Sumber utama:</b> 106 slaid asal kursus Darul Mubarak dalam folder Drive “Slide Kursus”. <b>86 slaid dibaca</b> (termasuk versi JPG slaid 26, 32–37 dan 63 dalam folder “+Updates”). 20 slaid masih melebihi had 10 MB dan <b style="color:var(--bad)">belum dibaca</b>: 16, 28, 30, 48–50, 59, 65, 74, 75, 78–81, 83, 86–88, 99, 104, 106. Fail PDF “Updates Kursus Umrah Darul Mubarak.pdf” (194 MB) juga belum dapat dibaca.</p>
+ <p class="body" style="font-size:22px"><b class="hl">Perlu semakan penceramah:</b> teks Arab niat umrah yang ditaip semula (slaid 26); mazhab rujukan; harga wakaf/infaq semasa; kedudukan zon lampu hijau dalam simulasi.</p>
+ <p class="body" style="font-size:22px"><b class="hl">Gambar:</b> 13 foto daripada folder “Gambar” Drive (eksport 8 Sep 2024; tera air jurugambar dikekalkan) dan potongan daripada slaid asal 51, 52, 60, 61, 82, 90, 93, 95, 105 dan 26 (lafaz niat bersyarat). Tiada gambar rekaan AI.</p></div>`
+};
+/* ============ BINA ============ */
+const deck=document.getElementById("deck"),$=id=>document.getElementById(id);
+deck.innerHTML=S.map((s,i)=>`<section class="slide" data-i="${i}" aria-label="Slaid ${i+1}">${T[s.t](s)}<div class="pnote"><b>Nota:</b> ${s.notes} <i>Sumber: ${s.src}</i></div></section>`).join("");
+const slides=[...deck.children];
+let score={r:0,n:0};
+const scoreEls=()=>document.querySelectorAll(".score").forEach(e=>e.textContent=`MARKAH SESI ${score.r}/${score.n}`);
+const reduced=()=>document.documentElement.classList.contains("reduce")||matchMedia("(prefers-reduced-motion: reduce)").matches;
+const onSel=(btns,i)=>btns.forEach((b,k)=>b.setAttribute("aria-selected",k===i));
+slides.forEach((el,i)=>{const s=S[i];el._enter=[];el._print=[];
+ if(s.t==="quiz"){const r=el.querySelector("[data-quiz]");let k=0,done=false;
+  const show=()=>{const q=s.qs[k];done=false;r.querySelector(".qn").textContent=`Soalan ${k+1}/${s.qs.length}`;if(s.kind)r.querySelector(".story").textContent=q.story;r.querySelector(".q").textContent=q.q;const ex=r.querySelector(".explain");ex.hidden=true;ex.textContent=q.why;
+   r.querySelector(".opts").innerHTML=q.o.map((o,n)=>`<button class="opt"><span class="k">${"ABCD"[n]}</span><span>${o}</span><span class="fb"></span></button>`).join("");[...r.querySelectorAll(".opt")].forEach((b,n)=>b.onclick=()=>mark(n,true));r.querySelector(".nx").hidden=k>=s.qs.length-1;};
+  const mark=(n,c)=>{if(done)return;done=true;const q=s.qs[k],bs=[...r.querySelectorAll(".opt")];bs.forEach(b=>b.disabled=true);bs[q.a].classList.add("right");bs[q.a].querySelector(".fb").textContent="✓ Betul";
+   if(n!=null&&n!==q.a){bs[n].classList.add("wrong");bs[n].querySelector(".fb").textContent="✕ Kurang tepat";}if(c){score.n++;if(n===q.a)score.r++;scoreEls();}r.querySelector(".explain").hidden=false;};
+  r.querySelector(".rv2").onclick=()=>mark(null,false);r.querySelector(".rs").onclick=()=>{k=0;show();};r.querySelector(".nx").onclick=()=>{k++;show();};el._print.push(()=>{k=0;show();mark(null,false);});show();}
+ if(s.t==="tof"){const r=el.querySelector("[data-tof]");let k=0;const bs=[...r.querySelectorAll(".opt")];
+  const show=()=>{r.querySelector(".qn").textContent=`${k+1}/${s.items.length}`;r.querySelector(".st").textContent=s.items[k].st;const ex=r.querySelector(".explain");ex.hidden=true;ex.textContent=s.items[k].why;bs.forEach(b=>{b.disabled=false;b.classList.remove("right","wrong");b.querySelector(".fb").textContent="";});r.querySelector(".nx").hidden=k>=s.items.length-1;};
+  const rev=v=>{bs.forEach(b=>{b.disabled=true;if(b.dataset.v===s.items[k].a){b.classList.add("right");b.querySelector(".fb").textContent=" ✓";}else if(b.dataset.v===v){b.classList.add("wrong");b.querySelector(".fb").textContent=" ✕";}});r.querySelector(".explain").hidden=false;};
+  bs.forEach(b=>b.onclick=()=>rev(b.dataset.v));r.querySelector(".rv2").onclick=()=>rev(null);r.querySelector(".rs").onclick=()=>{k=0;show();};r.querySelector(".nx").onclick=()=>{k++;show();};el._print.push(()=>{k=0;show();rev(null);});show();}
+ if(s.t==="sequence"){const r=el.querySelector("[data-seq]"),slots=r.querySelector(".slots"),pool=r.querySelector(".pool"),msg=r.querySelector(".msg");let nx=0;
+  const place=k=>{const c=slots.children[k];c.classList.add("fill");c.innerHTML=`<span class="n">LANGKAH ${k+1} ✓</span>${s.order[k]}`;};
+  const build=()=>{nx=0;msg.textContent="";slots.innerHTML=s.order.map((_,n)=>`<div class="slot"><span class="n">LANGKAH ${n+1}</span></div>`).join("");pool.innerHTML=s.shown.map(k=>`<button class="opt card-o" data-k="${k}">${s.order[k]}</button>`).join("");
+   [...pool.children].forEach(b=>b.onclick=()=>{const k=+b.dataset.k;if(k===nx){place(k);b.style.visibility="hidden";nx++;msg.textContent=nx===s.order.length?"✓ Tertib lengkap. Syabas!":"✓ Betul. Pilih langkah seterusnya.";}else{b.classList.remove("shake");void b.offsetWidth;b.classList.add("shake");msg.textContent=`✕ Belum tepat. Apakah yang berlaku selepas langkah ${nx}?`;}});};
+  const all=()=>{s.order.forEach((_,k)=>place(k));[...pool.children].forEach(b=>b.style.visibility="hidden");msg.textContent="Jawapan: "+s.order.join(" → ");};r.querySelector(".rv2").onclick=all;r.querySelector(".rs").onclick=build;el._print.push(all);build();}
+ el.querySelectorAll("[data-check]").forEach(r=>{const bx=[...r.querySelectorAll("input")];const u=()=>{const n=bx.filter(b=>b.checked).length;r.querySelector(".stat").textContent=`${n}/${bx.length} SEDIA`;r.querySelector(".meter i").style.width=n/bx.length*100+"%";};bx.forEach(b=>b.onchange=u);r.querySelector(".rs").onclick=()=>{bx.forEach(b=>b.checked=false);u();};u();});
+ el.querySelectorAll("[data-pack]").forEach(r=>{const tb=[...r.querySelectorAll(".pt")],pp=[...r.querySelectorAll(".pp")];tb.forEach((b,k)=>b.onclick=()=>{onSel(tb,k);pp.forEach((p,j)=>p.classList.toggle("on",j===k));});r.querySelector(".rs").onclick=()=>r.querySelectorAll("input").forEach(b=>b.checked=false);el._print.push(()=>pp.forEach(p=>p.classList.add("on")));});
+ el.querySelectorAll(".jump").forEach(b=>b.onclick=()=>show(+b.dataset.go,1));
+ if(s.t==="rukunwajib"){const tb=[...el.querySelectorAll(".rwf")];tb.forEach((b,k)=>b.onclick=()=>{onSel(tb,k);el.querySelectorAll(".rwc").forEach(c=>{const off=b.dataset.f!=="all"&&c.dataset.c!==b.dataset.f;c.style.opacity=off?.25:1;c.style.transform=off?"scale(.94)":"none";});});}
+ if(s.t==="syarat"){const fl=[...el.querySelectorAll(".flip")];const open=b=>{b.querySelector(".fx-t").style.opacity=1;b.style.borderColor="rgba(46,242,176,.6)";};fl.forEach(b=>b.onclick=()=>open(b));el.querySelector(".sall").onclick=()=>fl.forEach(open);
+  el.querySelector(".sres").onclick=()=>fl.forEach(b=>{b.querySelector(".fx-t").style.opacity=0;b.style.borderColor="";});el._step=()=>{const n=fl.find(b=>b.querySelector(".fx-t").style.opacity!=="1");if(n){open(n);return true;}return false;};el._print.push(()=>fl.forEach(open));}
+ if(s.t==="hex"){const hb=[...el.querySelectorAll(".hxb")];let h=-1;const set=k=>{h=k;el.querySelector(".hxh").textContent="Tawaf "+s.items[k][0];el.querySelector(".hxd").textContent=s.items[k][1];el.querySelector("#hxk").textContent=String(k+1).padStart(2,"0")+" / 06";hb.forEach((b,j)=>{b.style.transform=j===k?"scale(1.08)":"none";b.style.filter=j===k?"drop-shadow(0 0 24px #2ef2b0)":"none";});};
+  hb.forEach(b=>b.onclick=()=>set(+b.dataset.i));el._step=()=>{if(h<5){set(h+1);return true;}return false;};}
+ if(s.t==="kaabah"){const K=JSON.parse(el.querySelector(".kbdata").textContent),hb=[...el.querySelectorAll(".kb")];let h=-1;const set=k=>{h=k;el.querySelector(".kbh").textContent=K[k][0];el.querySelector(".kbd").innerHTML=K[k][3];el.querySelector(".kba").textContent=K[k][4];el.querySelector(".kbm").textContent=K[k][4]?"“Wahai Tuhan kami, berilah kami kebaikan di dunia dan kebaikan di akhirat, dan peliharalah kami dari azab neraka.” — Surah Al-Baqarah : 201":"";hb.forEach((b,j)=>b.setAttribute("aria-pressed",j===k));};
+  hb.forEach(b=>b.onclick=()=>set(+b.dataset.i));el._step=()=>{if(h<3){set(h+1);return true;}return false;};}
+ if(s.t==="larangan"){const tb=[...el.querySelectorAll(".lt")],pp=[...el.querySelectorAll(".lp")];let d=0;const set=k=>{d=k;onSel(tb,k);pp.forEach((p,j)=>p.classList.toggle("on",j===k));};tb.forEach((b,k)=>b.onclick=()=>set(k));el._step=()=>{if(d<5){set(d+1);return true;}return false;};el._enter.push(()=>set(0));el._print.push(()=>pp.forEach(p=>p.classList.add("on")));}
+ if(s.t==="damtabs"){const tb=[...el.querySelectorAll(".dt")],pp=[...el.querySelectorAll(".dp")];let d=0;const set=k=>{d=k;onSel(tb,k);pp.forEach((p,j)=>p.classList.toggle("on",j===k));};tb.forEach((b,k)=>b.onclick=()=>set(k));el._step=()=>{if(d<3){set(d+1);return true;}return false;};el._enter.push(()=>set(0));}
+ if(s.t==="raudhah"){const R=JSON.parse(el.querySelector(".rdata").textContent),tb=[...el.querySelectorAll(".rt")];let h=-1;const set=k=>{h=k;onSel(tb,k);el.querySelector(".rth").textContent=R[k][0];el.querySelector(".rtd").textContent=R[k][1];};tb.forEach((b,k)=>b.onclick=()=>set(k));el._step=()=>{if(h<5){set(h+1);return true;}return false;};}
+ if(s.t==="nusuk"){const tb=[...el.querySelectorAll(".ns")];const D=[["Pilih ahli kumpulan (companion) yang akan bersama anda.","nusuk-servis"],["Pilih tarikh dan masa yang sesuai (Gregorian / Hijri). Perhatikan tahap kesesakan: Low · Moderate · High.","nusuk-kalendar"],["Semak dan sahkan. Permit dipaparkan dalam “View Permits” — tunjukkan kepada petugas Raudhah.","nusuk-servis"]];let n=0;const set=k=>{n=k;onSel(tb,k);el.querySelector(".nsd").textContent=D[k][0];el.querySelector(".nsi").src=img(D[k][1]);};tb.forEach((b,k)=>b.onclick=()=>set(k));el._step=()=>{if(n<2){set(n+1);return true;}return false;};el._enter.push(()=>set(0));}
+ el.querySelectorAll("[data-count]").forEach(c=>el._enter.push(()=>{const to=+c.dataset.count;if(reduced()){c.textContent=to;return;}const t0=performance.now();const f=t=>{const p=Math.min(1,(t-t0)/1200);c.textContent=Math.round(to*(1-Math.pow(1-p,3)));if(p<1)requestAnimationFrame(f);};requestAnimationFrame(f);}));
+ el.querySelectorAll("[data-count]").forEach(c=>el._print.push(()=>c.textContent=c.dataset.count));
+ el.querySelectorAll(".typed").forEach(t=>{el._enter.push(()=>{const full=t.dataset.type;if(reduced()){t.textContent=full;return;}t.textContent="";let k=0;clearInterval(t._iv);t._iv=setInterval(()=>{t.textContent=full.slice(0,++k);if(k>=full.length)clearInterval(t._iv);},55);});el._print.push(()=>t.textContent=t.dataset.type);});
+ if(s.t==="flow8"){const path=el.querySelector(".fbase"),prog=el.querySelector(".fprog"),tot=path.getTotalLength(),tails=[...el.querySelectorAll(".fcomet circle")],nodes=[...el.querySelectorAll(".fnode")],cards=[...el.querySelectorAll(".fcard")];
+  const NL=nodes.map(g=>{const t=g.getAttribute("transform").match(/[\d.]+/g).map(Number);let best=0,bd=1e9;for(let l=0;l<=tot;l+=3){const p=path.getPointAtLength(l),d=(p.x-t[0])**2+(p.y-t[1])**2;if(d<bd){bd=d;best=l;}}return best;});
+  prog.style.strokeDasharray=tot;let cur=-1,L=0,raf=0;
+  const draw=l=>{prog.style.strokeDashoffset=tot-l;tails.forEach((c,k)=>{const n=tails.length-1-k,p=path.getPointAtLength(Math.max(0,l-n*11));c.setAttribute("cx",p.x.toFixed(1));c.setAttribute("cy",p.y.toFixed(1));});};
+  const setN=(n,inst)=>{n=Math.max(0,Math.min(7,n));cur=n;const from=L,to=NL[n];nodes.forEach((g,j)=>{g.classList.toggle("done",j<n);g.classList.toggle("cur",j===n);});cards.forEach((c,j)=>{c.classList.toggle("on",j<=n);c.classList.toggle("cur",j===n);});
+   el.querySelector(".fhud").textContent=`FASA ${String(n+1).padStart(2,"0")}/08 · ${s.items[n][0].toUpperCase()}`;cancelAnimationFrame(raf);
+   if(inst||reduced()){L=to;draw(L);return;}const t0=performance.now(),d=Math.max(600,Math.abs(to-from)*1.3);const f=t=>{const p=Math.min(1,(t-t0)/d),e=p<.5?4*p*p*p:1-Math.pow(-2*p+2,3)/2;L=from+(to-from)*e;draw(L);if(p<1)raf=requestAnimationFrame(f);};raf=requestAnimationFrame(f);};
+  nodes.forEach(g=>g.onclick=()=>setN(+g.dataset.i));el._step=()=>{if(cur<7){setN(cur+1);return true;}return false;};el._back=()=>{if(cur>0){setN(cur-1);return true;}return false;};
+  el._enter.push(()=>{L=0;draw(0);setN(0);});el._print.push(()=>setN(7,true));}
+ if(s.t==="miqatmap"){const M=JSON.parse(el.querySelector(".mqdata").textContent),gs=[...el.querySelectorAll(".mq")],beam=el.querySelector(".mqbeam"),pk=el.querySelector(".mqpk"),mo=el.querySelector(".mqmo"),km=el.querySelector(".mqkm");let cur=-1,timer=0,kraf=0;
+  const sel=k=>{cur=k;const m=M[k];gs.forEach((g,j)=>g.classList.toggle("on",j===k));el.querySelectorAll(".mqline").forEach((l,j)=>l.setAttribute("stroke",j===k?"rgba(46,242,176,.6)":"rgba(242,196,109,.25)"));
+   const len=Math.hypot(m[1]-500,m[2]-460);beam.setAttribute("x2",m[1]);beam.setAttribute("y2",m[2]);beam.style.transition="none";beam.style.strokeDasharray=len;beam.style.strokeDashoffset=len;void beam.getBoundingClientRect();beam.style.transition=reduced()?"none":"stroke-dashoffset .9s cubic-bezier(.2,.8,.2,1)";beam.style.strokeDashoffset=0;
+   mo.setAttribute("path",`M500 460 L${m[1]} ${m[2]}`);pk.setAttribute("opacity",reduced()?0:1);
+   el.querySelector(".mqidx").textContent=`SASARAN ${String(k+1).padStart(2,"0")}/05`;el.querySelector("#mqT").textContent=m[0];el.querySelector("#mqD").innerHTML=m[3];
+   cancelAnimationFrame(kraf);const to=parseInt(m[4])||0;if(!to){km.textContent=k===1?"Paling hampir":"";return;}if(reduced()){km.textContent=`~${to} km`;return;}const t0=performance.now();const f=t=>{const p=Math.min(1,(t-t0)/1100);km.textContent=`~${Math.round(to*(1-Math.pow(1-p,3)))} km`;if(p<1)kraf=requestAnimationFrame(f);};kraf=requestAnimationFrame(f);};
+  const stop=()=>{clearInterval(timer);timer=0;};
+  gs.forEach(g=>{const f=()=>{stop();sel(+g.dataset.i);};g.onclick=f;g.onkeydown=e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();f();}};});
+  el.querySelector(".mqscan").onclick=()=>{stop();sel(0);let k=0;timer=setInterval(()=>{k++;if(k>4){stop();return;}sel(k);},2600);};
+  const reset=()=>{stop();cur=-1;gs.forEach(g=>g.classList.remove("on"));beam.setAttribute("x2",500);beam.setAttribute("y2",460);pk.setAttribute("opacity",0);km.textContent="";el.querySelector(".mqidx").textContent="SASARAN —/05";el.querySelector("#mqT").textContent="Pilih satu miqat";el.querySelector("#mqD").textContent="Klik penanda pada radar, atau tekan Seterusnya untuk mengimbas satu demi satu.";};
+  el.querySelector(".mqreset").onclick=reset;el._step=()=>{stop();if(cur<4){sel(cur+1);return true;}return false;};el._back=()=>{stop();if(cur>0){sel(cur-1);return true;}return false;};el._enter.push(reset);el._print.push(()=>sel(3));}
+ if(s.t==="wheel"){const C=440,R=330,tails=[...el.querySelectorAll(".wcomet circle")],arc=el.querySelector(".warc"),beam=el.querySelector(".wbeam"),bars=[...el.querySelectorAll(".wbar i")],ns=[...el.querySelectorAll(".wn")];let w=0,ang=-Math.PI/2,raf=0;
+  const place=a=>{tails.forEach((c,k)=>{const n=tails.length-1-k,aa=Math.max(-Math.PI/2,a-n*.05);c.setAttribute("cx",(C+R*Math.cos(aa)).toFixed(1));c.setAttribute("cy",(C+R*Math.sin(aa)).toFixed(1));});arc.style.strokeDashoffset=2073*(1-(a+Math.PI/2)/(2*Math.PI));beam.setAttribute("x2",(C+R*Math.cos(a)).toFixed(1));beam.setAttribute("y2",(C+R*Math.sin(a)).toFixed(1));};
+  const set=(n,inst)=>{w=Math.max(0,Math.min(7,n));el.querySelector(".wnum").textContent=String(w+1).padStart(2,"0");el.querySelector(".wname").textContent=s.items[w];
+   bars.forEach((b,k)=>{b.style.background=k<w?"#10b981":k===w?"#f2c46d":"rgba(255,255,255,.1)";b.style.boxShadow=k===w?"0 0 12px #f2c46d":"none";});ns.forEach((g,k)=>{g.classList.toggle("done",k<w);g.classList.toggle("cur",k===w);});
+   const from=ang,to=-Math.PI/2+w*Math.PI/4;cancelAnimationFrame(raf);if(inst||reduced()){ang=to;place(ang);return;}const t0=performance.now(),d=Math.max(500,Math.abs(to-from)*900);const f=t=>{const p=Math.min(1,(t-t0)/d),e=1-Math.pow(1-p,3);ang=from+(to-from)*e;place(ang);if(p<1)raf=requestAnimationFrame(f);};raf=requestAnimationFrame(f);};
+  ns.forEach(g=>g.onclick=()=>set(+g.dataset.i));el._step=()=>{if(w<7){set(w+1);return true;}return false;};el._back=()=>{if(w>0){set(w-1);return true;}return false;};el._enter.push(()=>{ang=-Math.PI/2;set(0,true);});el._print.push(()=>set(7,true));}
+ if(s.t==="tawaf"){const tails=[...el.querySelectorAll(".ttail circle")],laps=[...el.querySelectorAll(".tlap")],ro=el.querySelector(".treadout"),nm=["Hajarul Aswad","Penjuru Iraqi","Penjuru Syami","Rukun Yamani"];let lastC=-1;
+  const burst=c=>{const b=el.querySelector(`.tburst[data-c="${c}"]`);b.classList.remove("go");void b.getBoundingClientRect();b.classList.add("go");};
+  el.querySelector(".t3d").onclick=function(){const on=this.getAttribute("aria-pressed")!=="true";this.setAttribute("aria-pressed",on);el.querySelector(".tplane").style.transform=on?"rotateX(56deg) scale(.92) translateY(-40px)":"";};
+  sim(el,{max:14*Math.PI,speed:(Math.PI/2)/750,pos:(st,v)=>{const R=340,F=2*Math.PI,pt=a=>[500+R*Math.cos(a),500-R*Math.sin(a)],p=pt(v);st.dot.setAttribute("cx",p[0].toFixed(1));st.dot.setAttribute("cy",p[1].toFixed(1));
+   tails.forEach((c,k)=>{const n=tails.length-k,q=pt(Math.max(0,v-n*.035));c.setAttribute("cx",q[0].toFixed(1));c.setAttribute("cy",q[1].toFixed(1));c.style.display=v>0?"":"none";});
+   let d=Math.floor(v/F+1e-6),part=v-d*F;if(v>=7*F-1e-6){d=7;part=0;}
+   st.el.querySelector(".trail").setAttribute("d",part>.01?`M840 500 A340 340 0 ${part>Math.PI?1:0} 0 ${pt(part)[0].toFixed(1)} ${pt(part)[1].toFixed(1)}`:"");st.count.innerHTML=`${d}<small>/7</small>`;
+   laps.forEach((l,k)=>{l.className="tlap"+(k<d?" done":k===d&&v>0&&d<7?" cur":"");});
+   const c=Math.floor(part/(Math.PI/2)+1e-6)%4;const ci=v>0?(part<.01?0:c):-1;if(ci!==lastC&&v>0&&!reduced()){burst(part<.01?0:c);}lastC=ci;
+   ro.innerHTML=`SUDUT ${String(Math.round(part*180/Math.PI)).padStart(3,"0")}°<br>PUSINGAN ${Math.min(7,d+(part>.01?1:0))}/7<br>${v>0&&d<7?"MELEPASI · "+nm[c].toUpperCase():d>=7?"SELESAI":"SEDIA"}`;
+   st.status.textContent=d>=7?"Tawaf selesai: 7 pusingan, berakhir sejajar Hajarul Aswad.":v===0?"Bersedia di garis lampu hijau, sejajar Hajarul Aswad. Kaabah di sebelah kiri.":part<.01?`Pusingan ke-${d} selesai di lampu hijau. Istilam & mulakan pusingan seterusnya.`:`Pusingan ke-${d+1}: melepasi ${nm[c]}${c===1?", kemudian di luar Hijir Ismail":c===3?" — baca doa Rabbana atina…":""}.`;},
+  play:v=>(Math.floor(v/(2*Math.PI)+1e-6)+1)*2*Math.PI,step:v=>(Math.floor(v/(Math.PI/2)+1e-6)+1)*Math.PI/2});
+  const cv=el.querySelector(".tcrowd"),g=cv.getContext("2d");let sd=11;const rr=()=>{sd=(sd*16807)%2147483647;return sd/2147483647;};const P=Array.from({length:300},()=>({r:225+rr()*230,a:rr()*6.283,s:.0016+rr()*.0028,z:1.2+rr()*2,w:rr()<.82}));
+  const drawC=mv=>{g.clearRect(0,0,1000,988);for(const q of P){if(mv)q.a+=q.s;const x=500+q.r*Math.cos(q.a),y=500-q.r*Math.sin(q.a);g.beginPath();g.arc(x,y,q.z,0,6.283);g.fillStyle=q.w?"rgba(244,241,232,.7)":"rgba(46,242,176,.75)";g.fill();}};
+  const loop=()=>{if(el.classList.contains("on")&&!document.body.classList.contains("print"))drawC(!reduced());requestAnimationFrame(loop);};drawC(false);requestAnimationFrame(loop);}
+ if(s.t==="saie"){const tails=[...el.querySelectorAll(".stail circle")],segs=[...el.querySelectorAll(".sseg")],hills=[...el.querySelectorAll(".shill")],sch=el.querySelector(".schev"),zone=el.querySelector(".szone"),A=210,B=1550,inZ=x=>x>760&&x<1000;
+  const xAt=p=>{let n=Math.floor(p+1e-9),f=p-n;if(p>=7){n=6;f=1;}return n%2===0?A+(B-A)*f:B-(B-A)*f;};
+  sim(el,{max:7,speed:1/1500,speedAt:p=>inZ(xAt(p))?1/880:1/1500,pos:(st,p)=>{const x=xAt(p);st.dot.setAttribute("cx",x.toFixed(1));const m=Math.min(7,Math.floor(p+1e-9)),g2=p-Math.floor(p+1e-9),dir=m%2===0?1:-1,moving=p>0&&p<7&&g2>.001;
+   st.el.querySelector(".walk").setAttribute("d",moving?`M${dir>0?A:B} 180 L${x.toFixed(1)} 180`:"");
+   tails.forEach((c,k)=>{const n=tails.length-k,tx=x-dir*n*13,lim=dir>0?Math.max(A,tx):Math.min(B,tx);c.setAttribute("cx",lim.toFixed(1));c.style.display=moving?"":"none";});
+   sch.style.transform=dir>0?"":"translate(1760px,0) scale(-1,1)";sch.style.transformOrigin="0 0";
+   const z=moving&&inZ(x);zone.classList.toggle("hot",z);st.dot.setAttribute("fill",z?"#4ade80":"#f2c46d");
+   hills.forEach((h,k)=>h.classList.toggle("target",p<7&&(k===(dir>0?1:0))));
+   segs.forEach((sg,k)=>{const f=Math.max(0,Math.min(1,p-k));sg.querySelector("b").style.width=f*100+"%";sg.classList.toggle("cur",moving&&k===m);sg.classList.toggle("done",f>=1);});
+   st.el.querySelector(".sdir").textContent=p>=7?"Sa‘ie selesai":dir>0?"Safa → Marwah":"Marwah → Safa";
+   st.count.innerHTML=`${m}<small>/7</small>`;st.status.textContent=p>=7?"Sa‘ie selesai: 7 perjalanan, berakhir di Bukit Marwah.":p===0?"Bermula di Bukit Safa.":g2<.001?`Perjalanan ke-${m} selesai di Bukit ${m%2?"Marwah":"Safa"}.`:`Perjalanan ke-${m+1}: ${dir>0?"Safa → Marwah":"Marwah → Safa"}${z?" · zon lampu hijau: lelaki berlari-lari anak":""}.`;},
+  play:p=>Math.floor(p+1e-9)+1,step:p=>(Math.floor(p*2+1e-9)+1)/2});}
+});
+function sim(el,o){const st={el,dot:el.querySelector(".dot"),count:el.querySelector(".count"),status:el.querySelector(".status")};let v=0,tg=0,last=0,raf=0;
+ const tick=t=>{if(!last)last=t;const dt=t-last;last=t;v=reduced()?tg:Math.min(tg,v+(o.speedAt?o.speedAt(v):o.speed)*dt);o.pos(st,v);if(v<tg)raf=requestAnimationFrame(tick);else{raf=0;last=0;}};const go=t=>{tg=Math.min(t,o.max);if(!raf)raf=requestAnimationFrame(tick);};
+ el.querySelector(".play").onclick=()=>go(o.play(v));el.querySelector(".stepb").onclick=()=>go(o.step(v));el.querySelector(".pause").onclick=()=>{tg=v;};el.querySelector(".reset").onclick=()=>{cancelAnimationFrame(raf);raf=0;last=0;v=tg=0;o.pos(st,0);};o.pos(st,0);}
+scoreEls();
+/* ============ NAVIGASI ============ */
+let cur=0;const steps=el=>[...el.querySelectorAll(".step")];
+function show(n,dir,cx){cur=Math.max(0,Math.min(slides.length-1,n));
+ slides.forEach((el,i)=>{if(i===cur){el.style.setProperty("--cx",(cx?cx[0]:dir<0?"8%":"92%"));el.style.setProperty("--cy",(cx?cx[1]:"90%"));}el.classList.toggle("on",i===cur);});
+ steps(slides[cur]).forEach(e=>e.classList.toggle("shown",dir<0));slides[cur]._enter.forEach(f=>f());
+ $("count").textContent=`${String(cur+1).padStart(2,"0")} / ${slides.length}`;$("prog").style.width=(cur+1)/slides.length*100+"%";$("chap").textContent=`${S[cur].ch} · ${CH[S[cur].ch]}`;$("bPrev").disabled=cur===0;
+ $("notes").innerHTML=`<h4>Nota penceramah · slaid ${cur+1}</h4><div>${S[cur].notes.replace(/⚠[^.]*\./g,m=>`<span class="warn">${m}</span>`)}</div><div class="src"><b>Sumber:</b> ${S[cur].src}</div>`;
+ try{history.replaceState(null,"","#s"+(cur+1));}catch(e){}}
+function next(){const el=slides[cur];const h=steps(el).find(e=>!e.classList.contains("shown"));if(h){h.classList.add("shown");return;}if(el._step&&el._step())return;if(cur<slides.length-1)show(cur+1,1);}
+function prev(){const el=slides[cur];const sh=steps(el).filter(e=>e.classList.contains("shown"));if(el._back&&el._back())return;if(sh.length){sh[sh.length-1].classList.remove("shown");return;}if(cur>0)show(cur-1,-1);}
+$("menu").innerHTML=`<h2>Menu bahagian</h2><div class="mgrid">${Object.keys(CH).map((k,i)=>{const f=S.findIndex(s=>s.ch===k),n=S.filter(s=>s.ch===k).length;return `<button class="mcard" data-go="${f}"><small>${String(i).padStart(2,"0")} · ${n} SLAID</small><b>${CH[k]}</b><span class="cap">Mula slaid ${f+1}</span></button>`;}).join("")}</div>
+ <h2 style="font-size:34px;margin:34px 0 18px">Lompat ke slaid</h2><div style="display:flex;flex-wrap:wrap;gap:10px">${S.map((s,i)=>`<button class="mcard" data-go="${i}" style="padding:10px 14px;min-width:64px;align-items:center"><b style="font:700 20px var(--hud)">${i+1}</b></button>`).join("")}</div>`;
+$("menu").querySelectorAll("[data-go]").forEach(b=>b.onclick=()=>{show(+b.dataset.go,1);$("menu").hidden=true;$("bMenu").textContent="☰ Menu";});
+$("bMenu").onclick=()=>{const m=$("menu");m.hidden=!m.hidden;$("bMenu").textContent=m.hidden?"☰ Menu":"✕ Tutup";};
+$("bNext").onclick=next;$("bPrev").onclick=prev;
+$("bNotes").onclick=function(){const n=$("notes");n.hidden=!n.hidden;this.setAttribute("aria-pressed",!n.hidden);};
+$("bReduce").onclick=function(){const on=!document.documentElement.classList.contains("reduce");document.documentElement.classList.toggle("reduce",on);this.setAttribute("aria-pressed",on);};
+function setPrint(on){document.body.classList.toggle("print",on);if(on){slides.forEach(el=>el._print.forEach(f=>f()));document.documentElement.style.setProperty("--pz",Math.min(1,(innerWidth-40)/1920));}else fit();}
+$("bPrint").onclick=()=>setPrint(true);$("pexit").onclick=()=>{setPrint(false);show(cur,1);};
+document.addEventListener("keydown",e=>{if(document.body.classList.contains("print"))return;if(e.target.tagName==="INPUT")return;
+ if(["ArrowRight","PageDown"," "].includes(e.key)){e.preventDefault();next();}else if(["ArrowLeft","PageUp"].includes(e.key)){e.preventDefault();prev();}
+ else if(e.key==="Home")show(0,1);else if(e.key==="End")show(slides.length-1,1);else if(e.key==="Escape"){$("menu").hidden=true;$("bMenu").textContent="☰ Menu";}
+ else if(e.key==="m"||e.key==="M")$("bMenu").click();else if(e.key==="n"||e.key==="N")$("bNotes").click();});
+/* 3D tilt pada kad */
+document.addEventListener("pointermove",e=>{if(reduced())return;const c=e.target.closest&&e.target.closest(".card");document.querySelectorAll(".card.tilt").forEach(x=>{if(x!==c){x.style.transform="";x.classList.remove("tilt");}});if(!c||!c.closest(".slide.on"))return;const r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;c.classList.add("tilt");c.style.transform=`perspective(900px) rotateY(${x*8}deg) rotateX(${-y*8}deg) translateY(-4px)`;});
+/* zarah cahaya */
+const cv=$("fx"),cx=cv.getContext("2d");let P=[];let seed=7;const rnd=()=>{seed=(seed*16807)%2147483647;return seed/2147483647;};
+for(let i=0;i<90;i++)P.push({x:rnd()*1920,y:rnd()*1080,r:.6+rnd()*2.2,v:.15+rnd()*.5,a:rnd()*6.28,g:rnd()<.35});
+function loop(){cx.clearRect(0,0,1920,1080);if(!reduced()&&!document.body.classList.contains("print")){for(const p of P){p.y-=p.v;p.a+=.01;p.x+=Math.sin(p.a)*.3;if(p.y<-10){p.y=1090;p.x=rnd()*1920;}cx.beginPath();cx.arc(p.x,p.y,p.r,0,6.28);cx.fillStyle=p.g?"rgba(46,242,176,.55)":"rgba(242,196,109,.6)";cx.shadowColor=cx.fillStyle;cx.shadowBlur=10;cx.fill();}}requestAnimationFrame(loop);}loop();
+function fit(){const st=$("stage"),s=Math.min(innerWidth/1920,innerHeight/1080);st.style.transform=`translate(${(innerWidth-1920*s)/2}px,${(innerHeight-1080*s)/2}px) scale(${s})`;}
+addEventListener("resize",()=>{if(document.body.classList.contains("print"))document.documentElement.style.setProperty("--pz",Math.min(1,(innerWidth-40)/1920));else fit();});
+$("stage").addEventListener("scroll",e=>{e.target.scrollTop=0;e.target.scrollLeft=0;});$("deck").addEventListener("scroll",e=>{e.target.scrollTop=0;});document.addEventListener("scroll",()=>{},true);fit();const h=/^#s(\d+)$/.exec(location.hash);show(h?+h[1]-1:0,1);
+addEventListener("hashchange",()=>{const m=/^#s(\d+)$/.exec(location.hash);if(m&&+m[1]-1!==cur)show(+m[1]-1,1);});
+}
+</script>
+</body>
+</html>
