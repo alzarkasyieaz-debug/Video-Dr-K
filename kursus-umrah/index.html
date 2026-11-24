@@ -669,7 +669,7 @@ tawaf:s=>`${draft}<div style="position:absolute;inset:0;display:grid;grid-templa
  <g fill="#f4f1e8" font-weight="600" font-size="25"><text x="664" y="560">Hajarul Aswad</text><text x="520" y="334">Penjuru Iraqi</text><text x="330" y="488" text-anchor="end">Penjuru Syami</text><text x="500" y="692" text-anchor="middle">Rukun Yamani</text></g>
  <g fill="#2ef2b0" font-weight="600" font-size="21"><text x="388" y="376" text-anchor="end">Hijir Ismail</text><text x="866" y="470">Lampu hijau</text><text x="866" y="540">garis mula</text></g>
  <g class="ttail">${Array.from({length:16},(_,k)=>`<circle r="${(4+k*1.05).toFixed(1)}" fill="#f2c46d" opacity="${(.04+k*.035).toFixed(2)}"/>`).join("")}</g>
- <circle class="dot" r="22" cx="840" cy="500" fill="#f2c46d" stroke="#fff" stroke-width="4" filter="url(#glow)"/></svg></div>
+ <circle class="dot" r="26" cx="840" cy="500" fill="#f2c46d" fill-opacity=".3" stroke="#f2c46d" stroke-width="3" filter="url(#glow)"/></svg></div>
  <div class="treadout" style="position:absolute;left:28px;top:26px;font:700 17px/1.9 var(--hud);letter-spacing:.16em;color:var(--emer);text-shadow:0 0 10px rgba(46,242,176,.6)"></div></div>
  <div style="display:flex;flex-direction:column;gap:20px;padding:84px 70px 30px 20px"><span class="illus">Ilustrasi panduan · bukan skala sebenar</span><div class="hud">${s.w?"Simulasi Tawaf Wada’ · Selamat Tinggal":"Simulasi Tawaf · Lawan Arah Jam"}</div><div class="count" aria-live="polite"></div>
  <div class="tlaps" style="display:grid;grid-template-columns:repeat(7,1fr);gap:8px">${[1,2,3,4,5,6,7].map(n=>`<span class="tlap">${n}</span>`).join("")}</div>
@@ -714,7 +714,7 @@ saie:()=>`${draft}<div class="pad" data-saie style="gap:22px"><div class="row" s
  <g class="shill" data-h="0"><circle class="hring" cx="110" cy="180" r="112" fill="none" stroke="#2ef2b0" stroke-width="3"/><polygon points="10,250 60,150 95,185 130,110 210,250" fill="url(#ghill)" stroke="#f2c46d" stroke-width="3"/><text x="110" y="292" text-anchor="middle" fill="#fff" font-size="42" font-weight="700">Safa</text><text x="110" y="326" text-anchor="middle" fill="#b6c2dc" font-size="22">Titik mula</text></g>
  <g class="shill" data-h="1"><circle class="hring" cx="1650" cy="180" r="112" fill="none" stroke="#2ef2b0" stroke-width="3"/><polygon points="1550,250 1610,120 1650,170 1690,140 1750,250" fill="url(#ghill)" stroke="#f2c46d" stroke-width="3"/><text x="1650" y="292" text-anchor="middle" fill="#fff" font-size="40" font-weight="700">Marwah</text><text x="1650" y="326" text-anchor="middle" fill="#b6c2dc" font-size="22">Titik akhir</text></g>
  <g class="stail">${Array.from({length:14},(_,k)=>`<circle cy="180" r="${(5+k*1.4).toFixed(1)}" fill="#f2c46d" opacity="${(.04+k*.04).toFixed(2)}"/>`).join("")}</g>
- <circle class="dot" r="30" cx="210" cy="180" fill="#f2c46d" stroke="#fff" stroke-width="5" filter="url(#glow)"/></svg></div></div>
+ <circle class="dot" r="30" cx="210" cy="180" fill="#f2c46d" fill-opacity=".3" stroke="#f2c46d" stroke-width="3" filter="url(#glow)"/></svg></div></div>
  <div class="ssegs" style="display:grid;grid-template-columns:repeat(7,1fr);gap:10px">${[1,2,3,4,5,6,7].map(n=>`<div class="sseg"><span>${n} · ${n%2?"Safa → Marwah":"Marwah → Safa"}</span><i><b></b></i></div>`).join("")}</div>
  <div class="row"><div class="status" style="flex:1;min-height:0"></div><button class="btn pri play">▶ Main</button><button class="btn pause">❚❚ Jeda</button><button class="btn gold stepb">Langkah Seterusnya</button><button class="btn reset">↺ Ulang</button></div></div>`,
 tahallul:()=>`<div class="pad" style="flex-direction:row;gap:50px"><div class="dome rv kenburns scan" style="width:520px;flex:none;border-radius:260px 260px 24px 24px"><img src="${img("st-cukur")}" alt="Jemaah bercukur selepas sa'ie"></div>
@@ -1023,7 +1023,9 @@ const tb=[...el.querySelectorAll(".rwf")];tb.forEach((b,k)=>b.onclick=()=>{onSel
  if(s.t==="tawaf"){const tails=[...el.querySelectorAll(".ttail circle")],laps=[...el.querySelectorAll(".tlap")],ro=el.querySelector(".treadout"),nm=["Hajarul Aswad","Penjuru Iraqi","Penjuru Syami","Rukun Yamani"];let lastC=-1;
   const burst=c=>{const b=el.querySelector(`.tburst[data-c="${c}"]`);b.classList.remove("go");void b.getBoundingClientRect();b.classList.add("go");};
   el.querySelector(".t3d").onclick=function(){const on=this.getAttribute("aria-pressed")!=="true";this.setAttribute("aria-pressed",on);el.querySelector(".tplane").style.transform=on?"rotateX(56deg) scale(.92) translateY(-40px)":"";};
+  const wk=walker(el.querySelector(".dot").ownerSVGElement,1.7);
   sim(el,{max:14*Math.PI,speed:(Math.PI/2)/750,pos:(st,v)=>{const R=340,F=2*Math.PI,pt=a=>[500+R*Math.cos(a),500-R*Math.sin(a)],p=pt(v);st.dot.setAttribute("cx",p[0].toFixed(1));st.dot.setAttribute("cy",p[1].toFixed(1));
+   {const dd=Math.floor(v/F+1e-6);wk(p[0],p[1]+6,-Math.sin(v)>=0?1:-1,v*R/15,!s.w&&v>0&&dd<3);}
    tails.forEach((c,k)=>{const n=tails.length-k,q=pt(Math.max(0,v-n*.035));c.setAttribute("cx",q[0].toFixed(1));c.setAttribute("cy",q[1].toFixed(1));c.style.display=v>0?"":"none";});
    let d=Math.floor(v/F+1e-6),part=v-d*F;if(v>=7*F-1e-6){d=7;part=0;}
    st.el.querySelector(".trail").setAttribute("d",part>.01?`M840 500 A340 340 0 ${part>Math.PI?1:0} 0 ${pt(part)[0].toFixed(1)} ${pt(part)[1].toFixed(1)}`:"");st.count.innerHTML=`${d}<small>/7</small>`;
@@ -1037,17 +1039,31 @@ const tb=[...el.querySelectorAll(".rwf")];tb.forEach((b,k)=>b.onclick=()=>{onSel
   const loop=()=>{if(el.classList.contains("on")&&!document.body.classList.contains("print"))drawC(!reduced());requestAnimationFrame(loop);};drawC(false);requestAnimationFrame(loop);}
  if(s.t==="saie"){const tails=[...el.querySelectorAll(".stail circle")],segs=[...el.querySelectorAll(".sseg")],hills=[...el.querySelectorAll(".shill")],sch=el.querySelector(".schev"),zone=el.querySelector(".szone"),A=210,B=1550,inZ=x=>x>760&&x<1000;
   const xAt=p=>{let n=Math.floor(p+1e-9),f=p-n;if(p>=7){n=6;f=1;}return n%2===0?A+(B-A)*f:B-(B-A)*f;};
+  const wk=walker(el.querySelector(".dot").ownerSVGElement,1.7);
   sim(el,{max:7,speed:1/1500,speedAt:p=>inZ(xAt(p))?1/880:1/1500,pos:(st,p)=>{const x=xAt(p);st.dot.setAttribute("cx",x.toFixed(1));const m=Math.min(7,Math.floor(p+1e-9)),g2=p-Math.floor(p+1e-9),dir=m%2===0?1:-1,moving=p>0&&p<7&&g2>.001;
    st.el.querySelector(".walk").setAttribute("d",moving?`M${dir>0?A:B} 180 L${x.toFixed(1)} 180`:"");
    tails.forEach((c,k)=>{const n=tails.length-k,tx=x-dir*n*13,lim=dir>0?Math.max(A,tx):Math.min(B,tx);c.setAttribute("cx",lim.toFixed(1));c.style.display=moving?"":"none";});
    sch.style.transform=dir>0?"":"translate(1760px,0) scale(-1,1)";sch.style.transformOrigin="0 0";
-   const z=moving&&inZ(x);zone.classList.toggle("hot",z);st.dot.setAttribute("fill",z?"#4ade80":"#f2c46d");
+   const z=moving&&inZ(x);zone.classList.toggle("hot",z);st.dot.setAttribute("fill",z?"#4ade80":"#f2c46d");wk(x,186,dir,p*(B-A)/15,z);
    hills.forEach((h,k)=>h.classList.toggle("target",p<7&&(k===(dir>0?1:0))));
    segs.forEach((sg,k)=>{const f=Math.max(0,Math.min(1,p-k));sg.querySelector("b").style.width=f*100+"%";sg.classList.toggle("cur",moving&&k===m);sg.classList.toggle("done",f>=1);});
    st.el.querySelector(".sdir").textContent=p>=7?"Sa‘ie selesai":dir>0?"Safa → Marwah":"Marwah → Safa";
    st.count.innerHTML=`${m}<small>/7</small>`;st.status.textContent=p>=7?"Sa‘ie selesai: 7 perjalanan, berakhir di Bukit Marwah.":p===0?"Bermula di Bukit Safa.":g2<.001?`Perjalanan ke-${m} selesai di Bukit ${m%2?"Marwah":"Safa"}.`:`Perjalanan ke-${m+1}: ${dir>0?"Safa → Marwah":"Marwah → Safa"}${z?" · zon lampu hijau: lelaki berlari-lari anak":""}.`;},
   play:p=>Math.floor(p+1e-9)+1,step:p=>(Math.floor(p*2+1e-9)+1)/2});}
 });
+function walker(svg,sc){const NS="http://www.w3.org/2000/svg",E=(t,a,p)=>{const e=document.createElementNS(NS,t);for(const k in a)e.setAttribute(k,a[k]);p.appendChild(e);return e;},SK="#d9a77a",W="#fbfbf9",O="#0b1640";
+ const g=E("g",{"pointer-events":"none"},svg),b=E("g",{},g),i=E("g",{transform:`scale(${sc})`},b);
+ E("ellipse",{cx:0,cy:2,rx:16,ry:4,fill:"rgba(0,0,0,.45)"},i);
+ const arB=E("line",{x1:0,y1:-66,x2:0,y2:-40,stroke:"#c4916a","stroke-width":6,"stroke-linecap":"round"},i);
+ const lgB=E("line",{x1:0,y1:-36,x2:0,y2:0,stroke:"#c4916a","stroke-width":7,"stroke-linecap":"round"},i),lgF=E("line",{x1:0,y1:-36,x2:0,y2:0,stroke:SK,"stroke-width":7,"stroke-linecap":"round"},i);
+ const iz=E("polygon",{points:"-9,-46 9,-46 12,-16 -12,-16",fill:W,stroke:O,"stroke-width":1.5,"stroke-linejoin":"round"},i);
+ E("path",{d:"M-9 -46 L-10 -66 Q0 -74 10 -66 L9 -46 Z",fill:W,stroke:O,"stroke-width":1.5,"stroke-linejoin":"round"},i);
+ const arF=E("line",{x1:0,y1:-66,x2:0,y2:-40,stroke:SK,"stroke-width":6,"stroke-linecap":"round"},i);
+ E("circle",{cx:2,cy:-81,r:10,fill:SK,stroke:O,"stroke-width":1.5},i);E("path",{d:"M-8 -84 Q-6 -93 4 -92 Q11 -90 12 -84 Q4 -88 -8 -84 Z",fill:"#2b1d12"},i);E("circle",{cx:7,cy:-82,r:1.4,fill:"#2b1d12"},i);
+ return (x,y,face,ph,run)=>{const A=run?18:11,s=Math.sin(ph),bob=-Math.abs(Math.cos(ph))*(run?4:2);
+  g.setAttribute("transform",`translate(${x.toFixed(1)} ${(y+bob).toFixed(1)}) scale(${face<0?-1:1} 1)`);b.setAttribute("transform",run?"rotate(9)":"");
+  lgF.setAttribute("x2",(s*A).toFixed(1));lgB.setAttribute("x2",(-s*A).toFixed(1));lgF.setAttribute("y2",(-Math.max(0,-s)*(run?6:3)).toFixed(1));lgB.setAttribute("y2",(-Math.max(0,s)*(run?6:3)).toFixed(1));
+  arF.setAttribute("x2",(-s*A*.8).toFixed(1));arB.setAttribute("x2",(s*A*.8).toFixed(1));arF.setAttribute("y2",run?-48:-40);arB.setAttribute("y2",run?-48:-40);};}
 function sim(el,o){const st={el,dot:el.querySelector(".dot"),count:el.querySelector(".count"),status:el.querySelector(".status")};let v=0,tg=0,last=0,raf=0;
  const tick=t=>{if(!last)last=t;const dt=t-last;last=t;v=reduced()?tg:Math.min(tg,v+(o.speedAt?o.speedAt(v):o.speed)*dt);o.pos(st,v);if(v<tg)raf=requestAnimationFrame(tick);else{raf=0;last=0;}};const go=t=>{tg=Math.min(t,o.max);if(!raf)raf=requestAnimationFrame(tick);};
  el.querySelector(".play").onclick=()=>go(o.play(v));el.querySelector(".stepb").onclick=()=>go(o.step(v));el.querySelector(".pause").onclick=()=>{tg=v;};el.querySelector(".reset").onclick=()=>{cancelAnimationFrame(raf);raf=0;last=0;v=tg=0;o.pos(st,0);};o.pos(st,0);}
