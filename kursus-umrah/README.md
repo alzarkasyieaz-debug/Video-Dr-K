@@ -1,4 +1,4 @@
-# Kursus Umrah — Fahami Ilmu, Hayati Ibadah
+# KURSUS UMRAH INTERAKTIF — Fahami Dengan Tenang Ibadah Jadi Senang
 
 Pembentangan HTML interaktif (69 slaid, 16:9) untuk kursus umrah Darul Mubarak Travel & Tours.
 Penceramah: Ustaz Zulhafeez Ahmad Zahidi Al-Hafiz.

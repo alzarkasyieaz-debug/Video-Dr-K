@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>KURSUS UMRAH — Fahami Ilmu, Hayati Ibadah</title>
+<title>KURSUS UMRAH INTERAKTIF — Fahami Dengan Tenang Ibadah Jadi Senang</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Inter:wght@400;500;600;700&family=Rajdhani:wght@600;700&family=Poppins:wght@500;600;700;800&display=swap">
 <style>
 /*
@@ -95,7 +95,7 @@ ul.pts.sm li{font-size:26px}ul.pts.sm li::before{margin-top:11px;width:11px;heig
 .orbit i{position:absolute;width:14px;height:14px;border-radius:50%;background:var(--emer);box-shadow:0 0 16px var(--emer);top:50%;left:-7px}
 .orbit.o2 i{background:var(--gold);box-shadow:0 0 16px var(--gold);left:auto;right:-7px;top:30%}
 .hero-tx{position:absolute;left:96px;top:0;bottom:0;width:880px;display:flex;flex-direction:column;justify-content:center;gap:30px}
-.hero-tx h1{font:800 124px/.92 var(--disp);letter-spacing:-.02em}
+.hero-tx h1{font:800 104px/.98 var(--disp);letter-spacing:-.02em}
 .hero-tx h1 span{display:block;color:transparent;-webkit-text-stroke:2px var(--gold);text-shadow:0 0 40px rgba(242,196,109,.3)}
 .hero-tx .sub{font:600 46px/1.15 var(--disp);color:var(--emer);text-shadow:0 0 24px rgba(46,242,176,.45)}
 .meta{display:grid;grid-template-columns:auto 1fr;gap:12px 26px;font-size:26px;color:var(--mut)}.meta b{color:var(--ink)}
@@ -420,8 +420,8 @@ const hex=r=>[0,1,2,3,4,5].map(k=>{const a=Math.PI/3*k+Math.PI/6;return (r*Math.
 const T={
 hero:()=>`<div class="orbit o1"><i></i></div><div class="orbit o2"><i></i></div>
  <div class="hero-img dome kenburns scan"><img src="${img("kaabah-tawaf")}" alt="Kaabah dikelilingi jemaah berihram"></div>
- <div class="hero-tx"><div class="hud rv">Darul Mubarak Travel & Tours</div><h1 class="rv">KURSUS<span>UMRAH</span></h1><div class="sub rv typed" data-type="Fahami Ilmu, Hayati Ibadah"></div>
- <div class="meta rv"><span>Penceramah</span><b>Ustaz Zulhafeez Ahmad Zahidi Al-Hafiz</b><span>Penganjur</span><b>Darul Mubarak Travel & Tours</b></div></div>`,
+ <div class="hero-tx"><div class="hud rv">Darul Mubarak Travel & Tours</div><h1 class="rv">KURSUS UMRAH<span>INTERAKTIF</span></h1><div class="sub rv typed" style="max-width:620px;min-height:106px" data-type="Fahami Dengan Tenang, Ibadah Jadi Senang"></div>
+ <div class="meta rv"><span>Bersama</span><b>Ustaz Zulhafeez Al-Hafiz</b><span>Penganjur</span><b>Darul Mubarak Travel & Tours</b></div></div>`,
 agenda:()=>`<div class="pad">${head({hud:"Kandungan Kursus",title:"Peta perjalanan ilmu hari ini"})}<div class="grid" style="grid-template-columns:repeat(4,1fr)">${[["Pengertian Umrah","quote"],["Hukum & Dalil","dalil"],["Carta Alir Perjalanan","flow8"],["Rukun & Wajib","rukunwajib"],["Miqat","miqatdef"],["Carta Alir Ibadah","wheel"],["Niat, Talbiah & Ihram","niat"],["Larangan Ihram","larangan"],["Tawaf & Syarat","syarat"],["Sa‘ie","saiedef"],["Bertahallul","tahallul"],["Penutup & Soal Jawab","end"]].map(([h,t])=>[h,S.findIndex(x=>x.t===t)]).map(([h,g],i)=>`<button class="card rv jump" data-go="${g}" style="cursor:pointer;text-align:left;color:inherit;font:inherit"><span class="num" style="font-size:34px">${String(i+1).padStart(2,"0")}</span><b style="font:700 28px/1.2 var(--disp)">${h}</b></button>`).join("")}</div></div>`,
 profile:()=>`<div class="pad" style="flex-direction:row;gap:56px;align-items:stretch">
  <div style="width:520px;flex:none;display:flex;flex-direction:column;gap:16px;align-items:center;text-align:center">
