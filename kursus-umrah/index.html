@@ -212,7 +212,7 @@ svg text{font-family:var(--sans)}
 body.print .pfphoto,body.print .pfchip{opacity:1;animation:none}
 
 /* ===== miqat foto, roda ibadah, galeri mutawwif ===== */
-.mqph{position:relative;border-color:rgba(46,242,176,.5)}.mqph img{width:100%;height:100%;object-fit:cover}
+.mqph{position:relative;border-color:rgba(46,242,176,.5)}.mqph img{width:100%;height:100%;object-fit:cover;object-position:50% 0}
 .mqsl{position:absolute;left:0;right:0;height:3px;top:0;background:#2ef2b0;box-shadow:0 0 18px #2ef2b0;animation:mqsc 2.6s linear infinite}@keyframes mqsc{0%{top:0}100%{top:100%}}
 .mqtag{position:absolute;left:12px;bottom:12px;font:700 15px/1 var(--hud);letter-spacing:.14em;text-transform:uppercase;color:#04121d;background:linear-gradient(120deg,#2ef2b0,#f2c46d);padding:8px 12px;border-radius:99px}
 .mqholoring{animation:spin 8s linear infinite;transform-box:fill-box;transform-origin:center}
@@ -225,6 +225,8 @@ body.print .pfphoto,body.print .pfchip{opacity:1;animation:none}
 .pfth.on{opacity:1;border-color:var(--gold);box-shadow:0 0 18px rgba(242,196,109,.6);transform:scale(1.12)}
 .reduce .mqsl,.reduce .wscanline{animation:none}
 .fstopring{transform-box:fill-box;transform-origin:center;animation:fping 1.6s ease-out infinite}.fping2{transform-box:fill-box;transform-origin:center;animation:fping 2s ease-out infinite}.fdir,.ftra,.fstop,.fcardf{transition:opacity .5s,border-color .5s,box-shadow .5s}
+.mqwave,.sweep,.spin-slow,.mqholo,.mqbeam,.mqline{pointer-events:none}
+.mq{outline:none}.mq:focus-visible .mqhalo{stroke:#f2c46d;stroke-width:5}
 /* nav */
 #nav{position:absolute;left:0;right:0;bottom:0;height:92px;background:linear-gradient(to top,rgba(4,8,24,.96),rgba(4,8,24,.75));border-top:1px solid var(--line);display:flex;align-items:center;gap:12px;padding:0 40px;z-index:5;backdrop-filter:blur(10px)}
 #nav .grow{flex:1;display:flex;align-items:center;gap:18px}
@@ -458,7 +460,7 @@ miqatdef:()=>`<div class="pad">${head({hud:"Pengertian Miqat",title:"Miqat: masa
  <div class="card step"><span class="num">⌖</span><h3>Miqat Makani</h3><span class="hud" style="font-size:14px">Ketentuan tempat</span><ul class="pts sm"><li><span>Sempadan tempat terakhir bagi jemaah dari luar Makkah untuk berniat ihram</span></li><li><span>Lokasi ditentukan mengikut arah jemaah datang ke Tanah Haram</span></li></ul></div></div></div>`,
 miqatmap:()=>{const M=[["Bir Ali @ Zulhulaifah",470,90,"Bagi jemaah yang datang dari arah <b>Madinah</b>.",""],["Masjid Aisyah · Tan’eim",500,345,"Miqat <b>paling hampir</b> dengan Makkah. Lokasi bermiqat isteri Rasulullah SAW, Saidatina Aisyah.",""],["Masjid Ja’ranah",640,330,"Kira-kira <b>24 km</b> dari Masjidil Haram. Lokasi bermiqat yang afdal untuk berihram.","24 km"],["Qarnul Manazil (Al-Sail Al-Kabir)",880,420,"Kira-kira <b>94 km</b> di timur Makkah (~220 km dari Lapangan Terbang King Abdul Aziz). Miqat jemaah dari arah timur: Riyadh, Najd, Taif, Pakistan.","94 km"],["Masjid Syumaisi · Hudaibiah",300,450,"Kira-kira <b>22 km</b> di sempadan Makkah menuju Jeddah. Tempat Nabi dihalang memasuki Makkah pada tahun ke-6 Hijrah — berlakunya Perjanjian Hudaibiyah.","22 km"]];
  return `<div class="pad" style="flex-direction:row;gap:46px"><div style="flex:1;display:flex;flex-direction:column;gap:20px">${head({hud:"Miqat Makani · Radar Interaktif",title:"Lima lokasi miqat"})}<span class="illus rv">Ilustrasi arah · bukan skala sebenar</span>
- <div class="card rv" style="min-height:360px;gap:10px"><div class="frame mqph" style="height:250px;flex:none;display:none"><img class="mqimg" src="" alt="Gambar lokasi miqat"><span class="mqsl"></span><span class="mqtag"></span></div><span class="hud mqidx" style="font-size:15px">SASARAN —/05</span><h3 id="mqT">Pilih satu miqat</h3><div class="mqkm" style="font:800 52px/1 var(--disp);color:var(--gold);text-shadow:0 0 24px rgba(242,196,109,.4);min-height:52px"></div><p class="body" id="mqD" style="color:var(--mut);font-size:23px">Klik penanda pada radar, atau tekan Seterusnya untuk mengimbas satu demi satu.</p></div>
+ <div class="card rv" style="min-height:360px;gap:10px"><div class="frame mqph" style="height:300px;width:360px;align-self:center;flex:none;display:none;border-radius:180px 180px 18px 18px;border:2px solid rgba(242,196,109,.7);box-shadow:0 0 40px rgba(242,196,109,.25)"><img class="mqimg" src="" alt="Gambar lokasi miqat"><span class="mqsl"></span><span class="mqtag"></span></div><span class="hud mqidx" style="font-size:15px">SASARAN —/05</span><h3 id="mqT">Pilih satu miqat</h3><div class="mqkm" style="font:800 52px/1 var(--disp);color:var(--gold);text-shadow:0 0 24px rgba(242,196,109,.4);min-height:52px"></div><p class="body" id="mqD" style="color:var(--mut);font-size:23px">Klik penanda pada radar, atau tekan Seterusnya untuk mengimbas satu demi satu.</p></div>
  <div class="row rv"><button class="btn gold mqscan">⟳ Imbas Semua</button><button class="btn mqreset">↺ Ulang</button></div></div>
  <div class="frame rv" style="width:980px;height:820px;background:radial-gradient(circle at 50% 56%,rgba(46,242,176,.14),transparent 62%),#050d26"><svg viewBox="0 0 1000 820" width="980" height="820" style="display:block">
  <defs><pattern id="mqhex" width="36" height="62" patternUnits="userSpaceOnUse"><path d="M18 0 L36 10 L36 31 L18 41 L0 31 L0 10 Z M18 41 L18 62" fill="none" stroke="rgba(46,242,176,.08)" stroke-width="1"/></pattern>
