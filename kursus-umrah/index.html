@@ -206,6 +206,18 @@ svg text{font-family:var(--sans)}
 .slide.on .pfstat{animation:statglow 3s ease-in-out 1.5s infinite}@keyframes statglow{50%{box-shadow:0 20px 60px rgba(0,0,0,.35),0 0 34px rgba(242,196,109,.25)}}
 .pfpulse{position:absolute;top:22px;left:40px;width:20px;height:20px;border-radius:50%;background:#fff;box-shadow:0 0 18px #2ef2b0,0 0 40px #2ef2b0;opacity:0}
 .slide.on .pfpulse{animation:pfrun 3.2s ease-in-out 1s infinite}@keyframes pfrun{0%{opacity:0;left:40px}10%{opacity:1}90%{opacity:1}100%{opacity:0;left:calc(100% - 60px)}}
+.pbk{perspective:900px;display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center}
+.pbk .cv{position:relative;width:156px;height:250px;border-radius:4px 10px 10px 4px;transform:rotateY(-24deg);transform-style:preserve-3d;box-shadow:14px 16px 26px rgba(0,0,0,.55);transition:transform .6s var(--ease);display:flex;flex-direction:column;justify-content:space-between;padding:16px 12px 12px 20px;overflow:hidden}
+.pbk .cv::before{content:"";position:absolute;left:0;top:0;bottom:0;width:10px;background:linear-gradient(90deg,rgba(0,0,0,.45),rgba(255,255,255,.12),rgba(0,0,0,.25))}
+.pbk .cv::after{content:"";position:absolute;inset:0;background:linear-gradient(115deg,transparent 30%,rgba(255,255,255,.28) 45%,transparent 60%);transform:translateX(-120%);animation:pbshine 4s ease-in-out infinite}
+.pbk:hover .cv,.pbk.shown .cv{transform:rotateY(-8deg) translateY(-6px)}
+.pbk .cv b{font:800 20px/1.2 var(--disp);color:#fff;text-shadow:0 2px 6px rgba(0,0,0,.5);text-align:left}
+.pbk .cv i{font:600 11px/1 var(--hud);letter-spacing:.14em;color:rgba(255,255,255,.75);font-style:normal;text-align:left}
+.pbk .pub{font:600 17px/1.25 var(--sans);color:var(--gold)}
+@keyframes pbshine{0%,55%{transform:translateX(-120%)}80%,100%{transform:translateX(120%)}}
+.pkh{display:grid;grid-template-columns:170px 1fr;gap:20px;padding:22px 0;border-top:1px solid rgba(255,255,255,.08)}
+.pkh:first-of-type{border-top:0}.pkh .yr{font:800 30px/1.1 var(--disp);color:var(--gold)}.pkh .yr small{display:block;font:700 14px/1.3 var(--hud);letter-spacing:.14em;color:var(--emer);margin-top:6px}
+.pkh ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:14px}.pkh li{display:grid;grid-template-columns:16px 1fr;gap:12px;font:400 21px/1.4 var(--sans);color:var(--mut)}.pkh li::before{content:"";width:10px;height:10px;margin-top:9px;border-radius:50%;background:var(--emer);box-shadow:0 0 10px var(--emer)}.pkh li b{color:#fff;font-weight:700}
 .pfchips{display:flex;flex-wrap:wrap;gap:8px}.pfchips span{font:600 17px/1.2 var(--sans);padding:8px 12px;border-radius:10px;border:1px solid rgba(46,242,176,.35);background:rgba(46,242,176,.07)}
 .step.shown .pfchips span{animation:chipin .45s var(--ease) both}.step.shown .pfchips span:nth-child(2){animation-delay:.08s}.step.shown .pfchips span:nth-child(3){animation-delay:.16s}.step.shown .pfchips span:nth-child(4){animation-delay:.24s}.step.shown .pfchips span:nth-child(5){animation-delay:.32s}
 .pftl .node{transition:transform .5s var(--ease)}.pftl.shown .node{animation:fpop .6s var(--ease)}@keyframes fpop{0%{transform:scale(.3)}70%{transform:scale(1.2)}100%{transform:none}}
@@ -320,6 +332,13 @@ const S=[
 {ch:"A",t:"hero",src:src(1),notes:"Alu-aluan. Kursus dikendalikan oleh Darul Mubarak Travel & Tours bersama Ustaz Zulhafeez Ahmad Zahidi Al-Hafiz (seperti slaid asal 1)."},
 {ch:"A",t:"agenda",src:src(2),notes:"Kandungan kursus mengikut slaid asal 2. Setiap kad boleh diklik untuk terus ke bahagian berkenaan."},
 {ch:"A",t:"profile",src:src(3,4,5,6,7,8,9,10,11),notes:"Grafik gerakan: foto muncul dengan imbasan hologram, nama ditaip, statistik dikira naik, nadi cahaya bergerak sepanjang garis kerjaya. Tekan Seterusnya untuk memaparkan era kerjaya, pendidikan dan persijilan satu demi satu. Ringkasan profil mutawwif daripada slaid asal 3–11 (pendidikan, persijilan, penulisan, kerjaya dan hubungan). Penceramah boleh menambah cerita peribadi di sini."},
+{ch:"A",t:"profile2",hud:"Profil Mutawwif · Penulisan & Khidmat",title:"Buku ditulis & tempat berkhidmat",
+ books:[["Sifat Pejuang Islam Terbilang","Mesir","linear-gradient(160deg,#0f766e,#064e3b)"],["Suami Sehebat Rasulullah Isteri Setanding Khadijah","Must Read","linear-gradient(160deg,#9f1239,#4c0519)"],["Antologi Bersama","HAMARE","linear-gradient(160deg,#6d28d9,#2e1065)"],["Nota Hati Seorang Walid","UD Creative Empire","linear-gradient(160deg,#b45309,#451a03)"],["Nak Kahwin Tapi..","Nukhtah Books","linear-gradient(160deg,#1d4ed8,#172554)"]],
+ media:["Majalah Aisyah","Majalah Muslimteens","Akhbar Harakah"],latih:["Penulisan Kreatif","Multimedia & Digital","Jualan & Pemasaran"],
+ jobs:[["2007–2013","Masjid & Tahfiz",[["Masjid Telekom","Imam Masjid II, pengajian masyarakat"],["Maahad Tahfiz Integrasi Al-Quran & Pondok Pengajian Ar-Ridzuan","Guru Tahfiz dan Imam, pengajian berkitab"]]],
+  ["2014–2018","Media-IT & Korporat",[["Akhbar Harakah","Wartawan Negeri, akhirnya Penolong Editor Agama"],["Terengganu Strategic & Integrity Institute","Ketua Jabatan IT"]]],
+  ["2019–kini","Perhotelan & Umrah",[["Duyong Marina & Resort","Ketua Eksekutif Syariah"],["Darul Mubarak Travel & Tours","Ketua Pegawai Pemasaran merangkap Mutawwif; Pengurus Cawangan Marang"]]]],
+ src:src(6,7,8,9,10,11),notes:"Sambungan profil mutawwif. Tekan Seterusnya: 5 buku muncul satu demi satu, kemudian media penulisan, lalu setiap era tempat berkhidmat. Sumber: slaid asal 6 (Penulisan), 7–9 (Pengalaman Kerjaya), 10 (Pengalaman Latihan) dan 11 (Pengenalan Diri)."},
 {ch:"A",t:"question",src:"Aktiviti pembukaan",q:"Apakah perkara yang paling anda risaukan sebelum menunaikan umrah?",ideas:["Terlupa urutan ibadah","Tersalah niat / terlepas miqat","Larangan ihram","Kesesakan ketika tawaf","Kesihatan & stamina","Tersesat di masjid"],notes:"Kumpul jawapan audiens dahulu, kemudian tekan Seterusnya untuk memaparkan kebimbangan lazim satu demi satu dan beritahu bab mana yang menjawabnya."},
 /* B */
 {ch:"B",t:"divider",n:"01",items:["Pengertian umrah","Hukum & dalil","Carta alir perjalanan","Rukun & wajib umrah"],img:"kaabah-tawaf",src:"—",notes:"Bab asas umrah."},
@@ -435,6 +454,13 @@ profile:()=>`<div class="pad" style="flex-direction:row;gap:56px;align-items:str
    <div class="card step" style="padding:18px 24px"><span class="hud" style="font-size:14px">Pendidikan</span><div class="pfchips">${["Syahadah Tahfiz Al-Quran","Sijil Tinggi Agama Malaysia","Bahasa Arab · Al-Azhar Mesir"].map(t=>`<span>${t}</span>`).join("")}</div></div>
    <div class="card step" style="padding:18px 24px"><span class="hud" style="font-size:14px">Persijilan</span><div class="pfchips">${["Jurulatih HRD Corp","Profesional CBT Coach","Praktis Parenting Coach","Eksekutif Halal JAKIM","Asas Coach NLP"].map(t=>`<span>${t}</span>`).join("")}</div></div>
   </div>
+ </div></div>`,
+profile2:s=>`<div class="pad" style="gap:22px">${head(s)}<div style="display:grid;grid-template-columns:1.02fr 1fr;gap:30px;flex:1;min-height:0">
+ <div class="card rv" style="padding:24px 26px;gap:18px;justify-content:space-between"><span class="hud" style="font-size:15px">Karya penulisan · ${s.books.length} judul buku</span>
+  <div style="display:grid;grid-template-columns:repeat(${s.books.length},1fr);gap:14px;align-items:start;margin-top:8px">${s.books.map((b,i)=>`<div class="pbk step"><div class="cv" style="background:${b[2]}"><b>${b[0]}</b><i>UST. ZULHAFEEZ</i></div><span class="pub">${b[1]}</span></div>`).join("")}</div>
+  <div class="step" style="display:flex;flex-direction:column;gap:12px;padding:18px 20px;border-radius:14px;background:rgba(242,196,109,.07);border:1px solid rgba(242,196,109,.3)"><span class="hud" style="font-size:14px;color:var(--gold)">Turut menulis di</span><div class="pfchips">${s.media.map(t=>`<span>${t}</span>`).join("")}</div><span class="cap" style="font-size:18px">Bidang latihan (hampir 10 tahun, agensi kerajaan &amp; swasta): ${s.latih.join(" · ")}</span></div></div>
+ <div class="card rv" style="padding:24px 30px;gap:4px;justify-content:space-around"><span class="hud" style="font-size:15px">Tempat berkhidmat</span>
+  ${s.jobs.map(j=>`<div class="pkh step"><div class="yr">${j[0]}<small>${j[1]}</small></div><ul>${j[2].map(x=>`<li><span><b>${x[0]}</b> — ${x[1]}</span></li>`).join("")}</ul></div>`).join("")}</div>
  </div></div>`,
 question:s=>`<div class="pad" style="justify-content:center"><div class="hud rv">Soalan Pembuka</div><p class="q rv" style="font-size:72px">${s.q}</p><div class="row" style="gap:16px">${s.ideas.map(i=>`<span class="card step" style="padding:14px 26px;font-size:28px;border-radius:99px">${i}</span>`).join("")}</div></div>`,
 divider:s=>`<div class="hero-img dome kenburns" style="width:620px;height:820px;right:120px;top:90px"><img src="${img(s.img)}" alt=""></div><div class="orbit o2" style="width:760px;height:760px;right:50px;top:120px"><i></i></div>
