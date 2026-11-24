@@ -1,6 +1,6 @@
 # Kursus Umrah — Fahami Ilmu, Hayati Ibadah
 
-Pembentangan HTML interaktif (64 slaid, 16:9) untuk kursus umrah Darul Mubarak Travel & Tours.
+Pembentangan HTML interaktif (65 slaid, 16:9) untuk kursus umrah Darul Mubarak Travel & Tours.
 Penceramah: Ustaz Zulhafeez Ahmad Zahidi Al-Hafiz.
 
 ## Cara buka
