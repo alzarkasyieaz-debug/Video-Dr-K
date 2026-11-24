@@ -420,8 +420,8 @@ const hex=r=>[0,1,2,3,4,5].map(k=>{const a=Math.PI/3*k+Math.PI/6;return (r*Math.
 const T={
 hero:()=>`<div class="orbit o1"><i></i></div><div class="orbit o2"><i></i></div>
  <div class="hero-img dome kenburns scan"><img src="${img("kaabah-tawaf")}" alt="Kaabah dikelilingi jemaah berihram"></div>
- <div class="hero-tx"><div class="hud rv">Darul Mubarak Travel & Tours</div><h1 class="rv">KURSUS UMRAH<span>INTERAKTIF</span></h1><div class="sub rv typed" style="max-width:620px;min-height:106px" data-type="Fahami Dengan Tenang, Ibadah Jadi Senang"></div>
- <div class="meta rv"><span>Bersama</span><b>Ustaz Zulhafeez Al-Hafiz</b><span>Penganjur</span><b>Darul Mubarak Travel & Tours</b></div></div>`,
+ <div class="hero-tx"><h1 class="rv">KURSUS UMRAH<span>INTERAKTIF</span></h1><div class="sub rv typed" style="max-width:620px;min-height:106px" data-type="Fahami Dengan Tenang, Ibadah Jadi Senang"></div>
+ <div class="meta rv"><span>Bersama</span><b>Ustaz Zulhafeez Al-Hafiz</b></div></div>`,
 agenda:()=>`<div class="pad">${head({hud:"Kandungan Kursus",title:"Peta perjalanan ilmu hari ini"})}<div class="grid" style="grid-template-columns:repeat(4,1fr)">${[["Pengertian Umrah","quote"],["Hukum & Dalil","dalil"],["Carta Alir Perjalanan","flow8"],["Rukun & Wajib","rukunwajib"],["Miqat","miqatdef"],["Carta Alir Ibadah","wheel"],["Niat, Talbiah & Ihram","niat"],["Larangan Ihram","larangan"],["Tawaf & Syarat","syarat"],["Sa‘ie","saiedef"],["Bertahallul","tahallul"],["Penutup & Soal Jawab","end"]].map(([h,t])=>[h,S.findIndex(x=>x.t===t)]).map(([h,g],i)=>`<button class="card rv jump" data-go="${g}" style="cursor:pointer;text-align:left;color:inherit;font:inherit"><span class="num" style="font-size:34px">${String(i+1).padStart(2,"0")}</span><b style="font:700 28px/1.2 var(--disp)">${h}</b></button>`).join("")}</div></div>`,
 profile:()=>`<div class="pad" style="flex-direction:row;gap:56px;align-items:stretch">
  <div style="width:520px;flex:none;display:flex;flex-direction:column;gap:16px;align-items:center;text-align:center">
