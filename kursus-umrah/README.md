@@ -19,3 +19,7 @@ Kesemua 106 slaid asal telah dibaca. Rujukan mazhab: As-Syafi‘i (slaid asal 75
 
 Perlu semakan penceramah: teks Arab yang ditaip semula (niat umrah, niat tawaf), perkataan "awal" dalam item 8
 slaid asal 74, kadar rambut (12 helai) di slaid 74 berbanding slaid 70, dan harga wakaf/infaq semasa.
+
+## Data peta
+
+Peta penerbangan menggunakan data garis pantai & sempadan Natural Earth (domain awam) melalui pakej `world-atlas`. Laluan dilukis sebagai lengkung bulatan besar; hab transit (Muscat, Dubai, Doha) hanyalah contoh.
