@@ -3,3 +3,5 @@ renders/
 *.mp4
 .hyperframes/
 .venv/
+*.wav
+__pycache__/

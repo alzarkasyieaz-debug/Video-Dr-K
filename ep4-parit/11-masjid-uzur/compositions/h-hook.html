@@ -1,0 +1,64 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; font-family: Inter, sans-serif; }
+    .ill { position: absolute; padding: 4px 10px; border-radius: 5px; font-weight: 800; font-size: 28px; letter-spacing: .16em;
+      color: #c9d2e0; border: 1px solid rgba(201,210,224,.5); background: rgba(7,17,31,.6); }
+    .zone { position: absolute; left: 60px; top: 846px; width: 960px; height: 300px; }
+    .zk { position: absolute; left: 0; top: 0; font-size: 28px; font-weight: 800; letter-spacing: .16em; color: #c9d2e0; white-space: nowrap; }
+    .zone .ill { right: 0; top: -2px; }
+    .gold3d { color: #f8d77e; text-shadow: 0 1px 0 #e0b04f, 0 2px 0 #d3a344, 0 3px 0 #c4953a, 0 4px 0 #b28430, 0 5px 0 #9c7226,
+      0 6px 0 #845f1d, 0 7px 0 #6c4c16, 0 16px 28px rgba(0,0,0,.75); }
+    .silver3d { color: #eef1f6; text-shadow: 0 1px 0 #c3cad6, 0 2px 0 #a9b2c0, 0 3px 0 #8e97a6, 0 4px 0 #747d8c, 0 14px 24px rgba(0,0,0,.6); }
+    .chip { position: absolute; left: 44px; top: 262px; padding: 10px 18px; border-radius: 10px; background: rgba(242,197,92,.95);
+      color: #17110a; font-weight: 900; font-size: 30px; letter-spacing: .08em; white-space: nowrap; }
+    .src { position: absolute; left: 44px; top: 326px; padding: 6px 14px; border-radius: 8px; background: rgba(7,17,31,.85);
+      border: 1px solid rgba(231,235,242,.4); color: #e7ebf2; font-weight: 800; font-size: 28px; letter-spacing: .1em; white-space: nowrap; }
+    .pill { position: absolute; height: 56px; padding: 0 18px; border-radius: 12px; background: rgba(7,17,31,.92);
+      border: 1px solid rgba(231,235,242,.35); color: #f4f6fa; font-size: 28px; font-weight: 900; letter-spacing: .03em; line-height: 56px; white-space: nowrap; }
+    .pill.red { border: 2px solid rgba(224,68,58,.85); color: #ff8e83; }
+    .pill.gold { background: #f2c55c; color: #17110a; border: none; }
+    .bd { position: absolute; left: 0; top: 840px; width: 1080px; height: 330px;
+      background: linear-gradient(180deg, rgba(4,8,16,0) 0%, rgba(4,8,16,.74) 20%, rgba(4,8,16,.8) 82%, rgba(4,8,16,0) 100%); }
+    .qcard { position: absolute; left: 0; top: 46px; width: 960px; height: 254px; border-radius: 18px; background: rgba(7,17,31,.95);
+      border: 2px solid rgba(242,197,92,.8); padding: 20px 28px; }
+    .qcard small { display: block; font-size: 28px; font-weight: 900; letter-spacing: .2em; color: #f2c55c; }
+    .qcard p { margin-top: 8px; font-size: 34px; font-weight: 800; line-height: 1.2; color: #f4f6fa; }
+    .qcard p b { color: #f8d77e; }
+    .stat { position: absolute; top: 50px; height: 250px; border-radius: 18px; background: rgba(13,29,51,.94);
+      border: 1px solid rgba(242,197,92,.55); padding: 18px 22px; }
+    .stat small { display: block; font-size: 28px; font-weight: 800; letter-spacing: .08em; color: #c9d2e0; line-height: 1.15; }
+    .stat .v { display: block; margin-top: 8px; font-weight: 900; line-height: 1; white-space: nowrap; }
+    .stat .d { display: block; margin-top: 10px; font-size: 28px; font-weight: 800; color: #f2c55c; line-height: 1.15; }
+    .stat.red { border: 2px solid rgba(224,68,58,.85); }
+    .stat.red .v { color: #ff6a5c; text-shadow: 0 1px 0 #d44c40, 0 2px 0 #b73d33, 0 3px 0 #982f27, 0 4px 0 #7a241d, 0 14px 24px rgba(0,0,0,.6); }
+    .bigline { position: absolute; left: 0; width: 960px; text-align: center; font-weight: 900; line-height: 1.02; }
+    .subline { position: absolute; left: 0; width: 960px; text-align: center; font-size: 36px; font-weight: 900; color: #f4f6fa; line-height: 1.15; }
+
+    .h-kick { position: absolute; left: 0; width: 1080px; top: 862px; text-align: center;
+      font-size: 28px; font-weight: 800; letter-spacing: .2em; color: #f2c55c; }
+    .h-kick span { padding: 8px 18px; border: 1px solid rgba(242,197,92,.6); border-radius: 8px; background: rgba(7,17,31,.7); }
+    .h-line { position: absolute; left: 30px; width: 1020px; text-align: center; font-weight: 900; color: #f4f6fa;
+      font-size: 44px; white-space: nowrap; text-shadow: 0 4px 0 rgba(0,0,0,.45), 0 10px 30px rgba(0,0,0,.8); }
+    .h-3d { position: absolute; left: 20px; width: 1040px; text-align: center; font-weight: 900; line-height: 1; white-space: nowrap;
+      letter-spacing: -0.02em; color: #f8d77e;
+      text-shadow: 0 1px 0 #e0b04f, 0 2px 0 #d3a344, 0 3px 0 #c4953a, 0 4px 0 #b28430, 0 5px 0 #9c7226,
+        0 6px 0 #845f1d, 0 7px 0 #6c4c16, 0 8px 0 #5a3f12, 0 18px 30px rgba(0,0,0,.75), 0 0 60px rgba(242,197,92,.35); }
+
+  </style>
+  <div id="root" data-composition-id="h-hook" data-width="1080" data-height="1920">
+    <div class="bd" id="hk-bd"></div>
+    <div id="hk-z">
+      <div class="h-kick" id="hk-k"><span>PARLIMEN PARIT · DEWAN RAKYAT</span></div>
+      <div class="h-line" id="hk-l0" style="top: 922px; font-size: 44px">“KERANA TELAH PUN TERLALU UZUR,</div>
+      <div class="h-3d" id="hk-big" style="top: 996px; font-size: 89px">PEMBINAAN SEMULA”</div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo(["#hk-k", "#hk-l0"], { opacity: 1 }, { opacity: 1, duration: 0.01 }, 0);
+    tl.fromTo("#hk-big", { opacity: 0, scale: 1.9, rotationX: -55, transformPerspective: 900 }, { opacity: 1, scale: 1, rotationX: 0, duration: 0.22, ease: "expo.out" }, 1.63);
+    tl.to(["#hk-l0"], { opacity: 0.6, duration: 0.3 }, 1.63);
+    tl.to(["#hk-z", "#hk-bd"], { opacity: 0, filter: "blur(10px)", duration: 0.16, ease: "power2.in" }, 3.4);
+    window.__timelines["h-hook"] = tl;
+  </script>
+</template>

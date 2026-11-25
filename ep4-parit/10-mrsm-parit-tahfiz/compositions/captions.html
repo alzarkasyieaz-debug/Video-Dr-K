@@ -1,0 +1,60 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; pointer-events: none; }
+    #cap-band { position: absolute; left: 0; width: 1080px; top: 1160px; height: 170px; }
+    .cg {
+      position: absolute; left: 70px; width: 940px; top: 0; height: 170px;
+      display: flex; flex-wrap: wrap; align-content: center; justify-content: center;
+      gap: 0 24px; text-align: center; opacity: 0; overflow: visible;
+      font-family: Inter, sans-serif; font-weight: 800; font-size: 62px; line-height: 1.12;
+      color: #f4f6fa; letter-spacing: -0.01em;
+      text-shadow: 0 3px 0 rgba(4,8,20,.55), 0 6px 22px rgba(0,0,0,.75);
+    }
+    .w { display: inline-block; opacity: .35; margin: 0 6px; transform-origin: 50% 70%; }
+    .w.k { color: #f2c55c; text-shadow: 0 3px 0 #6b4a0e, 0 0 26px rgba(242,197,92,.45), 0 6px 22px rgba(0,0,0,.8); }
+  </style>
+  <div id="root" data-composition-id="captions" data-width="1080" data-height="1920">
+    <div id="cap-band">
+    <div class="cg" id="cg0"><span class="w" id="cw0_0">Oleh</span> <span class="w" id="cw0_1">itu,</span></div>
+    <div class="cg" id="cg1"><span class="w" id="cw1_0">saya</span> <span class="w" id="cw1_1">ingin</span> <span class="w" id="cw1_2">mengambil</span></div>
+    <div class="cg" id="cg2"><span class="w" id="cw2_0">kesempatan</span> <span class="w" id="cw2_1">ini</span> <span class="w" id="cw2_2">untuk</span></div>
+    <div class="cg" id="cg3"><span class="w" id="cw3_0">mencadangkan</span> <span class="w k" id="cw3_1">MRSM</span> <span class="w k" id="cw3_2">Parit</span> <span class="w" id="cw3_3">boleh</span></div>
+    <div class="cg" id="cg4"><span class="w" id="cw4_0">dijadikan</span> <span class="w k" id="cw4_1">tahfiz</span> <span class="w" id="cw4_2">Ulul</span> <span class="w" id="cw4_3">Albab</span></div>
+    <div class="cg" id="cg5"><span class="w" id="cw5_0">bagi</span> <span class="w" id="cw5_1">membuka</span> <span class="w" id="cw5_2">peluang</span> <span class="w" id="cw5_3">anak-anak</span></div>
+    <div class="cg" id="cg6"><span class="w k" id="cw6_0">Parit</span> <span class="w" id="cw6_1">mendalami</span> <span class="w" id="cw6_2">Al-Quran</span> <span class="w" id="cw6_3">serta</span></div>
+    <div class="cg" id="cg7"><span class="w" id="cw7_0">melahirkan</span> <span class="w" id="cw7_1">lebih</span> <span class="w" id="cw7_2">ramainya</span></div>
+    <div class="cg" id="cg8"><span class="w" id="cw8_0">huffaz</span> <span class="w" id="cw8_1">di</span> <span class="w" id="cw8_2">dalam</span> <span class="w" id="cw8_3">kawasan</span></div>
+    <div class="cg" id="cg9"><span class="w k" id="cw9_0">Parit.</span></div>
+    </div>
+  </div>
+  <script>
+    const G = [
+  [0.000,0.620,[0.000,0.290]],
+  [0.620,2.000,[0.670,0.970,1.360]],
+  [2.000,3.380,[2.050,2.810,3.040]],
+  [3.380,5.390,[3.430,4.390,4.640,5.020]],
+  [5.390,7.240,[5.440,6.100,6.540,6.840]],
+  [7.240,9.290,[7.290,7.620,8.130,8.660]],
+  [9.290,11.690,[9.340,10.010,10.420,11.310]],
+  [11.690,13.680,[11.740,12.850,13.040]],
+  [13.680,15.310,[13.730,14.210,14.320,14.760]],
+  [15.310,15.970,[15.360]]
+    ];
+    const tl = gsap.timeline({ paused: true });
+    G.forEach(([s, e, ws], gi) => {
+      const g = "#cg" + gi;
+      tl.fromTo(g, { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.16, ease: "power3.out" }, s);
+      ws.forEach((t, wi) => {
+        const el = "#cw" + gi + "_" + wi;
+        const isKey = document.querySelector(el).classList.contains("k");
+        tl.fromTo(el, { opacity: 0.35, scale: isKey ? 0.86 : 1 },
+          { opacity: 1, scale: isKey ? 1.06 : 1, duration: isKey ? 0.18 : 0.1, ease: isKey ? "back.out(2.2)" : "power2.out" }, Math.max(s, t));
+        if (isKey) tl.to(el, { scale: 1, duration: 0.22, ease: "power2.out" }, Math.max(s, t) + 0.2);
+      });
+      tl.to(g, { opacity: 0, duration: 0.1, ease: "power2.in" }, e - 0.1);
+      tl.set(g, { opacity: 0, visibility: "hidden" }, e);
+    });
+    tl.set({}, {}, 15.97);
+    window.__timelines["captions"] = tl;
+  </script>
+</template>

@@ -1,0 +1,66 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; pointer-events: none; }
+    #cap-band { position: absolute; left: 0; width: 1080px; top: 1160px; height: 170px; }
+    .cg {
+      position: absolute; left: 70px; width: 940px; top: 0; height: 170px;
+      display: flex; flex-wrap: wrap; align-content: center; justify-content: center;
+      gap: 0 24px; text-align: center; opacity: 0; overflow: visible;
+      font-family: Inter, sans-serif; font-weight: 800; font-size: 62px; line-height: 1.12;
+      color: #f4f6fa; letter-spacing: -0.01em;
+      text-shadow: 0 3px 0 rgba(4,8,20,.55), 0 6px 22px rgba(0,0,0,.75);
+    }
+    .w { display: inline-block; opacity: .35; margin: 0 6px; transform-origin: 50% 70%; }
+    .w.k { color: #f2c55c; text-shadow: 0 3px 0 #6b4a0e, 0 0 26px rgba(242,197,92,.45), 0 6px 22px rgba(0,0,0,.8); }
+  </style>
+  <div id="root" data-composition-id="captions" data-width="1080" data-height="1920">
+    <div id="cap-band">
+    <div class="cg" id="cg0"><span class="w" id="cw0_0">begitu</span> <span class="w" id="cw0_1">juga</span> <span class="w" id="cw0_2">penguatkuasaan</span></div>
+    <div class="cg" id="cg1"><span class="w" id="cw1_0">terhadap</span> <span class="w" id="cw1_1">kegagalan</span> <span class="w" id="cw1_2">pelombong</span></div>
+    <div class="cg" id="cg2"><span class="w k" id="cw2_0">pasir</span> <span class="w" id="cw2_1">di</span> <span class="w" id="cw2_2">sungai-sungai.</span></div>
+    <div class="cg" id="cg3"><span class="w" id="cw3_0">Mengikut</span> <span class="w" id="cw3_1">syarat</span> <span class="w" id="cw3_2">yang</span></div>
+    <div class="cg" id="cg4"><span class="w" id="cw4_0">ditetapkan,</span> <span class="w" id="cw4_1">pihak</span> <span class="w" id="cw4_2">berkaitan</span></div>
+    <div class="cg" id="cg5"><span class="w" id="cw5_0">perlu</span> <span class="w" id="cw5_1">diberi</span> <span class="w" id="cw5_2">perhatian.</span></div>
+    <div class="cg" id="cg6"><span class="w" id="cw6_0">Kejadian</span> <span class="w" id="cw6_1">ini</span> <span class="w" id="cw6_2">adalah</span> <span class="w" id="cw6_3">salah</span></div>
+    <div class="cg" id="cg7"><span class="w" id="cw7_0">satu</span> <span class="w" id="cw7_1">punca</span> <span class="w" id="cw7_2">utama</span> <span class="w" id="cw7_3">terjadinya</span></div>
+    <div class="cg" id="cg8"><span class="w k" id="cw8_0">hakisan</span> <span class="w" id="cw8_1">di</span> <span class="w" id="cw8_2">tebing</span> <span class="w" id="cw8_3">dan</span></div>
+    <div class="cg" id="cg9"><span class="w" id="cw9_0">rebakan</span> <span class="w" id="cw9_1">di</span> <span class="w" id="cw9_2">sepanjang</span> <span class="w" id="cw9_3">jajaran</span></div>
+    <div class="cg" id="cg10"><span class="w" id="cw10_0">Sungai</span> <span class="w" id="cw10_1">Perak.</span></div>
+    <div class="cg" id="cg11"><span class="w" id="cw11_0">Rebakan</span> <span class="w" id="cw11_1">dan</span> <span class="w k" id="cw11_2">hakisan</span> <span class="w" id="cw11_3">ini</span></div>
+    <div class="cg" id="cg12"><span class="w" id="cw12_0">sangat</span> <span class="w" id="cw12_1">membahayakan</span> <span class="w" id="cw12_2">penduduk</span></div>
+    </div>
+  </div>
+  <script>
+    const G = [
+  [2.280,3.060,[2.330,2.330,2.330]],
+  [3.060,4.720,[3.110,3.620,4.200]],
+  [4.720,6.810,[4.770,5.090,5.220]],
+  [6.920,7.150,[6.970,6.970,6.980]],
+  [7.150,8.600,[7.200,7.860,8.140]],
+  [8.600,10.540,[8.650,8.930,9.260]],
+  [10.540,11.340,[10.590,10.600,10.820,11.260]],
+  [11.340,13.300,[11.390,11.900,12.270,12.630]],
+  [13.300,14.650,[13.350,13.860,14.000,14.420]],
+  [14.650,16.920,[14.700,15.330,15.460,16.310]],
+  [16.920,18.950,[16.970,17.530]],
+  [19.560,19.720,[19.610,19.610,19.610,19.610]],
+  [19.720,21.800,[19.770,20.180,21.010]]
+    ];
+    const tl = gsap.timeline({ paused: true });
+    G.forEach(([s, e, ws], gi) => {
+      const g = "#cg" + gi;
+      tl.fromTo(g, { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.16, ease: "power3.out" }, s);
+      ws.forEach((t, wi) => {
+        const el = "#cw" + gi + "_" + wi;
+        const isKey = document.querySelector(el).classList.contains("k");
+        tl.fromTo(el, { opacity: 0.35, scale: isKey ? 0.86 : 1 },
+          { opacity: 1, scale: isKey ? 1.06 : 1, duration: isKey ? 0.18 : 0.1, ease: isKey ? "back.out(2.2)" : "power2.out" }, Math.max(s, t));
+        if (isKey) tl.to(el, { scale: 1, duration: 0.22, ease: "power2.out" }, Math.max(s, t) + 0.2);
+      });
+      tl.to(g, { opacity: 0, duration: 0.1, ease: "power2.in" }, e - 0.1);
+      tl.set(g, { opacity: 0, visibility: "hidden" }, e);
+    });
+    tl.set({}, {}, 21.8);
+    window.__timelines["captions"] = tl;
+  </script>
+</template>
