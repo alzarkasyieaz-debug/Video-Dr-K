@@ -190,6 +190,8 @@ def cam_y(f, mode):
 
 
 class Video:
+    COVER = 1.9   # seconds of cover at the head of every film
+
     def __init__(self, spec, outdir, crops):
         self.s = spec
         self.dir = os.path.join(outdir, spec["id"])
@@ -232,6 +234,14 @@ class Video:
                             "-af", "highpass=f=80,lowpass=f=12000,afftdn=nf=-28,acompressor=threshold=-20dB:ratio=2.5:attack=10:release=200,loudnorm=I=-16:TP=-1.5:LRA=9",
                             "-c:v", "libx264", "-preset", "medium", "-crf", "18", "-pix_fmt", "yuv420p", "-g", "30", "-keyint_min", "30",
                             "-sc_threshold", "0", "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-movflags", "+faststart", out], check=True)
+        if self.s.get("cover"):
+            cimg = os.path.join(self.assets, "img", f"cover-{self.s['id']}.jpg")
+            cf, ct = self.s["cover"].get("still", (self.segs[0][0], self.segs[0][1] + 1.0))
+            if not os.path.exists(cimg):
+                x = self.crops[cf]
+                subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", f"{ct:.3f}", "-i", os.path.join(SRCDIR, cf + ".mp4"), "-frames:v", "1",
+                                "-vf", f"crop=405:720:{x}:0,scale=1080:1920:flags=lanczos,unsharp=5:5:0.8:5:5:0.0,eq=contrast=1.06:saturation=1.05",
+                                "-q:v", "2", cimg], check=True)
         last = self.segs[-1]
         img = os.path.join(self.assets, "img", f"end-{self.s['id']}.jpg")
         os.makedirs(os.path.dirname(img), exist_ok=True)
@@ -400,6 +410,57 @@ class Video:
         js.append(f'    tl.to(["#z"{", " + chr(34) + "#bd" + chr(34) if not split else ""}{", " + chr(34) + "#srcl" + chr(34) if c.get("src") else ""}{", " + chr(34) + "#chip" + chr(34) if c.get("chip") else ""}], '
                   f'{{ opacity: 0, filter: "blur(6px)", duration: 0.22, ease: "power2.in" }}, {round(dur - 0.25, 2)});')
         return sid, start, dur, scene_html(sid, css, "\n".join(body), "\n".join(js))
+
+    def cover(self, dur):
+        """Poster-style cover: frame 0 is the thumbnail; exits with a flash into the hook."""
+        cv = self.s["cover"]
+        sid = "h-cover"
+        title = cv["title"]
+        longest = max(len(re.sub("<[^>]+>|&amp;", "x", p_)) for p_ in re.split("<br ?/?>", title))
+        nlines = title.count("<br") + 1
+        tfs = min(150 if nlines > 1 else 160, int(980 / (longest * 0.66)))
+        sub = cv.get("sub", "")
+        sfs = min(40, int(960 / (max(1, len(sub)) * 0.55))) if sub else 40
+        t_top = 1290 - nlines * int(tfs * 1.0) - (70 if sub else 0)
+        css = f"""
+    #root {{ background: #07111f; overflow: hidden; }}
+    #cv-w {{ position: absolute; inset: 0; }}
+    #cv-img {{ position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; object-fit: cover; }}
+    #cv-shade {{ position: absolute; inset: 0;
+      background: linear-gradient(180deg, rgba(4,8,16,.55) 0%, rgba(4,8,16,0) 18%, rgba(4,8,16,0) 36%, rgba(4,8,16,.82) 56%, rgba(4,8,16,.96) 74%, #04080f 100%); }}
+    #cv-glow {{ position: absolute; left: -200px; top: 900px; width: 1480px; height: 700px;
+      background: radial-gradient(closest-side, rgba(242,197,92,.22), transparent 70%); }}
+    #cv-bug {{ position: absolute; left: 44px; top: 186px; display: flex; align-items: center; gap: 12px; padding: 10px 18px 10px 14px;
+      border-radius: 10px; background: rgba(7,17,31,.78); border: 1px solid rgba(242,197,92,.5); color: #e7ebf2; font-weight: 700; font-size: 28px; letter-spacing: .14em; }}
+    #cv-bug i {{ width: 12px; height: 12px; border-radius: 50%; background: #e0443a; box-shadow: 0 0 12px #e0443a; }}
+    #cv-kick {{ position: absolute; left: 50px; top: {t_top - 74}px; padding: 8px 18px; border-radius: 8px; background: #f2c55c; color: #17110a;
+      font-weight: 900; font-size: 32px; letter-spacing: .12em; white-space: nowrap; }}
+    #cv-title {{ position: absolute; left: 40px; width: 1000px; top: {t_top}px; font-size: {tfs}px; font-weight: 900; line-height: 1.0;
+      letter-spacing: -0.02em; color: #f8d77e; white-space: nowrap;
+      text-shadow: 0 1px 0 #e0b04f, 0 2px 0 #d3a344, 0 3px 0 #c4953a, 0 4px 0 #b28430, 0 5px 0 #9c7226, 0 6px 0 #845f1d,
+        0 7px 0 #6c4c16, 0 8px 0 #5a3f12, 0 9px 0 #4a3410, 0 22px 40px rgba(0,0,0,.85), 0 0 70px rgba(242,197,92,.35); }}
+    #cv-sub {{ position: absolute; left: 50px; width: 980px; top: {1300 - 60}px; font-size: {sfs}px; font-weight: 800; line-height: 1.2; color: #f4f6fa;
+      white-space: nowrap; text-shadow: 0 4px 18px rgba(0,0,0,.9); }}
+    #cv-name {{ position: absolute; left: 50px; top: 1352px; display: flex; align-items: center; gap: 16px; }}
+    #cv-name b {{ width: 10px; height: 58px; border-radius: 3px; background: linear-gradient(180deg, #f8d77e, #b8892c); }}
+    #cv-name div {{ font-size: 30px; font-weight: 900; color: #f4f6fa; line-height: 1.1; }}
+    #cv-name small {{ display: block; font-size: 28px; font-weight: 800; letter-spacing: .12em; color: #f2c55c; }}"""
+        body = f"""    <div id="cv-w">
+    <img id="cv-img" src="assets/img/cover-{self.s['id']}.jpg" alt="" />
+    <div id="cv-glow"></div>
+    <div id="cv-shade"></div>
+    <div id="cv-bug"><i></i>UCAPAN DI DEWAN RAKYAT</div>
+    <div id="cv-kick">{cv["kick"]}</div>
+    <div id="cv-title">{title}</div>
+    {'<div id="cv-sub">' + sub + '</div>' if sub else ''}
+    <div id="cv-name"><b></b><div>YB HAJI MUHAMMAD ISMI BIN MAT TAIB<small>AHLI PARLIMEN PARIT, PERAK</small></div></div>
+    </div>"""
+        out = round(dur - 0.3, 2)
+        js = f"""    // frame 0 is the finished poster (thumbnail); only the photo breathes
+    tl.fromTo("#cv-img", {{ scale: 1.08 }}, {{ scale: 1.0, duration: {dur:.2f}, ease: "power1.out" }}, 0);
+    tl.fromTo("#cv-title", {{ opacity: 1, scale: 1 }}, {{ opacity: 1, scale: 1, duration: 0.01 }}, 0);
+    tl.to("#cv-w", {{ opacity: 0, scale: 1.08, filter: "blur(10px)", duration: 0.28, ease: "power2.in" }}, {out});"""
+        return sid, 0, round(dur, 2), scene_html(sid, css, body, js)
 
     def outro(self):
         sid = "h-outro"
@@ -590,6 +651,8 @@ class Video:
             timeline.append((c, round(st, 2), round(en, 2)))
             scenes.append(self.card(len(timeline), c, round(st, 2), round(en, 2)))
         scenes.append(self.outro())
+        OFF = self.COVER if self.s.get("cover") else 0.0
+        self.off = OFF
         for sid, st, du, doc in scenes:
             open(os.path.join(self.dir, "compositions", sid + ".html"), "w").write(doc)
         open(os.path.join(self.dir, "compositions", "captions.html"), "w").write(self.captions())
@@ -599,13 +662,18 @@ class Video:
         for i, (f, a, b, o) in enumerate(self.segs):
             fo = "0.25" if i == len(self.segs) - 1 else "0.05"
             vids.append(f"""          <video id="v{i}" class="clip" src="assets/footage/{self.s['id']}/s{i:02d}.mp4" playsinline data-has-audio="true"
-            data-start="{o:.2f}" data-duration="{b - a:.2f}" data-media-start="{self.seg_media_start(i):.3f}" data-fade-in="0.04" data-fade-out="{fo}"
+            data-start="{o + OFF:.2f}" data-duration="{b - a:.2f}" data-media-start="{self.seg_media_start(i):.3f}" data-fade-in="0.04" data-fade-out="{fo}"
             data-volume="1" data-track-index="1"></video>""")
         hosts = []
+        if OFF:
+            sid, st, du, doc = self.cover(OFF + 0.05)
+            open(os.path.join(self.dir, "compositions", sid + ".html"), "w").write(doc)
+            hosts.append(f"""      <div id="{sid}" class="scene-host" data-composition-id="{sid}" data-composition-src="compositions/{sid}.html"
+        data-start="0" data-duration="{du}" data-track-index="4" data-track-kind="graphics" data-width="1080" data-height="1920" style="z-index:40"></div>""")
         for sid, st, du, _ in scenes:
             z = 12 if sid == "h-outro" else 10
             hosts.append(f"""      <div id="{sid}" class="scene-host" data-composition-id="{sid}" data-composition-src="compositions/{sid}.html"
-        data-start="{st}" data-duration="{du}" data-track-index="2" data-track-kind="graphics" data-width="1080" data-height="1920" style="z-index:{z}"></div>""")
+        data-start="{round(st + OFF, 2)}" data-duration="{du}" data-track-index="2" data-track-kind="graphics" data-width="1080" data-height="1920" style="z-index:{z}"></div>""")
         # camera + sfx
         cam, sfx = [], []
         if multi:
@@ -662,14 +730,16 @@ class Video:
                 cam.append(f'      zoom({st:.2f}, {BASE_S + 0.1:.2f}, {max(0.5, en - st):.2f}, "power1.inOut");')
             sfx.append(("pop", round(st + 0.3, 2), 0.3))
         sfx.append(("whoosh-cinematic", round(max(0, self.speech_end - 2.4), 2), 0.24))
+        if OFF:
+            sfx = [("impact-bass-2", round(-OFF + 0.02, 2), 0.12), ("whoosh", round(-0.32, 2), 0.36)] + sfx
         aud = []
         for n, (f, st, vol) in enumerate(sfx):
             dur = {"whoosh": 0.57, "whoosh-short": 0.57, "pop": 0.72, "impact-bass-1": 1.4, "impact-bass-2": 1.4, "whoosh-cinematic": 3.9}[f]
             extra = ' data-fade-out="0.7"' if f.startswith("impact") else (' data-fade-out="1.0"' if f == "whoosh-cinematic" else "")
-            aud.append(f'      <audio id="sx{n:02d}" class="clip" src="assets/sfx/{f}.mp3" data-start="{st}" data-duration="{dur}"{extra} data-volume="{vol}" data-track-index="{5 + n % 5}"></audio>')
+            aud.append(f'      <audio id="sx{n:02d}" class="clip" src="assets/sfx/{f}.mp3" data-start="{round(st + OFF, 2)}" data-duration="{dur}"{extra} data-volume="{vol}" data-track-index="{5 + n % 5}"></audio>')
         head = head_html.replace("<title>4 Isu Seri Iskandar — Dewan Rakyat</title>", f"<title>{html.escape(self.s['title'])}</title>")
         body = f"""  <body>
-    <div id="root" data-composition-id="main" data-start="0" data-duration="{self.total}" data-width="1080" data-height="1920">
+    <div id="root" data-composition-id="main" data-start="0" data-duration="{round(self.total + OFF, 2)}" data-width="1080" data-height="1920">
       <div id="bg"></div>
       <div id="bg-fins"></div>
 
@@ -688,7 +758,7 @@ class Video:
 {chr(10).join(hosts)}
 
       <div id="captions" class="scene-host" data-composition-id="captions" data-composition-src="compositions/captions.html"
-        data-start="0" data-duration="{self.speech_end}" data-track-index="3" data-track-kind="captions" data-width="1080" data-height="1920" style="z-index:15"></div>
+        data-start="{OFF}" data-duration="{self.speech_end}" data-track-index="3" data-track-kind="captions" data-width="1080" data-height="1920" style="z-index:15"></div>
 
       <div id="sweep"></div>
       <div id="flash"></div>
@@ -699,7 +769,8 @@ class Video:
 
     <script>
       window.__timelines = window.__timelines || {{}};
-      const tl = gsap.timeline({{ paused: true }});
+      const root = gsap.timeline({{ paused: true }});
+      const tl = gsap.timeline();   // the film after the cover; added to root at OFF (not paused)
 
       const FULL = "inset(0px 0px 0px 0px round 0px)";
       const PANEL = "inset(150px 36px 1100px 36px round 28px)";
@@ -740,8 +811,11 @@ class Video:
       tl.to("#bug", {{ opacity: 0, duration: 0.3 }}, {self.speech_end - 0.2:.2f});
       tl.to("#cam", {{ opacity: 0, duration: 0.5, ease: "power2.in" }}, {self.speech_end - 0.3:.2f});
       tl.set({{}}, {{}}, {self.total});
+      root.add(tl, {OFF});
+      if ({OFF} > 0) {{ root.set("#bug", {{ opacity: 0 }}, 0); root.set("#bug", {{ opacity: 1 }}, {OFF}); }}
+      root.set({{}}, {{}}, {round(self.total + OFF, 2)});
 
-      window.__timelines["main"] = tl;
+      window.__timelines["main"] = root;
     </script>
   </body>
 </html>

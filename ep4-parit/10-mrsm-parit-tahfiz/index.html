@@ -70,7 +70,7 @@
     </style>
   </head>
         <body>
-    <div id="root" data-composition-id="main" data-start="0" data-duration="19.47" data-width="1080" data-height="1920">
+    <div id="root" data-composition-id="main" data-start="0" data-duration="21.37" data-width="1080" data-height="1920">
       <div id="bg"></div>
       <div id="bg-fins"></div>
 
@@ -78,7 +78,7 @@
         <div id="cam">
           <!-- Original Dewan Rakyat footage, cropped to 9:16 around the MP; cleaned voice baked in -->
           <video id="v0" class="clip" src="assets/footage/10-mrsm-parit-tahfiz/s00.mp4" playsinline data-has-audio="true"
-            data-start="0.00" data-duration="15.97" data-media-start="0.500" data-fade-in="0.04" data-fade-out="0.25"
+            data-start="1.90" data-duration="15.97" data-media-start="0.500" data-fade-in="0.04" data-fade-out="0.25"
             data-volume="1" data-track-index="1"></video>
         </div>
       </div>
@@ -88,30 +88,35 @@
 
       <div id="bug"><i></i>UCAPAN DI DEWAN RAKYAT</div>
 
+      <div id="h-cover" class="scene-host" data-composition-id="h-cover" data-composition-src="compositions/h-cover.html"
+        data-start="0" data-duration="1.95" data-track-index="4" data-track-kind="graphics" data-width="1080" data-height="1920" style="z-index:40"></div>
       <div id="h-id" class="scene-host" data-composition-id="h-id" data-composition-src="compositions/h-id.html"
-        data-start="0.0" data-duration="3.5" data-track-index="2" data-track-kind="graphics" data-width="1080" data-height="1920" style="z-index:10"></div>
+        data-start="1.9" data-duration="3.5" data-track-index="2" data-track-kind="graphics" data-width="1080" data-height="1920" style="z-index:10"></div>
       <div id="c01" class="scene-host" data-composition-id="c01" data-composition-src="compositions/c01.html"
-        data-start="3.55" data-duration="12.37" data-track-index="2" data-track-kind="graphics" data-width="1080" data-height="1920" style="z-index:10"></div>
+        data-start="5.45" data-duration="12.37" data-track-index="2" data-track-kind="graphics" data-width="1080" data-height="1920" style="z-index:10"></div>
       <div id="h-outro" class="scene-host" data-composition-id="h-outro" data-composition-src="compositions/h-outro.html"
-        data-start="15.97" data-duration="3.5" data-track-index="2" data-track-kind="graphics" data-width="1080" data-height="1920" style="z-index:12"></div>
+        data-start="17.87" data-duration="3.5" data-track-index="2" data-track-kind="graphics" data-width="1080" data-height="1920" style="z-index:12"></div>
 
       <div id="captions" class="scene-host" data-composition-id="captions" data-composition-src="compositions/captions.html"
-        data-start="0" data-duration="15.97" data-track-index="3" data-track-kind="captions" data-width="1080" data-height="1920" style="z-index:15"></div>
+        data-start="1.9" data-duration="15.97" data-track-index="3" data-track-kind="captions" data-width="1080" data-height="1920" style="z-index:15"></div>
 
       <div id="sweep"></div>
       <div id="flash"></div>
 
       <!-- Sound design (bundled Pixabay-licensed SFX). Voice stays on the <video> clips. -->
-      <audio id="sx00" class="clip" src="assets/sfx/impact-bass-2.mp3" data-start="0" data-duration="1.4" data-fade-out="0.7" data-volume="0.1" data-track-index="5"></audio>
-      <audio id="sx01" class="clip" src="assets/sfx/pop.mp3" data-start="0.75" data-duration="0.72" data-volume="0.35" data-track-index="6"></audio>
-      <audio id="sx02" class="clip" src="assets/sfx/whoosh-short.mp3" data-start="3.25" data-duration="0.57" data-volume="0.28" data-track-index="7"></audio>
-      <audio id="sx03" class="clip" src="assets/sfx/pop.mp3" data-start="3.85" data-duration="0.72" data-volume="0.3" data-track-index="8"></audio>
-      <audio id="sx04" class="clip" src="assets/sfx/whoosh-cinematic.mp3" data-start="13.57" data-duration="3.9" data-fade-out="1.0" data-volume="0.24" data-track-index="9"></audio>
+      <audio id="sx00" class="clip" src="assets/sfx/impact-bass-2.mp3" data-start="0.02" data-duration="1.4" data-fade-out="0.7" data-volume="0.12" data-track-index="5"></audio>
+      <audio id="sx01" class="clip" src="assets/sfx/whoosh.mp3" data-start="1.58" data-duration="0.57" data-volume="0.36" data-track-index="6"></audio>
+      <audio id="sx02" class="clip" src="assets/sfx/impact-bass-2.mp3" data-start="1.9" data-duration="1.4" data-fade-out="0.7" data-volume="0.1" data-track-index="7"></audio>
+      <audio id="sx03" class="clip" src="assets/sfx/pop.mp3" data-start="2.65" data-duration="0.72" data-volume="0.35" data-track-index="8"></audio>
+      <audio id="sx04" class="clip" src="assets/sfx/whoosh-short.mp3" data-start="5.15" data-duration="0.57" data-volume="0.28" data-track-index="9"></audio>
+      <audio id="sx05" class="clip" src="assets/sfx/pop.mp3" data-start="5.75" data-duration="0.72" data-volume="0.3" data-track-index="5"></audio>
+      <audio id="sx06" class="clip" src="assets/sfx/whoosh-cinematic.mp3" data-start="15.47" data-duration="3.9" data-fade-out="1.0" data-volume="0.24" data-track-index="6"></audio>
     </div>
 
     <script>
       window.__timelines = window.__timelines || {};
-      const tl = gsap.timeline({ paused: true });
+      const root = gsap.timeline({ paused: true });
+      const tl = gsap.timeline();   // the film after the cover; added to root at OFF (not paused)
 
       const FULL = "inset(0px 0px 0px 0px round 0px)";
       const PANEL = "inset(150px 36px 1100px 36px round 28px)";
@@ -154,8 +159,11 @@
       tl.to("#bug", { opacity: 0, duration: 0.3 }, 15.77);
       tl.to("#cam", { opacity: 0, duration: 0.5, ease: "power2.in" }, 15.67);
       tl.set({}, {}, 19.47);
+      root.add(tl, 1.9);
+      if (1.9 > 0) { root.set("#bug", { opacity: 0 }, 0); root.set("#bug", { opacity: 1 }, 1.9); }
+      root.set({}, {}, 21.37);
 
-      window.__timelines["main"] = tl;
+      window.__timelines["main"] = root;
     </script>
   </body>
 </html>

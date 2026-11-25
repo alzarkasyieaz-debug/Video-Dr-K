@@ -34,7 +34,7 @@ KEYS = r"^(sekolah|murid|mendadak|bangunan|tambahan|universiti|sesi|SKM|pembazir
 
 SPECS = [
     # ------------------------------------------------------------------ 01 sekolah sesak
-    dict(id="01-sekolah-sesak", title="Sekolah Sesak di Seri Iskandar", topic="ISU · SEKOLAH SESAK, SERI ISKANDAR",
+    dict(id="01-sekolah-sesak", cover=dict(kick="ISU SEKOLAH · SERI ISKANDAR", title="SEKOLAH<br />SESAK!", sub="Murid naik mendadak · YB Parit desak bangunan tambahan"), title="Sekolah Sesak di Seri Iskandar", topic="ISU · SEKOLAH SESAK, SERI ISKANDAR",
          outro="SEKOLAH SESAK<br />SERI ISKANDAR",
          segments=[("d1", 88.75, 92.45), ("d1", 80.15, 139.55), ("d5", 756.45, 769.65)],
          hook=dict(kick="SERI ISKANDAR · DEWAN RAKYAT", lines=["“MENGAKIBATKAN BILANGAN MURID"], big="NAIK MENDADAK”", t_big=91.4, t_lines=[88.8]),
@@ -56,7 +56,7 @@ SPECS = [
          fix={}, subs=[(r"\b33\b\x00ribu", "3,000\x00"), (r"\bTrono\b", "Tronoh"), (r"\bredah\b", "rendah")]),
 
     # ------------------------------------------------------------------ 02 sekolah kurang murid
-    dict(id="02-sekolah-kurang-murid", title="26 Sekolah Kurang Murid di Parit", topic="ISU · SEKOLAH KURANG MURID (SKM)",
+    dict(id="02-sekolah-kurang-murid", cover=dict(kick="ISU SEKOLAH · PARIT", title="26 PELAJAR,<br />10 GURU", sub="“Ini pembaziran” · 26 sekolah kurang murid di Parit"), title="26 Sekolah Kurang Murid di Parit", topic="ISU · SEKOLAH KURANG MURID (SKM)",
          outro="SEKOLAH KURANG MURID<br />PARLIMEN PARIT",
          segments=[("d1", 186.95, 190.95), ("d1", 162.25, 206.95)],
          hook=dict(kick="PARLIMEN PARIT · DEWAN RAKYAT", lines=["“SEDANGKAN GURU ADA 10 ORANG."], big="INI PEMBAZIRAN.”", t_big=190.2, t_lines=[187.0]),
@@ -72,7 +72,7 @@ SPECS = [
          subs=[(r"Chung\x00Hua", "Chung\x00Hua,")]),
 
     # ------------------------------------------------------------------ 03 kuarters guru
-    dict(id="03-kuarters-guru", title="Kuarters Guru Terbiar di Parit", topic="ISU · KUARTERS GURU TERBIAR",
+    dict(id="03-kuarters-guru", cover=dict(kick="ISU SEKOLAH · PARIT", title="KUARTERS GURU<br />TERBIAR KOSONG", sub="Kampung Sadang · Sungai Ranggam · Pulau Tiga Kiri"), title="Kuarters Guru Terbiar di Parit", topic="ISU · KUARTERS GURU TERBIAR",
          outro="KUARTERS GURU<br />TERBIAR",
          segments=[("d1", 212.45, 217.3), ("d1", 206.85, 242.45)],
          hook=dict(kick="PARLIMEN PARIT · DEWAN RAKYAT", lines=["“KUARTERS GURU … YANG"], big="TERBIAR KOSONG”", t_big=216.6, t_lines=[212.5]),
@@ -88,7 +88,7 @@ SPECS = [
          subs=[(r"Mak\x00Tafis", "maahad\x00tahfiz")]),
 
     # ------------------------------------------------------------------ 04 jalan raya
-    dict(id="04-jalan-raya", title="Jalan Raya di Parit", topic="ISU · JALAN RAYA PARLIMEN PARIT",
+    dict(id="04-jalan-raya", cover=dict(kick="ISU JALAN · PARIT", title="JALAN TERUK<br />DI PARIT", sub="“Mengakibatkan kemalangan, kematian”"), title="Jalan Raya di Parit", topic="ISU · JALAN RAYA PARLIMEN PARIT",
          outro="JALAN RAYA<br />PARLIMEN PARIT",
          segments=[("d4", 554.05, 556.7), ("d3", 191.75, 219.75), ("d4", 544.65, 557.6), ("d5", 681.05, 687.3)],
          hook=dict(kick="PARLIMEN PARIT · DEWAN RAKYAT", lines=["“INI AKAN MENGAKIBATKAN"], big="KEMALANGAN, KEMATIAN”", size=96, t_big=554.8, t_lines=[554.1]),
@@ -108,7 +108,7 @@ SPECS = [
          subs=[(r"maklum\x00malas", "maklum\x00balas"), (r"kepekan", "ke pekan"), (r"Kepekan", "ke pekan")]),
 
     # ------------------------------------------------------------------ 05 perumahan
-    dict(id="05-perumahan-miskin", title="Perumahan untuk Golongan Miskin di Parit", topic="ISU · PERUMAHAN DI PARIT",
+    dict(id="05-perumahan-miskin", cover=dict(kick="ISU PERUMAHAN · PARIT", title="KELUARGA MISKIN<br />MENUNGGU LAMA", sub="Peruntukan rumah golongan miskin “amat sedikit”"), title="Perumahan untuk Golongan Miskin di Parit", topic="ISU · PERUMAHAN DI PARIT",
          outro="PERUMAHAN<br />GOLONGAN MISKIN",
          segments=[("d3", 250.05, 255.15), ("d3", 220.65, 260.95)],
          hook=dict(kick="PARLIMEN PARIT · DEWAN RAKYAT", lines=["“KELUARGA MISKIN TERPAKSA MENUNGGU LAMA DAN"], big="DINAFIKAN HAK”", t_big=253.7, t_lines=[250.1]),
@@ -125,7 +125,7 @@ SPECS = [
          subs=[(r"memakitkan", "membangkitkan"), (r"penyedaan", "penyediaan"), (r"faksa", "fasa")]),
 
     # ------------------------------------------------------------------ 06 agro-pelancongan
-    dict(id="06-agro-pelancongan", title="Agro-Pelancongan Parit", topic="ISU · AGRO-PELANCONGAN PARIT",
+    dict(id="06-agro-pelancongan", cover=dict(kick="ISU PELANCONGAN · PARIT", title="PARIT ADA<br />TARIKAN!", sub="Agro-pelancongan · Teluk Bakung · Dataran Tuntung"), title="Agro-Pelancongan Parit", topic="ISU · AGRO-PELANCONGAN PARIT",
          outro="AGRO-PELANCONGAN<br />PARIT",
          segments=[("d3", 284.95, 288.95), ("d3", 262.45, 315.75), ("d5", 769.65, 776.85)],
          hook=dict(kick="PARLIMEN PARIT · DEWAN RAKYAT", lines=["“PARLIMEN PARIT MEMPUNYAI BEBERAPA"], big="KAWASAN TARIKAN”", t_big=287.3, t_lines=[285.0]),
@@ -144,7 +144,7 @@ SPECS = [
                (r"\bbuta\b", "Bota"), (r"\bkanan\b", "Kanan"), (r"\btuntung\b", "Tuntung"), (r"\bperak\b", "Perak"), (r"\bcempaka\b", "Cempaka"), (r"\bsari\b", "Sari"), (r"\bekor\x00lambat", "Ekor\x00Lambat")]),
 
     # ------------------------------------------------------------------ 07 telekomunikasi
-    dict(id="07-liputan-internet", title="Liputan Telekomunikasi & Jalur Lebar di Parit", topic="ISU · LIPUTAN INTERNET LUAR BANDAR",
+    dict(id="07-liputan-internet", cover=dict(kick="ISU INTERNET · PARIT", title="INTERNET<br />TAK STABIL", sub="Peniaga &amp; pelajar dalam talian terjejas"), title="Liputan Telekomunikasi & Jalur Lebar di Parit", topic="ISU · LIPUTAN INTERNET LUAR BANDAR",
          outro="LIPUTAN INTERNET<br />LUAR BANDAR",
          segments=[("d3", 342.35, 347.5), ("d3", 317.05, 355.1)],
          hook=dict(kick="PARLIMEN PARIT · DEWAN RAKYAT", lines=["“JIKA CAPAIAN RANGKAIAN TIDAK MEMUASKAN,"], big="MERENCATKAN URUSAN”", size=96, t_big=345.6, t_lines=[342.4]),
@@ -160,7 +160,7 @@ SPECS = [
          subs=[(r"merencahkan", "merencatkan")]),
 
     # ------------------------------------------------------------------ 08 pertanian & akuakultur
-    dict(id="08-pertanian-akuakultur", title="Pertanian, Pengairan & Akuakultur Parit", topic="ISU · PERTANIAN &amp; BEKALAN MAKANAN",
+    dict(id="08-pertanian-akuakultur", cover=dict(kick="ISU PERTANIAN · PARIT", title="SAWAH PADI<br />KURANG AIR", sub="Rumah pam pengairan · Mukim Lambor · akuakultur"), title="Pertanian, Pengairan & Akuakultur Parit", topic="ISU · PERTANIAN &amp; BEKALAN MAKANAN",
          outro="PERTANIAN &amp;<br />AKUAKULTUR PARIT",
          segments=[("d3", 389.15, 393.95), ("d3", 356.15, 394.0), ("d5", 776.75, 807.05)],
          hook=dict(kick="PARLIMEN PARIT · DEWAN RAKYAT", lines=["“PERTANIAN SAWAH PADI MERUPAKAN"], big="SUMBER UTAMA EKONOMI”", size=92, t_big=391.2, t_lines=[389.2]),
@@ -181,7 +181,7 @@ SPECS = [
                (r"\bbelanja\b", "Belanja"), (r"\bbota\b", "Bota"), (r"\bkanan\b", "Kanan"), (r"\bkiri\b", "Kiri")]),
 
     # ------------------------------------------------------------------ 09 hakisan sungai perak
-    dict(id="09-hakisan-sungai-perak", title="Hakisan Tebing Sungai Perak", topic="ISU · HAKISAN TEBING SUNGAI PERAK",
+    dict(id="09-hakisan-sungai-perak", cover=dict(kick="ISU SUNGAI PERAK", title="TEBING<br />TERHAKIS", sub="Pelombong pasir gagal ikut syarat"), title="Hakisan Tebing Sungai Perak", topic="ISU · HAKISAN TEBING SUNGAI PERAK",
          outro="HAKISAN TEBING<br />SUNGAI PERAK",
          segments=[("d3", 411.85, 414.05), ("d3", 394.55, 414.05)],
          hook=dict(kick="SUNGAI PERAK · DEWAN RAKYAT", lines=["“REBAKAN DAN HAKISAN INI"], big="SANGAT MEMBAHAYAKAN”", size=96, t_big=412.5, t_lines=[411.9]),
@@ -193,7 +193,7 @@ SPECS = [
          ]),
 
     # ------------------------------------------------------------------ 10 MRSM tahfiz
-    dict(id="10-mrsm-parit-tahfiz", title="MRSM Parit sebagai Tahfiz Ulul Albab", topic="CADANGAN · MRSM PARIT",
+    dict(id="10-mrsm-parit-tahfiz", cover=dict(kick="CADANGAN · PARIT", title="MRSM PARIT<br />JADI TAHFIZ?", sub="Tahfiz Ulul Albab untuk anak-anak Parit"), title="MRSM Parit sebagai Tahfiz Ulul Albab", topic="CADANGAN · MRSM PARIT",
          outro="MRSM PARIT<br />TAHFIZ ULUL ALBAB",
          segments=[("d4", 199.65, 215.2)],
          hook=None,
@@ -204,7 +204,7 @@ SPECS = [
          subs=[(r"TAHFIS", "Tahfiz"), (r"ulul\x00al-bab", "Ulul\x00Albab"), (r"hufaz", "huffaz")]),
 
     # ------------------------------------------------------------------ 11 masjid
-    dict(id="11-masjid-uzur", title="Dua Masjid Uzur di Parit", topic="ISU · MASJID UZUR DI PARIT",
+    dict(id="11-masjid-uzur", cover=dict(kick="ISU MASJID · PARIT", title="2 MASJID<br />UZUR", sub="Masjid Ufraniah &amp; Masjid Latifah perlu dibina semula"), title="Dua Masjid Uzur di Parit", topic="ISU · MASJID UZUR DI PARIT",
          outro="MASJID UFRANIAH &amp;<br />MASJID LATIFAH",
          segments=[("d5", 821.15, 824.45), ("d4", 216.75, 242.0), ("d5", 807.45, 836.4)],
          hook=dict(kick="PARLIMEN PARIT · DEWAN RAKYAT", lines=["“KERANA TELAH PUN TERLALU UZUR,"], big="PEMBINAAN SEMULA”", t_big=822.9, t_lines=[821.2]),
@@ -220,7 +220,7 @@ SPECS = [
          subs=[(r"Titik\x00Gantung", "Titi\x00Gantung"), (r"Ufrania\b", "Ufraniah"), (r"\buzu\b", "uzur"), (r"Memakili", "Mewakili")]),
 
     # ------------------------------------------------------------------ 12 hospital
-    dict(id="12-hospital-seri-iskandar", title="Hospital Seri Iskandar", topic="ISU · HOSPITAL SERI ISKANDAR",
+    dict(id="12-hospital-seri-iskandar", cover=dict(kick="ISU HOSPITAL · SERI ISKANDAR", title="76 KATIL,<br />61,000 RAKYAT", sub="“Tidak mencukupi keperluan”"), title="Hospital Seri Iskandar", topic="ISU · HOSPITAL SERI ISKANDAR",
          outro="HOSPITAL<br />SERI ISKANDAR",
          segments=[("d4", 522.15, 528.1), ("d4", 519.05, 544.5), ("d5", 163.55, 182.65), ("d5", 731.45, 753.6)],
          hook=dict(kick="SERI ISKANDAR · DEWAN RAKYAT", lines=["“76 KATIL, SEDANGKAN RAKYAT ADA 61,000."], big="TIDAK MENCUKUPI”", t_big=527.5, t_lines=[522.2]),
@@ -242,7 +242,7 @@ SPECS = [
                (r"Pemberdahan", "pembedahan"), (r"Randa", "Perdana"), (r"pelarai", "pilihan raya"), (r"pulai", "Pulai")]),
 
     # ------------------------------------------------------------------ 13 dataran sungai seluang
-    dict(id="13-dataran-sungai-seluang", title="Taman Awam Dataran Sungai Seluang", topic="ISU · DATARAN SUNGAI SELUANG",
+    dict(id="13-dataran-sungai-seluang", cover=dict(kick="ISU TAMAN AWAM · SERI ISKANDAR", title="19 HEKTAR<br />UNTUK RAKYAT", sub="Taman awam di Dataran Sungai Seluang"), title="Taman Awam Dataran Sungai Seluang", topic="ISU · DATARAN SUNGAI SELUANG",
          outro="DATARAN<br />SUNGAI SELUANG",
          segments=[("d5", 711.45, 714.95), ("d4", 567.75, 575.3), ("d5", 705.05, 717.5)],
          hook=dict(kick="SERI ISKANDAR · DEWAN RAKYAT", lines=["“KELUASAN 19 HEKTAR,"], big="LOKASI BERIADAH”", t_big=713.4, t_lines=[711.5]),
@@ -254,7 +254,7 @@ SPECS = [
          ]),
 
     # ------------------------------------------------------------------ 14 kemudahan komuniti
-    dict(id="14-dewan-kompleks-komuniti", title="Dewan Serba Guna & Kompleks Komuniti", topic="ISU · KEMUDAHAN KOMUNITI",
+    dict(id="14-dewan-kompleks-komuniti", cover=dict(kick="ISU KOMUNITI · SERI ISKANDAR", title="PENDUDUK<br />BERTAMBAH PESAT", sub="Mohon dewan serba guna &amp; kompleks komuniti"), title="Dewan Serba Guna & Kompleks Komuniti", topic="ISU · KEMUDAHAN KOMUNITI",
          outro="DEWAN &amp; KOMPLEKS<br />KOMUNITI",
          segments=[("d5", 700.45, 705.05), ("d5", 687.25, 705.05), ("d5", 719.45, 731.45)],
          hook=dict(kick="SERI ISKANDAR · DEWAN RAKYAT", lines=["“MENGALAMI PERTAMBAHAN PENDUDUK"], big="SANGAT KETARA”", t_big=704.5, t_lines=[702.5]),
@@ -268,7 +268,7 @@ SPECS = [
          subs=[(r"titik\x00gantung", "Titi\x00Gantung"), (r"jagung", "Jagung"), (r"perkerangan", "perkarangan"), (r"kompleksukan", "kompleks")]),
 
     # ------------------------------------------------------------------ 15 taman teknologi
-    dict(id="15-taman-teknologi", title="Taman Teknologi Seri Iskandar", topic="ISU · TAMAN TEKNOLOGI SERI ISKANDAR",
+    dict(id="15-taman-teknologi", cover=dict(kick="ISU INDUSTRI · SERI ISKANDAR", title="HANYA<br />2 KILANG", sub="Taman Teknologi Seri Iskandar kurang pelabur"), title="Taman Teknologi Seri Iskandar", topic="ISU · TAMAN TEKNOLOGI SERI ISKANDAR",
          outro="TAMAN TEKNOLOGI<br />SERI ISKANDAR",
          segments=[("d5", 853.65, 857.0), ("d5", 838.65, 864.0)],
          hook=dict(kick="SERI ISKANDAR · DEWAN RAKYAT", lines=["“HANYA TERDAPAT"], big="DUA KILANG SAHAJA”", t_big=855.1, t_lines=[853.7]),
@@ -283,7 +283,7 @@ SPECS = [
          subs=[(r"Skandal", "Iskandar")]),
 
     # ------------------------------------------------------------------ 16 kaunter imigresen (Kamar Khas)
-    dict(id="16-kaunter-imigresen", title="Kaunter Imigresen untuk Parit (Kamar Khas)", topic="KAMAR KHAS · KAUNTER IMIGRESEN PARIT",
+    dict(id="16-kaunter-imigresen", cover=dict(kick="KAMAR KHAS · PARIT", title="TIDUR HOTEL<br />DEMI IMIGRESEN", sub="Rakyat Parit perlu ke Ipoh / Lumut", still=("d2", 450.0)), title="Kaunter Imigresen untuk Parit (Kamar Khas)", topic="KAMAR KHAS · KAUNTER IMIGRESEN PARIT",
          outro="KAUNTER IMIGRESEN<br />UNTUK PARIT",
          segments=[("d2", 446.35, 451.4), ("d2", 9.6, 21.6), ("d2", 32.25, 46.0), ("d2dm", 227.2, 250.0),
                    ("d2", 397.9, 407.8), ("d2", 423.4, 441.8), ("d2dm", 513.7, 532.4)],
@@ -308,7 +308,7 @@ SPECS = [
                (r"serakyat", "rakyat"), (r"menunjukkan", "menubuhkan"), (r"lalang", "lalu-lalang"), (r"40km", "40 km"), (r"30km", "30 km")]),
 
     # ------------------------------------------------------------------ 17 pakar hospital (Kamar Khas)
-    dict(id="17-pakar-hospital-seri-iskandar", title="Tenaga Pakar Hospital Seri Iskandar (Kamar Khas)", topic="KAMAR KHAS · PAKAR HOSPITAL SERI ISKANDAR",
+    dict(id="17-pakar-hospital-seri-iskandar", cover=dict(kick="KAMAR KHAS · SERI ISKANDAR", title="HOSPITAL BARU,<br />TANPA PAKAR?", sub="Jawapan Menteri Kesihatan di Kamar Khas", still=("d2", 420.5)), title="Tenaga Pakar Hospital Seri Iskandar (Kamar Khas)", topic="KAMAR KHAS · PAKAR HOSPITAL SERI ISKANDAR",
          outro="PAKAR HOSPITAL<br />SERI ISKANDAR",
          segments=[("d2", 648.25, 652.55), ("d2", 581.0, 588.1), ("d2", 607.45, 611.1), ("d2", 625.25, 635.5), ("d2", 673.6, 685.1),
                    ("d2hm", 812.45, 822.1), ("d2hm", 964.35, 989.0), ("d2hm", 991.1, 1010.1), ("d2hm", 1185.95, 1205.1)],
