@@ -1,0 +1,203 @@
+{
+ "source": "drk3",
+ "source_name": "Dr K 3.mp4",
+ "speaker": "DR. KHAIRUDDIN AMAN RAZALI",
+ "role": "Bekas Menteri Komoditi",
+ "gap": 1.0,
+ "tail": 1.4,
+ "frame": {
+  "x": 680,
+  "y": 850,
+  "s": 1.7
+ },
+ "focus": [
+  [
+   0,
+   680,
+   850
+  ],
+  [
+   400,
+   600,
+   835
+  ],
+  [
+   800,
+   446,
+   830
+  ],
+  [
+   1150,
+   541,
+   840
+  ],
+  [
+   1500,
+   499,
+   835
+  ],
+  [
+   1800,
+   533,
+   840
+  ]
+ ],
+ "face_y": 760,
+ "grade": "eq=contrast=1.07:brightness=0.02:saturation=1.06:gamma=1.04",
+ "keywords_blue": [
+  "barisan",
+  "nasional",
+  "pakatan",
+  "harapan",
+  "perikatan",
+  "bn",
+  "ph",
+  "pn"
+ ],
+ "fix": {
+  "Amno": "UMNO",
+  "Pas": "PAS",
+  "Beresan": "Barisan",
+  "Bansai": "Barisan",
+  "Kurusi": "kerusi",
+  "Kursi": "kerusi",
+  "Peringkatan": "Perikatan",
+  "Muafakan": "Muafakat",
+  "Keedah": "kaedah",
+  "janazah": "jenazah",
+  "ijmat": "ijmak",
+  "ijmatnya": "ijmaknya",
+  "Ijmat": "Ijmak",
+  "Nyama": "nyawa",
+  "Masalah": "maslahah",
+  "Zuryak": "zuriat",
+  "Suduk": "sudut",
+  "Diputuk": "Dipertuan",
+  "Dibutuk": "Dipertuan",
+  "Termektuk": "termaktub",
+  "Dituburkan": "ditubuhkan",
+  "Makin": "Maka",
+  "Termantuk": "termaktub",
+  "Sekulah": "sekular",
+  "Perekkaunan": "perakaunan",
+  "Wuduk": "wujud"
+ },
+ "id": "VIDEO_14",
+ "topic": "Lima Maslahah Menilai Pemerintah",
+ "hook_title": "NOMBOR SATU:|[JAGA AGAMA]",
+ "hook_kicker": "MAQASID SYARIAH",
+ "hook": [
+  651.2,
+  654.95
+ ],
+ "ranges": [
+  [
+   616.3,
+   670.65
+  ],
+  [
+   677.7,
+   722.1
+  ]
+ ],
+ "mood": "inspire",
+ "seed": 42,
+ "keywords": [
+  "agama",
+  "nyawa",
+  "harta",
+  "maruah",
+  "zuriat",
+  "maslahah",
+  "lima",
+  "pemerintah",
+  "calon",
+  "parti",
+  "hifzul",
+  "hifzun"
+ ],
+ "phrase_fix": [
+  [
+   "Ketunang",
+   "~"
+  ],
+  [
+   "Hefzul Man",
+   "Hifzul mal"
+  ],
+  [
+   "Hefzul Arab",
+   "Hifzul 'irdh"
+  ],
+  [
+   "Hefzul Nasal",
+   "Hifzun nasl"
+  ],
+  [
+   "Ada Lima",
+   "Ada lima"
+  ]
+ ],
+ "facts": [
+  {
+   "type": "keyword",
+   "at": "Ada Lima",
+   "icon": "scale",
+   "label": "Untuk menilai pemerintah, parti & calon",
+   "text": "[LIMA MASLAHAH]|PENTING",
+   "dur": 10
+  },
+  {
+   "type": "keyword",
+   "at": "Nombor Satu Agama",
+   "icon": "mosque",
+   "label": "Maslahah 1",
+   "text": "JAGA|[AGAMA]",
+   "sub": "Adakah agama ditegakkan, dibina, dikembangkan",
+   "dur": 12
+  },
+  {
+   "type": "keyword",
+   "at": "Nombor Dua",
+   "icon": "shield",
+   "label": "Maslahah 2",
+   "text": "JAGA|[NYAWA]",
+   "sub": "Sejauh mana polisi mampu menjaga nyawa manusia",
+   "dur": 12
+  },
+  {
+   "type": "keyword",
+   "at": "Nombor Tiga",
+   "icon": "money",
+   "label": "Maslahah 3 · Hifzul mal",
+   "text": "JAGA|[HARTA]",
+   "sub": "Polisi yang dibentang dan dilaksana menjaga harta rakyat",
+   "dur": 12
+  },
+  {
+   "type": "keyword",
+   "at": "Nombor Empat",
+   "icon": "shield",
+   "label": "Maslahah 4 · Hifzul 'irdh",
+   "text": "JAGA|[MARUAH]",
+   "sub": "Undang-undang dan peraturan menjaga maruah manusia",
+   "dur": 11
+  },
+  {
+   "type": "keyword",
+   "at": "Yang Terakhir",
+   "icon": "people",
+   "label": "Maslahah 5 · Hifzun nasl",
+   "text": "JAGA|[ZURIAT]",
+   "dur": 6
+  }
+ ],
+ "conclusion": {
+  "at": "Sejauh mana Ia",
+  "after": 60,
+  "kicker": "Ukuran menilai pemerintah",
+  "text": "AGAMA · NYAWA · HARTA|[MARUAH · ZURIAT]"
+ },
+ "end_text": "Lima maslahah|[Ukuran menilai pemerintah]",
+ "lowercase": true
+}

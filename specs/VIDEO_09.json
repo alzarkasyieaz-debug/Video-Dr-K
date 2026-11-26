@@ -1,0 +1,167 @@
+{
+ "source": "drk7",
+ "source_name": "Dr K 7.mp4",
+ "speaker": "DR. KHAIRUDDIN AMAN RAZALI",
+ "role": "Bekas Menteri Komoditi · Ahli Panel Forum",
+ "gap": 0.9,
+ "tail": 1.4,
+ "frame": {
+  "x": 528,
+  "y": 838,
+  "s": 1.75
+ },
+ "focus": [
+  [
+   560,
+   622,
+   812,
+   1.75
+  ]
+ ],
+ "face_y": 760,
+ "keywords_blue": [
+  "barisan",
+  "nasional",
+  "pakatan",
+  "harapan",
+  "perikatan",
+  "bn",
+  "ph",
+  "pn",
+  "gps",
+  "parlimen",
+  "pilihan",
+  "raya"
+ ],
+ "id": "VIDEO_09",
+ "topic": "Kerusi Melaka: Beri & Ambil",
+ "hook_title": "BERI|[DAN AMBIL]",
+ "hook_kicker": "RUNDINGAN KERUSI MELAKA",
+ "hook": [
+  749.05,
+  753.45
+ ],
+ "ranges": [
+  [
+   700.1,
+   799.65
+  ]
+ ],
+ "mood": "inspire",
+ "seed": 27,
+ "keywords": [
+  "melaka",
+  "paya",
+  "rumput",
+  "sungai",
+  "udang",
+  "umno",
+  "pas",
+  "berisiko",
+  "perpaduan",
+  "agama",
+  "islam",
+  "ulama",
+  "pimpinan",
+  "muafakat",
+  "johor",
+  "negeri"
+ ],
+ "phrase_fix": [
+  [
+   "bak politik,",
+   "bab politik,"
+  ],
+  [
+   "baki surah,",
+   "baki diserah,"
+  ],
+  [
+   "payah rumput,",
+   "Paya Rumput,"
+  ],
+  [
+   "Datuk Raiz,",
+   "Datuk Rais,"
+  ],
+  [
+   "dua satu",
+   "dua satu"
+  ],
+  [
+   "kursi bersatu,",
+   "kerusi Bersatu,"
+  ]
+ ],
+ "facts": [
+  {
+   "type": "keyword",
+   "at": "tuntutan agama",
+   "icon": "mosque",
+   "label": "Perpaduan PAS–UMNO, BN–PN",
+   "text": "[TUNTUTAN AGAMA]|TUNTUTAN ISLAM",
+   "sub": "Menyatukan umat yang bertelingkah — sebelum hal politik",
+   "dur": 8
+  },
+  {
+   "type": "number",
+   "at": "dua satu",
+   "icon": "map",
+   "label": "Melaka: BN mahu kekal",
+   "value": 21,
+   "suffix": " KERUSI",
+   "sub": "Baki kerusi diserahkan kepada Perikatan Nasional",
+   "src": "Menurut ucapan penceramah",
+   "dur": 8
+  },
+  {
+   "type": "bullets",
+   "at": "mengorbankan",
+   "icon": "handshake",
+   "label": "Beri dan ambil",
+   "items": [
+    {
+     "text": "Paya Rumput (menang BN) → PAS",
+     "at": "Paya Rumput"
+    },
+    {
+     "text": "Sungai Udang (kerusi Bersatu) → UMNO",
+     "at": "Dan UMNO"
+    }
+   ],
+   "dur": 14
+  },
+  {
+   "type": "keyword",
+   "at": "Kalau pimpinan",
+   "icon": "people",
+   "label": "Peranan ahli",
+   "text": "PIMPINAN PUTUSKAN,|[AHLI TERIMA]",
+   "dur": 7
+  }
+ ],
+ "conclusion": {
+  "at": "Kalau para alim ulama",
+  "after": 60,
+  "kicker": "Keyakinan penceramah",
+  "text": "ULAMA BERSATU HATI —|[MUAFAKAT PANJANG]"
+ },
+ "end_text": "Rundingan kerusi Melaka|[Beri dan ambil]",
+ "fix": {
+  "kursi": "kerusi",
+  "kursi,": "kerusi",
+  "syurah": "syura",
+  "syarih": "syarie",
+  "Keandahnya": "Kaedahnya",
+  "kendah": "kaedah",
+  "khawarish": "khawarij",
+  "Khawarish": "Khawarij",
+  "khawarishnya": "khawarijnya",
+  "PASnya": "PAS-nya",
+  "anjat": "anjal",
+  "bakal": "bakar",
+  "Pelih": "Perlis",
+  "bantar": "bentang",
+  "Arab": "haram"
+ }
+}

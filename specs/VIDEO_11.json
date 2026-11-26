@@ -1,0 +1,180 @@
+{
+ "source": "drk5",
+ "source_name": "Dr K 5.mp4",
+ "speaker": "DR. KHAIRUDDIN AMAN RAZALI",
+ "role": "Bekas Menteri Komoditi",
+ "gap": 0.9,
+ "tail": 1.4,
+ "frame": {
+  "x": 905,
+  "y": 560,
+  "s": 1.7
+ },
+ "focus": [
+  [
+   0,
+   905,
+   560
+  ],
+  [
+   500,
+   870,
+   560
+  ],
+  [
+   700,
+   800,
+   560
+  ],
+  [
+   900,
+   726,
+   560
+  ],
+  [
+   1150,
+   705,
+   560
+  ],
+  [
+   1290,
+   741,
+   560
+  ]
+ ],
+ "face_y": 740,
+ "grade": "eq=contrast=1.08:brightness=0.04:saturation=1.08:gamma=1.12",
+ "keywords_blue": [
+  "barisan",
+  "nasional",
+  "pakatan",
+  "harapan",
+  "perikatan",
+  "bn",
+  "ph",
+  "pn"
+ ],
+ "fix": {
+  "FAS": "PAS",
+  "pas": "PAS",
+  "Sejujuh": "Setuju",
+  "isyara": "Islam",
+  "berterikah": "bertelingkah",
+  "mesin": "mesej",
+  "gunyah": "dunia",
+  "BMI": "BN",
+  "PS": "PH",
+  "neraikan": "meraikan",
+  "Belaka": "Melaka",
+  "Pertakaan": "Perikatan",
+  "luar-luar": "luas-luas",
+  "menuduk": "duduk"
+ },
+ "id": "VIDEO_11",
+ "topic": "Tabung Haji & Istitaah",
+ "hook_title": "BUKAN ISU KEMAMPUAN —|[ISU KEMAHUAN]",
+ "hook_kicker": "TABUNG HAJI",
+ "hook": [
+  1178.6,
+  1182.5
+ ],
+ "ranges": [
+  [
+   1164.9,
+   1246.2
+  ]
+ ],
+ "mood": "emotional",
+ "seed": 32,
+ "keywords": [
+  "istitaah",
+  "haji",
+  "kemampuan",
+  "kemahuan",
+  "wajib",
+  "subsidi",
+  "tabung",
+  "mampu",
+  "separuh"
+ ],
+ "phrase_fix": [
+  [
+   "bahan hadir,",
+   "bab haji,"
+  ],
+  [
+   "suci demi suci.",
+   "sikit demi sikit."
+  ],
+  [
+   "dipulakan",
+   "dipulangkan"
+  ],
+  [
+   "pasal nasional.",
+   "Barisan Nasional."
+  ],
+  [
+   "mengistitaahkan,",
+   "mengistitaahkan,"
+  ]
+ ],
+ "facts": [
+  {
+   "type": "keyword",
+   "at": "syarat wajib",
+   "icon": "doc",
+   "label": "Istitaah dalam ibadah haji",
+   "text": "ISTITAAH =|[SYARAT WAJIB]",
+   "sub": "Tiada kemampuan, tidak wajib",
+   "dur": 7
+  },
+  {
+   "type": "keyword",
+   "at": "Dia isu kemahuan",
+   "icon": "mosque",
+   "label": "Hujah penceramah",
+   "text": "ORANG KAMPUNG|[MAHU KE RUMAH ALLAH]",
+   "sub": "Tahu tidak wajib, tetapi ada kemahuan",
+   "dur": 9
+  },
+  {
+   "type": "bullets",
+   "at": "Ditabungkan",
+   "icon": "money",
+   "label": "Konsep Tabung Haji",
+   "items": [
+    {
+     "text": "Ditabung sikit demi sikit",
+     "at": "Ditabungkan"
+    },
+    {
+     "text": "Dana besar diniagakan",
+     "at": "dibuat perniagaan"
+    },
+    {
+     "text": "Keuntungan jadi subsidi",
+     "at": "dipulangkan"
+    }
+   ],
+   "dur": 5.8
+  },
+  {
+   "type": "percent",
+   "at": "subsidi lebih separuh",
+   "value": 50,
+   "label": "Subsidi kos haji",
+   "sub": "Lebih separuh daripada kos haji",
+   "src": "Menurut ucapan penceramah",
+   "dur": 4.2
+  }
+ ],
+ "conclusion": {
+  "at": "Itulah cara",
+  "after": 50,
+  "kicker": "Konsep Tabung Haji",
+  "text": "MEMAMPUKAN|[YANG TIDAK MAMPU]"
+ },
+ "end_text": "Tabung Haji|[Memampukan rakyat]",
+ "cover_title": "BUKAN ISU|KEMAMPUAN —|[ISU KEMAHUAN]"
+}

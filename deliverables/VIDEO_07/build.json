@@ -1,0 +1,1003 @@
+{
+ "id": "VIDEO_07",
+ "duration": 65.31,
+ "edl": [
+  {
+   "a": 524.85,
+   "b": 531.65,
+   "kind": "hook",
+   "o": 0.0
+  },
+  {
+   "a": 505.15,
+   "b": 508.78,
+   "kind": "body",
+   "o": 6.8
+  },
+  {
+   "a": 509.42,
+   "b": 514.12,
+   "kind": "body",
+   "o": 10.43
+  },
+  {
+   "a": 514.96,
+   "b": 523.46,
+   "kind": "body",
+   "o": 15.13
+  },
+  {
+   "a": 524.76,
+   "b": 536.96,
+   "kind": "body",
+   "o": 23.63
+  },
+  {
+   "a": 537.62,
+   "b": 567.1,
+   "kind": "body",
+   "tail": 1.4,
+   "o": 35.83
+  }
+ ],
+ "words": [
+  {
+   "t": "Dalam",
+   "s": 0.05,
+   "e": 0.65,
+   "piece": 0
+  },
+  {
+   "t": "politik",
+   "s": 0.65,
+   "e": 1.19,
+   "piece": 0
+  },
+  {
+   "t": "ini,",
+   "s": 1.19,
+   "e": 1.35,
+   "piece": 0
+  },
+  {
+   "t": "segala kemungkinan,",
+   "s": 1.77,
+   "e": 2.35,
+   "piece": 0
+  },
+  {
+   "t": "hari",
+   "s": 2.65,
+   "e": 2.91,
+   "piece": 0
+  },
+  {
+   "t": "ini",
+   "s": 2.91,
+   "e": 3.11,
+   "piece": 0
+  },
+  {
+   "t": "kita",
+   "s": 3.11,
+   "e": 3.41,
+   "piece": 0
+  },
+  {
+   "t": "bersama,",
+   "s": 3.41,
+   "e": 4.01,
+   "piece": 0
+  },
+  {
+   "t": "besok",
+   "s": 4.19,
+   "e": 4.69,
+   "piece": 0
+  },
+  {
+   "t": "tidak,",
+   "s": 4.69,
+   "e": 5.09,
+   "piece": 0
+  },
+  {
+   "t": "mudah",
+   "s": 5.33,
+   "e": 5.47,
+   "piece": 0
+  },
+  {
+   "t": "bersama",
+   "s": 5.47,
+   "e": 5.85,
+   "piece": 0
+  },
+  {
+   "t": "pula",
+   "s": 5.85,
+   "e": 6.21,
+   "piece": 0
+  },
+  {
+   "t": "pun,",
+   "s": 6.21,
+   "e": 6.35,
+   "piece": 0
+  },
+  {
+   "t": "tidak",
+   "s": 6.35,
+   "e": 6.69,
+   "piece": 0
+  },
+  {
+   "t": "Yang",
+   "s": 6.83,
+   "e": 7.51,
+   "piece": 1
+  },
+  {
+   "t": "tinggal",
+   "s": 7.51,
+   "e": 7.81,
+   "piece": 1
+  },
+  {
+   "t": "pada",
+   "s": 7.81,
+   "e": 8.03,
+   "piece": 1
+  },
+  {
+   "t": "kita,",
+   "s": 8.03,
+   "e": 8.33,
+   "piece": 1
+  },
+  {
+   "t": "macam",
+   "s": 8.47,
+   "e": 8.59,
+   "piece": 1
+  },
+  {
+   "t": "mana",
+   "s": 8.59,
+   "e": 8.93,
+   "piece": 1
+  },
+  {
+   "t": "kita",
+   "s": 8.93,
+   "e": 9.25,
+   "piece": 1
+  },
+  {
+   "t": "bersaing",
+   "s": 9.25,
+   "e": 9.59,
+   "piece": 1
+  },
+  {
+   "t": "secara",
+   "s": 9.59,
+   "e": 9.85,
+   "piece": 1
+  },
+  {
+   "t": "sihat.",
+   "s": 9.85,
+   "e": 10.21,
+   "piece": 1
+  },
+  {
+   "t": "Tidak",
+   "s": 10.57,
+   "e": 11.13,
+   "piece": 2
+  },
+  {
+   "t": "mencipta",
+   "s": 11.13,
+   "e": 11.71,
+   "piece": 2
+  },
+  {
+   "t": "persepsi,",
+   "s": 11.71,
+   "e": 12.39,
+   "piece": 2
+  },
+  {
+   "t": "sakau,",
+   "s": 12.39,
+   "e": 13.25,
+   "piece": 2
+  },
+  {
+   "t": "sakau,",
+   "s": 13.37,
+   "e": 13.97,
+   "piece": 2
+  },
+  {
+   "t": "sakau",
+   "s": 14.05,
+   "e": 14.39,
+   "piece": 2
+  },
+  {
+   "t": "tak",
+   "s": 14.39,
+   "e": 14.55,
+   "piece": 2
+  },
+  {
+   "t": "berhenti.",
+   "s": 14.55,
+   "e": 14.91,
+   "piece": 2
+  },
+  {
+   "t": "Saya",
+   "s": 15.27,
+   "e": 15.87,
+   "piece": 3
+  },
+  {
+   "t": "sebut",
+   "s": 15.87,
+   "e": 16.09,
+   "piece": 3
+  },
+  {
+   "t": "pada,",
+   "s": 16.09,
+   "e": 16.35,
+   "piece": 3
+  },
+  {
+   "t": "Menteri,",
+   "s": 16.35,
+   "e": 17.37,
+   "piece": 3
+  },
+  {
+   "t": "Pakatan",
+   "s": 17.65,
+   "e": 18.15,
+   "piece": 3
+  },
+  {
+   "t": "Harapan,",
+   "s": 18.15,
+   "e": 18.65,
+   "piece": 3
+  },
+  {
+   "t": "saya",
+   "s": 18.81,
+   "e": 18.99,
+   "piece": 3
+  },
+  {
+   "t": "kata",
+   "s": 18.99,
+   "e": 19.19,
+   "piece": 3
+  },
+  {
+   "t": "YB,",
+   "s": 19.19,
+   "e": 19.63,
+   "piece": 3
+  },
+  {
+   "t": "tak",
+   "s": 19.93,
+   "e": 20.05,
+   "piece": 3
+  },
+  {
+   "t": "sebut",
+   "s": 20.05,
+   "e": 20.23,
+   "piece": 3
+  },
+  {
+   "t": "nama",
+   "s": 20.23,
+   "e": 20.49,
+   "piece": 3
+  },
+  {
+   "t": "lah.",
+   "s": 20.49,
+   "e": 20.67,
+   "piece": 3
+  },
+  {
+   "t": "Saya",
+   "s": 21.49,
+   "e": 21.73,
+   "piece": 3
+  },
+  {
+   "t": "kata,",
+   "s": 21.73,
+   "e": 22.01,
+   "piece": 3
+  },
+  {
+   "t": "kita",
+   "s": 22.17,
+   "e": 22.33,
+   "piece": 3
+  },
+  {
+   "t": "jangan",
+   "s": 22.33,
+   "e": 22.55,
+   "piece": 3
+  },
+  {
+   "t": "bakar",
+   "s": 22.55,
+   "e": 22.89,
+   "piece": 3
+  },
+  {
+   "t": "jambatan.",
+   "s": 22.89,
+   "e": 23.41,
+   "piece": 3
+  },
+  {
+   "t": "Dalam",
+   "s": 23.77,
+   "e": 24.37,
+   "piece": 4
+  },
+  {
+   "t": "politik",
+   "s": 24.37,
+   "e": 24.91,
+   "piece": 4
+  },
+  {
+   "t": "ini,",
+   "s": 24.91,
+   "e": 25.07,
+   "piece": 4
+  },
+  {
+   "t": "segala kemungkinan,",
+   "s": 25.49,
+   "e": 26.07,
+   "piece": 4
+  },
+  {
+   "t": "hari",
+   "s": 26.37,
+   "e": 26.63,
+   "piece": 4
+  },
+  {
+   "t": "ini",
+   "s": 26.63,
+   "e": 26.83,
+   "piece": 4
+  },
+  {
+   "t": "kita",
+   "s": 26.83,
+   "e": 27.13,
+   "piece": 4
+  },
+  {
+   "t": "bersama,",
+   "s": 27.13,
+   "e": 27.73,
+   "piece": 4
+  },
+  {
+   "t": "besok",
+   "s": 27.91,
+   "e": 28.41,
+   "piece": 4
+  },
+  {
+   "t": "tidak,",
+   "s": 28.41,
+   "e": 28.81,
+   "piece": 4
+  },
+  {
+   "t": "mudah",
+   "s": 29.05,
+   "e": 29.19,
+   "piece": 4
+  },
+  {
+   "t": "bersama",
+   "s": 29.19,
+   "e": 29.57,
+   "piece": 4
+  },
+  {
+   "t": "pula",
+   "s": 29.57,
+   "e": 29.93,
+   "piece": 4
+  },
+  {
+   "t": "pun,",
+   "s": 29.93,
+   "e": 30.07,
+   "piece": 4
+  },
+  {
+   "t": "tidak",
+   "s": 30.07,
+   "e": 30.41,
+   "piece": 4
+  },
+  {
+   "t": "pula.",
+   "s": 30.41,
+   "e": 30.79,
+   "piece": 4
+  },
+  {
+   "t": "Tengok,",
+   "s": 31.33,
+   "e": 31.89,
+   "piece": 4
+  },
+  {
+   "t": "apa",
+   "s": 32.01,
+   "e": 32.17,
+   "piece": 4
+  },
+  {
+   "t": "berlaku",
+   "s": 32.17,
+   "e": 32.35,
+   "piece": 4
+  },
+  {
+   "t": "pada",
+   "s": 32.35,
+   "e": 32.59,
+   "piece": 4
+  },
+  {
+   "t": "PAS,",
+   "s": 32.59,
+   "e": 32.99,
+   "piece": 4
+  },
+  {
+   "t": "dan",
+   "s": 33.13,
+   "e": 33.23,
+   "piece": 4
+  },
+  {
+   "t": "juga",
+   "s": 33.23,
+   "e": 33.49,
+   "piece": 4
+  },
+  {
+   "t": "UMNO.",
+   "s": 33.49,
+   "e": 33.93,
+   "piece": 4
+  },
+  {
+   "t": "bersama",
+   "s": 34.59,
+   "e": 35.23,
+   "piece": 4
+  },
+  {
+   "t": "78.",
+   "s": 35.23,
+   "e": 35.61,
+   "piece": 4
+  },
+  {
+   "t": "Bercerai,",
+   "s": 35.97,
+   "e": 36.61,
+   "piece": 5
+  },
+  {
+   "t": "selepas",
+   "s": 36.71,
+   "e": 37.13,
+   "piece": 5
+  },
+  {
+   "t": "41",
+   "s": 37.13,
+   "e": 37.91,
+   "piece": 5
+  },
+  {
+   "t": "tahun",
+   "s": 37.91,
+   "e": 38.61,
+   "piece": 5
+  },
+  {
+   "t": "bersama.",
+   "s": 38.61,
+   "e": 39.21,
+   "piece": 5
+  },
+  {
+   "t": "Tak",
+   "s": 39.89,
+   "e": 40.23,
+   "piece": 5
+  },
+  {
+   "t": "dah",
+   "s": 40.23,
+   "e": 40.35,
+   "piece": 5
+  },
+  {
+   "t": "lama",
+   "s": 40.35,
+   "e": 40.67,
+   "piece": 5
+  },
+  {
+   "t": "bercerai",
+   "s": 40.67,
+   "e": 41.17,
+   "piece": 5
+  },
+  {
+   "t": "lagi.",
+   "s": 41.17,
+   "e": 41.41,
+   "piece": 5
+  },
+  {
+   "t": "Tapi,",
+   "s": 41.61,
+   "e": 41.79,
+   "piece": 5
+  },
+  {
+   "t": "boleh",
+   "s": 41.79,
+   "e": 42.15,
+   "piece": 5
+  },
+  {
+   "t": "rujuk",
+   "s": 42.15,
+   "e": 42.47,
+   "piece": 5
+  },
+  {
+   "t": "balik.",
+   "s": 42.47,
+   "e": 42.79,
+   "piece": 5
+  },
+  {
+   "t": "Kan",
+   "s": 43.51,
+   "e": 43.69,
+   "piece": 5
+  },
+  {
+   "t": "ini",
+   "s": 43.69,
+   "e": 43.79,
+   "piece": 5
+  },
+  {
+   "t": "bukan",
+   "s": 43.79,
+   "e": 44.03,
+   "piece": 5
+  },
+  {
+   "t": "perkahwinan.",
+   "s": 44.03,
+   "e": 44.75,
+   "piece": 5
+  },
+  {
+   "t": "Perkahwinan,",
+   "s": 45.25,
+   "e": 45.89,
+   "piece": 5
+  },
+  {
+   "t": "kalau",
+   "s": 45.99,
+   "e": 46.07,
+   "piece": 5
+  },
+  {
+   "t": "tiga",
+   "s": 46.07,
+   "e": 46.47,
+   "piece": 5
+  },
+  {
+   "t": "pun,",
+   "s": 46.47,
+   "e": 46.69,
+   "piece": 5
+  },
+  {
+   "t": "kena",
+   "s": 46.79,
+   "e": 46.87,
+   "piece": 5
+  },
+  {
+   "t": "ada",
+   "s": 46.85,
+   "e": 46.95,
+   "piece": 5
+  },
+  {
+   "t": "cina",
+   "s": 46.95,
+   "e": 47.15,
+   "piece": 5
+  },
+  {
+   "t": "buta,",
+   "s": 47.15,
+   "e": 47.49,
+   "piece": 5
+  },
+  {
+   "t": "rujuk",
+   "s": 47.53,
+   "e": 47.75,
+   "piece": 5
+  },
+  {
+   "t": "balik.",
+   "s": 47.75,
+   "e": 48.07,
+   "piece": 5
+  },
+  {
+   "t": "itu",
+   "s": 48.81,
+   "e": 49.41,
+   "piece": 5
+  },
+  {
+   "t": "politik,",
+   "s": 49.41,
+   "e": 49.99,
+   "piece": 5
+  },
+  {
+   "t": "biasa",
+   "s": 50.09,
+   "e": 50.39,
+   "piece": 5
+  },
+  {
+   "t": "sahaja.",
+   "s": 50.39,
+   "e": 50.81,
+   "piece": 5
+  },
+  {
+   "t": "Boleh",
+   "s": 51.07,
+   "e": 51.63,
+   "piece": 5
+  },
+  {
+   "t": "bersama,",
+   "s": 51.63,
+   "e": 52.21,
+   "piece": 5
+  },
+  {
+   "t": "boleh",
+   "s": 52.37,
+   "e": 52.65,
+   "piece": 5
+  },
+  {
+   "t": "tidak.",
+   "s": 52.65,
+   "e": 53.05,
+   "piece": 5
+  },
+  {
+   "t": "Mungkin",
+   "s": 53.43,
+   "e": 53.95,
+   "piece": 5
+  },
+  {
+   "t": "juga,",
+   "s": 53.95,
+   "e": 54.17,
+   "piece": 5
+  },
+  {
+   "t": "kita",
+   "s": 54.43,
+   "e": 54.51,
+   "piece": 5
+  },
+  {
+   "t": "nanti,",
+   "s": 54.51,
+   "e": 54.89,
+   "piece": 5
+  },
+  {
+   "t": "terengganu",
+   "s": 54.99,
+   "e": 55.49,
+   "piece": 5
+  },
+  {
+   "t": "lain,",
+   "s": 55.49,
+   "e": 55.83,
+   "piece": 5
+  },
+  {
+   "t": "Kelantan",
+   "s": 56.03,
+   "e": 56.43,
+   "piece": 5
+  },
+  {
+   "t": "lain,",
+   "s": 56.43,
+   "e": 56.77,
+   "piece": 5
+  },
+  {
+   "t": "Perlis",
+   "s": 56.99,
+   "e": 57.33,
+   "piece": 5
+  },
+  {
+   "t": "lain,",
+   "s": 57.33,
+   "e": 57.65,
+   "piece": 5
+  },
+  {
+   "t": "Melaka",
+   "s": 57.83,
+   "e": 58.15,
+   "piece": 5
+  },
+  {
+   "t": "lain.",
+   "s": 58.15,
+   "e": 58.51,
+   "piece": 5
+  },
+  {
+   "t": "Dinamika",
+   "s": 58.97,
+   "e": 59.47,
+   "piece": 5
+  },
+  {
+   "t": "berpolitik,",
+   "s": 59.47,
+   "e": 59.93,
+   "piece": 5
+  },
+  {
+   "t": "kita",
+   "s": 60.07,
+   "e": 60.21,
+   "piece": 5
+  },
+  {
+   "t": "kena",
+   "s": 60.21,
+   "e": 60.39,
+   "piece": 5
+  },
+  {
+   "t": "terima.",
+   "s": 60.39,
+   "e": 60.79,
+   "piece": 5
+  },
+  {
+   "t": "Yang",
+   "s": 60.91,
+   "e": 60.99,
+   "piece": 5
+  },
+  {
+   "t": "penting,",
+   "s": 60.99,
+   "e": 61.29,
+   "piece": 5
+  },
+  {
+   "t": "satu",
+   "s": 61.33,
+   "e": 61.49,
+   "piece": 5
+  },
+  {
+   "t": "benda",
+   "s": 61.49,
+   "e": 61.69,
+   "piece": 5
+  },
+  {
+   "t": "yang",
+   "s": 61.69,
+   "e": 61.77,
+   "piece": 5
+  },
+  {
+   "t": "besar.",
+   "s": 61.77,
+   "e": 62.07,
+   "piece": 5
+  },
+  {
+   "t": "Itu",
+   "s": 62.61,
+   "e": 63.15,
+   "piece": 5
+  },
+  {
+   "t": "perpaduan.",
+   "s": 63.15,
+   "e": 63.85,
+   "piece": 5
+  }
+ ],
+ "facts": [
+  {
+   "type": "keyword",
+   "at": "persepsi",
+   "icon": "warning",
+   "label": "Bersaing secara sihat",
+   "text": "TIDAK MENCIPTA|[PERSEPSI]",
+   "dur": 5,
+   "start": 11.59
+  },
+  {
+   "type": "keyword",
+   "at": "jangan bakar jambatan",
+   "after": 8,
+   "icon": "link",
+   "label": "Pesanan kepada Menteri PH",
+   "text": "JANGAN|[BAKAR JAMBATAN]",
+   "sub": "Hari ini bersama, esok mungkin tidak",
+   "dur": 8.95,
+   "start": 22.21
+  },
+  {
+   "type": "keyword",
+   "at": "Tengok, apa berlaku",
+   "icon": "handshake",
+   "label": "Sejarah PAS & UMNO",
+   "text": "BERCERAI,|[BOLEH RUJUK BALIK]",
+   "sub": "Itu politik — biasa sahaja",
+   "dur": 13,
+   "start": 31.21
+  },
+  {
+   "type": "bullets",
+   "at": "terengganu lain",
+   "icon": "map",
+   "label": "Mungkin berbeza ikut negeri",
+   "items": [
+    {
+     "text": "Terengganu",
+     "at": "terengganu",
+     "t": 55.07
+    },
+    {
+     "text": "Kelantan",
+     "at": "Kelantan lain",
+     "t": 55.93
+    },
+    {
+     "text": "Perlis",
+     "at": "Perlis",
+     "t": 56.16
+    },
+    {
+     "text": "Melaka",
+     "at": "Melaka lain",
+     "t": 56.16
+    }
+   ],
+   "dur": 2.89,
+   "start": 54.87
+  }
+ ],
+ "conclusion": {
+  "at": "Yang penting",
+  "after": 50,
+  "kicker": "Yang penting",
+  "text": "SATU BENDA BESAR:|[PERPADUAN]",
+  "start": 57.81,
+  "dur": 4.6
+ },
+ "topics": [
+  {
+   "label": "Jangan Bakar Jambatan",
+   "start": 16.799999999999997
+  }
+ ],
+ "cues": [
+  [
+   "impact-bass-1.mp3",
+   0.05,
+   0.55
+  ],
+  [
+   "whoosh-cinematic.mp3",
+   6.249999999999955,
+   0.5
+  ],
+  [
+   "whoosh-short.mp3",
+   7.4,
+   0.35
+  ],
+  [
+   "whoosh-short.mp3",
+   11.59,
+   0.28
+  ],
+  [
+   "whoosh-short.mp3",
+   22.21,
+   0.28
+  ],
+  [
+   "whoosh-short.mp3",
+   31.21,
+   0.28
+  ],
+  [
+   "whoosh-short.mp3",
+   54.87,
+   0.28
+  ],
+  [
+   "impact-bass-2.mp3",
+   57.81,
+   0.5
+  ],
+  [
+   "whoosh-cinematic.mp3",
+   61.81,
+   0.4
+  ]
+ ],
+ "hook_end": 6.7999999999999545
+}

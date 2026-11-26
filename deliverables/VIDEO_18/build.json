@@ -1,0 +1,810 @@
+{
+ "id": "VIDEO_18",
+ "duration": 81.13,
+ "edl": [
+  {
+   "a": 1622.8,
+   "b": 1628.85,
+   "kind": "hook",
+   "o": 0.0
+  },
+  {
+   "a": 1514.2,
+   "b": 1519.83,
+   "kind": "body",
+   "o": 6.05
+  },
+  {
+   "a": 1520.88,
+   "b": 1522.54,
+   "kind": "body",
+   "o": 11.68
+  },
+  {
+   "a": 1523.86,
+   "b": 1539.0,
+   "kind": "body",
+   "o": 13.34
+  },
+  {
+   "a": 1597.6,
+   "b": 1650.25,
+   "kind": "body",
+   "tail": 1.8,
+   "o": 28.48
+  }
+ ],
+ "words": [
+  {
+   "t": "Agak-agak",
+   "s": 0.05,
+   "e": 0.95,
+   "piece": 0
+  },
+  {
+   "t": "Parlimen",
+   "s": 0.95,
+   "e": 1.87,
+   "piece": 0
+  },
+  {
+   "t": "Hang Tuah",
+   "s": 1.87,
+   "e": 2.31,
+   "piece": 0
+  },
+  {
+   "t": "Jaya",
+   "s": 2.31,
+   "e": 2.81,
+   "piece": 0
+  },
+  {
+   "t": "milik",
+   "s": 2.81,
+   "e": 3.17,
+   "piece": 0
+  },
+  {
+   "t": "siapa",
+   "s": 3.17,
+   "e": 3.47,
+   "piece": 0
+  },
+  {
+   "t": "milik",
+   "s": 4.59,
+   "e": 5.55,
+   "piece": 0
+  },
+  {
+   "t": "kita",
+   "s": 5.55,
+   "e": 5.91,
+   "piece": 0
+  },
+  {
+   "t": "yang",
+   "s": 6.12,
+   "e": 6.72,
+   "piece": 1
+  },
+  {
+   "t": "YB",
+   "s": 6.72,
+   "e": 7.16,
+   "piece": 1
+  },
+  {
+   "t": "Adli",
+   "s": 7.16,
+   "e": 7.5,
+   "piece": 1
+  },
+  {
+   "t": "menang",
+   "s": 7.5,
+   "e": 8.1,
+   "piece": 1
+  },
+  {
+   "t": "majoriti",
+   "s": 8.1,
+   "e": 8.8,
+   "piece": 1
+  },
+  {
+   "t": "hanya",
+   "s": 8.8,
+   "e": 9.44,
+   "piece": 1
+  },
+  {
+   "t": "800",
+   "s": 9.44,
+   "e": 10.52,
+   "piece": 1
+  },
+  {
+   "t": "sahaja",
+   "s": 10.52,
+   "e": 11.46,
+   "piece": 1
+  },
+  {
+   "t": "800",
+   "s": 11.82,
+   "e": 13.12,
+   "piece": 2
+  },
+  {
+   "t": "undi",
+   "s": 13.48,
+   "e": 14.68,
+   "piece": 3
+  },
+  {
+   "t": "BN",
+   "s": 14.68,
+   "e": 15.24,
+   "piece": 3
+  },
+  {
+   "t": "27,000",
+   "s": 15.24,
+   "e": 17.02,
+   "piece": 3
+  },
+  {
+   "t": "undi",
+   "s": 17.02,
+   "e": 19.08,
+   "piece": 3
+  },
+  {
+   "t": "dia",
+   "s": 19.08,
+   "e": 19.28,
+   "piece": 3
+  },
+  {
+   "t": "Pakatan",
+   "s": 19.28,
+   "e": 19.7,
+   "piece": 3
+  },
+  {
+   "t": "Harapan",
+   "s": 19.7,
+   "e": 20.28,
+   "piece": 3
+  },
+  {
+   "t": "28,000",
+   "s": 20.28,
+   "e": 21.18,
+   "piece": 3
+  },
+  {
+   "t": "undi",
+   "s": 21.18,
+   "e": 22.9,
+   "piece": 3
+  },
+  {
+   "t": "Perikatan",
+   "s": 22.9,
+   "e": 23.34,
+   "piece": 3
+  },
+  {
+   "t": "Nasional",
+   "s": 23.34,
+   "e": 23.94,
+   "piece": 3
+  },
+  {
+   "t": "17,000",
+   "s": 23.94,
+   "e": 24.78,
+   "piece": 3
+  },
+  {
+   "t": "2022",
+   "s": 28.49,
+   "e": 29.13,
+   "piece": 4
+  },
+  {
+   "t": "kalau",
+   "s": 29.13,
+   "e": 30.61,
+   "piece": 4
+  },
+  {
+   "t": "tengok",
+   "s": 30.61,
+   "e": 31.25,
+   "piece": 4
+  },
+  {
+   "t": "data",
+   "s": 31.25,
+   "e": 31.77,
+   "piece": 4
+  },
+  {
+   "t": "pilihan",
+   "s": 31.77,
+   "e": 32.25,
+   "piece": 4
+  },
+  {
+   "t": "pilihan",
+   "s": 32.25,
+   "e": 32.39,
+   "piece": 4
+  },
+  {
+   "t": "raya",
+   "s": 32.39,
+   "e": 32.71,
+   "piece": 4
+  },
+  {
+   "t": "Parlimen",
+   "s": 32.71,
+   "e": 33.75,
+   "piece": 4
+  },
+  {
+   "t": "Hang Tuah",
+   "s": 33.75,
+   "e": 34.15,
+   "piece": 4
+  },
+  {
+   "t": "Jaya",
+   "s": 34.15,
+   "e": 34.71,
+   "piece": 4
+  },
+  {
+   "t": "yang",
+   "s": 36.45,
+   "e": 36.95,
+   "piece": 4
+  },
+  {
+   "t": "menang",
+   "s": 36.95,
+   "e": 37.37,
+   "piece": 4
+  },
+  {
+   "t": "sekarang",
+   "s": 37.37,
+   "e": 37.75,
+   "piece": 4
+  },
+  {
+   "t": "Adam",
+   "s": 37.75,
+   "e": 38.11,
+   "piece": 4
+  },
+  {
+   "t": "Adli",
+   "s": 38.11,
+   "e": 38.63,
+   "piece": 4
+  },
+  {
+   "t": "dia",
+   "s": 38.63,
+   "e": 39.61,
+   "piece": 4
+  },
+  {
+   "t": "menang",
+   "s": 39.61,
+   "e": 39.99,
+   "piece": 4
+  },
+  {
+   "t": "38,000",
+   "s": 39.99,
+   "e": 41.37,
+   "piece": 4
+  },
+  {
+   "t": "BN",
+   "s": 41.37,
+   "e": 43.03,
+   "piece": 4
+  },
+  {
+   "t": "ada",
+   "s": 43.03,
+   "e": 43.37,
+   "piece": 4
+  },
+  {
+   "t": "30,000",
+   "s": 43.37,
+   "e": 45.21,
+   "piece": 4
+  },
+  {
+   "t": "dan",
+   "s": 45.21,
+   "e": 46.57,
+   "piece": 4
+  },
+  {
+   "t": "Perikatan",
+   "s": 46.57,
+   "e": 47.75,
+   "piece": 4
+  },
+  {
+   "t": "Nasional",
+   "s": 47.75,
+   "e": 48.29,
+   "piece": 4
+  },
+  {
+   "t": "ada",
+   "s": 48.29,
+   "e": 48.71,
+   "piece": 4
+  },
+  {
+   "t": "tak",
+   "s": 48.71,
+   "e": 49.49,
+   "piece": 4
+  },
+  {
+   "t": "silap",
+   "s": 49.49,
+   "e": 49.79,
+   "piece": 4
+  },
+  {
+   "t": "20,000",
+   "s": 49.79,
+   "e": 50.57,
+   "piece": 4
+  },
+  {
+   "t": "kalau",
+   "s": 50.57,
+   "e": 52.43,
+   "piece": 4
+  },
+  {
+   "t": "gabung",
+   "s": 52.43,
+   "e": 53.09,
+   "piece": 4
+  },
+  {
+   "t": "dua",
+   "s": 53.09,
+   "e": 53.39,
+   "piece": 4
+  },
+  {
+   "t": "undi",
+   "s": 53.39,
+   "e": 53.73,
+   "piece": 4
+  },
+  {
+   "t": "agak-agak",
+   "s": 53.73,
+   "e": 54.63,
+   "piece": 4
+  },
+  {
+   "t": "Parlimen",
+   "s": 54.63,
+   "e": 55.55,
+   "piece": 4
+  },
+  {
+   "t": "Hang Tuah",
+   "s": 55.55,
+   "e": 55.99,
+   "piece": 4
+  },
+  {
+   "t": "Jaya",
+   "s": 55.99,
+   "e": 56.49,
+   "piece": 4
+  },
+  {
+   "t": "milik",
+   "s": 56.49,
+   "e": 56.85,
+   "piece": 4
+  },
+  {
+   "t": "siapa",
+   "s": 56.85,
+   "e": 57.15,
+   "piece": 4
+  },
+  {
+   "t": "milik",
+   "s": 58.27,
+   "e": 59.23,
+   "piece": 4
+  },
+  {
+   "t": "kita",
+   "s": 59.23,
+   "e": 59.59,
+   "piece": 4
+  },
+  {
+   "t": "semua",
+   "s": 59.59,
+   "e": 61.27,
+   "piece": 4
+  },
+  {
+   "t": "yang",
+   "s": 61.27,
+   "e": 61.41,
+   "piece": 4
+  },
+  {
+   "t": "bertanding",
+   "s": 61.41,
+   "e": 61.97,
+   "piece": 4
+  },
+  {
+   "t": "kali",
+   "s": 61.97,
+   "e": 62.89,
+   "piece": 4
+  },
+  {
+   "t": "kelak ada",
+   "s": 62.89,
+   "e": 63.53,
+   "piece": 4
+  },
+  {
+   "t": "rundingan",
+   "s": 63.53,
+   "e": 64.05,
+   "piece": 4
+  },
+  {
+   "t": "kerusi",
+   "s": 64.05,
+   "e": 64.51,
+   "piece": 4
+  },
+  {
+   "t": "parti",
+   "s": 64.51,
+   "e": 65.15,
+   "piece": 4
+  },
+  {
+   "t": "yang",
+   "s": 65.15,
+   "e": 65.39,
+   "piece": 4
+  },
+  {
+   "t": "kedua",
+   "s": 65.39,
+   "e": 65.97,
+   "piece": 4
+  },
+  {
+   "t": "tertinggi",
+   "s": 65.97,
+   "e": 67.03,
+   "piece": 4
+  },
+  {
+   "t": "dia",
+   "s": 67.03,
+   "e": 67.33,
+   "piece": 4
+  },
+  {
+   "t": "bukan",
+   "s": 67.33,
+   "e": 67.49,
+   "piece": 4
+  },
+  {
+   "t": "bertanding",
+   "s": 67.49,
+   "e": 68.05,
+   "piece": 4
+  },
+  {
+   "t": "peluang",
+   "s": 68.05,
+   "e": 69.25,
+   "piece": 4
+  },
+  {
+   "t": "untuk",
+   "s": 69.25,
+   "e": 69.57,
+   "piece": 4
+  },
+  {
+   "t": "Perikatan",
+   "s": 69.57,
+   "e": 69.87,
+   "piece": 4
+  },
+  {
+   "t": "Nasional",
+   "s": 69.87,
+   "e": 70.45,
+   "piece": 4
+  },
+  {
+   "t": "bertanding",
+   "s": 70.45,
+   "e": 71.33,
+   "piece": 4
+  },
+  {
+   "t": "di",
+   "s": 71.33,
+   "e": 71.51,
+   "piece": 4
+  },
+  {
+   "t": "Parlimen",
+   "s": 71.51,
+   "e": 71.99,
+   "piece": 4
+  },
+  {
+   "t": "Hang Tuah",
+   "s": 71.99,
+   "e": 72.31,
+   "piece": 4
+  },
+  {
+   "t": "Jaya",
+   "s": 72.31,
+   "e": 72.73,
+   "piece": 4
+  },
+  {
+   "t": "dan",
+   "s": 72.73,
+   "e": 73.23,
+   "piece": 4
+  },
+  {
+   "t": "bertanding",
+   "s": 73.23,
+   "e": 73.73,
+   "piece": 4
+  },
+  {
+   "t": "di",
+   "s": 73.73,
+   "e": 73.95,
+   "piece": 4
+  },
+  {
+   "t": "Parlimen",
+   "s": 73.95,
+   "e": 74.41,
+   "piece": 4
+  },
+  {
+   "t": "Alor",
+   "s": 74.41,
+   "e": 74.77,
+   "piece": 4
+  },
+  {
+   "t": "Gajah",
+   "s": 74.77,
+   "e": 75.07,
+   "piece": 4
+  },
+  {
+   "t": "peluang",
+   "s": 75.07,
+   "e": 75.95,
+   "piece": 4
+  },
+  {
+   "t": "dan",
+   "s": 75.95,
+   "e": 76.59,
+   "piece": 4
+  },
+  {
+   "t": "bergaduh",
+   "s": 76.59,
+   "e": 77.43,
+   "piece": 4
+  },
+  {
+   "t": "biar",
+   "s": 77.43,
+   "e": 77.91,
+   "piece": 4
+  },
+  {
+   "t": "pimpinan",
+   "s": 77.91,
+   "e": 78.41,
+   "piece": 4
+  },
+  {
+   "t": "uruskan",
+   "s": 78.41,
+   "e": 78.93,
+   "piece": 4
+  },
+  {
+   "t": "kala",
+   "s": 78.93,
+   "e": 79.23,
+   "piece": 4
+  },
+  {
+   "t": "bukan",
+   "s": 79.23,
+   "e": 80.65,
+   "piece": 4
+  }
+ ],
+ "facts": [
+  {
+   "type": "bars",
+   "at": "BN 27,000",
+   "label": "Parlimen Alor Gajah · majoriti PH hanya 800",
+   "items": [
+    {
+     "label": "PH",
+     "value": 28,
+     "show": "28,000",
+     "at": "Harapan",
+     "color": "linear-gradient(90deg,#c0392b,#ff6b5b)",
+     "t": 19.6
+    },
+    {
+     "label": "BN",
+     "value": 27,
+     "show": "27,000",
+     "at": "BN",
+     "t": 14.76
+    },
+    {
+     "label": "PN",
+     "value": 17,
+     "show": "17,000",
+     "at": "Nasional",
+     "color": "linear-gradient(90deg,#1e8f5a,#5fd39a)",
+     "t": 23.24
+    }
+   ],
+   "src": "Angka menurut ucapan penceramah",
+   "dur": 14,
+   "start": 14.56
+  },
+  {
+   "type": "bars",
+   "at": "Adam Adli",
+   "label": "Parlimen Hang Tuah Jaya · PRU 2022",
+   "items": [
+    {
+     "label": "PH",
+     "value": 38,
+     "show": "38,000",
+     "at": "38,000",
+     "color": "linear-gradient(90deg,#c0392b,#ff6b5b)",
+     "t": 39.89
+    },
+    {
+     "label": "BN",
+     "value": 30,
+     "show": "30,000",
+     "at": "30,000",
+     "t": 43.27
+    },
+    {
+     "label": "PN",
+     "value": 20,
+     "show": "20,000",
+     "at": "20,000",
+     "color": "linear-gradient(90deg,#1e8f5a,#5fd39a)",
+     "t": 49.69
+    }
+   ],
+   "src": "Angka menurut ucapan penceramah",
+   "dur": 14.26,
+   "start": 37.63
+  },
+  {
+   "type": "keyword",
+   "at": "rundingan kerusi",
+   "icon": "handshake",
+   "label": "Rundingan kerusi",
+   "text": "PELUANG|[PERIKATAN NASIONAL]",
+   "sub": "Bertanding di Hang Tuah Jaya & Alor Gajah",
+   "dur": 10,
+   "start": 63.41
+  }
+ ],
+ "conclusion": {
+  "at": "Biar Pimpinan",
+  "after": 50,
+  "kicker": "Pesanan kepada ahli",
+  "text": "JANGAN BERGADUH —|[BIAR PIMPINAN URUSKAN]",
+  "start": 73.63,
+  "dur": 4.6
+ },
+ "topics": [
+  {
+   "label": "Data PRU: Alor Gajah & Hang Tuah Jaya",
+   "start": 16.05
+  }
+ ],
+ "cues": [
+  [
+   "impact-bass-1.mp3",
+   0.05,
+   0.55
+  ],
+  [
+   "whoosh-cinematic.mp3",
+   5.499999999999955,
+   0.5
+  ],
+  [
+   "whoosh-short.mp3",
+   6.65,
+   0.35
+  ],
+  [
+   "whoosh-short.mp3",
+   14.56,
+   0.28
+  ],
+  [
+   "whoosh-short.mp3",
+   37.63,
+   0.28
+  ],
+  [
+   "whoosh-short.mp3",
+   63.41,
+   0.28
+  ],
+  [
+   "impact-bass-2.mp3",
+   73.63,
+   0.5
+  ],
+  [
+   "whoosh-cinematic.mp3",
+   77.63,
+   0.4
+  ]
+ ],
+ "hook_end": 6.0499999999999545
+}

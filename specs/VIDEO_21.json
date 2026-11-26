@@ -1,0 +1,204 @@
+{
+ "source": "drk2",
+ "source_name": "Dr K 2.mp4",
+ "speaker": "DR. KHAIRUDDIN AMAN RAZALI",
+ "role": "Bekas Menteri Komoditi",
+ "gap": 0.9,
+ "tail": 1.4,
+ "lowercase": true,
+ "frame": {
+  "x": 870,
+  "y": 570,
+  "s": 1.75
+ },
+ "focus": [
+  [
+   0,
+   905,
+   570
+  ],
+  [
+   500,
+   850,
+   565
+  ],
+  [
+   800,
+   895,
+   570
+  ],
+  [
+   1100,
+   845,
+   565
+  ],
+  [
+   1600,
+   858,
+   565
+  ],
+  [
+   2200,
+   855,
+   565
+  ],
+  [
+   2700,
+   893,
+   570
+  ]
+ ],
+ "face_y": 740,
+ "grade": "eq=contrast=1.07:brightness=0.02:saturation=1.06:gamma=1.05",
+ "keywords_blue": [
+  "barisan",
+  "nasional",
+  "pakatan",
+  "harapan",
+  "perikatan",
+  "bn",
+  "ph",
+  "pn",
+  "gps",
+  "grs",
+  "dap",
+  "pkr",
+  "amanah"
+ ],
+ "fix": {
+  "Amno": "UMNO",
+  "Pas": "PAS",
+  "Kursi": "kerusi",
+  "Kurusi": "kerusi",
+  "Muhafakat": "muafakat",
+  "Keedah": "kaedah",
+  "Besor": "besar",
+  "Belakar": "belaka",
+  "Pembangkan": "pembangkang",
+  "Hanyu": "hanya"
+ },
+ "id": "VIDEO_21",
+ "topic": "14 September 2019 di WTC",
+ "hook_title": "KAMI MENANGIS —|[TERHARU]",
+ "hook_kicker": "14 SEPTEMBER 2019",
+ "hook": [
+  759.5,
+  766.3
+ ],
+ "ranges": [
+  [
+   746.4,
+   829.1
+  ]
+ ],
+ "mood": "emotional",
+ "seed": 52,
+ "keywords": [
+  "2019",
+  "september",
+  "menangis",
+  "terharu",
+  "perpaduan",
+  "muafakat",
+  "umno",
+  "PAS",
+  "komitmen",
+  "syurga",
+  "mahalnya",
+  "wtc"
+ ],
+ "phrase_fix": [
+  [
+   "Bertemung",
+   "bertembung"
+  ],
+  [
+   "Sembayang",
+   "sembahyang"
+  ],
+  [
+   "Berungkit",
+   "diungkit"
+  ],
+  [
+   "Mengulangkan",
+   "mengulangi"
+  ],
+  [
+   "Hadid Awal Bebas Awal Makin",
+   "Hadi Awang. ~ ~ Maka"
+  ],
+  [
+   "Zaid Hamidi",
+   "Zahid Hamidi"
+  ],
+  [
+   "Kesurga",
+   "ke_syurga"
+  ],
+  [
+   "Wacha",
+   "wa_ta'ala."
+  ],
+  [
+   "PRN Bismillah",
+   "PRN ~"
+  ],
+  [
+   "Kami orang Terkenal",
+   "kami orang tua-tua"
+  ]
+ ],
+ "facts": [
+  {
+   "type": "keyword",
+   "at": "14 September",
+   "icon": "handshake",
+   "label": "Muafakat Nasional",
+   "text": "14 SEPT 2019|[BERTEMU DI WTC]",
+   "dur": 8
+  },
+  {
+   "type": "keyword",
+   "at": "Kampung Kampung",
+   "icon": "mosque",
+   "label": "Dahulu di kampung",
+   "text": "PAS & UMNO|[BERLAINAN MASJID]",
+   "sub": "Orang PAS sembahyang di masjid berbeza",
+   "dur": 11
+  },
+  {
+   "type": "keyword",
+   "at": "Mahalnya",
+   "icon": "shield",
+   "label": "Pengajaran",
+   "text": "MAHALNYA|[PERPADUAN]",
+   "dur": 6
+  },
+  {
+   "type": "bullets",
+   "at": "Kerana Komitmen",
+   "icon": "people",
+   "label": "Komitmen pimpinan",
+   "items": [
+    {
+     "text": "Datuk Seri Dr. Ahmad Zahid Hamidi",
+     "at": "Ahmad"
+    },
+    {
+     "text": "Tuan Guru Haji Abdul Hadi Awang",
+     "at": "Tuan Guru"
+    }
+   ],
+   "dur": 10
+  }
+ ],
+ "conclusion": {
+  "at": "Kita Doakan",
+  "after": 60,
+  "kicker": "Doa penceramah",
+  "text": "PERPADUAN INI|[HINGGA KE SYURGA]"
+ },
+ "end_text": "14 September 2019|[Mahalnya perpaduan]",
+ "notes": "'Kami orang tua-tua' ialah tafsiran bagi transkripsi 'Kami orang Terkenal' — sila semak dengan audio asal."
+}

@@ -1,0 +1,184 @@
+{
+ "source": "drk7",
+ "source_name": "Dr K 7.mp4",
+ "speaker": "DR. KHAIRUDDIN AMAN RAZALI",
+ "role": "Bekas Menteri Komoditi · Ahli Panel Forum",
+ "gap": 0.9,
+ "tail": 1.4,
+ "frame": {
+  "x": 528,
+  "y": 838,
+  "s": 1.75
+ },
+ "focus": [
+  [
+   560,
+   622,
+   812,
+   1.75
+  ]
+ ],
+ "face_y": 760,
+ "keywords_blue": [
+  "barisan",
+  "nasional",
+  "pakatan",
+  "harapan",
+  "perikatan",
+  "bn",
+  "ph",
+  "pn",
+  "gps",
+  "parlimen",
+  "pilihan",
+  "raya"
+ ],
+ "id": "VIDEO_08",
+ "topic": "Kewajipan Satukan Ummah",
+ "hook_title": "KEWAJIPAN|[MENYATUKAN]|ORANG ISLAM",
+ "hook_kicker": "MAJLIS SYURA ULAMA PAS",
+ "hook": [
+  587.25,
+  593.15
+ ],
+ "ranges": [
+  [
+   570.75,
+   629.95
+  ],
+  [
+   649.0,
+   699.45
+  ]
+ ],
+ "mood": "emotional",
+ "seed": 26,
+ "keywords": [
+  "kewajipan",
+  "menyatukan",
+  "islam",
+  "pas",
+  "umno",
+  "syura",
+  "2016",
+  "2018",
+  "perpaduan",
+  "keluarga",
+  "adik-beradik",
+  "bersama"
+ ],
+ "phrase_fix": [
+  [
+   "menak besar,",
+   "perkara besar,"
+  ],
+  [
+   "Ustaz ni sebut",
+   "Ustaz ni sebut"
+  ],
+  [
+   "saya seterusnya,",
+   "saya setiausaha,"
+  ],
+  [
+   "206,",
+   "2016,"
+  ]
+ ],
+ "facts": [
+  {
+   "type": "keyword",
+   "at": "kewajipan menyatukan",
+   "after": 8,
+   "icon": "mosque",
+   "label": "Majlis Syura Ulama PAS",
+   "text": "KEWAJIPAN|[MENYATUKAN ORANG ISLAM]",
+   "sub": "Tak bincang hal politik dahulu",
+   "dur": 8
+  },
+  {
+   "type": "timeline",
+   "at": "Keputusan majlis",
+   "label": "Keputusan Majlis Syura PAS",
+   "items": [
+    {
+     "y": "2016",
+     "d": "Sekitar tahun keputusan dibuat",
+     "at": "2016"
+    },
+    {
+     "y": "2018",
+     "d": "Sebelum BN jatuh di PRU",
+     "at": "2018"
+    }
+   ],
+   "dur": 8
+  },
+  {
+   "type": "keyword",
+   "at": "saya ketika itu",
+   "icon": "mic",
+   "label": "Pengalaman penceramah",
+   "text": "KETIKA ITU|[MASIH DALAM PAS]",
+   "sub": "Setiausaha Majlis Syura Ulama PAS — bentang kertas kerja perpaduan",
+   "dur": 13
+  },
+  {
+   "type": "keyword",
+   "at": "perkara nombor satu",
+   "icon": "doc",
+   "label": "Perkara nombor satu dalam kertas kerja",
+   "text": "SATUKAN UMMAH|[SEBELUM KERUSI]",
+   "dur": 10
+  },
+  {
+   "type": "bullets",
+   "at": "Bayangkan",
+   "icon": "people",
+   "label": "Kesan pertembungan PAS–UMNO",
+   "items": [
+    {
+     "text": "Hubungan keluarga",
+     "at": "keluarga"
+    },
+    {
+     "text": "Adik-beradik",
+     "at": "adik-beradik"
+    },
+    {
+     "text": "Kawan-kawan",
+     "at": "kawan-kawan"
+    },
+    {
+     "text": "Pembangunan negara",
+     "at": "pembangunan"
+    }
+   ],
+   "dur": 12
+  }
+ ],
+ "conclusion": {
+  "at": "hari ini, kita duduk",
+  "after": 90,
+  "kicker": "Hari ini",
+  "text": "KITA DUDUK|[BERSAMA]"
+ },
+ "end_text": "Satukan ummah|[sebelum politik]",
+ "fix": {
+  "kursi": "kerusi",
+  "kursi,": "kerusi",
+  "syurah": "syura",
+  "syarih": "syarie",
+  "Keandahnya": "Kaedahnya",
+  "kendah": "kaedah",
+  "khawarish": "khawarij",
+  "Khawarish": "Khawarij",
+  "khawarishnya": "khawarijnya",
+  "PASnya": "PAS-nya",
+  "anjat": "anjal",
+  "bakal": "bakar",
+  "Pelih": "Perlis",
+  "bantar": "bentang",
+  "Arab": "haram"
+ }
+}

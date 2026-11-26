@@ -1,0 +1,205 @@
+{
+ "source": "drk3",
+ "source_name": "Dr K 3.mp4",
+ "speaker": "DR. KHAIRUDDIN AMAN RAZALI",
+ "role": "Bekas Menteri Komoditi",
+ "gap": 0.6,
+ "tail": 1.4,
+ "frame": {
+  "x": 680,
+  "y": 850,
+  "s": 1.7
+ },
+ "focus": [
+  [
+   0,
+   680,
+   850
+  ],
+  [
+   400,
+   600,
+   835
+  ],
+  [
+   800,
+   446,
+   830
+  ],
+  [
+   1150,
+   541,
+   840
+  ],
+  [
+   1500,
+   499,
+   835
+  ],
+  [
+   1800,
+   533,
+   840
+  ]
+ ],
+ "face_y": 760,
+ "grade": "eq=contrast=1.07:brightness=0.02:saturation=1.06:gamma=1.04",
+ "keywords_blue": [
+  "barisan",
+  "nasional",
+  "pakatan",
+  "harapan",
+  "perikatan",
+  "bn",
+  "ph",
+  "pn"
+ ],
+ "fix": {
+  "Amno": "UMNO",
+  "Pas": "PAS",
+  "Beresan": "Barisan",
+  "Bansai": "Barisan",
+  "Kurusi": "kerusi",
+  "Kursi": "kerusi",
+  "Peringkatan": "Perikatan",
+  "Muafakan": "Muafakat",
+  "Keedah": "kaedah",
+  "janazah": "jenazah",
+  "ijmat": "ijmak",
+  "ijmatnya": "ijmaknya",
+  "Ijmat": "Ijmak",
+  "Nyama": "nyawa",
+  "Masalah": "maslahah",
+  "Zuryak": "zuriat",
+  "Suduk": "sudut",
+  "Diputuk": "Dipertuan",
+  "Dibutuk": "Dipertuan",
+  "Termektuk": "termaktub",
+  "Dituburkan": "ditubuhkan",
+  "Makin": "Maka",
+  "Termantuk": "termaktub",
+  "Sekulah": "sekular",
+  "Perekkaunan": "perakaunan",
+  "Wuduk": "wujud"
+ },
+ "id": "VIDEO_13",
+ "topic": "Pilih Pemerintah Diutamakan",
+ "hook_title": "MEMILIH PEMERINTAH|[LEBIH UTAMA]",
+ "hook_kicker": "IJMAK PARA SAHABAT",
+ "hook": [
+  333.85,
+  338.75
+ ],
+ "ranges": [
+  [
+   234.8,
+   352.45
+  ]
+ ],
+ "mood": "emotional",
+ "seed": 41,
+ "keywords": [
+  "jenazah",
+  "fardu",
+  "kifayah",
+  "ijmak",
+  "sahabat",
+  "pemerintah",
+  "memilih",
+  "pengganti",
+  "utama",
+  "segerakan"
+ ],
+ "phrase_fix": [
+  [
+   "menindukan",
+   "menimbulkan"
+  ],
+  [
+   "menanggurkan",
+   "menangguhkan"
+  ],
+  [
+   "pekebumian",
+   "pengebumian"
+  ],
+  [
+   "As-Siddiq berjanazah,",
+   "Asri'u bil-janazah,"
+  ],
+  [
+   "keada",
+   "kaedah"
+  ],
+  [
+   "Melilih",
+   "Memilih"
+  ],
+  [
+   "Menteri satu",
+   "Ini satu"
+  ],
+  [
+   "wafaknya",
+   "wafatnya"
+  ],
+  [
+   "Kan para sahabat",
+   "Adakah para sahabat"
+  ]
+ ],
+ "facts": [
+  {
+   "type": "keyword",
+   "at": "kenapa para sahabat",
+   "icon": "clock",
+   "label": "Persoalan",
+   "text": "KENAPA SAHABAT|[TANGGUH PENGEBUMIAN]?",
+   "sub": "Dan dahulukan urusan memilih pengganti Nabi ﷺ",
+   "dur": 12
+  },
+  {
+   "type": "quote",
+   "at": "segerakan menguruskan",
+   "label": "Hadis Nabi ﷺ",
+   "text": "“Segerakan menguruskan|[jenazah] kamu”",
+   "who": "Asri'u bil-janazah",
+   "dur": 8
+  },
+  {
+   "type": "bullets",
+   "at": "bertembung dua perkara",
+   "icon": "scale",
+   "label": "Dua fardu kifayah bertembung",
+   "items": [
+    {
+     "text": "Menguruskan jenazah",
+     "at": "Menguruskan jenazah"
+    },
+    {
+     "text": "Memilih pengganti Nabi ﷺ",
+     "at": "Memilih pengganti"
+    }
+   ],
+   "dur": 12
+  },
+  {
+   "type": "keyword",
+   "at": "Ijmak yang pertama",
+   "icon": "people",
+   "label": "Kata para alim ulama",
+   "text": "IJMAK|[PERTAMA PARA SAHABAT]",
+   "sub": "Urusan memilih pemerintah lebih utama",
+   "dur": 9
+  }
+ ],
+ "conclusion": {
+  "at": "kita malam ni",
+  "after": 70,
+  "kicker": "Malam ini",
+  "text": "KITA BERSAMA|[MEMILIH PEMERINTAH]"
+ },
+ "end_text": "Memilih pemerintah|[Amanah yang diutamakan]",
+ "lowercase": true,
+ "cover_title": "MEMILIH|PEMERINTAH|[LEBIH UTAMA]"
+}

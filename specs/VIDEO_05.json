@@ -1,0 +1,143 @@
+{
+ "source": "drk7",
+ "source_name": "Dr K 7.mp4",
+ "speaker": "DR. KHAIRUDDIN AMAN RAZALI",
+ "role": "Bekas Menteri Komoditi · Ahli Panel Forum",
+ "gap": 3.0,
+ "tail": 1.8,
+ "frame": {
+  "x": 528,
+  "y": 838,
+  "s": 1.75
+ },
+ "focus": [
+  [
+   560,
+   622,
+   812,
+   1.75
+  ]
+ ],
+ "face_y": 760,
+ "keywords_blue": [
+  "barisan",
+  "nasional",
+  "pakatan",
+  "harapan",
+  "perikatan",
+  "bn",
+  "ph",
+  "pn",
+  "gps",
+  "parlimen",
+  "pilihan",
+  "raya"
+ ],
+ "id": "VIDEO_05",
+ "topic": "Titah Tuanku & Kerajaan",
+ "hook_title": "UNDI TAK PERCAYA:|[DIBOLEHKAN]",
+ "hook_kicker": "HUKUMNYA",
+ "hook": [
+  337.35,
+  340.85
+ ],
+ "ranges": [
+  [
+   325.15,
+   381.25
+  ]
+ ],
+ "mood": "serious",
+ "seed": 23,
+ "keywords": [
+  "titah",
+  "tuanku",
+  "prerogatif",
+  "ingkar",
+  "derhaka",
+  "haram",
+  "syarie",
+  "dibolehkan",
+  "diharuskan",
+  "najib"
+ ],
+ "phrase_fix": [
+  [
+   "Datuk Senajib,",
+   "Datuk Seri_Najib,"
+  ],
+  [
+   "penjara kajian,",
+   "penjara Kajang,"
+  ],
+  [
+   "halang haram",
+   "halal haram"
+  ],
+  [
+   "berandil,",
+   "bab_adil,"
+  ],
+  [
+   "ada haka.",
+   "~ derhaka."
+  ]
+ ],
+ "facts": [
+  {
+   "type": "keyword",
+   "at": "Buat undi tak percaya",
+   "after": 3,
+   "icon": "ballot",
+   "label": "Di Parlimen",
+   "text": "UNDI TAK PERCAYA|[CARA SYARIE]",
+   "sub": "Tiada hukum halal haram — dibolehkan, diharuskan",
+   "dur": 10
+  },
+  {
+   "type": "keyword",
+   "at": "peguam negara",
+   "icon": "doc",
+   "label": "Menurut penceramah",
+   "text": "KENYATAAN|[PEGUAM NEGARA]",
+   "sub": "Menangguhkan pemindahan Datuk Seri Najib dari Penjara Kajang ke rumahnya",
+   "src": "Dakwaan penceramah",
+   "dur": 10.5
+  },
+  {
+   "type": "keyword",
+   "at": "ini kuasa",
+   "icon": "crown",
+   "label": "Titah Tuanku",
+   "text": "KUASA|[PREROGATIF]",
+   "sub": "Tuanku keluarkan kenyataan: jangan ingkar",
+   "dur": 5
+  }
+ ],
+ "conclusion": {
+  "at": "Ingkar itu",
+  "after": 40,
+  "kicker": "Persoalan penceramah",
+  "text": "ADAKAH ADIL|[MELANGGAR TITAH]?"
+ },
+ "end_text": "Titah Tuanku|[Jangan ingkar]",
+ "fix": {
+  "kursi": "kerusi",
+  "kursi,": "kerusi",
+  "syurah": "syura",
+  "syarih": "syarie",
+  "Keandahnya": "Kaedahnya",
+  "kendah": "kaedah",
+  "khawarish": "khawarij",
+  "Khawarish": "Khawarij",
+  "khawarishnya": "khawarijnya",
+  "PASnya": "PAS-nya",
+  "anjat": "anjal",
+  "bakal": "bakar",
+  "Pelih": "Perlis",
+  "bantar": "bentang",
+  "Arab": "haram",
+  "engkar": "ingkar",
+  "Engkar": "Ingkar"
+ }
+}

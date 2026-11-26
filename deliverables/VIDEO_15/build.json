@@ -1,0 +1,1268 @@
+{
+ "id": "VIDEO_15",
+ "duration": 109.55,
+ "edl": [
+  {
+   "a": 1058.7,
+   "b": 1063.75,
+   "kind": "hook",
+   "o": 0.0
+  },
+  {
+   "a": 892.3,
+   "b": 916.44,
+   "kind": "body",
+   "o": 5.05
+  },
+  {
+   "a": 917.12,
+   "b": 935.8,
+   "kind": "body",
+   "o": 29.19
+  },
+  {
+   "a": 936.82,
+   "b": 939.1,
+   "kind": "body",
+   "o": 47.87
+  },
+  {
+   "a": 942.62,
+   "b": 945.24,
+   "kind": "body",
+   "o": 50.15
+  },
+  {
+   "a": 949.66,
+   "b": 972.0,
+   "kind": "body",
+   "o": 52.77
+  },
+  {
+   "a": 1030.1,
+   "b": 1050.46,
+   "kind": "body",
+   "o": 75.11
+  },
+  {
+   "a": 1051.22,
+   "b": 1065.3000000000002,
+   "kind": "body",
+   "tail": 1.4,
+   "o": 95.47
+  }
+ ],
+ "words": [
+  {
+   "t": "Mesti",
+   "s": 0.02,
+   "e": 1.06,
+   "piece": 0
+  },
+  {
+   "t": "meletakkan",
+   "s": 1.06,
+   "e": 2.18,
+   "piece": 0
+  },
+  {
+   "t": "nombor",
+   "s": 2.18,
+   "e": 2.64,
+   "piece": 0
+  },
+  {
+   "t": "satu",
+   "s": 2.64,
+   "e": 3.16,
+   "piece": 0
+  },
+  {
+   "t": "kewajipan",
+   "s": 3.16,
+   "e": 3.52,
+   "piece": 0
+  },
+  {
+   "t": "menjaga",
+   "s": 4.04,
+   "e": 4.64,
+   "piece": 0
+  },
+  {
+   "t": "agama",
+   "s": 4.64,
+   "e": 5.05,
+   "piece": 0
+  },
+  {
+   "t": "Perlembagaan",
+   "s": 5.41,
+   "e": 6.87,
+   "piece": 1
+  },
+  {
+   "t": "tak",
+   "s": 6.87,
+   "e": 7.03,
+   "piece": 1
+  },
+  {
+   "t": "sebut",
+   "s": 7.03,
+   "e": 7.27,
+   "piece": 1
+  },
+  {
+   "t": "agama",
+   "s": 7.27,
+   "e": 7.61,
+   "piece": 1
+  },
+  {
+   "t": "rasmi",
+   "s": 7.61,
+   "e": 8.05,
+   "piece": 1
+  },
+  {
+   "t": "kalau",
+   "s": 8.05,
+   "e": 9.53,
+   "piece": 1
+  },
+  {
+   "t": "agama",
+   "s": 9.53,
+   "e": 10.13,
+   "piece": 1
+  },
+  {
+   "t": "rasmi",
+   "s": 10.13,
+   "e": 10.73,
+   "piece": 1
+  },
+  {
+   "t": "untuk",
+   "s": 10.73,
+   "e": 11.35,
+   "piece": 1
+  },
+  {
+   "t": "ada",
+   "s": 11.35,
+   "e": 11.73,
+   "piece": 1
+  },
+  {
+   "t": "upacara",
+   "s": 11.73,
+   "e": 13.29,
+   "piece": 1
+  },
+  {
+   "t": "saja",
+   "s": 13.29,
+   "e": 13.73,
+   "piece": 1
+  },
+  {
+   "t": "ada",
+   "s": 13.73,
+   "e": 14.93,
+   "piece": 1
+  },
+  {
+   "t": "program",
+   "s": 14.93,
+   "e": 15.37,
+   "piece": 1
+  },
+  {
+   "t": "macam",
+   "s": 15.37,
+   "e": 15.83,
+   "piece": 1
+  },
+  {
+   "t": "ni",
+   "s": 15.83,
+   "e": 15.99,
+   "piece": 1
+  },
+  {
+   "t": "kita",
+   "s": 15.99,
+   "e": 16.25,
+   "piece": 1
+  },
+  {
+   "t": "baca",
+   "s": 16.25,
+   "e": 16.55,
+   "piece": 1
+  },
+  {
+   "t": "doa",
+   "s": 16.55,
+   "e": 16.99,
+   "piece": 1
+  },
+  {
+   "t": "itu",
+   "s": 16.99,
+   "e": 17.73,
+   "piece": 1
+  },
+  {
+   "t": "upacara",
+   "s": 17.73,
+   "e": 18.55,
+   "piece": 1
+  },
+  {
+   "t": "ada",
+   "s": 18.55,
+   "e": 19.89,
+   "piece": 1
+  },
+  {
+   "t": "kerajaan",
+   "s": 19.89,
+   "e": 20.85,
+   "piece": 1
+  },
+  {
+   "t": "kita",
+   "s": 20.85,
+   "e": 21.15,
+   "piece": 1
+  },
+  {
+   "t": "baca",
+   "s": 21.15,
+   "e": 21.43,
+   "piece": 1
+  },
+  {
+   "t": "doa",
+   "s": 21.43,
+   "e": 21.79,
+   "piece": 1
+  },
+  {
+   "t": "itu",
+   "s": 21.79,
+   "e": 22.11,
+   "piece": 1
+  },
+  {
+   "t": "upacara",
+   "s": 22.11,
+   "e": 22.87,
+   "piece": 1
+  },
+  {
+   "t": "tapi",
+   "s": 22.87,
+   "e": 24.11,
+   "piece": 1
+  },
+  {
+   "t": "Islam",
+   "s": 24.11,
+   "e": 24.73,
+   "piece": 1
+  },
+  {
+   "t": "di",
+   "s": 24.73,
+   "e": 24.95,
+   "piece": 1
+  },
+  {
+   "t": "Malaysia",
+   "s": 24.95,
+   "e": 25.43,
+   "piece": 1
+  },
+  {
+   "t": "bukan",
+   "s": 25.43,
+   "e": 25.91,
+   "piece": 1
+  },
+  {
+   "t": "untuk",
+   "s": 25.91,
+   "e": 26.17,
+   "piece": 1
+  },
+  {
+   "t": "upacara",
+   "s": 26.17,
+   "e": 26.81,
+   "piece": 1
+  },
+  {
+   "t": "Islam",
+   "s": 26.81,
+   "e": 27.25,
+   "piece": 1
+  },
+  {
+   "t": "agama",
+   "s": 27.25,
+   "e": 28.11,
+   "piece": 1
+  },
+  {
+   "t": "bagi",
+   "s": 28.11,
+   "e": 28.45,
+   "piece": 1
+  },
+  {
+   "t": "negara",
+   "s": 28.45,
+   "e": 28.97,
+   "piece": 1
+  },
+  {
+   "t": "kerana",
+   "s": 29.33,
+   "e": 30.31,
+   "piece": 2
+  },
+  {
+   "t": "itu",
+   "s": 30.31,
+   "e": 30.59,
+   "piece": 2
+  },
+  {
+   "t": "lafaz",
+   "s": 30.59,
+   "e": 31.23,
+   "piece": 2
+  },
+  {
+   "t": "sumpah",
+   "s": 31.23,
+   "e": 31.75,
+   "piece": 2
+  },
+  {
+   "t": "yang",
+   "s": 31.75,
+   "e": 31.97,
+   "piece": 2
+  },
+  {
+   "t": "Dipertuan",
+   "s": 31.97,
+   "e": 32.47,
+   "piece": 2
+  },
+  {
+   "t": "Agung",
+   "s": 32.47,
+   "e": 32.81,
+   "piece": 2
+  },
+  {
+   "t": "selaku",
+   "s": 32.81,
+   "e": 33.17,
+   "piece": 2
+  },
+  {
+   "t": "Ketua",
+   "s": 33.17,
+   "e": 33.77,
+   "piece": 2
+  },
+  {
+   "t": "bagi",
+   "s": 33.77,
+   "e": 34.09,
+   "piece": 2
+  },
+  {
+   "t": "negara",
+   "s": 34.09,
+   "e": 34.65,
+   "piece": 2
+  },
+  {
+   "t": "bila",
+   "s": 34.65,
+   "e": 35.83,
+   "piece": 2
+  },
+  {
+   "t": "dipilih",
+   "s": 35.83,
+   "e": 36.61,
+   "piece": 2
+  },
+  {
+   "t": "menjadi",
+   "s": 36.61,
+   "e": 37.03,
+   "piece": 2
+  },
+  {
+   "t": "yang",
+   "s": 37.03,
+   "e": 37.27,
+   "piece": 2
+  },
+  {
+   "t": "Dipertuan",
+   "s": 37.27,
+   "e": 37.65,
+   "piece": 2
+  },
+  {
+   "t": "Agung",
+   "s": 37.65,
+   "e": 38.13,
+   "piece": 2
+  },
+  {
+   "t": "sumpah",
+   "s": 38.13,
+   "e": 39.17,
+   "piece": 2
+  },
+  {
+   "t": "yang",
+   "s": 39.17,
+   "e": 39.39,
+   "piece": 2
+  },
+  {
+   "t": "termaktub",
+   "s": 39.39,
+   "e": 40.23,
+   "piece": 2
+  },
+  {
+   "t": "dalam",
+   "s": 40.23,
+   "e": 40.67,
+   "piece": 2
+  },
+  {
+   "t": "Perlembagaan",
+   "s": 40.67,
+   "e": 41.69,
+   "piece": 2
+  },
+  {
+   "t": "dalam",
+   "s": 41.69,
+   "e": 42.61,
+   "piece": 2
+  },
+  {
+   "t": "senarai",
+   "s": 42.61,
+   "e": 43.25,
+   "piece": 2
+  },
+  {
+   "t": "berkaitan",
+   "s": 43.25,
+   "e": 43.79,
+   "piece": 2
+  },
+  {
+   "t": "dari",
+   "s": 43.79,
+   "e": 43.99,
+   "piece": 2
+  },
+  {
+   "t": "Tuanku",
+   "s": 43.99,
+   "e": 44.51,
+   "piece": 2
+  },
+  {
+   "t": "yang",
+   "s": 44.51,
+   "e": 44.63,
+   "piece": 2
+  },
+  {
+   "t": "Dipertuan",
+   "s": 44.63,
+   "e": 44.89,
+   "piece": 2
+  },
+  {
+   "t": "Agung",
+   "s": 44.89,
+   "e": 45.29,
+   "piece": 2
+  },
+  {
+   "t": "lafaz",
+   "s": 45.29,
+   "e": 46.27,
+   "piece": 2
+  },
+  {
+   "t": "lafaz",
+   "s": 46.27,
+   "e": 46.41,
+   "piece": 2
+  },
+  {
+   "t": "sumpah",
+   "s": 46.41,
+   "e": 46.65,
+   "piece": 2
+  },
+  {
+   "t": "bunyinya",
+   "s": 46.65,
+   "e": 47.15,
+   "piece": 2
+  },
+  {
+   "t": "macam",
+   "s": 47.15,
+   "e": 47.45,
+   "piece": 2
+  },
+  {
+   "t": "mana",
+   "s": 47.45,
+   "e": 47.65,
+   "piece": 2
+  },
+  {
+   "t": "iaitu",
+   "s": 48.01,
+   "e": 49.27,
+   "piece": 3
+  },
+  {
+   "t": "lafaz",
+   "s": 49.27,
+   "e": 49.65,
+   "piece": 3
+  },
+  {
+   "t": "sumpah",
+   "s": 49.65,
+   "e": 49.93,
+   "piece": 3
+  },
+  {
+   "t": "dengan",
+   "s": 50.29,
+   "e": 51.21,
+   "piece": 4
+  },
+  {
+   "t": "lafaz",
+   "s": 51.21,
+   "e": 51.63,
+   "piece": 4
+  },
+  {
+   "t": "sumpah",
+   "s": 51.63,
+   "e": 51.97,
+   "piece": 4
+  },
+  {
+   "t": "Islam",
+   "s": 51.97,
+   "e": 52.31,
+   "piece": 4
+  },
+  {
+   "t": "itu",
+   "s": 52.31,
+   "e": 52.55,
+   "piece": 4
+  },
+  {
+   "t": "sumpah",
+   "s": 52.91,
+   "e": 53.83,
+   "piece": 5
+  },
+  {
+   "t": "Islam",
+   "s": 53.83,
+   "e": 54.33,
+   "piece": 5
+  },
+  {
+   "t": "ini",
+   "s": 54.33,
+   "e": 54.87,
+   "piece": 5
+  },
+  {
+   "t": "kalau",
+   "s": 54.87,
+   "e": 55.49,
+   "piece": 5
+  },
+  {
+   "t": "langgar",
+   "s": 55.49,
+   "e": 56.19,
+   "piece": 5
+  },
+  {
+   "t": "hukumnya",
+   "s": 56.19,
+   "e": 57.09,
+   "piece": 5
+  },
+  {
+   "t": "berdosa",
+   "s": 57.09,
+   "e": 57.55,
+   "piece": 5
+  },
+  {
+   "t": "yang",
+   "s": 57.55,
+   "e": 58.17,
+   "piece": 5
+  },
+  {
+   "t": "kena",
+   "s": 58.17,
+   "e": 58.51,
+   "piece": 5
+  },
+  {
+   "t": "bayangkan",
+   "s": 58.51,
+   "e": 59.25,
+   "piece": 5
+  },
+  {
+   "t": "para",
+   "s": 59.25,
+   "e": 59.43,
+   "piece": 5
+  },
+  {
+   "t": "sumpah",
+   "s": 59.43,
+   "e": 59.91,
+   "piece": 5
+  },
+  {
+   "t": "apa",
+   "s": 59.91,
+   "e": 61.27,
+   "piece": 5
+  },
+  {
+   "t": "sumpah",
+   "s": 61.27,
+   "e": 61.79,
+   "piece": 5
+  },
+  {
+   "t": "yang",
+   "s": 61.79,
+   "e": 61.91,
+   "piece": 5
+  },
+  {
+   "t": "Dipertuan",
+   "s": 61.91,
+   "e": 62.23,
+   "piece": 5
+  },
+  {
+   "t": "Agung",
+   "s": 62.23,
+   "e": 62.63,
+   "piece": 5
+  },
+  {
+   "t": "antaranya",
+   "s": 62.63,
+   "e": 63.81,
+   "piece": 5
+  },
+  {
+   "t": "memelihara",
+   "s": 63.81,
+   "e": 65.43,
+   "piece": 5
+  },
+  {
+   "t": "Islam",
+   "s": 65.43,
+   "e": 66.13,
+   "piece": 5
+  },
+  {
+   "t": "pada",
+   "s": 66.13,
+   "e": 67.05,
+   "piece": 5
+  },
+  {
+   "t": "setiap",
+   "s": 67.05,
+   "e": 67.97,
+   "piece": 5
+  },
+  {
+   "t": "masa",
+   "s": 67.97,
+   "e": 68.51,
+   "piece": 5
+  },
+  {
+   "t": "itu",
+   "s": 68.51,
+   "e": 70.47,
+   "piece": 5
+  },
+  {
+   "t": "sumpah",
+   "s": 70.47,
+   "e": 71.17,
+   "piece": 5
+  },
+  {
+   "t": "Ketua",
+   "s": 71.17,
+   "e": 71.53,
+   "piece": 5
+  },
+  {
+   "t": "negara",
+   "s": 71.53,
+   "e": 72.09,
+   "piece": 5
+  },
+  {
+   "t": "memelihara",
+   "s": 72.09,
+   "e": 72.75,
+   "piece": 5
+  },
+  {
+   "t": "Islam",
+   "s": 72.75,
+   "e": 73.25,
+   "piece": 5
+  },
+  {
+   "t": "pada",
+   "s": 73.25,
+   "e": 73.91,
+   "piece": 5
+  },
+  {
+   "t": "setiap",
+   "s": 73.91,
+   "e": 74.61,
+   "piece": 5
+  },
+  {
+   "t": "masa",
+   "s": 74.61,
+   "e": 75.11,
+   "piece": 5
+  },
+  {
+   "t": "maka",
+   "s": 75.17,
+   "e": 76.45,
+   "piece": 6
+  },
+  {
+   "t": "mana-mana",
+   "s": 76.45,
+   "e": 77.21,
+   "piece": 6
+  },
+  {
+   "t": "orang",
+   "s": 77.21,
+   "e": 77.63,
+   "piece": 6
+  },
+  {
+   "t": "politik",
+   "s": 77.63,
+   "e": 78.19,
+   "piece": 6
+  },
+  {
+   "t": "mana-mana",
+   "s": 78.19,
+   "e": 79.01,
+   "piece": 6
+  },
+  {
+   "t": "kerajaan",
+   "s": 79.01,
+   "e": 79.87,
+   "piece": 6
+  },
+  {
+   "t": "yang",
+   "s": 79.87,
+   "e": 80.59,
+   "piece": 6
+  },
+  {
+   "t": "nak",
+   "s": 80.59,
+   "e": 80.83,
+   "piece": 6
+  },
+  {
+   "t": "ditubuhkan",
+   "s": 80.83,
+   "e": 81.73,
+   "piece": 6
+  },
+  {
+   "t": "mesti",
+   "s": 81.73,
+   "e": 82.07,
+   "piece": 6
+  },
+  {
+   "t": "letak",
+   "s": 82.07,
+   "e": 82.49,
+   "piece": 6
+  },
+  {
+   "t": "nombor",
+   "s": 82.49,
+   "e": 82.73,
+   "piece": 6
+  },
+  {
+   "t": "satu",
+   "s": 82.73,
+   "e": 83.07,
+   "piece": 6
+  },
+  {
+   "t": "tegak",
+   "s": 83.07,
+   "e": 83.59,
+   "piece": 6
+  },
+  {
+   "t": "agama",
+   "s": 83.59,
+   "e": 84.25,
+   "piece": 6
+  },
+  {
+   "t": "oleh",
+   "s": 84.25,
+   "e": 85.59,
+   "piece": 6
+  },
+  {
+   "t": "kerana",
+   "s": 85.59,
+   "e": 86.07,
+   "piece": 6
+  },
+  {
+   "t": "Perlembagaan",
+   "s": 86.07,
+   "e": 86.67,
+   "piece": 6
+  },
+  {
+   "t": "menyebut",
+   "s": 86.67,
+   "e": 87.07,
+   "piece": 6
+  },
+  {
+   "t": "Islam",
+   "s": 87.07,
+   "e": 87.61,
+   "piece": 6
+  },
+  {
+   "t": "agama",
+   "s": 87.61,
+   "e": 88.17,
+   "piece": 6
+  },
+  {
+   "t": "bagi",
+   "s": 88.17,
+   "e": 88.43,
+   "piece": 6
+  },
+  {
+   "t": "Persekutuan",
+   "s": 88.43,
+   "e": 89.07,
+   "piece": 6
+  },
+  {
+   "t": "yang",
+   "s": 89.07,
+   "e": 90.51,
+   "piece": 6
+  },
+  {
+   "t": "Dipertuan",
+   "s": 90.51,
+   "e": 90.93,
+   "piece": 6
+  },
+  {
+   "t": "Agung",
+   "s": 90.93,
+   "e": 91.29,
+   "piece": 6
+  },
+  {
+   "t": "buat",
+   "s": 91.29,
+   "e": 91.59,
+   "piece": 6
+  },
+  {
+   "t": "sumpah",
+   "s": 91.59,
+   "e": 92.01,
+   "piece": 6
+  },
+  {
+   "t": "jaga",
+   "s": 92.01,
+   "e": 92.31,
+   "piece": 6
+  },
+  {
+   "t": "agama",
+   "s": 92.31,
+   "e": 92.87,
+   "piece": 6
+  },
+  {
+   "t": "maka",
+   "s": 92.87,
+   "e": 93.73,
+   "piece": 6
+  },
+  {
+   "t": "Ketua",
+   "s": 93.73,
+   "e": 94.29,
+   "piece": 6
+  },
+  {
+   "t": "pada",
+   "s": 94.29,
+   "e": 94.61,
+   "piece": 6
+  },
+  {
+   "t": "kerajaan",
+   "s": 94.61,
+   "e": 95.25,
+   "piece": 6
+  },
+  {
+   "t": "yang",
+   "s": 95.61,
+   "e": 96.09,
+   "piece": 7
+  },
+  {
+   "t": "jadi",
+   "s": 96.09,
+   "e": 96.35,
+   "piece": 7
+  },
+  {
+   "t": "Perdana",
+   "s": 96.35,
+   "e": 96.69,
+   "piece": 7
+  },
+  {
+   "t": "Menteri",
+   "s": 96.69,
+   "e": 97.23,
+   "piece": 7
+  },
+  {
+   "t": "apa",
+   "s": 97.91,
+   "e": 98.49,
+   "piece": 7
+  },
+  {
+   "t": "yang",
+   "s": 98.49,
+   "e": 98.63,
+   "piece": 7
+  },
+  {
+   "t": "jadi",
+   "s": 98.63,
+   "e": 99.03,
+   "piece": 7
+  },
+  {
+   "t": "Ketua",
+   "s": 99.03,
+   "e": 99.45,
+   "piece": 7
+  },
+  {
+   "t": "kerajaan",
+   "s": 99.45,
+   "e": 99.69,
+   "piece": 7
+  },
+  {
+   "t": "negeri",
+   "s": 99.69,
+   "e": 99.99,
+   "piece": 7
+  },
+  {
+   "t": "yang",
+   "s": 99.99,
+   "e": 100.13,
+   "piece": 7
+  },
+  {
+   "t": "Menteri",
+   "s": 100.13,
+   "e": 100.41,
+   "piece": 7
+  },
+  {
+   "t": "besar",
+   "s": 100.41,
+   "e": 100.81,
+   "piece": 7
+  },
+  {
+   "t": "apa",
+   "s": 100.81,
+   "e": 101.71,
+   "piece": 7
+  },
+  {
+   "t": "jadi",
+   "s": 101.71,
+   "e": 101.97,
+   "piece": 7
+  },
+  {
+   "t": "Ketua",
+   "s": 101.97,
+   "e": 102.43,
+   "piece": 7
+  },
+  {
+   "t": "Menteri",
+   "s": 102.43,
+   "e": 102.97,
+   "piece": 7
+  },
+  {
+   "t": "mesti",
+   "s": 102.97,
+   "e": 104.01,
+   "piece": 7
+  },
+  {
+   "t": "meletakkan",
+   "s": 104.01,
+   "e": 105.13,
+   "piece": 7
+  },
+  {
+   "t": "nombor",
+   "s": 105.13,
+   "e": 105.59,
+   "piece": 7
+  },
+  {
+   "t": "satu",
+   "s": 105.59,
+   "e": 106.11,
+   "piece": 7
+  },
+  {
+   "t": "kewajipan",
+   "s": 106.11,
+   "e": 106.47,
+   "piece": 7
+  },
+  {
+   "t": "menjaga",
+   "s": 106.99,
+   "e": 107.59,
+   "piece": 7
+  },
+  {
+   "t": "agama",
+   "s": 107.59,
+   "e": 108.07,
+   "piece": 7
+  }
+ ],
+ "facts": [
+  {
+   "type": "keyword",
+   "at": "Tak sebut Agama Rasmi",
+   "icon": "doc",
+   "label": "Perlembagaan Persekutuan",
+   "text": "TIDAK SEBUT|[“AGAMA RASMI”]",
+   "dur": 8,
+   "start": 6.75
+  },
+  {
+   "type": "keyword",
+   "at": "Bukan Untuk Upacara",
+   "icon": "mosque",
+   "label": "Hujah penceramah",
+   "text": "ISLAM|[BUKAN UNTUK UPACARA]",
+   "sub": "Islam agama bagi negara",
+   "dur": 7,
+   "start": 25.31
+  },
+  {
+   "type": "keyword",
+   "at": "Antaranya Memelihara",
+   "icon": "crown",
+   "label": "Sumpah Yang di-Pertuan Agong",
+   "text": "MEMELIHARA ISLAM|[PADA SETIAP MASA]",
+   "dur": 10,
+   "start": 62.51
+  },
+  {
+   "type": "quote",
+   "at": "Perlembagaan Menyebut",
+   "label": "Perkara 3(1) Perlembagaan Persekutuan",
+   "text": "Islam ialah|[agama bagi Persekutuan]",
+   "who": "Seperti dipetik penceramah",
+   "dur": 5,
+   "start": 85.95
+  },
+  {
+   "type": "bullets",
+   "at": "Perdana Menteri",
+   "icon": "people",
+   "label": "Mesti letak agama nombor satu",
+   "items": [
+    {
+     "text": "Perdana Menteri",
+     "at": "Perdana Menteri",
+     "t": 96.43
+    },
+    {
+     "text": "Menteri Besar",
+     "at": "Menteri Besar",
+     "t": 100.03
+    },
+    {
+     "text": "Ketua Menteri",
+     "at": "Ketua Menteri",
+     "t": 100.4
+    }
+   ],
+   "dur": 5.77,
+   "start": 96.23
+  }
+ ],
+ "conclusion": {
+  "at": "Mesti Meletakkan",
+  "after": 60,
+  "kicker": "Tanggungjawab pemimpin",
+  "text": "NOMBOR SATU:|[MENJAGA AGAMA]",
+  "start": 102.05,
+  "dur": 4.6
+ },
+ "topics": [
+  {
+   "label": "Islam Agama Bagi Persekutuan",
+   "start": 15.05
+  }
+ ],
+ "cues": [
+  [
+   "impact-bass-1.mp3",
+   0.05,
+   0.55
+  ],
+  [
+   "whoosh-cinematic.mp3",
+   4.499999999999955,
+   0.5
+  ],
+  [
+   "whoosh-short.mp3",
+   5.65,
+   0.35
+  ],
+  [
+   "whoosh-short.mp3",
+   6.75,
+   0.28
+  ],
+  [
+   "whoosh-short.mp3",
+   25.31,
+   0.28
+  ],
+  [
+   "whoosh-short.mp3",
+   62.51,
+   0.28
+  ],
+  [
+   "whoosh-short.mp3",
+   85.95,
+   0.28
+  ],
+  [
+   "whoosh-short.mp3",
+   96.23,
+   0.28
+  ],
+  [
+   "impact-bass-2.mp3",
+   102.05,
+   0.5
+  ],
+  [
+   "whoosh-cinematic.mp3",
+   106.05,
+   0.4
+  ]
+ ],
+ "hook_end": 5.0499999999999545
+}
